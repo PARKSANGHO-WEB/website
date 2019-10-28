@@ -1,0 +1,334 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+ul, ol, li {
+    list-style: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-c {
+    
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #faf4e9;
+    background: url(../img/con-ban2.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.banner-menu {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/about-ban.jpg) ;
+    background-size: cover 100%;
+    background-position: center;
+}
+
+.banner-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114,114,114,0.3);
+}
+
+
+.banner-wrap h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: lighter;
+}
+
+.banner-wrap h1 .ment-top{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.banner-wrap h1 .hypen{
+    font-size: 20px;
+}
+
+.banner-wrap h1 .ment-bot{
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+.input-w {
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+
+.input-w h1{
+    
+    font-family: 'Pacifico', cursive;
+}
+
+.left-w {
+    width: 400px;
+    overflow: hidden;
+}
+
+.input-w .input1{
+    width: 390px;
+    float: left;
+}
+.input-w .input2{
+    width: 390px;
+    float: left;
+    margin-top: 20px;
+}
+
+.input-w .input3 {
+    width: 390px;
+    float: left;
+    margin-top: 20px;
+}
+
+.input input {
+    height: 50px;
+}
+
+.input3 input {
+    padding-top: 20px;
+    padding-bottom: 98px;
+}
+
+.clear {
+    content: '';
+    
+    clear: both;
+}
+
+
+.ml-w {
+    width: 820px;
+    margin:  auto;
+    overflow: hidden;
+}
+
+.map-w {
+    width: 400px;
+    height: 500px;
+    float: left;
+    margin: 0 auto;
+}
+
+
+
+.ml-w h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    border-left: 5px solid #b57519;
+    padding-left: 20px;
+    margin: 40px 0px;
+}
+
+
+
+.adre {
+    width: 180px;
+    float: left;
+    margin: 0 auto;
+}
+
+.subc {
+    width: 180px;
+    padding-top: 100px;
+}
+
+.subc p {
+    text-align: left;
+    font-size: 13px;
+    line-height: 2;
+}
+
+
+.btn-w{
+    clear: both;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.btn-w button{
+    background: rgb(115, 71, 48);
+    border: 0px;
+}
+
+
+
+.btn-w button:hover {
+    background: rgb(181, 117, 25);
+}
+
+
+.btn-w button p{
+    margin-bottom: 0px!important;
+    color: white;
+}
+
+
+.infor {
+    width: 920px;
+    margin:  0 auto;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.infor-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+.infor-con {
+    width: 300px;
+    font-size: 20px;
+    color: gray;
+    font-family: 'Noto Sans KR', sans-serif;
+    float: left;
+}
+
+.infor-con:nth-child(3),
+.infor-con:nth-child(4) {
+    margin-left: 10px;
+}
+
+
+.infor-con span {
+    cursor: pointer;
+    color: rgb(181, 117, 25);
+}
+
+
+
+.foot{
+    width: 100%;
+    padding: 100px 0px;
+    background-color:  #734730;
+}
+
+
+.foot p {
+    margin: 0px;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width : 1200px) {
+
+    .foot{
+        width: 100%;
+        padding: 80px 0px;
+        background-color:  #734730;
+    }
+
+
+    .foot p {
+        margin: 0px;
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width : 1000px) {
+
+    .foot{
+        width: 100%;
+        padding: 80px 0px;
+        background-color:  #734730;
+    }
+
+
+    .foot p {
+        margin: 0px;
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width : 800px) {
+
+
+    .foot{
+        width: 100%;
+        padding: 80px 0px;
+        background-color:  #734730;
+    }
+
+
+    .foot p {
+        margin: 0px;
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+
+
+}
+
+
+@media screen and (max-width : 670px) {
+
+
+    .foot{
+        width: 100%;
+        padding: 80px 0px;
+        background-color:  #734730;
+    }
+
+
+    .foot p {
+        margin: 0px;
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+
+
+}

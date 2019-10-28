@@ -1,0 +1,231 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+ul, ol, li {
+    list-style: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: #faf4e9!important;
+}
+
+
+/*************** NAV BAR *************/
+
+nav{
+    width: 100%;
+    height: 80px;
+    transition-duration: 1s;
+    position: fixed;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+nav .logo{
+    width: 150px;
+    height: 60px;
+    background: url(../img/logo_w.png);
+    background-size: 100% 100%;
+    transition-duration: 1s;
+    margin-top: 10px;
+    margin-left: 40px;
+    float: left;
+}
+
+nav .menu li:hover{
+    background-color: white;
+    transition-duration: 1s;
+}
+
+
+nav .menu li:hover a{
+    text-decoration: underline;
+    text-decoration: none;
+    color: black;
+    transition-duration: 1s;
+}
+
+.menu {
+    float: right;
+    width: 600px;
+}
+
+.menu ul li {
+    float: left;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    padding-top: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu ul li a{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-t {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #faf4e9;
+    background: url(../img/about-m.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.about-t h1 {
+    font-family: 'Pacifico', cursive;
+    padding-left: 20px;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    top: 70%;
+    transform: translateY(-50%);
+    left: 200px;
+    text-shadow: 10px 10px 4px rgba(0,0,0,0.5);
+    border-left: 10px solid #fff;
+}
+
+
+.about-c {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+
+.top-text {
+    font-family: 'Raleway', sans-serif;
+    width: 360px;
+    float: left;
+    padding: 0px 20px 20px 20px;
+}
+
+.top-text h2{
+    font-size:40px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px dashed black;
+}
+
+
+.top-text h2 span{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.top-text p{
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    margin-top: 50px;
+
+}
+
+.top-img {
+    width: 400px;
+    float: left;
+}
+
+.top-img img{
+}
+
+.about-s {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    background-color: #ffe0a8;
+}
+
+
+.about-s .special-con{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+
+
+.about-s h1 {
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+.about-s .spe{
+    width:300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.underbar{
+    width: 300px;
+    height: 6px;
+    background-color: black;
+    margin:  0 auto;
+    margin-top: 40px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0px!important;
+    font-weight: bold;
+}
+
+.about-s .spe img{
+    width: 100%;
+}
+
+
+.spe2, .spe3 {
+    margin-left: 50px;
+}
+
+
+
+
+/***************menu***************/
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    background: rgb(115, 71, 48);
+}
+
+.foot {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+
+.foot h1 {
+    margin: 0px!important;
+    color: white;
+    padding: 0px!important;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+.foot p{
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
