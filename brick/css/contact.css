@@ -17,8 +17,10 @@ body, html{
     position: relative;
     background-color: #faf4e9;
     background: url(../img/con-ban2.jpg) no-repeat;
-    background-size: cover cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .banner-menu {
