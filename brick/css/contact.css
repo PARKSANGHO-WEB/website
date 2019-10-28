@@ -104,7 +104,10 @@ body {
     
     clear: both;
 }
-
+.contact-w{
+    overflow: hidden;
+    background-color: white;
+}
 
 .ml-w {
     width: 820px;
