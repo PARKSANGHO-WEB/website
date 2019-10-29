@@ -7,14 +7,6 @@
 body {
     font-family: open sans;
 }
-.logo {
-  width: 7%;
-  position:relative;
-  top: 15%;
-    font-family: 'Pacifico', cursive!important;
-  left: 50px;
-  z-index: 101;
-}  
 .overlay {
     height: 0%;
     width: 100%;
@@ -108,7 +100,7 @@ p {
     top: 4% !important;
     left: 2% !important;
     z-index: 11;
-    font-size: 35px;
+    font-size: 40px;
     color:  rgb(181, 117, 25);;
     padding: 6px;
     width: auto;
@@ -121,8 +113,8 @@ p {
     height: 39px;
 }
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 45px;
+    height: 8px;
     background-color: rgb(181, 117, 25);
     margin: 6px 0;
     transition: 0.4s;
@@ -130,8 +122,8 @@ p {
   
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-11px, 8px) ;
+    transform: rotate(-45deg) translate(-12px, 8px) ;
 }
   
 /* Fade out the second bar */
@@ -151,25 +143,14 @@ p {
 
 @media screen and (max-width : 1200px) {
 
-    .overlay a{
-        font-size: 45px;
-    }
-
 }
 
 
 
 @media screen and (max-width : 800px) {
 
-    .overlay a{
-        font-size: 40px;
-    }
 }
 
 
 @media screen and (max-width : 640px) {
-
-    .overlay a{
-        font-size: 35px;
-    }
 }
