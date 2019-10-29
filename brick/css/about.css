@@ -11,128 +11,386 @@ body, html{
 }
 
 
-.about-t {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    background-color: #faf4e9;
-    background: url(../img/about-m.png) no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-}
-
-.about-t h1 {
-    font-family: 'Pacifico', cursive;
-    padding-left: 20px;
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    width: 100%;
-    text-align: left;
-    top: 70%;
-    transform: translateY(-50%);
-    left: 200px;
-    text-shadow: 10px 10px 4px rgba(0,0,0,0.5);
-    border-left: 10px solid #fff;
-}
-
 
 .about-c {
-    width: 800px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #faf4e9;
+
+    
+}
+
+.c-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    color: rgb(181, 117, 25);
+    
+}
+
+.c-title-t {
+    margin-bottom: -70px;
+}
+
+.c-wrap {
+    width: 820px;
+    padding: 40px 0px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 40px 0px;
 }
+
 
 .top-text {
     font-family: 'Raleway', sans-serif;
-    width: 360px;
+    width: 250px;
     float: left;
+    margin-left: 20px;
     padding: 0px 20px 20px 20px;
 }
 
-.top-text h2{
-    font-size:40px;
-    font-weight: bold;
-    text-align: center;
-    border: 2px dashed black;
-}
-
-
-.top-text h2 span{
-    font-size: 30px;
-    font-weight: bold;
-
-}
 .top-text p{
-    text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 15px;
+    color: black; 
 
 }
 
 .top-img {
-    width: 400px;
+    width: 260px;
+    height: 340px;
+    overflow: hidden;
     float: left;
+}
+.top-img1 {
+    background: url(../img/keep1.png) no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.top-img2 {
+    background: url(../img/keep5.png) no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    margin-top: 20px;
+    margin-left: 20px;    
 }
 
 .top-img img{
+    height: 100%;
+    
+}
+
+.about-can {
+    width: 100%;
+    background: url(../img/about-m.png) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.can-con {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0px;
+}
+
+.can-con h1{
+    text-align: center;
+    font-size:60px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 40px;
+    color: rgb(181, 117, 25);
+}
+.can-con .bar-bot{
+    width: 600px;
+    margin: 0 auto;
+    border-bottom: 6px solid #eee;
+    margin-bottom: 60px;
+    
+}
+
+.opa-wrap {
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+
+.jang-wrap {
+    width: 998px;
+    overflow: hidden;
+}
+
+
+.can-con .jang-wrap .jang {
+    width: 310px;
+    padding: 0px 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+.can-con .jang-wrap .jang2,
+.can-con .jang-wrap .jang3 {
+    margin-left: 26px;
+}     
+
+.jang p{
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+.jang .jang-t{
+    margin-top: 40px;
+}
+
+.jang .jang-c{
+    margin-top: 10px;
+}
+
+
+
+.jang .fas{
+    font-size: 60px;
+}
+
+.jang-bor {
+    width: 8px;
+    border-radius: 10px;
+    height: 100px;
+    margin-top: 100px;
+    float: left;
+    background-color: white;
+    
 }
 
 .about-s {
     width: 100%;
+    overflow: hidden;
     margin: 0 auto;
-    padding: 40px 0px;
-    background-color: #ffe0a8;
+    background-color: #faf4e9;
 }
 
 
-.about-s .special-con{
-    width: 1000px;
+.preWrap {
+    width: 1030px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 40px 0px;
+}
+.preWrap2 {
+    margin-top: 10px;
+    overflow: hidden;
+    padding-bottom: 100px;
 }
 
 
-.about-s h1 {
-    margin-top: 40px;
-    font-family: 'Pacifico', cursive;
-    font-size: 60px;
-    text-align: center;
+.preWrap2 .flip-hWrap{
+    margin-left: 0px;
+    margin-right: 10px;
 }
-.about-s .spe{
-    width:300px;
-    height: 300px;
+
+.preWrap2 .flip-hWrap2{
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container1{
+	width: 510px;
+	height: 510px;
     float: left;
-    overflow: hidden;
 }
 
-.underbar{
-    width: 300px;
-    height: 6px;
-    background-color: black;
-    margin:  0 auto;
-    margin-top: 40px;
+.front1, .back1 {
+    width: 510px;
+    height: 510px;
+    margin-right: 10px;
 }
 
-.intro-text {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 40px;
-    margin-bottom: 0px!important;
-    font-weight: bold;
+.flip-hWrap{
+    width:250px;
+    height: 510px;
+    float: left;
+    margin-left: 10px;
 }
 
-.about-s .spe img{
+
+.flip-container2{
+	width: 250px;
+	height: 250px;
+}
+
+.front2, .back2 {
+    width: 250px;
+    height: 250px;
+}
+
+.flip-container3{
+	width: 250px;
+	height: 250px;
+    margin-top: 10px;
+}
+
+.front2, .back3 {
+    width: 250px;
+    height: 250px;
+}
+
+.flip-container4{
+	width: 250px;
+	height: 250px;
+}
+
+.front2, .back4 {
+    width: 250px;
+    height: 250px;
+}
+
+.flip-container5{
+	width: 250px;
+	height: 250px;
+    margin-top: 10px;
+}
+
+.front2, .back5 {
+    width: 250px;
+    height: 250px;
+}
+
+.front img{
     width: 100%;
+    height: 100%;
 }
 
 
-.spe2, .spe3 {
-    margin-left: 50px;
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
 }
+
+/* hide back of pane during swap */
+.front, .reverb{
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+   text-align: center;
+    cursor: pointer;    
+
+}
+
+.reverf, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+   text-align: center;
+    cursor: pointer;    
+
+}
+
+
+
+
+
+.reverf,.reverb {
+    width: 250px;
+    height: 250px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.reverb img{
+    width: 100%;
+    height: 100%;
+}
+
+.back1{
+   font: 3em/500px 'Noto Sans KR', sans-serif;
+    
+}
+
+
+.pre-title {
+    width: 50%;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+
+
+.barL, .barR{
+    width: 33%;
+}
+
+.pre-t {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 70px;
+    font-weight: lighter;
+    padding: 60px 0px;
+    color: rgb(181, 117, 25);
+}
+
+.pre-t span{
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+    color: white;
+  background: rgb(181, 117, 25);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  background: rgb(181, 117, 25);
+    color: white;
+    
+}
+
+
+.reverf{
+    
+   font: 1.5em/240px 'Noto Sans KR', sans-serif;
+}
+.back{
+    
+   font: 1.5em/240px 'Noto Sans KR', sans-serif;
+}
+
+.backb{
+    
+   font: 1.5em/500px 'Noto Sans KR', sans-serif;
+}
+
 
 
 
