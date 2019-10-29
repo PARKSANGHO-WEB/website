@@ -137,40 +137,19 @@ body, html{
 
 
 
-/***************menu***************/
-
-
-
-
-
-
-
-
-
-
-footer{
+.foot{
     width: 100%;
-    height: 200px;
-    background: rgb(115, 71, 48);
-}
-
-.foot {
-    width: 800px;
-    margin: 0 auto;
-    padding-top: 40px;
+    padding: 100px 0px;
+    background-color:  #734730;
 }
 
 
-.foot h1 {
-    margin: 0px!important;
+.foot p {
+    margin: 0px;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
     color: white;
-    padding: 0px!important;
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
 }
 
-.foot p{
-    color: white;
-    margin-top: 20px;
-    font-size: 14px;
-}
+
