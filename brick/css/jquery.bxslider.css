@@ -4,7 +4,6 @@
 ===================================*/
 .bx-wrapper {
   position: relative;
-    height: 100%!important;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -12,7 +11,6 @@
 }
 .bx-wrapper img {
     width: 100%;
-    height: 100%;
   display: block;
 }
 .bxslider {
@@ -20,11 +18,9 @@
     position: relative;
   padding: 0;
     width: 100%!important;
-    height: 100%!important;
 }
 .bxslider div {
     width: 100%!important;
-    height: 100%!important;
 }
 ul.bxslider {
   list-style: none;
@@ -33,7 +29,6 @@ ul.bxslider {
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
     width: 100%!important;
-    height: 100%!important;
 }
 /** THEME
 ===================================*/
