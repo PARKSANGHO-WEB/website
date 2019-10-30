@@ -130,7 +130,7 @@
 
 
 .foot p {
-    margin: 0px;
+    margin: 0px auto;
     font-size: 120%;
     font-weight: bold;
     text-align: center;
