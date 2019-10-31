@@ -33,7 +33,7 @@ body, html{
 }
 
    .bx-caption div.busa p{
-        font-size: 18px;
+        font-size: 16px;
        width: 150px;
        padding: 10px;
        cursor: pointer;
@@ -417,6 +417,26 @@ footer{
 
 @media screen and (max-width : 1200px) {
 
+    .bx-caption h1 {
+        font-size:60px;
+        line-height: 1.4;
+    }
+
+   .bx-caption div.busa p{
+        font-size: 16px;
+       width: 150px;
+       padding: 10px;
+       cursor: pointer;
+       color: white;
+       margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+        border: 2px solid white;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    
+    
     .ml1 .in .back{
         display: none;
     }
