@@ -87,6 +87,7 @@ body, html{
 .menu-l .menu-wrap .title p a {
     color: black;
     font-size: 15px;
+    text-decoration: underline;
 }
 
 .menu-l .menu-wrap div img{
@@ -290,9 +291,6 @@ body, html{
     background-position: center;
 }
 
-.mainbg h1 {
-    font-size: 10px;
-}
 
 .mainbg span{
     font-size: 40px;
@@ -402,7 +400,7 @@ footer{
 }
 
 .foot {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 50px 0px 50px 0px;
 }
@@ -418,23 +416,16 @@ footer{
 @media screen and (max-width : 1200px) {
 
     .bx-caption h1 {
-        font-size:60px;
+        font-size:50px;
         line-height: 1.4;
     }
 
    .bx-caption div.busa p{
-        font-size: 16px;
-       width: 150px;
+        font-size: 15px;
+       width: 140px;
        padding: 10px;
-       cursor: pointer;
-       color: white;
-       margin: 0 auto;
-        display: block;
-        margin-top: 40px;
-        border: 2px solid white;
-        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
     }
-    
     
     
     .ml1 .in .back{
@@ -474,25 +465,16 @@ footer{
     }
 
     .menu-l .menu-wrap .img-title{
-        font-size: 40px;
-        text-align: left;
-        font-weight: 100;
-        font-family: 'Pacifico', cursive;   
+        font-size: 35px;
+        line-height: 1.2;
     }
 
-    .menu-l .menu-wrap .img-title {
-        padding-left: 20px;
-        border-left: 6px solid black;
-    }
-
-    .menu-l .menu-wrap .title p {
-        padding: 20px 0px 0px 20px;
-    }
 
 
     .menu-l .menu-wrap .title p a {
         color: black;
-        font-size: 15px;
+        font-size: 14px;
+        text-decoration: underline;
     }
 
     .menu-l .menu-wrap div img{
@@ -562,6 +544,62 @@ footer{
         margin-top: 10px;
     }
 
+    .mainbg span{
+        font-size: 30px;
+    }
+
+
+    .mainbg h1 {
+        text-align: center;
+        padding: 100px 0px;
+        font-size: 14px;
+    }
+
+
+    .main2_bg {
+        width: 600px;
+        margin: 0 auto;
+        padding: 100px 0px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .lwrap2 {
+        width: 600px;
+        float: left;
+    }
+
+    .main2_bg .div{
+        width: 190px;
+        height: 190px;
+        float: left;
+        margin-right: 10px;
+    }
+
+
+    .main2_bg .div2,.main2_bg .div3,.main2_bg .div2,.main2_bg .div2,.main2_bg .div5,.main2_bg .div6{
+        margin-left: 0px;
+    }
+
+
+
+    .main2_bg .div4,.main2_bg .div4,.main2_bg .div5,.main2_bg .div6{
+        margin-top: 20px;
+    }
+
+    .main2_bg .div3 h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        border-left: 6px solid black;
+        padding-left: 20px;
+    }
+
+    .main2_bg .div3 p{
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 25px;
+        color: black;
+    }
 
     
     
@@ -571,6 +609,191 @@ footer{
 
 @media screen and (max-width : 800px) {
 
+    .bx-caption h1 {
+        font-size:50px;
+        line-height: 1.4;
+    }
+
+   .bx-caption div.busa p{
+        font-size: 15px;
+       width: 140px;
+       padding: 10px;
+        margin-top: 30px;
+    }
+    
+    
+    .ml1 .in .back{
+        display: none;
+    }
+    
+    .ml1 .in .borderin{
+        display: none;
+    }
+    
+    .ml1 .in .back {
+        display: none;
+    }
+    
+    
+    .ml1 .in {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .ml1 .in .mob-z {
+        display: block;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+    
+    
+    
+    .menu-l .menu-wrap {
+        width: 600px;
+        padding: 50px 0px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .menu-l .menu-wrap .img-title{
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+
+
+    .menu-l .menu-wrap .title p a {
+        color: black;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    .menu-l .menu-wrap div img{
+        width: 100%;
+    }
+    
+
+
+    .mL {
+        width: 200px;
+        height: 470px;
+        float: left;
+    }
+
+    .ml1 {
+        width: 190px;
+        height: 220px;
+        position: relative;
+    }
+
+
+    .ml1 .in:hover .borderin{
+        opacity: 1;
+    }
+
+    
+
+
+    .ml2 {
+        width: 190px;
+        margin-top: 10px;
+        height: 220px;
+    }
+
+
+
+    .mC {
+        width: 200px;
+        height: 470px;
+        margin: 0px;
+    }
+
+    .mC img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .mR {
+        width: 190px;
+        float: left;
+    }
+
+    .mr1 {
+        width: 190px;
+        height: 220px;
+    }
+    .ml1 .in{
+        width: 100%;
+    }
+
+
+    .mr2 {
+        width: 190px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+    .mainbg span{
+        font-size: 30px;
+    }
+
+
+    .mainbg h1 {
+        text-align: center;
+        padding: 100px 0px;
+        font-size: 14px;
+    }
+
+
+    .main2_bg {
+        width: 600px;
+        margin: 0 auto;
+        padding: 100px 0px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .lwrap2 {
+        width: 600px;
+        float: left;
+    }
+
+    .main2_bg .div{
+        width: 190px;
+        height: 190px;
+        float: left;
+        margin-right: 10px;
+    }
+
+
+    .main2_bg .div2,.main2_bg .div3,.main2_bg .div2,.main2_bg .div2,.main2_bg .div5,.main2_bg .div6{
+        margin-left: 0px;
+    }
+
+
+
+    .main2_bg .div4,.main2_bg .div4,.main2_bg .div5,.main2_bg .div6{
+        margin-top: 20px;
+    }
+
+    .main2_bg .div3 h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        border-left: 6px solid black;
+        padding-left: 20px;
+    }
+
+    .main2_bg .div3 p{
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 25px;
+        color: black;
+    }
 }
 
 
