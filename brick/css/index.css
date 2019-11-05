@@ -612,13 +612,13 @@ footer{
 @media screen and (max-width : 800px) {
 
     .bx-caption h1 {
-        font-size:40px;
+        font-size:35px;
         line-height: 1.0;
     }
 
    .bx-caption div.busa p{
-        font-size: 13px;
-       width: 110px;
+        font-size: 12px;
+       width: 100px;
        padding: 7px;
         margin-top: 10px;
     }
@@ -662,7 +662,7 @@ footer{
     }
 
     .menu-l .menu-wrap .img-title{
-        font-size: 35px;
+        font-size: 25px;
         line-height: 1.2;
     }
 
@@ -710,8 +710,8 @@ footer{
 
 
     .mC {
-        width: 165px;;
-        height: 340px;
+        width: 165px;
+        height: 410px;
         float: left;
         margin-right:0px;
     }
@@ -724,13 +724,16 @@ footer{
 
 
     .mR {
-        width: 165px;
-        float: left;
+        width: 400px;
+        height: 200px;
+        clear: both;
+        margin-top: 10px;
     }
 
     .mr1 {
         width: 165px;
-        height: 220px;
+        height: 200px;
+        float: left;
     }
     .ml1 .in{
         width: 100%;
@@ -739,32 +742,38 @@ footer{
 
     .mr2 {
         width: 165px;
-        height: 220px;
-        margin-top: 10px;
+        height: 200px;
+        float: left;
+    }
+    
+    
+    .mR .mr2 {
+        margin-top: 0px;
+        margin-left: 10px;
     }
 
     .mainbg span{
-        font-size: 30px;
+        font-size: 25px;
     }
 
 
     .mainbg h1 {
         text-align: center;
-        padding: 100px 0px;
-        font-size: 14px;
+        padding: 50px 0px;
+        font-size: 13px;
     }
 
 
     .main2_bg {
-        width: 600px;
+        width: 400px;
         margin: 0 auto;
-        padding: 100px 0px;
+        padding: 50px 0px;
         overflow: hidden;
         margin: 0 auto;
     }
 
     .lwrap2 {
-        width: 600px;
+        width: 400px;
         float: left;
     }
 
@@ -782,7 +791,7 @@ footer{
 
 
 
-    .main2_bg .div4,.main2_bg .div4,.main2_bg .div5,.main2_bg .div6{
+    .main2_bg .div2,.main2_bg .div4,.main2_bg .div5,.main2_bg .div6{
         margin-top: 20px;
     }
 
@@ -807,4 +816,203 @@ footer{
 
 
 @media screen and (max-width : 640px) {
+    .bx-caption h1 {
+        font-size:25px;
+        line-height: 1.2;
+    }
+
+   .bx-caption div.busa p{
+        font-size: 11px;
+       width: 100px;
+       padding: 7px;
+        margin-top: 10px;
+    }
+    
+    
+    
+    .ml1 .in .back{
+        display: none;
+    }
+    
+    .ml1 .in .borderin{
+        display: none;
+    }
+    
+    .ml1 .in .back {
+        display: none;
+    }
+    
+    
+    .ml1 .in {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .ml1 .in .mob-z {
+        display: block;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+    
+    
+    
+    .menu-l .menu-wrap {
+        width: 270px;
+        padding: 50px 0px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .menu-l .menu-wrap .img-title{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+
+
+    .menu-l .menu-wrap .title p a {
+        color: black;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    .menu-l .menu-wrap div img{
+        width: 100%;
+    }
+    
+
+
+    .mL {
+        width: 130px;
+        height: 320px;
+        float: left;
+        margin-right:10px;
+    }
+
+    .ml1 {
+        width: 130px;
+        height: 155px;
+        position: relative;
+    }
+
+
+    .ml1 .in:hover .borderin{
+        opacity: 1;
+    }
+
+    
+
+s
+    .ml2 {
+        width: 130px;
+        margin-top: 10px;
+        height: 155px;
+    }
+
+
+
+    .mC {
+        width: 130px;
+        height: 320px;
+        float: left;
+        margin-right:0px;
+    }
+
+    .mC img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .mR {
+        width: 400px;
+        height: 200px;
+        clear: both;
+        margin-top: 10px;
+    }
+
+    .mr1 {
+        width: 130px;
+        height: 155px;
+        float: left;
+    }
+    .ml1 .in{
+        width: 100%;
+    }
+
+
+    .mr2 {
+        width: 130px;
+        height: 155px;
+        float: left;
+    }
+    
+    
+    .mR .mr2 {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .mainbg span{
+        font-size: 25px;
+    }
+
+
+    .mainbg h1 {
+        text-align: center;
+        padding: 50px 0px;
+        font-size: 13px;
+    }
+
+
+    .main2_bg {
+        width: 400px;
+        margin: 0 auto;
+        padding: 50px 0px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .lwrap2 {
+        width: 400px;
+        float: left;
+    }
+
+    .main2_bg .div{
+        width: 190px;
+        height: 190px;
+        float: left;
+        margin-right: 10px;
+    }
+
+
+    .main2_bg .div2,.main2_bg .div3,.main2_bg .div2,.main2_bg .div2,.main2_bg .div5,.main2_bg .div6{
+        margin-left: 0px;
+    }
+
+
+
+    .main2_bg .div2,.main2_bg .div4,.main2_bg .div5,.main2_bg .div6{
+        margin-top: 20px;
+    }
+
+    .main2_bg .div3 h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        border-left: 6px solid black;
+        padding-left: 20px;
+    }
+
+    .main2_bg .div3 p{
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 25px;
+        color: black;
+    }
+
+    
 }
