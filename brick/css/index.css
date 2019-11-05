@@ -868,7 +868,7 @@ footer{
 
     .menu-l .menu-wrap .img-title{
         font-size: 20px;
-        line-height: 1.2;
+        line-height: 1;
     }
 
 
@@ -964,13 +964,14 @@ s
 
     .mainbg h1 {
         text-align: center;
-        padding: 50px 0px;
+        padding: 80px 0px;
         font-size: 13px;
+        line-height: 1.5;
     }
 
 
     .main2_bg {
-        width: 400px;
+        width: 270px;
         margin: 0 auto;
         padding: 50px 0px;
         overflow: hidden;
@@ -978,15 +979,15 @@ s
     }
 
     .lwrap2 {
-        width: 400px;
+        width: 270px;
         float: left;
     }
 
     .main2_bg .div{
-        width: 190px;
-        height: 190px;
+        width: 130px;
+        height: 130px;
         float: left;
-        margin-right: 10px;
+        margin-right: 0px;
     }
 
 
@@ -994,6 +995,9 @@ s
         margin-left: 0px;
     }
 
+    .main2_bg .div3,.main2_bg .div4,.main2_bg .div6{
+        margin-left: 10px;
+    }
 
 
     .main2_bg .div2,.main2_bg .div4,.main2_bg .div5,.main2_bg .div6{
@@ -1002,14 +1006,16 @@ s
 
     .main2_bg .div3 h1{
         font-family: 'Pacifico', cursive;
-        font-size: 25px;
+        font-size:20px;
         border-left: 6px solid black;
         padding-left: 20px;
+        line-height: 1;
+        font-weight: lighter;
     }
 
     .main2_bg .div3 p{
-        margin-top: 20px;
-        font-size: 12px;
+        margin-top: 10px;
+        font-size: 10px;
         margin-left: 25px;
         color: black;
     }
