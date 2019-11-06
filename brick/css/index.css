@@ -451,7 +451,7 @@ footer{
         display: block;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        
+        font-size: 14px;
         
     }
     
@@ -648,7 +648,7 @@ footer{
         display: block;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        
+        font-size: 12px;
         
     }
     
@@ -854,6 +854,7 @@ footer{
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         
+        font-size: 11px;
         
     }
     
