@@ -11,7 +11,7 @@ body {
     height: 0%;
     width: 100%;
     position: fixed;
-  z-index: 10;
+    z-index: 10;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
@@ -122,8 +122,8 @@ p {
   
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-11px, 8px) ;
-    transform: rotate(-45deg) translate(-12px, 8px) ;
+    -webkit-transform: rotate(-45deg) translate(-13px, 9px) ;
+    transform: rotate(-45deg) translate(-13px, 9px) ;
 }
   
 /* Fade out the second bar */
@@ -142,15 +142,94 @@ p {
 
 
 @media screen and (max-width : 1200px) {
+    
+    .logo {
+        font-size: 35px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 40px;
+        height: 7px;
+        background-color: rgb(181, 117, 25);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
 
+    .overlay a{
+        font-size: 45px;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-13px, 9px) ;
+        transform: rotate(-45deg) translate(-13px, 9px) ;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -5px) ;
+        transform: rotate(45deg) translate(-9px, -5px) ;
+    }
+    
 }
 
 
 
 @media screen and (max-width : 800px) {
+    
+    .logo {
+        font-size: 30px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: rgb(181, 117, 25);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .overlay a{
+        font-size: 45px;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-11px, 6px) ;
+        transform: rotate(-45deg) translate(-11px, 6px) ;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -5px) ;
+        transform: rotate(45deg) translate(-9px, -5px) ;
+    }
 
 }
 
 
 @media screen and (max-width : 640px) {
+    
+    .logo {
+        font-size: 25px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 4px;
+        background-color: rgb(181, 117, 25);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .overlay a{
+        font-size: 45px;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 5px) ;
+        transform: rotate(-45deg) translate(-9px, 5px) ;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -5px) ;
+        transform: rotate(45deg) translate(-9px, -5px) ;
+    }
+
 }
