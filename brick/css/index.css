@@ -603,7 +603,19 @@ footer{
         color: black;
     }
 
-    
+
+    .foot {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .foot p{
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+
     
 }
 
@@ -808,6 +820,18 @@ footer{
         margin-left: 25px;
         color: black;
     }
+
+
+    .foot {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .foot p{
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+
 
     
     
