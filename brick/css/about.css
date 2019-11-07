@@ -127,6 +127,7 @@ body {
     height: 100%;
     
 }
+/*
 
 .about-can {
     width: 100%;
@@ -213,12 +214,17 @@ body {
     background-color: white;
     
 }
+*/
 
 .about-s {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
     background-color: #faf4e9;
+    background: url(../img/about-m.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -546,6 +552,46 @@ body {
         font-size: 14px;
 
     }
+    
+    .c-wrap {
+        width: 340px;
+        padding: 40px 0px;
+    }
+    
+    .c-title {
+        font-size: 37px;
+        margin-bottom: 20px;
+
+    }
+
+    .c-title-t {
+        margin-bottom: -70px;
+    }
+
+    .top-text {
+        width: 340px;
+        float: left;
+        margin-left: 0px;
+    }
+
+    .top-text p{
+        font-size: 14px;
+        color: black; 
+
+    }
+
+    .top-img {
+        width: 160px;
+        height: 280px;
+        float: left;
+    }
+    .top-img1 {
+    }
+
+    .top-img2 {
+        margin-left: 20px;    
+    }
+
 
 
 }
@@ -585,9 +631,9 @@ body {
 
     .top-text {
         font-family: 'Raleway', sans-serif;
-        width: 208px;
+        width: 210px;
         float: left;
-        margin-left: 10px;
+        margin-left: 0px;
         padding: 0px 20px 20px 20px;
     }
 
@@ -597,5 +643,49 @@ body {
         color: black; 
 
     }
+    
+    .c-wrap {
+        width: 270px;
+        padding: 40px 0px;
+    }
+    
+    .c-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+
+    }
+
+    .c-title-t {
+        margin-bottom: -70px;
+    }
+
+    .top-text {
+        font-family: 'Raleway', sans-serif;
+        width: 270px;
+        float: left;
+        margin-left: 0px;
+    }
+
+    .top-text p{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+        color: black; 
+        padding: 0px 40px;
+
+    }
+
+    .top-img {
+        width: 125px;
+        height: 240px;
+        overflow: hidden;
+        float: left;
+    }
+    .top-img1 {
+    }
+
+    .top-img2 {
+        margin-left: 20px;    
+    }
+
 }
 
