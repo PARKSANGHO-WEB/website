@@ -416,17 +416,16 @@ footer{
 @media screen and (max-width : 1200px) {
 
     .bx-caption h1 {
-        font-size:45px;
-        line-height: 1.0;
+        font-size:65px;
+        line-height: 1.2;
     }
 
    .bx-caption div.busa p{
         font-size: 14px;
-       width: 115px;
-       padding: 8px;
-        margin-top: 20px;
+       width: 120px;
+       padding: 7px;
+        margin-top: 30px;
     }
-    
     
     .ml1 .in .back{
         display: none;
@@ -624,18 +623,16 @@ footer{
 @media screen and (max-width : 800px) {
 
     .bx-caption h1 {
-        font-size:35px;
-        line-height: 1.0;
+        font-size:60px;
+        line-height: 1.2;
     }
 
    .bx-caption div.busa p{
-        font-size: 12px;
-       width: 100px;
+        font-size: 14px;
+       width: 120px;
        padding: 7px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
-    
-    
     
     .ml1 .in .back{
         display: none;
@@ -841,15 +838,15 @@ footer{
 
 @media screen and (max-width : 640px) {
     .bx-caption h1 {
-        font-size:25px;
+        font-size:50px;
         line-height: 1.2;
     }
 
    .bx-caption div.busa p{
-        font-size: 11px;
-       width: 100px;
+        font-size: 14px;
+       width: 120px;
        padding: 7px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
     
     
