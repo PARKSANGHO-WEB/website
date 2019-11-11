@@ -56,6 +56,25 @@ body {
     
 }
 
+.contact-w{
+    overflow: hidden;
+    background-color: white;
+}
+
+.ml-w {
+    width: 820px;
+    margin:  auto;
+    overflow: hidden;
+}
+
+.map-w {
+    width: 400px;
+    height: 500px;
+    float: left;
+    margin: 0 auto;
+}
+
+
 .input-w {
     width: 400px;
     float: left;
@@ -103,25 +122,6 @@ body {
     content: '';
     
     clear: both;
-}
-
-
-.contact-w{
-    overflow: hidden;
-    background-color: white;
-}
-
-.ml-w {
-    width: 820px;
-    margin:  auto;
-    overflow: hidden;
-}
-
-.map-w {
-    width: 400px;
-    height: 500px;
-    float: left;
-    margin: 0 auto;
 }
 
 
