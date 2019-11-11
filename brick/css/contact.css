@@ -251,7 +251,158 @@ body {
         font-size: 14px;
 
     }
-    
+
+    .ml-w {
+        width: 640px;
+        margin:  auto;
+        overflow: hidden;
+    }
+
+    .map-w {
+        width: 340px;
+        height: 500px;
+        float: left;
+        margin: 0 auto;
+    }
+
+
+    .input-w {
+        width: 280px;
+        float: left;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+
+    .input-w h1{
+
+        font-family: 'Pacifico', cursive;
+    }
+
+    .left-w {
+        width: 340px;
+        overflow: hidden;
+    }
+
+    .input-w .input1{
+        width: 280px;
+        float: left;
+    }
+    .input-w .input2{
+        width: 280px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .input-w .input3 {
+        width: 280px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .input input {
+        height: 50px;
+    }
+
+    .input3 input {
+        padding-top: 20px;
+        padding-bottom: 98px;
+    }
+
+    .clear {
+        content: '';
+
+        clear: both;
+    }
+
+
+
+    .ml-w h1{
+        font-size: 50px;
+        font-family: 'Pacifico', cursive;
+        border-left: 5px solid #b57519;
+        padding-left: 20px;
+        margin: 40px 0px;
+    }
+
+
+
+    .adre {
+        width: 180px;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .subc {
+        width: 180px;
+        padding-top: 100px;
+    }
+
+    .subc p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+
+    .btn-w{
+        clear: both;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .btn-w button{
+        background: rgb(115, 71, 48);
+        border: 0px;
+    }
+
+
+
+    .btn-w button:hover {
+        background: rgb(181, 117, 25);
+    }
+
+
+    .btn-w button p{
+        margin-bottom: 0px!important;
+        color: white;
+    }
+
+
+    .infor {
+        width: 920px;
+        margin:  0 auto;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .infor-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        color: black;
+    }
+
+    .infor-con {
+        width: 300px;
+        font-size: 20px;
+        color: gray;
+        font-family: 'Noto Sans KR', sans-serif;
+        float: left;
+    }
+
+    .infor-con:nth-child(3),
+    .infor-con:nth-child(4) {
+        margin-left: 10px;
+    }
+
+
+    .infor-con span {
+        cursor: pointer;
+        color: rgb(181, 117, 25);
+    }
 
 
 
@@ -279,6 +430,159 @@ body {
 
     }
     
+    .ml-w {
+        width: 340px;
+        margin:  auto;
+        overflow: hidden;
+    }
+
+    .map-w {
+        width: 400px;
+        height: 500px;
+        float: left;
+        margin: 0 auto;
+    }
+
+
+    .input-w {
+        width: 400px;
+        float: left;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+
+    .input-w h1{
+
+        font-family: 'Pacifico', cursive;
+    }
+
+    .left-w {
+        width: 400px;
+        overflow: hidden;
+    }
+
+    .input-w .input1{
+        width: 390px;
+        float: left;
+    }
+    .input-w .input2{
+        width: 390px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .input-w .input3 {
+        width: 390px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .input input {
+        height: 50px;
+    }
+
+    .input3 input {
+        padding-top: 20px;
+        padding-bottom: 98px;
+    }
+
+    .clear {
+        content: '';
+
+        clear: both;
+    }
+
+
+
+    .ml-w h1{
+        font-size: 50px;
+        font-family: 'Pacifico', cursive;
+        border-left: 5px solid #b57519;
+        padding-left: 20px;
+        margin: 40px 0px;
+    }
+
+
+
+    .adre {
+        width: 180px;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .subc {
+        width: 180px;
+        padding-top: 100px;
+    }
+
+    .subc p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+
+    .btn-w{
+        clear: both;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .btn-w button{
+        background: rgb(115, 71, 48);
+        border: 0px;
+    }
+
+
+
+    .btn-w button:hover {
+        background: rgb(181, 117, 25);
+    }
+
+
+    .btn-w button p{
+        margin-bottom: 0px!important;
+        color: white;
+    }
+
+
+    .infor {
+        width: 920px;
+        margin:  0 auto;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .infor-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        color: black;
+    }
+
+    .infor-con {
+        width: 300px;
+        font-size: 20px;
+        color: gray;
+        font-family: 'Noto Sans KR', sans-serif;
+        float: left;
+    }
+
+    .infor-con:nth-child(3),
+    .infor-con:nth-child(4) {
+        margin-left: 10px;
+    }
+
+
+    .infor-con span {
+        cursor: pointer;
+        color: rgb(181, 117, 25);
+    }
+
+
 }
 
 
@@ -303,6 +607,159 @@ body {
 
     }
 
+
+
+    .ml-w {
+        width: 270px;
+        margin:  auto;
+        overflow: hidden;
+    }
+
+    .map-w {
+        width: 400px;
+        height: 500px;
+        float: left;
+        margin: 0 auto;
+    }
+
+
+    .input-w {
+        width: 400px;
+        float: left;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+
+    .input-w h1{
+
+        font-family: 'Pacifico', cursive;
+    }
+
+    .left-w {
+        width: 400px;
+        overflow: hidden;
+    }
+
+    .input-w .input1{
+        width: 390px;
+        float: left;
+    }
+    .input-w .input2{
+        width: 390px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .input-w .input3 {
+        width: 390px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .input input {
+        height: 50px;
+    }
+
+    .input3 input {
+        padding-top: 20px;
+        padding-bottom: 98px;
+    }
+
+    .clear {
+        content: '';
+
+        clear: both;
+    }
+
+
+
+    .ml-w h1{
+        font-size: 50px;
+        font-family: 'Pacifico', cursive;
+        border-left: 5px solid #b57519;
+        padding-left: 20px;
+        margin: 40px 0px;
+    }
+
+
+
+    .adre {
+        width: 180px;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .subc {
+        width: 180px;
+        padding-top: 100px;
+    }
+
+    .subc p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+
+    .btn-w{
+        clear: both;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .btn-w button{
+        background: rgb(115, 71, 48);
+        border: 0px;
+    }
+
+
+
+    .btn-w button:hover {
+        background: rgb(181, 117, 25);
+    }
+
+
+    .btn-w button p{
+        margin-bottom: 0px!important;
+        color: white;
+    }
+
+
+    .infor {
+        width: 920px;
+        margin:  0 auto;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .infor-title {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        color: black;
+    }
+
+    .infor-con {
+        width: 300px;
+        font-size: 20px;
+        color: gray;
+        font-family: 'Noto Sans KR', sans-serif;
+        float: left;
+    }
+
+    .infor-con:nth-child(3),
+    .infor-con:nth-child(4) {
+        margin-left: 10px;
+    }
+
+
+    .infor-con span {
+        cursor: pointer;
+        color: rgb(181, 117, 25);
+    }
 
 
 }
