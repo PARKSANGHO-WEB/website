@@ -224,7 +224,8 @@ body {
 
 .foot p {
     margin: 0px;
-    font-size: 120%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -408,7 +409,15 @@ body {
         display: block;
     }
 
+    .foot {
+        padding: 80px 0px 80px 0px;
+    }
 
+    .foot p{
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
 
 }
 
@@ -441,45 +450,41 @@ body {
     }
 
     .map-w {
-        width: 400px;
-        height: 500px;
+        width: 340px;
+        height: 300px;
         float: left;
         margin: 0 auto;
     }
 
 
     .input-w {
-        width: 400px;
+        width: 340px;
         float: left;
-        margin-left: 20px;
-        overflow: hidden;
+        margin-left: 0px;
     }
 
-
-    .input-w h1{
-
-        font-family: 'Pacifico', cursive;
-    }
 
     .left-w {
-        width: 400px;
+        width: 340px;
         overflow: hidden;
     }
 
     .input-w .input1{
-        width: 390px;
-        float: left;
+        width: 340px;
+        margin-top: 20px;
     }
+    
+    
     .input-w .input2{
-        width: 390px;
+        width: 340px;
         float: left;
         margin-top: 20px;
     }
 
     .input-w .input3 {
-        width: 390px;
+        width: 340px;
         float: left;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .input input {
@@ -487,6 +492,7 @@ body {
     }
 
     .input3 input {
+        margin-top: 20px;
         padding-top: 20px;
         padding-bottom: 98px;
     }
@@ -500,7 +506,7 @@ body {
 
 
     .ml-w h1{
-        font-size: 45px;
+        font-size: 40px;
         font-family: 'Pacifico', cursive;
         border-left: 5px solid #b57519;
         padding-left: 20px;
@@ -539,21 +545,8 @@ body {
         border: 0px;
     }
 
-
-
-    .btn-w button:hover {
-        background: rgb(181, 117, 25);
-    }
-
-
-    .btn-w button p{
-        margin-bottom: 0px!important;
-        color: white;
-    }
-
-
     .infor {
-        width: 640px;
+        width: 340px;
         margin:  0 auto;
         overflow: hidden;
         margin-top: 40px;
@@ -563,13 +556,16 @@ body {
     .infor-title {
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
         color: black;
+        padding-top: 40px;
+        margin-bottom: 20px;
+        border-top: 2px solid black;
     }
 
     .infor-con {
-        width: 200px;
-        font-size: 18px;
+        width: 340px;
+        font-size: 16px;
         color: gray;
         font-family: 'Noto Sans KR', sans-serif;
         float: left;
@@ -577,13 +573,29 @@ body {
 
     .infor-con:nth-child(3),
     .infor-con:nth-child(4) {
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
 
     .infor-con span {
         cursor: pointer;
         color: rgb(181, 117, 25);
+    }
+
+
+    .infor-con span {
+        display: inline;
+    }
+
+
+    .foot {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .foot p{
+        color: white;
+        font-size: 15px;
+        text-align: center;
     }
 
 
@@ -613,6 +625,7 @@ body {
 
 
 
+    
     .ml-w {
         width: 270px;
         margin:  auto;
@@ -620,45 +633,41 @@ body {
     }
 
     .map-w {
-        width: 400px;
-        height: 500px;
+        width: 270px;
+        height: 300px;
         float: left;
         margin: 0 auto;
     }
 
 
     .input-w {
-        width: 400px;
+        width: 270px;
         float: left;
-        margin-left: 20px;
-        overflow: hidden;
+        margin-left: 0px;
     }
 
-
-    .input-w h1{
-
-        font-family: 'Pacifico', cursive;
-    }
 
     .left-w {
-        width: 400px;
+        width: 270px;
         overflow: hidden;
     }
 
     .input-w .input1{
-        width: 390px;
-        float: left;
+        width: 270px;
+        margin-top: 20px;
     }
+    
+    
     .input-w .input2{
-        width: 390px;
+        width: 270px;
         float: left;
         margin-top: 20px;
     }
 
     .input-w .input3 {
-        width: 390px;
+        width: 270px;
         float: left;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .input input {
@@ -666,6 +675,7 @@ body {
     }
 
     .input3 input {
+        margin-top: 20px;
         padding-top: 20px;
         padding-bottom: 98px;
     }
@@ -679,9 +689,7 @@ body {
 
 
     .ml-w h1{
-        font-size: 50px;
-        font-family: 'Pacifico', cursive;
-        border-left: 5px solid #b57519;
+        font-size: 35px;
         padding-left: 20px;
         margin: 40px 0px;
     }
@@ -709,54 +717,30 @@ body {
     .btn-w{
         clear: both;
         width: 100px;
-        margin: 0 auto;
         margin-top: 20px;
     }
 
-    .btn-w button{
-        background: rgb(115, 71, 48);
-        border: 0px;
-    }
-
-
-
-    .btn-w button:hover {
-        background: rgb(181, 117, 25);
-    }
-
-
-    .btn-w button p{
-        margin-bottom: 0px!important;
-        color: white;
-    }
-
-
     .infor {
-        width: 920px;
-        margin:  0 auto;
-        overflow: hidden;
+        width: 270px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
     .infor-title {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-        color: black;
+        font-size: 18px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+        border-top: 2px solid black;
     }
 
     .infor-con {
-        width: 300px;
-        font-size: 20px;
-        color: gray;
-        font-family: 'Noto Sans KR', sans-serif;
-        float: left;
+        width: 270px;
+        font-size: 14px;
     }
 
     .infor-con:nth-child(3),
     .infor-con:nth-child(4) {
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
 
@@ -766,4 +750,18 @@ body {
     }
 
 
+    .infor-con span {
+        display: inline;
+    }
+
+    .foot {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .foot p{
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    
 }
