@@ -150,7 +150,7 @@ body, html{
 @media screen and (max-width : 1200px) {
 
     .menu-wrap {
-        width: 820px;
+        width: 640px;
     }
 
     .sub-t{
@@ -162,15 +162,39 @@ body, html{
     }
 
     .menu-wrap .menu-con {
-        width: 30%;
+        width: 47.5%;
         float: left;
         margin-top: 40px;
         cursor: pointer;
     }
 
+    .menu-wrap .menu-con1,
+    .menu-wrap .menu-con2{
+        margin-top: 0px;
+    }
+
+
+
+
+    .menu-wrap .menu-con1,
+    .menu-wrap .menu-con3,
+    .menu-wrap .menu-con5 {
+        margin-left: 0%;
+    }
+
+    .menu-wrap .menu-con2,
+    .menu-wrap .menu-con4,
+    .menu-wrap .menu-con6 {
+        margin-left: 5%;
+    }
+
+
+
     .figure p {
-        font-size: 17px;
-        line-height: 2.3;
+        font-size: 16px;
+        line-height:1.4;
+        padding: 10px;
+
     }
 
 
