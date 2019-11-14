@@ -3,12 +3,21 @@
     padding: 0px;
 }
 
-html, body{
+
+html,body {
     width: 100%;
     height: 100%;
-    background: url(../img/page1-b.png) no-repeat;
-    background-size: 100% 100%;
-    background-position: fixed;
+    
+}
+
+
+body{
+    background-image: url(../img/page1-b.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh; 
 }
 
 /**************preload******************/
@@ -23,13 +32,18 @@ a {
     text-decoration: none;
 }
 
-nav {
+.pc-nav {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 60px;
-    padding: 10px 0px;
+    padding-top: 20px;
+    z-index: 99;
+}
+
+.containerN {
+    display: none;
     z-index: 999;
 }
 
@@ -37,7 +51,7 @@ nav {
     width: 160px;
     float: left;
     position: absolute;
-    left: 50px;
+    left: 20px;
 }
 
 .menu ul {
@@ -70,14 +84,6 @@ nav {
 .menu ul li a:hover{
     color: black;
     transition-duration: 1s;
-}
-
-.page1-b {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: url('../img/page1-b.png') no-repeat;
-    background-size: 100% auto;
 }
 
 .page1 {
@@ -176,6 +182,16 @@ nav {
     left: 50%;
     transform: translateX(-50%);
 }
+.h-bar2 {
+    position: absolute;
+    width: 2px;
+    height: 140px;
+    background-color: black;
+    bottom: -70px;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .page2 .p2-title {
     width: 60%;
@@ -211,6 +227,19 @@ nav {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
 }
 
+.more-btn:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+
+
+.page3 {
+    background-color: white;
+}
 
