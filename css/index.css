@@ -250,7 +250,7 @@ a {
 .page3 {
     width: 100%;
     background-color: white;
-    padding: 100px 0px;
+    padding: 70px 0px;
 }
 
 
@@ -259,4 +259,6 @@ a {
     color: black;
     text-align: center;
     font-size: 65px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }

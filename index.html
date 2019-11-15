@@ -5,13 +5,15 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Righteous|Nunito+Sans|Roboto|Quicksand|Vidaloka|Montserrat|Noto+Sans&display=swap" rel="stylesheet">
     
     <meta charset="UTF-8">
     <title>SANGHOW-PORTFOLIO</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
 		<div id="loader-wrapper">
@@ -76,7 +78,7 @@
         <div class="h-bar"></div>
         <div class="p2-title">
             <div class="about-title">
-                <h1>ABOUT</h1>
+                <h1 class="item" data-aos="fade-up">ABOUT</h1>
             </div>
             <div class="p2-ment">
                 <h1 class="intro">MY&nbsp;&nbsp;NAME&nbsp;&nbsp;IS&nbsp;&nbsp;SANGHOW</h1>
@@ -93,10 +95,14 @@
     <div class="page3">
         <div class="works">
             <div class="work-title">
-                <h1>MY WORKS</h1>
+                <h1 class="item" data-aos="fade-up">MY WORKS</h1>
             </div>
         </div>
     </div>
-    
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
 </html>
