@@ -70,7 +70,6 @@ a {
     margin:  0 auto;
     float: left;
     font-family: 'Montserrat', sans-serif;
-
     padding: 18px 0px;
 
 }
@@ -168,7 +167,7 @@ a {
 .page2 {
     position: relative;
     width: 100%;
-    padding: 50px 0px;
+    padding:  70px 0px;
     background-color: #fff;
 }
 
@@ -193,19 +192,28 @@ a {
     transform: translateX(-50%);
 }
 
+
+.about-title h1 {
+    font-family: 'Righteous', cursive;
+    color: black;
+    text-align: center;
+    font-size: 65px;
+    padding: 80px 0px 40px 0px;
+}
+
+
 .page2 .p2-title {
     width: 60%;
     margin: 0 auto;
     overflow: hidden;
 }
 .page2 .p2-title .p2-ment{
-    padding: 100px 0px;
+    padding-bottom: 100px;
 }
 
 .page2 .p2-title .p2-ment h1 {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 70px;
-    line-height: 0.6em;
+    font-size: 30px;
     color: black;
     text-shadow: 10px 10px 6px gray;
     text-align: center;
@@ -240,6 +248,15 @@ a {
 
 
 .page3 {
+    width: 100%;
     background-color: white;
+    padding: 100px 0px;
 }
 
+
+.work-title h1 {
+    font-family: 'Righteous', cursive;
+    color: black;
+    text-align: center;
+    font-size: 65px;
+}
