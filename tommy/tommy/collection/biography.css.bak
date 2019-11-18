@@ -1,0 +1,73 @@
+*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif; }
+li{list-style:none; }
+a{text-decoration:none; color:#00174f;}
+img{border:0; margin:0; padding:0;}
+
+
+header{width:100%; height:68px; background-color:#141821; overflow:hidden;}
+#logo img{width:265px; height:15px; margin-top:25px;margin-left:35px; float:left;}	
+#nav{width:638px;margin:0 auto; margin-top:15px;}
+#nav li{float:left; margin:0px 25px;}
+#nav li a {font-size:14px; font-weight:normal; color:#eee;}
+#nav li a:hover{color:#b30c2f;}
+
+#search_wrap{float:right; margin-right:35px; margin-top:-2px;}
+#search_wrap input{ width:136px; height:20px;}
+#search_wrap img{width:16px; height:16px; position:relative; top:5px; left:-30px;}
+
+body{width:100%; background-color:#f5f3f1;}
+section{width:1200px; margin:0 auto;}
+section #menu_wrap{width:666px; height:14px; margin:0 auto; margin-top:50px;}
+section #menu_wrap #about_menu{width:100%; overflow:hidden;}
+section #menu_wrap #about_menu li{float:left; border-right:1.5px solid black;}
+section #menu_wrap #about_menu li:nth-child(5){border:none;}
+section #menu_wrap #about_menu li a{font-size:13px; margin:0 17px; color:#141821;}
+section #menu_wrap #about_menu li a:hover{color:#b30c2f;}
+section #menu_wrap #about_menu li:nth-child(1) a{color:#b30c2f;}
+
+
+section #sub_logo h3{text-align:center; margin-top:50px;}
+section #con_1 {margin-top:60px;}
+section #con_1 #sus_text h4{font-size:60px; color:#00174f; font-weight:normal;}
+section #con_1 #sus_text h4 span{font-size:78px; color:#b30c2f;}
+section #con_1 #text_wrap {width:100%; margin-top:60px; overflow:hidden;}
+section #con_1 #text_wrap .vision_text{float:left;width:520px;}
+section #con_1 #text_wrap .vision_text p:nth-child(1){font-size:16px;}
+section #con_1 #text_wrap .vision_text p:nth-child(2){font-size:13px;float:left;width:520px;}
+section #con_1 #text_wrap .vision_text p:nth-child(2) span{color:#b30c3f;}
+section #con_1 #text_wrap .vision_img{width:640px; height:380px; float:left; margin:40px 0 0 40px;}
+
+section #con_2 {width:100%; margin-top:100px;}
+section #con_2 h4{font-size:60px; color:#00174f; font-weight:normal;}
+
+
+section #con_2 h4 .prin_color{color:#b30c2f;}
+section #con_2 h4 .prin_color .three{font-size:78px;}
+section #con_2 #prin_wrap{ margin-top:60px; overflow:hidden;}
+section #con_2 #prin_wrap .prin_left {float:left;border-right:3px solid #cecdcd;}
+section #con_2 #prin_wrap .prin_left .prin_title{font-size:28px; color:#00174f; line-height:1.3; margin-top:40px;}
+section #con_2 #prin_wrap .prin_left .prin_title span{color:#b30c2f;}
+section #con_2 #prin_wrap .prin_left .prin_text p{width:200px; font-size:16px; width:350px;}
+section #con_2 #prin_wrap .prin_left div img{ width:365px; height:375px; padding-right:36px;}
+
+section #con_2 #prin_wrap .prin_left div .prin_title{ width:365px; padding-right:36px;}
+section #con_2 #prin_wrap .prin_right {float:left;}
+
+footer{width:100%; height:30px; padding-top:15px; background-color:#fff; margin-top:90px;}
+footer #change_con{float:left; margin-left:50px;}
+footer #change_con a{font-size:11px; color:#4f5259;}
+
+footer #foot_info {width:50%; margin:0 auto; }
+footer #foot_info ul{}
+footer #foot_info ul li{float:left; margin-left:30px;}
+footer #foot_info ul li:nth-child(1){margin-left:0px;}
+footer #foot_info ul li{font-size:11px; color:#4f5259;}
+
+footer #gnb {width:175px;float:right; margin-right:50px;}
+footer #gnb p{float:left}
+footer #gnb p a{font-size:11px; color:#4f5259;}
+footer #gnb ul{float:left; margin-left:13px;}
+footer #gnb ul li{float:left; margin-left:5px;}
+footer #gnb ul li a img{width:20px; height:20px;}
+
+

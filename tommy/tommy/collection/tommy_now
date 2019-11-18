@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" type="text/css" href="collection.css" />
+  <script type="text/javascript" src="main.js"></script>
+  <title>Document</title>
+ </head>
+ <body>	
+	<header>
+ 		<h1 id="logo"><img src="top/logo.png" alt="tommy hilfiger logo입니다." /></h1>
+		<ul id="nav">
+            <li><h2><a href="#">ABOUT US</a></h2></li>
+            <li><h2><a href="#">RUNWAY SHOW</a></h2></li>
+            <li><h2><a href="#">COLLECTION</a></h2></li>
+            <li><h2><a href="#">NEWSROOM</a></h2></li>
+            <li><h2><a href="#">STORE</a></h2></li>	
+		</ul>
+		<div id="search_wrap">
+			<input type="textbox"   />
+			<a href="#"><img src="top/top_search.png" alt="검색 아이콘입니다." /></a>
+		</div>
+	</header>
+    <section>
+        <article id="main">
+            <div id="sub_menu">
+                <ul>
+                    <li><a href="">TOMMYNOW</a></li>
+                    <li><a href="">HOLIDAY</a></li>
+                    <li><a href="">TOMMYXGIGI</a></li>
+                    <li><a href="">TOMMYJEANS</a></li>
+                    <li><a href="">MEN</a></li>
+                    <li><a href="">WOMEN</a></li>
+                    <li><a href="">KIDS</a></li>
+                    <li><a href="">FRAGRANCE</a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="con_wrap contents_now">
+            <div>
+                <iframe width="100%" height="700px" src="https://www.youtube.com/embed/UTADUH-Ac9A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div id="sub_wrap">
+                <div id="now_sub">
+                    <p>WATCH THE RUNWAY</p>
+                    <p>Tune in and see our Fall 2017 Men’s and Women’s Runway Show in London. The rock-themed collection is available to shop in stores.</p>
+                    <p><a href="#">FIND A STORE</a></p>
+                </div>
+                <div id="sub_img"><img src="collection_img/collection_tommynow/tommy.png" alt="tommynow 페이지 서브 이미지입니다."></div>
+            </div>
+        </article>
+        <article class="con_wrap contents_holi">
+            <div id="main_img">
+                <img src="collection_img/collection_holiday/holiday_big.png" alt="collection holiday 페이지 메인 이미지입니다.">
+            </div>
+            <div id="holi_subwrap">
+                <div id="holi_sub1">
+                    <div id="holi_bag">
+                        <img src="collection_img/collection_holiday/holi_bag.png" alt="collection holiday 가방 이미지입니다.">
+                    </div>
+                    <div class="text_left">
+                        <p>FESTIVE FAVORITES</p>
+                        <p>Gift yourself with vivid colors, rich textures and luxurious fabrications.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                    </div>
+                </div>
+                <div id="holi_sub2">
+                    <img src="collection_img/collection_holiday/holi_girl.png" alt="collection holiday 페이지 여성 이미지입니다.">
+                </div>
+                <div id="holi_sub3">
+                    <img src="collection_img/collection_holiday/holi_man.png" alt="collection holiday 페이지 남성 이미지입니다.">
+                </div>
+                <div id="holi_sub4">
+                    <div >
+                        <img src="collection_img/collection_holiday/holi_girl_2.png" alt="collection holiday 페이지 여성 작은 이미지입니다.">
+                    </div>
+                    <div class="text_right">
+                        <p>OH, WHAT A NIGHT!</p>
+                        <p>Perfect party-dressing picks for the holiday season and beyond.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="con_wrap contents_gigi">
+            <div id="gigi_main">
+                <img src="collection_img/collection_gigi/gigi_main.png" alt="collection tommy x gigi 메인 이미지입니다.">
+            </div>
+            <div id="gigi_subwrap">       
+                    <div id="gigi_sub1">
+                        <img src="collection_img/collection_gigi/gigi_1.png" alt="collection tommy x gigi 서브 1번 이미지입니다.">
+                    </div>
+                    <div id="gigi_sub2">
+                        <div>
+                            <img src="collection_img/collection_gigi/gigi_2.png"  alt="collection tommy x gigi 서브 2번 이미지입니다.">
+                        </div>
+                        <div>
+                            <img src="collection_img/collection_gigi/gigi_3.png" alt="collection tommy x gigi 서브 3번 이미지입니다.">
+                        </div>
+                    </div>
+                    <div id="gigi_sub3">
+                        <img src="collection_img/collection_gigi/gigi_4.png" alt="collection tommy x gigi 서브 4번 이미지입니다.">
+                        <div id="gigi_text">
+                            <p>TOMMY<span>X</span>GIGI</p>
+                            <p>That's right… Gigi's back! The next season of TOMMYXGIGI lands in-store on September 20. Can't wait that long? Here's a sneak peak of what's coming. Stay tuned…</p>
+                            <p><a href="">FIND A STORE</a></p>
+                        </div>
+                    </div>
+                </div>  
+        </article>
+        <article class="con_wrap contents_jeans">
+            <div id="jeans_main">
+                <img src="collection_img/collection_tommyjean/jeans_main1.png" alt="collection tommyjeans 메인 이미지입니다.">
+            </div>
+            <div id="jean_subwrap">
+                <div id="jean_sub1">
+                    <img src="collection_img/collection_tommyjean/jean_1_1.png" alt="collection tommyjeans 1번 컨텐츠 서브1번 이미지입니다.">
+                </div>
+                <div id="jean_sub2">
+                    <img src="collection_img/collection_tommyjean/jean_1_2.png" alt="collection tommyjeans 1번 컨텐츠 서브2번 이미지입니다.">
+                </div>
+                <div id="jean_sub3">
+                    <p>GO <span>WILD</span></p>
+                    <p>Old favorites, remixed for right now. Denim is loveworn, distressed and patched, jackets oversized and slouchy</p>
+                    <p><a href="">FIND A STORE</a></p>
+                </div>
+            </div>
+            <div id="tommy_jeans2">
+                <div id="jeans_main2">
+                    <img src="collection_img/collection_tommyjean/jeans_main2.png" alt="collection tommyjeans 메인 이미지입니다.">
+                </div>
+                <div id="jean_subwrap2">
+                    <div id="jean_sub2_1">
+                        <img src="collection_img/collection_tommyjean/jean_2_1.png" alt="collection tommyjeans 2번 컨텐츠 서브1번 이미지입니다.">
+                    </div>
+                    <div id="jean_sub2_2">
+                        <img src="collection_img/collection_tommyjean/jean_2_2.png" alt="collection tommyjeans 2번 컨텐츠 서브2번 이미지입니다.">
+                    </div>
+                    <div id="jean_sub2_3">
+                        <p>THE HIT <span>LIST</span></p>
+                        <p>Style to stand out. Nineties plaid made modern, on shirts and puffer jackets for him and dresses for her. Just add attitude.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                        <div id="text_img">
+                            <img src="collection_img/collection_tommyjean/jean_2_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tommy_jeans3">
+                <div id="jeans_main3">
+                    <img src="collection_img/collection_tommyjean/jeans_main3.png" alt="collection tommyjeans 메인 이미지입니다.">
+                </div>
+                <div id="jean_subwrap3">
+                    <div id="jean_sub3_1">
+                        <img src="collection_img/collection_tommyjean/jean_3_1.png" alt="collection tommyjeans 3번 컨텐츠 서브1번 이미지입니다.">
+                    </div>
+                    <div id="jean_sub3_2">
+                        <img src="collection_img/collection_tommyjean/jean_3_2.png" alt="collection tommyjeans 3번 컨텐츠 서브2번 이미지입니다.">
+                    </div>
+                    <div id="jean_sub3_3">
+                        <p>TOMMY JEANSXHYPEBEAST</p>
+                        <p>In partnership with cult digital platform HYPEBEAST, Tommy Jeans presents the fourth Capsule Collection, shot on the streets of London and Berlin. Bold logos, bright pops of color and ’90s-inspired outerwear celebrate the contemporary youth culture at the heart of the brand.</p>
+                        <p><a href="">FIND YOUR NEAREST STORE TO BUY</a></p>
+                        <div id="text_img2">
+                            <img src="collection_img/collection_tommyjean/jean_3_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="con_wrap contents_men">
+            <div id="men_main">
+                <img src="collection_img/collection_men/men_main.png" alt="collection men 메인 이미지입니다.">
+            </div>
+            <div id="men_subwrap">    
+                <div id="men_sub1_1">
+                    <img src="collection_img/collection_men/men_1_1.png" alt="collection men 1번 컨텐츠 서브1번 이미지입니다.">
+                </div>
+                <div id="men_sub1_2">
+                    <img src="collection_img/collection_men/men_1_2.png" alt="collection men 1번 컨텐츠 서브2번 이미지입니다.">
+                </div>    
+                <div id="men_sub1_3">
+                    <p>TARTAN REMIX</p>
+                    <p>Stripes and plaid amp your outfit up to 11.</p>
+                    <p><a href="">FIND A STORE</a></p>
+                    <div id="men_sub3_img">
+                        <img src="collection_img/collection_men/men_1_3.png" alt="collection men 1번 컨텐츠 서브2번 이미지입니다.">
+                    </div>    
+                </div>
+            </div>
+            <div id="tommy_men2">
+                <div id="men_main2">
+                    <img src="collection_img/collection_men/men_main2.png" alt="collection men 메인 이미지입니다.">
+                </div>
+                <div id="men_subwrap2">
+                    <div id="men_sub2_1">
+                        <img src="collection_img/collection_men/men_2_1.png" alt="collection men 2번 컨텐츠 서브1번 이미지입니다.">
+                    </div>
+                    <div id="men_sub2_2">
+                        <img src="collection_img/collection_men/men_2_2.png" alt="collection men 2번 컨텐츠 서브2번 이미지입니다.">
+                    </div>
+                    <div id="men_sub2_3">
+                        <p>MODERN <span>MOVES</span></p>
+                        <p>Color-blocking and varsity inspiration score points.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="con_wrap contents_women">
+            <div id="women_main">
+                <img src="collection_img/collection_woman/women_main1.png" alt="collection women 메인 이미지입니다.">
+            </div>
+            <div id="women_subwrap">    
+                <div id="women_sub1_1">
+                    <img src="collection_img/collection_woman/women_1_1.png" alt="collection men 1번 컨텐츠 서브1번 이미지입니다.">
+                </div>
+                <div id="women_sub1_2">
+                        <img src="collection_img/collection_woman/women_1_2.png" alt="collection men 1번 컨텐츠 서브2번 이미지입니다.">
+                </div>    
+                <div id="women_sub1_3">
+                    <div>
+                        <p>TEXTURE PLAYS</p>
+                        <p>Stand out in winter wool, luxe leather and revamped camo.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="women_subwrap2">
+                <div id="women_main2">
+                    <img src="collection_img/collection_woman/women_main2.png" alt="collection men 메인 이미지입니다.">
+                </div>
+                <div id="women_sub2">
+                    <div id="women_sub2_1">
+                        <img src="collection_img/collection_woman/women_2_1.png" alt="collection men 2번 컨텐츠 서브1번 이미지입니다.">
+                    </div>
+                    <div id="women_sub2_2">
+                        <p>STYLE NOTES</p>
+                        <p>Fresh for fall: tar tan, stars and lots of layers.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                        <div id="women_sub2_img">
+                            <img src="collection_img/collection_woman/women_2_2.png" alt="collection men 2번 컨텐츠 서브2번 이미지입니다.">
+                        </div>
+                    </div>                    
+                    <div id="women_sub2_3">
+                        <img src="collection_img/collection_woman/women_2_3.png" alt="collection men 2번 컨텐츠 서브2번 이미지입니다.">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="con_wrap contents_kids">
+            <div id="kids_main">
+                <img src="collection_img/collection_kids/kids_main.png" alt="">
+            </div>
+            <div id="kids_subwrap">
+                <div id="sub_wrap1">   
+                    <div id="kids_sub1">
+                        <img src="collection_img/collection_kids/kids_1.png" alt="">
+                    </div>
+                    <div id="kids_sub2">
+                        <img src="collection_img/collection_kids/kids_2.png" alt="">
+                    </div>
+                    <div id="kids_sub3">
+                        <img src="collection_img/collection_kids/kids_3.png" alt="">
+                    </div>
+                </div>
+                <div id="sub_wrap2">
+                    <div id="kids_sub4">
+                        <img src="collection_img/collection_kids/kids_4.png" alt="">
+                    </div>           
+                    <div id="sub4_text"> 
+                        <p>STRIPE &amp;PLAIDS</p>
+                        <p>Patterns put the fun in fall dressing.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                    </div> 
+                    <div id="kids_sub5">
+                        <img src="collection_img/collection_kids/kids_5.png" alt="">
+                    </div>
+                    <div id="sub5_text">    
+                        <p>GO OUTSIDE</p>
+                        <p>Bundle up with playground-ready layers.</p>
+                        <p><a href="">FIND A STORE</a></p>
+                    </div>
+                </div>
+                <div id="sub_wrap3">
+                    <div id="kids_sub6">
+                        <img src="collection_img/collection_kids/kids_6.png" alt="">
+                    </div>
+                    <div id="kids_sub7">
+                        <img src="collection_img/collection_kids/kids_7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="con_wrap contents_frag">
+            <div>
+                <img src="collection_img/collection_frag/frag_main.png" alt="">
+            </div>
+            <div id="frag_subwrap">
+                <div id="frag_sub1">
+                    <div id="frag_sub1_1">
+                        <img src="collection_img/collection_frag/frag_1.png" alt="">
+                    </div>
+                    <div id="frag_sub1_2">
+                        <img src="collection_img/collection_frag/frag_2.png" alt="">
+                    </div>
+                    <div id="frag_text1">
+                        <p><span>THE</span> GIRL</p>
+                        <p>AVAILABLE IN STORE AND IN SELECTED COUNTRIES ONLINE<br/><br/>Crisp and fresh, the fragrance was inspired by Gigi's free-spirited nature and optimistic attitude.<br/><br/>A feminine fragrance with bursts of green pear, cedar wood, violet leaf and velvety jasmine.</p>
+                    </div>
+                </div>
+                <div id="frag_sub2">
+                    <div id="frag_text2">
+                        <p>"<span>'The Girl'</span> means being true to yourself andhaving fun while you're at it".</p>
+                        <p>”for me, that’s appreciationg every moment,laughing at myself, and surrounding myself witheverything that makes me happy”. - Gigi Hadid.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+	<footer>
+		<div id="change_con"><a href="#"><p>CHANGE COUNTRY</p></a></div>
+		<div id="foot_info">
+			<ul>
+				<li><a href="#">CAREERS</a></li>
+				<li><a href="#">CONTACT US</a></li>
+				<li><a href="#">PRIVACY STATEMENT</a></li>
+				<li><a href="#">TERMS & CONDITIONS</a></li>
+				<li><a href="#">ⓒ 2015 Tommy Hilfiger Licensing, LLC. All rights reserved</a></li>
+			</ul>
+		</div>
+		<div id="gnb">
+			<p><a href="#">FOLLOW US</a></p>
+			<ul>
+				<li class="sns_icon"><a href="#"><img src="footer/facebook.jpg" alt="facebook 아이콘입니다." /></a></li>
+				<li class="sns_icon"><a href="#"><img src="footer/twitter.png" alt="twitter 아이콘입니다." /></a></li>
+				<li class="sns_icon"><a href="#"><img src="footer/google.png" alt="google 아이콘입니다." /></a></li>
+				<li class="sns_icon"><a href="#"><img src="footer/rss.png" alt="rss 아이콘입니다." /></a></li>		
+			</ul>	
+		</div>
+	</footer>	
+ </body>
+</html>
