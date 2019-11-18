@@ -259,6 +259,31 @@ a {
     color: black;
     text-align: center;
     font-size: 65px;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding: 80px 0px;
+}
+
+
+.item-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.item-con1 {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.item-con1 div{
+    width: 40%;
+    height: 400px;
+    float: left;
+    background-color: red;
+}
+
+.item-con1 .itemL {
+    margin-left: 7.5%;
+}
+.item-con1 .itemR {
+    margin-left: 5%;
 }
