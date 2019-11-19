@@ -169,6 +169,7 @@ a {
     width: 100%;
     padding:  70px 0px;
     background-color: #fff;
+/*    background-color: #A5DAF1;*/
 }
 
 .h-bar {
@@ -191,6 +192,25 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/*
+
+.page2-tri{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 400px solid #da9743;
+    border-right: 400px solid transparent;
+}
+
+.page2-tri-bot{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 400px solid #da9743;
+    border-left: 400px solid transparent;
+}
+*/
 
 
 .about-title h1 {
@@ -249,10 +269,30 @@ a {
 
 .page3 {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
+/*    background-color: #A5DAF1;*/
     padding: 70px 0px;
+    position: relative;
 }
 
+/*
+
+.page3-tri{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 400px solid #da9743;
+    border-left: 400px solid transparent;
+}
+
+.page3-tri2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 400px solid #da9743;
+    border-right: 400px solid transparent;
+}
+*/
 
 .work-title h1 {
     font-family: 'Righteous', cursive;
