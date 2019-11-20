@@ -97,12 +97,11 @@ p {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 4% !important;
-    left: 2% !important;
+    top: 15px !important;
+    left: 15px !important;
     z-index: 11;
     font-size: 40px;
-    color:  rgb(181, 117, 25);;
-    padding: 6px;
+    color:  rgb(181, 117, 25);
     width: auto;
     font-family: 'Pacifico', cursive!important;
 }
