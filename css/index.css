@@ -102,7 +102,8 @@ a {
 
 
 .page1-wrap .intro-ment{
-    width: 100%;
+    width: 90%;
+    padding-left: 10%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -110,11 +111,11 @@ a {
 }
 
 .page1-wrap .intro-ment h1 {
-    font-size: 45px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold;
+    font-size: 70px;
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
     color: #fff!important;
-    text-align: center;
+    text-align: left;
 }
 
 .page1-wrap .intro-ment h1 span {
@@ -126,13 +127,13 @@ a {
     width: 250px;
     height: 2px;
     background-color: white;
-    margin: 20px auto 20px auto;
+    margin: 20px 0px;
 
 }
 
 .page1-wrap .intro-ment .font-sns{
     width: 200px;
-    margin: 0 auto;
+    margin: 0px;
 }
 
 .page1-wrap .intro-ment .font-sns div{
@@ -147,9 +148,9 @@ a {
 .page1-wrap .intro-ment .font-sns div{
     cursor: pointer;
     float: left;
-    text-align: center;
+    text-align: left;
     width: 33%;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     transition-duration: 1s;
 }
@@ -220,6 +221,7 @@ a {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
     margin-top: 40px;
+    line-height: 2;
     text-align: center;
 }
 
@@ -276,7 +278,7 @@ a {
     color: black;
     text-align: center;
     font-size: 65px;
-    padding: 80px 0px;
+    padding-bottom: 55px;
 }
 
 .col-sm {
