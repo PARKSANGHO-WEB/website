@@ -14,8 +14,7 @@ body {
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 1);
+    background-color: rgba(255,255,255,1);
     overflow: hidden;
     transition: 0.5s;
 }
@@ -24,27 +23,69 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 80%;
     text-align: center;
+    margin: 0 auto;
   z-index: 99;
 }
-  
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: 700;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Lexend Deca', sans-serif;
+
+.overlay li {
+    text-align: center;
 }
 
-.overlay a:hover,
-.overlay a:focus {
-    color: #ccc;
+.overlay .big_menu {
+    padding: 30px 0px;
 }
-  
+
+.overlay li a {
+    color: #00174f;
+    text-decoration: underline;
+}
+
+.overlay li a:hover{
+    color: #b30c3f;
+}
+
+
+.overlay li .page_link{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif!important;
+    text-align: left;
+
+}
+
+.overlay li .sub_link {
+    width:100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.overlay li .sub_link li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.overlay li .sub_linkCOL li{
+    width: 12.5%;
+    float: left;
+    text-align: center;
+}
+
+.overlay li .sub_link li a {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b30c2f;
+}
+
+.overlay li .sub_link li a:hover {
+    color: #00174f;
+}
+
+
+
 .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -56,15 +97,13 @@ body {
     height: 100%;
 }
   
-@media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-}
+
+
+
+
+
+
+
 .open-close,
 .containerN {
     display: inline-block;
@@ -85,7 +124,7 @@ body {
 .bar1, .bar2, .bar3 {
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #b30c2f;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -110,96 +149,111 @@ body {
 
 
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width : 1200px) {
-    
-    .logo {
-        font-size: 35px;
-    }
-    
-    .bar1, .bar2, .bar3 {
-        width: 40px;
-        height: 7px;
-        background-color: rgb(181, 117, 25);
-        margin: 6px 0;
-        transition: 0.4s;
+
+    .overlay-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+      z-index: 99;
     }
 
-    .overlay a{
-        font-size: 45px;
-    }
-    
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-13px, 9px) ;
-        transform: rotate(-45deg) translate(-13px, 9px) ;
+    .overlay li {
+        text-align: center;
     }
 
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-9px, -5px) ;
-        transform: rotate(45deg) translate(-9px, -5px) ;
+    .overlay .big_menu {
+        padding: 30px 0px;
     }
-    
-}
+
+    .overlay li a {
+        color: #00174f;
+        text-decoration: underline;
+    }
+
+    .overlay li a:hover{
+        color: #b30c3f;
+    }
 
 
-
-@media screen and (max-width : 800px) {
-    
-    .logo {
+    .overlay li .page_link{
+        display: inline-block;
         font-size: 30px;
-    }
-    
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: rgb(181, 117, 25);
-        margin: 6px 0;
-        transition: 0.4s;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif!important;
+        text-align: left;
+
     }
 
-    .overlay a{
-        font-size: 45px;
-    }
-    
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-11px, 6px) ;
-        transform: rotate(-45deg) translate(-11px, 6px) ;
+    .overlay li .sub_link {
+        width:100%;
+        margin-top: 20px;
+        overflow: hidden;
     }
 
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-9px, -5px) ;
-        transform: rotate(45deg) translate(-9px, -5px) ;
+    .overlay li .sub_link li{
+        width: 20%;
+        float: left;
+        text-align: center;
     }
 
-}
-
-
-@media screen and (max-width : 640px) {
-    
-    .logo {
-        font-size: 25px;
+    .overlay li .sub_linkCOL li{
+        width: 12.5%;
+        float: left;
+        text-align: center;
     }
-    
+
+    .overlay li .sub_link li a {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        color: #b30c2f;
+    }
+
+    .overlay li .sub_link li a:hover {
+        color: #00174f;
+    }
+
+
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    #myNav.change {
+        height: 100%;
+    }
+
+    .open-close,
+    .containerN {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 12px !important;
+        right: 12px !important;
+        z-index: 11;
+    }
+
+
+
+    .containerN {
+        position: absolute;
+        width: 39px;
+        height: 39px;
+    }
     .bar1, .bar2, .bar3 {
         width: 30px;
-        height: 4px;
-        background-color: rgb(181, 117, 25);
+        height: 3px;
+        background-color: #b30c2f;
         margin: 6px 0;
         transition: 0.4s;
     }
 
-    .overlay a{
-        font-size: 45px;
-    }
-    
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 5px) ;
-        transform: rotate(-45deg) translate(-9px, 5px) ;
-    }
-
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-9px, -5px) ;
-        transform: rotate(45deg) translate(-9px, -5px) ;
-    }
-
 }
+
