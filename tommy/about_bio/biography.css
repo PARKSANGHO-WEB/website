@@ -3,11 +3,11 @@ li{list-style:none; }
 a{text-decoration:none; color:#00174f;}
 img{border:0; margin:0; padding:0;}
 
-header{width:100%; height:80px; background-color:#141821; overflow:hidden; z-index: 999;}
+header{width:100%; height:80px; background-color:#141821;  z-index: 999;}
 #logo_wrap{width: 335px; height: 80px; float: left; }
 #logo_wrap h1{margin-left: 50px; margin-top: 15px;}
 header #nav_wrap {width:675px; height: 80px;float: right;}
-#nav {width: 100%; height: 80px; overflow: hidden;}
+#nav {width: 100%; height: 80px;}
 #nav li{width: 20%;  float:left;text-align: center;}
 #nav li:nth-child(1) {margin-left:0px;}
 #nav li h2 a {font-size:16px; line-height: 80px; font-weight:normal; color:#eee;font-family: 'Montserrat', sans-serif;}
@@ -18,7 +18,6 @@ header #nav_wrap {width:675px; height: 80px;float: right;}
 
 
 body{width:100%; background-color:#f2efea;}
-
 
 .sub_menuwrap {
     width: 1100px;
@@ -49,24 +48,12 @@ body{width:100%; background-color:#f2efea;}
     margin-left: 0px;
 }
 
+ #sub_logo h2{width: 311px; margin: 0 auto;text-align:center; margin-top:80px; z-index: 9;}
 
-
-#menu_wrap{width:1100px; height:14px; margin:0 auto; margin-top:50px;}
-#menu_wrap #about_menu{width:100%; overflow:hidden; border: 2px solid #00174f; border-right: 0px;}
-#menu_wrap #about_menu li{float:left;width: 218px; text-align: center;padding: 20px 0px;    border-right: 2px solid #00174f; }
-#menu_wrap #about_menu li.selected{background-color: #00174f; }
-#menu_wrap #about_menu li a{font-size:14px;color:#141821;}
-#menu_wrap #about_menu li:nth-child(5) a{border:none;}
-#menu_wrap #about_menu li a:hover{color:#b30c2f;}
-#menu_wrap #about_menu li:nth-child(1) a{color:#b30c2f;}
-
-
- #sub_logo h2{text-align:center; margin-top:80px;}
-
- #content{margin-top:40px; line-height:1.4;}
- #content .main_title{font-size:28px;}
- #content .sub_title{font-size:16px; margin-top:30px;}
- #content .text{font-size:14px; margin-top:30px;}
+ #contents{margin-top:40px; line-height:1.4;}
+ #contents .main_title{font-size:28px;}
+ #contents .sub_title{font-size:16px; margin-top:30px;}
+ #contents .text{font-size:14px; margin-top:30px;}
 
 
 
