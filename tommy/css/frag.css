@@ -1,0 +1,197 @@
+*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif;}
+li{list-style:none; }
+a{text-decoration:none; color:#00174f;}
+img{border:0; margin:0; padding:0;}
+
+
+header{width:100%; height:80px; background-color:#141821;  z-index: 999; position: relative;}
+#logo_wrap{width: 260px; height: 15px; position: absolute; top: 50%; left: 30px; transform: translateY(-50%);}
+#logo_wrap img{width: 100%;}
+#nav {width: 100%; height: 80px;}
+#nav li{width: 20%;  float:left;text-align: center;}
+#nav li:nth-child(1) {margin-left:0px;}
+#nav li h2 a {font-size:16px; line-height: 80px; font-weight:normal; color:#eee;font-family: 'Montserrat', sans-serif;}
+#nav li  h2 a:hover{color:#b30c2f;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+body{width:100%; background-color:#f2efea;}
+section {width:100%;position: relative; top: 0; left: 0; }
+section #main{width:100%; margin: 0 auto; margin-top: 50px;}
+section #main #sub_menu {width: 1070px; margin:0 auto;overflow:hidden;}
+section #main #sub_menu ul li {float:left; text-align: center;}
+section #main #sub_menu ul li:nth-child(8) a{color:#b30c2f;}
+section #main #sub_menu ul li a{ font-size: 14px; color: #00174f;  border-right: 1.3px solid #000; padding: 0 30px;}
+section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
+section #main #sub_menu ul li a:hover{color:#b30c2f;}
+
+section .con_wrap{width:100%; margin-top:80px;}
+section .con_wrap div img{width:100%;}
+
+section .contents_frag #frag_main {width: 100%;}
+section .contents_frag #frag_main img {width: 100%;}
+section .contents_frag #frag_subwrap {width: 1150px; margin:0 auto; margin-top: 80px; overflow: hidden;}
+section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 267px;float: left;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 360px;float: left; margin-left: 43px;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 333px;float: left;margin-left: 43px; margin-top: 70px; color: #00174f;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 29px; line-height: 1.5;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1) span{color: #b30c2f;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 13px; line-height: 1.5;}
+section .contents_frag #frag_subwrap #frag_sub2 {width: 900px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2{width: 900px;float: left;color: #00174f;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1){font-size: 29px; line-height: 1.5;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1) span{color: #b30c2f;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(2){font-size: 13px; }
+
+footer{width:100%; height:30px; padding-top:15px; background-color:#fff; margin-top:90px; position:relative; bottom: 0; left: 0;}
+footer #change_con{float:left; margin-left:50px;}
+footer #change_con a{font-size:11px; color:#4f5259;}
+
+footer #foot_info {width:50%; margin:0 auto; }
+footer #foot_info ul{}
+footer #foot_info ul li{float:left; margin-left:30px;}
+footer #foot_info ul li:nth-child(1){margin-left:0px;}
+footer #foot_info ul li{font-size:11px; color:#4f5259;}
+
+footer #gnb {width:175px;float:right; margin-right:50px;}
+footer #gnb p{float:left}
+footer #gnb p a{font-size:11px; color:#4f5259;}
+footer #gnb ul{float:left; margin-left:13px;}
+footer #gnb ul li{float:left; margin-left:5px;}
+footer #gnb ul li a img{width:20px; height:20px;}
+
+
+
+@media (min-width:900px) and (max-width:1450px){
+    #search_wrap{display: none;}
+    header #nav_wrap {width: 550px; float: right;}
+    #nav li{width: 95px; float:left; margin-left:15px; text-align: center;}
+    #nav li h2 a {font-size:12px; font-weight:normal; color:#eee;}
+    
+    
+    section {width:100%;position: relative; top: 0; left: 0; }
+    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
+    section #main #sub_menu {width: 530px; margin:0 auto; overflow:hidden;}
+    section #main #sub_menu ul li {margin-top: 20px; height:16px;float:left; text-align: center;}
+    section #main #sub_menu ul li a{ font-size: 12px; color: #00174f;  border-right: 1px solid #000; padding: 0 30px;}
+    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
+    section #main #sub_menu ul li:nth-child(5) a{padding: 0 55px;}
+    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
+    section #main #sub_menu ul li:nth-child(7) a{padding: 0 55px;}
+    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
+    section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
+
+    section .contents_frag #frag_subwrap {width: 900px; margin:0 auto; margin-top: 80px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 267px;float: left;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 360px;float: left; margin-left: 43px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 333px;float: left;margin-left: 43px; margin-top: 70px; color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 25px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 12px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 {width: 900px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2{width: 900px;float: left;color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1){font-size: 25px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(2){font-size: 12px; }
+
+
+    footer #change_con {display: none;}
+    footer #foot_info {width:500px; margin:0 auto; }
+    footer #foot_info ul li{float:left; margin-left:15px;}
+    footer #foot_info ul li:nth-child(1){margin-left:0px;}
+    footer #foot_info ul li{font-size:8px; color:#4f5259;}    
+    footer #gnb {display: none;}
+}
+
+
+@media (min-width:750px) and (max-width:900px){
+    #search_wrap{display: none;}
+    header #nav_wrap {width: 400px; float: right;}
+    #nav li{width: 70px; float:left; margin-left:10px;}
+    #nav li h2 a {font-size:8px;}
+    
+    
+    section {width:100%;position: relative; top: 0; left: 0; }
+    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
+    section #main #sub_menu {width: 530px; margin:0 auto; overflow:hidden;}
+    section #main #sub_menu ul li {margin-top: 20px; height:16px;float:left; text-align: center;}
+    section #main #sub_menu ul li a{ font-size: 12px; color: #00174f;  border-right: 1px solid #000; padding: 0 30px;}
+    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
+    section #main #sub_menu ul li:nth-child(5) a{padding: 0 55px;}
+    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
+    section #main #sub_menu ul li:nth-child(7) a{padding: 0 55px;}
+    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
+    section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
+    
+    section .contents_frag #frag_subwrap {width: 600px; margin:0 auto; margin-top: 60px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 166px;float: left;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 231px;float: left; margin-left: 15px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 173px;float: left;margin-left: 15px; margin-top: 0px; color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 23px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 11px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 {width: 600px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2{width: 600px;float: left;color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1){font-size: 23px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(2){font-size: 11px; }
+
+    footer #change_con {display: none;}
+    footer #foot_info {width:500px; margin:0 auto; }
+    footer #foot_info ul li{float:left; margin-left:15px;}
+    footer #foot_info ul li:nth-child(1){margin-left:0px;}
+    footer #foot_info ul li{font-size:6px; color:#4f5259;}
+    footer #gnb {display: none;}
+}
+
+
+@media (min-width:300px) and (max-width:750px){
+    header #logo_wrap{width:100%; height: 30px; }
+    header #logo_wrap h1{text-align: center; margin: 0; margin-top: 5px; margin-bottom: 5px;}
+    header #search_wrap{display: none;}
+    header  #nav_wrap {width: 390px;float: none;}
+    #nav li{width: 78px; float:left; margin-left:0px; margin-top: 5px;}
+    #nav li h2 a {font-size:8px;}
+    
+    section {width:100%;position: relative; top: 0; left: 0; }
+    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
+    section #main #sub_menu {width: 400px; margin:0 auto; overflow:hidden;}
+    section #main #sub_menu ul li {width:95px;  margin-top: 20px; height:16px;float:left; text-align: center; }
+    section #main #sub_menu ul li:nth-child(4) {border-right: none;}
+    section #main #sub_menu ul li:nth-child(8) {border-right: none;}
+    section #main #sub_menu ul li a{ font-size: 10px; color: #00174f; border-right: 1px solid #000; padding:0 20px;}
+    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
+    section #main #sub_menu ul li:nth-child(5) a{padding: 0 40px;}
+    section #main #sub_menu ul li:nth-child(6) a{padding: 0 23px;}
+    section #main #sub_menu ul li:nth-child(7) a{padding: 0 41px;}
+    section #main #sub_menu ul li:nth-child(8) a{padding: 0 23px;border-right: none;}
+
+       
+    
+    section .contents_frag #frag_subwrap {width: 400px; margin:0 auto; margin-top: 60px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 164px;float: left;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 226px;float: left; margin-left: 10px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 400px;float: left;margin-left: 0px; margin-top: 20px; color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 20px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 10px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 {width: 400px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2{width: 400px;float: left;color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1){font-size: 20px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(2){font-size: 10px; }
+
+    
+    
+    footer {margin-top: 40px;}
+    footer #change_con {display: none;}
+    footer #foot_info {width:250px; margin:0 auto;  overflow: hidden;}
+    footer #foot_info ul li{float:none;}
+    footer #foot_info ul li:nth-child(1){display: none;}
+    footer #foot_info ul li:nth-child(2){display: none;}
+    footer #foot_info ul li:nth-child(3){display: none;}
+    footer #foot_info ul li:nth-child(4){display: none;}
+    footer #foot_info ul li{font-size:6px; color:#4f5259;}
+    footer #gnb {display: none;}
+}

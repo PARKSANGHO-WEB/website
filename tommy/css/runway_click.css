@@ -1,0 +1,133 @@
+*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif;}
+li{list-style:none; }
+a{text-decoration:none; color:#00174f;}
+img{border:0; margin:0; padding:0;}
+
+body{width:100%; background-color:#f2efea;}
+
+header{width:100%; height:80px; background-color:#141821;  z-index: 999; position: relative;}
+#logo_wrap{width: 260px; height: 15px; position: absolute; top: 50%; left: 30px; transform: translateY(-50%);}
+#logo_wrap img{width: 100%;}
+#nav {width: 100%; height: 80px;}
+#nav li{width: 20%;  float:left;text-align: center;}
+#nav li:nth-child(1) {margin-left:0px;}
+#nav li h2 a {font-size:16px; line-height: 80px; font-weight:normal; color:#eee;font-family: 'Montserrat', sans-serif;}
+#nav li  h2 a:hover{color:#b30c2f;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+
+
+#img_wrap {width: 100%; height: 100%; background: url(../img/runway/runway_main.jpg);background-size: cover; background-position: center;}
+
+
+section{width:100%;}
+section #main_article{width:100%;}
+section #main_article img{width:100%;}
+
+section {width:1200px; margin:0 auto; margin-top: 80px; position: relative; top:0; left:0; overflow: hidden;}
+section #main_run {width:1200px; position: relative; top:0px; left:0px; overflow: hidden;}
+section #main_run #main_text{width:280px; height: 392px; text-align:right; overflow: hidden; float:left; margin-top: 28px;}
+section #main_run #main_text h3{font-size:36px; font-weight: normal; color:#00174f;}
+section #main_run #main_text h3 .text_color{color:#b30c2f;}
+section #main_run #main_text #text_con{font-size:12px; color:#00174f; line-height: 1.6; margin-top:60px;}
+section #main_run #main_text #find_link{font-size:12px; margin-top: 30px;}
+section #main_run #main_text #find_link a{text-decoration: underline; color: #b30c2f;}
+section #main_run #main_text #runway_list ul{float: right; margin-top: 30px;}
+section #main_run #main_text #runway_list ul li{font-size: 16px; float: left; margin-left: 20px; cursor: pointer;}
+section #main_run #main_text #runway_list ul li:nth-child(1){color: #b30c2f;}
+
+section #main_run #img_top{width: 920px; position: relative; top: 0px; left: 0px; float: right;}
+section #main_run #img_top .top_img { position: absolute; top:0px; left:0px;}
+section #main_run #img_top .top_img div{width: 280px; height: 420px; float: left; margin-left: 26px;} 
+section #main_run #img_top .img_top1 div:nth-child(1){background-image: url("../img/runway/runway_1.jpg"); background-size: cover;}
+section #main_run #img_top .img_top1 div:nth-child(2){background-image: url("../img/runway/runway_2.jpg"); background-size: cover;}
+section #main_run #img_top .img_top1 div:nth-child(3){background-image: url("../img/runway/runway_3.jpg"); background-size: cover;}
+section #main_run #img_top .img_top2 div:nth-child(1){background-image: url("../img/runway/runway_8.jpg"); background-size: cover;}
+section #main_run #img_top .img_top2 div:nth-child(2){background-image: url("../img/runway/runway_9.jpg"); background-size: cover;}
+section #main_run #img_top .img_top2 div:nth-child(3){background-image: url("../img/runway/runway_10.jpg"); background-size: cover;}
+section #main_run #img_top .img_top3 div:nth-child(1){background-image: url("../img/runway/runway_15.jpg"); background-size: cover;}
+section #main_run #img_top .img_top3 div:nth-child(2){background-image: url("../img/runway/runway_16.jpg"); background-size: cover;}
+section #main_run #img_top .img_top3 div:nth-child(3){background-image: url("../img/runway/runway_17.jpg"); background-size: cover;}
+section #main_run #img_top .img_top4 div:nth-child(1){background-image: url("../img/runway/runway_22.jpg"); background-size: cover;}
+section #main_run #img_top .img_top4 div:nth-child(2){background-image: url("../img/runway/runway_23.jpg"); background-size: cover;}
+section #main_run #img_top .img_top4 div:nth-child(3){background-image: url("../img/runway/runway_24.jpg"); background-size: cover;}
+section #main_run #img_top .img_top5 div:nth-child(1){background-image: url("../img/runway/runway_29.jpg"); background-size: cover;}
+section #main_run #img_top .img_top5 div:nth-child(2){background-image: url("../img/runway/runway_30.jpg"); background-size: cover;}
+section #main_run #img_top .img_top5 div:nth-child(3){background-image: url("../img/runway/runway_31.jpg"); background-size: cover;}
+section #main_run #img_top .img_top6 div:nth-child(1){background-image: url("../img/runway/runway_36.jpg"); background-size: cover;}
+section #main_run #img_top .img_top6 div:nth-child(2){background-image: url("../img/runway/runway_37.jpg"); background-size: cover;}
+section #main_run #img_top .img_top6 div:nth-child(3){background-image: url("../img/runway/runway_38.jpg"); background-size: cover;}
+section #main_run #img_top .img_top7 div:nth-child(1){background-image: url("../img/runway/runway_43.jpg"); background-size: cover;}
+section #main_run #img_top .img_top7 div:nth-child(2){background-image: url("../img/runway/runway_44.jpg"); background-size: cover;}
+section #main_run #img_top .img_top7 div:nth-child(3){background-image: url("../img/runway/runway_45.jpg"); background-size: cover;}
+section #main_run #img_top .img_top8 div:nth-child(1){background-image: url("../img/runway/runway_50.jpg"); background-size: cover;}
+section #main_run #img_top .img_top8 div:nth-child(2){background-image: url("../img/runway/runway_51.jpg"); background-size: cover;}
+section #main_run #img_top .img_top8 div:nth-child(3){background-image: url("../img/runway/runway_52.jpg"); background-size: cover;}
+
+section #main_run #img_bot{width: 1200px; height:420px;margin-top:26px; position: relative; top: 0px; left: 0px; float: left; }
+    
+section #main_run #img_bot .bot_img div{width:280px; height:420px;float: left; margin-left: 26px;}    
+section #main_run #img_bot .bot_img div:nth-child(1){margin-left: 0px;}
+section #main_run #img_bot .bot_img { position: absolute; top:0px; left:0px;}
+section #main_run #img_bot .img_bot1 div:nth-child(1){background-image: url("../img/runway/runway_4.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot1 div:nth-child(2){background-image: url("../img/runway/runway_5.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot1 div:nth-child(3){background-image: url("../img/runway/runway_6.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot1 div:nth-child(4){background-image: url("../img/runway/runway_7.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(1){background-image: url("../img/runway/runway_11.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(2){background-image: url("../img/runway/runway_12.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(3){background-image: url("../img/runway/runway_13.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(4){background-image: url("../img/runway/runway_14.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(1){background-image: url("../img/runway/runway_18.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(2){background-image: url("../img/runway/runway_19.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(3){background-image: url("../img/runway/runway_20.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(4){background-image: url("../img/runway/runway_21.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(1){background-image: url("../img/runway/runway_25.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(2){background-image: url("../img/runway/runway_26.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(3){background-image: url("../img/runway/runway_27.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(4){background-image: url("../img/runway/runway_28.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(1){background-image: url("../img/runway/runway_32.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(2){background-image: url("../img/runway/runway_33.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(3){background-image: url("../img/runway/runway_34.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(4){background-image: url("../img/runway/runway_35.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(1){background-image: url("../img/runway/runway_39.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(2){background-image: url("../img/runway/runway_40.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(3){background-image: url("../img/runway/runway_41.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(4){background-image: url("../img/runway/runway_42.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(1){background-image: url("../img/runway/runway_46.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(2){background-image: url("../img/runway/runway_47.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(3){background-image: url("../img/runway/runway_48.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(4){background-image: url("../img/runway/runway_49.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(1){background-image: url("../img/runway/runway_53.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(2){background-image: url("../img/runway/runway_54.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(3){background-image: url("../img/runway/runway_55.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(4){background-image: url("../img/runway/runway_56.jpg"); background-size: cover;}
+
+section #main_run .run_1{opacity:1;}
+section #main_run .run_2, .run_3, .run_4, .run_5, .run_6, .run_7, .run_8{opacity: 0;}
+
+
+
+
+footer{width:100%; height:30px; padding-top:15px; background-color:#fff; margin-top:90px;}
+footer #change_con{float:left; margin-left:50px;}
+footer #change_con a{font-size:11px; color:#4f5259;}
+
+footer #foot_info {width:50%; margin:0 auto; }
+footer #foot_info ul li{float:left; margin-left:30px;}
+footer #foot_info ul li:nth-child(1){margin-left:0px;}
+footer #foot_info ul li{font-size:11px; color:#4f5259;}
+
+footer #gnb {width:175px;float:right; margin-right:50px;}
+footer #gnb p{float:left}
+footer #gnb p a{font-size:11px; color:#4f5259;}
+footer #gnb ul{float:left; margin-left:13px;}
+footer #gnb ul li{float:left; margin-left:5px;}
+footer #gnb ul li a img{width:20px; height:20px;}
+
+
+
+
