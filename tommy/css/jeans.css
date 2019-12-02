@@ -1,4 +1,4 @@
-*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif;}
+*{margin:0; padding:0; border:0; font-family: 'Noto sans', sans-serif;}
 li{list-style:none; }
 a{text-decoration:none; color:#00174f;}
 img{border:0; margin:0; padding:0;}
@@ -14,29 +14,58 @@ header #nav_wrap {width:675px; height: 30px; margin:0 auto; margin-top:17px;}
 #nav li h2 a {font-size:14px; font-weight:normal; color:#eee;}
 #nav li  h2 a:hover{color:#b30c2f;}
 
-#search_wrap{float:right; margin-top: -23px; margin-right:35px;}
-#search_wrap input{ width:136px; height:20px;}
-#search_wrap img{width:16px; height:16px; position:relative; top:3.5px; left:-30px;}
 
+.coll_menu {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.coll_menu ul{
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.coll_menu ul li {
+    float: left;
+    text-align: center;
+    width: 22%;
+    background-color: #00174f;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.coll_menu ul li.selected {
+    background-color: #b30c2f;
+}
+
+.coll_menu ul li:hover {
+    background-color: #b30c2f;
+    transition-duration: 1s;
+}
+
+.coll_menu ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.coll_menu ul a{
+    display: block;
+    color: white;
+    padding: 20px 0px;
+    font-size: 14px;
+}
 
 
 body{width:100%; background-color:#f2efea;}
-section {width:100%;position: relative; top: 0; left: 0; }
-section #main{width:100%; margin: 0 auto; margin-top: 50px;}
-section #main #sub_menu {width: 1070px; margin:0 auto;overflow:hidden;}
-section #main #sub_menu ul li {float:left; text-align: center;}
-section #main #sub_menu ul li:nth-child(4) a{color:#b30c2f;}
-section #main #sub_menu ul li a{ font-size: 14px; color: #00174f;  border-right: 1.3px solid #000; padding: 0 30px;}
-section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
-section #main #sub_menu ul li a:hover{color:#b30c2f;}
+section {width:100%;}
 
-section .con_wrap{width:100%; margin-top:80px;}
+section .con_wrap{width:100%; margin-top:60px;}
 section .con_wrap div img{width:100%;}
 
-section .contents_jeans #jean_subwrap{width:1100px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
+section .contents_jeans #jean_subwrap{width:1100px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
 section .contents_jeans #jean_subwrap #jean_sub1 {width:340px; float: left;}
 section .contents_jeans #jean_subwrap #jean_sub2 {width:400px; float: left; margin-left: 72px;}
-section .contents_jeans #jean_subwrap #jean_sub3 {width: 200px; margin-left: 80px; float: right;}
+section .contents_jeans #jean_subwrap #jean_sub3 {width: 200px; margin-left: 60px; float: right;}
 section .contents_jeans #jean_subwrap #jean_sub3 p{text-align:right; color: #00174f;}
 section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 29px; line-height: 1.5;}
 section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1) span{color:#b30c2f;}
@@ -45,7 +74,7 @@ section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2) {margin-top: 34p
 section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3){margin-top: 40px;}
 section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
 
-section .contents_jeans #tommy_jeans2{margin-top:80px;}
+section .contents_jeans #tommy_jeans2{margin-top:60px;}
 section .contents_jeans #tommy_jeans2 #jeans_main2{width:100%; }
 section .contents_jeans #tommy_jeans2 #jeans_main2 img{width: 100%;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 1200px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
@@ -53,242 +82,229 @@ section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 343px;f
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 456px;float:left; margin-left: 25px;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 340px;float:left; margin-left: 25px;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p{text-align:right; color: #00174f;}
-section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 29px; line-height: 1.5; padding-left: 200px;}
+section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 30px; line-height: 1.5; padding-left: 100px;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1) span{color:#b30c2f;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2),section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3)
-{font-size: 13px; padding-left: 100px;}
+{font-size: 16px; padding-left: 25px;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 34px; line-height: 1.5;}
-section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 40px;}
+section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 55px;}
 section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
-section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 #text_img {margin-top: 27px;}
+section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 #text_img {margin-top: 60px;}
 
-section .contents_jeans #tommy_jeans3 {margin-top:80px;}
+section .contents_jeans #tommy_jeans3 {margin-top:60px;}
 section .contents_jeans #tommy_jeans3 #jeans_main3{width:100%; }
 section .contents_jeans #tommy_jeans3 #jeans_main3 img{width: 100%;}
-section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 1200px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
+section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 1200px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 343px;float:left;}
+section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1 img {width: 100%}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 456px; float:left; margin-left: 15px;}
-section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width: 456px; height: 652px;}
+section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width: 100%}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 360px;float:left; margin-left: 15px;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p{text-align:right; color: #00174f;}
-section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 29px; color:#b30c2f;line-height:1.3;}
+section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 30px; color:#b30c2f;line-height:1.3;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2),section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3)
-{font-size: 13px; padding-left:40px;}
+{font-size: 16px; padding-left:40px;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2) {margin-top: 22px; line-height: 1.5;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3){margin-top: 20px;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
 section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 #text_img2 {margin-top: 20px;}
 
-footer{width:100%; height:30px; padding-top:15px; background-color:#fff; margin-top:90px; position:relative; bottom: 0; left: 0;}
-footer #change_con{float:left; margin-left:50px;}
-footer #change_con a{font-size:11px; color:#4f5259;}
-
-footer #foot_info {width:50%; margin:0 auto; }
-footer #foot_info ul{}
-footer #foot_info ul li{float:left; margin-left:30px;}
-footer #foot_info ul li:nth-child(1){margin-left:0px;}
-footer #foot_info ul li{font-size:11px; color:#4f5259;}
-
-footer #gnb {width:175px;float:right; margin-right:50px;}
-footer #gnb p{float:left}
-footer #gnb p a{font-size:11px; color:#4f5259;}
-footer #gnb ul{float:left; margin-left:13px;}
-footer #gnb ul li{float:left; margin-left:5px;}
-footer #gnb ul li a img{width:20px; height:20px;}
 
 
 
-
-@media (min-width:900px) and (max-width:1450px){
-    #search_wrap{display: none;}
-    header #nav_wrap {width: 550px; float: right;}
-    #nav li{width: 95px; float:left; margin-left:15px; text-align: center;}
-    #nav li h2 a {font-size:12px; font-weight:normal; color:#eee;}
+@media screen and (max-width : 1200px) {
     
-    
-    section {width:100%;position: relative; top: 0; left: 0; }
-    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
-    section #main #sub_menu {width: 530px; margin:0 auto; overflow:hidden;}
-    section #main #sub_menu ul li {margin-top: 20px; height:16px;float:left; text-align: center;}
-    section #main #sub_menu ul li a{ font-size: 12px; color: #00174f;  border-right: 1px solid #000; padding: 0 30px;}
-    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
-    section #main #sub_menu ul li:nth-child(5) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(7) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 35px;}
+    .coll_menu ul a{padding: 17px 0px;font-size: 12px;}
 
 
-    section .contents_jeans #jean_subwrap{width:900px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
-    section .contents_jeans #jean_subwrap #jean_sub1 {width:300px; float: left;}
-    section .contents_jeans #jean_subwrap #jean_sub2 {width:380px; float: left; margin-left: 20px;}
-    section .contents_jeans #jean_subwrap #jean_sub3 {width: 180px; margin-left: 20px; float: right;}
+    body{width:100%; background-color:#f2efea;}
+    section {width:100%;}
+
+    section .con_wrap{width:100%; margin-top:50px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_jeans #jean_subwrap{width:740px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_jeans #jean_subwrap #jean_sub1 {width:240px; float: left;}
+    section .contents_jeans #jean_subwrap #jean_sub2 {width:255px; float: left; margin-left: 50px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 {width: 145px; margin-left: 50px; float: left;}
     section .contents_jeans #jean_subwrap #jean_sub3 p{text-align:right; color: #00174f;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 25px; line-height: 1.5;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 27px; line-height: 1.5;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1) span{color:#b30c2f;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2),p:nth-child(3){font-size: 12px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2),p:nth-child(3){font-size: 15px;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2) {margin-top: 34px; line-height: 1.5;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3){margin-top: 40px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
 
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 900px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 243px;float:left; margin-top: 95px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 356px;float:left; margin-left: 25px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 240px;float:left; margin-left: 25px;}
+    section .contents_jeans #tommy_jeans2{margin-top:50px;}
+    section .contents_jeans #tommy_jeans2 #jeans_main2{width:100%; }
+    section .contents_jeans #tommy_jeans2 #jeans_main2 img{width: 100%;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 740px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 220px;float:left; margin-top: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 260px;float:left; margin-left: 25px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 210px; height: 380px; overflow: hidden;float:left; margin-left: 25px;}
     section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p{text-align:right; color: #00174f;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 25px; line-height: 1.5; margin-top: 29px; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 29px; line-height: 1.5; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1) span{color:#b30c2f;}
     section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2),section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3)
-    {font-size: 12px; padding-left: 0px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 34px; line-height: 1.5;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 40px;}
+    {font-size: 13px; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 10px; line-height: 1.5;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 10px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 #text_img {margin-top: 10px;}
 
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 900px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 243px;float:left;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 356px; float:left; margin-left: 15px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width: 356px; height: 580px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 260px;float:left; margin-left: 15px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 25px; color:#b30c2f;line-height:1.3;}
+    section .contents_jeans #tommy_jeans3 {margin-top:50px;}
+    section .contents_jeans #tommy_jeans3 #jeans_main3{width:100%; }
+    section .contents_jeans #tommy_jeans3 #jeans_main3 img{width: 100%;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 740px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 185px;float:left;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 243px; float:left; margin-left: 20px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{100%}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 280px;float:left; margin-left: 15px;}
+    #jean_sub3_3 img{width: 100%;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p{text-align:right; color: #00174f; float: left;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 27px; color:#b30c2f;line-height:1.3;}
     section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2),section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3)
-    {font-size: 12px; padding-left:40px;}
+    {font-size: 15px; padding-left:40px;}
     section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2) {margin-top: 22px; line-height: 1.5;}
     section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3){margin-top: 20px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 #text_img2 {margin-top: 20px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 #text_img2 {display: none;}
 
-    footer #change_con {display: none;}
-    footer #foot_info {width:500px; margin:0 auto; }
-    footer #foot_info ul li{float:left; margin-left:15px;}
-    footer #foot_info ul li:nth-child(1){margin-left:0px;}
-    footer #foot_info ul li{font-size:8px; color:#4f5259;}    
-    footer #gnb {display: none;}
+
+    
 }
 
 
-@media (min-width:750px) and (max-width:900px){
-    #search_wrap{display: none;}
-    header #nav_wrap {width: 400px; float: right;}
-    #nav li{width: 70px; float:left; margin-left:10px;}
-    #nav li h2 a {font-size:8px;}
+@media screen and (max-width : 800px) {
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 30px;}
+    .coll_menu ul a{padding: 14px 0px;font-size: 12px;}
     
     
-    section {width:100%;position: relative; top: 0; left: 0; }
-    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
-    section #main #sub_menu {width: 530px; margin:0 auto; overflow:hidden;}
-    section #main #sub_menu ul li {margin-top: 20px; height:16px;float:left; text-align: center;}
-    section #main #sub_menu ul li a{ font-size: 12px; color: #00174f;  border-right: 1px solid #000; padding: 0 30px;}
-    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
-    section #main #sub_menu ul li:nth-child(5) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(7) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
+    section .con_wrap{width:100%; margin-top:40px;}
 
 
-    section .contents_jeans #jean_subwrap{width:600px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
-    section .contents_jeans #jean_subwrap #jean_sub1 {width:200px; float: left; margin-top: 50px;}
-    section .contents_jeans #jean_subwrap #jean_sub2 {width:240px; float: left; margin-left: 20px;}
-    section .contents_jeans #jean_subwrap #jean_sub3 {width: 120px; margin-left: 20px; float: right;}
+
+    section .con_wrap{width:100%; margin-top:40px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_jeans #jean_subwrap{width:590px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
+    section .contents_jeans #jean_subwrap #jean_sub1 {width:195.5px; float: left;}
+    section .contents_jeans #jean_subwrap #jean_sub2 {width:208.5px; float: left; margin-left: 20px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 {width: 145px; margin-left: 20px; float: left;}
     section .contents_jeans #jean_subwrap #jean_sub3 p{text-align:right; color: #00174f;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 22px; line-height: 1.5;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 24px; line-height: 1.5;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1) span{color:#b30c2f;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2),p:nth-child(3){font-size: 11px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2),p:nth-child(3){font-size: 14px;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2) {margin-top: 34px; line-height: 1.5;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3){margin-top: 40px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
 
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 600px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 174px;float:left; margin-top: 40px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 236px;float:left; margin-left: 20px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 150px;float:left; margin-left: 20px;}
+    section .contents_jeans #tommy_jeans2{margin-top:40px;}
+    section .contents_jeans #tommy_jeans2 #jeans_main2{width:100%; }
+    section .contents_jeans #tommy_jeans2 #jeans_main2 img{width: 100%;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 590px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 170px;float:left; margin-top: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 200px;float:left; margin-left: 25px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 170px; height: 300px; overflow: hidden;float:left; margin-left: 25px;}
     section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p{text-align:right; color: #00174f;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 22px; line-height: 1.5; margin-top: 0px; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 24px; line-height: 1.5; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1) span{color:#b30c2f;}
     section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2),section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3)
-    {font-size: 11px; padding-left: 0px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 15px; line-height: 1.5;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 15px;}
+    {font-size: 14px; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 10px; line-height: 1.5;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 10px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 #text_img {margin-top: 10px;}
 
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 600px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 243px;float:left;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 342px; float:left; margin-left: 15px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width: 342px; height: 462px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 600px;float:left; margin-left: 15px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 img { display: none;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 25px; color:#b30c2f;line-height:1.3;}
+    section .contents_jeans #tommy_jeans3 {margin-top:40px;}
+    section .contents_jeans #tommy_jeans3 #jeans_main3{width:100%; }
+    section .contents_jeans #tommy_jeans3 #jeans_main3 img{width: 100%;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 590px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 160px; float:left;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 205px; float:left; margin-left: 20px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width:  100%;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 180px; float:left; margin-left: 15px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p{width: 180px; text-align:right; color: #00174f; float: left;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 24px; color:#b30c2f;line-height:1.3;}
     section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2),section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3)
-    {font-size: 12px; padding-left:40px;}
+    {font-size: 13px; padding-left:0px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2) {margin-top: 5px; line-height: 1.5;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3){margin-top: 5px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 #text_img2 {display: none;}
+
     
     
-    footer #change_con {display: none;}
-    footer #foot_info {width:500px; margin:0 auto; }
-    footer #foot_info ul li{float:left; margin-left:15px;}
-    footer #foot_info ul li:nth-child(1){margin-left:0px;}
-    footer #foot_info ul li{font-size:6px; color:#4f5259;}
-    footer #gnb {display: none;}
 }
 
 
-@media (min-width:300px) and (max-width:750px){
-    header #logo_wrap{width:100%; height: 30px; }
-    header #logo_wrap h1{text-align: center; margin: 0; margin-top: 5px; margin-bottom: 5px;}
-    header #search_wrap{display: none;}
-    header  #nav_wrap {width: 390px;float: none;}
-    #nav li{width: 78px; float:left; margin-left:0px; margin-top: 5px;}
-    #nav li h2 a {font-size:8px;}
+@media screen and (max-width : 640px) {
+    .coll_menu {width: 85%;}
+    .coll_menu ul{margin-top: 25px;}
+    .coll_menu ul a{padding: 11px 0px;font-size: 12px;}
     
-    section {width:100%;position: relative; top: 0; left: 0; }
-    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
-    section #main #sub_menu {width: 400px; margin:0 auto; overflow:hidden;}
-    section #main #sub_menu ul li {width:95px;  margin-top: 20px; height:16px;float:left; text-align: center; }
-    section #main #sub_menu ul li:nth-child(4) {border-right: none;}
-    section #main #sub_menu ul li:nth-child(8) {border-right: none;}
-    section #main #sub_menu ul li a{ font-size: 10px; color: #00174f; border-right: 1px solid #000; padding:0 20px;}
-    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
-    section #main #sub_menu ul li:nth-child(5) a{padding: 0 40px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 23px;}
-    section #main #sub_menu ul li:nth-child(7) a{padding: 0 41px;}
-    section #main #sub_menu ul li:nth-child(8) a{padding: 0 23px;border-right: none;}
     
+    
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 30px;}
+    .coll_menu ul a{padding: 14px 0px;font-size: 12px;}
+    
+    
+    section .con_wrap{width:100%; margin-top:30px;}
 
 
-    section .contents_jeans #jean_subwrap{width:400px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
-    section .contents_jeans #jean_subwrap #jean_sub1 {width:175px; float: left; margin-top: 50px;}
-    section .contents_jeans #jean_subwrap #jean_sub2 {width:215px; float: left; margin-left: 10px;}
-    section .contents_jeans #jean_subwrap #jean_sub3 {width:400px; margin-left: 20px; float: right;}
+
+    section .con_wrap{width:100%; margin-top:30px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_jeans #jean_subwrap{width:300px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
+    section .contents_jeans #jean_subwrap #jean_sub1 {width:300px; float: left;}
+    section .contents_jeans #jean_subwrap #jean_sub2 {width:300px; float: left; margin-left: 0px; margin-top: 30px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 {width: 300px; margin-left: 0px;  margin-top: 30px;float: left;}
     section .contents_jeans #jean_subwrap #jean_sub3 p{text-align:right; color: #00174f;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 22px; line-height: 1.5;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1){font-size: 21px; line-height: 1.5;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(1) span{color:#b30c2f;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2),p:nth-child(3){font-size: 11px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2),p:nth-child(3){font-size: 13px;}
     section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(2) {margin-top: 34px; line-height: 1.5;}
-    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3){margin-top: 40px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3){margin-top: 30px;}
+    section .contents_jeans #jean_subwrap #jean_sub3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
 
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 400px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 164px;float:left; margin-top: 40px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 226px;float:left; margin-left: 10px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 400px;float:left; margin-left:00px;}
+    section .contents_jeans #tommy_jeans2{margin-top:30px;}
+    section .contents_jeans #tommy_jeans2 #jeans_main2{width:100%; }
+    section .contents_jeans #tommy_jeans2 #jeans_main2 img{width: 100%;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2{width: 300px; margin: 0 auto; margin-top: 30px; overflow: hidden;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_1{width: 300px;float:left; margin-top: 30px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_2{width: 300px;float:left; margin-left: 0px; margin-top: 30px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3{width: 300px; overflow: hidden;float:left; margin-left: 0px;  margin-top: 30px;}
     section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p{text-align:right; color: #00174f;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 22px; line-height: 1.5; margin-top: 0px; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1){font-size: 21px; line-height: 1.5; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(1) span{color:#b30c2f;}
     section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2),section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3)
-    {font-size: 11px; padding-left: 0px;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 15px; line-height: 1.5;}
-    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 15px;}
+    {font-size: 13px; padding-left: 0px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(2) {margin-top: 10px; line-height: 1.5;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3){margin-top: 10px;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
+    section .contents_jeans #tommy_jeans2 #jean_subwrap2 #jean_sub2_3 #text_img {margin-top: 30px;}
 
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 400px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 183px;float:left;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 202px; float:left; margin-left: 15px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width: 202px; height: 347px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 400px;float:left; margin-left: 15px;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 img { display: none;}
-    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 22px; color:#b30c2f;line-height:1.3;}
+    section .contents_jeans #tommy_jeans3 {margin-top:30px;}
+    section .contents_jeans #tommy_jeans3 #jeans_main3{width:100%; }
+    section .contents_jeans #tommy_jeans3 #jeans_main3 img{width: 100%;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3{width: 300px; margin: 0 auto; margin-top: 30px; overflow: hidden;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_1{width: 300px; float:left;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2{width: 300px; float:left; margin-left: 0px; margin-top: 30px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_2 img{width:  100%;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3{width: 300px; float:left; margin-left: 0px; margin-top: 30px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p{width: 180px; text-align:right; color: #00174f; float: left;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(1){font-size: 24px; color:#b30c2f;line-height:1.3;}
     section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2),section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3)
-    {font-size: 11px; padding-left:40px;}
+    {font-size: 13px; padding-left:0px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(2) {margin-top: 5px; line-height: 1.5;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3){margin-top: 5px;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 p:nth-child(3) a {color: #b30c2f; text-decoration: underline;}
+    section .contents_jeans #tommy_jeans3 #jean_subwrap3 #jean_sub3_3 #text_img2 {display: block;}
 
     
-    
-    footer {margin-top: 40px;}
-    footer #change_con {display: none;}
-    footer #foot_info {width:250px; margin:0 auto;  overflow: hidden;}
-    footer #foot_info ul li{float:none;}
-    footer #foot_info ul li:nth-child(1){display: none;}
-    footer #foot_info ul li:nth-child(2){display: none;}
-    footer #foot_info ul li:nth-child(3){display: none;}
-    footer #foot_info ul li:nth-child(4){display: none;}
-    footer #foot_info ul li{font-size:6px; color:#4f5259;}
-    footer #gnb {display: none;}
 }

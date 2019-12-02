@@ -1,4 +1,4 @@
-*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif; }
+*{margin:0; padding:0; border:0; }
 li{list-style:none; }
 a{text-decoration:none; color:#00174f;}
 img{border:0; margin:0; padding:0;}
@@ -20,24 +20,6 @@ html, body{
 
 body{width:100%; background-color:#f2efea;}
 
-.sub_menuwrap {
-    width: 1100px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.sub_menuwrap div{
-    width: 200px;
-    float: left;
-    padding: 20px 0px;
-    margin-left: 20px;
-    text-align: center;
-    margin-top: 40px;
-    border: 2px solid #00174f;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 .sub_menuwrap div.select{
     background-color: #b30c2f;
 }
@@ -49,18 +31,52 @@ body{width:100%; background-color:#f2efea;}
     margin-left: 0px;
 }
 
- #sub_logo h2{width: 311px; margin: 0 auto;text-align:center; margin-top:80px; z-index: 9;}
 
- #contents{margin-top:40px; line-height:1.4;}
- #contents .main_title{font-size:28px;}
- #contents .sub_title{font-size:16px; margin-top:30px;}
- #contents .text{font-size:14px; margin-top:30px;}
+#sub_logo { width: 311px; margin: 0 auto; margin-top: 60px;}
+#sub_logo h2 img {
+    width: 100%;
+}
+ #contents{ width: 100%; 
+     margin: 0 auto; margin-top:40px; line-height:1.4;}
+ #contents .main_title{font-size:28px;padding: 0px 40px;}
+ #contents .sub_title{font-size:18px; margin-top:30px;font-family: 'Noto sans', sans-serif;padding: 0px 40px;}
+ #contents .text{font-size:16px; margin-top:30px;font-family: 'Noto sans', sans-serif;padding: 0px 40px;}
 
 
+@media screen and (max-width : 1200px) {
 
 
-footer{width:100%; height:80px; margin-top: 40px; overflow: hidden;background-color:#fff;}
-footer #foot_info {width:780px; margin:0 auto; }
-footer #foot_info ul{width: 100%; height: 80px; overflow: hidden;}
-footer #foot_info ul li{float:left; line-height: 80px; height: 40px; margin-left:30px;}
-footer #foot_info ul li{font-size:11px; color:#4f5259;}
+    
+    #sub_logo { width: 280px; margin: 0 auto; margin-top: 50px;}
+    #sub_logo h2 img {width: 100%;}
+     #contents{ margin-top:40px; line-height:1.4;}
+     #contents .main_title{font-size:26px;padding: 0px 40px;}
+     #contents .sub_title{font-size:16px; margin-top:30px;padding: 0px 40px;}
+     #contents .text{font-size:14px; margin-top:30px;padding: 0px 40px;}
+
+}
+
+
+@media screen and (max-width : 800px) {
+
+    #sub_logo { width: 250px; margin: 0 auto; margin-top: 40px;}
+    #sub_logo h2 img {width: 100%;}
+     #contents{ margin-top:40px; line-height:1.4;}
+     #contents .main_title{font-size:25px;padding: 0px 40px;}
+     #contents .sub_title{font-size:15px; margin-top:30px;padding: 0px 40px;}
+     #contents .text{font-size:13px; margin-top:30px;padding: 0px 40px;}
+
+}
+
+
+@media screen and (max-width : 640px) {
+
+     #sub_logo { width: 220px; margin: 0 auto; margin-top: 30px;}
+     #sub_logo h2 img {width: 100%;}
+     
+     #contents{ margin-top:40px; line-height:1.4;}
+     #contents .main_title{font-size:24px;padding: 0px 40px;}
+     #contents .sub_title{font-size:14px; margin-top:30px;padding: 0px 40px;}
+     #contents .text{font-size:12px; margin-top:30px;padding: 0px 40px;}
+    
+}

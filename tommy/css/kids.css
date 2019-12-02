@@ -1,4 +1,4 @@
-*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif;}
+*{margin:0; padding:0; border:0; font-family: 'Noto sans', sans-serif;}
 li{list-style:none; }
 a{text-decoration:none; color:#00174f;}
 img{border:0; margin:0; padding:0;}
@@ -14,226 +14,184 @@ header #nav_wrap {width:675px; height: 30px; margin:0 auto; margin-top:17px;}
 #nav li h2 a {font-size:14px; font-weight:normal; color:#eee;}
 #nav li  h2 a:hover{color:#b30c2f;}
 
-#search_wrap{float:right; margin-top: -23px; margin-right:35px;}
-#search_wrap input{ width:136px; height:20px;}
-#search_wrap img{width:16px; height:16px; position:relative; top:3.5px; left:-30px;}
+.coll_menu {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
+.coll_menu ul{
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.coll_menu ul li {
+    float: left;
+    text-align: center;
+    width: 22%;
+    background-color: #00174f;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.coll_menu ul li.selected {
+    background-color: #b30c2f;
+}
+
+.coll_menu ul li:hover {
+    background-color: #b30c2f;
+    transition-duration: 1s;
+}
+
+.coll_menu ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.coll_menu ul a{
+    display: block;
+    color: white;
+    padding: 20px 0px;
+    font-size: 14px;
+}
 body{width:100%; background-color:#f5f3f1;}
 section {width:100%;position: relative; top: 0; left: 0; }
-section #main{width:100%; margin: 0 auto; margin-top: 50px;}
-section #main #sub_menu {width: 1070px; margin:0 auto;overflow:hidden;}
-section #main #sub_menu ul li {float:left; text-align: center;}
-section #main #sub_menu ul li:nth-child(7) a{color:#b30c2f;}
-section #main #sub_menu ul li a{ font-size: 14px; color: #00174f;  border-right: 1.3px solid #000; padding: 0 30px;}
-section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
-section #main #sub_menu ul li a:hover{color:#b30c2f;}
 
-section .con_wrap{width:100%; margin-top:80px;}
+section .con_wrap{width:100%; margin-top:60px;}
 section .con_wrap div img{width:100%;}
 
 section .contents_kids #kids_main {width: 100%;}
 section .contents_kids #kids_main img {width: 100%;}
-section .contents_kids #kids_subwrap {width: 1200px; margin:0 auto;}
-section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top: 80px; overflow: hidden;}
+section .contents_kids #kids_subwrap {width: 1100px; margin:0 auto;}
+section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top:60px; overflow: hidden;}
 section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 313px; margin-top: 24.5px; float:left;}
-section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 260px; margin-top: 24.5px; margin-left: 5px; float:left;}
-section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 606px; margin-left: 16px; float:left;}
-section .contents_kids #kids_subwrap #sub_wrap2{width: 1200px; margin: 0 auto; overflow: hidden; margin-top: 40px; }
-section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 431px; margin-top: 75px; float:left;}
-section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text{width: 140px; margin-top: 70px; float:left;}
-section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p{text-align: right; color: #00174f; line-height: 1.5;}
-section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(1){font-size:29px; }
-section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3)
-{font-size:13px; margin-top:30px;}
+section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 250px; margin-top: 24.5px; margin-left: 5px; float:left;}
+section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 490px; margin-left: 16px; float:left;}
+section .contents_kids #kids_subwrap #sub_wrap2{width: 1100px; margin: 0 auto; overflow: hidden; margin-top: 60px; }
+section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 490px; margin-top:5px; float:left;}
 section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
-section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 415px; margin-top: 40px;  margin-left: 15px; float:left;}
-section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 140px; margin-top: 70px; float:left;}
+section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 415px;margin-left: 15px; float:left;}
+section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 140px;; float:left;}
 section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p{text-align: right; color: #00174f; line-height: 1.5;margin-left: 10px; }
-section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:29px; }
+section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:30x; }
 section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3)
-{font-size:13px; margin-top:30px;}
+{font-size:16px; margin-top:30px;}
 section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
-section .contents_kids #kids_subwrap #sub_wrap3 {width: 1005px; margin: 0 auto; margin-top: 80px; overflow: hidden;}
+section .contents_kids #kids_subwrap #sub_wrap3 {width: 1005px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
 section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 355px; float: left; }
 section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 650px; float: left; }
 
-footer{width:100%; height:30px; padding-top:15px; background-color:#fff; margin-top:90px; position:relative; bottom: 0; left: 0;}
-footer #change_con{float:left; margin-left:50px;}
-footer #change_con a{font-size:11px; color:#4f5259;}
-
-footer #foot_info {width:50%; margin:0 auto; }
-footer #foot_info ul{}
-footer #foot_info ul li{float:left; margin-left:30px;}
-footer #foot_info ul li:nth-child(1){margin-left:0px;}
-footer #foot_info ul li{font-size:11px; color:#4f5259;}
-
-footer #gnb {width:175px;float:right; margin-right:50px;}
-footer #gnb p{float:left}
-footer #gnb p a{font-size:11px; color:#4f5259;}
-footer #gnb ul{float:left; margin-left:13px;}
-footer #gnb ul li{float:left; margin-left:5px;}
-footer #gnb ul li a img{width:20px; height:20px;}
 
 
 
-
-@media (min-width:900px) and (max-width:1450px){
-    #search_wrap{display: none;}
-    header #nav_wrap {width: 550px; float: right;}
-    #nav li{width: 95px; float:left; margin-left:15px; text-align: center;}
-    #nav li h2 a {font-size:12px; font-weight:normal; color:#eee;}
+@media screen and (max-width : 1200px) {
     
-    
-    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
-    section #main #sub_menu {width: 530px; margin:0 auto; overflow:hidden;}
-    section #main #sub_menu ul li {margin-top: 20px; height:16px;float:left; text-align: center;}
-    section #main #sub_menu ul li a{ font-size: 12px; color: #00174f;  border-right: 1px solid #000; padding: 0 30px;}
-    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
-    section #main #sub_menu ul li:nth-child(5) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(7) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
-    
-    section .contents_kids #kids_subwrap {width: 900px; margin:0 auto;}
-    section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top: 60px; overflow: hidden;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 253px; margin-top: 24.5px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 203px; margin-top: 24.5px; margin-left: 5px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 400px; margin-top: 8px;margin-left: 16px; float:left;}
-    
-    section .contents_kids #kids_subwrap #sub_wrap2{width: 900px; margin: 0 auto; overflow: hidden; margin-top: 40px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 331px; margin-top: 75px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text{width: 120px; margin-top: 70px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p{text-align: right; color: #00174f; line-height: 1.5;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(1){font-size:25px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3)
-    {font-size:12px; margin-top:30px;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 309px; margin-top: 40px;  margin-left: 15px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 120px; margin-top: 70px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p{text-align: right; color: #00174f; line-height: 1.5;margin-left: 10px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:25px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3)
-    {font-size:12px; margin-top:30px;}
-    section .contents_kids #kids_subwrap #sub_wrap3 {width: 900px; margin: 0 auto; margin-top: 60px; }
-    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 338px; float: left; }
-    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 562px; float: left; }
-
-    footer #change_con {display: none;}
-    footer #foot_info {width:500px; margin:0 auto; }
-    footer #foot_info ul li{float:left; margin-left:15px;}
-    footer #foot_info ul li:nth-child(1){margin-left:0px;}
-    footer #foot_info ul li{font-size:8px; color:#4f5259;}    
-    footer #gnb {display: none;}
-}
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 35px;}
+    .coll_menu ul a{padding: 17px 0px;font-size: 12px;}
 
 
-@media (min-width:750px) and (max-width:900px){
-    #search_wrap{display: none;}
-    header #nav_wrap {width: 400px; float: right;}
-    #nav li{width: 70px; float:left; margin-left:10px;}
-    #nav li h2 a {font-size:8px;}
-    
-    
+    body{width:100%; background-color:#f5f3f1;}
     section {width:100%;position: relative; top: 0; left: 0; }
-    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
-    section #main #sub_menu {width: 530px; margin:0 auto; overflow:hidden;}
-    section #main #sub_menu ul li {margin-top: 20px; height:16px;float:left; text-align: center;}
-    section #main #sub_menu ul li a{ font-size: 12px; color: #00174f;  border-right: 1px solid #000; padding: 0 30px;}
-    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
-    section #main #sub_menu ul li:nth-child(5) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(7) a{padding: 0 55px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 32px;}
-    section #main #sub_menu ul li:nth-child(8) a{border-right: none;}
-    
-    section .contents_kids #kids_subwrap {width: 600px; margin:0 auto;}
-    section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top: 60px; overflow: hidden;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 173px; margin-top: 24.5px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 137px; margin-top: 24.5px; margin-left: 5px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 265px; margin-top: 15px;margin-left: 16px; float:left;}
-    
-    section .contents_kids #kids_subwrap #sub_wrap2{width: 600px; margin: 0 auto; overflow: hidden; margin-top: 0px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 221px; margin-top: 75px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text{width: 80px; margin-top: 70px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p{text-align: right; color: #00174f; line-height: 1.5;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(1){font-size:22px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3)
-    {font-size:11px; margin-top:30px;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 199px; margin-top: 60px;  margin-left: 15px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 80px; margin-top: 70px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p{text-align: right; color: #00174f; line-height: 1.5;margin-left: 10px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:22px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3)
-    {font-size:11px; margin-top:30px;}
-    section .contents_kids #kids_subwrap #sub_wrap3 {width: 600px; margin: 0 auto; margin-top: 60px; }
-    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 226px; float: left; }
-    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 374px; float: left; }
 
-    footer #change_con {display: none;}
-    footer #foot_info {width:500px; margin:0 auto; }
-    footer #foot_info ul li{float:left; margin-left:15px;}
-    footer #foot_info ul li:nth-child(1){margin-left:0px;}
-    footer #foot_info ul li{font-size:6px; color:#4f5259;}
-    footer #gnb {display: none;}
+    section .con_wrap{width:100%; margin-top:50px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_kids #kids_main {width: 100%;}
+    section .contents_kids #kids_main img {width: 100%;}
+    section .contents_kids #kids_subwrap {width: 740px; margin:0 auto;}
+    section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top:50px; overflow: hidden;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 211px; margin-top: 24.5px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 168px; margin-top: 24.5px; margin-left: 5px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 340px; margin-left: 15px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2{width: 740px; margin: 0 auto; overflow: hidden; margin-top: 50px; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 290px; margin-top:5px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 247px;margin-left: 15px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 188px;; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p{text-align: right; color: #00174f; line-height: 1.5;margin-left: 10px; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:27px; color: #00174f; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3)
+    {font-size:15px; margin-top:30px;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
+    section .contents_kids #kids_subwrap #sub_wrap3 {width: 740px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 265px; float: left; }
+    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 475px; float: left; }
+
+
+    
 }
 
 
-@media (min-width:300px) and (max-width:750px){
-    header #logo_wrap{width:100%; height: 30px; }
-    header #logo_wrap h1{text-align: center; margin: 0; margin-top: 5px; margin-bottom: 5px;}
-    header #search_wrap{display: none;}
-    header  #nav_wrap {width: 390px;float: none;}
-    #nav li{width: 78px; float:left; margin-left:0px; margin-top: 5px;}
-    #nav li h2 a {font-size:8px;}
+@media screen and (max-width : 800px) {
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 30px;}
+    .coll_menu ul a{padding: 14px 0px;font-size: 12px;}
     
+    body{width:100%; background-color:#f5f3f1;}
     section {width:100%;position: relative; top: 0; left: 0; }
-    section #main{width:100%; margin: 0 auto; margin-top: 20px;}
-    section #main #sub_menu {width: 400px; margin:0 auto; overflow:hidden;}
-    section #main #sub_menu ul li {width:95px;  margin-top: 20px; height:16px;float:left; text-align: center; }
-    section #main #sub_menu ul li:nth-child(4) {border-right: none;}
-    section #main #sub_menu ul li:nth-child(8) {border-right: none;}
-    section #main #sub_menu ul li a{ font-size: 10px; color: #00174f; border-right: 1px solid #000; padding:0 20px;}
-    section #main #sub_menu ul li:nth-child(4) a{border-right: none;}
-    section #main #sub_menu ul li:nth-child(5) a{padding: 0 40px;}
-    section #main #sub_menu ul li:nth-child(6) a{padding: 0 23px;}
-    section #main #sub_menu ul li:nth-child(7) a{padding: 0 41px;}
-    section #main #sub_menu ul li:nth-child(8) a{padding: 0 23px;border-right: none;}
-    
-    section .contents_kids #kids_subwrap {width: 400px; margin:0 auto;}
-    section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top: 60px; overflow: hidden;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 218px; margin-top: 24.5px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 177px; margin-top: 24.5px; margin-left: 5px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 400px; margin-top: 15px;margin-left: 0px; float:left;}
-    
-    section .contents_kids #kids_subwrap #sub_wrap2{width: 400px; margin: 0 auto; overflow: hidden; margin-top: 0px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 221px; margin-top: 75px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text{width: 80px; margin-top: 70px; float:left;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p{text-align: right; color: #00174f; line-height: 1.5;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(1){font-size:20px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3)
-    {font-size:10px; margin-top:30px;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 199px; margin-top: 40px;  margin-left: 15px; float:right;}
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 80px; margin-top: 70px; margin-right: 30px; float:right;}
+
+    section .con_wrap{width:100%; margin-top:40px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_kids #kids_main {width: 100%;}
+    section .contents_kids #kids_main img {width: 100%;}
+    section .contents_kids #kids_subwrap {width: 590px; margin:0 auto;}
+    section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top:40px; overflow: hidden;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 325px; margin-top: 0px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 260px; margin-top: 0px; margin-left: 5px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 590px; margin-left: 0px;margin-top: 30px;  float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2{width: 590px; margin: 0 auto; overflow: hidden; margin-top: 40px; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 230px; margin-top:5px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 200px;margin-left: 15px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 145px; float:left;}
     section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p{text-align: right; color: #00174f; line-height: 1.5;margin-left: 10px; }
-    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:20px; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:24px; color: #00174f; }
     section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3)
-    {font-size:10px; margin-top:30px;}
-    section .contents_kids #kids_subwrap #sub_wrap3 {width: 400px; margin: 0 auto; margin-top: 60px; }
-    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 150px; float: left; }
-    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 250px; float: left; }
+    {font-size:14px; margin-top:30px;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
+    section .contents_kids #kids_subwrap #sub_wrap3 {width: 590px; margin: 0 auto; margin-top: 40px; overflow: hidden;}
+    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 221px; float: left; }
+    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 369px; float: left; }
+
 
     
-    
-    footer {margin-top: 40px;}
-    footer #change_con {display: none;}
-    footer #foot_info {width:250px; margin:0 auto;  overflow: hidden;}
-    footer #foot_info ul li{float:none;}
-    footer #foot_info ul li:nth-child(1){display: none;}
-    footer #foot_info ul li:nth-child(2){display: none;}
-    footer #foot_info ul li:nth-child(3){display: none;}
-    footer #foot_info ul li:nth-child(4){display: none;}
-    footer #foot_info ul li{font-size:6px; color:#4f5259;}
-    footer #gnb {display: none;}
 }
 
 
+@media screen and (max-width : 640px) {
+    .coll_menu {width: 85%;}
+    .coll_menu ul{margin-top: 25px;}
+    .coll_menu ul a{padding: 11px 0px;font-size: 12px;}
+    
+    
+    
+    body{width:100%; background-color:#f5f3f1;}
+    section {width:100%;position: relative; top: 0; left: 0; }
+
+    section .con_wrap{width:100%; margin-top:30px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_kids #kids_main {width: 100%;}
+    section .contents_kids #kids_main img {width: 100%;}
+    section .contents_kids #kids_subwrap {width: 300px; margin:0 auto;}
+    section .contents_kids #kids_subwrap #sub_wrap1{width: 100%; margin-top:40px; overflow: hidden;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub1{width: 164px; margin-top: 0px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub2{width: 131px; margin-top: 0px; margin-left: 5px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap1 #kids_sub3{width: 300px; margin-left: 0px;margin-top: 30px;  float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2{width: 300px; margin: 0 auto; overflow: hidden; margin-top: 30px; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub4{width: 300px; margin-top: 30px; float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub4_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #kids_sub5{width: 300px;margin-left: 0px; margin-top: 30px;  float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text{width: 300px; margin-top: 30px;  float:left;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p{text-align: right; color: #00174f; line-height: 1.5;margin-left: 0px; margin-top: 30px;  }
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(1){font-size:21px; color: #00174f; }
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(2), section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3)
+    {font-size:13px; margin-top:10px;}
+    section .contents_kids #kids_subwrap #sub_wrap2 #sub5_text p:nth-child(3) a{color:#b30c2f; text-decoration: underline;}
+    section .contents_kids #kids_subwrap #sub_wrap3 {width: 300px; margin: 0 auto; margin-top: 30px; overflow: hidden;}
+    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub6{width: 300px; margin-top: 30px;  float: left; }
+    section .contents_kids #kids_subwrap #sub_wrap3 #kids_sub7{width: 300px; margin-top: 30px;  float: left; }
+
+    
+}

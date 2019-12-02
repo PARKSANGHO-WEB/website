@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     let myNav = document.querySelector("#myNav");
     let container = document.querySelector(".containerN");
+    let html = document.querySelector("html")
+    let body = document.querySelector("body")
+    
+    
     
     container.addEventListener("click", function() {
         myNav.classList.toggle("change");

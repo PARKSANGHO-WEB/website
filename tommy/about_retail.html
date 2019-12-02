@@ -8,45 +8,31 @@
   <meta name="Description" content="">
   <link rel="stylesheet" type="text/css" href="css/retail.css" />
   <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="css/about_btn.css" />
   <link href="https://fonts.googleapis.com/css?family= US|Montserrat|Bebas+Neue|Noto+Sans&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/menu.js"></script>
+ <title>TOMMYHILFIGER</title>
  </head>
  <body>
     <!---------------------------------HEADER--------------------------------->
 	<header>
 		<div id="logo_wrap">
-            <img src="img/logo.png" alt="로고입니다.">
+            <a href="./index.html"><img src="img/logo.png" alt="로고입니다."></a>
         </div>
         <nav id="myNav" class="overlay">
             <ul class="overlay-content">
                 <li class="big_menu">
-                    <a href="./about_biography.html" class="page_link">ABOUT US</a>
-                    <ul class="sub_link">
-                        <li><a href="./about_biography.html">BIOGRAPHY</a></li>
-                        <li><a href="./about_manage.html">MANAGEMENT</a></li>
-                        <li><a href="./about_copor.html">COPORATION</a></li>
-                        <li><a href="./about_brands.html">BRANDS</a></li>
-                        <li><a href="about_retail.html">RETAIL STORE</a></li>
-                    </ul>
+                    <a href="./index.html" class="page_link">HOME</a>
                 </li>
                 <li class="big_menu">
-                    <a href="./runway_page.html" class="page_link">RUNWAY SHOW</a>
+                    <a href="./about_biography.html" class="page_link">ABOUT US</a>
+                </li>
+                <li class="big_menu">
+                    <a href="./runway_.html" class="page_link">RUNWAY SHOW</a>
                 </li>
                 <li class="big_menu">
                     <a href="./tommynow.html" class="page_link">COLLECTION</a>
-                    <ul class="sub_link sub_linkCOL ">
-                        <li><a href="./tommynow.html">TOMMYNOW</a></li>
-                        <li><a href="./holi.html">HOLIDAY</a></li>
-                        <li><a href="./gigi.html">TOMMY<br>&nbsp;X&nbsp;GIGI</a></li>
-                        <li><a href="./jeans.html">TOMMY<br>JEANS</a></li>
-                        <li><a href="./men.html">MEN</a></li>
-                        <li><a href="./women.html">WOMEN</a></li>
-                        <li><a href="./kids.html">KIDS</a></li>
-                        <li><a href="./frag.html">FRAGRANCE</a></li>
-                    </ul>
-                </li>
-                <li class="big_menu">
-                    <a href="./newsroom.html" class="page_link">NEWSROOM</a>
                 </li>
                 <li class="big_menu">
                     <a href="./store.html" class="page_link">RETAIL STORE</a>
@@ -61,9 +47,18 @@
             </div>
         </div>
 	</header>
+	<div class="menu_btn">
+	    <ul>
+	        <li><a href="./about_biography.html">BIOGRAPHY</a></li>
+	        <li><a href="./about_manage.html">MANAGE</a></li>
+	        <li><a href="./about_copor.html">CORPORATION</a></li>
+	        <li><a href="./about_brands.html">BRANDS</a></li>
+	        <li><a href="./about_retail.html">STORE</a></li>
+	    </ul>
+	</div>
 	<section>
     <!---------------------------------CONTENTS--------------------------------->
-		<div id="sub_logo"><h3><img src="img/retail_title.jpg" alt="coporation page title입니다." /></h3></div>
+		<div id="sub_logo"><h2><img src="img/retail_title.jpg" alt="coporation page title입니다." /></h2></div>
         <article id="main_img">
             <div id="top_img">
                 <div id="left">
@@ -126,7 +121,7 @@
                             <input type="text" id="email_address">
                         </li>
                         <li>
-                            <label for="re_enter_email"><p>RE ENTER EMAIL ADDRESS<span class="form_color">*</span></p></label>
+                            <label for="re_enter_email"><p>RE ENTER EMAIL <span class="form_color">*</span></p></label>
                             <input type="text" id="re_enter_email">
                         </li>
                     </ul>
@@ -146,7 +141,7 @@
                             <input type="text" id="city_new_store">
                         </li>
                         <li>
-                            <label for="number_new_store"><p>NUMBER OF NEW STORE<span class="form_color">*</span></p></label>
+                            <label for="number_new_store"><p>NUMBER NEW STORE<span class="form_color">*</span></p></label>
                             <input type="text" id="number_new_store">
                         </li>
                     </ul>
@@ -154,7 +149,7 @@
                 <div id="check_sub_wrap">   
                     <div id="check_accept">
                         <input type="checkbox" value="check" id="check">
-                        <label for="check"><p>I ACCEPT <span class="check_text">THE TERMS & CONDITIONS</span></p></label>
+                        <label for="check"><p><span class="check_text">THE TERMS & CONDITIONS</span></p></label>
                     </div>
                     <div id="submit">
                         <a href="#">
