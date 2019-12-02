@@ -32,26 +32,21 @@ a {
     text-decoration: none;
 }
 
-.pc-nav {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    overflow: hidden;
-    height: 78px;
-    z-index: 99;
-}
 
 .containerN {
-    display: none;
     z-index: 999;
 }
 
 .logo{
-    width: 160px;
+    width: 140px;
+    height: 60px;
     float: left;
     position: absolute;
+    top: 14px;
     left: 20px;
+}
+.logo img{
+    width: 100%;
 }
 
 
@@ -172,7 +167,19 @@ a {
     width: 100%;
     padding:  70px 0px;
     background-color: #fff;
+    animation: fadeInText 300ms 0ms forwards;
+
 /*    background-color: #A5DAF1;*/
+}
+
+@keyframes fadeInText {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*
@@ -318,9 +325,6 @@ a {
 
 
 @media screen and (max-width : 1200px) {
-    .pc-nav .menu { 
-        display: none;
-    }
     
     .containerN {
         display: block;
