@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto|Righteous|Nunito+Sans|Calistoga|Roboto|Quicksand|Vidaloka|Montserrat|Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Righteous|Nunito+Sans|Calistoga|Roboto|Quicksand|Vidaloka|Montserrat|Noto+Sans&display=swap" rel="stylesheet">
     <title>SANGHOW-PORTFOLIO</title>
     
     
@@ -18,7 +17,6 @@
     <script src="js/main.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -36,17 +34,6 @@
             <a href="./contact.html">CONTACT</a>
         </ul>
     </nav>
-<!--
-    <nav class="pc-nav">
-        <div class="menu">
-            <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
--->
     <div class="mo-nav">
             <img src="img/logo-w.png" alt="" class="logo">
         <div class="containerN">
@@ -84,10 +71,11 @@
             <div class="about-title">
                 <h1>ABOUT</h1>
             </div>
-            <div class="p2-ment item" data-aos="fade-in">
+            <div class="p2-ment">
                 <h1 class="intro">MY&nbsp;&nbsp;NAME&nbsp;&nbsp;IS&nbsp;&nbsp;SANGHOW</h1>
                 <p>
-                    안녕하세요. 박상호입니다.포트폴리오페이지에 접속해주셔서 감사합니다.<br>항상 모든 일에 꼼꼼하게, 세심하게 디자인하고, 작업합니다.<br>사용자들이 만족하는 사이트를 만들기 위해 항상 노력합니다.<br>
+                    안녕하세요. 박상호입니다.포트폴리오페이지에 접속해주셔서 감사합니다.<br>항상 모든 일에 꼼꼼하게, 디자인하고, 작업하며<br>도태되지않기 위해 항상 새로운 것을 탐구하고, 변화에 적응하고, 앞서기 위해 노력합니다!
+                    <br>사용자들이 만족하는 사이트를 만들기 위해 항상 노력합니다.<br>
                     언제든 함께 작업할 준비가 되어있으니, 연락주세요!
                 
                 </p>
@@ -98,23 +86,91 @@
     <div class="page3">
         <div class="works">
             <div class="work-title">
-                <h1 class="item" data-aos="fade-up">MY WORKS</h1>
+                <h1 class="">
+                    MY WORKS
+                    <span>mouse over to image</span>
+                </h1>
             </div>
         </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm port1 item" data-aos="fade-up">
+                    <div class="col-sm port1">
+                        <div class="caption">
+                            <div class="cap-wrap">
+                                <p>
+                                    TOMMY&nbsp;HILFIGER<br>
+                                </p>
+                                <p>
+                                    HOMEPAGE PUBLISHING<br>
+                                </p>
+                                <p class="btn_view">
+                                    <a href="#">VIEW MORE
+                                    </a><br>
+                                </p>
+                            </div>
+                        </div>
                     </div>               
-                    <div class="col-sm port3 item" data-aos="fade-up">
+                    <div class="col-sm port2">
+                        <div class="caption">
+                            <div class="cap-wrap">
+                                <p>
+                                    CAFE&nbsp;BRICK WALL<br>
+                                </p>
+                                <p>
+                                    HOMEPAGE PUBLISHING<br>
+                                </p>
+                                <p class="btn_view">
+                                    <a href="#">VIEW MORE
+                                    </a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm port3">
+                        <div class="caption">
+                            <div class="cap-wrap">
+                                <p>
+                                    POSTER&nbsp;DECLARATION<br>
+                                </p>
+                                <p>
+                                    MAKING POSTER<br>
+                                </p>
+                                <p class="btn_view">
+                                    <a href="#">VIEW MORE
+                                    </a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>               
+                    <div class="col-sm port4">
+                        <div class="caption">
+                            <div class="cap-wrap">
+                                <p>
+                                    CAFE&nbsp;BRICK WALL<br>
+                                </p>
+                                <p>
+                                    HOMEPAGE PUBLISHING<br>
+                                </p>
+                                <p class="btn_view">
+                                    <a href="#">VIEW MORE
+                                    </a><br>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
     </div>
-
-    <script>
-        AOS.init({
-            duration: 1200,
-        });
-    </script>
+    <footer>
+        <h1>I'm ready to create the home page you need.</h1>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <p>© 2019 sanghow. All rights reserved. 상호우</p>
+    </footer>
 </body>
 </html>

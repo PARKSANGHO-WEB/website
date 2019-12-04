@@ -12,7 +12,7 @@ html,body {
 
 
 body{
-    background-image: url(../img/page1-b2.png);
+    background-image: url(../img/port_1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -49,322 +49,66 @@ a {
     width: 100%;
 }
 
-
-.pc-nav .menu{
-    width: 30%;
-    margin:  0 auto;
-}
-
-
-.menu ul {
-    overflow: hidden;
-}
-
-
-.menu ul li{
-    width: 33.3%;
-    text-align: center;
-    margin:  0 auto;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 78px;
-
-}
-
-.menu ul li a{
-    color: white;
-    font-size: 16px;
-}
-
-
-.menu ul li a:hover{
-    color: black;
-    transition-duration: 1s;
-}
-
-.page1 {
+.port_top{
     width: 100%;
     height: 100%;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
-.page1-wrap {
-    width: 100%;
+.port_top .color1{
+    width: 50%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
     position: absolute;
+    background-color: #00174f;
+    top: 0;
+    left: 0;
+    opacity: .3;
 }
 
-
-.page1-wrap .intro-ment{
-    width: 90%;
-    padding-left: 10%;
+.port_top .color2{
+    width: 50%;
+    height: 100%;
     position: absolute;
+    background-color: #b30c2f;
+    top: 0;
+    right: 0;
+    opacity: .3;
+}
+
+.port_top h1{
+    position: absolute;
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
-    margin:auto;
-}
-
-.page1-wrap .intro-ment h1 {
+    text-align: center;
     font-size: 70px;
-    font-family: 'Calistoga', cursive;
-    font-weight: lighter;
-    color: #fff!important;
-    text-align: left;
-}
-
-.page1-wrap .intro-ment .intro-line {
-    width: 250px;
-    height: 2px;
-    background-color: white;
-    margin: 20px 0px;
-
-}
-
-.page1-wrap .intro-ment .font-sns{
-    width: 200px;
-    margin: 0px;
-}
-
-.page1-wrap .intro-ment .font-sns div{
-    cursor: pointer;
-    float: left;
-    width: 33%;
-    color: white;
-    text-shadow: none;
-}
-
-
-.page1-wrap .intro-ment .font-sns div{
-    cursor: pointer;
-    float: left;
-    text-align: left;
-    width: 33%;
-    font-size: 30px;
-    color: white;
-    transition-duration: 1s;
-}
-
-.page1-wrap .intro-ment .font-sns div:nth-child(1):hover {
-    color: #3b5998;
-}
-.page1-wrap .intro-ment .font-sns div:nth-child(2):hover {
-    color: #dd2a7b;
-}
-.page1-wrap .intro-ment .font-sns div:nth-child(3):hover {
-    color: #ffe812;
-}
-
-.page2 {
-    position: relative;
-    width: 100%;
-    padding:  60px 0px;
-    background-color: #fff;
-    animation: fadeInText 300ms 0ms forwards;
-
-/*    background-color: #A5DAF1;*/
-}
-
-@keyframes fadeInText {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  } to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-
-
-.about-title h1 {
+    color: #fff;
     font-family: 'Righteous', cursive;
-    color: black;
-    text-align: center;
-    font-size: 65px;
-    padding-bottom: 60px;
-    font-weight: bold;
 }
 
-
-.page2 .p2-title {
-    width: 60%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.page2 .p2-title .p2-ment h1 {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 30px;
-    color: black;
-    text-shadow: 10px 10px 6px gray;
-    text-align: center;
-}
-
-.page2 .p2-title .p2-ment p {
-    color: black;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
-    margin-top: 40px;
-    line-height: 2;
-    text-align: center;
-}
-
-.more-btn {
-    width: 200px;
-    margin: 0 auto;
-    font-family: 'Nunito Sans', sans-serif;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 40px;
-    text-align: center;
-        font-size: 16px;
-
-   background: linear-gradient(to right, black 50%, white 50%);
-   background-size: 200% 100%;
-   background-position: right bottom;
-   transition: all .7s ease-out;
-}
-
-.more-btn:hover{
-    color: white;
-    transition-duration: .7s;
-  background-position: left bottom;
-}
-
-
-
-.page3 {
-    width: 100%;
-    background-color: #eee;
-    padding: 60px 0px;
-    position: relative;
-}
-
-
-.work-title h1 {
-    font-family: 'Righteous', cursive;
-    color: black;
-    text-align: center;
-    font-size: 65px;
-    padding-bottom: 55px;
-    font-weight: bold;
-}
-
-.work-title h1 span {
-    display: block;
-    font-size: 16px;
-    color: gray;
-    font-weight: lighter;
-}
-
-.col-sm {
-    margin: 15px;
-}
-
-.col-sm::before {
-    content: " ";    
-    display: block;
-    padding-bottom: 100%;
-}
-
-
-
-.col-sm .caption {
+.port_page2 {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-    transition-duration: 1s;
-    cursor: pointer;
+    background-color: #fff;
 }
 
 
-.col-sm .caption .cap-wrap {
-    overflow: hidden;
-    margin-top: 50%;
-    transform: translateY(-50%);
-}
-
-.col-sm .caption .cap-wrap p{
-    
-    color: white;
-    font-size: 30px;
+.port_page2 h1{
+    width: 100%;
     text-align: center;
-    line-height: 100%;
-    margin-bottom: 30px;
-    transition-duration: 0.5s;
+    font-size: 60px;
     font-family: 'Righteous', cursive;
+    padding: 60px 0px;
 }
 
-.col-sm .caption p span{
-    color: white;
-    border: 2px solid #fff;
-    display: block;
+.port_page2 p{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto sans', sans-serif;
 }
-
-.col-sm:hover .caption{
-    opacity: 1;
-}
-.col-sm:hover .caption p{
-    
-    margin-bottom: 10px;
-}
-
-.col-sm .caption p:nth-child(3) a{
-    border: 3px solid #fff;
-    display: inline-block;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-}
-
-.col-sm .caption p:nth-child(3) a:hover{
-    background-color: black;
-    transition-duration: 1s;
-}
-
-.port1 {
-    background-image: url(../img/port_1.png);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.port2 {
-    background-image: url(../img/port_2.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.port3 {
-    background-image: url(../img/port_3.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.port4 {
-    background-image: url(../img/port_4.png);
-    background-size: cover;
-    background-position: center;
-
-}
-
-
-.container {
-    width: 1000px!important;
-}
-
 
 footer {
     width: 100%;
@@ -373,10 +117,10 @@ footer {
 
 footer h1{ 
     font-family: 'Calistoga', cursive;
-    font-size: 20px;
+    font-size: 40px;
     color: #fff;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 40px;
 }
 
 
@@ -938,7 +682,7 @@ footer p {
     .page2 {
         position: relative;
         width: 100%;
-        padding:  30px 0px;
+        padding:  40px 0px;
         background-color: #fff;
         animation: fadeInText 300ms 0ms forwards;
     }
@@ -947,8 +691,8 @@ footer p {
         font-family: 'Righteous', cursive;
         color: black;
         text-align: center;
-        font-size: 48px;
-        padding-bottom:30px;
+        font-size: 38px;
+        padding-bottom:40px;
         font-weight: bold;
     }
 
@@ -961,7 +705,7 @@ footer p {
 
     .page2 .p2-title .p2-ment h1 {
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 20px;
+        font-size: 22px;
         color: black;
         text-shadow: 10px 10px 6px gray;
         text-align: center;
@@ -970,22 +714,22 @@ footer p {
     .page2 .p2-title .p2-ment p {
         color: black;
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 13px;
+        font-size: 14px;
         margin-top: 30px;
         line-height: 2;
         text-align: center;
     }
 
     .more-btn {
-        width: 150px;
+        width: 160px;
         margin: 0 auto;
         font-family: 'Nunito Sans', sans-serif;
         border: 2px solid black;
         padding: 8px;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 13px;
-        margin-top: 30px;
+        font-size: 14px;
+        margin-top: 40px;
         text-align: center;
 
        background: linear-gradient(to right, black 50%, white 50%);
@@ -1032,9 +776,6 @@ footer p {
     
     .col-sm {
         margin: 15px;
-    }
-    .col-sm .caption {
-        opacity: 1;
     }
     
     .col-sm .caption .cap-wrap p{

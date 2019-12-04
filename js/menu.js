@@ -16,3 +16,13 @@ function myFunction(x) {
     x.classList.toggle("change");
     
 }
+
+
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".mo-nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
