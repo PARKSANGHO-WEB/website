@@ -11,7 +11,7 @@ html,body {
 }
 
 
-body{
+.body_bg1{
     background-image: url(../img/port_1.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -19,6 +19,23 @@ body{
     background-size: cover;
     min-height: 100vh; 
 }
+
+
+.body_bg2 {
+    
+    background-image: url(../img/port_2.jpg);
+}
+
+
+.body_bg3 {
+    background-image: url(../img/port_3.jpg);
+}
+
+.body_bg4 {
+    background-image: url(../img/port_4.png);
+    background-size: 100% 110%;
+}
+
 
 /**************preload******************/
 
@@ -30,6 +47,13 @@ ul, ol, li {
 
 a {
     text-decoration: none;
+    color: #b30c2f;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #00174f;
 }
 
 
@@ -88,10 +112,13 @@ a {
     font-family: 'Righteous', cursive;
 }
 
+/*************PORT_1*********************/
+
+
 .port_page2 {
     width: 100%;
-    height: 100%;
     background-color: #fff;
+    padding-top: 60px;
 }
 
 
@@ -100,15 +127,350 @@ a {
     text-align: center;
     font-size: 60px;
     font-family: 'Righteous', cursive;
-    padding: 60px 0px;
+    color: #00174f;
+}
+
+.port_page2 h1 span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+}
+
+.port_page2 h1 span a{
+}
+
+
+.port_page2 h1 span a i {
+    padding-left: 5px;
 }
 
 .port_page2 p{
     color: black;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Noto sans', sans-serif;
 }
+
+
+.port_page2 .prev {
+    width:90%;
+    padding: 0% 5%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.port_page2 .prev div{
+    
+        box-shadow: 0px 0px 20px 0px gray;
+}
+
+.port_page2 .prev .pre_wrap1{
+    width: 47.5%;
+    height: 600px;
+    background-image: url(../img/port/tommy_1.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 60px;
+}
+
+
+.port_page2 .prev .pre_wrap2{
+    background-image: url(../img/port/tommy_2.png);
+    margin-left: 5%;
+}
+
+
+
+.port_page2 .prev .pre_wrap3{
+    background-image: url(../img/port/tommy_3.png);
+}
+
+
+
+.port_page2 .prev .pre_wrap4{
+    background-image: url(../img/port/tommy_4.png);
+    margin-left: 5%;
+}
+
+
+
+.port_page2 .prev .pre_wrap5{
+    background-image: url(../img/port/tommy_5.png);
+}
+
+
+.port_page2 .info_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding: 0px 10%;
+}
+
+
+
+.port_page2 .info_wrap .color,
+.port_page2 .info_wrap .skill {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+
+.port_page2 .info_wrap div h1 {
+    font-size: 30px;
+}
+
+.port_page2 .info_wrap .color ul{
+    width: 110px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.port_page2 .info_wrap .color ul li{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 60px;
+    float: left;
+}
+
+.port_page2 .info_wrap .color ul .color_1{
+    background-color: #b30c2f;
+}
+
+.port_page2 .info_wrap .color ul .color_2{
+    background-color: #00174f;
+    margin-left: 10px;
+}
+
+
+
+/************PORT_2******************/
+
+.port_top2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(181,117,25,0.3);
+}
+
+.port_top2 h1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+}
+
+
+.port_page2 .prev .pre_2wrap1{
+    width: 47.5%;
+    height: 600px;
+    background-image: url(../img/port/brick_1.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 60px;
+}
+
+
+.port_page2 .prev .pre_2wrap2{
+    background-image: url(../img/port/brick_2.png);
+    margin-left: 5%;
+}
+
+
+
+.port_page2 .prev .pre_2wrap3{
+    background-image: url(../img/port/brick_3.png);
+}
+
+
+
+.port_page2 .prev .pre_2wrap4{
+    background-image: url(../img/port/brick_4.png);
+    margin-left: 5%;
+}
+
+
+
+.port_page2 .info_wrap .color ul .color_1{
+    background-color: #b30c2f;
+}
+
+.port_page2 .info_wrap .color ul .color_2{
+    background-color: #00174f;
+    margin-left: 10px;
+} 
+
+/************PORT_3******************/
+
+.port_top3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(181,117,25,0.3);
+}
+
+.port_top3 h1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+}
+
+.port_page2 .prev .pre_3wrap1{
+    width: 70%;
+    height: 1000px;
+    background-image: url(../img/port_3.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+/************PORT_4******************/
+
+.port_4top{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.port_4top h1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+}
+
+
+.port_4top .color1{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #231f20;
+    top: 0;
+    left: 0;
+    opacity: .3;
+}
+
+
+.port_4top .color2{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #9fad3b;
+    top: 0;
+    right: 0;
+    opacity: .3;
+}
+
+
+.port_page2 h1 span a{
+}
+
+
+.port_page2 h1 span a i {
+    padding-left: 5px;
+}
+
+.port_page2 p{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Noto sans', sans-serif;
+}
+
+
+.port_page2 .prev {
+    width:90%;
+    padding: 0% 5%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.port_page2 .prev div{
+    
+        box-shadow: 0px 0px 20px 0px gray;
+}
+
+.port_page2 .prev .pre_4wrap1{
+    width: 47.5%;
+    height: 600px;
+    background-image: url(../img/port/momo_1.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 60px;
+}
+
+
+.port_page2 .prev .pre_4wrap2{
+    background-image: url(../img/port/momo_1.png);
+    margin-left: 5%;
+}
+
+
+
+.port_page2 .prev .pre_4wrap3{
+    background-image: url(../img/port/momo_3.png);
+}
+
+
+
+.port_page2 .prev .pre_4wrap4{
+    background-image: url(../img/port/momo_4.png);
+    margin-left: 5%;
+}
+
+
+
+.port_page2 .prev .pre_4wrap5{
+    background-image: url(../img/port/momo_5.png);
+}
+
+
+.port_page2 .info_wrap .color ul .color_1{
+    background-color: #231f20;
+}
+
+.port_page2 .info_wrap .color ul .color_2{
+    background-color: #9fad3b;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/************FOOTER******************/
+
+
 
 footer {
     width: 100%;
@@ -164,705 +526,120 @@ footer p {
 
 
 @media screen and (max-width : 1200px) {
-    
 
-    .logo{
-        width: 140px;
-        height: 60px;
-        float: left;
+    .port_top h1{
         position: absolute;
-        top: 14px;
-        left: 20px;
-    }
-    .logo img{
         width: 100%;
-    }
-
-
-    .page1-wrap .intro-ment{
-        width: 80%;
-        padding-left: 20%;
-    }
-
-    .page1-wrap .intro-ment h1 {
-        font-size: 55px;
-    }
-
-    .page1-wrap .intro-ment .intro-line {
-        width: 230px;
-        height: 2px;
-        background-color: white;
-        margin: 15px 0px;
-
-    }
-
-    .page1-wrap .intro-ment .font-sns{
-        width: 180px;
-        margin: 0px;
-    }
-
-
-    .page1-wrap .intro-ment .font-sns div{
-        cursor: pointer;
-        float: left;
-        text-align: left;
-        width: 33%;
-        font-size: 25px;
-        color: white;
-        transition-duration: 1s;
-    }
-
-    .page2 {
-        position: relative;
-        width: 100%;
-        padding:  50px 0px;
-        background-color: #fff;
-        animation: fadeInText 300ms 0ms forwards;
-    }
-
-    .about-title h1 {
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-size: 60px;
+        color: #fff;
         font-family: 'Righteous', cursive;
-        color: black;
-        text-align: center;
-        font-size: 55px;
-        padding-bottom:50px;
-        font-weight: bold;
+    }
+
+    .port_page2 {
+        padding-top: 50px;
     }
 
 
-    .page2 .p2-title {
-        width: 70%;
-        margin: 0 auto;
-        overflow: hidden;
+    .port_page2 h1{
+        font-size: 50px;
     }
 
-    .page2 .p2-title .p2-ment h1 {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 25px;
-        color: black;
-        text-shadow: 10px 10px 6px gray;
-        text-align: center;
+    .port_page2 h1 span{
+        font-size: 18px;
     }
 
-    .page2 .p2-title .p2-ment p {
-        color: black;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 17px;
-        margin-top: 40px;
-        line-height: 2;
-        text-align: center;
-    }
-
-    .more-btn {
-        width: 180px;
-        margin: 0 auto;
-        font-family: 'Nunito Sans', sans-serif;
-        border: 2px solid black;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 40px;
-        text-align: center;
+    .port_page2 p{
         font-size: 15px;
-
-       background: linear-gradient(to right, black 50%, white 50%);
-       background-size: 200% 100%;
-       background-position: right bottom;
-       transition: all .7s ease-out;
-    }
-
-    .more-btn:hover{
-        color: white;
-        transition-duration: .7s;
-      background-position: left bottom;
-    }
-
-
-
-    .page3 {
-        width: 100%;
-        background-color: #eee;
-        padding: 50px 0px;
-        position: relative;
-    }
-
-
-    .work-title h1 {
-        font-family: 'Righteous', cursive;
-        color: black;
-        text-align: center;
-        font-size: 55px;
-        padding-bottom: 50px;
-        font-weight: bold;
-    }
-
-    .work-title h1 span {
-        display: block;
-        font-size: 15px;
-        color: gray;
-        font-weight: lighter;
-    }
-
-    .col-sm {
-        margin: 15px;
     }
     
-    .col-sm .caption .cap-wrap p{
-
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        line-height: 100%;
-        margin-bottom: 30px;
-        transition-duration: 0.5s;
-        font-family: 'Righteous', cursive;
+    .port_page2 .info_wrap .color,
+    .port_page2 .info_wrap .skill {
+        margin-top: 30px;
     }
 
-    .col-sm .caption p span{
-        color: white;
-        border: 2px solid #fff;
-        display: block;
+    .port_page2 .info_wrap div h1 {
+        font-size: 27px;
     }
 
-    .col-sm:hover .caption{
-        opacity: 1;
-    }
-    .col-sm:hover .caption p{
-
-        margin-bottom: 10px;
+    .port_page2 .info_wrap .color ul{
+        width: 100px;
     }
 
-    .col-sm .caption p:nth-child(3) a{
-        border: 3px solid #fff;
-        display: inline-block;
-        font-size: 18px;
-        text-decoration: none;
-        padding: 6px 20px;
-        color: #fff;
+    .port_page2 .info_wrap .color ul li{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 50px;
     }
+    
 
-
-    footer h1{ 
-        font-family: 'Calistoga', cursive;
-        font-size: 30px;
-        color: #fff;
-        text-align: center;
-        padding-top: 30px;
+    .port_page2 .prev .pre_wrap1{
+        width: 47.5%;
+        height: 500px;
+        margin-bottom: 50px;
     }
-
-
-    footer ul{ 
-        overflow: hidden;
-        width: 30%;
-        margin: 0 auto;
-    }
-
-    footer ul li {
-        float: left;
-        font-weight: bold;
-        width: 33.3%;
-        text-align: center;
-        margin-top: 30px;    
-    }
-
-
-    footer ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 12px;
-        color: #8792af;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    footer ul li a:hover{
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer p {
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-        line-height: 100px;
-        font-family: 'Roboto', sans-serif;
-        margin: 0px!important;
-        color: #eee;
-    }
-
-
 
 }
-
-
-
 
 
 @media screen and (max-width : 800px) {
-    
 
-    .logo{
-        width: 140px;
-        height: 60px;
-        float: left;
+    .port_top h1{
         position: absolute;
-        top: 14px;
-        left: 20px;
-    }
-    .logo img{
         width: 100%;
-    }
-
-
-    .page1-wrap .intro-ment{
-        width: 80%;
-        padding-left: 20%;
-    }
-
-    .page1-wrap .intro-ment h1 {
-        font-size: 45px;
-    }
-
-    .page1-wrap .intro-ment .intro-line {
-        width: 200px;
-        height: 2px;
-        background-color: white;
-        margin: 10px 0px;
-
-    }
-
-    .page1-wrap .intro-ment .font-sns{
-        width: 160px;
-        margin: 0px;
-    }
-
-
-    .page1-wrap .intro-ment .font-sns div{
-        cursor: pointer;
-        float: left;
-        text-align: left;
-        width: 33%;
-        font-size: 22px;
-        color: white;
-        transition-duration: 1s;
-    }
-
-    .page2 {
-        position: relative;
-        width: 100%;
-        padding:  40px 0px;
-        background-color: #fff;
-        animation: fadeInText 300ms 0ms forwards;
-    }
-
-    .about-title h1 {
-        font-family: 'Righteous', cursive;
-        color: black;
-        text-align: center;
-        font-size: 38px;
-        padding-bottom:40px;
-        font-weight: bold;
-    }
-
-
-    .page2 .p2-title {
-        width: 70%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .page2 .p2-title .p2-ment h1 {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 22px;
-        color: black;
-        text-shadow: 10px 10px 6px gray;
-        text-align: center;
-    }
-
-    .page2 .p2-title .p2-ment p {
-        color: black;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 14px;
-        margin-top: 30px;
-        line-height: 2;
-        text-align: center;
-    }
-
-    .more-btn {
-        width: 160px;
-        margin: 0 auto;
-        font-family: 'Nunito Sans', sans-serif;
-        border: 2px solid black;
-        padding: 8px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 14px;
-        margin-top: 40px;
-        text-align: center;
-
-       background: linear-gradient(to right, black 50%, white 50%);
-       background-size: 200% 100%;
-       background-position: right bottom;
-       transition: all .7s ease-out;
-    }
-
-    .more-btn:hover{
-        color: white;
-        transition-duration: .7s;
-      background-position: left bottom;
-    }
-
-
-
-    .page3 {
-        width: 100%;
-        background-color: #eee;
-        padding: 40px 0px;
-        position: relative;
-    }
-
-
-    .work-title h1 {
-        font-family: 'Righteous', cursive;
-        color: black;
+        top: 50%;
+        transform: translateY(-50%);
         text-align: center;
         font-size: 45px;
-        padding-bottom: 50px;
-        font-weight: bold;
+        color: #fff;
+        font-family: 'Righteous', cursive;
     }
 
-    .work-title h1 span {
-        display: block;
-        font-size: 15px;
-        color: gray;
-        font-weight: lighter;
+    .port_page2 {
+        padding-top: 40px;
     }
 
-    .col-sm {
-        margin: 15px;
+
+    .port_page2 h1{
+        font-size: 40px;
+    }
+
+    .port_page2 h1 span{
+        font-size: 17px;
+    }
+
+    .port_page2 p{
+        font-size: 14px;
     }
     
-    .col-sm .caption .cap-wrap p{
-
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        line-height: 100%;
-        margin-bottom: 10px;
-        transition-duration: 0.5s;
-        font-family: 'Righteous', cursive;
+    .port_page2 .info_wrap .color,
+    .port_page2 .info_wrap .skill {
+        margin-top: 30px;
     }
 
-    .col-sm .caption p span{
-        color: white;
-        border: 2px solid #fff;
-        display: block;
+    .port_page2 .info_wrap div h1 {
+        font-size: 24px;
     }
 
-    .col-sm:hover .caption{
-        opacity: 1;
-    }
-    .col-sm:hover .caption p{
-
-        margin-bottom: 10px;
+    .port_page2 .info_wrap .color ul{
+        width: 100px;
     }
 
-    .col-sm .caption p:nth-child(3) a{
-        border: 3px solid #fff;
-        display: inline-block;
-        font-size: 15px;
-        text-decoration: none;
-        padding: 6px 20px;
-        color: #fff;
+    .port_page2 .info_wrap .color ul li{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 50px;
     }
+    
 
-    footer h1{ 
-        font-family: 'Calistoga', cursive;
-        font-size: 30px;
-        color: #fff;
-        text-align: center;
-        padding-top: 30px;
+    .port_page2 .prev .pre_wrap1{
+        width: 47.5%;
+        height: 400px;
+        margin-bottom: 50px;
     }
-
-
-    footer ul{ 
-        overflow: hidden;
-        width: 30%;
-        margin: 0 auto;
-    }
-
-    footer ul li {
-        float: left;
-        font-weight: bold;
-        width: 33.3%;
-        text-align: center;
-        margin-top: 30px;    
-    }
-
-
-    footer ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 12px;
-        color: #8792af;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    footer ul li a:hover{
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer p {
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-        line-height: 100px;
-        font-family: 'Roboto', sans-serif;
-        margin: 0px!important;
-        color: #eee;
-    }
-
-
 
 }
-
-
-
-
-
-@media screen and (max-width : 640px) {
-    
-
-    .logo{
-        width: 140px;
-        height: 60px;
-        float: left;
-        position: absolute;
-        top: 14px;
-        left: 20px;
-    }
-    .logo img{
-        width: 100%;
-    }
-
-
-    .page1-wrap .intro-ment{
-        width: 80%;
-        padding-left: 20%;
-    }
-
-    .page1-wrap .intro-ment h1 {
-        font-size: 45px;
-    }
-
-    .page1-wrap .intro-ment .intro-line {
-        width: 200px;
-        height: 2px;
-        background-color: white;
-        margin: 10px 0px;
-
-    }
-
-    .page1-wrap .intro-ment .font-sns{
-        width: 160px;
-        margin: 0px;
-    }
-
-
-    .page1-wrap .intro-ment .font-sns div{
-        cursor: pointer;
-        float: left;
-        text-align: left;
-        width: 33%;
-        font-size: 22px;
-        color: white;
-        transition-duration: 1s;
-    }
-
-    .page2 {
-        position: relative;
-        width: 100%;
-        padding:  40px 0px;
-        background-color: #fff;
-        animation: fadeInText 300ms 0ms forwards;
-    }
-
-    .about-title h1 {
-        font-family: 'Righteous', cursive;
-        color: black;
-        text-align: center;
-        font-size: 38px;
-        padding-bottom:40px;
-        font-weight: bold;
-    }
-
-
-    .page2 .p2-title {
-        width: 70%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .page2 .p2-title .p2-ment h1 {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 22px;
-        color: black;
-        text-shadow: 10px 10px 6px gray;
-        text-align: center;
-    }
-
-    .page2 .p2-title .p2-ment p {
-        color: black;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 14px;
-        margin-top: 30px;
-        line-height: 2;
-        text-align: center;
-    }
-
-    .more-btn {
-        width: 160px;
-        margin: 0 auto;
-        font-family: 'Nunito Sans', sans-serif;
-        border: 2px solid black;
-        padding: 8px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 14px;
-        margin-top: 40px;
-        text-align: center;
-
-       background: linear-gradient(to right, black 50%, white 50%);
-       background-size: 200% 100%;
-       background-position: right bottom;
-       transition: all .7s ease-out;
-    }
-
-    .more-btn:hover{
-        color: white;
-        transition-duration: .7s;
-      background-position: left bottom;
-    }
-
-
-
-    .page3 {
-        width: 100%;
-        background-color: #eee;
-        padding: 40px 0px;
-        position: relative;
-    }
-
-
-    .work-title h1 {
-        font-family: 'Righteous', cursive;
-        color: black;
-        text-align: center;
-        font-size: 45px;
-        padding-bottom: 50px;
-        font-weight: bold;
-    }
-
-    .work-title h1 span {
-        display: block;
-        font-size: 15px;
-        color: gray;
-        font-weight: lighter;
-    }
-
-    .container {
-        width: 400px!important;
-    }
-    
-    .col-sm {
-        margin: 15px;
-    }
-    
-    .col-sm .caption .cap-wrap p{
-
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        line-height: 100%;
-        margin-bottom: 10px;
-        transition-duration: 0.5s;
-        font-family: 'Righteous', cursive;
-    }
-
-    .col-sm .caption p span{
-        color: white;
-        border: 2px solid #fff;
-        display: block;
-    }
-
-    .col-sm:hover .caption{
-        opacity: 1;
-    }
-    .col-sm:hover .caption p{
-
-        margin-bottom: 10px;
-    }
-
-    .col-sm .caption p:nth-child(3) a{
-        border: 3px solid #fff;
-        display: inline-block;
-        font-size: 15px;
-        text-decoration: none;
-        padding: 6px 20px;
-        color: #fff;
-    }
-
-    footer h1{ 
-        font-family: 'Calistoga', cursive;
-        font-size: 30px;
-        color: #fff;
-        text-align: center;
-        padding-top: 30px;
-    }
-
-
-    footer ul{ 
-        overflow: hidden;
-        width: 30%;
-        margin: 0 auto;
-    }
-
-    footer ul li {
-        float: left;
-        font-weight: bold;
-        width: 33.3%;
-        text-align: center;
-        margin-top: 30px;    
-    }
-
-
-    footer ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 12px;
-        color: #8792af;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    footer ul li a:hover{
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer p {
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-        line-height: 100px;
-        font-family: 'Roboto', sans-serif;
-        margin: 0px!important;
-        color: #eee;
-    }
-
-
-
-}
-
-
 
 
