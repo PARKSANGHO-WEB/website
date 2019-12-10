@@ -10,7 +10,7 @@ html,body {
 }
 
 body {
-    background-image: url(../img/con-ban2.jpg);
+    background-image: url(../img/con-ban.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -94,23 +94,25 @@ body {
 }
 
 .input-w .input1{
-    width: 390px;
+    width: 400px;
     float: left;
 }
 .input-w .input2{
-    width: 390px;
+    width: 400px;
     float: left;
     margin-top: 20px;
 }
 
 .input-w .input3 {
-    width: 390px;
+    width: 400px;
     float: left;
     margin-top: 20px;
 }
 
 .input input {
+    width: 374px;
     height: 50px;
+    padding-left: 20px;
 }
 
 .input3 input {
@@ -163,7 +165,8 @@ body {
 
 .btn-w button{
     background: rgb(115, 71, 48);
-    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -176,6 +179,8 @@ body {
 .btn-w button p{
     margin-bottom: 0px!important;
     color: white;
+    padding: 10px;
+    
 }
 
 
@@ -285,7 +290,7 @@ body {
     }
 
     .left-w {
-        width: 340px;
+        width: 280px;
         overflow: hidden;
     }
 
@@ -306,6 +311,7 @@ body {
     }
 
     .input input {
+        width: 256px;
         height: 50px;
     }
 
@@ -352,7 +358,7 @@ body {
 
     .btn-w{
         clear: both;
-        width: 100px;
+        width: 80px;
         margin: 0 auto;
         margin-top: 20px;
     }
@@ -487,6 +493,7 @@ body {
     }
 
     .input input {
+        width: 316px;
         height: 50px;
     }
 
@@ -670,6 +677,8 @@ body {
     }
 
     .input input {
+        
+        width: 246px;
         height: 50px;
     }
 
