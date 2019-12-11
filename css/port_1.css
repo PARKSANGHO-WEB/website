@@ -28,7 +28,7 @@ html,body {
 
 
 .body_bg3 {
-    background-image: url(../img/port_3.jpg);
+    background-image: url(../img/port_3.png);
 }
 
 .body_bg4 {
@@ -336,7 +336,7 @@ a:hover {
 .port_page2 .prev .pre_3wrap1{
     width: 70%;
     height: 1000px;
-    background-image: url(../img/port_3.jpg);
+    background-image: url(../img/port_3.png);
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
