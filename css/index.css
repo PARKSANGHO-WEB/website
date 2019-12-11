@@ -365,7 +365,13 @@ a {
     width: 1000px!important;
 }
 
-
+    
+.about-title p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+    
 footer {
     width: 100%;
     background-color: #1d1d1d;
@@ -1070,6 +1076,9 @@ footer p {
         padding: 6px 20px;
         color: #fff;
     }
+    
+    
+    
 
     footer h1{ 
         font-family: 'Calistoga', cursive;

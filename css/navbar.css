@@ -117,7 +117,7 @@ p {
     cursor: pointer;
     position: absolute;
     top: 28px !important;
-    right: 15px; !important;
+    right: 40px; !important;
     z-index: 11;
 }
 
