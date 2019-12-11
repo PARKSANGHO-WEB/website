@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let container = document.querySelector(".containerN");
     let html = document.querySelector("html")
     let body = document.querySelector("body")
-    
+    let menu = document.querySelector("#menu")
     
     
     container.addEventListener("click", function() {
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function myFunction(x) {
     x.classList.toggle("change");
+        menu.classList.toggle("change");
     
 }
 
