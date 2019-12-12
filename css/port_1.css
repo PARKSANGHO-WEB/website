@@ -671,13 +671,10 @@ footer p {
         height: 45px;
         margin-bottom: 40px;
     }
-    
 
-    .port_page2 .prev .pre_wrap1{
-        width: 47.5%;
-        height: 400px;
-        margin-bottom: 40px;
-    }
+    .port_page2 .prev .pre_wrap1,
+    .port_page2 .prev .pre_2wrap1,
+    .port_page2 .prev .pre_3wrap1,
     .port_page2 .prev .pre_4wrap1{
         width: 47.5%;
         height: 400px;
@@ -769,7 +766,7 @@ footer p {
     .port_page2 .prev .pre_3wrap1,
     .port_page2 .prev .pre_4wrap1{
         width: 47.5%;
-        height: 360px;
+        height: 330px;
         margin-bottom: 40px;
     }
     
