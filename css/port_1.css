@@ -527,6 +527,10 @@ footer p {
 
 @media screen and (max-width : 1200px) {
 
+    .logo{
+        width: 135px;
+        height: 55px;
+    }
     .port_top h1,
     .port_top2 h1,
     .port_top3 h1,
@@ -614,6 +618,10 @@ footer p {
 
 @media screen and (max-width : 800px) {
 
+    .logo{
+        width: 130px;
+        height: 50px;
+    }
     .port_top h1,
     .port_top2 h1,
     .port_top3 h1,
@@ -701,6 +709,10 @@ footer p {
 
 @media screen and (max-width : 640px) {
     
+    .logo{
+        width: 120px;
+        height: 45px;
+    }
     .port_top h1,
     .port_top2 h1,
     .port_top3 h1,
