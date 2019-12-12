@@ -180,6 +180,11 @@ p {
 
 @media screen and (max-width : 1200px) {
     
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 40px;
+    }
     
 }
 
@@ -187,5 +192,21 @@ p {
 
 @media screen and (max-width : 800px) {
 
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 35px;
+    }
+    
 @media screen and (max-width : 640px) {
+    
+    
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    
 }
+    
+    
