@@ -223,7 +223,6 @@ a {
     margin-top: 40px;
     text-align: center;
         font-size: 16px;
-
    background: linear-gradient(to right, black 50%, white 50%);
    background-size: 200% 100%;
    background-position: right bottom;
@@ -231,11 +230,19 @@ a {
 }
 
 .more-btn:hover{
-    color: white;
     transition-duration: .7s;
   background-position: left bottom;
 }
 
+
+.more-btn a {
+    color: black;
+}
+
+
+.more-btn:hover a {
+    color: white;
+}
 
 
 .page3 {
