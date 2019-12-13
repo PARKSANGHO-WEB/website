@@ -242,6 +242,8 @@ a {
 
 .more-btn:hover a {
     color: white;
+    transition-duration: .7s;
+    text-decoration: none;
 }
 
 
