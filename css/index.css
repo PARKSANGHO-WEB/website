@@ -230,10 +230,7 @@ a {
    transition: all .7s ease-out;
 }
 
-
-.more-btn a{ color: black;}
-
-.more-btn a:hover{
+.more-btn:hover{
     color: white;
     transition-duration: .7s;
   background-position: left bottom;
