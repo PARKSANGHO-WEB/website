@@ -198,7 +198,6 @@ body {
 @media screen and (max-width : 640px) {
 
     .mo-nav {
-        height: 80px;
         z-index: 999;
     }
     .overlay a {
