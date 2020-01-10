@@ -1,0 +1,40 @@
+
+.side_bar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+
+.side_bar ul li {
+    width: 78px;
+    list-style: none;
+    background-color: #9cc3da;
+}
+.side_bar ul li a {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0px;
+}
+
+
+
+.side_bar ul li a img{
+    
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+.side_bar ul li a p{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    font-family: l;
+    padding: 5px 0px;
+}

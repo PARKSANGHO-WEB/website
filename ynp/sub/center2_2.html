@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>영앤팩</title>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="pc_menu">
+            <div class="pc_logo">
+                <a href="../index.html">
+                    <img src="../img/common/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="./introduce.html">회사소개</a></li>
+                <li><a href="./product.html">제품소개</a></li>
+                <li><a href="./package.html">패키지 제작</a></li>
+                <li><a href="./consulting.html">무료방문상담</a></li>
+                <li><a href="./center1.html">고객센터</a></li>
+            </ul>
+        </div>
+        <nav id="myNav" class="overlay">
+            <ul class="m_gnb">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./join_pre.html">회원가입</a></li>
+                <li><a href="./center1.html">고객센터</a></li>
+            </ul>
+            <ul class="overlay-content">
+                <a id="menu" href="./introduce.html">회사소개</a>
+                <a id="menu" href="./product.html">제품소개</a>
+                <a id="menu" href="./package.html">패키지 제작</a>
+                <a id="menu" href="./consulting.html">무료방문상담</a>
+                <a id="menu" href="./center1.html">고객센터</a>
+            </ul>
+        </nav>
+        <div class="mo-nav">
+                <a href="../index.html"><img src="../img/common/logo.png" alt="" class="logo"></a>
+            <div class="containerN">
+                <div class="open-close" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article class="custom">
+           <h1 class="custom_title">고객센터</h1>
+            <div class="que-tab">
+                <ul>
+                    <li><a href="./center1.html">공지사항</a></li>
+                    <li><a class="selected" href="./center2.html">문의게시판</a></li>
+                    <li><a href="./center4.html">FAQ</a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="que_sub">
+            <div class="que_form">
+                <div class="queform_title">
+                    <p>제목</p>
+                </div>
+                <div class="que_cont">
+                    <div class="cus_name">
+                        <p>업체명</p>
+                        <input type="text" placeholder="입력하세요" value="">
+                    </div>
+                    <p class="auto_id">test123(본인아이디 자동입력됨)</p>
+                    <p class="auto_mail">test123@test.com(본인주소 자동입력됨)</p>
+                    <div class="cus_phone">
+                        <p>연락처</p>
+                        <input type="number" placeholder="입력하세요" value="cus_phone">
+                    </div>
+                    <div class="cus_qual">
+                        <p>재질</p>
+                        <div class="qual_1">
+                            <input type="checkbox" id="PET_LLDPE">
+                            <label for="PET_LLDPE">PET+LLDPE</label>
+                        </div>
+                        <div class="qual_2">
+                            <input type="checkbox" id="PET_Al_LLDPE">
+                            <label for="PET_Al_LLDPE">PET+Al+LLDPE</label>
+                        </div>
+                        <div class="qual_3">
+                            <input type="checkbox" id="PET_VMPET_LLDPE">
+                            <label for="PET_VMPET_LLDPE">PET+VMPET+LLDPE</label>
+                        </div>
+                    </div>
+                    <div class="cus_size">
+                        <p>사이즈</p>
+                        <input type="text" placeholder="입력하세요" value="cus_size">
+                    </div>
+                    <div class="cus_species">
+                        <p>가공형태</p>
+                        <div class="species_1">
+                            <input type="checkbox" id="sambang">
+                            <label for="sambang">삼방</label>
+                        </div>
+                        <div class="species_2">
+                            <input type="checkbox" id="stand">
+                            <label for="stand">스탠드</label>
+                        </div>
+                        <div class="species_3">
+                            <input type="checkbox" id="Mja">
+                            <label for="Mja">M자형</label>
+                        </div>
+                        <div class="species_4">
+                            <input type="checkbox" id="auto">
+                            <label for="auto">자동롤</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="que_text">
+                    <textarea name="que_text" id="que_text" placeholder="내용을 입력하세요"></textarea>
+                </div>
+            </div>
+            <div class="que_upload">
+                <p>첨부파일</p>
+                <input type="file">
+                <p>(용량 000MB 이하만 업로드 가능)</p>
+            </div>
+            <div class="que_btn">
+                <div class="que_2btn_1">
+                    <a href="#">문의하기</a>
+                </div>
+                <div class="que_2btn_2">
+                    <a href="./center2.html">돌아가기</a>
+                </div>
+            </div>
+        </article>
+        <article class="bot_ban">
+            <div class="banner_b">
+                <ul>
+                    <li>
+                        <h1>
+                            <span>고객만족센터</span>
+                            02-797-3048
+                        </h1>
+                    </li>
+                    <li>
+                        <p>상담시간 : 평일 09:00 ~ 18:00<br>
+                        점심시간 : 12:00 ~ 13:00<br>
+                        토, 일, 법정 공휴일은 휴무입니다.</p>
+                        
+                    </li>
+                    <li>
+                        <p>Fax : 02-797-3049<br>
+                        Email : info@youngnpack.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab">
+                <a href="./package.html">    
+                    <div class="tab-left">  
+                        <div class="left-img">
+                        </div>  
+                        <div class="left-text">
+                            <p>제품에 맞는<br>
+                            패키지를 제공합니다
+                            </p>
+                            <p>패키지 제작하기</p>
+                            <img src="../img/main/arrow.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="./consulting.html">
+                    <div class="tab-right">
+                        <div class="left-text">
+                            <p>직접 보고 결정하세요<br>
+                            친절하게 안내해드립니다.
+                            </p>
+                            <p>무료 방문상담</p>
+                            <img src="../img/main/arrow.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>상호 : 영앤팩 &nbsp;&nbsp;&nbsp;&nbsp;본사 : 서울특별시 용산구 한강대로 50길 21<br>대표이사 : 박홍주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 353-21-00928</p>
+        <p>대표전화 : 02-797-3048&nbsp;&nbsp;&nbsp;&nbsp;팩스 : 02-797-3049<br>개인정보보호책임자 : 정순목&nbsp;&nbsp;&nbsp;&nbsp;메일 : info@youngnpack.com</p>
+        <p>Copyright© All Rights Reserved</p>
+    </footer>
+</body>
+</html>

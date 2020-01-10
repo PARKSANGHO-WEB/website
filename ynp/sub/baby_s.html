@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>영앤팩</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/tr.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="pc_menu">
+            <div class="pc_logo">
+                <a href="../index.html">
+                    <img src="../img/common/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="./introduce.html">회사소개</a></li>
+                <li><a href="./product.html">제품소개</a></li>
+                <li><a href="./package.html">패키지 제작</a></li>
+                <li><a href="./consulting.html">무료방문상담</a></li>
+                <li><a href="./center1.html">고객센터</a></li>
+            </ul>
+        </div>
+        <nav id="myNav" class="overlay">
+            <ul class="m_gnb">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./join_pre.html">회원가입</a></li>
+                <li><a href="./center1.html">고객센터</a></li>
+            </ul>
+            <ul class="overlay-content">
+                <a id="menu" href="./introduce.html">회사소개</a>
+                <a id="menu" href="./product.html">제품소개</a>
+                <a id="menu" href="./package.html">패키지 제작</a>
+                <a id="menu" href="./consulting.html">무료방문상담</a>
+                <a id="menu" href="./center1.html">고객센터</a>
+            </ul>
+        </nav>
+        <div class="mo-nav">
+                <a href="../index.html"><img src="../img/common/logo.png" alt="" class="logo"></a>
+            <div class="containerN">
+                <div class="open-close" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article class="order_sambang">
+            <p class="route">Home &gt; 유기농아기간식</p>
+            <div class="order_form">
+                <div class="form_img">
+                    <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img src="../img/sub/form_tab1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <img src="../img/sub/form_tab1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <img src="../img/sub/form_tab1.png" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)">
+                          <img src="../img/sub/form_tab1.png" style="width:100%">
+                      </span> 
+                      <span class="dot" onclick="currentSlide(2)">
+                          <img src="../img/sub/form_tab1.png" style="width:100%">
+                      </span> 
+                      <span class="dot" onclick="currentSlide(3)">
+                          <img src="../img/sub/form_tab1.png" style="width:100%">
+                      </span> 
+                    </div>
+                </div>
+                
+                
+                
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                
+                
+                
+                
+                <div class="form_tab">
+                    <h1> 유기농아기간식</h1>
+                    <div class="qual">
+                        <p>재질</p>
+                        <select name="quality" id="quality">
+                            <option value="PET+AI+LLDPE">PET+AI+LLDPE</option>
+                            <option value="PET+AI+LLDPE">PET + VMPET + LLDPE</option>
+                            <option value="direct">기타</option>
+                            <input type="text" id="selboxDirect1" name="selboxDirect1" placeholder="입력해주세요."/>
+                        </select>
+                    </div>
+                    <script>
+                    
+                        $(function(){
+
+                          //직접입력 인풋박스 기존에는 숨어있다가
+
+                            $("#selboxDirect1").hide();
+                            $("#quality").change(function() {
+                                    //직접입력을 누를 때 나타남
+
+                                    if($("#quality").val() == "direct") {
+
+                                    $("#selboxDirect1").show();
+
+                                }  else {
+
+                                    $("#selboxDirect1").hide();
+                                
+                                }
+
+                            }) 
+
+                        });
+            
+                    </script>
+                    <div class="size">
+                        <p>사이즈</p>
+                        <select name="size" id="size">
+                            <option value="120*150*35">120*150*35</option>
+                            <option value="150*220*40">150*220*40</option>
+                            <option value="180*260*45">180*260*45</option>
+                            <option value="200*330*50">200*330*50</option>
+                            <option type="text" value="direct">기타</option>   
+                            <input type="text" id="selboxDirect2" name="selboxDirect2" placeholder="입력해주세요."/>
+                        </select>
+                    </div>
+                    <script> 
+                        $(function(){
+
+                              //직접입력 인풋박스 기존에는 숨어있다가
+
+                            $("#selboxDirect2").hide();
+                            $("#size").change(function() {
+
+                                        //직접입력을 누를 때 나타남
+
+                                if($("#size").val() == "direct") {
+
+                                    $("#selboxDirect2").show();
+
+                                }  else {
+
+                                    $("#selboxDirect2").hide();
+
+                                }
+
+                            }) 
+
+                        });
+
+                    </script>
+                    <div class="species">
+                        <p>종류</p>
+                        <select name="speices" id="speices">
+                            <option value="삼방">삼방</option>
+                            <option value="스탠드" selected>스탠드</option>
+                            <option value="자동롤">자동롤</option>
+                        </select>
+                    </div>
+                    <div class="coat">
+                        <p>표면코팅</p>
+                        <select name="coat" id="coat">
+                            <option value="유광">유광</option>
+                            <option value="무광">무광</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <p>옵션</p>
+                        <select name="option" id="option">
+                            <option value="라운드 가공 있음">라운드 가공 있음</option>
+                            <option value="라운드 가공 없음">라운드 가공 없음</option>
+                            <option value="지퍼 있음<">지퍼 있음</option>
+                            <option value="지퍼 없음">지퍼 없음</option>
+                            <option value="걸이타공 있음">걸이타공 있음</option>
+                            <option value="걸이타공 없음">걸이타공 없음</option>
+                        </select>
+                    </div>
+                    <div class="design">
+                        <p>디자인</p>
+                        <select name="design" id="design">
+                            <option value="있음">있음</option>
+                            <option value="없음">없음</option>
+                        </select>
+                    </div>
+                    <div class="detail">
+                        <p>디테일 및 요청사항</p>
+                        <textarea name="species" id="detail" placeholder="*상품의 종류나 특이사항이 있으시면 &#13;&#10;기입 부탁드립니다." ></textarea>
+                    </div>
+                    <div class="btn_con">
+                        <a href="#">문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="order_ban">
+            <div class="order_text">
+                <h1>간단한 클릭으로 쉽게 문의하세요</h1>
+                <div class="order_ubar"></div>
+                <p>나만의 패키지 제작, 지금 시작하세요!</p>                
+            </div>
+        </article>
+        <article class="order_btn">
+            <ul class="icon_wrap">
+                <li class="icon_btn icon_btn1 selected">
+                    <a>
+                        <div class="icon_img">
+                        </div>
+                        <p>문의</p>
+                    </a>
+                </li>
+                <li class="icon_btn icon_btn2">
+                    <a>
+                        <div class="icon_img">
+                        </div>
+                        <p>전화/방문상담</p>
+                    </a>
+                </li>
+                <li class="icon_btn icon_btn3">
+                    <a>
+                        <div class="icon_img">
+                        </div>
+                        <p>견적 및 계약</p>
+                    </a>
+                </li>
+                <li class="icon_btn icon_btn4">
+                    <a>
+                        <div class="icon_img">
+                        </div>
+                        <p>제작 및 검수</p>
+                    </a>
+                </li>
+                <li class="icon_btn icon_btn5">
+                    <a>
+                        <div class="icon_img">
+                        </div>
+                        <p>배송</p>
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <article class="order_ban2 order_ban">
+            <div class="faq_tab">
+                <h1>문의</h1>
+                <div class="ban2_bar"></div>
+                <p>제작문의 또는 무료방문상담 신청에서 편하게 문의주세요.</p>
+            </div> 
+        </article>
+        <article class="order_ban2_2">
+            <div class="faq_tab">
+                <h1>전화/방문상담</h1>
+                <div class="ban2_bar"></div>
+                <p>전문가가 직접 방문 또는 전화로 상담하여 형태 및 원단을 정합니다.</p>
+            </div> 
+        </article>
+        <article class="order_ban2_3">
+            <div class="faq_tab">
+                <h1>견적 및 계약</h1>
+                <div class="ban2_bar"></div>
+                <p>상담이 완료된 후 견적서를 발송합니다.계약과 동시에 디자인 확인 및 수정 작업을 거친 후, 제작에 들어갑니다.</p>
+            </div> 
+        </article>
+        <article class="order_ban2_4">
+            <div class="faq_tab">
+                <h1>제작 및 검수</h1>
+                <div class="ban2_bar"></div>
+                <p>고객님만을 위한 패키지를 제작합니다.각 세부 공정마다 꼼꼼히 검수를 진행합니다.</p>
+            </div> 
+        </article>
+        <article class="order_ban2_5">
+            <div class="faq_tab">
+                <h1>배송</h1>
+                <div class="ban2_bar"></div>
+                <p>배송 전 고객님께 연락드려 배송일을 다시 한번 컨펌한 후, 영앤팩 배송기사가 고객이 주문하신 곳으로 배송합니다.</p>
+            </div> 
+        </article>
+        <article class="vs_wrap">
+            <div class="vs_way">
+                <div class="gravia">
+                    <h1>그라비아<span>방식</span></h1>
+                    <h2>색상별 동판인쇄</h2>
+                    <p>생상표현 제한</p>
+                    <p>동판 제작비용 발생</p>
+                    <p>동판 제작 후 수정불가</p>
+                </div>
+                <div class="digital">
+                    <h1>디지털<span>방식</span></h1>
+                    <h2>무동판 원샷인쇄</h2>
+                    <p>다양한 색상구현</p>
+                    <p>동판 제작비용 없음</p>
+                    <p>언제든 수정가능</p>
+                </div>
+            </div>
+            <div class="quantity">
+                <div class="quan_L">
+                    <h1>40,000장</h1>
+                    <p>불필요한 수량까지 제작</p>
+                    <p>불필요한 재고 상승</p>
+                    <p>적재장소 필요</p>
+                </div>
+                <div class="quan_C">
+                    <p>최소제작수량</p>
+                </div>
+                <div class="quan_R">
+                    <h1>약 9,000장</h1>
+                    <p>필요한만큼만 제작</p>
+                    <p>재고부담 감소</p>
+                    <p>적정량 사용으로 적재장소 불필요</p>
+                </div>
+            </div>
+        </article>
+        <article class="process_wrap">
+             <div class="table_1">
+                 <div class="table_wrap">
+                     <h1>1. 재질 확인</h1>
+                     <ul>
+                         <li class="th">
+                             <p>PET+VMPET+LLDPE	</p>
+                         </li>
+                         <li class="stan">
+                             <p>특성<br>적용품</p>
+                         </li>
+                         <li class="char">
+                             <p>차광성△, 방습성△<br>커피, 애견용품, 과자 등</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>PET+AL+LLDPE</p>	
+                         </li>
+                         <li class="stan">
+                             <p>특성<br>적용품</p>
+                         </li>
+                         <li class="char">
+                             <p>차광성△, 방습/방수△, Gas차단성△<br>커피, 티백, 마스크팩 등</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>PET+LLDPE</p>	
+                         </li>
+                         <li class="stan">
+                             <p>특성<br>적용품</p>
+                         </li>
+                         <li class="char">
+                             <p>투명성△, Gas차단성△<br>제품 내용물 확인가능 / 마스크 ,장갑 , 낚시용품 등</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>NY+LLDPE</p>	
+                         </li>
+                         <li class="stan">
+                             <p>특성<br>적용품</p>
+                         </li>
+                         <li class="char">
+                             <p>뛰어난 충격강도 및 마모저항성 /기체에 대한 차단성이 우수하여 식품 산화를 방지<br>냉장,냉동식품에 적합</p>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="table_2">
+                <div class="table_wrap">
+                     <h1>2. 종류확인</h1>
+                     <ul>
+                         <li class="th">
+                             <p>삼방</p>	
+                         </li>
+                         <li class="stan">
+                             <img src="../img/sub/table_img1.png" alt="">
+                         </li>
+                         <li class="char">
+                             <p>가장 기본적인 형태입니다.<br>한쪽면이 뚫려있음.</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>스탠드</p>	
+                         </li>
+                         <li class="stan">
+                             <img src="../img/sub/table_img2.png" alt="">
+                         </li>
+                         <li class="char">
+                             <p>진열에 용이한 형태입니다.<br>세울 수 있도록 밑지 있음.</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>엠방</p>	
+                         </li>
+                         <li class="stan">
+                             <img src="../img/sub/table_img3.png" alt="">
+                         </li>
+                         <li class="char">
+                             <p>다른 봉투형태에 비하여 많은 중량을 담을 수 있습니다.<br>옆면이 M자형태로 펼칠 수 있음.</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>롤</p>	
+                         </li>
+                         <li class="stan">
+                             <img src="../img/sub/table_img4.png" alt="">
+                         </li>
+                         <li class="char">
+                             <p>자체 후가공 설비를 보유하신 기업에 제공됩니다.<br>롤타입으로 감겨있음.</p>
+                         </li>
+                     </ul>
+                </div>
+             </div>
+             <div class="table_3">
+                 <div class="table_wrap">
+                     <h1>3. 코팅 확인</h1>
+                     <ul>
+                         <li class="th">
+                             <p>유광</p>	
+                         </li>
+                         <li class="char">
+                             <p>포장지 표면이 빛이 반사됨 / 블링블링</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>무광</p>	
+                         </li>
+                         <li class="char">
+                             <p>포장지 표면이 빛이 반사가 안됨 / 고급스러움</p>
+                         </li>
+                     </ul>
+                     <p class="warn">* 부분유광은 그라비아에서만 작업 가능합니다</p>
+                 </div>
+             </div>
+             <div class="table_4">
+                <div class="table_wrap">
+                     <h1>4. 옵션 확인</h1>
+                     <ul>
+                         <li class="th">
+                             <p>라운드 가공</p>	
+                         </li>
+                         <li class="stan">
+                             <img src="../img/sub/table_img4_1.png" alt="">
+                         </li>
+                         <li class="char">
+                             <p>모서리 부분 라운드로 안정성 UP!</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>지퍼 부착</p>	
+                         </li>
+                         <li class="stan">
+                             <img src="../img/sub/table_img4_2.png" alt="">
+                         </li>
+                         <li class="char">
+                             <p>지퍼부착으로 저장성 UP!</p>
+                         </li>
+                     </ul>
+                     <ul>
+                         <li class="th">
+                             <p>걸이 홀</p>	
+                         </li>
+                         <li class="stan">
+                         </li>
+                         <li class="char">
+                             <p>걸 수 있도록 홀제작 / 진열성 UP!</p>
+                         </li>
+                     </ul>
+                </div>
+             </div>
+        </article>
+    </section> 
+    <footer>
+        <p>상호 : 영앤팩 &nbsp;&nbsp;&nbsp;&nbsp;본사 : 서울특별시 용산구 한강대로 50길 21<br>대표이사 : 박홍주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 353-21-00928</p>
+        <p>대표전화 : 02-797-3048&nbsp;&nbsp;&nbsp;&nbsp;팩스 : 02-797-3049<br>개인정보보호책임자 : 정순목&nbsp;&nbsp;&nbsp;&nbsp;메일 : info@youngnpack.com</p>
+        <p>Copyright© All Rights Reserved</p>
+    </footer>
+</body>
+</html>
