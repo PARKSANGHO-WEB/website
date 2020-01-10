@@ -6,6 +6,7 @@
 
 body {
     font-family: open sans;
+    overflow-x: hidden;
 }
 .overlay {
     height: 0%;
@@ -64,6 +65,7 @@ body {
     left: 0px;
     top: 0px;
     left: 0px;
+    overflow: hidden;
     width: 100%;
     height: 88px;
     z-index: 999;
@@ -197,6 +199,7 @@ body {
 @media screen and (max-width : 640px) {
 
     .mo-nav {
+        height: 80px;
         z-index: 999;
     }
     .overlay a {
