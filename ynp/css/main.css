@@ -204,7 +204,6 @@ header {
     background-color: rgba(11, 44, 58, 0.4);
     position: absolute;
     z-index: 1000;
-    overflow: hidden;
 }
 
 

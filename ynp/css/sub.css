@@ -73,6 +73,14 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -832,35 +840,6 @@ section article .tab a .tab-right .left-img img:nth-child(2){
     display: block;
 }
 
-
-
-.notice .nt_wrap .notice_table tr th:nth-child(1) {
-    width: 10%;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr th:nth-child(2) {
-    width: 70%;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr th:nth-child(3) {
-    width: 10%;
-    float: left;
-}
-
-
-.notice .nt_wrap .notice_table tr td:nth-child(1) {
-    width: 15%;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr td:nth-child(2) {
-    width: 70%;
-    text-align: left;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr td:nth-child(3) {
-    width: 15%;
-    float: left;
-}
 
 .notice_num {
     width: 1200px;
@@ -1794,7 +1773,7 @@ section .custom {
 }
 
 .pack_con .pack_wrap {
-    width: 70%;
+    width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -1889,13 +1868,13 @@ section .custom {
 
 .pack_con .pack_wrap .pack_info ul{
     overflow: hidden;
-    width: 1000px;
+    width: 920px;
     height: 720px;
     position: relative;
 }
 
 .pack_con .pack_wrap .pack_info ul li{
-    width: 500px;
+    width: 460px;
     height: 360px;
     float: left;
     position: relative;
@@ -1905,7 +1884,7 @@ section .custom {
 
 
 .pack_con .pack_wrap .pack_info ul li .pack_over {
-    width: 500px;
+    width: 460px;
     height: 360px;
     position: absolute;
     background:url('../img/sub/pack_1.png');
@@ -1916,7 +1895,7 @@ section .custom {
 
 
 .pack_con .pack_wrap .pack_info ul li:nth-child(2) .pack_over {
-    width: 500px;
+    width: 460px;
     height: 360px;
     background:url('../img/sub/pack_2.png');
     background-position: center;
@@ -1926,7 +1905,7 @@ section .custom {
 
 
 .pack_con .pack_wrap .pack_info ul li:nth-child(3) .pack_over {
-    width: 500px;
+    width: 460px;
     height:360px;
     background:url('../img/sub/pack_3.png');
     background-position: center;
@@ -1936,7 +1915,7 @@ section .custom {
 
 
 .pack_con .pack_wrap .pack_info ul li:nth-child(4) .pack_over {
-    width: 500px;
+    width: 460px;
     height: 360px;
     background:url('../img/sub/pack_4.png');
     background-position: center;
@@ -1956,7 +1935,7 @@ section .custom {
     background: rgba(225,225,225,.9);
     position: absolute;
     top: 0px;
-    left: 500px;
+    left: 460px;
 }
 
 .pack_con .pack_wrap .pack_info ul li:nth-child(3){
@@ -1970,11 +1949,11 @@ section .custom {
     background: rgba(183,183,183,.9);
     position: absolute;
     top: 360px;
-    left: 500px;
+    left: 460px;
 }
 
 .pack_con .pack_wrap .pack_info ul li .pack_text{
-    width: 450px;
+    width: 410px;
     height: 360px;
     padding-left: 50px;
 }
@@ -10175,33 +10154,6 @@ section .custom {
 }
     
     
-.notice .nt_wrap .notice_table tr th:nth-child(1) {
-    width: 15%;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr th:nth-child(2) {
-    width: 65%;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr th:nth-child(3) {
-    width: 20%;
-    float: left;
-}
-
-
-.notice .nt_wrap .notice_table tr td:nth-child(1) {
-    width: 15%;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr td:nth-child(2) {
-    width: 65%;
-    text-align: left;
-    float: left;
-}
-.notice .nt_wrap .notice_table tr td:nth-child(3) {
-    width: 20%;
-    float: left;
-}
 
     
 .notice_num {
