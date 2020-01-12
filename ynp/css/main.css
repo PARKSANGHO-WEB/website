@@ -53,7 +53,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
-.popup .close {
+.popup .close_top {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -63,7 +63,7 @@ footer, header, hgroup, menu, nav, section {
     font-size: 40px;
     cursor: pointer;
 }
-.popup .close:hover {
+.popup .close_top:hover {
   color: #fff;
 }
 .popup .content {
