@@ -139,12 +139,6 @@ footer, header, hgroup, menu, nav, section {
 
 
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
