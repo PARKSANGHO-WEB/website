@@ -1,0 +1,105 @@
+* {
+    font-family: 'Noto sans' , sans-serif;
+}
+
+
+.menu_btn {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.menu_btn ul {
+    overflow: hidden;
+}
+
+.menu_btn ul li {
+    float: left;
+    width: 19%;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 1.25%;
+    background-color: #00174f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu_btn ul li:hover{
+    background-color: #b30c2f;
+    transition-duration: 1s;
+}
+
+.menu_btn ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.menu_btn ul li a{
+    display: block;
+    color: white;
+    padding: 20px 0px;
+}
+
+
+
+@media screen and (max-width : 1200px) {
+    
+    .menu_btn {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .menu_btn ul li {
+        float: left;
+        width: 19%;
+        font-size: 13px;
+        text-align: center;
+        margin-left: 1.25%;
+        background-color: #00174f;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}
+
+
+@media screen and (max-width : 800px) {
+    
+    .menu_btn {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .menu_btn ul li {
+        float: left;
+        width: 19%;
+        font-size: 12px;
+        text-align: center;
+        margin-left: 1.25%;
+        background-color: #00174f;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width : 640px) {
+    
+    .menu_btn {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .menu_btn ul li {
+        float: left;
+        width: 19%;
+        font-size: 11px;
+        text-align: center;
+        margin-left: 1.25%;
+        background-color: #00174f;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}

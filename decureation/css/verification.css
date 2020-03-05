@@ -1,0 +1,144 @@
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.eot'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.woff'); 
+    src:local(※), format(‘eot’) 
+}
+
+
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.eot'); 
+    src:local(※), format(‘eot’) 
+}
+
+section .verification {
+    display: table;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #4a8ce8;
+    border-radius: 20px;
+}
+
+
+section .verification h1 {
+    font-size: 16px;
+    font-family: rb;
+    font-weight: bold;
+    text-align: center;
+}
+
+section .verification p{
+    font-size: 14px;
+    font-family: rr;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+section .verification input {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-family: rr;
+    background-color: #4a8ce8;
+    color: #fff;
+    margin: 0  auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:1280px) {
+    
+
+    section .verification h1 {
+        font-size: 15px;
+    }
+
+    section .verification p{
+        font-size: 13px;
+        margin-top: 18px;
+    }
+
+
+    section .verification input {
+        font-size: 13px;
+        margin-top: 32px;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    
+
+    section .verification h1 {
+        font-size: 14px;
+    }
+
+    section .verification p{
+        font-size: 12px;
+        margin-top: 16px;
+    }
+
+
+    section .verification input {
+        font-size: 12px;
+        margin-top: 24px;
+    }
+}
+
+
+
+
+@media screen and (max-width:640px) {
+    
+
+    section .verification h1 {
+        font-size: 13px;
+    }
+
+    section .verification p{
+        font-size: 11px;
+        margin-top: 14px;
+    }
+
+
+    section .verification input {
+        font-size: 11px;
+        margin-top: 16px;
+    }
+}
+

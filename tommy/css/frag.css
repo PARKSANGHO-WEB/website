@@ -1,0 +1,165 @@
+*{margin:0; padding:0; border:0; font-family: 'Noto sans', sans-serif;}
+li{list-style:none; }
+a{text-decoration:none; color:#00174f;}
+img{border:0; margin:0; padding:0;}
+
+
+header{width:100%; height:80px; background-color:#141821;  z-index: 999; position: relative;}
+#logo_wrap{width: 260px; height: 15px; position: absolute; top: 50%; left: 30px; transform: translateY(-50%);}
+#logo_wrap img{width: 100%;}
+#nav {width: 100%; height: 80px;}
+#nav li{width: 20%;  float:left;text-align: center;}
+#nav li:nth-child(1) {margin-left:0px;}
+#nav li h2 a {font-size:16px; line-height: 80px; font-weight:normal; color:#eee;font-family: 'Montserrat', sans-serif;}
+#nav li  h2 a:hover{color:#b30c2f;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+body{width:100%; background-color:#f2efea;}
+
+.coll_menu {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.coll_menu ul{
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.coll_menu ul li {
+    float: left;
+    text-align: center;
+    width: 22%;
+    background-color: #00174f;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.coll_menu ul li.selected {
+    background-color: #b30c2f;
+}
+
+.coll_menu ul li:hover {
+    background-color: #b30c2f;
+    transition-duration: 1s;
+}
+
+.coll_menu ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.coll_menu ul a{
+    display: block;
+    color: white;
+    padding: 20px 0px;
+    font-size: 14px;
+}
+section {width:100%;position: relative; top: 0; left: 0; }
+section .con_wrap{width:100%; margin-top:60px;}
+section .con_wrap div img{width:100%;}
+
+section .contents_frag #frag_main {width: 100%;}
+section .contents_frag #frag_main img {width: 100%;}
+section .contents_frag #frag_subwrap {width: 1050px; margin:0 auto; margin-top: 60px; overflow: hidden;}
+section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 267px;float: left;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 360px;float: left; margin-left: 43px;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 333px;float: left;margin-left: 43px; margin-top: 70px; color: #00174f;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 30px; line-height: 1.5;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1) span{color: #b30c2f;}
+section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 16px; line-height: 1.5;}
+section .contents_frag #frag_subwrap #frag_sub2 {width: 900px; margin: 0 auto; margin-top: 60px; overflow: hidden;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2{width: 1050px;float: left;color: #00174f;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1){font-size: 30px; line-height: 1.5;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1) span{color: #b30c2f;}
+section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(2){font-size: 16px; }
+
+
+@media screen and (max-width : 1200px) {
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 35px;}
+    .coll_menu ul a{padding: 17px 0px;font-size: 12px;}
+
+
+    section {width:100%;position: relative; top: 0; left: 0; }
+    section .con_wrap{width:100%; margin-top:50px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_frag #frag_main {width: 100%;}
+    section .contents_frag #frag_main img {width: 100%;}
+    section .contents_frag #frag_subwrap {width: 700px; margin:0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 283px;float: left;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 387px;float: left; margin-left: 30px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 300px;float: none;margin-left: 0px;
+        margin: 0 auto; clear: both;color: #00174f; text-align:center; padding-top: 50px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 27px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 15px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 {width: 900px; margin: 0 auto; margin-top: 50px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2{width: 1050px;float: left;color: #00174f;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(1){font-size: 27px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 #frag_text2 p:nth-child(2){font-size: 15px; }
+
+
+    
+
+}
+
+
+@media screen and (max-width : 800px) {
+    .coll_menu {width: 80%;}
+    .coll_menu ul{margin-top: 30px;}
+    .coll_menu ul a{padding: 14px 0px;font-size: 12px;}
+    section .con_wrap{width:100%; margin-top:40px;}
+    
+    
+    section {width:100%;position: relative; top: 0; left: 0; }
+    section .con_wrap{width:100%; margin-top:40px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_frag #frag_main {width: 100%;}
+    section .contents_frag #frag_main img {width: 100%;}
+    section .contents_frag #frag_subwrap {width:590px; margin:0 auto; margin-top: 40px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 232px;float: left;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 318px;float: left; margin-left: 30px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 400px;float: none;margin-left: 0px;
+        margin: 0 auto; clear: both;color: #00174f; text-align:left; padding-top: 40px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 24px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 14px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 {display: none;}
+}
+
+
+@media screen and (max-width : 640px) {
+    .coll_menu {width: 85%;}
+    .coll_menu ul{margin-top: 25px;}
+    .coll_menu ul a{padding: 11px 0px;font-size: 12px;}
+    
+    section .con_wrap{width:100%; margin-top:30px;}
+    
+    
+    section {width:100%;position: relative; top: 0; left: 0; }
+    section .con_wrap{width:100%; margin-top:30px;}
+    section .con_wrap div img{width:100%;}
+
+    section .contents_frag #frag_main {width: 100%;}
+    section .contents_frag #frag_main img {width: 100%;}
+    section .contents_frag #frag_subwrap {width:300px; margin:0 auto; margin-top: 30px; overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 {width: 100%;overflow: hidden;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_1{width: 300px;float: none;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_sub1_2{width: 300px;float: none; margin-left: 0px; margin-top: 30px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1{width: 300px;float: none;margin-left: 0px;
+        margin: 0 auto; clear: both;color: #00174f; text-align:left; padding-top: 30px;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(1){font-size: 21px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub1 #frag_text1 p:nth-child(2){font-size: 13px; line-height: 1.5;}
+    section .contents_frag #frag_subwrap #frag_sub2 {display: none;}
+}
+
+    
+

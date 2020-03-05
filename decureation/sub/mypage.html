@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+  maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/add_modal.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/delete_modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/owl.carousel_sub.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/owl.animate.js"></script>
+    <script src="../js/owl.autoplay.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/addmodal.js"></script>
+    <script src="../js/close_modal.js"></script>
+    <title>D.Cureation</title>
+    
+</head>
+<body>
+    <header>
+        <div class="pc_header">
+            <div class="pc_logo">
+                <a href="../login_after.html"><img src="../img/common/logo.png" alt=""></a>
+            </div>
+            <div class="pc_nav">
+                <ul>
+                    <li>
+                        <a class="search_nav" href="#">Search</a>
+                        <div class="search_wrap">
+                            <div class="hidewrap">
+                                <form class="widthwrap">
+                                    <input class="search" type="search" name="search" >
+                                </form>
+                                <input class="search_btn" type="button" name="search_btn" >
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="myBtn_add">Add video</a>
+                    </li>
+                    <li>
+                        <div class="login_btn">
+                            <input type="button" value="My page">
+                            <ul class="login_depth">
+                                <li><a href="./mypage.html">My info</a></li>
+                                <li><a href="./mywatch.html">My watch list</a></li>
+                                <li><a href="./myreview.html">My reviews</a></li>
+                                <li><a href="./myvideos.html">My videos</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="m_header">
+            <div class="m_logo">
+                <a href="../login_after.html"><img src="../img/common/m_logo.png" alt=""></a>
+            </div>
+            <div class="msearch_wrap">
+                <div class="hidewrap">
+                    <form class="widthwrap">
+                        <input class="search" type="search" name="search" >
+                    </form>
+                    <input class="search_btn" type="button" name="search_btn" >
+                </div>
+            </div>
+            <div>
+            <a href="#" id="myBtnm1">&#43;</a>
+            </div>
+            <div>
+                <div class="login_btn">
+                    <input type="button" value="My page">
+                    <ul class="login_depth">
+                                <li><a href="./mypage.html">My info</a></li>
+                                <li><a href="./mywatch.html">My watch list</a></li>
+                                <li><a href="./myreview.html">My reviews</a></li>
+                                <li><a href="./myvideos.html">My videos</a></li>
+                                <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                           <div class="modal-header">
+                           </div>
+                            <span class="close">&times;</span>
+                        <form action="#">
+                            <div class="modal_wrap">
+                                <div><input type="text" placeholder="ID"></div>
+                                <div><input type="password" placeholder="PASSWORD"></div>
+                            </div>
+                        </form>
+                        <input class="button_modal" type="button" value="Login" />
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                        <span class="forgot_span1">Don't have an account?</span><span class="forgot_span2"><a href="#">Signup</a></span>
+                      </div>
+                    </div>
+                    
+            
+
+            <div id="addModal" class="addmodal">
+
+              <!-- Modal content -->
+              <div class="addmodal-content">
+                      <h1 class="addmodal_title">Add video</h1>
+                    <span class="addclose">&times;</span>
+                <form class="c_form" action="#">
+                    <div class="addmodal_wrap">
+                        <div><span>Video link</span><input type="text" placeholder="Enter the video link"></div>
+                        <div><span>Subject</span><input type="text" placeholder="Enter your video subject"></div>
+                        <div class="video_y"><textarea type="text" placeholder="Introduce you"></textarea></div>
+                    <div class="video_y2"><textarea maxlength="1500" type="text" placeholder="Introduce your video"></textarea></div>
+                        <span class="restrict"><span id="chars2">1,500</span> characters left</span>
+
+                        <script>
+                        $(document).ready(function(){
+                            var maxLength = 1500;  
+                                $('.video_y2 textarea').keyup(function() {
+                                  var length = $(this).val().length;
+                                  var length = maxLength-length;
+                                  $('#chars2').text(length);
+                                });
+                        });
+                      </script>
+                        <div class="level">
+                           <span>Learning level of<br> this video</span>
+                            <div class="begin">
+                                <input type="radio" name="level" id="beginner">
+                                <label for="beginner">Beginner</label>
+                            </div>
+                            <div class="inter">
+                                <input type="radio" name="level" id="intermediate">
+                                <label for="intermediate">Intermediate</label>
+                            </div>
+                            <div class="advan">
+                                <input type="radio" name="level" id="advanced">
+                                <label for="advanced">Advanced</label>
+                            </div>
+                        </div>
+                        <div class="preffer">
+                           <span>Tutoring style <br>of this video</span>
+                            <div class="lang">
+                                <div class="eng">
+                                    <input type="radio" name="style" id="english">
+                                    <label for="english">Explaining in English</label>
+                                </div>
+                                <div class="kor">
+                                    <input type="radio" name="style" id="korean">
+                                    <label for="korean">Explaining in Korean</label>
+                                </div>
+                            </div>
+                            <div class="explain">
+                                <div class="eng">
+                                    <input type="radio" name="race" id="englishT">
+                                    <label for="englishT">Native tutor</label>
+                                </div>
+                                <div class="kor">
+                                    <input type="radio" name="race" id="koreanT">
+                                    <label for="koreanT">Korean tutor</label>
+                                </div>
+                            </div>
+                            <div class="sex">
+                                <div class="female">
+                                    <input type="radio" name="sex" id="femail">
+                                    <label for="femail">Female tutor</label>
+                                </div>
+                                <div class="male">
+                                    <input type="radio" name="sex" id="male">
+                                    <label for="male">Male tutor</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interesting">
+                           <span>Categories</span>
+                            <div class="listen">
+                                <input type="checkbox" name="style" id="listen">
+                                <label for="listen">Listening</label>
+                            </div>
+                            <div class="reading">
+                                <input type="checkbox" name="style" id="reading">
+                                <label for="reading">Reading</label>
+                            </div>
+                            <div class="writing">
+                                <input type="checkbox" name="race" id="writing">
+                                <label for="writing">Writing</label>
+                            </div>
+                            <div class="speaking">
+                                <input type="checkbox" name="race" id="speaking">
+                                <label for="speaking">Speaking</label>
+                            </div>
+                            <div class="type-tags">
+                                <input id="category-tag" type="text" placeholder="Type tags" class="tag_title" data-max-words="5">
+                                <span class="words-left" id="charlimit">5 words left</span>
+                            </div>
+               
+                   <script>
+                        
+                       $("#category-tag").focus(function(){                           
+                             $(this).keypress(function(e) {
+                                  if(e.keyCode == '32' || e.charCode == '32') {
+                                var arrString = $(this).val();
+                                var arr = arrString.split(",");
+                                 console.log(arr.length);
+                                    if(arr.length<6){
+                                        // '46' is the keyCode for '.'
+                                       
+                                            var keyword = $(this).val();
+                                            keyword += ",";
+                                            $(this).val(keyword);
+                                       
+                                     }
+                                  }
+                             })  
+                        });
+                    </script>
+                   <script>
+                       var wordLen = 5,
+                        len; // Maximum word length
+                        $('#category-tag').keydown(function(event) {	
+                            len = $('#category-tag').val().split(/[\s]+/);
+                            if (len.length > wordLen) { 
+                                if ( event.keyCode == 46 || event.keyCode == 8 ) {// Allow backspace and delete buttons
+                            } else if (event.keyCode != 46 || event.keyCode != 8 ) {//all other buttons
+                                event.preventDefault();
+                            }
+                            }
+                            console.log(len.length + " words are typed out of an available " + wordLen);
+                            wordsLeft = (wordLen) - len.length;
+                            $('.words-left').html(wordsLeft+ ' words left');
+                        });
+                        </script>
+                        </div></div>
+                </form>
+                <div class="mo_btn">
+                    <input type="button" value="Clear" class="clear_f" OnClientClick="ClearAll()" >
+                    <input type="button" value="Confirm">
+                </div>
+                <span class="confirm">By confirming you are accepting our terms of use</span>
+              </div>
+            </div>
+            <script>
+			$(document).ready(function(){
+				$('.clear_f').click(function(){				
+					if(confirm("Want to clear?")){
+						$('.c_form input[type="text"]').val('');
+						$('.c_form input[type="radio"]').prop('checked',false);
+						$('.c_form input[type="checkbox"]').prop('checked',false);
+						$('.c_form textarea').val('');
+					}					
+				});
+			});
+            </script>
+    <section>
+            <h1 class="info_title">MY INFO</h1>
+        <article class="my_info">
+            <div class="info_wrap">
+                <form action="#">
+                <div class="edit_id">
+                    <span>ID</span>
+                    <input type="text" disabled placeholder="USER ID">
+                </div>
+                <div class="edit_name">
+                    <span>NICKNAME</span>
+                    <input type="text" disabled placeholder="USER NICKNAME">
+                </div>
+                <div class="edit_pw">
+                    <span>PW</span>
+                    <input type="password">
+                    <input type="password" class="pass_check">
+                </div>
+                <div class="edit_email">
+                    <span>EMAIL</span>
+                    <input type="text">
+                </div>
+                <div class="edit_level">
+                   <span>My learning level</span>
+                    <div class="edit_begin">
+                        <input type="radio" name="level" id="sign_begin" checked>
+                        <label for="sign_begin">Beginner</label>
+                    </div>
+                    <div class="edit_inter">
+                        <input type="radio" name="level" id="sign_inter">
+                        <label for="sign_inter">Intermediate</label>
+                    </div>
+                    <div class="edit_advan">
+                        <input type="radio" name="level" id="sign_advan">
+                        <label for="sign_advan">Advanced</label>
+                    </div>
+                </div>
+                <div class="edit_tutor">
+                   <span>My tutoring level</span>
+                    <div class="edit_level1">
+                        <input type="radio" name="tutor" id="sign_not" checked>
+                        <label for="sign_not">I am not a tutor. (no teaching experience) </label>
+                    </div>
+                    <div class="edit_level2">
+                        <input type="radio" name="tutor" id="sign_junior">
+                        <label for="sign_junior">I am a junior tutor. (less 4 years of teaching experience) </label>
+                    </div>
+                    <div class="edit_level3">
+                        <input type="radio" name="tutor" id="sign_senior">
+                        <label for="sign_senior">I am a senior tutor. (4~7 years of teaching experience)</label>
+                    </div>
+                    <div class="edit_level4">
+                        <input type="radio" name="tutor" id="sign_expert">
+                        <label for="sign_expert">I am an expert tutor. (over 8 years of teaching experience) </label>
+                    </div>
+                </div>
+                <div class="edit_preffer">
+                   <span>Preffered tutoring style</span>
+                    <div class="edit_lang">
+                        <div class="eng">
+                            <input type="radio" name="style" id="sign_english">
+                            <label for="sign_english">Explaining in English</label>
+                        </div>
+                        <div class="kor">
+                            <input type="radio" name="style" id="sign_korean" checked>
+                            <label for="sign_korean">Explaining in Korean</label>
+                        </div>
+                    </div>
+                    <div class="edit_explain">
+                        <div class="eng">
+                            <input type="radio" name="race" id="sign_englishT">
+                            <label for="sign_englishT">Native tutor</label>
+                        </div>
+                        <div class="kor">
+                            <input type="radio" name="race" id="sign_koreanT" checked>
+                            <label for="sign_koreanT">Korean tutor</label>
+                        </div>
+                    </div>
+                    <div class="edit_sex">
+                        <div class="female">
+                            <input type="radio" name="sex" id="sign_femail">
+                            <label for="sign_femail">Female tutor</label>
+                        </div>
+                        <div class="male">
+                            <input type="radio" name="sex" id="sign_male" checked>
+                            <label for="sign_male">Male tutor</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit_interesting">
+                   <span>interesting categories</span>
+                    <div class="edit_listen">
+                        <input type="checkbox" name="listen" id="sign_listen" checked>
+                        <label for="sign_listen">Listening</label>
+                    </div>
+                    <div class="edit_reading">
+                        <input type="checkbox" name="reading" id="sign_reading" checked>
+                        <label for="sign_reading">Reading</label>
+                    </div>
+                    <div class="edit_writing">
+                        <input type="checkbox" name="writing" id="sign_writing" checked>
+                        <label for="sign_writing">Writing</label>
+                    </div>
+                    <div class="edit_speaking">
+                        <input type="checkbox" name="speaking" id="sign_speaking" checked>
+                        <label for="sign_speaking">Speaking</label>
+                    </div>
+                    <div class="type-tags">
+                        <input class="etag_title" type="text" placeholder="english, reading, speaking, grammer, sing"  data-max-words="5" checked>
+                    </div>
+                </div>
+                <script>
+                    
+                    document.querySelectorAll('input[data-max-words]').forEach(input => {
+                       
+                        let maxWords = parseInt(input.getAttribute('data-max-words') || 0)
+                       input.addEventListener('keydown', e => {
+                        let target = e.currentTarget
+                        
+                        let words = target.value.split(",").length
+                        
+                        if (!target.getAttribute('data-announce'))
+                          words >= maxWords && e.keyCode == 32 && (e.preventDefault() || alert('You can enter up to 5 tags.'))
+                      })
+                    })
+                </script> 
+                   <script>
+                        $('.etag_title').each(function () {
+                                $(this).keypress(function(e) {
+                                    // '46' is the keyCode for '.'
+                                    if(e.keyCode == '32' || e.charCode == '32') {
+                                        // IE
+                                        if(document.selection) {
+                                            // Determines the selected text. If no text selected,
+                                            // the location of the cursor in the text is returned
+                                            var range = document.selection.createRange();
+                                            // Place the comma on the location of the selection,
+                                            // and remove the data in the selection
+                                            range.text = ',';
+                                            // Chrome + FF
+                                        }else if(this.selectionStart || this.selectionStart == '0') {
+                                            // Determines the start and end of the selection.
+                                            // If no text selected, they are the same and
+                                            // the location of the cursor in the text is returned
+                                            // Don't make it a jQuery obj, because selectionStart 
+                                            // and selectionEnd isn't known.
+                                            var start = this.selectionStart;
+                                            var end = this.selectionEnd;
+                                            // Place the comma on the location of the selection,
+                                            // and remove the data in the selection
+                                            $(this).val($(this).val().substring(0, start) + ',' + $(this).val().substring(end, $(this).val().length));
+                                            // Set the cursor back at the correct location in 
+                                            // the text
+                                            this.selectionStart = start + 1;
+                                            this.selectionEnd = start +1;
+                                        } else {
+                                            // if no selection could be determined, 
+                                            // place the comma at the end.
+                                            $(this).val($(this).val() + ',');             
+                                        }
+                                        return false;
+                                    }
+                                });
+                            });
+                        
+                        </script>
+            </form>
+            <div class="edit_btn">
+                <input type="button" value="cancel" onclick="goBack()">
+                <input type="button" value="apply">
+            </div>
+
+            <script>
+            function goBack() {
+              window.history.back();
+            }
+            </script>
+            </div>
+            <div class="edit_account">
+                <a href="#" class="delete_modal">DELETE ACCOUNT</a>
+                <span>This account will no longer be available, and all your saved data will be permanently deleted.</span>
+            </div>
+            
+
+                       <!-- delete Modal -->
+            <div id="deleteModal" class="delete">
+              <!-- delete content -->
+              <div class="delete-content">
+                     <span class="deleteclose">&times;</span>
+                  <p class="delete_mtitle">
+                      Are you sure you want to delete your free a ccount?
+                  </p>       
+                  <p class="delete_c">
+                      This will delete your saved information and preferences and will remove you from our email lists.You will no longer be able to use out service. This action cannot be undone.
+                  </p> 
+                  <div class="delete_input">
+                     <form action="#">
+                          <label for="Provide_p">Provide password</label>
+                          <input type="password" id="Provide_p" >
+                     </form>
+                     <div class="delete_bwrap">
+                          <div class="confirm_d">
+                              <input class="cancle_d" type="button" value="DELETE ACCOUNT" disabled>
+                          </div>         
+                          <div class="confirm_c">
+                              <input type="button" value="KEEP ACCOUNT">
+                          </div>        
+                     </div>
+                  </div>   
+              </div>
+            </div>
+
+        </article>
+    </section>
+    <footer>
+        <div class="foot_wrap">
+            <ul>
+                <li>
+                    <a href="./about_dc.html">About</a>
+                </li>
+                <li>
+                    <a href="./Service_dc.html">Service</a>
+                </li>
+                <li>
+                    <a href="./Terms_dc.html">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="./Policy_dc.html">Policy</a>
+                </li>
+            </ul>
+            <p>
+                Copyright D.Cureation & Co., Inc. 2019.<br> All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

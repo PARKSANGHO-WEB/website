@@ -1,0 +1,245 @@
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.woff'); 
+    src:local(※), format(‘woff’) 
+}
+
+
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.eot'); 
+    src:local(※), format(‘eot’) 
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+    width: 350px;
+    position: relative;
+}
+
+
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-content .modal_wrap{
+    width: 310px;
+    overflow: hidden;
+    margin:  0 auto;
+    margin-top: 20px;
+}
+
+.modal-content .modal_wrap div{
+    width: 310px;
+    overflow: hidden;
+    padding: 20px 0px;
+    margin:  0 auto;
+}
+
+
+
+.modal-content .modal_wrap div p {
+    width: 80px;
+    font-size: 14px;
+    line-height: 40px;
+    float: left;
+    font-family: rr;
+}
+
+
+.modal-content .modal_wrap div input {
+    width: 298px;
+    padding-left: 10px;
+    height: 40px;
+    border: none;
+    float: left;
+    font-size: 13px;
+    border: 1px solid #a7a7a7;
+    font-family: rb;
+}
+
+.modal-content .modal_wrap div  {
+    width: 350px;
+    display: block;
+    padding: 10px 0px;
+    margin:  0 auto;
+    font-size: 14px;
+}
+
+.modal-content .button_modal {
+    width: 310px;
+    margin: 0 auto;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-family: rb;
+    background-color: #9fc5eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content .forgot {
+    width: 310px;
+    margin: 0 auto;
+    font-size: 13px;
+    font-family: rb;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.modal-content .forgot a {
+    color: black;
+}
+
+.modal-content .forgot_span1 {
+    font-size: 13px;
+    font-family: rr;
+    padding-left: 20px;
+}
+
+
+
+.modal-content .forgot_span2 {
+    font-size: 13px;
+    font-family: rb;
+    font-weight: bold;
+}
+
+.modal-content .forgot_span2 a {
+    color: black;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+    .modal {
+        padding-top: 130px;
+    }
+    
+    .modal-content {
+        width: 230px;
+        position: relative;
+    }
+
+
+
+
+    .modal-content .modal_wrap{
+        width: 230px;
+    }
+
+    .modal-content .modal_wrap div{
+        width: 230px;
+    }
+
+
+    .modal-content .modal_wrap div input {
+        width: 218px;
+        font-size: 12px;
+    }
+
+    .modal-content .modal_wrap div  {
+        width: 350px;
+        font-size: 13px;
+    }
+
+    .modal-content .button_modal {
+        width: 230px;
+        font-size: 13px;
+    }
+
+    .modal-content .forgot {
+        width: 230px;
+        font-size: 12px;
+    }
+
+    .modal-content .forgot a {
+        color: black;
+    }
+
+    .modal-content .forgot_span1 {
+        font-size: 12px;
+    }
+
+
+
+    .modal-content .forgot_span2 {
+        font-size: 12px;
+    }
+
+
+}

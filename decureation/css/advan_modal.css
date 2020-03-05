@@ -1,0 +1,760 @@
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.woff'); 
+    src:local(※), format(‘woff’) 
+}
+
+
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.eot'); 
+    src:local(※), format(‘eot’) 
+}
+
+
+
+
+.advanmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.advan-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+    width: 640px;
+    position: relative;
+}
+
+.advan-header h1{
+    font-size: 18px;
+    font-family: rb;
+    text-align: left;
+    color: #646464;
+}
+
+
+
+/* The Close Button */
+.advanclose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.advanclose:hover,
+.advanclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.advan-content .advan_wrap{
+    width: 640px;
+    overflow: hidden;
+    margin:  0 auto;
+    margin-top: 20px;
+}
+
+.advan-content .advan_wrap .advan-top{
+    width: 640px;
+    overflow: hidden;
+
+}
+
+
+.advan-content .advan_wrap .advan-top p:nth-child(1){
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4a8ce8;
+    padding: 10px 20px;
+}
+
+
+.advan-content .advan_wrap .advan-top p:nth-child(2){
+    float: left;
+    font-size: 14px;
+    color: #646464;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.advan-content .advan_wrap .advan-top .reviewer{
+    color: #646464;
+    border-bottom: 1px solid #646464;
+}
+
+
+.advan-content .advan_wrap .advan-top div {
+    float: left;
+    width: 350px;
+    margin-left: 20px;
+} 
+
+.advan-content .advan_wrap .advan-top div .star5,
+.advan-content .advan_wrap .advan-top div .star4,
+.advan-content .advan_wrap .advan-top div .star3,
+.advan-content .advan_wrap .advan-top div .star2,
+.advan-content .advan_wrap .advan-top div .star1{
+    display: block;
+    overflow: hidden;
+}
+
+.advan-content .advan_wrap .advan-top div .star5_n,
+.advan-content .advan_wrap .advan-top div .star4_n,
+.advan-content .advan_wrap .advan-top div .star3_n,
+.advan-content .advan_wrap .advan-top div .star2_n,
+.advan-content .advan_wrap .advan-top div .star1_n{
+    display: block;
+    font-size: 14px;
+    font-family: rb;
+    color: #646464;
+    width: 20px;
+    float: left;
+    overflow: hidden;
+}
+.advan-content .advan_wrap .advan-top div .star4,
+.advan-content .advan_wrap .advan-top div .star3,
+.advan-content .advan_wrap .advan-top div .star2,
+.advan-content .advan_wrap .advan-top div .star1{
+    margin-top: 10px;
+}
+
+
+.advan-content .advan_wrap .advan-top div span .bar{
+    width:250px;
+    height: 20px;
+    background-color: #eee;
+    float: left;
+}
+
+.advan-content .advan_wrap .advan-top div .star5 .bar_per{
+    width:70%;
+    height: 20px;
+    background-color: #4a8ce8;
+    float: left;
+    margin-left: 0px;
+}
+.advan-content .advan_wrap .advan-top div .star4 .bar_per{
+    width:50%;
+    height: 20px;
+    background-color: #4a8ce8;
+    float: left;
+    margin-left: 0px;
+}
+.advan-content .advan_wrap .advan-top div .star3 .bar_per{
+    width:30%;
+    height: 20px;
+    background-color: #4a8ce8;
+    float: left;
+    margin-left: 0px;
+}
+.advan-content .advan_wrap .advan-top div .star2 .bar_per{
+    width:0%;
+    height: 20px;
+    background-color: #4a8ce8;
+    float: left;
+    margin-left: 0px;
+}
+.advan-content .advan_wrap .advan-top div .star1 .bar_per{
+    width:0%;
+    height: 20px;
+    background-color: #4a8ce8;
+    float: left;
+    margin-left: 0px;
+}
+
+.advan-content .advan_wrap .advan_mid {
+    width: 640px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_starp{
+    font-size: 14px;
+    font-family: rb;
+    color: #646464;
+    float: left;
+    line-height: 35px;
+    margin-right: 20px;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_starp span{
+    font-size: 14px;
+    font-family: rb;
+    color: #8c8c8c;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_star{
+    width: 231px;
+    float: left;
+    border: 1px solid #a7a7a7;
+    overflow: hidden;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_star .b_any,
+.advan-content .advan_wrap .advan_mid .advan_star .b_2,
+.advan-content .advan_wrap .advan_mid .advan_star .b_3,
+.advan-content .advan_wrap .advan_mid .advan_star .b_4{
+    float: left;
+    width: 57px;
+    height: 30px;
+    text-align: center;
+    border-left: 1px solid #a7a7a7;
+    font-size: 11px;
+    font-family:rr;
+    font-weight: bold;
+    line-height: 16px;
+    color: #646464;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_star .b_any{
+    border-left: none;
+    line-height: 30px;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_star div div input[type="radio"] {
+    display: none;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_star div div input[type="radio"] + label{
+    display: block;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_star div div input[type="radio"]:checked + label {
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+
+.advan-content .advan_wrap .advan_mid .advan_sortp{
+    font-size: 14px;
+    font-family: rb;
+    color: #646464;
+    float: left;
+    line-height: 35px;
+    margin-left: 20px;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_ca div {
+    float: left;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_ca div input[type="radio"] {
+    display: none;
+    
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_ca div input[type="radio"] +label{
+    display: block;
+    border: 1px solid #4a8ce8;
+    color: #4a8ce8;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: rr;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_ca div input[type="radio"]:checked +label {
+    color: #fff;
+    background-color: #4a8ce8;
+}
+
+
+
+.advan-content .advan_wrap .advan_rWrap {
+    width: 640px;
+    margin-top: 20px;
+    height: 300px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.advan-content .advan_wrap .advan_rWrap::-webkit-scrollbar {
+    display:none;
+} 
+
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon {
+    width: 598px;
+    padding: 10px 20px;
+    border: 1px solid #a7a7a7;    
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info {
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a7a7a7;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(1){
+    font-size: 14px;
+    color: #646464;
+    font-family: rl;
+    font-weight: bold;
+    float: left;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(2){
+    font-size: 14px;
+    font-family: rl;
+    font-weight: bold;
+    color: #8c8c8c;
+    float: left;
+    margin-left: 20px;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(3){
+    font-size: 14px;
+    font-family: rl;
+    font-weight: bold;
+    float: right;
+}
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_text{
+    font-size: 14px;
+    font-weight: rl;
+    color: #646464;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal_num{
+    width: 199px;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+}
+
+
+.modal_num a {
+    display: block;
+    padding: 0px 7px;
+    line-height: 20px;
+    border: 1px solid #a7a7a7;
+    float: left;
+    font-size: 12px;
+    font-family: r;
+    margin-left: 5px;
+    color: #646464;
+}
+.modal_num a:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    
+
+
+
+.advanmodal {
+  padding-top: 50px; /* Location of the box */
+}
+
+/* Modal Content */
+.advan-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+    width: 500px;
+    position: relative;
+}
+
+.advan-header {
+    font-size: 17px;
+}
+
+
+
+.advan-content .advan_wrap{
+    width: 500px;
+    overflow: hidden;
+    margin:  0 auto;
+    margin-top: 20px;
+}
+
+.advan-content .advan_wrap .advan-top{
+    width: 500px;
+    overflow: hidden;
+
+}
+
+
+.advan-content .advan_wrap .advan-top p:nth-child(1){
+    font-size: 18px;
+}
+
+
+.advan-content .advan_wrap .advan-top p:nth-child(2){
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.advan-content .advan_wrap .advan-top div {
+    float: left;
+    width: 286px;
+    margin-left: 10px;
+} 
+.advan-content .advan_wrap .advan-top div .star5_n,
+.advan-content .advan_wrap .advan-top div .star4_n,
+.advan-content .advan_wrap .advan-top div .star3_n,
+.advan-content .advan_wrap .advan-top div .star2_n,
+.advan-content .advan_wrap .advan-top div .star1_n{
+    display: block;
+    font-size: 14px;
+}
+
+.advan-content .advan_wrap .advan-top div span .bar{
+    width:200px;
+    height: 18px;
+    background-color: #eee;
+    float: left;
+}
+    
+.advan-content .advan_wrap .advan_mid {
+    width: 500px;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_starp{
+    font-size: 15px;
+    font-weight: bold;
+    float: none;
+    width: 100%;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_starp span{
+    font-size: 14px;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_sortp{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+
+
+
+.advan-content .advan_wrap .advan_rWrap {
+    width: 500px;
+    height: 275px;
+    border-bottom: 2px solid #a7a7a7;
+}
+
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon {
+    width: 458px;
+}
+
+    
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(1){
+    font-size: 13px;
+    color: #646464;
+    font-weight: bold;
+    float: left;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(2){
+    font-size: 13px;
+    font-weight: bold;
+    color: #8c8c8c;
+    float: left;
+    margin-left: 20px;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(3){
+    font-size: 13px;
+    font-weight: bold;
+    float: right;
+}
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_text{
+    font-size: 14px;
+    font-weight: l;
+    color: #646464;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal_num{
+    width: 194px;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+}
+
+
+.modal_num a {
+    display: block;
+    padding: 0px 7px;
+    line-height: 20px;
+    border: 1px solid #a7a7a7;
+    float: left;
+    font-size: 12px;
+    font-family: r;
+    margin-left: 5px;
+    color: #646464;
+}
+.modal_num a:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:640px) {
+    
+
+
+
+.advanmodal {
+  padding-top: 20px; /* Location of the box */
+}
+
+/* Modal Content */
+.advan-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+    width: 290px;
+    position: relative;
+}
+
+.advan-header {
+    font-size: 17px;
+}
+
+
+
+.advan-content .advan_wrap{
+    width: 300px;
+    overflow: hidden;
+    margin:  0 auto;
+    margin-top: 10px;
+}
+
+.advan-content .advan_wrap .advan-top{
+    width: 300px;
+    overflow: hidden;
+
+}
+
+
+.advan-content .advan_wrap .advan-top p:nth-child(1){
+    font-size: 16px;
+}
+
+
+.advan-content .advan_wrap .advan-top p:nth-child(2){
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+
+.advan-content .advan_wrap .advan-top div {
+    float: left;
+    width: 290px;
+    margin-left: 10px;
+} 
+    .advan-content .advan_wrap .advan-top div span{
+        float: left;
+    }
+.advan-content .advan_wrap .advan-top div span .bar{
+    width:85px;
+    height: 18px;
+    background-color: #eee;
+    float: left;
+}
+    .advan-content .advan_wrap .advan-top div .star4,
+    .advan-content .advan_wrap .advan-top div .star2{
+        margin-left: 30px;
+    }
+    .advan-content .advan_wrap .advan-top div .star5 {
+        margin-top: 10px;
+    }
+    
+.advan-content .advan_wrap .advan_mid {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_star {
+    width: 279px;
+    float: none;
+    margin-bottom: 20px;
+}
+    
+    
+    
+.advan-content .advan_wrap .advan_mid .advan_star .b_any, .advan-content .advan_wrap .advan_mid .advan_star .b_2, .advan-content .advan_wrap .advan_mid .advan_star .b_3, .advan-content .advan_wrap .advan_mid .advan_star .b_4 {
+    width: 69px;
+}
+.advan-content .advan_wrap .advan_mid .advan_starp{
+    font-size: 15px;
+}
+
+.advan-content .advan_wrap .advan_mid .advan_starp span{
+    font-size: 14px;
+}
+
+
+.advan-content .advan_wrap .advan_mid .advan_sortp{
+    margin-left: 0px;
+    float: left;
+}
+
+
+
+
+.advan-content .advan_wrap .advan_rWrap {
+    width: 290px;
+    height: 250px;
+    margin-top: 10px;
+    border-bottom: 2px solid #a7a7a7;
+}
+
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon {
+    width: 248px;
+}
+
+    
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(1){
+    font-size: 11px;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(2){
+    font-size: 11px;
+    margin-left: 10px;
+}
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_info span:nth-child(3){
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+}
+
+.advan-content .advan_wrap .advan_rWrap .advan_rCon .br_text{
+    font-size: 11px;
+    color: #646464;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal_num{
+    width: 194px;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+}
+
+
+.modal_num a {
+    display: block;
+    padding: 0px 7px;
+    line-height: 20px;
+    border: 1px solid #a7a7a7;
+    float: left;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #646464;
+}
+.modal_num a:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

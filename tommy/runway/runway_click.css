@@ -1,0 +1,248 @@
+*{margin:0; padding:0; border:0;font-family: 'Gill Sans','Gill Sans MT','Calibri',sans-serif;}
+li{list-style:none; }
+a{text-decoration:none; color:#00174f;}
+img{border:0; margin:0; padding:0;}
+
+body{width:100%; background-color:#f2efea;}
+
+header{ width: 100%;}
+#header_wrap {width:100%; height:68px; background-color:#141821; overflow:hidden;}
+#header_wrap #logo_wrap{width: 335px; height: 68px; float: left; }
+#header_wrap #logo_wrap h1{margin-left: 50px; margin-top: 15px;}
+header #header_wrap #nav_wrap {width:675px; height: 30px; margin:0 auto; margin-top:17px;}
+#nav {width: 100%; overflow: hidden;}
+#nav li{width: 110px; float:left; margin-left:25px; text-align: center;}
+#nav li:nth-child(1) {margin-left:0px;}
+#nav li:nth-child(2) h2 a {color: #b30c2f;}
+#nav li h2 a {font-size:14px; font-weight:normal; color:#eee;}
+#nav li  h2 a:hover{color:#b30c2f;}
+
+#search_wrap{float:right; margin-top: -23px; margin-right:35px;}
+#search_wrap input{ width:136px; height:20px;}
+#search_wrap img{width:16px; height:16px; position:relative; top:3.5px; left:-30px;}
+
+header #img_wrap {width: 100%;}
+header #img_wrap img{width: 100%;}
+
+
+
+section{width:100%;}
+section #main_article{width:100%;}
+section #main_article img{width:100%;}
+
+section {width:1200px; margin:0 auto; margin-top: 80px; position: relative; top:0; left:0; overflow: hidden;}
+section #main_run {width:1200px; position: relative; top:0px; left:0px; overflow: hidden;}
+section #main_run #main_text{width:280px; height: 392px; text-align:right; overflow: hidden; float:left; margin-top: 28px;}
+section #main_run #main_text h3{font-size:36px; font-weight: normal; color:#00174f;}
+section #main_run #main_text h3 .text_color{color:#b30c2f;}
+section #main_run #main_text #text_con{font-size:12px; color:#00174f; line-height: 1.6; margin-top:60px;}
+section #main_run #main_text #find_link{font-size:12px; margin-top: 30px;}
+section #main_run #main_text #find_link a{text-decoration: underline; color: #b30c2f;}
+section #main_run #main_text #runway_list ul{float: right; margin-top: 30px;}
+section #main_run #main_text #runway_list ul li{font-size: 16px; float: left; margin-left: 20px; cursor: pointer;}
+section #main_run #main_text #runway_list ul li:nth-child(1){color: #b30c2f;}
+
+section #main_run #img_top{width: 920px; position: relative; top: 0px; left: 0px; float: right;}
+section #main_run #img_top .top_img { position: absolute; top:0px; left:0px;}
+section #main_run #img_top .top_img div{width: 280px; height: 420px; float: left; margin-left: 26px;} 
+section #main_run #img_top .img_top1 div:nth-child(1){background-image: url("runway_img/runway_1.jpg"); background-size: cover;}
+section #main_run #img_top .img_top1 div:nth-child(2){background-image: url("runway_img/runway_2.jpg"); background-size: cover;}
+section #main_run #img_top .img_top1 div:nth-child(3){background-image: url("runway_img/runway_3.jpg"); background-size: cover;}
+section #main_run #img_top .img_top2 div:nth-child(1){background-image: url("runway_img/runway_8.jpg"); background-size: cover;}
+section #main_run #img_top .img_top2 div:nth-child(2){background-image: url("runway_img/runway_9.jpg"); background-size: cover;}
+section #main_run #img_top .img_top2 div:nth-child(3){background-image: url("runway_img/runway_10.jpg"); background-size: cover;}
+section #main_run #img_top .img_top3 div:nth-child(1){background-image: url("runway_img/runway_15.jpg"); background-size: cover;}
+section #main_run #img_top .img_top3 div:nth-child(2){background-image: url("runway_img/runway_16.jpg"); background-size: cover;}
+section #main_run #img_top .img_top3 div:nth-child(3){background-image: url("runway_img/runway_17.jpg"); background-size: cover;}
+section #main_run #img_top .img_top4 div:nth-child(1){background-image: url("runway_img/runway_22.jpg"); background-size: cover;}
+section #main_run #img_top .img_top4 div:nth-child(2){background-image: url("runway_img/runway_23.jpg"); background-size: cover;}
+section #main_run #img_top .img_top4 div:nth-child(3){background-image: url("runway_img/runway_24.jpg"); background-size: cover;}
+section #main_run #img_top .img_top5 div:nth-child(1){background-image: url("runway_img/runway_29.jpg"); background-size: cover;}
+section #main_run #img_top .img_top5 div:nth-child(2){background-image: url("runway_img/runway_30.jpg"); background-size: cover;}
+section #main_run #img_top .img_top5 div:nth-child(3){background-image: url("runway_img/runway_31.jpg"); background-size: cover;}
+section #main_run #img_top .img_top6 div:nth-child(1){background-image: url("runway_img/runway_36.jpg"); background-size: cover;}
+section #main_run #img_top .img_top6 div:nth-child(2){background-image: url("runway_img/runway_37.jpg"); background-size: cover;}
+section #main_run #img_top .img_top6 div:nth-child(3){background-image: url("runway_img/runway_38.jpg"); background-size: cover;}
+section #main_run #img_top .img_top7 div:nth-child(1){background-image: url("runway_img/runway_43.jpg"); background-size: cover;}
+section #main_run #img_top .img_top7 div:nth-child(2){background-image: url("runway_img/runway_44.jpg"); background-size: cover;}
+section #main_run #img_top .img_top7 div:nth-child(3){background-image: url("runway_img/runway_45.jpg"); background-size: cover;}
+section #main_run #img_top .img_top8 div:nth-child(1){background-image: url("runway_img/runway_50.jpg"); background-size: cover;}
+section #main_run #img_top .img_top8 div:nth-child(2){background-image: url("runway_img/runway_51.jpg"); background-size: cover;}
+section #main_run #img_top .img_top8 div:nth-child(3){background-image: url("runway_img/runway_52.jpg"); background-size: cover;}
+
+section #main_run #img_bot{width: 1200px; height:420px;margin-top:26px; position: relative; top: 0px; left: 0px; float: left; }
+    
+section #main_run #img_bot .bot_img div{width:280px; height:420px;float: left; margin-left: 26px;}    
+section #main_run #img_bot .bot_img div:nth-child(1){margin-left: 0px;}
+section #main_run #img_bot .bot_img { position: absolute; top:0px; left:0px;}
+section #main_run #img_bot .img_bot1 div:nth-child(1){background-image: url("runway_img/runway_4.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot1 div:nth-child(2){background-image: url("runway_img/runway_5.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot1 div:nth-child(3){background-image: url("runway_img/runway_6.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot1 div:nth-child(4){background-image: url("runway_img/runway_7.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(1){background-image: url("runway_img/runway_11.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(2){background-image: url("runway_img/runway_12.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(3){background-image: url("runway_img/runway_13.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot2 div:nth-child(4){background-image: url("runway_img/runway_14.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(1){background-image: url("runway_img/runway_18.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(2){background-image: url("runway_img/runway_19.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(3){background-image: url("runway_img/runway_20.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot3 div:nth-child(4){background-image: url("runway_img/runway_21.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(1){background-image: url("runway_img/runway_25.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(2){background-image: url("runway_img/runway_26.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(3){background-image: url("runway_img/runway_27.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot4 div:nth-child(4){background-image: url("runway_img/runway_28.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(1){background-image: url("runway_img/runway_32.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(2){background-image: url("runway_img/runway_33.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(3){background-image: url("runway_img/runway_34.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot5 div:nth-child(4){background-image: url("runway_img/runway_35.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(1){background-image: url("runway_img/runway_39.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(2){background-image: url("runway_img/runway_40.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(3){background-image: url("runway_img/runway_41.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot6 div:nth-child(4){background-image: url("runway_img/runway_42.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(1){background-image: url("runway_img/runway_46.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(2){background-image: url("runway_img/runway_47.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(3){background-image: url("runway_img/runway_48.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot7 div:nth-child(4){background-image: url("runway_img/runway_49.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(1){background-image: url("runway_img/runway_53.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(2){background-image: url("runway_img/runway_54.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(3){background-image: url("runway_img/runway_55.jpg"); background-size: cover;}
+section #main_run #img_bot .img_bot8 div:nth-child(4){background-image: url("runway_img/runway_56.jpg"); background-size: cover;}
+
+section #main_run .run_1{opacity:1;}
+section #main_run .run_2, .run_3, .run_4, .run_5, .run_6, .run_7, .run_8{opacity: 0;}
+
+
+
+
+footer{width:100%; height:30px; padding-top:15px; background-color:#fff; margin-top:90px;}
+footer #change_con{float:left; margin-left:50px;}
+footer #change_con a{font-size:11px; color:#4f5259;}
+
+footer #foot_info {width:50%; margin:0 auto; }
+footer #foot_info ul li{float:left; margin-left:30px;}
+footer #foot_info ul li:nth-child(1){margin-left:0px;}
+footer #foot_info ul li{font-size:11px; color:#4f5259;}
+
+footer #gnb {width:175px;float:right; margin-right:50px;}
+footer #gnb p{float:left}
+footer #gnb p a{font-size:11px; color:#4f5259;}
+footer #gnb ul{float:left; margin-left:13px;}
+footer #gnb ul li{float:left; margin-left:5px;}
+footer #gnb ul li a img{width:20px; height:20px;}
+
+
+
+
+@media (min-width:900px) and (max-width:1450px){
+    #search_wrap{display: none;}
+    header #header_wrap #nav_wrap {width: 550px; float: right;}
+    #nav li{width: 95px; float:left; margin-left:15px; text-align: center;}
+    #nav li h2 a {font-size:12px; font-weight:normal; color:#eee;}
+    
+    
+    section{width:900px; height: 746px;}
+    section #main_article{width:100%;}
+    section #main_article img{width:100%;}
+
+    section #main_run {width:900px;}
+    section #main_run #main_text{width:225px; height: 354px;}
+    section #main_run #main_text h3{font-size:26px; margin-top: 10px;}
+    section #main_run #main_text h3 .text_color{color:#b30c2f;}
+    section #main_run #main_text #text_con{font-size:10px; color:#00174f; line-height: 1.6; margin-top:40px;}
+    section #main_run #main_text #find_link{font-size:10px; margin-top: 20px;}
+    section #main_run #main_text #find_link a{text-decoration: underline; color: #b30c2f;}
+    section #main_run #main_text #runway_list ul{float: right; margin-top: 27px;}
+    section #main_run #main_text #runway_list ul li{font-size: 14px; float: left; margin-left: 20px; cursor: pointer;}
+
+    section #main_run #img_top{width: 675px;}
+    section #main_run #img_top .top_img div{width:215px; height: 354px; float: left; margin-left: 10px;} 
+    
+    section #main_run #img_bot{width: 900px;margin-top:10px; position: relative; top: 0px; left: 0px; float: left; }
+    section #main_run #img_bot .bot_img div{width:215px; height: 354px; float: left; margin-left: 10px;}    
+    section #main_run #img_bot .bot_img div:nth-child(1){margin-left: 10px;}    
+
+
+    footer #change_con {display: none;}
+    footer #foot_info {width:500px; margin:0 auto; }
+    footer #foot_info ul li{float:left; margin-left:15px;}
+    footer #foot_info ul li:nth-child(1){margin-left:0px;}
+    footer #foot_info ul li{font-size:8px; color:#4f5259;}    
+    footer #gnb {display: none;}
+}
+
+
+@media (min-width:750px) and (max-width:900px){
+    #search_wrap{display: none;}
+    header #header_wrap #nav_wrap {width: 400px; float: right;}
+    #nav li{width: 70px; float:left; margin-left:10px;}
+    #nav li h2 a {font-size:8px;}
+    
+    section{width:600px; height: 460px;}
+    section #main_article{width:100%;}
+    section #main_article img{width:100%;}
+
+    section #main_run {width:600px;}
+    section #main_run #main_text{width:150px; height: 225px; margin: 0;}
+    section #main_run #main_text h3{font-size:22px; margin-top: 50px;}
+    section #main_run #main_text h3 .text_color{color:#b30c2f;}
+    section #main_run #main_text #text_con{display: none;}
+    section #main_run #main_text #find_link{font-size:9px; margin-top: 20px;}
+    section #main_run #main_text #runway_list ul{float: right; margin-top: 27px;}
+    section #main_run #main_text #runway_list ul li{font-size: 12px; float: left; margin-left: 10px; cursor: pointer;}
+
+    section #main_run #img_top{width: 450px;}
+    section #main_run #img_top .top_img div{width:140px; height: 225px; float: left; margin-left: 10px;} 
+    
+    section #main_run #img_bot{width: 600px;margin-top:10px; position: relative; top: 0px; left: 0px; float: left; }
+    section #main_run #img_bot .bot_img div{width:140px; height: 225px; float: left; margin-left: 10px;}    
+    section #main_run #img_bot .bot_img div:nth-child(1){margin-left: 10px;}    
+
+    
+    
+    footer #change_con {display: none;}
+    footer #foot_info {width:500px; margin:0 auto; }
+    footer #foot_info ul li{float:left; margin-left:15px;}
+    footer #foot_info ul li:nth-child(1){margin-left:0px;}
+    footer #foot_info ul li{font-size:6px; color:#4f5259;}
+    footer #gnb {display: none;}
+}
+
+
+@media (min-width:300px) and (max-width:750px){
+    header #header_wrap #logo_wrap{width:100%; height: 30px; }
+    header #header_wrap #logo_wrap h1{text-align: center; margin: 0; margin-top: 5px; margin-bottom: 5px;}
+    header #header_wrap #search_wrap{display: none;}
+    header #header_wrap  #nav_wrap {width: 390px;float: none;}
+    #nav li{width: 78px; float:left; margin-left:0px; margin-top: 5px;}
+    #nav li h2 a {font-size:8px;}
+    
+    section{width:400px; height: 280px; margin-top: 40px;}
+    section #main_article{width:100%;}
+    section #main_article img{width:100%;}
+
+    section #main_run {width:400px;}
+    section #main_run #main_text{width:100px; height: 145px; margin: 0;}
+    section #main_run #main_text h3{font-size:10px; margin-top: 20px;}
+    section #main_run #main_text #text_con{display: none;}
+    section #main_run #main_text #find_link{font-size:8px; margin-top: 20px;}
+    section #main_run #main_text #runway_list ul{float: right; margin-top: 27px;}
+    section #main_run #main_text #runway_list ul li{font-size: 11px; float: left; margin-left: 10px; cursor: pointer;}
+
+    section #main_run #img_top{width: 300px;}
+    section #main_run #img_top .top_img div{width:95px; height: 145px; float: left; margin-left: 5px;} 
+    
+    section #main_run #img_bot{width: 400px;margin-top:10px; position: relative; top: 0px; left: 0px; float: left; }
+    section #main_run #img_bot .bot_img div{width:95px; height: 145px; float: left; margin-left: 5px;}    
+    section #main_run #img_bot .bot_img div:nth-child(1){margin-left: 5px;}    
+    
+    footer {margin-top: 40px;}
+    footer #change_con {display: none;}
+    footer #foot_info {width:250px; margin:0 auto;  overflow: hidden;}
+    footer #foot_info ul li{float:none;}
+    footer #foot_info ul li:nth-child(1){display: none;}
+    footer #foot_info ul li:nth-child(2){display: none;}
+    footer #foot_info ul li:nth-child(3){display: none;}
+    footer #foot_info ul li:nth-child(4){display: none;}
+    footer #foot_info ul li{font-size:6px; color:#4f5259;}
+    footer #gnb {display: none;}
+}
