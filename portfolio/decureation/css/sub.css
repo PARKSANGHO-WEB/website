@@ -1,0 +1,5635 @@
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.woff'); 
+    src:local(※), format(‘woff’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.woff'); 
+    src:local(※), format(‘woff’) 
+}
+
+
+
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Roboto-Light.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rm; 
+    src:url('../font/Roboto-Medium.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rr; 
+    src:url('../font/Roboto-Regular.eot'); 
+    src:local(※), format(‘eot’) 
+}
+@font-face{ 
+    font-family:rb; 
+    src:url('../font/Roboto-Bold.eot'); 
+    src:local(※), format(‘eot’) 
+}
+
+
+* {margin: 0px; padding: 0px; list-style: none; text-decoration: none; border: none;}
+
+
+input[type="radio"],input[type="text"],input[type="password"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius:0px;
+
+}
+input {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+
+/******************account page*********************/
+
+
+section {
+    width: 100%;
+    overflow: hidden;
+    border-top: 2px solid #646464;
+}
+
+section .signup {
+    width: 740px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+section article form{
+    overflow: hidden;
+}
+
+section article .id{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+section article .id span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section article .id input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    width: 578px;
+    font-size: 14px;
+    font-family: rr;
+    height: 20px;
+    cursor: pointer;
+}
+
+section article .id p{
+    margin-left: 120px;
+    font-family: rl;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #a7a7a7;
+}
+
+
+section article .Nick_name{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+
+section article .Nick_name span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section article .Nick_name  p{
+    margin-left: 120px;
+    font-family: l;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #a7a7a7;
+}
+
+section article .Nick_name input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    width: 578px;
+    height: 20px;
+    font-size: 14px;
+    font-family: rr;
+    cursor: pointer;
+}
+
+section article .pw{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+
+section article .pw span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section article .pw  p{
+    margin-left: 120px;
+    font-family: rb;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 5px;
+    clear: both;
+    color: #a7a7a7;
+}
+
+
+section article .pw input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    width: 248px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: rr;
+    float: left;
+}
+section article .pw .pass_check {
+    margin-left: 40px;
+}
+
+
+
+section article .account {
+    width: 100%;
+    overflow: hidden;
+}
+
+section article .password span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section article .password input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: rr;
+    width: 198px;
+    height: 20px;
+    cursor: pointer;
+}
+
+section article .email{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+section article .email span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section article .email input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    width: 578px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: rr;
+}
+
+
+section article .level {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section article .level span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+section article .level div{
+    float: left;
+    margin-left: 20px;
+}
+
+section article .level div:nth-child(2){
+    margin-left: 0px;
+}
+
+section article .level div input[type="radio"]{
+    display: none;
+}
+
+section article .level div label {
+    font-size: 14px;
+    display: block;
+    width: 171px;
+    font-family: rm;
+    color: #646464;
+    border: 1px solid #646464;
+    padding: 15px 10px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+section article .level div input[type="radio"]:checked + label{ 
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+
+
+
+section article .tutor {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section article .tutor span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+section article .tutor div{
+    float: right;
+    margin-top: 20px;
+}
+
+section article .tutor div:nth-child(2){
+    margin-top: 0px;
+}
+section article .tutor div input[type="radio"]{
+    display: none;
+}
+
+section article .tutor div label {
+    font-size: 14px;
+    display: block;
+    width: 598px;
+    font-family: rm;
+    color: #646464;
+    border: 1px solid #646464;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+section article .tutor div input[type="radio"]:checked + label{ 
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+section article .preffer {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section article .preffer span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 119px;
+}
+
+.lang, .explain, .sex, .interesting{
+    float: right;
+    width: 621px;
+    
+}
+
+.explain, .sex, .interesting{
+    margin-top: 20px;
+}
+
+
+.lang div {
+    width: 300px;
+    margin-left: 21px;
+    float: left;
+}
+
+.lang div:nth-child(1) {
+    margin-left: 0px;
+}
+.sex div {
+    width: 300px;
+    margin-left: 21px;
+    float: left;
+}
+
+.sex div:nth-child(1) {
+    margin-left: 0px;
+}
+
+.explain div {
+    width: 300px;
+    margin-left: 21px;
+    float: left;
+}
+
+.explain div:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+section article .preffer div:nth-child(2){
+    margin-top: 0px;
+}
+section article .preffer div input[type="radio"]{
+    display: none;
+}
+
+section article .preffer div div label {
+    font-size: 14px;
+    display: block;
+    width: 278px;
+    font-family: rm;
+    color: #646464;
+    border: 1px solid #646464;
+    padding: 15px 10px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+section article .preffer div input[type="radio"]:checked + label{ 
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+
+section article .interesting {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section article .interesting span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 119px;
+}
+
+section article .interesting div {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+section article .interesting div:nth-child(2) {
+    margin-left: 0px;
+}
+
+
+section article .interesting input[type="checkbox"] {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+section article .interesting label {
+    font-size: 14px;
+    font-family: rm;
+    cursor: pointer;
+}
+
+
+section article .interesting .type-tags{
+    float: right;
+    margin-top: -5px;
+    width: 621px;
+}
+
+section article .interesting .type-tags input{
+    width: 598px;
+    padding: 10px 0px 10px 21px;
+    border: 1px solid #646464;
+    font-family: rm;
+    font-size: 14px;
+}
+
+.account_btn {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.account_btn input{
+    font-size: 14px;
+    font-family: rm;
+    border: 1px solid #646464;
+    float: left;
+    width: 130px;
+    padding: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 40px;
+    height: 40px;
+}
+
+
+.account_btn input:nth-child(1){
+    margin-left: 0px;
+}
+
+
+
+/******************search************************/
+
+
+section .search_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section .search_con {
+    width:1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+section .search_wrap .route {
+    display: block;
+    font-size: 13px;
+    font-family: rl;
+    color: #646464;
+    padding: 10px 0px 20px 0px;
+}
+
+
+section .search_wrap .route a {
+    color: #646464;
+}
+
+section .search_wrap h1 {
+    font-size: 20px;
+    font-family: rb;
+    color: #313131;
+}
+
+
+section .search_con .result{
+    width: 300px;
+    margin-top: 20px;
+    transition-duration: 1s;
+    float: left;
+    display: block;
+}
+
+section .search_con .sh_btn{
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    display: none;
+}
+
+section .search_con .sh_btn p{
+    font-size: 40px;
+    border: 1px solid #646464;
+    color: #646464;
+    height: 60px;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+section .search_con .sh_btn.width {
+    left: 0px;
+}
+
+section .search_con .result.sh{
+    display: none;
+}
+
+section .search_con .result.sh .option_wrap p {
+    display: none;
+}
+
+section .search_con .result .option_wrap p {
+    font-size: 18px;
+    font-family: rb;
+}
+
+section .search_con .result .research_wrap {
+    overflow: hidden;
+}
+
+
+section .search_con .result .research_wrap input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    font-family: rl;
+    border: 1px solid #646464;
+    padding-left: 10px;
+    margin-top: 5px;
+    border-right: none;
+    float: left;
+}
+
+section .search_con .result .research_wrap button[type="submit"] {
+    background: url('../img/common/search_btn.png');
+    background-size: 25px;
+    width: 30px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #646464;
+    border-left: none;
+    float: left;
+    margin-top: 5px;
+}
+
+section .search_con .result .research_wrap .btn_clear {
+    font-size: 15px;
+    background-color: transparent;
+    color: #4e8ce8;
+    padding: 5px;
+}
+
+section .search_con .result .s_cate {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section .search_con .result .s_cate .c_title{
+    width: 100%;
+    overflow: hidden;
+}
+
+section .search_con .result .s_cate .c_title span,
+section .search_con .result .s_cate .c_title div {
+    float: left;
+}
+
+section .search_con .result .s_cate .c_title span:nth-child(1){
+    font-size: 18px;
+    font-family: rb;
+    color: #313131;
+}
+
+section .search_con .result .s_cate .c_title span:nth-child(2){
+    font-size: 14px;
+    font-family: rl;
+    color: #959595;
+    line-height: 26px;
+    margin-left: 20px;
+}
+
+section .search_con .result .s_cate .c_title .all_c{
+    font-size: 11px;
+    font-family: rl;
+    color: #959595;
+    vertical-align: middle;
+    line-height: 27px;
+    margin-left: 5px;
+}
+
+section .search_con .result .s_cate .c_title .all_c label {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section .search_con .result .s_cate .c_title .none_c{
+    font-size: 11px;
+    font-family: rl;
+    color: #959595;
+    line-height: 28px;
+    margin-left: 5px;
+}
+
+
+section .search_con .result .s_cate .c_title div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+section .search_con .result .s_cate .cate_check {
+    width: 250px;
+    overflow: hidden;
+}
+
+section .search_con .result .s_cate .cate_check div{
+    float: left;
+    width: 125px;
+}
+
+section .search_con .result .s_cate .cate_check div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+
+section .search_con .result .s_cate .cate_check div label {
+    font-size: 12px;
+    font-family: rl;
+    color: #646464;
+    
+}
+
+
+
+
+
+section .search_con .result .s_level {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section .search_con .result .s_level .l_title{
+    width: 100%;
+    overflow: hidden;
+}
+
+section .search_con .result .s_level .l_title span,
+section .search_con .result .s_level .l_title div {
+    float: left;
+}
+
+section .search_con .result .s_level .l_title span:nth-child(1){
+    font-size: 18px;
+    font-family: rb;
+    color: #313131;
+}
+
+section .search_con .result .s_level .l_title span:nth-child(2){
+    font-size: 14px;
+    font-family: rl;
+    color: #959595;
+    line-height: 26px;
+    margin-left: 20px;
+}
+
+section .search_con .result .s_level .l_title .all_c{
+    font-size: 11px;
+    font-family: rl;
+    color: #959595;
+    vertical-align: middle;
+    line-height: 28px;
+    margin-left: 5px;
+}
+
+section .search_con .result .s_level .l_title .all_c label {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section .search_con .result .s_level .l_title .none_c{
+    font-size: 11px;
+    font-family: rl;
+    color: #959595;
+    line-height: 28px;
+    margin-left: 5px;
+}
+
+
+section .search_con .result .s_level .l_title div input[type="checkbox"] {
+    vertical-align: -4px;
+    border-radius: 0px;
+}
+
+section .search_con .result .s_level .level_check {
+    width: 330px;
+    overflow: hidden;
+}
+
+section .search_con .result .s_level .level_check div{
+    float: left;
+    width: 120px;
+}
+section .search_con .result .s_level .level_check div:nth-child(1){
+    width: 90px;
+}
+
+section .search_con .result .s_level .level_check div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+
+section .search_con .result .s_level .level_check div label {
+    font-size: 12px;
+    font-family: rl;
+    color: #646464;
+    
+}
+
+
+
+
+section .search_con .result .s_tutor {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section .search_con .result .s_tutor .t_title{
+    width: 100%;
+    overflow: hidden;
+}
+
+section .search_con .result .s_tutor .t_title span,
+section .search_con .result .s_tutor .t_title div {
+    float: left;
+}
+
+section .search_con .result .s_tutor .t_title span:nth-child(1){
+    font-size: 18px;
+    font-family: rb;
+    color: #313131;
+}
+
+section .search_con .result .s_tutor .t_title span:nth-child(2){
+    font-size: 14px;
+    font-family: rl;
+    color: #959595;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+section .search_con .result .s_tutor .t_title .all_c{
+    font-size: 11px;
+    font-family: rl;
+    color: #959595;
+    vertical-align: middle;
+    line-height: 29px;
+    margin-left: 5px;
+}
+
+section .search_con .result .s_tutor .t_title .all_c label {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section .search_con .result .s_tutor .t_title .none_c{
+    font-size: 11px;
+    font-family: rl;
+    color: #959595;
+    line-height: 29px;
+    margin-left: 5px;
+}
+
+
+section .search_con .result .s_tutor .t_title div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+section .search_con .result .s_tutor .tutor_check {
+    width: 300px;
+    overflow: hidden;
+}
+
+section .search_con .result .s_tutor .tutor_check div{
+    float: left;
+    width: 300px;
+}
+
+section .search_con .result .s_tutor .tutor_check div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+
+section .search_con .result .s_tutor .tutor_check div label {
+    font-size: 13px;
+    font-family: rl;
+    cursor: pointer;
+    color: #646464;
+    
+}
+
+
+
+
+
+
+
+section .search_con .result .s_preffer {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section .search_con .result .s_preffer .p_title{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+section .search_con .result .s_preffer .p_title span{
+    font-size: 18px;
+    font-family: rb;
+    color: #313131;
+}
+
+
+section .search_con .result .s_preffer  div input[type="radio"] {
+    display: none;
+}
+
+section .search_con .result .s_preffer .preffer_check {
+    width: 240px;
+    overflow: hidden;
+}
+
+section .search_con .result .s_preffer .preffer_check .lang,
+section .search_con .result .s_preffer .preffer_check .explain,
+section .search_con .result .s_preffer .preffer_check .sex {
+    float: left;
+    width: 100px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.preffer_check .lang div,.preffer_check .explain div,.preffer_check .sex div{
+    width: 100px;
+    float: left;
+} 
+
+section .search_con .result .s_preffer  div input[type="radio"] + label{
+    width: 100px;
+    float: left;
+    border: 1px solid #646464;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+section .search_con .result .s_preffer .preffer_check div div:nth-child(2) input[type="radio"] + label{
+    border-left: none;
+}
+
+
+
+section .search_con .result .s_preffer  div input[type="radio"]:checked + label{
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+.p_lang div label {
+    margin-top: 10px;
+}
+
+.p_explain div label, .p_sex div label {
+    margin-top: 5px;
+}
+
+
+section .search_con .result .s_preffer .preffer_check div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+
+section .search_con .result .s_preffer .preffer_check div label {
+    font-size: 12px;
+    font-family: rl;
+    color: #646464;
+    
+}
+
+
+
+
+
+
+
+
+
+section .search_con .result .s_rate {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section .search_con .result .s_rate .r_title{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+section .search_con .result .s_rate .r_title span{
+    font-size: 18px;
+    font-family: rb;
+    color: #313131;
+}
+
+section .search_con .result .s_rate .r_title .least{
+    font-size: 14px;
+    font-family: rb;
+    color: #313131;
+}
+
+section .search_con .result .s_rate  div input[type="radio"] {
+    display: none;
+}
+
+section .search_con .result .s_rate .rate_check {
+    width: 282px;
+    overflow: hidden;
+}
+
+
+section .search_con .result .s_rate .rate_check div label {
+    font-size: 11px;
+    font-family: rl;
+    color: #646464;
+    
+}
+
+
+section .search_con .result .s_rate .rate_check div input[type="radio"] + label{
+    width: 50px;
+    float: left;
+    height: 28px;
+    border: 1px solid #646464;
+    border-left: none;
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 5px;
+}
+section .search_con .result .s_rate .rate_check .r_any input[type="radio"] + label{
+    border-left: 1px solid #646464;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+section .search_con .result .s_rate .rate_check div input[type="radio"]:checked + label{
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+.p_lang div label {
+    margin-top: 10px;
+}
+
+.p_explain div label, .p_sex div label {
+    margin-top: 5px;
+}
+
+
+section .search_con .result .s_rate .rate_check div input[type="checkbox"] {
+    vertical-align: -3px;
+    border-radius: 0px;
+}
+
+
+.video_list {
+    width: 860px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-bottom: 40px;
+}
+
+
+.video_list .moreview_click {
+    width: 100%;
+    height: 40px;
+}
+
+
+.video_list .moreview_click input {
+    font-size: 14px;
+    font-family:rb;
+    line-height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #646464;
+    margin: 20px auto;
+}
+
+
+.video_list .video_count {
+    font-size: 18px;
+    color: #6d6d6d;
+    font-family: rb;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+
+.video_list .video_cate {
+    float: right;
+    overflow: hidden;
+}
+
+.video_list .video_cate span,
+.video_list .video_cate div{
+    float: left;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.video_list .video_cate span {
+    
+    font-size: 14px;
+    color: #6d6d6d;
+    font-family: rb;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.video_list .video_cate div input[type="radio"] {
+    display: none;
+    
+}
+
+.video_list .video_cate div input[type="radio"] + label {
+    padding: 5px 5px;
+    color: #4a8ec8;
+    font-size: 14px;
+    font-family: rr;
+    border-radius: 5px;
+    border: 1px solid #4a8ce8;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+
+.video_list .video_cate div input[type="radio"]:checked + label {
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+.video_list .video_liwrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.video_list .video_con {
+    margin-top: 20px;
+    display: none;
+}
+
+.video_list .video_con .pre_wrap {
+    width: 858px;
+    border: 1px solid #646464;
+    overflow: hidden;
+}
+
+
+.video_list .video_con .pre_wrap .thum_wrap,
+.video_list .video_con .pre_wrap .video_info {
+    float: left;
+}
+
+
+
+.video_list .video_con .pre_wrap .thum_wrap {
+    width: 280px;
+    height: 146px;
+}
+
+.video_list .video_con .pre_wrap .thum_wrap iframe {
+    width: 280px!important;
+    height: 146px!important;
+      pointer-events: none;
+    display: block;
+}
+
+.video_list .video_con .pre_wrap .thum_wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.video_list .video_con .pre_wrap .video_info{
+    width: 567px;
+    height: 146px;
+    border-left: 1px solid #646464;
+    padding-left: 10px;
+}
+
+.video_list .video_con .pre_wrap .video_info .title {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.video_list .video_con .pre_wrap .video_info .user {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 10px;
+}
+
+
+.video_list .video_con .pre_wrap .video_info .info {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.video_list .mr_moreview {
+    width: 100%;
+    height: 40px;
+}
+
+
+.video_list .mr_moreview.none{
+    display: none;
+}
+
+.video_list .mr_moreview input {
+    font-size: 12px;
+    font-family: rb;
+    line-height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #646464;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+/*******************individual*******************/
+
+
+section .indi_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+section .indi_con {
+    width:1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section .indi_wrap .indi_route {
+    display: block;
+    font-size: 13px;
+    font-family: rl;
+    color: #646464;
+    padding: 10px 0px 20px 0px;
+}
+
+
+section .indi_wrap .indi_route a{
+    color: #646464;
+}
+
+
+section .indi_wrap .indi_routeH {
+    display: none;
+}
+
+section .indi_wrap .indi_title{
+    font-size: 18px;
+    font-family: rb;
+    color: #313131;
+}
+
+section .indi_wrap .indi_conwrap {
+    width: 1200px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left,
+section .indi_wrap .indi_conwrap .indi_right{
+    width: 590px;
+    float: left;
+    overflow: hidden
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right {
+    margin-left: 20px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_img{
+    width: 100%;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_left .indi_img iframe{
+    width: 100%!important;
+    height: 330px!important;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div{
+    float: left;
+    margin-top: 30px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(1){
+    float: left;
+    width: 30px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(1) img{
+    float: left;
+    width: 30px;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(2){
+    float: left;
+    height: 30px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(2) span{
+    font-size: 14px;
+    font-family: rb;
+    line-height: 30px;
+    margin-left: 10px;
+    color: #b8b8b8;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(3){
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(3) p{
+    font-size: 14px;
+    font-family: rr;
+    color: #797979;
+    line-height: 30px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op h4{
+    font-size: 16px;
+    font-family: rr;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op p{
+    font-size: 14px;
+    font-family: rr;
+    font-weight: bold;
+    color: #666!important;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op .tag{
+    background-color: #a2a2a2;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    width: 40px;
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    font-family: rl;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op .modify_mo{
+    background-color: #b8b8b8;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    width: 50px;
+    float: right;
+    font-size: 12px;
+    color: #fff;
+    font-family: rl;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op .tag1 {
+    margin-left: 0px;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op p span{
+    color: #a2a2a2;!important;
+}
+
+section .indi_wrap .indi_conwrap .indi_right .right_p{
+    
+    font-size: 14px;
+    font-family: rr;
+    line-height: 30px;
+    color: #797979;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .right_review form textarea{
+    width: 568px;
+    border: 1px solid #a7a7a7;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+    font-family: rr;
+}
+
+section .indi_wrap .indi_conwrap .indi_right .right_review form span{
+    font-size: 40px;
+    color: #4a8ce8;
+    cursor: pointer;
+    float: left;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .right_review form input[type="button"]{
+    width: 120px;
+    float: right;
+    margin-top: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #646464;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: rr;
+    color: #313131;
+    margin-bottom: 10px;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .right_review form .id_view{
+    clear: both;
+    width: 100%;
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #797979;
+    font-family: rr;
+    
+}
+
+section .indi_wrap .indi_conwrap .indi_right .right_review form .id_view input[type="checkbox"]{
+    vertical-align: -2px;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .archive {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo {
+    width: 100%;
+    overflow: hidden;
+}
+
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo .aver {
+    width: 26px;
+}
+
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo .aver input{
+    font-size: 26px;
+    font-family: rb;
+    color: #6d6d6d;
+    width: 100%;
+    background-color: transparent;
+}
+
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo .aver,
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo .star-ratings-css,
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo .perm_wrap{
+    margin-left: 10px;
+    float: left;
+    font-size: 25px;
+    line-height: 18px;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .archive .review_amo span a{
+    font-size: 13px;
+    font-family: rr;
+    color: #8c8c8c;
+    border-bottom: 1px solid #8c8c8c;
+    font-weight: bold;
+}
+
+section .indi_wrap .indi_conwrap .indi_right .archive .ta_review {
+    border: 1px solid #ddd;
+    
+}
+
+section .indi_wrap .indi_conwrap .indi_right .archive .ta_review p{
+    font-size: 14px;
+    font-family: rr;
+    color: #8c8c8c;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    height:30px;
+    line-height:20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+section .indi_wrap .indi_conwrap .indi_right .archive .ta_review p a {
+    font-size: 14px;
+    font-family: rr;
+    color: #8c8c8c;
+}
+
+
+
+section article div .owl-carousel .item a {
+    display: block;
+}
+
+
+section article div .owl-carousel .item a iframe {
+    width: 100%!important;
+    height: 193px!important;
+    display: block;
+}
+
+/***************similar*******************/
+
+
+section .similar{ 
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    border-top: 2px solid #ddd;
+}
+
+section .similar .simil_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section .similar h1{
+    font-family: rr;
+    font-size: 18px;
+    padding: 0px 0px 20px 0px;
+    color: #073761;
+}
+
+section .similar .similar_wrap {
+    width: 1100px;
+}
+
+
+/***************popular*******************/
+
+
+section .populars{ 
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    border-top: 2px solid #ddd;
+}
+
+section .populars .pop_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section .populars h1{
+    font-family: rr;
+    font-size: 18px;
+    padding: 0px 0px 20px 0px;
+    color: #073761;
+}
+
+section .populars .popular_wrap {
+    width: 1100px;
+}
+
+
+
+/****************category******************/
+
+
+section .category{ 
+    width: 1200px;
+    margin: 40px auto;
+}
+
+section .category h1{ 
+    font-family: rr;
+    font-size: 18px;
+    padding: 0px 0px 20px 0px;
+    color: #073761;
+}
+
+section .category .category_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+section .category .category_wrap div {
+    float: left;
+    width: 285px;
+    margin-left: 20px;
+}
+section .category .category_wrap div:nth-child(1) {
+    margin: 0px;
+}
+
+section .category .category_wrap div input{
+    float: left;
+    width: 285px;
+    height: 100px;
+    padding: 25px 0px;
+    font-family: rl;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+section .category .category_wrap .listening input {
+    background: url('../img/main/listen_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .category .category_wrap .reading input {
+    background: url('../img/main/reading_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .category .category_wrap .writing input {
+    background: url('../img/main/writing_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .category .category_wrap .speaking input {
+    background: url('../img/main/speaking_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+section .login_tab{ 
+    width: 100%;
+    margin: 40px auto 0px auto;
+    background-color: #9fc5eb;
+}
+
+section .login_tab .login_wrap{ 
+    overflow: hidden;
+    margin: 0 auto;
+    width: 406px;
+    padding: 40px 0px;
+}
+
+section .login_tab .login_wrap h1{ 
+    font-family: rb;
+    font-size: 16px;
+    color: #fff;
+    line-height: 43px;
+    float: left;
+}
+
+
+section .login_tab .login_wrap input{ 
+    float: left;
+    font-size: 14px;
+    font-family: rr;
+    padding: 10px 30px;
+    margin-left: 40px;
+    background-color: #a7a7a7;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+/**************caption*****************/
+
+.caption {
+    background: transparent;
+}
+
+.cap-title {
+    color: #666;
+    font-size: 14px;
+    font-family: rr;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.cap-info {
+    color: #b8b8b8;
+    font-size: 14px;
+    font-family: rr;
+    padding: 5px 10px;
+}
+
+
+
+
+/************mypage**********/
+
+
+
+section {
+    width: 100%;
+    overflow: hidden;
+    border-top: 2px solid #646464;
+}
+section .info_title{
+    
+    font-size: 20px;
+    font-family: b;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+
+
+section .my_info {
+    width: 740px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+section .my_info form{
+    overflow: hidden;
+}
+
+section .my_info .edit_id{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+section .my_info .edit_id span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section .my_info .edit_id input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: rr;
+    width: 578px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+section .my_info .edit_name{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+
+section .my_info .edit_name span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section .my_info .edit_name input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    width: 578px;
+    font-size: 14px;
+    font-family: rr;
+    height: 20px;
+    cursor: pointer;
+}
+
+section .my_info .edit_pw{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+
+section .my_info .edit_pw span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section .my_info .edit_pw input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: rr;
+    width: 248px;
+    height: 20px;
+    cursor: pointer;
+    float: left;
+}
+
+section .my_info .edit_pw .pass_check {
+    margin-left: 40px;
+}
+
+
+
+section .my_info .edit_email{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+section .my_info .edit_email span {
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 42px;
+    width: 120px;
+}
+
+section .my_info .edit_email input {
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    width: 578px;
+    height: 20px;
+    font-size: 14px;
+    font-family: rr;
+    cursor: pointer;
+}
+
+
+section .my_info .edit_level {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section .my_info .edit_level span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+section .my_info .edit_level div{
+    float: left;
+    margin-left: 20px;
+}
+
+section .my_info .edit_level div:nth-child(2){
+    margin-left: 0px;
+}
+
+section .my_info .edit_level div input[type="radio"]{
+    display: none;
+}
+
+section .my_info .edit_level div label {
+    font-size: 14px;
+    display: block;
+    width: 171px;
+    font-family: rr;
+    color: #646464;
+    border: 1px solid #646464;
+    padding: 15px 10px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+section .my_info .edit_level div input[type="radio"]:checked + label{ 
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+
+
+
+section .my_info .edit_tutor {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section .my_info .edit_tutor span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+section .my_info .edit_tutor div{
+    float: right;
+    margin-top: 20px;
+}
+
+section .my_info .edit_tutor div:nth-child(2){
+    margin-top: 0px;
+}
+section .my_info .edit_tutor div input[type="radio"]{
+    display: none;
+}
+
+section .my_info .edit_tutor div label {
+    font-size: 14px;
+    display: block;
+    width: 598px;
+    font-family: rr;
+    color: #646464;
+    border: 1px solid #646464;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+section .my_info .edit_tutor div input[type="radio"]:checked + label{ 
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+section .my_info .edit_preffer {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section .my_info .edit_preffer span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 119px;
+}
+
+.edit_lang, .edit_explain, .edit_sex, .edit_interesting{
+    float: right;
+    width: 621px;
+    
+}
+
+.edit_explain, .edit_sex, .edit_interesting{
+    margin-top: 20px;
+}
+
+
+.edit_lang div {
+    width: 300px;
+    margin-left: 21px;
+    float: left;
+}
+
+.edit_lang div:nth-child(1) {
+    margin-left: 0px;
+}
+.edit_sex div {
+    width: 300px;
+    margin-left: 21px;
+    float: left;
+}
+
+.edit_sex div:nth-child(1) {
+    margin-left: 0px;
+}
+
+.edit_explain div {
+    width: 300px;
+    margin-left: 21px;
+    float: left;
+}
+
+.edit_explain div:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+section .my_info .edit_preffer div:nth-child(2){
+    margin-top: 0px;
+}
+section .my_info .edit_preffer div input[type="radio"]{
+    display: none;
+}
+
+section .my_info .edit_preffer div div label {
+    font-size: 14px;
+    display: block;
+    width: 278px;
+    font-family: rr;
+    color: #646464;
+    border: 1px solid #646464;
+    padding: 15px 10px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+section .my_info .edit_preffer div input[type="radio"]:checked + label{ 
+    background-color: #4a8ce8;
+    color: #fff;
+}
+
+
+
+section .my_info .edit_interesting {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+section .my_info .edit_interesting span{
+    font-size: 14px;
+    font-family: rb;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 119px;
+}
+
+section .my_info .edit_interesting div {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+section .my_info .edit_interesting div:nth-child(2) {
+    margin-left: 0px;
+}
+
+
+section .my_info .edit_interesting input[type="checkbox"] {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+section .my_info .edit_interesting label {
+    font-size: 14px;
+    font-family: rr;
+    cursor: pointer;
+}
+
+
+section .my_info .edit_interesting .type-tags{
+    float: right;
+    margin-top: -5px;
+    width: 621px;
+}
+
+section .my_info .edit_interesting .type-tags input{
+    width: 598px;
+    padding: 10px 0px 10px 21px;
+    border: 1px solid #646464;
+    font-family: rm;
+    font-size: 12px;
+}
+
+.edit_btn {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.edit_btn input{
+    font-size: 14px;
+    font-family: rl;
+    border: 1px solid #646464;
+    float: left;
+    width: 130px;
+    padding: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+.edit_btn input:nth-child(1){
+    margin-left: 0px;
+}
+
+
+section .my_info .edit_account {
+    margin: 40px 0px 40px 40px;
+    
+}
+
+section .my_info .edit_account a{
+    color: #eb9f9f;
+    border-bottom: 1px solid #eb9f9f;
+    font-size: 14px;
+    font-family: rl;
+    font-weight: bold;
+}
+
+section .my_info .edit_account span{
+    display: block;
+    font-size: 13px;
+    font-family: rl;
+    font-weight: bold;
+    color: #646464;
+    margin-top: 5px;
+}
+
+
+
+
+
+/****************my video*******************/
+
+section .my_videos .mv_wrap{
+    width: 860px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+section .my_videos .mv_title{
+    font-size: 20px;
+    font-family: rb;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+
+section .my_videos .video_blank {
+    width: 100%;
+    margin: 0 auto;
+}
+section .my_videos .video_blank p{
+    font-size: 14px;
+    font-family:rb;
+    text-align: center;
+    color: #a2a2a2;
+    line-height: 40px;
+}
+
+section .my_videos .add_mv{
+    display: block;
+    overflow: hidden;
+    width: 860px;
+    margin:  auto;
+}
+section .my_videos .add_mv a {
+    display: block;
+    float: right;
+}
+
+
+section .my_videos .mv_wrap ul .mv_con{
+    border: 1px solid #646464;
+    margin-top: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+
+section .my_videos .mv_wrap ul .mv_con .mvt_wrap {
+    width: 214px;
+    float: left;
+    height: 122px;
+}
+
+
+section .my_videos .mv_wrap ul .mv_con .mvt_wrap iframe{
+    width: 214px!important;
+    height: 122px!important;
+    pointer-events: none;
+}
+
+section .my_videos .mv_wrap ul .mv_con .mvt_wrap img{
+    width: 100%;
+}
+ 
+
+section .my_videos .mv_wrap ul .mv_con .mv_info {
+    float: left;
+    width: 524px;
+    padding-left: 10px;
+}
+section .my_videos .mv_wrap ul .mv_con .mv_info .title {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+section .my_videos .mv_wrap ul .mv_con .mv_info .user {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 10px;
+}
+
+
+section .my_videos .mv_wrap ul .mv_con .mv_info .info {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+section .my_videos .mv_wrap ul .mv_con .mv_info .moreview {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    margin-top: 10px;
+}
+
+section .my_videos .mv_wrap ul .mv_con .mv_info .moreview span:nth-child(3){
+    border-bottom: 1px solid #646464;
+}
+
+section .my_videos .mv_wrap ul .mv_con .mv_info .moreview span:nth-child(2),
+section .my_videos .mv_wrap ul .mv_con .mv_info .moreview span:nth-child(3){
+    margin-left: 20px;
+}
+
+
+
+section .my_videos .mv_wrap ul .mv_con .mv_static {
+    float: left;
+    border-left: 1px solid #646464;
+    width: 107px;
+    text-align: center;
+    height: 120px;
+}
+section .my_videos .mv_wrap ul .mv_con .mv_static a {
+    font-size: 14px;
+    font-family: rr;
+    color: #424141;
+    display: inline-block;
+    line-height: 20px;
+    border-bottom: 1px solid #646464;
+}
+section .my_videos .mv_wrap ul .mv_con .mv_static button{
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    color: #646464;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #2a2a2a;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+section .my_videos .mv_wrap .mr_moreview {
+    width: 100%;
+    height: 40px;
+}
+
+
+section .my_videos .mv_wrap .mr_moreview.none{
+    display: none;
+}
+
+section .my_videos .mv_wrap .mr_moreview input {
+    font-size: 12px;
+    font-family: rb;
+    line-height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #646464;
+    margin: 20px auto;
+}
+
+
+
+/****************my watch list*******************/
+
+section .my_watch .mw_wrap{
+    width: 860px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+section .my_watch .mw_title{
+    font-size: 20px;
+    font-family: rb;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+
+
+section .my_watch .video_blank {
+    width: 100%;
+    margin: 0 auto;
+}
+section .my_watch .video_blank p{
+    font-size: 14px;
+    font-family:rb;
+    text-align: center;
+    color: #a2a2a2;
+    line-height: 40px;
+}
+
+section .my_watch .mw_wrap .add_mw{
+    display: block;
+    overflow: hidden;
+}
+section .my_watch .mw_wrap .add_mw a {
+    display: block;
+    float: right;
+}
+
+
+section .my_watch .mw_wrap ul .mw_con{
+    border: 1px solid #646464;
+    margin-top: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+
+section .my_watch .mw_wrap ul .mw_con .mwt_wrap {
+    width: 214px;
+    float: left;
+    height: 122px;
+}
+section .my_watch .mw_wrap ul .mw_con .mwt_wrap iframe {
+    width: 214px!important;
+    height: 122px!important;
+      pointer-events: none;
+}
+
+section .my_watch .mw_wrap ul .mw_con .mwt_wrap img{
+    width: 100%;
+}
+ 
+
+section .my_watch .mw_wrap ul .mw_con .mw_info {
+    float: left;
+    width: 524px;
+    padding-left: 10px;
+}
+section .my_watch .mw_wrap ul .mw_con .mw_info .title {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+section .my_watch .mw_wrap ul .mw_con .mw_info .user {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 8px;
+}
+
+
+section .my_watch .mw_wrap ul .mw_con .mw_info .info {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+section .my_watch .mw_wrap ul .mw_con .mw_info .moreview {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    margin-top: 8px;
+}
+
+section .my_watch .mw_wrap ul .mw_con .mw_info .moreview span:nth-child(3){
+    border-bottom: 1px solid #646464;
+}
+
+section .my_watch .mw_wrap ul .mw_con .mw_info .moreview span:nth-child(2),
+section .my_watch .mw_wrap ul .mw_con .mw_info .moreview span:nth-child(3){
+    margin-left: 20px;
+}
+
+
+
+section .my_watch .mw_wrap ul .mw_con .mw_static {
+    float: left;
+    border-left: 1px solid #646464;
+    width: 107px;
+    text-align: center;
+    height: 122px;
+}
+section .my_watch .mw_wrap ul .mw_con .mw_static a {
+    font-size: 14px;
+    display: inline-block;
+    color: #424141;
+    margin-top: 42px;
+    font-family: rr;
+}
+
+section .my_watch .mw_wrap ul .mw_con .mw_static a span{
+    font-size: 14px;
+    font-family: rr;
+    display: inline-block;
+    color: #424141;
+    border-bottom: 1px solid #646464;
+}
+
+section .my_watch .mw_wrap .mr_moreview {
+    width: 100%;
+    height: 40px;
+}
+
+section .my_watch .mw_wrap .mr_moreview.none{
+    display: none;
+}
+
+
+section .my_watch .mw_wrap .mr_moreview input {
+    font-size: 14px;
+    font-family: rb;
+    line-height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #646464;
+    margin: 20px auto;
+}
+
+
+
+
+
+/****************my review*******************/
+
+section .my_review .mr_wrap{
+    width: 860px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+section .my_review .mr_title{
+    font-size: 20px;
+    font-family: rb;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+
+
+section .my_review .video_blank {
+    width: 100%;
+    margin: 0 auto;
+}
+section .my_review .video_blank p{
+    font-size: 14px;
+    font-family:rb;
+    text-align: center;
+    color: #a2a2a2;
+    line-height: 40px;
+}
+
+
+section .my_review .mr_wrap ul .mr_con{
+    border: 1px solid #646464;
+    margin-top: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    width: 150px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 33px;
+}
+
+section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview .average {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: rr;    
+    text-align: center;
+}
+section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info {
+    float: left;
+    width: 489px;
+    height: 118px;
+    padding-left: 10px;
+    border-left: 1px solid #a7a7a7;
+}
+
+section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info p {
+    margin-top: 40px;
+}
+
+section .my_review .mr_wrap ul .mr_con .mrt_wrap{
+    width: 208px;
+    height: 118px;
+    float: left;
+}
+
+section .my_review .mr_wrap ul .mr_con .mrt_wrap iframe{
+    width: 208px!important;
+    height: 118px!important;
+    pointer-events: none;
+}
+
+section .my_review .mr_wrap ul .mr_con .mrt_wrap img{
+    width: 100%;
+}
+ 
+
+section .my_review .mr_wrap ul .mr_con .mr_info .title {
+    font-size: 14px;
+    font-family: rr;
+    color: #646464;
+    margin-top: 10px;
+}
+
+
+section .my_review .mr_wrap ul .mr_con .mr_info .user {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 10px;
+}
+
+
+section .my_review .mr_wrap ul .mr_con .mr_info .info {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-family: rr;
+    margin-top: 10px;
+}
+
+
+
+section .my_review .mr_wrap ul .mr_con .mr_info .moreview span:nth-child(3){
+    border-bottom: 1px solid #646464;
+}
+
+section .my_review .mr_wrap ul .mr_con .mr_info .moreview span:nth-child(2),
+section .my_review .mr_wrap ul .mr_con .mr_info .moreview span:nth-child(3){
+    margin-left: 20px;
+}
+
+
+
+section .my_review .mr_wrap ul .mr_con .mr_static {
+    float: left;
+    border-left: 1px solid #646464;
+    width: 107px;
+    text-align: center;
+    height: 130px;
+}
+section .my_review .mr_wrap ul .mr_con .mr_static a {
+    font-size: 14px;
+    font-family: rr;
+    display: inline-block;
+    color: #424141;
+    margin-top: 40px;
+}
+
+section .my_review .mr_wrap ul .mr_con .mr_static a span{
+    font-size: 14px;
+    display: inline-block;
+    color: #424141;
+    font-family: rb;
+    border-bottom: 1px solid #646464;
+}
+
+section .my_review .mr_wrap .mr_moreview {
+    width: 100%;
+    height: 40px;
+}
+
+section .my_review .mr_wrap .mr_moreview.none{
+    display: none;
+}
+
+section .my_review .mr_wrap .mr_moreview input {
+    font-size: 14px;
+    font-family: rb;
+    line-height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #646464;
+    margin: 20px auto;
+}
+
+
+
+/***************about****************/
+
+section .about_dc{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section .about_dc .about_route{
+    font-size: 13px;
+    font-family: rl;
+    font-weight: bold;
+    color: #646464;
+    margin-top: 20px;
+}
+
+section .about_dc .about_title {
+    font-size: 20px;
+    font-family: rb;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+section .about_dc .about_contents {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 14px;
+    font-family: rr;
+}
+
+
+/***************terms****************/
+
+section .terms_dc{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section .terms_dc .terms_route{
+    font-size: 13px;
+    font-family: rl;
+    font-weight: bold;
+    color: #646464;
+    margin-top: 20px;
+}
+
+section .terms_dc .terms_title {
+    font-size: 20px;
+    font-family: rb;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+
+section .terms_dc .terms_contents {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 14px;
+    font-family: rr;
+}
+
+/***************service****************/
+
+section .service_dc{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section .service_dc .service_route{
+    font-size: 13px;
+    font-family: rl;
+    font-weight: bold;
+    color: #646464;
+    margin-top: 20px;
+}
+
+section .service_dc .service_title {
+    font-size: 20px;
+    font-family: rb;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+
+section .service_dc .service_contents {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 14px;
+    font-family: rr;
+}
+
+
+
+/***************service****************/
+
+section .policy_dc{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section .policy_dc .policy_route{
+    font-size: 13px;
+    font-family: l;
+    font-weight: bold;
+    color: #646464;
+    margin-top: 20px;
+}
+
+section .policy_dc .policy_title {
+    font-size: 20px;
+    font-family: rb;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+section .policy_dc .policy_contents {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 14px;
+    font-family: rr;
+}
+
+
+/*************email***************/
+section .email_com {
+    width: 460px;
+    margin: 210px auto;
+}
+section .email_com .email_img{
+    width: 120px;
+    margin: 0 auto;
+}
+section .email_com .email_img img{
+    width: 120px;
+}
+
+section .email_com .comple_text h1{
+    font-size: 25px;
+    font-family: rb;
+    text-align: center;
+    padding: 20px 0px;
+    color: #646464;
+}
+section .email_com .comple_text p{
+    font-size: 14px;
+    font-family: rr;
+    text-align: center;
+    line-height: 2;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+
+    /******************search************************/
+
+
+    section .search_wrap {
+        width: 740px;
+    }
+    section .search_con {
+        width:740px;
+    }
+
+    section .search_wrap .route {
+        font-size: 12px;
+    }
+
+
+    section .search_wrap h1 {
+        font-size: 18px;
+    }
+
+
+    section .search_con .result{
+        display: none;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-55%);
+        left: 0px;
+        background-color: #fff;
+        border: 1px solid #646464;
+        padding: 20px 10px;
+        height: 500px;
+        overflow-y: scroll;  
+        -ms-overflow-style: none; 
+    }
+
+    section .search_con .sh_btn{
+        position: fixed;
+        top: 300px;
+        left: 0px;
+        background-color: #fff;
+        display: block;
+    }
+    
+    section .search_con .result::-webkit-scrollbar {
+
+        display:none;
+
+    } 
+
+    section .search_con .sh_btn.width {
+        left: 321px;
+    }
+
+    section .search_con .result.sh{
+        display: block;
+    }
+
+    section .search_con .result.sh .option_wrap p {
+        display: block;
+    }
+
+
+
+
+    .video_list {
+        width: 740px;
+        float: left;
+        margin-top: 20px;
+        margin-left:0px;
+        padding-bottom: 40px;
+    }
+
+
+    .video_list .moreview_click {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    .video_list .video_count {
+        font-size: 13px;
+        color: #6d6d6d;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+    }
+
+    .video_list .video_cate {
+        float: right;
+        overflow: hidden;
+    }
+
+    .video_list .video_cate span,
+    .video_list .video_cate div{
+        float: left;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .video_list .video_cate span {
+
+        font-size: 13px;
+        color: #6d6d6d;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .video_list .video_cate div input[type="radio"] {
+        display: none;
+
+    }
+
+    .video_list .video_cate div input[type="radio"] + label {
+        padding: 5px 5px;
+        color: #4a8ec8;
+        font-size: 13px;
+        border-radius: 5px;
+        border: 1px solid #4a8ce8;
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .video_list .video_cate div input[type="radio"]:checked + label {
+        background-color: #4a8ce8;
+        color: #fff;
+    }
+
+    .video_list .video_liwrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .video_list .video_con {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .video_list .video_con .pre_wrap {
+        width: 738px;
+        border: 1px solid #646464;
+        overflow: hidden;
+    }
+
+
+    .video_list .video_con .pre_wrap .thum_wrap,
+    .video_list .video_con .pre_wrap .video_info {
+        float: left;
+    }
+
+
+
+    .video_list .video_con .pre_wrap .thum_wrap {
+        width: 220px;
+    }
+    .video_list .video_con .pre_wrap .thum_wrap iframe {
+         width: 220px!important;   
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info{
+        width: 507px;
+    }
+
+
+    /*******************individual*******************/
+
+
+    section .indi_wrap {
+        width: 740px;
+    }
+    section .indi_con {
+        width:740px;
+    }
+
+    section .indi_wrap .indi_route {
+        font-size: 12px;
+    }
+
+    section .indi_wrap .indi_title{
+        font-size: 18px;
+    }
+
+    section .indi_wrap .indi_conwrap {
+        width: 740px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_left,
+    section .indi_wrap .indi_conwrap .indi_right{
+        width: 360px;
+    }
+
+
+
+    section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(3) p{
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_right .right_p{
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+
+    section .indi_wrap .indi_conwrap .indi_left .indi_img iframe{
+        width: 100%!important;
+        height: 200px!important;
+    }
+    section .indi_wrap .indi_conwrap .indi_right .right_review form textarea{
+        width: 338px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_right .right_review form span{
+        font-size: 30px;
+    }
+
+
+    section .indi_wrap .indi_conwrap .indi_right .right_review form input[type="button"]{
+        width: 115px;
+        float: right;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+
+    section .indi_wrap .indi_conwrap .indi_right .right_review form .id_view{
+        font-size: 13px;
+
+    }
+
+    section .indi_wrap .indi_conwrap .indi_right .right_review form .id_view input[type="checkbox"]{
+        vertical-align: -2px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_right .archive .review_amo span{
+        font-size: 20px;
+    }
+
+
+
+    section .indi_wrap .indi_conwrap .indi_right .archive .review_amo span a{
+        font-size: 13px;
+    }
+    section .indi_wrap .indi_conwrap .indi_right .archive .ta_review p {
+        height: 20px;
+        line-height: 13px;
+    }
+
+
+    section .indi_wrap .indi_conwrap .indi_right .archive .ta_review p a {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    /***************similar*******************/
+
+
+    section .similar .simil_wrap {
+        width: 800px;
+    }
+
+    section .similar h1{
+        font-size: 16px;
+    }
+    section .similar .similar_wrap {
+
+        width: 700px;
+    }
+
+    /***************popular*******************/
+
+
+    section .populars .pop_wrap {
+        width: 800px;
+    }
+
+    section .populars h1{
+        font-size: 16px;
+    }
+
+    section .populars .popular_wrap {
+        width: 700px;
+    }
+
+    
+    /**************caption*****************/
+
+
+    .cap-title {
+        font-size: 13px;
+    }
+
+    .cap-info {
+        font-size: 13px;
+    }
+
+
+    /****************category******************/
+
+
+    section .category{ 
+        width: 800px;
+    }
+
+    section .category h1{
+        font-size: 16px;
+        padding: 20px 0px;
+    }
+
+    section .category .category_wrap{
+        width: 590px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section .category .category_wrap div:nth-child(1),
+    section .category .category_wrap div:nth-child(3) {
+        margin: 0px;
+    }
+
+    section .category .category_wrap div:nth-child(4),
+    section .category .category_wrap div:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    section .category .category_wrap div input{
+        font-size: 13px;
+    }
+    
+    section .login_tab .login_wrap {
+        width: 420px;
+    }
+
+    section .login_tab .login_wrap h1{ 
+        font-size: 16px;
+    }
+
+
+    section .login_tab .login_wrap input{ 
+        font-size: 13px;
+    }
+
+
+
+    /****************my video*******************/
+
+    section .my_videos .mv_wrap{
+        width: 740px;
+    }
+
+    section .my_videos .mv_title{
+        font-size: 18px;
+    }
+    
+    section .my_videos .add_mv{
+        width: 740px;
+    }
+    
+    
+    section .my_videos .video_blank {
+        width: 740px;
+    }
+    section .my_videos .video_blank p{
+        font-size: 13px;
+    }
+
+    
+
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap {
+        width: 205px;
+        float: left;
+        height: 108px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap iframe{
+        width: 205px!important;
+        height: 108px!important;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info {
+        width: 413px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mv_info .title {
+        font-size: 13px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .user {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .info {
+        margin-top: 8px;
+    }
+    
+    section .my_videos .mv_wrap ul .mv_con .mv_static {
+        width: 107px;
+        height: 108px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mv_static button {
+        margin-top: 6px;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .moreview {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .moreview span:nth-child(3){
+        border-bottom: 1px solid #646464;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .moreview span:nth-child(2),
+    section .my_videos .mv_wrap ul .mv_con .mv_info .moreview span:nth-child(3){
+        margin-left: 10px;
+    }
+
+    section .my_videos .mv_wrap .mv_moreview {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    section .my_videos .mv_wrap .mv_moreview input {
+        font-size: 13px;
+        font-family: rb;
+        line-height: 40px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #646464;
+        margin: 20px auto;
+    }
+
+    
+
+    /****************my watch*******************/
+
+    section .my_watch .mw_wrap{
+        width: 740px;
+    }
+
+    section .my_watch .mw_title{
+        font-size: 18px;
+    }
+    
+    section .my_watch .video_blank {
+        width: 740px;
+    }
+    section .my_watch .video_blank p{
+        font-size: 13px;
+    }
+
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap {
+        width: 228px;
+        float: left;
+        height: 136px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap iframe {
+    width: 228px!important;
+    height: 136px!important;
+    }
+    
+    section .my_watch .mw_wrap ul .mw_con .mw_info {
+        width: 390px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mw_info .title {
+        font-size: 13px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .user {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .info {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .moreview {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .moreview span:nth-child(3){
+        border-bottom: 1px solid #646464;
+    }
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .moreview span:nth-child(2),
+    section .my_watch .mw_wrap ul .mw_con .mw_info .moreview span:nth-child(3){
+        margin-left: 20px;
+    }
+
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_static {
+        float: left;
+        width: 107px;
+        text-align: center;
+        height: 136px;
+    }
+    section .my_watch .mw_wrap .mw_moreview {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    section .my_watch .mw_wrap .mw_moreview input {
+        font-size: 13px;
+    }
+
+
+
+    /****************my review*******************/
+
+    section .my_review .mr_wrap{
+        width: 740px;
+    }
+
+    section .my_review .mr_title{
+        font-size: 18px;
+    }
+
+
+    
+    section .my_review .video_blank {
+        width: 740px;
+    }
+    section .my_review .video_blank p{
+        font-size: 13px;
+    }
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview {
+        font-size: 13px;
+        width: 120px;
+        height: 78px;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info {
+        float: left;
+        width: 412px;
+        height: 111px;
+        padding-left: 10px;
+        border-left: 1px solid #a7a7a7;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info p {
+        margin-top: 40px;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap{
+        width: 195px;
+        height: 111px;
+        float: left;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap img{
+        width: 100%;
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_info .title {
+        font-size: 13px;
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_info .user {
+        font-size: 13px;
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_info .info {
+        font-size: 13px;
+    }
+
+
+
+    section .my_review .mr_wrap .mr_moreview input {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+
+
+    /***************about****************/
+
+    section .about_dc{
+        width: 740px;
+    }
+
+
+    section .about_dc .about_title {
+        font-size: 18px;
+    }
+
+    section .about_dc .about_contents {
+        width: 740px;
+        font-size: 13px;
+    }
+
+
+    /***************terms****************/
+
+    section .terms_dc{
+        width: 740px;
+    }
+
+
+    section .terms_dc .terms_title {
+        font-size: 18px;
+    }
+
+    section .terms_dc .terms_contents {
+        width: 740px;
+        font-size: 13px;
+    }
+
+    /***************service****************/
+
+    section .service_dc{
+        width: 740px;
+    }
+
+
+    section .service_dc .service_title {
+        font-size: 18px;
+    }
+
+    section .service_dc .service_contents {
+        width: 740px;
+        font-size: 13px;
+    }
+
+    /***************service****************/
+
+    section .policy_dc{
+        width: 740px;
+    }
+
+
+    section .policy_dc .policy_title {
+        font-size: 18px;
+    }
+
+    section .policy_dc .policy_contents {
+        width: 740px;
+        font-size: 13px;
+    }
+    
+    
+    
+    
+    
+} 
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    /******************account page*********************/
+
+
+
+    section .signup {
+        width: 600px;
+    }
+
+
+    section article .id span {
+        width: 100px;
+    }
+
+    section article .id p{
+        margin-left: 100px;
+    }
+    
+    section article .id input {
+        width: 458px;
+    }
+
+    section article .Nick_name span {
+        width: 100px;
+    }
+
+    section article .Nick_name p{
+        margin-left: 100px;
+    }
+    
+    section article .Nick_name input {
+        width: 458px;
+    }
+
+    section article .pw span {
+        width: 100px;
+    }
+    
+    section article .pw p{
+        margin-left: 100px;
+    }
+    
+
+    section article .pw input {
+        width: 187px;
+    }
+    section article .pw .pass_check {
+        margin-left: 40px;
+    }
+
+
+    section .signup .email span {
+        width: 100px;
+    }
+
+    section .signup .email input {
+        width: 458px;
+    }
+
+
+    section .signup .level {
+        width: 100%;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    section .signup .level span{
+        width: 100px;
+    }
+
+    section .signup .level div label {
+        width: 131.2px;
+    }
+
+    section .signup .tutor {
+        width: 100%;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    section .signup .tutor span{
+        width: 100px;
+    }
+
+    section .signup .tutor div label {
+        width: 458px;
+    }
+
+    section .signup .tutor div input[type="radio"]:checked + label{ 
+        background-color: #4a8ce8;
+        color: #fff;
+    }
+
+    section .signup .preffer span{
+        width: 100px;
+    }
+
+    .lang, .explain, .sex, .interesting{
+        float: right;
+        width: 480px;
+
+    }
+
+    .explain, .sex, .interesting{
+        margin-top: 20px;
+    }
+
+
+    .lang div {
+        width: 229px;
+        margin-left: 21px;
+        float: left;
+    }
+
+    .lang div:nth-child(1) {
+        margin-left: 0px;
+    }
+    .sex div {
+        width: 229px;
+        margin-left: 21px;
+        float: left;
+    }
+
+    .sex div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .explain div {
+        width: 229px;
+        margin-left: 21px;
+        float: left;
+    }
+
+    .explain div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+
+    section .signup .preffer div:nth-child(2){
+        margin-top: 0px;
+    }
+    section .signup .preffer div input[type="radio"]{
+        display: none;
+    }
+
+    section .signup .preffer div label {
+        width: 208px;
+    }
+
+    section .signup .interesting span{
+        width: 100px;
+    }
+
+    section .signup .interesting div {
+        margin-left: 30px;
+    }
+
+    section .signup .interesting div:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    section .signup .interesting label {
+    }
+
+
+    section .signup .interesting .type-tags{
+        width: 480px;
+    }
+
+    section .signup .interesting .type-tags input{
+        width: 457px;
+        padding: 10px 0px 10px 21px;
+        border: 1px solid #646464;
+    }
+
+    .account_btn {
+        width: 260px;
+    }
+
+    .account_btn input{
+        width: 110px;
+    }
+
+
+    .account_btn input:nth-child(1){
+        margin-left: 0px;
+    }
+
+    
+
+
+
+
+    /******************search************************/
+
+
+    section .search_wrap {
+        width: 600px;
+    }
+    section .search_con {
+        width:600px;
+    }
+
+    section .search_wrap .route {
+        font-size: 11px;
+    }
+
+    section .search_wrap h1 {
+        font-size: 22px;
+        color: #313131;
+    }
+
+
+    .video_list {
+        width: 600px;
+    }
+
+
+    .video_list .video_count {
+    }
+
+    .video_list .video_cate span,
+    .video_list .video_cate div{
+        float: left;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .video_list .video_cate span {
+
+    }
+
+    .video_list .video_cate div input[type="radio"] + label {
+    }
+
+    .video_list .video_con .pre_wrap {
+        width: 598px;
+        border: 1px solid #646464;
+        overflow: hidden;
+    }
+
+
+    .video_list .video_con .pre_wrap .thum_wrap,
+    .video_list .video_con .pre_wrap .video_info {
+        float: left;
+    }
+
+
+
+    .video_list .video_con .pre_wrap .thum_wrap {
+        width: 190px;
+        height: 108px;
+    
+    }
+    .video_list .video_con .pre_wrap .thum_wrap iframe {
+        width: 190px!important;
+        height: 108px!important;
+    }
+
+    .video_list .video_con .pre_wrap .video_info{
+        width: 397px;
+        height: 108px;
+    }
+
+    .video_list .video_con .pre_wrap .video_info .title {
+        margin-top: 5px;
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info .user {
+        margin-top: 5px;
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info .info {
+        margin-top: 10px;
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info .moreview {
+        color: #646464;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+/*******************individual*******************/
+
+
+    section .indi_wrap {
+        width: 540px;
+    }
+    section .indi_con {
+        width:540px;
+    }
+
+    section .indi_wrap .indi_route {
+    }
+
+    section .indi_wrap .indi_title{
+    }
+
+    section .indi_wrap .indi_conwrap {
+        width: 540px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_left,
+    section .indi_wrap .indi_conwrap .indi_right{
+        width: 540px;
+        float: none;
+        margin-left: 0px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_left .indi_img iframe{
+        width: 100%!important;
+        height: 304px!important;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_right .right_review form textarea{
+        width: 518px;
+    }
+
+
+section article div .owl-carousel .item a iframe {
+    width: 100%!important;
+    height: 138px!important;
+}
+    /***************similar*******************/
+
+
+    section .similar .simil_wrap {
+        width: 600px;
+    }
+
+    section .similar h1{
+    }
+
+    section .similar .similar_wrap {
+        width: 500px;
+    }
+
+    /***************popular*******************/
+
+
+    section .populars .pop_wrap {
+        width: 600px;
+    }
+
+    section .populars h1{
+    }
+
+    section .populars .popular_wrap {
+        width: 500px;
+    }
+
+        
+    /**************caption*****************/
+
+
+    .cap-title {
+    }
+
+    .cap-info {
+    }
+
+
+    /****************category******************/
+
+
+    section .category{ 
+        width: 600px;
+    }
+
+    section .category h1{
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+
+    section .category .category_wrap{
+        width: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section .category .category_wrap div {
+        width: 240px;
+    }
+    section .category .category_wrap div input{
+        width: 240px;
+        height: 80px;
+    }
+    
+    section .category .category_wrap div:nth-child(1),
+    section .category .category_wrap div:nth-child(3) {
+        margin: 0px;
+    }
+
+    section .category .category_wrap div:nth-child(4),
+    section .category .category_wrap div:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    section .category .category_wrap div input{
+    }
+    
+    section .login_tab .login_wrap {
+        width: 528px;
+    }
+
+    section .login_tab .login_wrap h1{ 
+    }
+
+
+    section .login_tab .login_wrap input{ 
+    }
+
+    
+    
+    
+    
+
+
+
+
+    /****************my video*******************/
+
+    section .my_videos .mv_wrap{
+        width: 540px;
+    }
+
+    section .my_videos .mv_title{
+    }
+    section .my_videos .video_blank {
+        width: 540px;
+    }
+    section .my_videos .video_blank p{
+    }
+    section .my_videos .add_mv{
+        width: 540px;
+    }
+    section .my_videos .mv_wrap .add_mv a img{
+        width: 30px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap {
+        width: 205px;
+        float: left;
+        height: 117px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap iframe{
+        width: 205px!important;
+        height: 118px!important;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap img{
+        width: 100%;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info {
+        float: left;
+        width: 323px;
+        padding-left: 10px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mv_info .title {
+        margin-top: 11px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .user {
+        margin-top: 11px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .info {
+        margin-top: 11px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .moreview {
+    }
+    
+    section .my_videos .mv_wrap ul .mv_con .mv_static {
+        border-left: none;
+        border-top: 1px solid #646464;
+        width: 100%;
+        height: 40px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mv_static button {
+        float: left;
+        margin-top:5px;
+        margin-left: 82px;
+    }
+
+    section .my_videos .mv_wrap .mv_moreview {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    section .my_videos .mv_wrap .mv_moreview input {
+    }
+
+
+/*****************my page*****************/
+
+
+
+    section .my_info {
+        width: 600px;
+    }
+
+
+    section .my_info .edit_id span {
+        width: 100px;
+    }
+
+    section .my_info .edit_id input {
+        width: 458px;
+    }
+
+    section .my_info .edit_name span {
+        width: 100px;
+    }
+
+    section .my_info .edit_name input {
+        width: 458px;
+    }
+
+    section .my_info .edit_pw span {
+        width: 100px;
+    }
+
+    section .my_info .edit_pw input {
+        width: 187px;
+    }
+    section .my_info .edit_pw .pass_check {
+        margin-left: 40px;
+    }
+
+
+    section .my_info .edit_email span {
+        width: 100px;
+    }
+
+    section .my_info .edit_email input {
+        width: 458px;
+    }
+
+
+    section .my_info .edit_level {
+        width: 100%;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    section .my_info .edit_level span{
+        width: 100px;
+    }
+
+    section .my_info .edit_level div label {
+        width: 131.2px;
+    }
+
+    section .my_info .edit_tutor {
+        width: 100%;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    section .my_info .edit_tutor span{
+        width: 100px;
+    }
+
+    section .my_info .edit_tutor div label {
+        width: 458px;
+    }
+
+    section .my_info .edit_tutor div input[type="radio"]:checked + label{ 
+        background-color: #4a8ce8;
+        color: #fff;
+    }
+
+    section .my_info .edit_preffer span{
+        width: 100px;
+    }
+
+    .edit_lang, .edit_explain, .edit_sex, .edit_interesting{
+        float: right;
+        width: 480px;
+
+    }
+
+    .edit_explain, .edit_sex, .edit_interesting{
+        margin-top: 20px;
+    }
+
+
+    .edit_lang div {
+        width: 229px;
+        margin-left: 21px;
+        float: left;
+    }
+
+    .edit_lang div:nth-child(1) {
+        margin-left: 0px;
+    }
+    .edit_sex div {
+        width: 229px;
+        margin-left: 21px;
+        float: left;
+    }
+
+    .edit_sex div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .edit_explain div {
+        width: 229px;
+        margin-left: 21px;
+        float: left;
+    }
+
+    .edit_explain div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+
+    section .my_info .edit_preffer div:nth-child(2){
+        margin-top: 0px;
+    }
+    section .my_info .edit_preffer div div input[type="radio"]{
+        display: none;
+    }
+
+    section .my_info .edit_preffer div div label {
+        width: 208px;
+    }
+
+    section .my_info .edit_interesting span{
+        width: 100px;
+    }
+
+    section .my_info .edit_interesting div {
+        margin-left: 30px;
+    }
+
+    section .my_info .edit_interesting div:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    section .my_info .edit_interesting label {
+    }
+
+
+    section .my_info .edit_interesting .type-tags{
+        width: 480px;
+    }
+
+    section .my_info .edit_interesting .type-tags input{
+        width: 457px;
+        padding: 10px 0px 10px 21px;
+        border: 1px solid #646464;
+    }
+
+    .edit_account_btn {
+        width: 260px;
+    }
+
+    .edit_account_btn input{
+        width: 110px;
+    }
+
+
+    .edit_account_btn input:nth-child(1){
+        margin-left: 0px;
+    }
+
+    
+
+
+
+
+
+    /****************my watch******************/
+
+    section .my_watch .mw_wrap{
+        width: 540px;
+    }
+
+    section .my_watch .mw_title{
+    }
+
+    section .my_videos .video_blank {
+        width: 540px;
+    }
+    section .my_videos .video_blank p{
+        font-size: 13px;
+    }
+    section .my_watch .mw_wrap .add_mw a img{
+        width: 30px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap {
+        width: 267px;
+        float: left;
+        height: 167px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap iframe {
+        width: 267px!important;
+        height: 167px!important;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap img{
+        width: 100%;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info {
+        float: left;
+        width: 240px;
+        padding-left: 10px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mw_info .title {
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .user {
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .info {
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .moreview {
+    }
+    
+    section .my_watch .mw_wrap ul .mw_con .mw_static {
+        border-left: none;
+        border-top: 1px solid #646464;
+        width: 100%;
+        height: 70px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mw_static a {
+        margin-top: 10px;
+    }
+    
+    section .my_watch .mw_wrap ul .mw_con .mw_static a span {
+    }
+
+
+    section .my_watch .mw_wrap .mw_moreview {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    section .my_watch .mw_wrap .mw_moreview input {
+    }
+
+
+    /****************my review*******************/
+
+    section .my_review .mr_wrap{
+        width: 540px;
+    }
+
+    section .my_review .mr_title{
+    }
+    section .my_review .video_blank {
+        width: 540px;
+    }
+    section .my_review .video_blank p{
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview {
+        width: 90px;
+        height: 111px;
+        margin-top: 0px;
+    }
+    
+    
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview span {
+        display: block;
+        float: none;
+        line-height: normal;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview span:nth-child(1) {
+        margin-top: 35px;
+    }
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info {
+        float: left;
+        width: 260px;
+        height: 111px;
+        padding-left: 10px;
+        border-left: 1px solid #a7a7a7;
+    }
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap iframe {
+        width: 177px!important;
+        height: 111px!important;
+        pointer-events: none;
+    }
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info p {
+        margin-top:20px;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap{
+        width: 177px;
+        height: 101px;
+        float: left;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap img{
+        width: 100%;
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_info .title {
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_info .user {
+    }
+
+
+    section .my_review .mr_wrap ul .mr_con .mr_info .info {
+    }
+
+
+
+    section .my_review .mr_wrap .mr_moreview input {
+    }
+
+
+
+
+
+
+
+    /***************about****************/
+
+    section .about_dc{
+        width: 540px;
+    }
+
+
+    section .about_dc .about_title {
+    }
+
+    section .about_dc .about_contents {
+        width: 540px;
+    }
+
+
+    /***************terms****************/
+
+    section .terms_dc{
+        width: 540px;
+    }
+
+
+    section .terms_dc .terms_title {
+    }
+
+    section .terms_dc .terms_contents {
+        width: 540px;
+    }
+
+    /***************service****************/
+
+    section .service_dc{
+        width: 540px;
+    }
+
+
+    section .service_dc .service_title {
+    }
+
+    section .service_dc .service_contents {
+        width: 540px;
+    }
+    /***************policy****************/
+
+    section .policy_dc{
+        width: 540px;
+    }
+
+
+    section .policy_dc .policy_title {
+    }
+
+    section .policy_dc .policy_contents {
+        width: 540px;
+    }
+    
+    
+   
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    /******************account page*********************/
+
+    section .signup {
+        width: 300px;
+    }
+
+
+    section article .id span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section article .Nick_name input {
+        width: 178px;
+    }
+    section article .Nick_name p{
+        margin-left: 80px;
+    }
+    
+
+    section article .Nick_name span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section article .id p{
+        margin-left: 80px;
+    }
+    
+    section article .id input {
+        width: 178px;
+    }
+
+    section article .pw span {
+        width: 80px;
+        font-weight: bold;
+    }
+    section article .pw p{
+        margin-left: 80px;
+    }
+    
+
+    section article .pw input {
+        width: 178px;
+    }
+    section article .pw .pass_check {
+        margin-left: 0px;
+        margin-top: 10px;
+        float: right
+    }
+
+
+    section .signup .email{
+        overflow: hidden;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    section .signup .email span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section .signup .email input {
+        width: 178px;
+        font-weight: bold;
+    }
+
+
+
+    section .signup .level span{
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section .signup .level div{
+        float: right;
+        margin-top: 20px;
+    }
+
+
+    section .signup .level div:nth-child(2){
+        margin-top: 0px;
+    }
+
+    section .signup .level div input[type="radio"]{
+        display: none;
+    }
+
+    section .signup .level div label {
+        width: 171px;
+    }
+
+
+    section .signup .tutor span{
+        float: none;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    section .signup .tutor div{
+        float: none;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    section .signup .tutor div:nth-child(2){
+        margin-top: 20px;
+    }
+    section .signup .tutor div input[type="radio"]{
+        display: none;
+    }
+
+    section .signup .tutor div label {
+        width: 278px;
+    }
+
+
+    section .signup .preffer {
+        width: 100%;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    section .signup .preffer span{
+        font-weight: bold;
+        display: block;
+        float: none;
+        line-height: 22px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .lang, .explain, .sex, .interesting{
+        float: left;
+        width: 300px;
+
+    }
+
+    .explain, .sex, .interesting{
+        margin-top: 10px;
+    }
+
+
+    .lang div {
+        width: 140px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .lang div:nth-child(1) {
+        margin-left: 0px;
+    }
+    .sex div {
+        width: 140px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .sex div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .explain div {
+        width: 140px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .explain div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+
+    section .signup .preffer div:nth-child(2){
+        margin-top: 0px;
+    }
+    section .signup .preffer div input[type="radio"]{
+        display: none;
+    }
+
+    section .signup .preffer div label {
+        margin-top: 10px;
+        width: 125px;
+    }
+
+    section .signup .preffer div input[type="radio"]:checked + label{ 
+        background-color: #4a8ce8;
+        color: #fff;
+    }
+
+
+
+    section .signup .interesting {
+        overflow: hidden;
+    }
+    section .signup .interesting span{
+        width: 100%;
+        font-weight: bold;
+    }
+
+    section .signup .interesting div {
+        width: 100px;
+        margin-left: 41.3px;
+    }
+
+    section .signup .interesting div:nth-child(2) {
+        margin-left: 41.3px;
+    }
+    section .signup .interesting div:nth-child(3),
+    section .signup .interesting div:nth-child(4){
+        margin-bottom: 20px;
+    } 
+
+
+    section .signup .interesting input[type="checkbox"] {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+    }
+
+    section .signup .interesting label {
+        cursor: pointer;
+    }
+
+    section .signup .interesting .type-tags{
+        float: none;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    section .signup .interesting .type-tags input{
+        width: 196px;
+        padding: 10px 0px 10px 21px;
+        border: 1px solid #646464;
+        font-size: 10px;
+    }
+
+    .account_btn {
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .account_btn input{
+        font-weight: bold;
+        width: 80px;
+    }
+
+
+    .account_btn input:nth-child(1){
+        margin-left: 0px;
+    }
+    
+
+
+
+
+
+
+
+
+    /******************search************************/
+
+
+    section .search_wrap {
+        width: 300px;
+    }
+    section .search_con {
+        width:300px;
+    }
+
+    section .search_wrap .route {
+    }
+
+
+
+    section .search_con .result{
+        width: 250px;
+    }
+    section .search_con .sh_btn p{
+        font-size: 40px;
+        border: 1px solid #646464;
+        color: #646464;
+        height: 60px;
+        cursor: pointer;
+        line-height: 50px;
+    }
+
+    section .search_con .result .option_wrap p {
+        font-size: 20px;
+    }
+
+    section .search_con .result .research_wrap {
+        overflow: hidden;
+    }
+
+    section .search_con .sh_btn.width {
+        left: 271px;
+    }
+
+    section .search_con .result .s_cate .c_title span:nth-child(1){
+    }
+
+    section .search_con .result .s_cate .c_title span:nth-child(2){
+    }
+
+    section .search_con .result .s_cate .c_title .all_c{
+        line-height: 35px;
+    }
+    section .search_con .result .s_cate .cate_check div {
+        float: left;
+        width: 100px;
+    }
+
+    section .search_con .result .s_cate .cate_check div label {
+        color: #646464;
+
+    }
+
+
+    section .search_con .result .s_level .l_title span:nth-child(1){
+    }
+
+    section .search_con .result .s_level .l_title span:nth-child(2){
+        line-height: 20px;
+    }
+
+    section .search_con .result .s_level .l_title .all_c{
+        line-height: 24px;
+    }
+
+    section .search_con .result .s_level .l_title .none_c{
+        line-height: 24px;
+    }
+
+    section .search_con .result .s_level .level_check {
+        width: 250px;
+        overflow: hidden;
+    }
+
+    section .search_con .result .s_level .level_check div label {
+        font-size: 11px;
+        color: #646464;
+
+    }
+
+    section .search_con .result .s_tutor .t_title span:nth-child(1){
+    }
+
+    section .search_con .result .s_tutor .t_title span:nth-child(2){
+        line-height: 21px;
+    }
+
+    section .search_con .result .s_tutor .t_title .all_c{
+        line-height: 24px;
+    }
+
+    section .search_con .result .s_tutor .t_title .none_c{
+        line-height: 24px;
+    }
+    
+    section .search_con .result .s_preffer .preffer_check {
+        width: 224px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    section .search_con .result .s_tutor .tutor_check div{
+        float: left;
+        width: 300px;
+    }
+
+    section .search_con .result .s_tutor .tutor_check div input[type="checkbox"] {
+        vertical-align: -3px;
+        border-radius: 0px;
+    }
+
+
+    section .search_con .result .s_tutor .tutor_check div label {
+
+    }
+
+    section .search_con .result .s_preffer .p_title span{
+    }
+
+    section .search_con .result .s_preffer .preffer_check div label {
+        color: #646464;
+
+    }
+
+
+
+
+
+
+
+
+    section .search_con .result .s_rate .r_title span{
+    }
+
+
+    section .search_con .result .s_rate  div input[type="radio"] {
+        display: none;
+    }
+
+    section .search_con .result .s_rate .rate_check {
+        width: 233px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+    section .search_con .result .s_rate .rate_check div label {
+
+    }
+
+    section .search_con .result .s_rate .rate_check div input[type="radio"] + label{
+        width: 45px;
+    }
+
+    .video_list {
+        width: 300px;
+        float: none;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding-bottom: 40px;
+    }
+
+
+    .video_list .moreview_click {
+        width: 100%;
+        height: 40px;
+    }
+
+
+    .video_list .moreview_click input {
+        line-height: 40px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #646464;
+        margin: 20px auto;
+    }
+
+
+    .video_list .video_count {
+        float: none;
+    }
+
+    .video_list .video_cate {
+        float: none;
+        overflow: hidden;
+    }
+
+    .video_list .video_cate span,
+    .video_list .video_cate div{
+        float: none;
+        height: 40px;
+        margin-left: 0px;
+    }
+
+    .video_list .video_cate span {
+
+        float: none;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .video_list .video_cate div {
+        float: left;
+    }
+    .video_list .video_cate div input[type="radio"] {
+        display: none;
+
+    }
+
+    .video_list .video_cate div input[type="radio"] + label {
+        margin-left: 5px;
+    }
+    
+    .video_list .video_cate .featured input[type="radio"] + label {
+        margin-left: 0px;
+    }
+
+
+    .video_list .video_con .pre_wrap {
+        width: 298px;
+        margin: 0 auto;
+    }
+
+    .video_list .video_con .pre_wrap .thum_wrap {
+        width: 298px;
+        height: 170px;
+    }
+
+
+    .video_list .video_con .pre_wrap .thum_wrap iframe {
+        width: 298px!important;
+        height: 170px!important;
+    }
+    
+    
+    .video_list .video_con .pre_wrap .thum_wrap img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video_list .video_con .pre_wrap .video_info{
+        width: 278px;
+        height: 90px;
+        border-left: none;
+        padding: 10px;
+
+    }
+
+    .video_list .video_con .pre_wrap .video_info .title {
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info .user {
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info .info {
+        margin-top: 10px;
+    }
+
+
+    .video_list .video_con .pre_wrap .video_info .moreview {
+    }
+
+
+
+
+    
+    
+    
+
+    /*******************individual*******************/
+
+
+    section .indi_wrap {
+        width: 300px;
+    }
+    section .indi_con {
+        width:300px;
+    }
+    
+    section .indi_wrap .indi_route {
+    }
+
+
+
+    section .indi_wrap .indi_title{
+        color: #313131;
+    }
+
+    section .indi_wrap .indi_conwrap {
+        width: 300px;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_left,
+    section .indi_wrap .indi_conwrap .indi_right{
+        width: 300px;
+        float: none;
+    }
+    
+
+    section .indi_wrap .indi_conwrap .indi_left .indi_img iframe{
+        width: 100%!important;
+        height: 171px!important;
+    }
+
+
+
+    section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(2) span{
+        line-height: 30px;
+        margin-left: 10px;
+        color: #797979;
+    }
+
+    section .indi_wrap .indi_conwrap .indi_left .indi_id div:nth-child(3){
+        clear: both;
+        width: 100%;
+        display: block;
+    }
+    section .indi_wrap .indi_conwrap .indi_left .indi_id .video_op .modify_mo{
+        float: left;
+        margin-left: 0px;
+    }
+    section .indi_wrap .indi_conwrap .indi_right .right_review form input[type="button"] {
+        margin-top: 50px;
+    }
+    section .indi_wrap .indi_conwrap .indi_right .archive .ta_review p {
+        padding: 7px 10px;
+    }
+    section .indi_wrap .indi_conwrap .indi_right .right_review form textarea{
+        width: 278px;
+    }
+
+    .indi_right .archive{
+        margin-top: 20px;
+    }
+
+    
+    
+    
+    
+    /***************similar*******************/
+
+
+    section .similar .simil_wrap {
+        width: 310px;
+    }
+
+    section .similar h1{
+    }
+
+    section .similar .similar_wrap {
+        width: 250px;
+    }
+    
+    
+    /***************popular*******************/
+
+
+    section .populars .pop_wrap {
+        width: 310px;
+    }
+
+    section .populars h1{
+    }
+
+    section .populars .popular_wrap {
+        width: 250px;
+    }
+    
+    /**************caption*****************/
+
+
+    .cap-title {
+    }
+
+    .cap-info {
+    }
+
+
+    /****************category******************/
+
+
+    section .category{ 
+        width: 310px;
+    }
+
+    section .category h1{
+        padding: 20px 0px;
+    }
+
+    section .category .category_wrap{
+        width: 310px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section .category .category_wrap div {
+        width: 140px;
+    }
+    section .category .category_wrap div input{
+        width: 140px;
+        height: 80px;
+    }
+    
+    section .category .category_wrap div:nth-child(1),
+    section .category .category_wrap div:nth-child(3) {
+        margin: 0px;
+    }
+
+    section .category .category_wrap div:nth-child(4),
+    section .category .category_wrap div:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    section .category .category_wrap div input{
+    }
+    
+    section .login_tab .login_wrap {
+        width: 310px;
+    }
+
+    section .login_tab .login_wrap h1{ 
+        float: none;
+        text-align: center;
+    }
+
+
+    section .login_tab .login_wrap input{ 
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+
+    /****************my video*******************/
+
+    section .my_videos .mv_wrap{
+        width: 260px;
+        border: none;
+    }
+
+    section .my_videos .mv_title{
+    }
+    
+    section .my_videos .video_blank {
+        width: 250px;
+    }
+    
+    section .my_videos .video_blank p {
+        font-family: rb;
+        text-align: center;
+    }
+    section .my_videos .add_mv {
+        width: 260px;
+    }
+    section .my_videos .add_mv a img{
+        width: 20px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap {
+        width: 100%;
+        height: 145px;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap iframe{
+        width: 258px!important;
+        height: 145px!important;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mvt_wrap img{
+        width: 100%;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info {
+        float: left;
+        width: 240px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    section .my_videos .mv_wrap ul .mv_con .mv_info .title {
+        margin-top: 8px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .user {
+        margin-top: 8px;
+    }
+
+
+    section .my_videos .mv_wrap ul .mv_con .mv_info .info {
+        margin-top: 8px;
+    }
+
+    section .my_videos .mv_wrap ul .mv_con .mv_static {
+    }
+    section .my_videos .mv_wrap ul .mv_con .mv_static button {
+        margin-left: 20px;
+        margin-top: 8px;
+        font-size: 11px;
+    }
+
+    section .my_videos .mv_wrap .mv_moreview input {
+        font-family: r;
+        font-weight: bold;
+    }
+
+    
+    
+    
+
+
+
+    /****************my video*******************/
+
+    section .my_watch .mw_wrap{
+        width: 260px;
+        border: none;
+    }
+
+    section .my_watch .mw_title{
+    }
+
+    section .my_watch .video_blank {
+        width: 250px;
+    }
+    
+    section .my_watch .video_blank p {
+        font-family: rb;
+        text-align: center;
+    }
+    section .my_watch .mw_wrap .add_mw a img{
+        width: 20px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap {
+        width: 100%;
+        height: 148px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap iframe {
+        width: 260px!important;
+        height: 148px!important;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mwt_wrap img{
+        width: 100%;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info {
+        float: left;
+        width: 240px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    section .my_watch .mw_wrap ul .mw_con .mw_info .title {
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .user {
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .info {
+        margin-top: 8px;
+    }
+
+
+    section .my_watch .mw_wrap ul .mw_con .mw_info .moreview {
+    }
+    
+    section .my_watch .mw_wrap .mw_moreview input {
+        font-family: rb;
+        font-weight: bold;
+    }
+
+
+    /****************my review*******************/
+
+    section .my_review .mr_wrap{
+        width: 300px;
+    }
+
+    section .my_review .mr_title{
+    }
+
+
+    section .my_review .video_blank {
+        width: 250px;
+    }
+    
+    section .my_review .video_blank p {
+        font-family: rb;
+        text-align: center;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview {
+        width: 100%;
+        line-height: 30px;
+        height: 60px;
+        border-bottom: 1px solid #a7a7a7;
+        margin-top: 0px;
+    }
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview  span {
+        display: inline-block;
+    }
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .moreview  span:nth-child(1)
+    {
+        margin-top: 0px;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info {
+        float: left;
+        width: 280px;
+        height: 81px;
+        padding: 10px;
+        border-left: none;
+        border-bottom: 1px solid #a7a7a7;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mr_cwrap .mr_info p {
+        margin-top:10px;
+    }
+
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap{
+        width: 300px;
+        height: 171px;
+        float: left;
+    }
+    section .my_review .mr_wrap ul .mr_con .mrt_wrap iframe{
+        width: 300px!important;
+        height: 171px!important;
+    }
+
+
+
+
+
+    /************mypage**********/
+
+    section .my_info {
+        width: 300px;
+    }
+
+
+    section .my_info .edit_id input {
+    }
+
+    section .my_info .edit_id span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section .my_info .edit_name input {
+        width: 178px;
+    }
+
+    section .my_info .edit_name span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section .my_info .edit_id input {
+        width: 178px;
+    }
+
+    section .my_info .edit_pw span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section .my_info .edit_pw input {
+        width: 178px;
+    }
+    section .my_info .edit_pw .pass_check {
+        margin-left: 0px;
+        margin-top: 10px;
+        float: right
+    }
+
+
+    section .my_info .edit_email{
+        overflow: hidden;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    section .my_info .edit_email span {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    section .my_info .edit_email input {
+        width: 178px;
+        font-weight: bold;
+    }
+
+
+
+    section .my_info .edit_level span{
+        width: 80px;
+    }
+
+    section .my_info .edit_level div{
+        float: right;
+        margin-top: 20px;
+    }
+
+
+    section .my_info .edit_level div:nth-child(2){
+        margin-top: 0px;
+    }
+
+    section .my_info .edit_level div input[type="radio"]{
+        display: none;
+    }
+
+    section .my_info .edit_level div label {
+        width: 171px;
+    }
+
+
+    section .my_info .edit_tutor span{
+        float: none;
+        font-weight: bold;
+        width: 100%;
+    }
+    section .my_info .edit_tutor div label {
+        width: 278px;
+    }
+
+    section .my_info .edit_preffer span{
+    }
+
+    .edit_lang, .edit_explain, .edit_sex, .edit_interesting{
+        float: left;
+        width: 300px;
+
+    }
+
+    .edit_explain, .edit_sex, .edit_interesting{
+        margin-top: 10px;
+    }
+
+
+    .edit_lang div {
+        width: 140px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .edit_lang div:nth-child(1) {
+        margin-left: 0px;
+    }
+    .edit_sex div {
+        width: 140px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .edit_sex div:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .edit_explain div {
+        width: 140px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .edit_explain div:nth-child(1) {
+        margin-left: 0px;
+    }
+    section .my_info .edit_preffer div label {
+        margin-top: 10px;
+        width: 125px;
+    }
+
+    section .my_info .edit_preffer div input + label{ 
+        margin-top: 10px;
+        width: 125px;
+    }
+
+
+
+    section .my_info .edit_interesting {
+        overflow: hidden;
+    }
+    section .my_info .edit_interesting span{
+        width: 100%;
+    }
+    section .my_info .edit_interesting div {
+        width: 100px;
+    }
+    section .my_info .edit_interesting div:nth-child(2) {
+        margin-left: 30px;
+    }
+    section .my_info .edit_interesting label {
+        cursor: pointer;
+    }
+
+    .edit_btn input{
+        font-weight: bold;
+        width: 80px;
+    }
+
+
+    section .my_info .edit_interesting {
+        overflow: hidden;
+    }
+    section .my_info .edit_interesting span{
+        width: 100%;
+        font-weight: bold;
+    }
+
+    section .my_info .edit_interesting div {
+        width: 100px;
+        margin-left: 41.3px;
+    }
+
+    section .my_info .edit_interesting div:nth-child(2) {
+        margin-left: 41.3px;
+    }
+    section .my_info .edit_interesting div:nth-child(3),
+    section .my_info .edit_interesting div:nth-child(4){
+        margin-bottom: 20px;
+    } 
+
+
+    section .my_info .edit_interesting input[type="checkbox"] {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+    }
+
+    section .my_info .edit_interesting label {
+        cursor: pointer;
+    }
+
+    section .my_info .edit_interesting .type-tags{
+        float: none;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    section .my_info .edit_interesting .type-tags input{
+        width: 196px;
+        padding: 10px 0px 10px 21px;
+        border: 1px solid #646464;
+    }
+
+    .edit_btn {
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .edit_btn input{
+        font-weight: bold;
+        width: 80px;
+    }
+
+
+    .account_btn input:nth-child(1){
+        margin-left: 0px;
+    }
+    
+    
+
+    /***************about****************/
+
+    section .about_dc{
+        width: 280px;
+    }
+
+
+    section .about_dc .about_title {
+    }
+
+    section .about_dc .about_contents {
+        width: 280px;
+    }
+
+
+    /***************terms****************/
+
+
+    section .terms_dc{
+        width: 280px;
+    }
+
+
+    section .terms_dc .terms_title {
+    }
+
+    section .terms_dc .terms_contents {
+        width: 280px;
+    }
+
+
+    /***************service****************/
+
+
+    section .service_dc{
+        width: 280px;
+    }
+
+
+    section .service_dc .service_title {
+    }
+
+    section .service_dc .service_contents {
+        width: 280px;
+    }
+
+    /***************policy****************/
+
+
+    section .policy_dc{
+        width: 280px;
+    }
+
+
+    section .policy_dc .policy_title {
+    }
+
+    section .policy_dc .policy_contents {
+        width: 280px;
+    }
+
+
+    /*************email***************/
+    section .email_com {
+        width: 280px;
+        margin: 150px auto;
+    }
+    section .email_com .email_img{
+        width: 80px;
+        margin: 0 auto;
+    }
+    section .email_com .email_img img{
+        width: 80px;
+    }
+
+    section .email_com .comple_text h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    section .email_com .comple_text p{
+        text-align: center;
+        line-height: 2;
+    }
+
+
+    
+    
+}

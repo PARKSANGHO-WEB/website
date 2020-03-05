@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+  maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/add_modal.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/forgot_modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/addmodal.js"></script>
+    <script src="js/close_modal.js"></script>
+    <title>D.Cureation</title>
+    
+</head>
+<body>
+    <header>
+        <div class="pc_header">
+            <div class="pc_logo">
+                <a href="../index.html"><img src="./img/common/logo.png" alt=""></a>
+            </div>
+            <div class="pc_nav">
+                <ul>
+                    <li>
+                        <a class="search_nav" href="#">Search</a>
+                        <div class="search_wrap">
+                            <div class="hidewrap">
+                                <form class="widthwrap">
+                                    <input class="search" type="search" name="search" >
+                                </form>
+                                <input class="search_btn" type="button" name="search_btn" >
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="myBtn_add">Add video</a>
+                    </li>
+                    <li>
+                        <div class="log_btn">
+                            <input type="button" value="Login" id="myBtn">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="m_header">
+            <div class="m_logo">
+                <a href="../index.html"><img src="./img/common/m_logo.png" alt=""></a>
+            </div>
+            <div class="msearch_wrap">
+                <div class="hidewrap">
+                    <form class="widthwrap">
+                        <input class="search" type="text" name="search" >
+                    </form>
+                    <input class="search_btn" type="button" name="search_btn" >
+                </div>
+            </div>
+        <div>
+            <a href="#" id="myBtnm1">&#43;</a>
+        </div>
+            <div class="log_btn">
+                <input type="button" value="Login" id="myBtnm">
+            </div>
+        </div>
+    </header>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                           <div class="modal-header">
+                           </div>
+                            <span class="close">&times;</span>
+                        <form action="#">
+                            <div class="modal_wrap">
+                                <div><input type="text" placeholder="ID"></div>
+                                <div><input type="password" placeholder="PASSWORD"></div>
+                            </div>
+                        </form>
+                        <input class="button_modal" type="button" value="Login" />
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                        <span class="forgot_span1">Don't have an account?</span><span class="forgot_span2"><a href="#">Signup</a></span>
+                      </div>
+                    </div>
+                    
+            <!-----------비밀번호 찾기--------------->
+                    
+
+                    
+                    <div id="forgotModal" class="forgot_m">
+
+                      <!-- forgot content -->
+                      <div class="forgot-content">
+                                <h1 class="forgot_title">Forgot your password</h1>
+                            <span class="forgotclose">&times;</span>
+                        <form action="#">
+                            <div class="forgot_wrap">
+                                <div class="fg_mname">
+                                    <span>NAME</span>
+                                    <input type="text">
+                                </div>
+                                <div class="fg_mmail">
+                                    <span>EMAIL</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </form>
+                        <input class="button_forgot" type="button" value="Send to mail" />
+                      </div>
+                    </div>
+                    
+                    
+                    
+      
+                    
+
+            <div id="addModal" class="addmodal">
+
+              <!-- Modal content -->
+              <div class="addmodal-content">
+                      <h1 class="addmodal_title">Add video</h1>
+                    <span class="addclose">&times;</span>
+                <form class="c_form" action="#">
+                    <div class="addmodal_wrap">
+                        <div><span>Video link</span><input type="text" placeholder="Enter the video link"></div>
+                        <div><span>Subject</span><input type="text" placeholder="Enter your video subject"></div>
+                        <div class="video_y"><textarea type="text" placeholder="Introduce you"></textarea></div>
+                    <div class="video_y2"><textarea maxlength="1500" type="text" placeholder="Introduce your video"></textarea></div>
+                        <span class="restrict"><span id="chars2">1,500</span> characters left</span>
+
+                        <script>
+                        $(document).ready(function(){
+                            var maxLength = 1500;  
+                                $('.video_y2 textarea').keyup(function() {
+                                  var length = $(this).val().length;
+                                  var length = maxLength-length;
+                                  $('#chars2').text(length);
+                                });
+                        });
+                      </script>
+                        <div class="level">
+                           <span>Learning level of<br> this video</span>
+                            <div class="begin">
+                                <input type="radio" name="level" id="beginner">
+                                <label for="beginner">Beginner</label>
+                            </div>
+                            <div class="inter">
+                                <input type="radio" name="level" id="intermediate">
+                                <label for="intermediate">Intermediate</label>
+                            </div>
+                            <div class="advan">
+                                <input type="radio" name="level" id="advanced">
+                                <label for="advanced">Advanced</label>
+                            </div>
+                        </div>
+                        <div class="preffer">
+                           <span>Tutoring style <br>of this video</span>
+                            <div class="lang">
+                                <div class="eng">
+                                    <input type="radio" name="style" id="english">
+                                    <label for="english">Explaining in English</label>
+                                </div>
+                                <div class="kor">
+                                    <input type="radio" name="style" id="korean">
+                                    <label for="korean">Explaining in Korean</label>
+                                </div>
+                            </div>
+                            <div class="explain">
+                                <div class="eng">
+                                    <input type="radio" name="race" id="englishT">
+                                    <label for="englishT">Native tutor</label>
+                                </div>
+                                <div class="kor">
+                                    <input type="radio" name="race" id="koreanT">
+                                    <label for="koreanT">Korean tutor</label>
+                                </div>
+                            </div>
+                            <div class="sex">
+                                <div class="female">
+                                    <input type="radio" name="sex" id="femail">
+                                    <label for="femail">Female tutor</label>
+                                </div>
+                                <div class="male">
+                                    <input type="radio" name="sex" id="male">
+                                    <label for="male">Male tutor</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interesting">
+                           <span>Categories</span>
+                            <div class="listen">
+                                <input type="checkbox" name="style" id="listen">
+                                <label for="listen">Listening</label>
+                            </div>
+                            <div class="reading">
+                                <input type="checkbox" name="style" id="reading">
+                                <label for="reading">Reading</label>
+                            </div>
+                            <div class="writing">
+                                <input type="checkbox" name="race" id="writing">
+                                <label for="writing">Writing</label>
+                            </div>
+                            <div class="speaking">
+                                <input type="checkbox" name="race" id="speaking">
+                                <label for="speaking">Speaking</label>
+                            </div>
+                            <div class="type-tags">
+                                <input id="category-tag" type="text" placeholder="Type tags" class="tag_title" data-max-words="5">
+                                <span class="words-left" id="charlimit">5 words left</span>
+                            </div>
+               
+                   <script>
+                        
+                       $("#category-tag").focus(function(){                           
+                             $(this).keypress(function(e) {
+                                  if(e.keyCode == '32' || e.charCode == '32') {
+                                var arrString = $(this).val();
+                                var arr = arrString.split(",");
+                                 console.log(arr.length);
+                                    if(arr.length<6){
+                                        // '46' is the keyCode for '.'
+                                       
+                                            var keyword = $(this).val();
+                                            keyword += ",";
+                                            $(this).val(keyword);
+                                       
+                                     }
+                                  }
+                             })  
+                        });
+                    </script>
+                   <script>
+                       var wordLen = 5,
+                        len; // Maximum word length
+                        $('#category-tag').keydown(function(event) {	
+                            len = $('#category-tag').val().split(/[\s]+/);
+                            if (len.length > wordLen) { 
+                                if ( event.keyCode == 46 || event.keyCode == 8 ) {// Allow backspace and delete buttons
+                            } else if (event.keyCode != 46 || event.keyCode != 8 ) {//all other buttons
+                                event.preventDefault();
+                            }
+                            }
+                            console.log(len.length + " words are typed out of an available " + wordLen);
+                            wordsLeft = (wordLen) - len.length;
+                            $('.words-left').html(wordsLeft+ ' words left');
+                        });
+                        </script>
+                        </div>
+                    </div>
+                </form>
+                <div class="mo_btn">
+                    <input type="button" value="Clear" class="clear_f" OnClientClick="ClearAll()" >
+                    <input type="button" value="Confirm">
+                </div>
+                <span class="confirm">By confirming you are accepting our terms of use</span>
+              </div>
+            </div>
+            <script>
+			$(document).ready(function(){
+				$('.clear_f').click(function(){				
+					if(confirm("Want to clear?")){
+						$('.c_form input[type="text"]').val('');
+						$('.c_form input[type="radio"]').prop('checked',false);
+						$('.c_form input[type="checkbox"]').prop('checked',false);
+						$('.c_form textarea').val('');
+					}					
+				});
+			});
+            </script>
+    <section>
+       <article class="main_sban">
+           <div class="sban_wrap">
+               <h1>Find perfect matched videos for learning English</h1>
+               <div class="sban_input">
+                   <input type="text" placeholder="Find perfect matched videos for learning english">
+                   <button type="submit"></button>
+               </div>
+           </div>
+       </article>
+        <article class="populars">
+            <div class="pop_wrap">
+                <h1>
+                    Popular videos
+                </h1>
+                <div class="popular_wrap owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="lastest">
+            <div class="lat_wrap">
+                <h1>
+                    Lastest videos
+                </h1>
+                <div class="last_wrap owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="./sub/individual.html">
+                           <iframe height="238" src="https://www.youtube.com/embed/P73dwwm14fo"></iframe>
+                            <div class="caption">
+                                <p class="cap-title">
+                                    Video TitleVideo TitleVideo TitleVideo TitleVideo TitleVideo Title
+                                </p>
+                                <p class="cap-info">
+                                    Nickname/ID
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="category">
+            <h1>Find by categories</h1>
+            <div class="category_wrap">
+                <div class="listening">
+                    <input type="button" value="LISTENING(0)">
+                </div>
+                <div class="reading">
+                    <input type="button" value="READING(0)">
+                </div>
+                <div class="writing">
+                    <input type="button" value="WRITING(0)">
+                </div>
+                <div class="speaking">
+                    <input type="button" value="SPEAKING(0)">
+                </div>
+            </div>
+        </article>
+        <article class="login_tab">
+            <div class="login_wrap">
+                <h1>See recommended videos after Login!</h1>
+                <input type="button" value="Login" id="myBtn2">
+            </div>
+        </article>
+    </section>
+       
+<!---------------------- popular slides---------------- -->
+        <script>
+            
+            $(document).ready(function() {
+              var owl = $('.popular_wrap');
+              owl.owlCarousel({
+                dot: false,
+                margin: 10,
+                nav: true,
+                video:true,
+                items:3,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 2
+                  },
+                  1280: {
+                    items: 3
+                  }
+                }
+              })
+            })
+          
+        </script>
+        
+       
+<!----------------------lastest slides---------------- -->
+        <script>
+            
+            $(document).ready(function() {
+              var owl = $('.last_wrap');
+              owl.owlCarousel({
+                dot: false,
+                margin: 10,
+                nav: true,
+                video:true,
+                items:3,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 2
+                  },
+                  1280: {
+                    items: 3
+                  }
+                }
+              })
+            })
+          
+        </script>
+        
+        
+<!--        -->
+<script>
+    afterAction: function(){
+  if ( this.itemsAmount > this.visibleItems.length ) {
+    $('.next').show();
+    $('.prev').show();
+
+    $('.next').removeClass('disabled');
+    $('.prev').removeClass('disabled');
+    if ( this.currentItem == 0 ) {
+      $('.prev').addClass('disabled');
+    }
+    if ( this.currentItem == this.maximumItem ) {
+      $('.next').addClass('disabled');
+    }
+
+  } else {
+    $('.next').hide();
+    $('.prev').hide();
+  }
+}
+    
+    </script>        
+    <footer>
+        <div class="foot_wrap">
+            <ul>
+                <li>
+                    <a href="./sub/about_dc.html">About</a>
+                </li>
+                <li>
+                    <a href="./sub/service_dc.html">Service</a>
+                </li>
+                <li>
+                    <a href="./sub/terms_dc.html">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="./sub/policy_dc.html">Policy</a>
+                </li>
+            </ul>
+            <p>
+                Copyright D.Cureation & Co., Inc. 2019.<br> All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

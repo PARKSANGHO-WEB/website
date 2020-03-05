@@ -1,0 +1,128 @@
+*{margin:0; padding:0; border:0;font-family: 'Noto sans',sans-serif;}
+li{list-style:none; }
+a{text-decoration:none; color:#00174f;}
+img{border:0; margin:0; padding:0;}
+
+
+
+header{width:100%; height:80px; background-color:#141821;  z-index: 999; position: relative;}
+#logo_wrap{width: 260px; height: 15px; position: absolute; top: 50%; left: 30px; transform: translateY(-50%);}
+    section #sub_logo h3{text-align:center; margin-top:70px;}
+#logo_wrap img{width: 100%;}
+#nav {width: 100%; height: 80px;}
+#nav li{width: 20%;  float:left;text-align: center;}
+#nav li:nth-child(1) {margin-left:0px;}
+#nav li h2 a {font-size:16px; line-height: 80px; font-weight:normal; color:#eee;font-family: 'Montserrat', sans-serif;}
+#nav li  h2 a:hover{color:#b30c2f;}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+
+body{width:100%;  background-color:#f2efea;}
+section{margin:0 auto;}
+
+#sub_logo { width: 311px; margin: 0 auto; margin-top: 60px;}
+#sub_logo h2 img {
+    width: 100%;
+}
+section article{margin-top:60px; padding: 0px 40px;}
+section article #top_img{margin-top:40px; overflow:hidden;}
+section article #top_img div{width:  100%}
+section article #top_img div img{width:  100%}
+section article .brand_text p{font-size: 16px;}
+section article .brand_text_2{margin-top:40px;}
+section article #bot_img{margin-top:40px; overflow:hidden;}
+section article #bot_img div{width: 100%;}
+section article #bot_img div img{width: 100%;}
+section article .brand_text_3{margin-top:40px;}
+
+
+
+@media screen and (max-width : 1200px) {
+
+    section{width:100%; margin:0 auto;}
+    article {padding: 0px 40px;}
+    
+    #sub_logo { width: 280px; margin: 0 auto; margin-top: 50px;}
+    #sub_logo h2 img {width: 100%;}
+    section #sub_logo h2 img{width: 100%;}
+    section #sub_logo h3{text-align:center; margin-top:60px;}
+    section article{margin-top:60px;}
+    section article #top_img{margin-top:40px; overflow:hidden;}
+    section article #top_img div img{
+        width: 100%;
+    }
+    
+    section article #top_img div:nth-child(1){float:left;}
+    section article #top_img div:nth-child(2){float:right;}
+    section article .brand_text p{font-size: 15px;}
+    section article .brand_text_2{margin-top:40px;}
+    section article #bot_img{margin-top:40px; overflow:hidden;}
+    section article #bot_img div:nth-child(1){float:left;}
+    section article #bot_img div:nth-child(2){float:right;}
+    section article .brand_text_3{margin-top:40px;}
+
+}
+
+
+@media screen and (max-width : 800px) {
+
+    
+    section{width:100%; margin:0 auto;}
+    article {padding: 0px 40px;}
+    #sub_logo { width: 250px; margin: 0 auto; margin-top: 40px;}
+    #sub_logo h2 img {width: 100%;}
+    section #sub_logo h3{text-align:center; margin-top:50px;}
+    section article{margin-top:50px;}
+    section article #top_img{margin-top:40px; overflow:hidden;}
+    section article #top_img div:nth-child(1) img{
+        width: 380px;
+    }
+    section article #top_img div:nth-child(2) img{
+        width: 250px;
+    }
+    
+    section article #top_img div:nth-child(1){float:left;}
+    section article #top_img div:nth-child(2){float:right;}
+    section article .brand_text p{font-size: 14px;}
+    section article .brand_text_2{margin-top:40px;}
+    section article #bot_img{margin-top:40px; overflow:hidden;}
+    section article #bot_img div:nth-child(1){float:left;}
+    section article #bot_img div:nth-child(2){float:right;}
+    section article .brand_text_3{margin-top:40px;}
+
+}
+
+
+@media screen and (max-width : 640px) {
+
+
+    section{width:100%; margin:0 auto;}
+    article {padding: 0px 40px;}
+    #sub_logo { width: 260px; margin: 0 auto;}
+    #sub_logo h3 img{ width: 100%;}
+    #sub_logo { width: 220px; margin: 0 auto; margin-top: 30px;}
+    #sub_logo h2 img {width: 100%;}
+    section article{margin-top:40px;}
+    section article #top_img{margin-top:40px; overflow:hidden;}
+    section article #top_img div:nth-child(1) img{
+        width: 380px;
+    }
+    section article #top_img div:nth-child(2) img{
+        width: 250px;
+    }
+    
+    section article #top_img div:nth-child(1){float:left;}
+    section article #top_img div:nth-child(2){float:right;}
+    section article .brand_text p{font-size: 13px;}
+    section article .brand_text_2{margin-top:40px;}
+    section article #bot_img{margin-top:40px; overflow:hidden;}
+    section article #bot_img div:nth-child(1){float:left;}
+    section article #bot_img div:nth-child(2){float:right;}
+    section article .brand_text_3{margin-top:40px;}
+
+}

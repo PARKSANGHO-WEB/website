@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/sub_css.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/slick.js"></script>
+    <title>Wegoinn hostel</title>
+</head>
+<body>
+    <header class="pc_header">
+        <div class="pc_navWrap">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/common/logo.png" alt="로고"></a>
+            </div>
+            <div class="pc_menu">
+                <ul>
+                    <li>
+                        <a href="./about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="./room.html">Rooms</a>
+                    </li>
+                    <li>
+                        <a href="./reservation.html">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="language">
+                <input class="lang"  type="button" value="KOREA">
+                <input type="button" value="ENGLISH">
+            </div>
+        </div>
+    </header>
+    <div class="mo_header">
+        <div class="mo_nav">
+            <div class="mo_logo">
+                <a href="../index.html"><img src="../img/common/logo.png" alt="로고"></a>
+            </div>
+            <div class="mo_bar">
+                <div class="barwrap">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2">
+                        <div class="bar2_1"></div>
+                        <div class="bar2_2"></div>
+                    </div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mo_menu">
+            <ul>
+                    <li>
+                        <a href="./about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="./room.html">Rooms</a>
+                    </li>
+                    <li>
+                        <a href="./reservation.html">Reservation</a>
+                    </li>
+                <li>
+                    <div class="language">
+                        <input class="lang" type="button" value="KOREA">
+                        <input type="button" value="ENGLISH">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <article class="reserve_wrap">
+            <h1 class="reserve_title">
+                RESERVATION
+            </h1>
+            <div class="reserve_bar"></div>
+            <div class="reserve_con">
+                <div class="reser_form">
+                    <form action="#">
+                        <div class="reserve_top">
+                            <div class="datewrap">
+                                <div class="reserve_in">
+                                    <p>CHECK IN</p>
+                                </div>
+                                <div class="reserve_in2">
+                                    <p>CHECK OUT</p>
+                                </div>
+                            </div>
+                            <div class="reser_input">
+                                <div class="top_input">
+                                    <div class="date_check">
+                                        <span class="date_span">예약일</span>
+                                        <input type="text" id="reserve_in" disabled>
+                                        <span>~</span>
+                                        <input type="text" id="reserve_out" disabled>
+                                    </div>
+                                    <div class="room_count">
+                                        <span>객실</span>
+                                        <select name="count_room" id="room_co">
+                                            <option value="none" selected>0개</option>
+                                            <option value="room1">1개</option>
+                                            <option value="room2">2개</option>
+                                            <option value="room3">3개</option>
+                                            <option value="room4">4개</option>
+                                        </select>
+                                    </div>
+                                    <div class="reser_se">
+                                        <span class="reser_senior">어른</span>
+                                        <select name="count_senior" id="room_se">
+                                            <option value="none" selected>0명</option>
+                                            <option value="어른1명">1명</option>
+                                            <option value="어른2명">2명</option>
+                                            <option value="어른3명">3명</option>
+                                            <option value="어른4명">4명</option>
+                                        </select>
+                                    </div>
+                                    <div class="reser_ju">
+                                        <span class="nior">아이</span>
+                                        <select name="count_junior" id="room_ju">
+                                            <option value="none" selected>0명</option>
+                                            <option value="아이1명">1명</option>
+                                            <option value="아이2명">2명</option>
+                                            <option value="아이3명">3명</option>
+                                            <option value="아이4명">4명</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reserve_mid">
+                            <div class="r_midWrap">
+                                <h3>원하시는 룸을 선택하세요</h3>
+                                <div class="reser_doub">
+                                        <input id="rdoub_room" value="double_room" type="checkbox">
+                                    <label for="rdoub_room">
+                                        <div class="doub_cWrap">
+                                            <div class="checked">
+                                                <img src="../img/sub/check_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <p>더블룸<span>Double Room</span></p>
+                                </div>
+                                <div class="reser_twin">
+                                        <input id="rtwin_room" value="twin_room" type="checkbox">
+                                    <label for="rtwin_room">
+                                        <div class="twin_cWrap">
+                                            <div class="checked">
+                                                <img src="../img/sub/check_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <p>트윈룸<span>Twin Room</span></p>
+                                </div>
+                                <div class="reser_delux">
+                                        <input id="rdelux_room" value="deluxe_room" type="checkbox">
+                                    <label for="rdelux_room">
+                                        <div class="delux_cWrap">
+                                            <div class="checked">
+                                                <img src="../img/sub/check_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <p>디럭스원룸<span>Deluxe Room</span></p>
+                                </div>
+                                <div class="reser_fam">
+                                        <input id="rfam_room" value="family_room" type="checkbox">
+                                    <label for="rfam_room">
+                                        <div class="fam_cWrap">
+                                            <div class="checked">
+                                                <img src="../img/sub/check_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <p>패밀리룸<span>Family Room</span></p>
+                                </div>
+                                <div class="reser_triple">
+                                        <input id="rtriple_room" value="triple_room" type="checkbox">
+                                    <label for="rtriple_room">
+                                        <div class="triple_cWrap">
+                                            <div class="checked">
+                                                <img src="../img/sub/check_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <p>트리플룸<span>Triple Room</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="reser_btn">
+                        <a href="./reservation_sub.html">예약하기</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+                <script>
+                    $(document).ready(function () {
+                       $( ".reserve_in" ).datepicker({
+                            altField: "#reserve_in",
+                            minDate: 0,
+                            dateFormat: "yy-mm-dd",
+                            changeMonth: true,
+                            numberOfMonths: 1,
+                            changeYear: true,
+                            onSelect: function(selectedDate) {
+                            $('.reserve_in2').datepicker('option', 'minDate', selectedDate);
+                            }
+                        });
+
+                       $( ".reserve_in2" ).datepicker({
+                            altField: "#reserve_out",
+                            minDate: "+1D",
+                            dateFormat: "yy-mm-dd",
+                            changeMonth: true,
+                            numberOfMonths: 1,
+                            changeYear: true,
+                        });
+
+                    });
+                </script>
+    </section>
+    <footer>
+        <div class="foot_wrap">
+            <ul>
+                <li class="foot_con foot_con1">
+                     <img src="../img/common/logo.png" alt="">
+                </li>
+                <li class="foot_con foot_con2">
+                    <ul>
+                        <li class="bot_menu">
+                            <ul>
+                                <li>
+                                    <a href="./about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="./room.html">ROOMS</a>
+                                </li>
+                                <li>
+                                    <a href="./reservation.html">RESERVATION</a>
+                                </li>
+                                <li>
+                                    <a href="#">이용약관</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보처리방침</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                <span>주소&nbsp;:&nbsp;서울시 서대문구 신촌로 141&#40;대현동, 은하빌딩&#41; 4층</span>
+                                <span>대표&nbsp;:&nbsp;홍길동</span>
+                                <span>전화번호&nbsp;:&nbsp;000-0000-0000</span>
+                            </p>
+                            <p>
+                                <span>사업자등록번호&nbsp;:&nbsp;000-0000-0000</span>
+                                <span>이메일&nbsp;:&nbsp;WEGOINN@NAVER.COM</span>
+                                <span>모바일&nbsp;:&nbsp;000-0000-0000</span>
+                            </p>
+                            <p><span>COPYRIGHTⓒ ALL RIGHT RESERVED WEGOINN.</span></p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="foot_con foot_con3">
+                    <ul>
+                        <li><a href="#"><img src="../img/common/tripadvisor.png" alt=""></a></li>
+                        <li><a href="#"><img src="../img/common/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="../img/common/instagram.png" alt=""></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
