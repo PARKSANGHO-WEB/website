@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="../css/index.css">
+   <link rel="stylesheet" href="../css/sub.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0">
+    <title>KESHSURVEY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/modal.js"></script>
+</head>
+<body>
+    <header>
+        <div class="pc_m">
+            <div class="pc_wrap">
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/common/logo.png" alt=""></a>
+                </div>
+                <div class="pc_gnb">
+                    <div class="bell">
+                        <a href="#"><img src="../img/common/bell.png" alt=""></a>
+                    </div>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_over">
+                <div>
+                    <ul>
+                        <li><a href="../index.html">홈</a></li>
+                        <li><a href="./mypage_1.html">마이페이지</a></li>
+                        <li><a href="#">패널설문</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sign_up">
+        <h1>회원가입</h1>
+        <form action="#">
+            <div class="my_page">
+                <div class="infow info_1">
+                    <h2>회원유형</h2>
+                    <label for="ps1">
+                        <input name="ps" id="ps1" value="one" type="radio" onclick="show1();">
+                        개인회원
+                    </label>
+                    <label for="ps2">
+                        <input name="ps" id="ps2" value="two" type="radio" onclick="show2();">
+                        개인사업자
+                    </label>
+                    <label for="ps3">
+                        <input name="ps" id="ps3" value="two" type="radio">
+                        법인사업자
+                    </label>
+                </div>
+                <div class="infow info_2">
+                    <h2>아이디</h2>
+                    <input type="text" placeholder="ID"   class="w300">
+                    <input type="button" placeholder="중복확인" value="중복확인" >
+                </div>
+                <div class="infow info_3">
+                    <h2>이메일</h2>
+                    <input type="text" placeholder="이메일">
+                </div>
+                <div class="infow info_4">
+                    <h2>패스워드</h2>
+                    <input type="text" placeholder="비밀번호">
+                    <input type="text" placeholder="비밀번호 확인" style="margin-top: 10px;">
+                    <p>영문, 숫자, 특수문자(!@#$%^&*)를 <br> 조합한 8자 이상이어야 합니다.</p>
+                </div>
+                <div class="infow info_5">
+                    <h2>이름</h2>
+                    <input type="text" placeholder="이름">
+                </div>
+                <div class="infow info_6">
+                    <h2>휴대폰 번호</h2>
+                    <input type="text" placeholder="휴대폰 번호"   class="w300">
+                    <input type="button" placeholder="인증하기" value="인증하기" >
+                </div>
+                <div class="infow info_7">
+                    <h2>주소</h2>
+                    <input type="text" placeholder="주소"   class="w300">
+                    <input type="button" placeholder="검색" value="검색" >
+                    <input type="text" placeholder="상세주소">
+                </div>
+            </div>
+            <div class="store">
+                    <h1>사업장 정보</h1>
+                <div class="storew store_1">
+                    <h2>사업자 상호</h2>
+                    <input type="text"placeholder="사업자 상호">
+                </div>
+                <div class="storew store_2">
+                    <h2>사업자 등록번호</h2>
+                    <input type="text"placeholder="사업자 상호"  class="w300">
+                    <input type="button" placeholder="중복확인" value="중복확인">
+                </div>
+                <div class="storew store_3">
+                    <h2>법인 등록번호</h2>
+                    <input type="text"placeholder="사업자 상호">
+                </div>
+                <div class="storew store_4">
+                    <h2>사업장 주소</h2>
+                    <input type="text" placeholder="주소"  class="w300">
+                    <input type="button" placeholder="검색" value="검색">
+                    <input type="text" placeholder="상세주소">
+                </div>
+                <div class="storew store_5">
+                    <h2>세금계산서 수령 이메일</h2>
+                    <input type="text" placeholder="세금계산서 수령 이메일">
+                </div>
+                <div class="storew store_6">
+                    <h2>사업자 등록증</h2>
+                    <input class="w300" type="file"placeholder="사업자 등록증 (jpg, jpeg, png만 가능합니다.)">
+                    <input type="button" placeholder="업로드" value="업로드">
+                </div>
+            </div>
+        </form>
+        <div class="btn_change">
+            <input type="button" placeholder="PREV" value="PREV">
+            <input type="button" placeholder="OK" value="OK">
+        </div>
+    </section>
+    <footer>
+        <div class="foot_gnb">
+            <ul>
+                <li><a href="#" class="show">로그인</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+        </div>
+        <div class="foot_cont">
+            <ul>
+                <li>서울특별시 노원구 동일로 174길 27, 서울창업디딤터 1층</li>
+                <li>사업자등록번호 : 217-13-38614</li>
+                <li>Copyright © 2019 비엔시스템. All rights reserved</li>
+                <li>대표전화 : 050-7737-4560</li>
+                <li>이메일 : best@bn-system.com</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="login_modal">
+
+        <div class="mask" role="dialog"></div>
+        <div class="modal" role="alert">
+          <button class="close" role="button">X</button>
+          <div class="modal-content">
+              <h2><img src="../img/common/logo.png" alt=""></h2>
+              <form action="#">
+                  <input type="text" placeholder="ID">
+                  <input type="text" placeholder="PASSWORD">
+                  <div class="auto">
+                      <label for="auto_l">
+                          <input id="auto_l" name="auto_l" type="checkbox">
+                          자동로그인
+                    </label>
+                  </div>
+               </form>
+               <div class="modal_btn">
+                   <input type="button" class="log_btn" value="로그인">
+               </div>
+               <div class="forgot">
+                   <a href="#" class="sign_up">회원가입</a>
+                   <a class="find_aco" href="#">아이디/비밀번호 찾기</a>
+               </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
