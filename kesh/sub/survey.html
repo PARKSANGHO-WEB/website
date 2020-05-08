@@ -48,33 +48,116 @@
                         <li><a href="../index.html">홈</a></li>
                         <li><a href="./mypage_1.html">마이페이지</a></li>
                         <li><a href="#">패널설문</a></li>
-                        <li><a href="./center.html">고객센터</a></li>
+                        <li><a href="#">고객센터</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section class="center_sub1">
-        <h1>공지사항</h1>
-        <div class="center_con">
-            <div class="ct_wrap">
-                <div class="cs_title"><h2>공지사항입니다.</h1></div>
-                <div class="cs_date"><p>2020.05.07</p></div>
+    <section class="survey">
+        <h1>SURVEY</h1>
+        <p class="explain_survey">설문조사에 대한 설명입니다.<br>설문조사에 대한 설명입니다.설문조사에 대한 설명입니다.<br>설문조사에 대한 설명입니다.설문조사에 대한 설명입니다.<br>설문조사에 대한 설명입니다.설문조사에 대한 설명입니다.<br>설문조사에 대한 설명입니다.설문조사에 대한 설명입니다.<br>설문조사에 대한 설명입니다.설문조사에 대한 설명입니다.<br></p>
+        <form action="#">
+            <div class="survey_list survey_list1">
+                <p class="q_title">
+                    <span class="q_number">1.</span>KESH SURVEY를 어떻게 알게 되셨나요?
+                </p>   
+                <div class="a_input">
+                    <div class="check check1">
+                        <label for="check1">
+                            <input type="checkbox" id="check1" name="check1">
+                            검색
+                        </label>
+                    </div>
+                    <div class="check check2">
+                        <label for="check2">
+                            <input type="checkbox" id="check2" name="check2">
+                            지인소개
+                        </label>
+                    </div>
+                    <div class="check check3">
+                        <label for="check3">
+                            <input type="checkbox" id="check3" name="check3">
+                            홍보물
+                        </label>
+                    </div>
+                    <div class="check check1">
+                        <label for="self">
+                            <input name="check_1" type="checkbox" class="self" id="self" value="self">
+                            기타
+                        </label>
+                        <input type="text" class="selboxDirect1" style="display: none;" placeholder="직접입력">
+                    </div>
+                </div>
             </div>
-            <div class="ct_con">
-                <p>
-                    안녕하세요. 공지사항입니다.<br><br><br>
-                    안녕하세요. 공지사항입니다.<br><br><br>
-                    안녕하세요. 공지사항입니다.<br><br><br>
-                    안녕하세요. 공지사항입니다.<br><br><br>
-                    안녕하세요. 공지사항입니다.<br><br><br>
-                </p>
+            <div class="survey_list survey_list2">
+                <p class="q_title">
+                    <span class="q_number">2.</span>KESH SURVEY를 어떻게 알게 되셨나요?
+                </p>   
+                <div class="a_input">
+                    <div class="radio radio1">
+                        <label for="radio1">
+                            <input type="radio" id="radio1" name="radio" onclick="show1();">
+                            검색
+                        </label>
+                    </div>
+                    <div class="radio radio2">
+                        <label for="radio2">
+                            <input type="radio" id="radio2" name="radio" onclick="show1();">
+                            지인소개
+                        </label>
+                    </div>
+                    <div class="radio radio3">
+                        <label for="radio3">
+                            <input type="radio" id="radio3" name="radio" onclick="show1();">
+                            홍보물
+                        </label>
+                    </div>
+                    <div class="radio radio4">
+                        <label for="radio4">
+                            <input name="radio" type="radio" id="radio4" value="self" onclick="show2();">
+                            기타
+                        <input type="text" id="selboxDirect2" style="display: none;" placeholder="직접입력">
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="back_ct">
+            <div class="survey_list survey_list3">
+                <p class="q_title">
+                    <span class="q_number">3.</span>KESH SURVEY를 어떻게 알게 되셨나요?
+                </p>   
+                <div class="a_input">
+                    <textarea placeholder="내용을 입력하세요"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="survey_btn">
+            <div class="back">
                 <a href="javascript:history.back();" class="back_btn">목록으로 돌아가기</a>
             </div>
+            <input type="button" value="제출">
         </div>
     </section>
+    <script>
+        $(function () {
+            $(".self").click(function () {
+                if ($(this).is(":checked")) {
+                    $(".selboxDirect1").show();
+                } else {
+                    $(".selboxDirect1").hide();
+                }
+            });
+        });
+	</script>
+	<script>
+        
+        function show1(){
+          document.getElementById('selboxDirect2').style.display ='none';
+        }
+        function show2(){
+          document.getElementById('selboxDirect2').style.display = 'inline-block';
+        }
+	</script>
     <footer>
         <div class="foot_gnb">
             <ul>

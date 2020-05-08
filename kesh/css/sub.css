@@ -213,11 +213,11 @@
 
 .center .faq { margin: 20px 0px;}
 .center .faq div {width: 740px; background-color: #eaeaea; padding: 20px 30px; font-family: nbl;}
-.center .faq .faq_t p {font-family: nbl; font-weight: bold; color: #2a2a2a; font-size: 15px; transition-duration: 1s;}
+.center .faq .faq_t p {font-family: nbl; font-weight: bold; color: #2a2a2a; font-size: 14px; transition-duration: 1s;}
 
 .center .faq .faq_t p span{ display: inline-block; text-align: center;line-height: 20px; font-weight: bold;font-family: nbb; margin-right: 5px; color: #fff; background: url('../img/sub/faq_circle.png'); background-repeat: no-repeat; background-position: center;width: 20px; height: 20px;}
 .center .faq .faq_t {cursor: pointer;}
-.center .faq .faq_a {border-top: 1px solid #a7a7a7; display: none;}
+.center .faq .faq_a {border-top: 1px solid #a7a7a7; display: none; font-size: 15px;}
 
 
 
@@ -237,16 +237,64 @@
 .faq_wrap, .question_wrap {display: none;}
 
 
-.center_sub1 {width: 600px; margin: 0 auto; padding-top: 128px;}
+.center_sub1 {width: 600px; margin: 0 auto; padding-top: 80px; padding-bottom: 178px;}
 .center_sub1 h1{  text-align: center; margin-top: 40px; font-size: 30px; font-family: nbb;}
 .center_sub1  .center_con { margin-top: 40px;}
 .center_sub1  .center_con .ct_wrap h2{font-family: nbb; font-size: 18px;}
 .center_sub1  .center_con .ct_wrap .cs_date p{ font-size: 14px; padding: 5px 0px; font-family: nbl; font-weight: bold;}
 
-.center_sub1  .center_con .ct_con {border-top: 2px solid #a7a7a7;border-bottom: 2px solid #a7a7a7; padding-top: 30px; margin-top: 30px;}
+.center_sub1  .center_con .ct_con {border-top: 2px solid #a7a7a7;border-bottom: 2px solid #a7a7a7; padding-top: 30px; margin-top: 30px; font-size: 14px;}
 
 
 .center_sub1  .center_con .back_ct a {font-size: 14px; background-color: #646464; padding: 5px 10px; display: inline-block; margin-top: 20px; cursor: pointer;color: #fff; font-family: nbl;}
+
+
+
+
+
+
+.panel_list { padding-top: 80px; padding-bottom: 178px; width: 800px; margin: 0 auto;}
+
+
+
+.panel_list h1{    text-align: center; margin-top: 40px; font-size: 30px; font-family: nbb;}
+
+.panel_list table{  width: 100%; border-collapse: collapse; text-align: center; font-size: 15px; font-family:nbb; margin-top: 40px;}
+.panel_list table th,
+.panel_list table td{padding: 10px 0px; border: 1px solid #fff; }
+
+.panel_list table th {background-color: #646464; color: #fff; font-weight: bold;}
+.panel_list table td {background-color: #eee; color: black; padding: 20px 0px;}
+
+.panel_list .number_pt {font-size: 14px; width: 223px; overflow: hidden; margin: 20px auto 0px auto;}
+.panel_list .number_pt img{width: 15px; display: block; margin-top: 3px;}
+
+.panel_list .number_pt ul li {float: left; border-top: 1px solid #a7a7a7;  border-right: 1px solid #a7a7a7;  border-bottom: 1px solid #a7a7a7; padding: 5px 9px;}
+.panel_list .number_pt ul li:nth-child(1) {border-left: 1px solid #a7a7a7;;}
+
+.panel_list .number_pt ul li:nth-child(2),
+.panel_list .number_pt ul li:nth-child(3),
+.panel_list .number_pt ul li:nth-child(4),
+.panel_list .number_pt ul li:nth-child(5),
+.panel_list .number_pt ul li:nth-child(6){   padding: 5px 11px;}
+
+
+.survey {width: 800px; margin: 0 auto; padding-top: 80px; padding-bottom: 178px;}
+.survey h1 {   text-align: center; margin-top: 40px; font-size: 30px; font-family: nbl;}
+.survey .explain_survey{   text-align: center; margin-top: 20px; font-size: 12px; font-family: nbl;}
+.survey_list .q_title {background-color: #646464;padding: 5px 10px;color: #fff; font-size: 18px;font-family: nbb; font-weight: bold; margin: 30px 0px 10px 0px;}
+.survey_list .q_title .q_number{font-size: 20px;}
+.survey_list .a_input div {height: 40px;}
+.survey_list .a_input div label input {vertical-align: middle; margin-top: -3px;}
+.survey_list .a_input div label{cursor: pointer; font-size: 13px;font-family: nbl; line-height: 40px;}
+.survey_list .a_input div .selboxDirect1{padding:10px 10px; width: 200px; height: 16px;}
+.survey_list .a_input  textarea {padding:10px 10px; width: 400px; height: 150px;}
+.survey_list .a_input div #selboxDirect2{padding:10px 10px; width: 200px; height: 16px;}
+.survey_btn {width: 800px; border-top: 2px solid #a7a7a7; margin-top: 30px; overflow: hidden;}
+.survey_btn a{font-size: 14px; background-color: #a2a2a2; padding: 5px 10px; display: inline-block; margin-top: 20px; cursor: pointer; color: #fff; font-family: nbl;float: left;}
+.survey_btn input[type="button"]{font-size: 14px; background-color: #646464; padding: 5px 10px; display: inline-block; margin-top: 20px; cursor: pointer; color: #fff; font-family: nbl; border: none; float: right;}
+
+
 
 
 
@@ -352,63 +400,49 @@
 
     .center .notice_wrap table{  font-size: 14px;}
     .center .notice_wrap table th,
-    .center .notice_wrap table td{padding: 10px 0px; border: 1px solid #fff; }
+    .center .notice_wrap table td{padding: 10px 0px; }
 
-    .center .notice_wrap table th {background-color: #646464; color: #fff; font-weight: bold;}
-    .center .notice_wrap table td {background-color: #eee; color: black; padding: 20px 0px;}
-
-    .center .notice_wrap .number_pt {font-size: 14px; width: 223px; overflow: hidden; margin: 20px auto 0px auto;}
-    .center .notice_wrap .number_pt img{width: 15px; display: block; margin-top: 3px;}
-
-    .center .notice_wrap .number_pt ul li {float: left; border-top: 1px solid #a7a7a7;  border-right: 1px solid #a7a7a7;  border-bottom: 1px solid #a7a7a7; padding: 5px 9px;}
-    .center .notice_wrap .number_pt ul li:nth-child(1) {border-left: 1px solid #a7a7a7;;}
-
-    .center .notice_wrap .number_pt ul li:nth-child(2),
-    .center .notice_wrap .number_pt ul li:nth-child(3),
-    .center .notice_wrap .number_pt ul li:nth-child(4),
-    .center .notice_wrap .number_pt ul li:nth-child(5),
-    .center .notice_wrap .number_pt ul li:nth-child(6){   padding: 5px 11px;}
-
-    .center .faq { margin: 20px 0px;}
-    .center .faq div {width: 740px; background-color: #eaeaea; padding: 20px 30px; font-family: nbl;}
-    .center .faq .faq_t p {font-family: nbl; font-weight: bold; color: #2a2a2a; font-size: 15px; transition-duration: 1s;}
-
-    .center .faq .faq_t p span{ display: inline-block; text-align: center;line-height: 20px; font-weight: bold;font-family: nbb; margin-right: 5px; color: #fff; background: url('../img/sub/faq_circle.png'); background-repeat: no-repeat; background-position: center;width: 20px; height: 20px; }
-    .center .faq .faq_t {cursor: pointer;}
-    .center .faq .faq_t.check p {padding-left: 30px;}
-    .center .faq .faq_a {border-top: 1px solid #a7a7a7; display: none;}
+    .center .notice_wrap .number_pt {font-size: 14px; }
+    .center .faq { margin: 15px 0px;}
+    .center .faq div {width: 440px; background-color: #eaeaea; padding: 15px 30px; font-family: nbl;}
+    .center .faq .faq_t p {font-size: 14px;}
+    .center .faq .faq_a {font-size: 13px;}
 
 
 
 
-    .center .question_wrap { width: 600px; margin:  0 auto;}
-    .center .question_wrap p{ font-size: 14px; font-family: nbl; text-align: center;}
-
-    .center .question_wrap .ques_wrap{ width: 350px; margin:  0 auto;}
-    .center .question_wrap .ques_wrap form {border-bottom: 2px solid black; padding-bottom: 10px;}
-    .center .question_wrap .ques_wrap form div{display: block;}
-    .center .question_wrap .ques_wrap div h2{font-size: 16px;font-family: nbb; margin-top: 40px;}
-    .center .question_wrap .ques_wrap div input[type="text"]{border: none;background-color: #fff; border-bottom: 2px solid #a7a7a7; width: 310px; padding: 10px 20px; margin-top: 10px; cursor: pointer;}
-    .center .question_wrap .ques_wrap div span {font-size: 12px; display: block; padding: 5px 0px;}
-    .center .question_wrap .ques_wrap input[type="button"] {background-color: #646464; color: #fff; border: none; font-size: 14px; padding: 10px 15px; display: block; width: 100px; margin: 30px auto; cursor: pointer;}
+    .center .question_wrap { width: 450px;}
+    .center .question_wrap p{ font-size: 12px; }
+    .center .question_wrap .ques_wrap div h2{font-size: 14px;}
+    .center .question_wrap .ques_wrap div span {font-size: 12px;}
+    .center .question_wrap .ques_wrap input[type="button"] {font-size: 13px; }
 
 
     .faq_wrap, .question_wrap {display: none;}
 
 
-    .center_sub1 {width: 600px; margin: 0 auto; padding-top: 128px;}
-    .center_sub1 h1{  text-align: center; margin-top: 40px; font-size: 30px; font-family: nbb;}
-    .center_sub1  .center_con { margin-top: 40px;}
-    .center_sub1  .center_con .ct_wrap h2{font-family: nbb; font-size: 18px;}
-    .center_sub1  .center_con .ct_wrap .cs_date p{ font-size: 14px; padding: 5px 0px; font-family: nbl; font-weight: bold;}
-
-    .center_sub1  .center_con .ct_con {border-top: 2px solid #a7a7a7;border-bottom: 2px solid #a7a7a7; padding-top: 30px; margin-top: 30px;}
-
-
-    .center_sub1  .center_con .back_ct a {font-size: 14px; background-color: #646464; padding: 5px 10px; display: inline-block; margin-top: 20px; cursor: pointer;color: #fff; font-family: nbl;}
+    .center_sub1 {width: 450px;}
+    .center_sub1 h1{ font-size: 26px;}
+    .center_sub1  .center_con .ct_wrap h2{font-size: 16px;}
+    .center_sub1  .center_con .ct_wrap .cs_date p{ font-size: 13px; padding: 2px 0px; }
+    .center_sub1  .center_con .ct_con {font-size: 13px;}
+    .center_sub1  .center_con .back_ct a {font-size: 13px;}
 
 
 
+    .panel_list { padding-top: 60px; padding-bottom: 178px; width: 500px;}
+    .panel_list h1{font-size: 24px;}
+    .panel_list table{font-size: 14px;margin-top:30px;}
+    .panel_list table th,
+    .panel_list table td{padding: 8px 0px;}
+    .panel_list table td { padding: 17px 0px;}
+
+
+
+    .survey {width: 600px;}
+    .survey h1 { font-size: 24px;}
+    .survey_btn {width: 600px; }
+    
 }
 
 
@@ -518,6 +552,31 @@
 
     .sign_up .btn_change input[type="button"]:nth-child(1) {top: 0px; right: 100px; border: 2px solid #a7a7a7; background-color: #fff; color: black;}
     .sign_up .btn_change input[type="button"]:nth-child(2) {top: 0px; right: 0px; border: 2px solid black;}
+
+
+
+
+    .panel_list { padding-top: 60px;width: 500px;}
+
+    .panel_list h1{ margin-top: 30px; font-size: 22px;}
+
+    .panel_list table{font-size: 14px;margin-top:30px;}
+    .panel_list table th,
+    .panel_list table td{padding: 6px 0px;}
+
+    .panel_list table td {padding: 15px 0px;}
+
+    
+    .survey {width: 500px; }
+    .survey h1 {margin-top: 30px; font-size: 22px;}
+    .survey_list .q_title {font-size: 16px;}
+    .survey_list .q_title .q_number{font-size: 18px;}
+    .survey_list .a_input div label input {vertical-align: middle; margin-top: -3px;}
+    .survey_list .a_input div label{font-size: 12px;}
+    .survey_list .a_input  textarea { width: 300px; height: 120px;}
+    .survey_btn {width: 500px;}
+    .survey_btn a{font-size: 13px; }
+    .survey_btn input[type="button"]{font-size: 13px; }
 
 
 }
@@ -644,5 +703,97 @@
 
     .sign_up .btn_change input[type="button"]:nth-child(1) {top: 0px; right: 70px; border: 2px solid #a7a7a7; background-color: #fff; color: black;}
     .sign_up .btn_change input[type="button"]:nth-child(2) {top: 0px; right: 0px; border: 2px solid black;}
+    
+    
+    
+
+
+
+
+
+    .center { padding-top: 40px; padding-bottom: 85px; width: 300px;}
+
+
+
+    .center h1{font-size: 20px; margin-top: 20px;}
+
+    .center .center_btn { width: 259px; height: 30px;line-height: 30px;}
+
+    .center .center_btn ul li {width: 85px; font-size: 13px;}
+
+
+    .center .notice_wrap table{  font-size: 13px; }
+    .center .notice_wrap table th,
+    .center .notice_wrap table td{padding: 5px 0px;}
+
+    .center .notice_wrap table td {padding: 6px 0px;}
+
+    .center .notice_wrap .number_pt {font-size: 12px; }
+    .center .notice_wrap .number_pt img{width: 13px; }
+
+    .center .faq { margin: 20px 0px;}
+    .center .faq div {width: 260px; padding: 10px 20px;}
+    .center .faq .faq_t p {font-size: 12px;}
+
+    .center .faq .faq_t p span{ line-height: 16px; font-weight: bold;width: 16px; height:16px; background-size: 100% 100%;}
+    .center .faq .faq_a {font-size: 12px;}
+
+
+
+
+    .center .question_wrap { width: 300px;}
+    .center .question_wrap p{ font-size: 11px; word-spacing: 3px;}
+
+    .center .question_wrap .ques_wrap{ width: 300px; }
+    .center .question_wrap .ques_wrap div h2{font-size: 14px;margin-top: 30px;}
+    .center .question_wrap .ques_wrap div input[type="text"]{ width: 240px;}
+    .center .question_wrap .ques_wrap div span {font-size: 10px; display: block; padding: 5px 0px;}
+    .center .question_wrap .ques_wrap input[type="button"] {font-size: 12px; padding: 5px 10px; width: 80px;}
+
+
+    .faq_wrap, .question_wrap {display: none;}
+
+
+    .center_sub1 {width: 300px; margin: 0 auto; padding-top: 60px; padding-bottom: 80px;}
+    .center_sub1 h1{ font-size: 20px;}
+    .center_sub1  .center_con { margin-top: 40px;}
+    .center_sub1  .center_con .ct_wrap h2{font-size: 14px;}
+    .center_sub1  .center_con .ct_wrap .cs_date p{ font-size: 13px; }
+
+    .center_sub1  .center_con .ct_con {font-size: 13px;}
+
+
+    .center_sub1  .center_con .back_ct a {font-size: 12px;}
+
+
+
+    .panel_list { padding-top: 60px; padding-bottom: 85px; width: 300px; margin: 0 auto;}
+
+
+
+    .panel_list h1{  margin-top:20px; font-size: 20px; }
+
+    .panel_list table{font-size: 11px; margin-top: 30px;}
+    .panel_list table th,
+    .panel_list table td{padding: 5px 0px;}
+    .panel_list table td {padding: 10px 0px;}
+
+
+
+    .survey {width: 300px;padding-top: 60px; padding-bottom: 85px;}
+    .survey h1 { margin-top: 20px; font-size: 20px;}
+    .survey .explain_survey{font-size: 11px;}
+    .survey_list .q_title {font-size: 13px; margin: 20px 0px 10px 0px;}
+    .survey_list .q_title .q_number{font-size: 14px;}
+    .survey_list .a_input div {height: 30px;}
+    .survey_list .a_input div label input {vertical-align: middle; margin-top: -3px;}
+    .survey_list .a_input div label{font-size: 12px;line-height: 30px;}
+    .survey_list .a_input div .selboxDirect1{padding:5px 10px; width: 150px;}
+    .survey_list .a_input  textarea {padding:10px 10px; width: 200px; height: 100px;}
+    .survey_list .a_input div #selboxDirect2{padding:5px 10px; width: 150px;}
+    .survey_btn {width: 300px; }
+    .survey_btn a{font-size: 13px;}
+    .survey_btn input[type="button"]{font-size: 13px;}
+
 }
 

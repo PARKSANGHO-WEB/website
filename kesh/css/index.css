@@ -1,7 +1,7 @@
 * {margin: 0;padding: 0;}
 a {text-decoration: none; color: black;}
 ol,ul,li {list-style: none;}
-input {
+input[type="button"],input[type="text"] {
     appearance: none;
     border-radius: 0;
    -webkit-appearance: none;
@@ -18,6 +18,8 @@ header .pc_m .pc_wrap .pc_gnb {position: absolute; top: 20px; right: 40px;}
 header .pc_m .pc_wrap .pc_gnb .bell {float: left;}
 header .pc_m .pc_wrap .pc_gnb #nav-icon1 {float: left; margin-left: 20px;}
 header .pc_m .pc_wrap .pc_gnb .bell img{width: 40px;}
+
+
 
 #nav-icon1{  width: 45px;height: 45px;position: relative;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
 
@@ -39,28 +41,40 @@ header .pc_m .menu_over {position: absolute;top: 83px;width: 100%;text-align: ce
 header .pc_m .menu_over div ul li:last-child{border-bottom: 1px solid #2a2a2a;}
 header .pc_m .menu_over div ul li a{padding: 10px 0px; display: block; font-size: 14px;}
 
+.bellmodal{overflow: hidden; display: none;}
+.bellmodal.bell{display: block;}
+
+.bellmodal {position: absolute; top: 43px; z-index: 9999; background-color: #fff; width: 200px; height: 102px; right: 75px;border: 2px solid black; border-radius: 10px; overflow: scroll; padding:5px 0px;margin: 5px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */}
+.bellmodal::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.bellmodal span {display: block; text-align: center; font-size: 12px; padding: 5px 0px; font-family: nbl; width: 200px; height: 15px;}
 
 
 
-.contents_1 {width: 100%; height: 100%; position: relative;}
 
-.contents_1 .main_wrap{ position: absolute; width: 450px; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.contents_1 {width: 100%; height: 100%;}
+.contents_1 h1{text-align: center; padding-top: 100px; font-size: 30px; font-family: nbb;}
+.contents_1 .main_wrap{width: 800px; margin: 0 auto; padding-top: 30px; padding-bottom: 178px;}
+.contents_1 .main_wrap .import_m{ font-size: 13px; font-family: nbl; padding: 5px 0px; display: block;}
 
-.contents_1 .main_wrap .recapcha { width: 450px; height: 200px; border: 1px solid black;}
-.contents_1 .main_wrap .recapcha img {display: block; width: 100%; height: 100%; text-align: center;
-    
-    line-height: 200px; }
+.contents_1 .main_wrap .recapcha { width: 800px; overflow: hidden; border-top: 1px solid black; border-bottom: 1px solid black; }
+.contents_1 .main_wrap .recapcha ul li{ float: left; height: 80px;}
 
-.contents_1 .main_wrap .re_input {display: flex; margin-top: 10px;}
 
-.contents_1 .main_wrap .re_input textarea{padding: 8px 5px; width: 320px; height: 60px; cursor: pointer;}
+
+.contents_1 .main_wrap .re_input {display: flex; margin-top: 10px; width: 400px; margin: 20px auto 0px auto;}
+
+.contents_1 .main_wrap .re_input textarea{padding: 8px 5px; width: 330px; height: 60px; cursor: pointer;}
 
 .contents_1 .main_wrap .re_input .re_submit { width: 60px;padding: 5px; cursor: pointer;}
-.contents_1 .main_wrap .re_input .re_refresh { width: 60px;padding: 5px; background: url('../img/common/refresh.png') no-repeat; background-size: 20px 20px; background-position: center; cursor: pointer;}
+.contents_1 .main_wrap .refre a { width: 70px;padding: 5px; background-size: 20px 20px; background-position: center; cursor: pointer; color: #fff; background-color: #a7a7a7;display: block;}
 
 .contents_1 .main_wrap .link_panel {display: block; margin-top: 10px;}
 
-.contents_1 .main_wrap .link_panel a{color: white; width: 450px; border: 1px solid #2a2a2a; padding: 10px 0px;  text-align: center; display: block;background-color: #2a2a2a; transition-duration: .5s;}
+.contents_1 .main_wrap .link_panel a{color: white; width: 400px; border: 1px solid #2a2a2a; padding: 10px 0px;  text-align: center; display: block;background-color: #2a2a2a; transition-duration: .5s; margin: 0 auto;}
 
 .contents_1 .main_wrap .link_panel a:hover{color: black; text-align: center; display: block; background-color: #fff;}
 
@@ -139,9 +153,50 @@ footer .foot_cont ul li {padding: 1px 0px;font-size: 12px; color: #fff; font-fam
 
 
 
+    .contents_1 .main_wrap{ width: 600px; }
+
+    .contents_1 h1{font-size: 26px;}
+    .contents_1 .main_wrap .recapcha { width: 605px; }
+
+    .contents_1 .main_wrap .re_input {display: flex; margin-top: 10px; width: 400px; margin: 20px auto 0px auto;}
+
+    .contents_1 .main_wrap .re_input textarea{padding: 8px 5px; width: 330px; height: 60px; cursor: pointer;}
+
+    .contents_1 .main_wrap .re_input .re_submit { width: 60px;padding: 5px; cursor: pointer;}
+    .contents_1 .main_wrap .refre a { width: 70px;padding: 5px; background-size: 20px 20px; background-position: center; cursor: pointer; color: #fff; background-color: #a7a7a7;display: block;}
+
+    .contents_1 .main_wrap .link_panel {display: block; margin-top: 10px;}
+
+    .contents_1 .main_wrap .link_panel a{color: white; width: 400px; border: 1px solid #2a2a2a; padding: 10px 0px;  text-align: center; display: block;background-color: #2a2a2a; transition-duration: .5s; margin: 0 auto;}
+
+    .contents_1 .main_wrap .link_panel a:hover{color: black; text-align: center; display: block; background-color: #fff;}
+
 }
 
 
+@media screen and (max-width:900px) {
+
+
+    .contents_1 .main_wrap{  width: 400px;}
+    .contents_1 .main_wrap{width: 400px; margin: 0 auto; padding-top: 30px; padding-bottom: 178px;}
+
+    .contents_1 .main_wrap .recapcha { width: 400px; overflow: hidden; border-top: 1px solid black; border-bottom: 1px solid black; }
+    .contents_1 .main_wrap .recapcha ul li{ float: left; height: 60px;}
+
+    .contents_1 .main_wrap .re_input {display: flex; margin-top: 10px; width: 400px; margin: 20px auto 0px auto;}
+
+    .contents_1 .main_wrap .re_input textarea{padding: 8px 5px; width: 330px; height: 60px; cursor: pointer;}
+
+    .contents_1 .main_wrap .re_input .re_submit { width: 60px;padding: 5px; cursor: pointer;}
+    .contents_1 .main_wrap .refre a { font-size: 13px; text-align: center;}
+
+    .contents_1 .main_wrap .link_panel {display: block; margin-top: 10px;}
+
+    .contents_1 .main_wrap .link_panel a{color: white; width: 400px; border: 1px solid #2a2a2a; padding: 10px 0px;  text-align: center; display: block;background-color: #2a2a2a; transition-duration: .5s; margin: 0 auto;}
+
+    .contents_1 .main_wrap .link_panel a:hover{color: black; text-align: center; display: block; background-color: #fff;}
+
+}
 
 @media screen and (max-width:640px) {
     
@@ -174,33 +229,22 @@ footer .foot_cont ul li {padding: 1px 0px;font-size: 12px; color: #fff; font-fam
     header .pc_m .menu_over {top: 43px;}
     header .pc_m .menu_over div ul li a{font-size: 11px;}
 
+    .contents_1 .main_wrap{  width: 202px;}
+    .contents_1 .main_wrap .import_m{ font-size: 11px;}
 
+    .contents_1 h1{font-size: 18px;}
+    .contents_1 .main_wrap .recapcha { width: 202px;}
 
-    .contents_1 {width: 100%; height: 100%; position: relative;}
+    .contents_1 .main_wrap .re_input {width: 200px;}
 
-    .contents_1 .main_wrap{ position: absolute; width: 250px; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+    .contents_1 .main_wrap .re_input textarea{width: 200px;}
 
-    .contents_1 .main_wrap .recapcha { width: 250px; height: 150px; border: 1px solid black;}
-    .contents_1 .main_wrap .recapcha img {display: block; width: 100%; text-align: center;
+    .contents_1 .main_wrap .re_input .re_submit { width: 60px;padding: 5px; cursor: pointer;}
 
-        line-height: 200px; }
-
-    .contents_1 .main_wrap .re_input {display: flex; margin-top: 10px;}
-
-    .contents_1 .main_wrap .re_input textarea{padding: 8px 5px; width: 160px; height: 30px;}
-
-    .contents_1 .main_wrap .re_input .re_submit { width: 40px;padding: 5px; width: 40px;}
-    .contents_1 .main_wrap .re_input .re_refresh { width: 30px;padding: 5px; background: url('../img/common/refresh.png') no-repeat; background-size: 20px 20px; background-position: center; width: 40px;}
-
-    .contents_1 .main_wrap .link_panel {display: block; margin-top: 10px;}
-
-    .contents_1 .main_wrap .link_panel a{color: white; width: 250px; border: 1px solid #2a2a2a; padding: 10px 0px;  text-align: center; display: block;background-color: #2a2a2a; transition-duration: .5s;font-size: 12px;}
+    .contents_1 .main_wrap .link_panel a{color: white; width: 200px; border: 1px solid #2a2a2a; padding: 10px 0px;  text-align: center; display: block;background-color: #2a2a2a; transition-duration: .5s; margin: 0 auto; font-size: 12px;}
 
     .contents_1 .main_wrap .link_panel a:hover{color: black; text-align: center; display: block; background-color: #fff;}
 
-    
-    
-    
     
     
 

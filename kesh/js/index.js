@@ -6,6 +6,12 @@ $(document).ready(function(){
 	});
     
     
+    $(".bell").click(function(){
+        $(".bellmodal").toggleClass("bell");
+    });
+    
+    
+    
     $("input[type=radio][name=ps]").on("click",function(){
         
         var chkValue = $("input[type=radio][name=ps]:checked").val();
@@ -48,5 +54,9 @@ $(document).ready(function(){
         $(".question_wrap").css('display','block');
         $(".notice_wrap,.faq_wrap").css('display','none');
     });
+    
+    
+    
+    
     
 });
