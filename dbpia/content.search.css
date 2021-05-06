@@ -1,0 +1,1555 @@
+@charset "utf-8";
+
+/* 검색결과리스트 */
+
+/*210430 마진 수정 보더 추가*/
+.searchP .selectGroup {margin-top: 16px;margin-right: 39px;margin-bottom: 21px;border-bottom: 1px solid #ECECEC;}
+.searchP .selectGroup p.tit {font-size: 13px;color: #222222;font-family: 'notokr-medium', sans-serif;margin-bottom: 12px;}
+
+/*210430 수정*/
+.searchP .selectGroup .selectWrap {padding: 0;margin-bottom: 7px;font-size: 12px;margin-left: 14px;}
+.searchP .selectGroup .selectWrap .condtion {color: #f04349;display: inline-block;margin: -2px 21px 6px 0;line-height: 13px;}
+
+/*210430 이미지 변경*/
+.searchP .selectGroup .selectWrap .condtion span.del {display: inline-block;width: 13px;height: 13px;margin: -2px 0 0 0px;background: url(../images/common/delete-word.svg) no-repeat center;cursor: pointer;vertical-align: middle;}
+
+
+.searchP .filterGroup {margin-top: 21px;margin-right: 39px;border-bottom: 1px solid #ececec;}
+
+/*210430 수정*/
+.searchP .filterGroup .fCheck input[type="checkbox"] + label:after {top: 1px; left: 0px;
+	-webkit-margin-before: 0px;}
+
+
+/*210430 검색어 키워드*/
+/*210503 min-height*/
+.innerSearch .searchWrap{margin: 4px 0px 0px 14px;   font-size: 12px;}
+.innerSearch .searchWrap .condtion {color: #f04349;display: inline-block;line-height: 13px;margin-bottom: 5px; margin-right: 5px;margin: -2px 21px 6px 0;}
+.innerSearch .searchWrap .condtion span.del {display: inline-block;width: 13px;height: 13px;margin: -2px 0 0 0px;background: url(../images/common/delete-word.svg) no-repeat center;cursor: pointer;vertical-align: middle;}
+
+
+/*210427*/
+.searchTab{display: none;}
+
+/*210427 margin bottom 제거, 폰트 변경 */
+/*210503 폰트  수정*/
+.searchP .filterGroup p.tit {font-size: 13px;color: #222222;font-family: 'notokr-medium', sans-serif;line-height: 18px;}
+
+.searchP .filterGroup p.tit.general {margin-bottom: 1px;height: 29px;}
+.searchP .filterGroup p.tit a {display: block;width: 100%;height: 100%;background: none;position: relative;}
+.searchP .filterGroup p.tit a:after {position:absolute;top: 7px;right: 0px;display:block;content:"";width:9px;height:5px;vertical-align:middle;background: url(../images/common/common_sfix_icon.png) no-repeat 0px -50px;}
+.searchP .filterGroup p.tit a.open:after {background-position: 0px -100px;}
+.searchP .filterGroup p.tit a.active {color: #f04349; background-position: 181px -93px;}
+.searchP .filterGroup p.tit a:hover {text-decoration: none;}
+.searchP .filterGroup p.tit a.hide {pointer-events: none; background: none;}
+.searchP .filterGroup p.tit a.hide:after {background: none;}
+
+.searchP .filterGroup ul.yearlySort {overflow: hidden;margin-bottom: 17px;}
+.searchP .filterGroup ul.yearlySort li.year {margin-bottom: 8px;font-size: 13px;}
+.searchP .filterGroup ul.yearlySort li.year a {/* font-size: 13px; */}
+.searchP .filterGroup ul.yearlySort li.year a.selected {color: #f04349;}
+.searchP .filterGroup ul.yearlySort li.year span.directMod {color: #212121;margin-bottom: 8px;display: block;}
+.searchP .filterGroup ul.yearlySort li.year span.directMod.selected {color: #f04349;}
+.searchP .filterGroup ul.yearlySort li.year p.grouping .gInputText .fText {padding: 2px 9px 4px; height: 27px; font-size: 13px; border: 1px solid #c8c8c8;}
+.searchP .filterGroup ul.yearlySort li.year p.grouping .gInputText .fText::placeholder {color: #999;}
+.searchP .filterGroup ul.yearlySort li.year p.grouping .gInputText .fText::-ms-input-placeholder {color: #666;}
+.searchP .filterGroup ul.yearlySort li.year p.grouping .gInputText .fText:-ms-input-placeholder{color: #666;}
+.searchP .filterGroup ul.yearlySort li.year p.grouping .txtDash {margin: 0 3px;}
+.searchP .filterGroup ul.yearlySort li.year p.grouping button {padding: 5px 7px 6px;margin-top: -1px;}
+.searchP .filterGroup ul.subjectSort {overflow: hidden;margin-bottom: 13px;}
+.searchP .filterGroup ul.subjectSort li.subject {margin-bottom: 10px;/* margin-bottom: 0px; */font-size: 13px;}
+
+
+/*210430 수정*/
+.searchP .filterGroup ul.subjectSort li.subject .fCheck {padding-left: 0px; line-height: 18px; display: block;
+    overflow: hidden;}
+
+
+/*210430 수정*/
+.searchP .filterGroup ul.subjectSort li.subject .fCheck input[type="checkbox"] + label {display: block; float: left;}
+
+/* 210430 추가*/
+.searchP .filterGroup ul.subjectSort li.subject .fCheck input[type="checkbox"] + label span{
+	display: inline-block;width: 145px;}
+
+/*210503 추가*/
+.searchP .filterGroup ul.subjectSort li.subject .fCheck.fCheckBtn input[type="checkbox"] + label span{width: 162px;}
+
+
+.searchP .filterGroup ul.subjectSort li.subject .fCheck a.btnDetail {margin-left: -3px;}
+
+
+/*210430 마진변경*/
+/*210504 백그라운드 변경*/
+.searchP .filterGroup ul.subjectSort li.subject .fCheck a.btnDetail:after {display: inline-block;content:"";width:10px;height:10px;margin: -1px 0 0 10px;vertical-align: middle;background: url(../images/common/subDown.svg) no-repeat center;}
+.searchP .filterGroup ul.subjectSort li.subject .fCheck a.btnDetail.open:after {background: url(../images/common/subUp.svg) no-repeat center;}
+/*.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort {overflow: hidden; margin: 10px 0 1px 14px;height: 75px;}*/
+.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort {/* overflow: hidden; */margin: 10px 0 1px 14px;margin-top: 0px;height: auto;}
+
+
+/*210430 발행연도 추가*/
+.yearNew ul.subjectDetailSort {margin-left: 0px!important;}
+.yearNew .gInputText{width: 60px!important;}
+.yearNew .fText{height: 27px;text-align: center; border: 1px solid #C8C8C8;border-radius: 3px;color: #999;font-size: 12px;}
+.yearNew .btn{padding: 0px; width: 45px; height: 27px; border: 1px solid #c8c8c8; border-radius: 3px;color: #111!important;min-width: unset!important;margin-top: 0px!important;}
+.yearNew .btn:hover{box-shadow: none;}
+
+
+.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail {margin-bottom: 8px;font-size: 12px;color: #666;}
+.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail:first-child {margin-top: 10px;}
+.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail a {color: #777777;margin-left: -3px;}
+
+/*210430 수정*/
+.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail .fCheck {line-height: 18px; display: block;overflow: hidden;}
+
+
+
+.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail .fCheck:after {display: none;}
+
+/*210430 삭제*/
+/*.searchP .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail .fCheck input[type="checkbox"] + label {position: absolute; left: 0; top: 0;}*/
+.searchP .filterGroup ul.subjectSort li.subject a.more {text-decoration: underline;margin: 0px 0 21px 14px;font-size: 12px;color: #777777;display: block;}
+.searchP .filterGroup .generalWrap {}
+.searchP .filterGroup ul.generalSort {/* overflow: hidden; */margin-bottom: 17px;}
+.searchP .filterGroup ul.generalSort.journal {/* height: 161px; */height: auto;}
+.searchP .filterGroup ul.generalSort li.general {margin-bottom: 7px;font-size: 13px;}
+
+
+
+
+
+/*210430 수정*/
+.searchP .filterGroup ul.generalSort li.general .fCheck {overflow: hidden;line-height: 18px;display: block;}
+
+
+/*210430 수정*/
+.searchP .filterGroup ul.generalSort li.general .fCheck label {display: block;float: left;}
+
+/*210430 수정*/
+.searchP .filterGroup ul.generalSort li.general .fCheck input[type="checkbox"] + label:before {content:'';display:inline-block;margin: 1px 9px 0 0;width: 14px;height: 15px;line-height: 14px;text-align:center;vertical-align:top;border: 1px solid #c8c8c8;background:#fff;box-sizing:border-box;}
+
+/*210430 수정*/
+.searchP .filterGroup ul.generalSort li.general .fCheck label span{width: 164px; display: inline-block;}
+
+
+/*210430 수정*/
+.searchP .filterGroup ul.generalSort li.general .fCheck input[type="checkbox"] + label:after {opacity: 0;display:block;content:"";position:absolute;top: 1px;left: 0px;width:15px;height:15px;background: url(../images/common/checked.svg) no-repeat center;}
+
+
+
+.searchP .filterGroup ul.generalSort li.general .fCheck input[type="checkbox"]:checked + label:after {opacity:1;}
+.searchP .filterGroup ul.generalSort li.general a {/* display: inline-block; */margin-left: 0px;}
+.searchP .filterGroup ul.generalSort li.general a.selected {color: #f04349;}
+.searchP .filterGroup a.more {text-decoration: underline;margin-top: -13px;margin-bottom: 24px;font-size: 12px;color: #222222;display: block;}
+.searchP .filterGroup a.more span.fold {display: none;}
+.searchP .filterGroup .moreLessWrap {position: relative; height: 20px;}
+.searchP .filterGroup .moreLessWrap a:nth-child(1) {width: 60px; float: left;}
+.searchP .filterGroup .moreLessWrap a:nth-child(2) {width: 60px; float: right; text-align: right; margin-right: 5px;}
+
+.searchP .filterGroup p.searchBox {margin-bottom: 25px;}
+.searchP .filterGroup p.searchBox:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+.searchP .filterGroup p.searchBox .fSelect.filtering {display:block;width: 100%;}
+
+/*210427 마진 수정*/
+.searchP .filterGroup p.searchBox .gInputText {float: left;margin-right: 0px;}
+
+
+.searchP .filterGroup p.searchBox .gInputText .placeholder {margin-top: -8px;}
+
+/*210427 height 수정*/
+.searchP .filterGroup p.searchBox .gInputText .fText {padding: 2px 9px 4px; height: 33px; font-size: 13px; border: 1px solid #c8c8c8;}
+
+
+.searchP .filterGroup p.searchBox button {padding: 5px 7px 6px;/* margin-top: -1px; */*margin-top: -1px;float: left;}
+.searchP .filterGroup ul.volume {padding: 0;margin-bottom: 150px;}
+.searchP .filterGroup ul.volume li.group {border-bottom: 1px solid #e7e7e7;position: relative;display: block;}
+.searchP .filterGroup ul.volume li.group:first-child {border-top: 1px solid #e7e7e7;}
+.searchP .filterGroup ul.volume li.group:hover .submMenuWrap {display:block;}
+.searchP .filterGroup ul.volume li.group a.tit {display: block;color: #222222;font-size: 13px;font-family: 'notokr-bold', sans-serif;padding: 12px 0 13px 0;}
+.searchP .filterGroup ul.volume li.group a.active {color: #f04347;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap {display:none;position:absolute;left: 189px;top: -1px;z-index: 10;padding-left: 19px;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu {padding: 0;/* padding-bottom: 5px; */width: 245px;border: 1px solid #e0e0e0;background:#fff;font-family: 'notokr-medium', sans-serif;font-size: 13px;color: #555555;box-shadow: 3px 3px 8px rgba(0,0,0,.1);box-shadow: 3px 4px 6px rgba(0,0,0,.2);line-height: 20px;text-align: left;position: relative;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu:before {position: absolute;width: 0;height: 0;display: inline-block;content: "";border-color: transparent;border-style: solid;left: -15px;top: 12px;border-width: 7px 7px 7px;border-right-color: #cccccc;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu:after {position: absolute;width: 0;height: 0;display: inline-block;content: "";border-color: transparent;border-style: solid;left: -14px;top: 12px;border-width: 7px 7px 7px;border-right-color: #ffffff;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu p.year {color: #111111;font-size: 13px;font-family: 'notokr-bold', sans-serif;border-bottom: 1px solid #eeeeee;/* margin-bottom: 6px; */padding: 10px 0 12px 15px;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu ul.sub {padding: 6px 0 5px;overflow-y: auto;max-height: 371px;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu ul.sub li.menu {}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu ul.sub li.menu a {display: block;color: #222222;font-size: 13px;font-family: 'notokr-medium', sans-serif;padding: 5px 14px;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu ul.sub li.menu a:hover {background: #f1f1f1; text-decoration: none;}
+.searchP .filterGroup ul.volume li.group .submMenuWrap .subMenu ul.sub li.menu a.active {color: #f04347; font-family: 'notokr-bold', sans-serif;}
+
+.searchP .filterGroup .selectBox {display: none;}
+
+.searchP .filterGroup ul.author {padding: 0;margin-bottom: 17px;overflow: hidden;}
+.searchP .filterGroup ul.author li.group {border-bottom: 1px solid #e7e7e7;position: relative;display: block;margin-bottom: 12px;}
+.searchP .filterGroup ul.author li.group:last-child {border: none;margin-bottom: 0px;}
+.searchP .filterGroup ul.author li.group p.person {line-height: 18px;margin-bottom: 4px;}
+.searchP .filterGroup ul.author li.group p.person a.name {color: #3c63e0;/* font-size: 14px; */}
+.searchP .filterGroup ul.author li.group p.person span.organ {color: #222222;font-size: 13px;}
+.searchP .filterGroup ul.author li.group p.thesis {margin-bottom: 13px;}
+.searchP .filterGroup ul.author li.group p.thesis span {color: #777777;font-size: 13px;}
+.searchP .filterGroup ul.author li.group p.thesis span small {color: #db3a3f;font-size: 13px;}
+
+.searchP .filterGroup.cate {margin-top: 39px;}
+.searchP .filterGroup.cate + .filterGroup.cate {margin-top: 12px;}
+.searchP .filterGroup.cate p.tit {font-size: 16px;font-family: 'notokr-regular', sans-serif;margin-bottom: 0px;line-height: 18px;height: 30px;}
+.searchP .filterGroup.cate p.tit a {display: block;width: 100%;height: 100%;background: none;position: relative;}
+.searchP .filterGroup.cate p.tit a:after {position:absolute;top: 5px;right: 0px;display:block;content:"";width:15px;height:8px;vertical-align:middle;background: url(../images/common/common_sfix_icon.png) no-repeat 0px -200px;}
+.searchP .filterGroup.cate p.tit a.active {font-family: 'notokr-bold', sans-serif;}
+.searchP .filterGroup.cate p.tit a.active:after {background-position: 0px -250px;}
+.searchP .filterGroup.cate p.tit a:hover {text-decoration: none;}
+.searchP .filterGroup.cate ul.generalSort {/* overflow: hidden; */padding-top: 18px;padding-left: 15px;margin-bottom: 19px;border-top: 1px solid #ececec;}
+.searchP .filterGroup.cate ul.generalSort li.general {margin-bottom: 9px;font-size: 13px;}
+.searchP .filterGroup.cate ul.generalSort li.general a {/* display: inline-block; */margin-left: 0px;}
+.searchP .filterGroup.cate ul.generalSort li.general a.selected {font-family: 'notokr-bold', sans-serif;}
+.searchP .filterGroup.cate a.more {margin-bottom: 20px;}
+
+.searchP .filterGroupWrap.cate .selectBox {display: none;}
+
+
+/*210501 border 삭제*/
+.searchP .tileListArea {position: relative;overflow: hidden;padding-bottom: 12px;}
+
+
+.searchP .tileListArea ul.recommend {padding: 0;margin: 0 -25px 0;overflow: hidden;}
+.searchP .tileListArea ul.recommend li.img {float: left;width: calc(20% - 52px);/* max-width: 120px; *//* width: 120px; *//* height: 150px; *//* height: 100%; */margin-left: 25px;margin-right: 25px;margin-bottom: 20px;/* border: 1px solid #cccccc; */position: relative;}
+.searchP .tileListArea ul.recommend li.img a.hover {cursor: pointer;display: block;height: 150px;border: 1px solid #cccccc;position: relative;}
+.searchP .tileListArea ul.recommend li.img a.hover img {width: 100%;height: 100%;max-height: 148px;}
+.searchP .tileListArea ul.recommend li.img a.hover p.desc {display: none;}
+.searchP .tileListArea ul.recommend li.img a.hover:hover p.desc {display: block;background: rgba(25,9,11,0.7);padding-left: 14px;padding-right: 15px;position: absolute;left: 0;top: 0;width: 100%;height: 100%;display: table;}
+.searchP .tileListArea ul.recommend li.img a.hover:hover p.desc span {font-size: 15px;color: #ffffff;display: table-cell;vertical-align: middle;word-break: break-word;}
+.searchP .tileListArea ul.recommend li.img p.info {margin-top: 21px;margin-bottom: 1px;}
+.searchP .tileListArea ul.recommend li.img p.info span.type {display: inline-block;font-size: 12px;color: #326f0e;vertical-align: middle;margin-right: 4px;margin-bottom: 8px;}
+.searchP .tileListArea ul.recommend li.img p.info span.update {display: inline-block;width: 44px;height: 15px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -250px -350px;margin-top: -2px;margin-bottom: 8px;}
+
+.mobileFacetedArea {display: none;}
+
+.searchP .headingArea.schResult button.btnIconB span.chooseBell {margin: 0 2px 0 1px;}
+.searchP .headingArea.schResult button.btnIconB span.chooseBell:before {box-shadow: none;background: url(../images/common/search-result-on.svg) no-repeat; background-position: left center!important;margin-right: 5px;}
+
+
+/*210430 수정*/
+/*210504 수정*/
+.searchP .headingArea.schResult button.btnIconB {border: 1px solid #ccc!important;color: #666;padding: 0px; width: 107px;height: 32px;border-radius: 3px;}
+.searchP .headingArea.schResult button.btnIconB:hover{box-shadow: none;}
+.searchP .headingArea.schResult button.btnIconB span.bell:before{box-shadow: none;background: url(../images/common/search-result-off.svg) no-repeat; background-position: left center!important;margin-right: 5px;}
+
+
+/*210504 추가*/
+.searchP .headingArea.schResult button.on{color: #CC4736; border-color: #CC4736!important;}
+.searchP .headingArea.schResult button.on span.bell:before{background: url(../images/common/search-result-on.svg) no-repeat; background-position: left center!important;}
+
+.searchP .headingArea.schResult button.btnIconB span {font-size: 12px;}
+.searchP .headingArea.schResult button.btnIconB span.bell {margin: 0 2px 0 1px;}
+.searchP .headingArea.schResult button.btnIconB span:before {width: 14px;height: 14px;}
+.searchP .headingArea.schResult button.btnIconB span.bell:before {background-position: -450px -200px;background-position: -250px -250px;}
+.searchP .headingArea.schResult button.btnIconB:hover span.bell:before {background-position: -300px -250px;}
+
+
+/*210430 수정*/
+.searchP .pcAppendArea .detachNodeWrap .selectGroup.detachNodeResult1 button.btnIconB {border: none!important;color: #666666;padding: 0px;position: absolute; right: 0px;top: 0px;}
+
+
+/*210430추가*/
+
+.searchP .pcAppendArea .detachNodeWrap .selectGroup.detachNodeResult1 button.btnIconB:hover{box-shadow: none;}
+
+
+
+.searchP .pcAppendArea .detachNodeWrap .selectGroup.detachNodeResult1 button.btnIconB span {font-size: 12px;}
+.searchP .pcAppendArea .detachNodeWrap .selectGroup.detachNodeResult1 button.btnIconB span:before {width: 14px;height: 14px;}
+.searchP .pcAppendArea .detachNodeWrap .selectGroup.detachNodeResult1 button.btnIconB span.cancel {margin: 0;}
+
+
+/*210430 수정*/
+.searchP .pcAppendArea .detachNodeWrap .selectGroup.detachNodeResult1 button.btnIconB span.cancel:before {background-position: center;}
+
+
+/*210430 right box 추가*/
+.right-box{position: absolute; top: 128px; right: -140px;width: 120px;}
+.right-box .rbTitle{ margin-top: 12px;	font-size: 14px;color: #111111;font-family: 'notokr-bold', sans-serif;	margin-bottom: 5px;	display: block;}
+.right-box .latestList .sideKeyword{display: block; margin: 11px 0px;font-size: 12px;color: #111111;font-family: 'notokr-regular', sans-serif;padding-right: 10px;position: relative;}
+.right-box .latestList .sideKeyword span{	width: 9px;height: 9px;background: url('../images/common/side-close.svg');	background-size: 9px 9px;background-position: right center;    display: inline-block;position: absolute;right: 0px;top: 2px;	cursor: pointer;
+}
+
+
+
+
+/*210504 수정*/
+.right-box .searchToggle{ right: 0px; position: relative;	display: block;	width: 100%;height: 65px!important;display: none;}
+
+
+.right-box #searchInclude {	position: relative;	display: inline-block;		line-height: 20px;}
+
+.right-box .switch {position: relative;	display: inline-block;	width: 50px;height: 20px;  
+	right: 1px;	top: 5px;}
+.right-box .side-inner .inner-wrapper-sticky .latestList{margin-bottom: 20px;padding-bottom: 20px; border-bottom: 1px solid #ececec;}
+.right-box .side-inner.is-affixed .inner-wrapper-sticky{top: 160px!important;  transition: all .5s;}
+.right-box .side-inner.is-affixed .searchToggle{display: block;}
+
+@media screen and (max-width:1400px){
+	.right-box{visibility: hidden;right: 0px;}
+}
+
+
+.notiArea.noData {background: #ffffff;margin-bottom: 0px;margin-top: -12px;border: none;}
+.notiArea.noData ul {border: none;background: #fff;padding-left: 5px;}
+.notiArea.noData ul li {font-size: 13px;color: #777777;font-family: 'notokr-regular', sans-serif;line-height: 20px;padding-left: 10px;position: relative;margin-bottom: 3px;}
+.notiArea.noData ul li:before {position: absolute;left: 0px;top: 9px;display:inline-block;content:"";/* margin: -2px 7px 0 0px; */width: 3px;height: 3px;vertical-align:middle;background: #cccccc;}
+
+/* 논문상세페이지 */
+.searchP .thesisInfoArea {margin-top: 25px;margin-bottom: 29px;}
+.searchP .thesisInfoArea:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+.searchP .thesisInfoArea .typeWrap {padding: 0;margin-bottom: 7px;}
+.searchP .thesisInfoArea .typeWrap:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+.searchP .thesisInfoArea .typeWrap ul.type {float: left;overflow: hidden;position: relative;}
+.searchP .thesisInfoArea .typeWrap ul.type li {float: left;font-size: 12px;position: relative;padding: 0 4px 0;}
+.searchP .thesisInfoArea .typeWrap ul.type li:first-child {padding-left: 0px;}
+.searchP .thesisInfoArea .typeWrap ul.type li.data {color: #326f0e;font-size: 16px;}
+.searchP .thesisInfoArea .typeWrap ul.type li.use {color: #111111;}
+.searchP .thesisInfoArea .typeWrap ul.type li.rate {color: #ef4348;padding-top: 2px;}
+.searchP .thesisInfoArea .typeWrap ul.type li.knowledge {color: #111111;}
+.searchP .thesisInfoArea h2 {padding: 0;line-height: 33px;}
+.searchP .thesisInfoArea p.subTit {font-size: 16px;color: #111111;margin-bottom: 6px;position: relative;padding-left: 9px;line-height: 21px;}
+.searchP .thesisInfoArea p.subTit:before {position:absolute;top: 11px;left:0;display:block;content:"";width: 4px;height: 1px;vertical-align:middle;background: #111111;}
+.searchP .thesisInfoArea p.equalTit {font-size: 13px;color: #999999;margin-bottom: 19px;line-height: 17px;}
+.searchP .thesisInfoArea .quoteWrap {padding: 21px 140px 24px 21px;border: 1px solid #e9e9e9;background: #fafafa;position: relative;margin-bottom: 19px;margin-top: 30px;}
+.searchP .thesisInfoArea .quoteWrap p.author {padding: 0;font-size: 14px;color: #222222;margin-bottom: 5px;line-height: 20px;}
+.searchP .thesisInfoArea .quoteWrap p.author a {padding: 0;color: #3c63e0;}
+.searchP .thesisInfoArea .quoteWrap ul.infoWrap {overflow: hidden;margin-bottom: -5px;margin-left: -6px;}
+.searchP .thesisInfoArea .quoteWrap ul.infoWrap li {float: left;position: relative;padding: 0 6px 0 6px;color: #222222;font-size: 14px;margin-bottom: 5px;}
+.searchP .thesisInfoArea .quoteWrap ul.infoWrap li:first-child {/* padding-left: 0px; */}
+.searchP .thesisInfoArea .quoteWrap ul.infoWrap li:after {position:absolute;top: 2px;right:0;display:block;content:"";width:1px;height: 11px;vertical-align:middle;background: #d8d8d8;}
+.searchP .thesisInfoArea .quoteWrap ul.infoWrap li:last-child:after {display:none;}
+.searchP .thesisInfoArea .quoteWrap ul.infoWrap li a {color: #3c63e0;}
+.searchP .thesisInfoArea .quoteWrap p.doi {padding: 0;font-size: 14px;color: #222222;margin-top: 6px;}
+.searchP .thesisInfoArea .quoteWrap button.btnReport {position: absolute;right: 0;top: -25px;font-size: 12px;color: #898989;}
+.searchP .thesisInfoArea .quoteWrap button.btnReport:after {display: inline-block;content:"";width: 5px;height: 9px;margin: -2px 0 0 5px;vertical-align: middle;background:url(../images/search/search_sfix_icon.png) no-repeat 0 0;}
+.searchP .thesisInfoArea .quoteWrap .btnGroup {position: absolute;right: 18px;top: 19px;}
+.searchP .thesisInfoArea .quoteWrap .btnGroup button.quote {padding: 5px 11px 4px 10px;}
+.searchP .thesisInfoArea .quoteWrap .btnGroup button.quoteMenu {width: 26px;height: 25px;border: 1px solid #c8c8c8;background: url(../images/search/search_sfix_icon.png) no-repeat -44px 7px;margin-left: 3px;}
+.searchP .thesisInfoArea .quoteWrap .btnGroup button.quoteMenu:hover {border: 1px solid #c8c8c8 !important;box-shadow: 2px 2px 3px rgba(0,0,0,.2);}
+.searchP .thesisInfoArea .btnWrap {padding: 0;}
+.searchP .thesisInfoArea .btnWrap p.btnGroup {float: right;padding-bottom: 5px;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.bookmark,
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.save {color: #888888;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span:before {width: 16px;height: 16px;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.pdf:before {background-position: -450px -250px;margin: -3px 8px 0px 0;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.save:before {background-position: -50px -198px;margin: -2px 7px 0px 0;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.bookmark:before {background-position: -50px -300px;margin: -2px 7px 0px 0;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.url:before {background-position: -400px -350px;margin: -2px 7px 0px 0;}
+.searchP .thesisInfoArea .btnWrap button.btnIconB span.use:before {background-position: -450px -350px;margin: -2px 7px 0px 0;}
+.searchP .thesisInfoArea .btnWrap button.bookmark.selected {background-color: #d75054 !important;border: 1px solid #c54044 !important;}
+.searchP .thesisInfoArea .btnWrap button.bookmark.selected span.bookmark {color: #ffffff;}
+.searchP .thesisInfoArea .btnWrap button.bookmark.selected span.bookmark:before {background-position: -200px -300px;}
+.searchP .thesisInfoArea .btnWrap .btn + .btn {margin-left: 8px;}
+.searchP .thesisInfoArea .btnWrap span.record {float: left;display: block;color: #999999;font-size: 12px;margin-top: 12px;}
+.searchP .thesisInfoArea .btnWrap span.notice {float: right;display: block;color: #db3a3f;font-size: 12px;margin-top: 10px;width: 100%;/* line-height: 18px; */}
+
+.searchP .thesisDetailArea {position: relative;/* margin-bottom: 47px; */padding-bottom: 47px;/* padding-top: 100px !important; *//* margin-bottom: -53px; */}
+.searchP .thesisDetailArea:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+.searchP .thesisDetailArea h3 {position: relative;font-size: 19px;font-family: 'notokr-bold', sans-serif;/* height: 42px; */border-bottom: 1px solid #c8c8c8;margin-bottom: 22px;color: #777777;padding-bottom: 17px;line-height: 25px;margin-top: -1px;}
+.searchP .thesisDetailArea h3 a.btnToggle {display: block;width: 100%;height: 100%;color: #777777;padding-right: 45px;}
+.searchP .thesisDetailArea h3 a.btnToggle:hover {text-decoration: none;}
+.searchP .thesisDetailArea h3 a.btnToggle:after {position: absolute;right: 1px;top: 10px;content:"";width: 17px;height: 9px;/* margin: -2px 0 0 5px; */vertical-align: middle;background: url(../images/search/search_sfix_icon.png) no-repeat -100px 0px;}
+.searchP .thesisDetailArea h3 a.btnToggle.open:after {background-position: -150px 0px;}
+.searchP .thesisDetailArea.empty h3 a.btnToggle {pointer-events: none;}
+.searchP .thesisDetailArea.empty h3 a.btnToggle:after {background-position: -100px 0px; opacity: 0.3;}
+.searchP .thesisDetailArea h3 a.btnToggle span.count {margin-left: 3px;color: #ef4348;}
+.searchP .thesisDetailArea h3 .gRight {position: absolute;right: 30px;bottom: 11px;}
+.searchP .thesisDetailArea h3 .gRight.r0 {right: 0px;bottom: 15px;}
+.searchP .thesisDetailArea h3 button.btnApply {color: #777777;padding: 5px 7px 5px;}
+.searchP .thesisDetailArea h3 p.reviewStats {display: inline-block;font-size: 13px;color: #777777;font-family: 'notokr-regular', sans-serif;font-weight: normal;margin-bottom: 6px;margin-right: 5px;}
+.searchP .thesisDetailArea h3 p.reviewStats span.count {color: #3c63e0;margin-left: 5px;}
+.searchP .thesisDetailArea h3 p.reviewStats span.count.bad {color: #c03639;}
+.searchP .thesisDetailArea h3 ul.sort {margin-bottom: 3px;}
+.searchP .thesisDetailArea h3 ul.sort li.order:before {top: 10px;}
+.searchP .thesisDetailArea h3 p + p {margin-left: 8px;}
+.searchP .thesisDetailArea h4 {font-size: 16px;font-family: 'notokr-bold', sans-serif;margin-bottom: 22px;}
+.searchP .thesisDetailArea .abstract {max-height: 290px;overflow: hidden;font-size: 14px;color: #111111;line-height: 22px;}
+.searchP .thesisDetailArea .abstract.autoHeight {height: 18px;margin-bottom: -3px;}
+.searchP .thesisDetailArea p.article {font-size: 14px;color: #111111;line-height: 22px;}
+.searchP .thesisDetailArea p.article .subtit {display: block;}
+.searchP .thesisDetailArea p.description {font-size: 14px;color: #111111;line-height: 22px;margin-bottom: 10px;}
+.searchP .thesisDetailArea p.figure img {width: 70%;}
+.searchP .thesisDetailArea p + p {margin-top: 20px;}
+.searchP .thesisDetailArea p.description + p.figure {margin-top: 10px;}
+.searchP .thesisDetailArea .option {text-align: center;}
+.searchP .thesisDetailArea a.more {position: relative;display: block;font-size: 14px;color: #222222;text-decoration: underline;padding-top: 35px;}
+.searchP .thesisDetailArea a.comt {position: relative;display: block;font-size: 14px;color: #222222;text-decoration: underline;padding-top: 12px;}
+.searchP .thesisDetailArea a.moreReview {position: relative;display: block;font-size: 14px;color: #222222;text-decoration: underline;padding-top: 12px;}
+.searchP .thesisDetailArea p.index {font-size: 14px;color: #999999;line-height: 22px;}
+.searchP .thesisDetailArea p.keyword {font-size: 14px;color: #999999;line-height: 22px;margin-top: -6px;margin-bottom: 11px;}
+.searchP .thesisDetailArea dl.keyword {background: #f7f7f7;padding: 14px 10px 6px 15px;overflow: hidden;}
+.searchP .thesisDetailArea dl.keyword.delBackground {background: transparent;padding: 0;}
+.searchP .thesisDetailArea dl.keyword dd.word {font-size: 14px;margin: 0 14px 9px 0;float: left;}
+.searchP .thesisDetailArea dl.keyword dd.word a {color: #3c63e0;}
+.searchP .thesisDetailArea dl.property {background: #fafafa;padding: 16px 18px 23px;border: 1px solid #e9e9e9;margin-top: 50px;}
+.searchP .thesisDetailArea dl.property dt {font-size: 13px;color: #555555;font-family: 'notokr-bold', sans-serif;margin-bottom: 8px;}
+.searchP .thesisDetailArea dl.property dd {font-size: 13px;color: #777777;line-height: 20px;position: relative;}
+.searchP .thesisDetailArea ul.list {padding: 0;}
+.searchP .thesisDetailArea ul.list li.item {margin-bottom: 11px;}
+.searchP .thesisDetailArea ul.list li.item .num {font-size: 18px;color: #777777;font-family: 'notokr-bold', sans-serif;position: absolute;left: 0;top: -1px;}
+.searchP .thesisDetailArea ul.list li.item .textWrap {display: inline-block;width: 93%;}
+.searchP .thesisDetailArea ul.list li.item .textWrap p.tit {padding: 0 0 0 20px;font-size: 16px;color: #3c63e0;line-height: 22px;margin-bottom: 6px;position: relative;}
+.searchP .thesisDetailArea ul.list li.item .textWrap ul.info {overflow: hidden;margin-bottom: 6px;padding-left: 21px;margin-left: -7px;}
+.searchP .thesisDetailArea ul.list li.item .textWrap ul.info li {float: left;position: relative;padding: 0 8px 0 7px;color: #777777;font-size: 13px;margin-bottom: 5px;}
+.searchP .thesisDetailArea ul.list li.item .textWrap ul.info li:first-child {/* padding-left: 0px; */}
+.searchP .thesisDetailArea ul.list li.item .textWrap ul.info li:after {position:absolute;top: 3px;right:0;display:block;content:"";width:1px;height: 9px;vertical-align:middle;background: #c8c8c8;}
+.searchP .thesisDetailArea ul.list li.item .textWrap ul.info li:last-child:after {display:none;}
+.searchP .thesisDetailArea ul.list.new {padding: 0;}
+.searchP .thesisDetailArea ul.list.new li.item {margin-bottom: 11px;}
+.searchP .thesisDetailArea ul.list.new li.item p.tit strong {font-size: 16px;color: #777777;font-family: 'notokr-bold', sans-serif;position: absolute;left: 0;top: -1px;}
+.searchP .thesisDetailArea ul.list.new li.item .num {float: left;position: static;font-size: 16px;margin-right: 4px;/* font-family: 'notokr-medium', sans-serif; */}
+.searchP .thesisDetailArea ul.list.new li.item p.tit {padding: 0 0 0 0px;font-size: 16px;color: #666;line-height: 22px;margin-bottom: 6px;position: relative;}
+.searchP .thesisDetailArea ul.list.new li.item ul.info {overflow: hidden;margin-bottom: 6px;padding-left: 0px;margin-left: -6px;}
+.searchP .thesisDetailArea ul.list.new li.item ul.info li {float: left;position: relative;padding: 0 8px 0 7px;color: #777777;font-size: 13px;margin-bottom: 5px;}
+.searchP .thesisDetailArea ul.list.new li.item ul.info li:first-child {/* padding-left: 0px; */}
+.searchP .thesisDetailArea ul.list.new li.item ul.info li:after {position:absolute;top: 3px;right:0;display:block;content:"";width:1px;height: 9px;vertical-align:middle;background: #c8c8c8;}
+.searchP .thesisDetailArea ul.list.new li.item ul.info li:last-child:after {display:none;}
+.searchP .thesisDetailArea ul.References {padding: 0;}
+.searchP .thesisDetailArea ul.References li {font-size: 14px;color: #111111;line-height: 19px;margin-bottom: 5px;}
+.searchP .thesisDetailArea ul.References li .numbering {font-size: 16px;color: #999999;font-family: 'notokr-bold', sans-serif;font-style: italic;}
+.searchP .thesisDetailArea ul.cate {overflow: hidden;margin-top: 30px;margin-bottom: -8px;}
+.searchP .thesisDetailArea ul.cate li.path {float: left;width: 50%;margin-bottom: 11px;position: relative;padding-left: 9px;font-size: 14px;line-height: 19px;}
+.searchP .thesisDetailArea ul.cate li.path a {font-size: 14px;color: #3c63e0;line-height: 19px;}
+.searchP .thesisDetailArea ul.cate li.path:before {position: absolute;left: 0px;top: 8px;content:"";/* margin: -2px 7px 0 0px; */width: 3px;height: 3px;vertical-align:middle;background: #555555;border-radius: 99px;}
+.searchP .thesisDetailArea ul.cate li.path.top100,
+.searchP .thesisDetailArea ul.cate li.path.top100 a {font-family: 'notokr-regular', sans-serif;}
+.searchP .thesisDetailArea ul.cate li.path.top100 span.badge {color: #ef4348;font-size: 11px;margin-left: 6px;font-family: 'notokr-medium', sans-serif;display: inline-block;margin-top: -4px;vertical-align: middle;}
+.searchP .thesisDetailArea ul.sort {display: inline-block;float: right;margin-top: 9px;margin-left: 20px;}
+.searchP .thesisDetailArea ul.sort li.order {float: left;position: relative;padding: 0 8px 0 8px;}
+.searchP .thesisDetailArea ul.sort li.order:first-child {padding-left: 0px;}
+.searchP .thesisDetailArea ul.sort li.order:last-child {padding-right: 0px;}
+.searchP .thesisDetailArea ul.sort li.order:before {position:absolute;top: 3px;left:0;display:block;content:"";width:1px;height: 10px;vertical-align:middle;background: #d0d0d0;}
+.searchP .thesisDetailArea ul.sort li.order:first-child:before {display:none;}
+.searchP .thesisDetailArea ul.sort li.order a {color: #999999;font-size: 13px;font-family: 'notokr-regular', sans-serif;font-weight: normal;/* vertical-align: text-top; */}
+.searchP .thesisDetailArea ul.sort li.order.selected a {color: #222222;}
+.searchP .thesisDetailArea ul.sort li.order a:before {display:inline-block;content:"";vertical-align: middle;}
+.searchP .thesisDetailArea ul.sort li.order.selected a:before {width: 16px;height: 14px;background: url(../images/common/common_sfix_icon.png) no-repeat -350px -147px;}
+
+.searchP .thesisDetailArea .nodata {padding: 0px 22px 0px;text-align: center;width: 100%;}
+.searchP .thesisDetailArea .nodata.keyword {margin-bottom: 0px;}
+.searchP .thesisDetailArea .nodata span {font-size: 13px;color: #111111;}
+
+.searchP .thesisDetailArea .comtBox {position: relative;padding: 5px 0px 8px;margin-bottom: 9px;}
+.searchP .thesisDetailArea .comtBox.btnArea {padding-right: 130px;}
+.searchP .thesisDetailArea .comtBox span.text {font-size: 14px;color: #999999;line-height: 20px;}
+.searchP .thesisDetailArea .comtBox .gRight {position: absolute;right: 0;top: 1px;}
+.searchP .thesisDetailArea .comtBox .gRight button.btnIconB {border: 1px solid #c8c8c8 !important;color: #333333;padding: 6px 9px 4px;min-width: 71px;}
+.searchP .thesisDetailArea .comtBox .gRight button.btnIconB span {font-size: 12px;}
+.searchP .thesisDetailArea .comtBox .gRight button.btnIconB span.bell {margin: 0 2px 0 1px;}
+.searchP .thesisDetailArea .comtBox .gRight button.btnIconB span:before {width: 14px;height: 14px;}
+.searchP .thesisDetailArea .comtBox .gRight button.btnIconB span.bell:before {background-position: -250px -250px;}
+.searchP .thesisDetailArea .comtBox .gRight button.btnIconB.selected span.bell:before {background-position: -300px -250px;}
+.searchP .thesisDetailArea .comtBox .gRight span.text {font-size: 13px;color: #222222;margin-right: 12px;}
+
+.searchP .thesisDetailArea .infoBox {border: 1px solid #e7e7e7;margin-bottom: 15px;}
+.searchP .thesisDetailArea .infoBox ul.list {overflow: hidden;padding: 20px 25px 4px;}
+.searchP .thesisDetailArea .infoBox ul.list li.item {float: left;width: 50%;margin-bottom: 15px;padding-left: 0px;}
+.searchP .thesisDetailArea .infoBox ul.list li.item:nth-child(1) {padding-left: 0px;}
+.searchP .thesisDetailArea .infoBox ul.list li.item span {font-size: 14px;color: #777777;margin-right: 22px;}
+.searchP .thesisDetailArea .infoBox ul.list li.item strong {color: #111111;font-weight: normal;font-size: 14px;font-family: 'notokr-medium', sans-serif;}
+
+.searchP .thesisDetailArea .tableLayout table {table-layout:fixed;width:100%;}
+.searchP .thesisDetailArea .tableLayout table thead th {padding: 10px 5px;text-align:center;color: #111111;background: #fafafa;vertical-align:middle;border-top: 1px solid #c8c8c8;border-bottom: 1px solid #e9e9e9;font-family: 'notokr-medium', sans-serif;font-weight: normal;font-size: 13px;}
+.searchP .thesisDetailArea .tableLayout table thead th.line {border-right: 1px solid #e9e9e9;}
+.searchP .thesisDetailArea .tableLayout table thead th.line:last-child {border-right: none;}
+.searchP .thesisDetailArea .tableLayout table thead th.year {padding: 7px 5px 8px;font-size: 12px;line-height: 13px;}
+.searchP .thesisDetailArea .tableLayout table tbody td {padding: 9px 11px 10px;color: #111111;font-size: 13px;vertical-align:middle;border-top: 1px solid #e9e9e9;border-bottom: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;text-align: center;position: relative;}
+.searchP .thesisDetailArea .tableLayout table tbody td.inform{padding: 9px 11px 10px;color: #111111;font-size: 13px;vertical-align:middle;border-top: 1px solid #e9e9e9;border-bottom: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;text-align: center;position: relative;font-weight: bold;font-size: 0.9rem;}
+.searchP .thesisDetailArea .tableLayout table tbody td:last-child {border-right: none;position: relative;}
+
+.searchP .thesisDetailArea .reviewComt {color: #777777;line-height: 18px;margin-bottom: 12px;}
+.searchP .thesisDetailArea .reviewComt span {color: #111111;}
+.searchP .thesisDetailArea .reviewInputBox {padding: 0;border: 1px solid #d8d8d8;/* margin-bottom: 20px; */position: relative;}
+.searchP .thesisDetailArea .reviewInputBox .reviewHead {padding: 11px 14px;background: #fafafa;overflow: hidden;border-bottom: 1px solid #d8d8d8;}
+.searchP .thesisDetailArea .reviewInputBox .reviewHead p.left {float: left;}
+.searchP .thesisDetailArea .reviewInputBox .reviewHead p.left span.dept {color: #777777;margin-left: 7px;}
+.searchP .thesisDetailArea .reviewInputBox .reviewHead p.right {padding: 0;float: right;padding-right: 11px;}
+.searchP .thesisDetailArea .reviewInputBox .reviewHead p.right .fRadio + .fRadio {margin-left: 35px;}
+.searchP .thesisDetailArea .reviewInputBox .reviewBody .fTextarea {border: none;padding: 16px 16px;}
+.searchP .thesisDetailArea .reviewInputBox .reviewBody .fTextarea::placeholder {font-weight: bold;}
+.searchP .thesisDetailArea .reviewInputBox .reviewFoot {border-top: 1px solid #ebebeb;padding: 0 0 0 15px;position: relative;height: 44px;}
+.searchP .thesisDetailArea .reviewInputBox .reviewFoot span.textLimit {margin-top: 14px;font-size: 12px;color: #777777;display: inline-block;}
+.searchP .thesisDetailArea .reviewInputBox .reviewFoot button.btnWrite {padding: 0;position: absolute;right: -1px;bottom: -1px;min-width: 75px;height: 45px;border: 1px solid #db3a3f!important;}
+.searchP .thesisDetailArea .reviewInputBox .reviewFoot button.btnWrite span {font-size: 15px;}
+.searchP .thesisDetailArea .noDataArea {text-align: center;color: #111111;height: auto;}
+.searchP .thesisDetailArea .noDataArea span.comt {color: #111111;font-size: 15px;display: block;margin-bottom: 15px;margin-top: 10px;}
+.searchP .thesisDetailArea .noDataArea button {min-width: 130px;}
+.searchP .thesisDetailArea .noDataArea button span {color: #fff;font-family: 'notokr-regular', sans-serif;font-size: 15px;}
+
+.searchP .thesisDetailArea .funcButtonArea {margin-top: 29px;margin-bottom: 14px;min-height: 26px;}
+.searchP .thesisDetailArea .funcButtonArea ul {overflow: hidden;}
+.searchP .thesisDetailArea .funcButtonArea ul li {float: left;}
+.searchP .thesisDetailArea .funcButtonArea ul li:nth-child(2) {margin-left: -4px;}
+.searchP .thesisDetailArea .funcButtonArea ul li a.btnQuote {position: relative;padding: 5px 11px 5px;}
+.searchP .thesisDetailArea .funcButtonArea ul li a.btnQuote:hover {box-shadow: none; text-decoration: none;}
+.searchP .thesisDetailArea .funcButtonArea ul li.selected a.btnQuote {border: 1px solid #ef4348 !important;z-index: 1;}
+.searchP .thesisDetailArea .funcButtonArea ul li.selected a.btnQuote span {color: #ef4348;}
+
+.searchP .noAuthArea {position: static;width: calc(100% + 2px);height: calc(100% + 2px);height: 243px;margin: -1px;z-index: 1;}
+.searchP .noAuthArea .noAuthWrap {text-align: center;background: rgba(0,0,0,0.75);width: 100%;height: 100%;padding-top: 50px;}
+.searchP .noAuthArea .noAuthWrap p.icon {width: auto; height: auto;}
+.searchP .noAuthArea .noAuthWrap p.icon.warning {width: 52px;height: 45px;background: url("../images/search/img_noauth_warning.png") no-repeat 0 0;margin: 0 auto;}
+.searchP .noAuthArea .noAuthWrap p.desc {font-size: 14px;color: #dfdfdf;padding-top: 16px;line-height: 22px;}
+
+.searchP .thesisDetailArea .reviewList {padding: 0;}
+.searchP .thesisDetailArea .reviewList ul.list {padding: 0;}
+.searchP .thesisDetailArea .reviewList ul.list li.item {border-bottom: 1px solid #ececec;padding-bottom: 30px;margin-top: 22px;margin-bottom: 16px;}
+.searchP .thesisDetailArea .reviewList ul.list li.item p.writer {margin-bottom: 9px;}
+.searchP .thesisDetailArea .reviewList ul.list li.item p.writer span.name {font-size: 16px;color: #222222;font-family: 'notokr-bold', sans-serif;}
+.searchP .thesisDetailArea .reviewList ul.list li.item p.writer span.dept {padding: 0;font-size: 12px;color: #999999;font-family: 'notokr-regular', sans-serif;margin-left: 10px;margin-bottom: 3px;vertical-align: middle;display: inline-block;}
+.searchP .thesisDetailArea .reviewList ul.list li.item p.text {line-height: 22px;/* line-height: 20px; */font-size: 15px;color: #111111;margin-bottom: 12px;word-break: break-all;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info {overflow: hidden;margin-bottom: 0px;padding-left: 0;margin-left: -10px;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li {float: left;position: relative;padding: 0 10px 0;color: #777777;font-size: 12px;padding-top: 1px;margin-top: -1px;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li:first-child {/* padding-left: 0px; */}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li:after {position:absolute;top: 3px;right:0;display:block;content:"";width:1px;height: 9px;vertical-align:middle;background: #c8c8c8;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li:last-child:after {display:none;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li span.good {color: #3c63e0;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li span.bad {color: #c03639;}
+.searchP .thesisDetailArea .reviewList ul.list li.item ul.info li a {color: #777777;text-decoration: underline;display: block;padding-bottom: 1px;}
+
+.fSelect.filtering {font-size: 12px;margin-top: -2px;}
+.fSelect.filtering  span {position:absolute;top: 0px;left:0;display:block;padding: 0px 20px 0 10px;width: 100%;height:100%;line-height: 27px;min-height: 27px;}
+.fSelect.filtering  span:after {position:absolute;top:50%;right: 0px;display:block;content:"";margin-top: -8px;width:18px;height:15px;background: url(../images/common/common_sfix_icon.png) no-repeat -50px -45px;box-sizing:border-box;}
+.fSelect.filtering  select {opacity:0;padding: 4px 9px 5px;width: 100%;height:100%;/* -webkit-appearance:none; */-moz-appearance:none;filter:alpha(opacity=0);cursor:pointer;color: #333;font-size: 12px;}
+
+/* 논문상세페이지 - 좌측 앵커 */
+.searchP .stickyAnchorArea {position: relative;top: 0px;}
+.searchP .stickyAnchorArea.isStuck {top: 100px !important;/* transition: 0.3s all; */}
+.searchP .stickyAnchorArea .stickyAnchorWrap{position: absolute;left: -170px;top: -3px;}
+.searchP .stickyAnchorArea ul.stickyAnchor {position: absolute;left: -185px;top: -2px;width: 170px;background: #ffffff;padding: 0px 15px 0 15px;}
+.searchP .stickyAnchorArea ul.stickyAnchor li.menu {border-bottom: 1px solid #e9e9e9;cursor: pointer;}
+.searchP .stickyAnchorArea ul.stickyAnchor li.menu a {display: block;padding: 14px 10px 15px 0;font-size: 13px;color: #777777;font-family: 'notokr-bold', sans-serif;}
+.searchP .stickyAnchorArea ul.stickyAnchor li.menu a:hover {color: #ef4348; text-decoration: none; background: url(../images/search/search_sfix_icon.png) no-repeat 134px -32px;}
+.searchP .stickyAnchorArea ul.stickyAnchor li.menuItem.active a {color: #ef4348; background: url(../images/search/search_sfix_icon.png) no-repeat 134px -32px;}
+.searchP .stickyAnchorArea ul.stickyAnchor li.menuItem a.selected {color: #ef4348; background: url(../images/search/search_sfix_icon.png) no-repeat 134px -32px;}
+.searchP .stickyAnchorArea ul.stickyAnchor .txtEllipsis {vertical-align: top;}
+
+/* 논문상세페이지 - 본문 플로팅 메뉴 */
+.searchP .floatingBarWrap {position: fixed;left: 0;top: 0;width: 100%;border-bottom: 2px solid #686868;background: #f6f6f6;z-index: 100;box-shadow: 0px 3px 3px rgba(0,0,0,.15);display: none;/* display: none !important; */}
+.searchP .floatingBarWrap .floatingBar {padding: 20px 233px 17px 80px;padding: 18px 233px 17px 0px;position: relative;}
+.searchP .floatingBarWrap .floatingBar span.type {font-size: 17px;position: absolute;left: -148px;top: 19px;color: #777777;text-align: right;width: 140px;}
+.searchP .floatingBarWrap .floatingBar p.info {font-size: 18px;color: #111111;font-family: 'notokr-bold', sans-serif;margin-bottom: 3px;/* height: 2.2em; *//* line-height: 24px; *//* position: relative; *//* width: 100%; */}
+.searchP .floatingBarWrap .floatingBar p.info span {/* margin-right: 4px; */line-height: 24px;height: 48px;max-height: 4.2em;/* display: block; */}
+.searchP .floatingBarWrap .floatingBar .btnGroup {padding: 0;position: absolute;right: -1px;top: 24px;}
+.searchP .floatingBarWrap .floatingBar button.pdf {border: 1px solid #3c729f !important;width: 100px;height: 35px;font-size: 14px;margin-right: -1px;}
+.searchP .floatingBarWrap .floatingBar button.pdf2 {border: 1px solid #3c729f;width: 100px;height: 35px;font-size: 14px;margin-right: -1px;}
+.searchP .floatingBarWrap .floatingBar button.save {width: 37px;height: 35px;border: 1px solid #484848 !important;background-position: -90px -290px;}
+.searchP .floatingBarWrap .floatingBar button.bookmark {width: 35px;height: 35px;background-color: #ffffff;border: 1px solid #c8c8c8 !important;background-position: -140px -291px;}
+.searchP .floatingBarWrap .floatingBar button.bookmark:hover {border: 1px solid #c8c8c8;box-shadow: 2px 2px 3px rgba(0,0,0,.2);}
+.searchP .floatingBarWrap .floatingBar .bookmark.selected {background-color: #d75054;border: 1px solid #c73236 !important;background-position: -240px -291px;}
+.searchP .floatingBarWrap .floatingBar .btn + .btn {margin-left: 8px;}
+
+/* 논문상세페이지 - 우측 사이드바 */
+.asideWrap button.alarm {width: 100%;min-height: 37px;border: 1px solid #c8c8c8 !important;margin-bottom: 17px;}
+.asideWrap button.alarm span {font-size: 13px;color: #333333;}
+.asideWrap button.alarm span.bell:before {width: 11px;height: 12px;background-position: -200px 0px;margin: -2px 5px 0px 0;background: url(../images/search/search_sfix_icon.png) no-repeat -200px 0px;}
+.asideWrap button.alarm:hover span.bell:before {background-position: -450px 0px;}
+.asideWrap button.alarm span.chooseBell {margin: 0 2px 0 1px;color: #db3a3f;font-weight: bold;}
+.asideWrap button.alarm span.chooseBell:before {width: 11px;height: 12px;background-position: -200px 0px;margin: -2px 5px 0px 0;background: url(../images/search/search_sfix_icon.png) no-repeat -450px 0px;}
+.asideWrap p.cover {border: 1px solid #c8c8c8;max-width: 190px;width: 100%;max-height: 254px;height: 100%;margin-bottom: 20px;}
+.asideWrap p.cover img {width: 100%;height: 100%;max-height: 252px;}
+.asideWrap .stats {position: relative;height: 169px;margin-bottom: 20px;}
+.asideWrap .stats .grouping {border: 1px solid #c8c8c8;overflow: hidden;width: 100%;height: 85px;background: #fafafa;}
+.asideWrap .stats .grouping p {width: 50%;height: 100%;text-align: center;padding-top: 17px;}
+.asideWrap .stats .grouping p a:hover {color: #3c63e0;}
+.asideWrap .stats .grouping p span.text {display: block;font-size: 13px;color: #111111;margin-bottom: 8px;}
+.asideWrap .stats .grouping p a.mobile {display: none;}
+.asideWrap .stats .grouping p a:hover span.text {text-decoration: none;}
+.asideWrap .stats .grouping p span.text:before {width: 15px;height: 15px;display: inline-block;content:"";margin: 0;vertical-align: middle;background:url(../images/search/search_sfix_icon.png) no-repeat;}
+.asideWrap .stats .grouping p span.count {display: block;font-size: 20px;color: #3c63e0;font-family: 'notokr-bold', sans-serif;}
+.asideWrap .stats .grouping.first {position: absolute;left: 0;bottom: 0;border-radius: 0px 0px 5px 5px;border-top: 1px solid #e6e6e6;}
+.asideWrap .stats .grouping.first p {/* padding: 0; */}
+.asideWrap .stats .grouping.first p a {width: 100%; height: 100%}
+.asideWrap .stats .grouping.first p.bookmark {float: right;/* padding: 0; */border-left: 1px solid #e6e6e6;}
+.asideWrap .stats .grouping.first p.bookmark span.text:before {background-position: -249px 0px;margin: 1px 0 0 0;}
+.asideWrap .stats .grouping.first p.bookmark span.count {color: #111111;}
+.asideWrap .stats .grouping.first p.review {float: left;}
+.asideWrap .stats .grouping.first p.review span.text:before {background-position: -300px 0px;margin: 1px 1px 0 0;}
+.asideWrap .stats .grouping.second {position: absolute;left: 0;top: 0;border-radius: 5px 5px 0px 0px;border-bottom: 1px solid #e6e6e6;}
+.asideWrap .stats .grouping.second p {}
+.asideWrap .stats .grouping.second p.use {float: left;/* position: relative; */}
+.asideWrap .stats .grouping.second p.use span.text:before {background-position: -350px 0px;margin: 1px 3px 0 0;}
+.asideWrap .stats .grouping.second p.quote {float: right;border-left: 1px solid #e6e6e6;}
+.asideWrap .stats .grouping.second p.quote span.text:before {background-position: -400px 2px;margin: 0px 1px 0 0;}
+
+/* 논문상세페이지 - Figures & Table */
+.figure_wrap {border:1px solid #d9d9d9;overflow: hidden;padding: 0;position: relative;margin-bottom: 20px;}
+.figure_wrap .title {font-size: 14px;color: #111111;padding: 13px 14px 18px;}
+.figure_wrap .total {position: absolute;right: 16px;top: 10px;font-size: 14px;color: #111111;}
+.figure_wrap .total span {color: #3c63e0; font-family: 'notokr-bold', sans-serif;}
+.figure_wrap .slide_wrap {position:relative;width: 100%;}
+.figure_wrap .btn_prev {position:absolute;left: 0px;top:50%;margin-top: -37px;width: 25px;height: 25px;background: url(../images/figure/btn_figure_prev.png) no-repeat;z-index: 2;}
+.figure_wrap .btn_next {position:absolute;right: 0px;top:50%;margin-top: -37px;width: 25px;height: 25px;background: url(../images/figure/btn_figure_next.png) no-repeat;z-index: 2;}
+.figure_wrap .slide {overflow:hidden;}
+.figure_wrap .slide li {float:left; width: 160px; margin: 0 14px;}
+.figure_wrap .slide .img_wrap {display:block; margin-bottom: 25px;}
+.figure_wrap .slide .img {display:block;position:relative;width:100%;vertical-align:middle;background:#fff;}
+.figure_wrap .slide .img:hover {text-decoration: none;}
+.figure_wrap .slide .img img {width:158px; height: 98px; border:1px solid #e5e5e5;}
+.figure_wrap .slide .img_title {color: #3c63e0; font-size: 13px;display: block; width: 100%; margin-top: 9px;}
+
+/* 논문상세페이지 - 배너 */
+#banner_area {position: relative; top: 0px;}
+.banner_wrap {border:1px solid #d9d9d9;overflow: hidden;padding: 0;position: relative;margin-bottom: 20px;}
+.banner_wrap + .banner_wrap {margin-top: 20px;}
+.banner_wrap .title {font-size: 14px;color: #111111;padding: 13px 14px 18px;}
+.banner_wrap .total {position: absolute;right: 16px;top: 10px;font-size: 14px;color: #111111;}
+.banner_wrap .total span {color: #3c63e0; font-family: 'notokr-bold', sans-serif;}
+.banner_wrap .slide_wrap {position:relative;width: 100%;}
+.banner_wrap .btn_prev {position:absolute;left: 0px;top:50%;margin-top: -12px;width: 25px;height: 25px;background: url(../images/figure/btn_figure_prev.png) no-repeat;z-index: 2;}
+.banner_wrap .btn_next {position:absolute;right: 0px;top:50%;margin-top: -12px;width: 25px;height: 25px;background: url(../images/figure/btn_figure_next.png) no-repeat;z-index: 2;}
+.banner_wrap .slide {overflow:hidden;}
+.banner_wrap .slide li {float:left;width: 188px;/* margin: 0 14px; */}
+.banner_wrap .slide .img_wrap {display:block; margin-bottom: 0px;}
+.banner_wrap .slide .img {display:block;position:relative;width:100%;vertical-align:middle;background:#fff;}
+.banner_wrap .slide .img:hover {text-decoration: none;}
+.banner_wrap .slide .img img {width:188px; height: 194px;}
+.banner_wrap .slide .img_title {color: #3c63e0; font-size: 13px;display: block; width: 100%; margin-top: 9px;}
+
+/* 논문상세페이지 - Figures & Table 팝업 */
+#figure_popup{width:850px}
+#figure_popup .btn_close {position:absolute;right: 11px;top: 15px;width: 30px;height: 30px;text-indent:-9999px;background: url("../images/figure/btn_close.png") no-repeat center center;z-index:20;display: block;}
+#figure_popup .popup_header {padding: 20px 19px 22px;border-bottom: 1px solid #e1e1e1;}
+#figure_popup .popup_header h1 {width: 117px;height: 17px;background: url(../images/figure/logo_dbpia.png) no-repeat 0 0;background-size: cover;}
+#figure_popup .content_area {position:absolute;left:0;top: 60px;right:0;bottom:0;overflow:hidden;overflow-y:auto;zoom:1;}
+#figure_popup .img_wrap {padding: 0;}
+#figure_popup .img_wrap .img {max-width: 622px;border:1px solid #626262;}
+#figure_popup .img_wrap .img_top {padding: 37px 30px 44px;background: #f3f3f3;text-align: center;min-height: 457px;}
+#figure_popup .text_wrap {position: relative;padding: 20px 160px 24px 20px;}
+#figure_popup .text_wrap .title {margin-bottom: 5px;line-height:20px;font-size: 16px;color: #000000;}
+#figure_popup .text_wrap .text {line-height: 16px;font-size: 13px;color:#727272;margin-bottom: 10px;}
+#figure_popup .text_wrap .btn_save {position: absolute;right: 20px;top: 15px;/* top: 50%; *//* margin-top: -17px; */width: 108px;padding: 8px 0 9px;background: #555555;border:1px solid #484848;text-align: center;}
+#figure_popup .text_wrap .btn_save:hover {background-color: #444444; border: 1px solid #444444 !important; text-decoration: none;}
+#figure_popup .text_wrap .btn_save span {font-size: 14px; color: #fff;}
+#figure_popup .text_wrap .btn_save span:before {display: inline-block;content:"";width: 15px;height: 13px;margin: -2px 4px 0 0;vertical-align: middle;background:url(../images/figure/icon_download.png) no-repeat;}
+#figure_popup .text_wrap .btn_save, #figure_popup .btn_save img {vertical-align:bottom}
+#figure_popup .slide_wrap {position:relative;padding: 18px 20px 25px;border-top: 1px solid #e1e1e1;}
+#figure_popup .slide_wrap .title_wrap {margin-bottom: 12px;}
+#figure_popup .slide_wrap .title {display: inline-block;font-size: 15.5px;color: #111111;font-weight:bold;font-family: 'notokr-bold', sans-serif;margin-right: 8px;}
+#figure_popup .slide_wrap .total {display: inline-block;font-size: 13px;color: #777777;}
+#figure_popup .slide_wrap .total span {/* color:#ef1e1c */}
+#figure_popup .slide_wrap .slide_box {clear:both;position:relative;margin:0 auto;width: 100%;z-index:10;padding: 0 41px;}
+#figure_popup .slide_wrap .btn_prev {position:absolute;left: 20px;top: 48px;z-index:20;width: 34px;height: 118px;background: url(../images/figure/btn_figure_prev.gif) no-repeat;pointer-events: all !important;opacity: 1.0 !important;}
+#figure_popup .slide_wrap .btn_next {position:absolute;right: 20px;top: 48px;z-index:20;width: 34px;height: 118px;background: url(../images/figure/btn_figure_next.gif) no-repeat;pointer-events: all !important;opacity: 1.0 !important;}
+#figure_popup .slide_wrap a.disabled {display: block !important;pointer-events: none !important;opacity: 0.3 !important;}
+#figure_popup .slide_wrap a.visible {display: block !important;pointer-events: none;opacity: 0.3;}
+#figure_popup .slide_wrap .slide {overflow:hidden;}
+#figure_popup .slide_wrap .slide li {float:left;/* padding:0 6px; */width:180px;width: 178px;height: 118px;margin: 0 2px;}
+#figure_popup .slide_wrap .slide .thumb_wrap {display:table;width: 178px;height: 118px;border: 1px solid #dddddd;*display:block;}
+#figure_popup .slide_wrap .slide .thumb_wrap a {display:table-cell;position:relative;vertical-align:middle;*display:block;}
+#figure_popup .slide_wrap .slide .thumb_wrap img {width:100%;max-height: 116px;}
+#figure_popup .slide_wrap .slide .border {display:none;position:absolute;left: -1px;top: -1px;right:0;width: calc(100% + 2px);height: 118px;border: 5px solid #ef4348;z-index:20;} /* 20141008 수정 */
+#figure_popup .slide_wrap .slide .active .border, #figure_popup .slide_wrap .slide li a:hover .border {display:block}
+
+/* 논문상세페이지 - 모달 */
+.modal .alarmServiceGroup {}
+.modal .alarmServiceGroup + .alarmServiceGroup {margin-top: 22px;}
+.modal .alarmServiceGroup .alarmServiceHead {margin-bottom: 8px;}
+.modal .alarmServiceGroup .alarmServiceHead .fCheck input[type="checkbox"] + label:before {margin: -2px 8px 0 0;}
+.modal .alarmServiceGroup .alarmServiceHead .fCheck input[type="checkbox"] + label:after {top: 3px;}
+.modal .alarmServiceGroup .alarmServiceHead label {font-size: 15px;color: #111111; font-family: 'notokr-medium', sans-serif;}
+.modal .alarmServiceGroup .alarmServiceHead span.desc {color: #999999;line-height: 20px; margin-left: 5px;}
+.modal .alarmServiceGroup .alarmServiceBody {border: 1px solid #e0e0e0; padding: 19px 19px 22px; font-size: 14px;}
+.modal .alarmServiceGroup .alarmServiceBody .searchBox {position: relative;padding: 0 0px 0 68px;margin-bottom: 20px;}
+.modal .alarmServiceGroup .alarmServiceBody .searchBox p.tit {position: absolute;left: 0;top: 0;padding-top: 9px;color: #111111;font-size: 14px;}
+.modal .alarmServiceGroup .alarmServiceBody .searchBox ul {overflow: hidden;}
+.modal .alarmServiceGroup .alarmServiceBody .searchBox ul li {float: left; width: 100%;}
+.modal .alarmServiceGroup .alarmServiceBody .searchBox button {position: absolute;right: 0;top: 0;min-width: 60px;}
+.modal .alarmServiceGroup .alarmServiceBody ul.keyword {overflow: hidden;padding: 0;margin-bottom: -8px;}
+.modal .alarmServiceGroup .alarmServiceBody ul.keyword  li {float: left;margin-right: 10px;margin-bottom: 10px;color: #555555;padding: 6px 10px 8px;background: #f0f0f0;border-radius: 3px;}
+.modal .alarmServiceGroup .alarmServiceBody ul.checkBox {padding: 0;overflow: hidden;margin-bottom: -10px;}
+.modal .alarmServiceGroup .alarmServiceBody ul.checkBox li {float: left;margin-right: 25px;margin-bottom: 10px;}
+.modal .alarmServiceGroup .alarmServiceBody ul.checkBox li .fCheck input[type="checkbox"] + label:after {top: 2px;-webkit-margin-before: -1px;}
+.modal .alarmServiceGroup .alarmServiceBody span.comt {color: #111111;font-size: 13px;margin-bottom: 13px;display: block;}
+
+.formGroupWrap {margin-top: 24px;}
+.modal .formGroup ul {width: 100%;padding: 0 20px 0 135px;/* overflow: hidden; */display: table;min-height: 35px;}
+.modal .formGroup ul li {float: left;margin-top: 10px;width: 100%;position: relative;font-size: 14px;line-height: 20px;}
+.modal .formGroup ul li:first-child {margin-top: 0 !important;}
+.modal .formGroup ul li.verMiddle {float: none;display: table-cell;vertical-align: middle;padding-top: 0px;}
+.modal .formGroup ul li.verMiddle .fCheck input[type="checkbox"] + label:after {top: 3px;-webkit-margin-before: 0px;}
+.modal .formGroup ul li.divide {float: none;display: table-cell;vertical-align: middle;padding-top: 0px;width: 50%;padding-left: 11px;}
+.modal .formGroup ul li.divide:before {position: absolute;left: 0;top: -10px;content:"";width:1px;height: calc(100% + 19px);vertical-align:middle;background: #e7e7e7;}
+.modal .formGroup ul li.divide:first-child {padding: 0;padding-right: 19px;}
+.modal .formGroup ul li.divide:first-child:before {display: none;}
+.modal .formGroup .gInputText .placeholder {margin-top: -10px;}
+
+.modal .subject {padding: 11px 14px 15px;font-size: 15px;color: #111111;font-weight: normal;font-family: 'notokr-bold', sans-serif;line-height: 22px;margin: 20px 19px;margin-bottom: 16px;border: 1px solid #e1e1e1;} {padding: 35px 15px 25px 17px;width: 100%;height: 363px;border: 1px solid #e0e0e0;}
+.modal .funcWrap {margin: 0 20px;margin-top: 13px;margin-bottom: 18px;}
+.modal .funcWrap:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+.modal .funcWrap ul.sort {overflow: hidden;float: right;}
+.modal .funcWrap ul.sort li.order {float: left;position: relative;padding: 0 8px 0 8px;}
+.modal .funcWrap ul.sort li.order:first-child {padding-left: 0px;}
+.modal .funcWrap ul.sort li.order:last-child {padding-right: 0px;}
+.modal .funcWrap ul.sort li.order:before {position:absolute;top: 3px;left:0;display:block;content:"";width:1px;height: 10px;vertical-align:middle;background: #d0d0d0;}
+.modal .funcWrap ul.sort li.order:first-child:before {display:none;}
+.modal .funcWrap ul.sort li.order a {color: #999999;}
+.modal .funcWrap ul.sort li.order.selected a {color: #222222;}
+.modal .funcWrap ul.sort li.order a:before {display:inline-block;content:"";vertical-align: middle;}
+.modal .funcWrap ul.sort li.order.selected a:before {width: 16px;height: 14px;background: url(../images/common/common_sfix_icon.png) no-repeat -350px -147px;}
+.modal .chartArea {padding: 35px 15px 25px 17px;/* width: 100%; */height: 363px;height: 391px;margin: 0 20px 0;border: 1px solid #e0e0e0;}
+.modal .chartArea + .btnGroup {margin: 15px 20px 20px;}
+
+.modal .jcarousel-wrapper a.jcarousel-control-prev.noModalFoot, a.jcarousel-control-next.noModalFoot {top: -72px;height: calc(100% + 73px);}
+
+.modal .toggleWrap {}
+.modal .toggleWrap + .toggleWrap {margin-top: 15px;}
+.modal .toggleWrap .toggleControl {border: 1px solid #cccccc;padding: 8px 70px 13px 14px;background: #ffffff;}
+.modal .toggleWrap .toggleControl span.comt {color: #111111;font-size: 14px;font-family: 'notokr-bold', sans-serif;margin-top: 5px;display: inline-block;}
+.modal .toggleWrap .toggleControl a {position: absolute;right: 0;top: 0;width: 50px;height: 100%;display: block;}
+.modal .toggleWrap .toggleControl a:after {position: absolute;right: 14px;top: 15px;content:"";width: 17px;height: 9px;/* margin: -2px 0 0 5px; */vertical-align: middle;background: url(../images/search/search_sfix_icon.png) no-repeat -100px 0px;}
+.modal .toggleWrap .toggleControl a:hover {text-decoration: none;color: #ffffff;border: none;background: #ffffff;}
+.modal .toggleWrap .toggleControl a.open {color: #ffffff;border: none;background: #ffffff;}
+.modal .toggleWrap .toggleControl a.open:after {background-position: -150px 0px;}
+.modal .toggleWrap .toggleBody {border: 1px solid #cccccc;border-top: none;padding: 4px 14px 10px;}
+
+.modal .searchList.recommend {border: none;height: auto;overflow-y: visible;margin-bottom: -4px;}
+.modal .searchList.recommend ul.listWrap li.item {padding: 12px 150px 9px 4px;}
+
+
+/*210503 수정*/
+.modal .searchList ul.listWrap{overflow: inherit;}
+
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB span:before {width: 15px;height: 14px;}
+
+
+
+/*210503 삭제*/
+/*
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB span.download:before {background-position: -100px -200px;width: 17px;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB span.bookmark:before {background-position: -50px -250px;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB.selected span.bookmark:before {background-position: -99px -250px;}
+*/
+
+
+
+
+
+.modal .searchList.recommend ul.listWrap span.nodata {font-size: 13.5px;color: #999;padding: 10px 0 7px;display: block;}
+
+
+/*210503 수정*/
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button{position: absolute;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.bookmark {	border: none!important;width: 22px!important;height: 32px!important;background: url('../images/common/listmark-off.svg') no-repeat center; display: block;padding: 0px!important;top: -3px;background-color: transparent!important; right: 31px; background-size: 22px 32px;padding: 0px!important; border: none!important;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.bookmark span:before{display: none;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.bookmark:hover{box-shadow: none;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB span.download:before{display: none;!important}
+
+
+
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.downBtn {border:!important;color: #666666;padding: 0px;  margin: 0px; width: 84px;height: 29px; border: 1px solid #C8C8C8; border-radius: 3px;position: absolute; right: 0px; top: 40px;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.downBtn span{color: #666666;}
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.downBtn span::before{display: none;!important}
+
+
+
+
+.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.bookmark:hover{box-shadow: none;border: none!important;}
+
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB span.bookmark{	border: none!important;width: 22px!important;height: 32px!important;background: url('../images/common/listmark-off.svg') no-repeat center; display: block;padding: 0px!important;top: -3px;background-color: transparent!important; right: 31px; background-size: 22px 32px;padding: 0px!important; border: none!important;}
+
+/*210430 북마크시*/
+.modal .searchList.recommend ul.listWrap li.item .btnGroup button.btnIconB span.bookmark.on{background: url('../images/common/listmark-on.svg');}
+
+
+
+
+
+
+
+#pub_reportErrorInfo .formGroup ul li.divide {color: #999;}
+#pub_reportErrorInfo .layer4 h5:nth-child(1) {color: #999;font-size: 14px;font-family: 'notokr-regular', sans-serif;}
+
+/* 발행기관상세페이지 */
+.searchP .searchDetailArea {position: relative;margin-bottom: 27px;}
+.searchP .searchDetailArea .imgWrap {position: absolute; left: 0; top: 0; width: 160px; height: 224px; border: 1px solid #cccccc;}
+.searchP .searchDetailArea .imgWrap img {width: 100%;height: 100%;max-height: 222px;}
+.searchP .searchDetailArea .infoWrap {padding: 21px 23px 11px;border: 1px solid #e9e9e9;background: #fafafa;position: relative;}
+.searchP .searchDetailArea .infoWrap dl {margin-bottom: 10px;}
+
+/*210427 컬러변경*/
+.searchP .searchDetailArea .infoWrap dl dt {font-size: 14px;color: #666;display: inline-block;width: 150px;vertical-align: top;line-height: 20px;}
+.searchP .searchDetailArea .infoWrap dl dd {font-size: 14px;color: #111111;display: inline-block;width: calc(100% - 160px);line-height: 20px;}
+
+
+/*210427 컬러 변경*/
+.searchP .searchDetailArea .infoWrap dl dd a.link {color: #111111; word-wrap: break-word;word-break: break-all;display: block;}
+
+
+.searchP .searchDetailArea .infoWrap dl dd .article {height: 63px;}
+.searchP .searchDetailArea .infoWrap dl dd .option {}
+.searchP .searchDetailArea .infoWrap dl dd .option a {font-size: 12px;color: #999999;font-family: 'notokr-medium', sans-serif;}
+.searchP .searchDetailArea .infoWrap dl dd .option a span.unfold:after {display: inline-block;content:"";width: 10px;height: 10px;margin: 4px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -150px 0;}
+.searchP .searchDetailArea .infoWrap dl dd .option a span.fold {display: none;}
+.searchP .searchDetailArea .infoWrap dl dd .option a span.fold:after {display: inline-block;content:"";width:10px;height:10px;margin: 4px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -200px 0;}
+.searchP .searchDetailArea .infoWrap button.btnReport {position: absolute;right: 0;top: -25px;font-size: 12px;color: #898989;}
+.searchP .searchDetailArea .infoWrap button.btnReport:after {display: inline-block;content:"";width: 5px;height: 9px;margin: -2px 0 0 5px;vertical-align: middle;background:url(../images/search/search_sfix_icon.png) no-repeat 0 0;}
+
+.searchP .searchDetailArea.coverImage {position: relative;padding-left: 180px;}
+.searchP .searchDetailArea.coverImage .infoWrap {min-height: 224px;}
+.searchP .searchDetailArea.coverImage .infoWrap dl dt {width: 120px;}
+
+.searchP .newsTickerArea {position: relative;}
+
+/*210429 padding-right: 제거*/
+.searchP .newsTickerArea p.tit {line-height: 20px;font-size: 16px;margin-bottom: 11px;}
+
+
+/*210427 모바일전용 접었다 펼치기*/
+.searchP .searchDetailArea .foldBtn {display: none;}
+
+/*210427 컬러 추가*/
+.searchP .newsTickerArea p.tit .highlight {font-family: 'notokr-medium', sans-serif;color: #1F8BD8;}
+
+
+
+.searchP .newsTickerArea a.more {color: #3c63e0;font-size: 13px;position: absolute;right: 0;top: 0;}
+
+.news_wrap {border: 1px solid #e7e7e7;overflow: hidden;padding: 0;position: relative;margin-bottom: 20px;}
+
+/*210427 컬러추가*/
+.news_wrap .slide_wrap {position:relative;width: 100%;color: #999999;}
+
+
+.news_wrap .btn_prev {position:absolute;right: 12px;top:50%;margin-top: -12px;width: 15px;height: 13px;background: url(../images/figure/btn_news_prev.png) no-repeat;z-index: 2;pointer-events: all !important;opacity: 1.0 !important;}
+.news_wrap .btn_next {position:absolute;right: 12px;top:50%;margin-top: 0px;width: 15px;height: 13px;background: url(../images/figure/btn_news_next.png) no-repeat;z-index: 2;pointer-events: all !important;opacity: 1.0 !important;}
+.news_wrap .slide_wrap a.visible {display: block !important;pointer-events: none;opacity: 0.3;}
+.news_wrap .slide_wrap a.hidden {pointer-events: none !important;opacity: 0.3 !important;}
+.news_wrap .slide {overflow:hidden;}
+.news_wrap .slide li {float:left;padding: 13px 18px 13px;padding-right: 50px; width: 100%;}
+.news_wrap .slide .img_wrap {display:block; margin-bottom: 0px;}
+.news_wrap .slide .img {display:block; position:relative;width:100%;vertical-align:middle;background:#fff; color: #3c63e0;font-size: 14px;}
+.news_wrap .slide .img span {display: block; width:100%; height: 100%;}
+
+.searchP .journalInfoArea {position: relative;margin-bottom: 20px;}
+.searchP .journalInfoArea h3 {font-size: 16px; color: #111111; margin-bottom: 10px;}
+.searchP .journalInfoArea .desc {border: 1px solid #e7e7e7;}
+.searchP .journalInfoArea .desc {border: 1px solid #e7e7e7;padding: 16px 19px;margin-bottom: 20px;}
+.searchP .journalInfoArea .desc .article {height: 63px;font-size: 14px;color: #111111;line-height: 20px;margin-bottom: 5px;}
+.searchP .journalInfoArea .desc .option {}
+.searchP .journalInfoArea .desc .option a {font-size: 12px;color: #999999;font-family: 'notokr-medium', sans-serif;}
+.searchP .journalInfoArea .desc .option a span.unfold:after {display: inline-block;content:"";width: 10px;height: 10px;margin: 4px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -150px 0;}
+.searchP .journalInfoArea .desc .option a span.fold {display: none;}
+.searchP .journalInfoArea .desc .option a span.fold:after {display: inline-block;content:"";width:10px;height:10px;margin: 4px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -200px 0;}
+.searchP .journalInfoArea .journalInfoWrap {position: relative;padding-right: 310px;}
+.searchP .journalInfoArea table tbody th {padding: 10px 18px;text-align: left;color: #555555;background: #ffffff;vertical-align:middle;border: 1px solid #e7e7e7;font-weight: normal;font-size: 13px;}
+.searchP .journalInfoArea table tbody td {padding: 10px 18px;color: #000000;font-size: 13px;vertical-align:middle;border: 1px solid #e7e7e7;text-align: left;}
+.searchP .journalInfoArea table tbody td:last-child {border-right: 1px solid #e7e7e7;}
+
+.searchP .journalInfoArea .journalInfoWrap .stats {position: absolute;right: 0;top: 0;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping {border: 1px solid #c8c8c8;overflow: hidden;width: 190px;height: 80px;background: #fafafa;display: inline-block;float: left;margin-right: 10px;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p {width: 50%;height: 100%;text-align: center;padding-top: 18px;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p a:hover {color: #3c63e0;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p span.text {display: block;font-size: 13px;color: #111111;margin-bottom: 3px;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p a:hover span.text {text-decoration: none;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p span.text:before {width: 15px;height: 15px;display: inline-block;content:"";margin: 0;vertical-align: middle;background:url(../images/search/search_sfix_icon.png) no-repeat;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p span.count {/* display: block; */font-size: 19.5px;color: #3c63e0;font-family: 'notokr-bold', sans-serif;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p small {font-size: 13px;color: #777777;margin-left: 2px;font-family: 'notokr-regular', sans-serif;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p.use {float: left;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p.use span.text:before {background-position: -350px 0px;margin: 1px 3px 0 0;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p.quote {float: right;border-left: 1px solid #e6e6e6;}
+.searchP .journalInfoArea .journalInfoWrap .stats .grouping p.quote span.text:before {background-position: -400px 2px;margin: 0px 1px 0 0;}
+.searchP .journalInfoArea .journalInfoWrap button.btnRelatedInfo {width: 90px;height: 80px;min-height: 37px;border: 1px solid #c8c8c8 !important;margin-bottom: 17px;}
+.searchP .journalInfoArea .journalInfoWrap button.btnRelatedInfo span {font-size: 13px;color: #3c63e0;line-height: 16px;}
+.searchP .journalInfoArea .journalInfoWrap button.btnRelatedInfo span.book:before {display: block;width: 19px;height: 15px;margin: 0 auto 5px;background: url(../images/search/search_sfix_icon.png) no-repeat;background-position: -50px -50px;}
+
+.searchP .journalInfoArea .journalInfoWrap .tooltip .desc.topRight {bottom: 92px;right: 0px;}
+.searchP .journalInfoArea .journalInfoWrap .tooltip .desc.topRight:before {right: 37px;}
+.searchP .journalInfoArea .journalInfoWrap .tooltip .desc.topRight:after {right: 37px;}
+
+.searchP .journalInfoArea .journalInfoWrap .tooltip .desc.topRight2 {bottom: 75px;right: -10px;}
+.searchP .journalInfoArea .journalInfoWrap .tooltip .desc.topRight2:before {right: 37px;}
+.searchP .journalInfoArea .journalInfoWrap .tooltip .desc.topRight2:after {right: 37px;}
+
+/* 간행물상세페이지 */
+.modal .listBlockWrap {position: relative;margin-bottom: 15px;}
+.modal .listBlockWrap:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+.modal .listBlockGroup {padding: 0;width:calc((100% - 338px) / 2);float: left;}
+.modal .listBlockGroup p.tit {padding: 0;font-size: 15px;color: #111111;font-family: 'notokr-medium', sans-serif;margin-top: 16px;margin-bottom: 15px;height: auto;max-height: 36px;}
+.modal .listBlockGroup ul.listBlock {padding: 0;}
+.modal .listBlockGroup ul.listBlock li {position: relative;padding: 14px 16px 0px 72px;border: 1px solid #e7e7e7;margin-bottom: 4px;height: 66px;}
+.modal .listBlockGroup ul.listBlock li span.quoteNumber {display: block;position: absolute;left: 7px;top: 7px;border: 1px solid #c8c8c8;width: 50px;height: 50px;font-size: 13px;color: #333333;font-family: 'notokr-medium', sans-serif;text-align: center;padding-top: 16px;}
+.modal .listBlockGroup ul.listBlock li span.quoteNumber small {font-size: 12px; color: #777777;}
+.modal .listBlockGroup ul.listBlock li span.journal {font-size: 14px;color: #3c63e0;margin-bottom: 5px;display: block;}
+.modal .listBlockGroup ul.listBlock li span.journal.nodata {color: #999999;margin-top: 10px;font-size: 13px;}
+.modal .listBlockGroup ul.listBlock li span.publisher {font-size: 12px;color: #999999;}
+.modal .listBlockGroup ul.listBlock li a:hover {color: #3c63e0;}
+.modal .listBlockGroup.center {width: 338px;height: 281px;background: url(../images/search/bg_related_info.png) no-repeat 0px 0px;text-align: center;margin-top: 88px;}
+.modal .listBlockGroup.center span.publicaton {font-size: 15px;margin-top: 207px;color: #3c63e0;font-family: 'notokr-bold', sans-serif;display: block;width: 100%;padding: 0px 50px;}
+.modal .listBlockGroup.right {float: right;}
+.modal .listBlockGroup.right ul.listBlock li {padding: 14px 72px 0px 16px;}
+.modal .listBlockGroup.right ul.listBlock li span.quoteNumber {right: 7px;left: auto;}
+
+/* 권호상세페이지 */
+
+
+/* 저자상세페이지 */
+.quoteListArea {display: none;position:absolute;top: 0px;right: 69px;left: 0;padding: 0;width: 712px;/* height: 100%; */max-height: 710px;border: 1px solid #e0e0e0;background:#fff;color: #555555;box-shadow: 3px 3px 8px rgba(0,0,0,.1);box-shadow: 3px 4px 6px rgba(0,0,0,.2);z-index: 10;text-align: left;}
+.quoteListArea:before {position: absolute;width: 0;height: 0;display: inline-block;content: "";border-color: transparent;border-style: solid;right: -20px;top: 77px;border-width: 7px 9px 7px;border-left-color: #cccccc;display: none;}
+.quoteListArea:after {position: absolute;width: 0;height: 0;display: inline-block;content: "";border-color: transparent;border-style: solid;right: -18px;top: 77px;border-width: 7px 9px 7px;border-left-color: #fff;display: none;}
+.quoteListArea .quoteListBox {}
+.quoteListArea .quoteListBox .quoteHead {border-bottom: 1px solid #e0e0e0;}
+.quoteListArea .quoteListBox .quoteHead p {padding: 14px 65px 17px 20px;color: #111111;font-size: 14px;}
+.quoteListArea .quoteListBox .quoteHead p span.day {padding: 0;color: #ef4348;font-family: 'notokr-medium', sans-serif;}
+.quoteListArea .quoteListBox .quoteHead button.closeLayer {position:absolute;top: 0px;right: 0px;display: block;width: 51px;height: 54px;background: url("../images/common/common_sfix_icon.png") no-repeat -335px -331px;}
+.quoteListArea .quoteListBox .quoteBody {padding-left: 19px;}
+
+.searchList.quote {border: none;height: 100%;max-height: 659px;overflow-y: auto;margin-bottom: 0px;}
+.searchList.quote ul.listWrap li.item {padding: 12px 10px 6px 0px;}
+.searchList.quote ul.listWrap li.item dl dt {padding-bottom: 4px;}
+
+.modal .fCheck input[type="checkbox"] + label:after {top: 1px;-webkit-margin-before: -1px;}
+
+.modal .advancedSearchBox p.tit {padding-top: 9px;color: #111111;font-size: 14px;width: 52px;display: inline-block;}
+.modal .advancedSearchBox ul {/* max-width: 550px; *//* width: 100%; */}
+.modal .advancedSearchBox.joint .gInputText {width: 100%;max-width: 518px;}
+.modal .advancedSearchBox.joint button.btnSearch {position: absolute;right: 0;top: 1px;min-width: 60px;}
+.modal .advancedSearchBox.add p.tit {width: 92px;}
+.modal .advancedSearchBox.add .gInputText {width: 100%;max-width: 523px;}
+
+.modal .listArea.authorList {margin-bottom: 10px;}
+.modal .listArea.authorList ul.listHead {border-top: 1px solid #e7e7e7;}
+.modal .listArea.authorList ul.listHead li:first-child {border-left: 1px solid #e7e7e7;}
+.modal .listArea.authorList ul.listHead li:last-child {border-right: 1px solid #e7e7e7;}
+.modal .listArea.authorList ul.listBody {width: 100%;overflow-y: scroll;max-height: 501px;border: 1px solid #e7e7e7;border-top: none;}
+.modal .listArea.authorList ul.listBody li:last-child {border-bottom: 1px solid #e7e7e7;}
+.modal .listArea.authorList ul.listBody li dl:first-child dd {padding: 8px 8px;}
+.modal .listArea.authorList ul.listBody li dl dd {padding: 8px 10px;word-break: break-word;}
+.modal .listArea.authorList .fCheck input[type="checkbox"] + label:after {top: 3px;}
+
+.modal .toggleWrap.checkbox .toggleControl .fCheck input[type="checkbox"] + label {color: #111111;font-size: 14px;font-family: 'notokr-bold', sans-serif;}
+.modal .toggleWrap.checkbox .toggleControl .fCheck input[type="checkbox"] + label small {font-size: 13px;font-family: 'notokr-regular', sans-serif;margin-left: 4px;margin-right: 4px;}
+.modal .toggleWrap.checkbox .toggleControl .fCheck input[type="checkbox"] + label:after {top: 2px;}
+.modal .toggleWrap.checkbox .toggleControl .path {font-size: 13px;color: #777777;display: inline-block;line-height: 20px;margin-top: 5px;}
+.modal .toggleWrap.checkbox .toggleBody {padding: 0px;padding-left: 14px;display: none;}
+.modal .toggleWrap.checkbox + .toggleWrap.checkbox {margin-top: -1px;}
+.modal .toggleWrap.checkbox .toggleControl {padding: 7px 70px 11px 14px;}
+
+.modal .toggleWrap.checkbox .searchList {border: none;margin-bottom: 0px;height: 100%;max-height: 267px;/* overflow-y: scroll; */}
+.modal .toggleWrap.checkbox .searchList ul.listWrap li.item {padding: 12px 0px 9px 28px;}
+.modal .toggleWrap.checkbox .searchList ul.listWrap li.item .fCheck {top: 14px;}
+
+.modal h5 .btn.btnMultiLangInputOther {right: 40px;}
+.modal .multiLangInputBox.other {margin-right: 0px;}
+
+.modal .searchList.add {border: 1px solid #e0e0e0;height: 385px;}
+.modal .searchList.add ul.listWrap li.item {padding: 12px 0px 9px 19px;}
+.modal .searchList.add .radioWrap {position: relative;padding-right: 60px;/* height: 26px; */margin-bottom: 3px;}
+.modal .searchList.add .radioWrap ul.radio {overflow: hidden;margin-bottom: 2px;}
+.modal .searchList.add .radioWrap ul.radio li.name {float: left;white-space: nowrap;margin-right: 13px;margin-top: -4px;margin-bottom: -5px;}
+.modal .searchList.add .radioWrap ul.radio li.name .fRadio input[type="radio"] + label {font-size: 13px;}
+.modal .searchList.add .radioWrap .option {position: absolute;top: 4px;right: 13px;}
+.modal .searchList.add .radioWrap .option a {font-size: 11px;color: #777777;/* font-family: 'notokr-medium', sans-serif; */}
+.modal .searchList.add .radioWrap .option a span.unfold:after {display: inline-block;content:"";width: 8px;height:10px;margin: 4px 0 0 3px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -400px -150px;}
+.modal .searchList.add .radioWrap .option a span.fold {display: none;}
+.modal .searchList.add .radioWrap .option a span.fold:after {display: inline-block;content:"";width:8px;height:10px;margin: 4px 0 0 3px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -450px -150px;}
+#pub_reportErrorInfo .formGroup ul li.verMiddle {color: #999;}
+#pub_reportErrorInfo .layer4 h5:nth-child(1) {color: #999;font-size: 14px;font-family: 'notokr-regular', sans-serif;}
+
+/* 주제분류 리스트 */
+.searchP .thesisDetailArea.subjectSort h3 {font-size: 16px;font-family: 'notokr-regular', sans-serif;font-weight: normal;height: 32px;border-bottom: 1px solid #c8c8c8;margin-bottom: 20px;color: #222222;}
+.searchP .thesisDetailArea.subjectSort h3 span.desc {font-size: 13px;display: inline-block;color: #999;font-family: 'notokr-demilight', sans-serif;margin-left: 10px;}
+.searchP .thesisDetailArea.subjectSort .searchListArea {margin-top: -20px;}
+.searchP .thesisDetailArea.subjectSort ul.list {margin-top: -3px;}
+.searchP .thesisDetailArea.subjectSort ul.list li.item {/* border-bottom: 1px solid #ececec; *//* padding-bottom: 12px; *//* padding-right: 140px; */margin-bottom: 0px;position: relative;}
+.searchP .thesisDetailArea.subjectSort ul.list li.item p.tit a {color: #3c63e0;}
+.searchP .thesisDetailArea.subjectSort ul.list li.item .gRight {position: absolute;right: 0;top: 24px;}
+
+.searchP .thesisDetailArea.subjectSort span.stats {display: block; color: #999999;font-size: 13px;}
+.searchP .thesisDetailArea.subjectSort span.stats:before {display:inline-block;width: 16px;height: 11px;content:"";margin: -1px 1px 0 0;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -50px -200px;}
+.searchP .thesisDetailArea.subjectSort span.stats small {color: #333333;font-family: 'notokr-medium', sans-serif;font-size: 13px;margin-left: 4px;}
+
+.searchP .thesisDetailArea.subjectSort .tileListArea {padding-bottom: 0px;border-bottom: none;}
+.searchP .thesisDetailArea.subjectSort .funcButtonArea ul.sort {float: none;margin-left: 0px;margin-right: 15px;margin-top: 0px;margin-top: -20px;/* padding-top: 10px; */vertical-align: text-bottom;}
+.searchP .thesisDetailArea.subjectSort .nodata {padding: 19px 22px 0px;text-align: center;}
+.searchP .thesisDetailArea.subjectSort .nodata span {font-size: 13px; color: #111111;}
+
+.searchP .tileListArea ul.author {padding: 0;margin: 0 -5px 0;overflow: hidden;height: 100%;display: flex;}
+.searchP .tileListArea ul.author li {float: left;width: calc(20% - 10px);/* max-width: 120px; *//* width: 120px; *//* height: 150px; *//* height: 100%; */margin-left: 5px;margin-right: 5px;border: 1px solid #f0f0f0;padding: 16px 19px 24px 19px;/* flex: 1; */text-align: center;}
+.searchP .tileListArea ul.author li a.name {color: #3c63e0;font-size: 16px;display: block;line-height: 20px;margin-bottom: 5px;}
+.searchP .tileListArea ul.author li span.organ {color: #777777;font-size: 13px;line-height: 17px;display: block;margin-bottom: 10px;}
+
+/* 모바일 유틸리티 */
+.mobileAppendArea {display: none;border: 1px solid #eaeaea;padding: 15px 15px;margin-bottom: 15px;}
+
+
+@media (min-width:960px) and (max-width:1147px) {/* 태블릿: 최소 960 ~ 1147 */
+    /* 검색결과리스트 */
+    .searchP .selectGroup {margin-right: 25px;}
+    .searchP .filterGroup {margin-right: 25px;}
+    .searchP .filterGroup ul.volume li.group .submMenuWrap {left: 178px;}
+
+    .searchP .tileListArea ul.recommend li.img a.hover {height: 100%;}
+    .searchP .tileListArea ul.recommend li.img a.hover img {height: 125px;}
+    .searchP .tileListArea ul.recommend li.img a.hover:hover p.desc {display: table-caption;padding-top: 15px;}
+    .searchP .tileListArea ul.recommend li.img a.hover:hover p.desc span {display: block;font-size: 14px;line-height: 18px;}
+
+
+    /* 간행물상세페이지 */
+    .searchP .filterGroup p.searchBox .gInputText.w120 {width:110px;}
+
+	
+	
+		/* 210504	 추가 */
+	
+		.searchP .filterGroup ul.subjectSort li.subject .fCheck.fCheckBtn input[type="checkbox"] + label span{width: 152px;}
+		.searchP .filterGroup ul.subjectSort li.subject .fCheck input[type="checkbox"] + label span {width: 138px;}
+	
+}
+
+
+@media (min-width:960px) and (max-width:1065px) {/* 태블릿: 최소 960 ~ 1065 */
+    /* 논문상세페이지 */
+    .searchP .floatingBarWrap .floatingBar {padding: 10px 258px 12px 25px;}
+    .searchP .floatingBarWrap .floatingBar span.type {font-size: 15px;display: block;position: static;text-align: left;margin-bottom: 1px;width: auto;}
+    .searchP .floatingBarWrap .floatingBar .btnGroup {padding: 0;position: absolute;right: 24px;top: 24px;}
+    .searchP .floatingBarWrap .floatingBar p.info {font-size: 17px;margin-bottom: 0px;}
+    .searchP .floatingBarWrap .floatingBar p.info span {/* margin-right: 4px; */line-height: 24px;height: 48px;max-height: 4.2em;}
+
+    /* 논문상세페이지 - 좌측 앵커 */
+    .searchP .stickyAnchorArea {display: none;}
+
+    /* 발행기관상세페이지 */
+    .searchP .journalInfoArea table {table-layout: auto;}
+    .searchP .journalInfoArea table tbody th {}
+    .searchP .journalInfoArea table tbody tr:nth-child(2) td {width: 50px;white-space: nowrap;}
+
+    /* 저자상세페이지 */
+    .infoBox + .searchArea .formGroup ul li .grouping.date {display: block;}
+    .quoteListArea {display: none;top: 434px;width: 100%;max-height: 710px;}
+
+}
+
+
+@media (max-width: 959px) {/* 모바일: 최대 959 */
+    /* 전체 */
+    .btnPdfView {display: none !important;}
+
+    /* 모바일 유틸리티 */
+	/* 210427 모바일 검색 수정	*/
+	/* 210502 모바일 검색 수정	*/
+    .mobileAppendArea {display: block;border: none; border-top: 8px solid #f6f6f6;padding: 15px 16px;}
+	
+	
+	/*	210502 모바일 수정*/
+	#dev_alram_btn, .headingArea .searchToggle{display: none;}
+	.paging{display: none;}
+	.searchListArea .listFoot{display: block;}
+	.bottomBg .titleArea.recommend, .searchP .bottomBg .tileListArea.recommend{display: block!important;}
+	
+	
+	/*	210502 모바일 추천 저널*/
+	.bottomBg{margin-top: 0px;}
+	#dev_recommend_list .recommend{width: 100%;}
+	.bottomBg .tileListArea.recommend{padding-bottom: 37px;}
+	#dev_recommend_list .contRight{float: none;width: calc(100% - 32px); padding: 0px; margin: 0px auto;}
+	
+	
+	/*	210429 모바일 검색탭 */
+	.titleArea.recommend p.tit{font-size: 14px;font-family: 'notokr-medium', sans-serif;}
+	.mobileAppendArea p.searchBox .gInputText .fText{width: 100%!important;}
+	
+	
+/*	210504 저널 추가*/
+	#dev_recommend_list .contRight p.desc{font-size: 14px;color: #165C92;}
+	
+	/* 210427 모바일 탭 추가	*/
+	
+	.searchTab {width: 100%;border-top: 1px solid #DCDCDC;border-bottom: 1px solid #DCDCDC;
+		overflow: hidden;display: block;}
+	
+	/*  210428 높이값 변경	*/
+	.searchTab ul li{float: left;width: 50%;position: relative;height: 48px;text-align: center;	cursor: pointer;}
+	
+	/*  210428 마진 변경	*/
+	.searchTab ul li span{font-size: 13px;color: #666666;display: inline-block;	height: 14px;	line-height: 14px;margin-top: 17px;}
+	.searchTab ul li.active{border-bottom: 2px solid #cc4736;}
+	.searchTab ul li.active span{color: #CC4736;}
+	
+    /* 검색결과리스트 */
+    .mobileAppendArea .detachNodeResult1 {margin: 0px;border-bottom: none;margin-top: -5px;margin-bottom: -10px;}
+    .mobileAppendArea .detachNodeResult1 p.tit {font-size: 14px;margin-bottom: 10px;margin-bottom: 7px;}
+    .mobileAppendArea .detachNodeResult1 .selectWrap {margin-bottom: 3px;}
+	
+	/* 210503 추가 */
+    .mobileAppendArea .detachNodeResult1 .selectWrap .condtion {font-size: 12px;margin: 0;margin-right: 4px; margin-bottom: 4px;}
+
+    .mobileAppendArea2 .detachNodeResult2 {margin: -5px -5px 0px;border-bottom: none;}
+	
+	/*210504 패딩수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup {margin: 0;margin-bottom: 10px;
+    padding: 10px 15px 10px;border: 1px solid #e1e1e1;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup:last-child {margin-bottom: 15px;}
+	
+	/* 210502 수정	*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup .fCheck input[type="checkbox"] + label:after {top: 1px; left: 0px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit {font-size: 15px;color: #222222;font-family: 'notokr-bold', sans-serif;/* margin-bottom: 14px; */line-height: 18px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit.general {margin-bottom: 0px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit a {display: block;width: 100%;height: 100%;position: relative;font-size: 13px;font-family: 'notokr-medium',sans-serif;}
+	
+	/*	210504 이미지 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit a:after {position: absolute;right: 0px;top: 5px;content:"";width: 17px;height: 9px;/* margin: -2px 0 0 5px; */vertical-align: middle;background: url(../images/search/bigDown.svg) no-repeat;}
+	.mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit a.open:after {background: url(../images/search/bigUp.svg) no-repeat;	}
+	
+	
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit a.active {color: #f04349; background-position: 181px -93px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit a:hover {text-decoration: none;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup p.tit a.hide {pointer-events: all;}
+
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort {margin-top: 14px;margin-bottom: 1px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year {margin-bottom: 8px;font-size: 13px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year:last-child {margin-bottom: 0px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year a {/* font-size: 13px; */}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year a.selected {color: #f04349;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year span.directMod {color: #212121;margin-bottom: 8px;display: block;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year span.directMod.selected {color: #f04349;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year p.grouping .gInputText .fText {padding: 2px 9px 4px; height: 27px; font-size: 13px; border: 1px solid #c8c8c8;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year p.grouping .txtDash {margin: 0 3px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.yearlySort li.year p.grouping button {padding: 5px 7px 6px;margin-top: -1px;margin-left: 2px;min-width: 40px !important;}
+	
+	/*	210504 margin-top 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort {overflow: hidden;margin-top: 10px;margin-bottom: 0px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject {font-size: 13px;padding: 0;border: none;font-family: 'notokr-regular', sans-serif;margin: 0px;margin-bottom: 7px;overflow: hidden;}
+	
+	
+	
+	/*	210521 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject .fCheck {padding-left: 0px; line-height: 18px; display: block;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject .fCheck input[type="checkbox"] + label {display: block;float: left;}
+	
+	
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject .fCheck a.btnDetail {margin-left: -3px;}
+	
+	/*210504 화살표 변경	*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject .fCheck a.btnDetail:after {display: inline-block;content:"";width:10px;height:10px;margin: 0 0 0 10px;vertical-align: middle;background: url(../images/common/subUp.svg) no-repeat center;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject .fCheck a.btnDetail.open:after {background: url(../images/common/subDown.svg) no-repeat center;}
+	
+	
+	
+    /*.mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort {overflow: hidden; margin: 10px 0 1px 14px;height: 75px;}*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort {/* overflow: hidden; */margin: 10px 0 1px 14px;margin-top: 0px;height: auto;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail {margin-bottom: 6px;font-size: 13px;color: #777777;}
+	
+	
+	/*	210521 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail:first-child {margin-top: 6px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail a {color: #777777;margin-left: -3px;}
+	
+	
+/*	210504 컬러 변경*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail .fCheck {padding-left: 26px; line-height: 18px; display: block;color: #666666;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject a.more {text-decoration: underline;margin: 0px 0 10px 14px;font-size: 12px;color: #666;display: block;}
+	
+	
+	
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail .fCheck:after {display: none;}
+	
+	
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.subjectSort li.subject ul.subjectDetailSort li.subjectDetail .fCheck input[type="checkbox"] + label {position: absolute; left: 0; top: 0;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup .generalWrap {margin-top: 14px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort {margin-top: 14px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort.journal {/* height: 161px; *//* height: auto; */}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general {margin-bottom: 7px;font-size: 13px;overflow: hidden;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general:last-child {margin-bottom: 0px;}
+	
+	/*210502 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general .fCheck {padding-left: 0px;line-height: 18px;display: block;overflow: hidden;
+    width: 100%;}
+	
+	/*	210502 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general .fCheck label { display: block; overflow: hidden;   float: left;}
+	
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general .fCheck label span{padding-left: 22px;}
+	
+	/*	210502 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general .fCheck input[type="checkbox"] + label:before {position: absolute;left: 0px;top: 3px;content:'';display:inline-block;margin: -2px 9px 0 0;width: 14px;height: 14px;line-height: 14px;text-align:center;vertical-align:middle;border: 1px solid #c8c8c8;background:#fff;box-sizing:border-box;}
+	
+	
+	
+	
+	/*	210502 수정*/
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general .fCheck input[type="checkbox"] + label:after {opacity: 0;display:block;content:"";position:absolute;top: 2px;left: 0px;width:15px;height:15px;background: url(../images/common/checked.svg) no-repeat left center;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general .fCheck input[type="checkbox"]:checked + label:after {opacity:1;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general a {/* display: inline-block; */margin-left: 0px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup ul.generalSort li.general a.selected {color: #f04349;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup a.more {text-decoration: underline;margin-bottom: 0px;font-size: 12px;color: #222222;display: block;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup a.more span.fold {display: none;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup .moreLessWrap {position: relative;height: 30px;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup .moreLessWrap a:nth-child(1) {width: 60px; float: left;}
+    .mobileAppendArea2 .detachNodeResult2 .filterGroup .moreLessWrap a:nth-child(2) {width: 60px; float: right; text-align: right; margin-right: 5px;}
+
+    .searchP .tileListArea.recommend {display: none;}
+
+    .mobileFacetedArea {display: block;margin: 0 -14px 0;margin-bottom: 10px;border-bottom: 1px solid #eaeaea;padding: 10px 14px 5px;}
+    .mobileFacetedArea:after {display: block; width: 0; height: 0; content: ""; clear: both;}
+	
+
+	
+	
+	/*	210502 추가*/
+	.searchListArea .listBody ul.list li.item .listBox span.stats .notice{
+		display: none;
+	}
+	.searchListArea .listBody ul.list li.item .listBox .info li{display: none;font-size: 12px!important;}
+	.searchListArea .listBody ul.list li.item .listBox .info li a{color: #666;}
+	.searchListArea .listBody ul.list li.item .listBox .info .author,
+	.searchListArea .listBody ul.list li.item .listBox .info .publisher,
+	.searchListArea .listBody ul.list li.item .listBox .info .date,
+	.searchListArea .listBody ul.list li.item .listBox .info .kci{display: block;color: #666;}
+	
+	/*210502 폰트 수정*/
+	.searchListArea .listBody ul.list li.item .listBox span.stats,
+	.searchListArea .listBody ul.list li.item .listBox span.stats small{font-size: 10px;}
+	
+	
+/*	210504 수정*/
+	.searchListArea .listBody ul.list li.item .listBox .titWrap h5{font-size: 14px;line-height: 1;}
+	.searchListArea .listBody ul.list li.item .listBox .typeWrap{margin-bottom: 3px;}
+	.searchListArea .listBody ul.list li.item .listBox span.stats:before{display: none;}
+	
+	/*	210502 추가*/
+	.headingArea.schResult .mobileFacetedArea {margin-bottom: 0px;border-bottom: none;position: absolute; right: 16px;top: 0px;margin: 0px; padding: 0px;}
+	
+	/*	210501 수정*/
+    .mobileFacetedArea a.setting {float: left;display: block;font-size: 14px;color: #555555;font-family: 'notokr-medium', sans-serif;width: 80px;height: 27px;border: 1px solid #CCCCCC; border-radius: 3px;text-align: center;line-height: 27px;}
+	
+	/*	210501 추가*/
+	
+	.mobileFacetedArea a.setting:hover{text-decoration: none;}
+	/*	210501 추가*/
+
+	.mobileFacetedArea a.setting .numSear{color: #CC4736;}
+	
+	/*	210501 수정*/
+    .mobileFacetedArea a.setting:before {display:inline-block;width: 13px;height: 15px;content:"";margin: -4px 6px 0 0;vertical-align: middle;background:url(../images/common/filter-sear.svg) no-repeat center;}
+	
+	
+	
+    .mobileFacetedArea .fSelect {float: right;font-size: 13px;margin-top: -3px;margin-left: 5px;text-align: left;border: none;font-family: 'notokr-regular', sans-serif;display: block;}
+    .mobileFacetedArea .fSelect span {position:absolute;top: 0px;left:0;display:block;padding: 0px 20px 0 10px;width: auto;height:100%;line-height: 27px;font-size: 14px;color: #777777;font-family: 'notokr-medium', sans-serif;}
+    .mobileFacetedArea .fSelect span:after {position:absolute;top:50%;right: -5px;display:block;content:"";margin-top: -8px;width:18px;height:15px;background: url(../images/common/common_sfix_icon.png) no-repeat -50px -45px;box-sizing:border-box;}
+    .mobileFacetedArea .fSelect select {opacity:0;padding: 4px 5px 5px 9px;width: 100%;height:100%;/* -webkit-appearance:none; */-moz-appearance:none;filter:alpha(opacity=0);cursor:pointer;color: #333;font-size: 12px;}
+    .mobileFacetedArea .fSelect.order {min-width: 86px;}
+
+    .mobileInnerSearch .innerSearch .fSelect {position:relative;display:inline-block;vertical-align:middle;border: 1px solid #cccccc;font-size: 14px;color: #111111;}
+    .mobileInnerSearch .innerSearch .fSelect span {position:absolute; top: 0px; left:0; display:block; padding: 0px 10px; width: 100%; height:100%; line-height: 20px;}
+    .mobileInnerSearch .innerSearch .fSelect span:after {position:absolute;top:50%;right: 0px;display:block;content:"";margin-top: -8px;width:18px;height:15px;background: url(../images/common/common_sfix_icon.png) no-repeat -50px -45px;box-sizing:border-box;}
+    .mobileInnerSearch .innerSearch .fSelect select {opacity:0;padding: 6px 9px 7px;width: 100%;height:100%; -moz-appearance:none;filter:alpha(opacity=0);cursor:pointer;color: #333;font-size: 13px;}
+    .mobileInnerSearch .innerSearch .fSelect + .fSelect {margin-left: 7px;}
+    .mobileInnerSearch .innerSearch .fSelect + .fText {margin-left: 7px;}
+    .mobileInnerSearch .innerSearch .fSelect + button {margin-left: 3px;}
+
+    .notiArea.noData.schResult {margin-top: 0px;}
+    .notiArea.noData.schResult ul li {font-size: 13px;color: #777777;font-family: 'notokr-regular', sans-serif;line-height: 20px;padding-left: 10px;position: relative;margin-bottom: 3px;}
+    .notiArea.noData.schResultul li:before {position: absolute;left: 0px;top: 9px;display:inline-block;content:"";/* margin: -2px 7px 0 0px; */width: 3px;height: 3px;vertical-align:middle;background: #cccccc;}
+
+    /* 논문상세페이지 */
+    .searchP .thesisInfoArea {margin-top: 0px;margin-bottom: 15px;}
+    .searchP .thesisInfoArea .typeWrap {padding: 0;margin-bottom: 7px;margin: 0 -14px 0;margin-bottom: 9px;border-bottom: 1px solid #eaeaea;padding: 11px 14px 10px;}
+    .searchP .thesisInfoArea .quoteWrap {padding: 12px 15px 15px;margin-top: 10px;margin-bottom: 12px;}
+    .searchP .thesisInfoArea .quoteWrap p.author {margin-bottom: 5px;line-height: 22px;}
+    .searchP .thesisInfoArea .quoteWrap ul.infoWrap li {margin-bottom: 6px;}
+    .searchP .thesisInfoArea .quoteWrap button.btnReport {display: none;}
+    .searchP .thesisInfoArea .quoteWrap .btnGroup {display: none;}
+    .searchP .thesisInfoArea p.subTit {margin-bottom: 5px;}
+    .searchP .thesisInfoArea p.equalTit {font-size: 14px;margin-bottom: 12px;line-height: 20px;}
+    .searchP .thesisInfoArea .btnWrap p.btnGroup {float: right;padding-bottom: 5px;width: 100%;}
+    .searchP .thesisInfoArea .btnWrap button.btnDownload {/* display: none; */}
+    .searchP .thesisInfoArea .btnWrap button.btnUrl {/* display: none; */}
+    .searchP .thesisInfoArea .btnWrap button {padding: 0;min-width: calc((100% - 18px) / 3);}
+    .searchP .thesisInfoArea .btnWrap .btn + .btn {margin-left: 6px;}
+    .searchP .thesisInfoArea .btnWrap span.record {float: left;margin-top: 5px;}
+
+    .searchP .thesisDetailArea {padding-bottom: 20px;}
+    .searchP .thesisDetailArea h3 {font-size: 18px;height: auto;margin-bottom: 22px;line-height: 24px;padding-right: 30px;padding-bottom: 10px;}
+    .searchP .thesisDetailArea h3 .gRight.r0 {display: none;}
+    .searchP .thesisDetailArea ul.cate {margin-top: -5px;}
+    .searchP .thesisDetailArea ul.cate li.path {width: 100%;margin-bottom: 10px;}
+    .searchP .thesisDetailArea p.keyword {display: none;}
+    .searchP .thesisDetailArea.subjectSort h3 span.desc {display: none;}
+    .searchP .thesisDetailArea a.more {padding-top: 20px;}
+    .searchP .thesisDetailArea p.index {color: #111111;}
+    .searchP .thesisDetailArea h3 button.btnApply {display: none;}
+    .searchP .thesisDetailArea ul.list li.item .textWrap {width: 83%;}
+    .searchP .thesisDetailArea ul.list.new li.item {margin-bottom: 0px;}
+    .searchP .thesisDetailArea ul.list.new li.item p.tit {word-break: break-word;}
+    .searchP .thesisDetailArea h3 .gRight {right: 30px;bottom: 0px;}
+    .searchP .thesisDetailArea h3 p.reviewStats {font-size: 12px;margin-right: 0px;letter-spacing: -0.5px;}
+    .searchP .thesisDetailArea a.moreReview {padding-top: 5px;}
+    .searchP .thesisDetailArea p.article span.txtBold {display: block;}
+
+    .searchP .thesisDetailArea .comtBox {margin-top: -10px;}
+    .searchP .thesisDetailArea .comtBox.btnArea {padding-right: 0px;padding-bottom: 25px;}
+    .searchP .thesisDetailArea .comtBox.btnArea span.text {display: none;}
+    .searchP .thesisDetailArea .comtBox .gRight span.text {display: inline;}
+
+    .searchP .thesisDetailArea .infoBox {margin-bottom: 20px;}
+    .searchP .thesisDetailArea .infoBox ul.list {padding: 15px 15px 4px;}
+    .searchP .thesisDetailArea .infoBox ul.list li.item {width: 100%;margin-bottom: 10px;}
+    .searchP .thesisDetailArea .infoBox ul.list li.item span {margin-right: 0px;width: 105px;display: inline-block;}
+
+    .searchP .thesisDetailArea .tableLayout table.schDetail {table-layout: auto;width: auto;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail thead th {white-space: inherit;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail tbody td {white-space: inherit;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail tbody td a span {white-space: inherit;}
+
+    .searchP .noAuthArea .noAuthWrap {padding: 0px 10px;padding-top: 60px;height: 278px;}
+    .searchP .noAuthArea .noAuthWrap p.desc {padding-top: 10px;}
+    .searchP .noAuthArea .noAuthWrap p.desc br {display: none;}
+
+    .searchP .thesisDetailArea .tableLayout.thesis table {table-layout:auto; width:100%;}
+    .searchP .thesisDetailArea .tableLayout.thesis table thead th {white-space: nowrap;}
+    .searchP .thesisDetailArea .tableLayout.thesis table tbody td {white-space: nowrap;}
+
+    .searchP .thesisDetailArea .reviewInputBox {margin-bottom: 20px;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.left {float: left;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.left .gInputText {float: left;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.left .gInputText .fText {height: 31px;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.left span.dept {float: left;color: #777777;margin-left: 10px;margin-top: 8px;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.right {padding-right: 11px;margin-top: 10px;float: left;clear: both;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.right .fRadio {display:block;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.right .fRadio input[type="radio"] + label {line-height: 26px;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewHead p.right .fRadio + .fRadio {margin-left: 0px;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewFoot {height: 39px;}
+    .searchP .thesisDetailArea .reviewInputBox .reviewFoot button.btnWrite {height: 40px;}
+    .searchP .thesisDetailArea .noDataArea span.comt {font-size: 14px;}
+    .searchP .thesisDetailArea .noDataArea button {min-height: 40px;}
+    .searchP .thesisDetailArea .noDataArea button span {font-size: 13px;}
+
+    .searchP .thesisDetailArea .reviewList ul.list li.item {border-bottom: 1px solid #ececec;padding-bottom: 15px;margin-top: 15px;margin-bottom: 16px;}
+    .searchP .thesisDetailArea .reviewList ul.list li.item p.writer {margin-bottom: 5px;}
+    .searchP .thesisDetailArea .reviewList ul.list li.item p.text {line-height: 22px;/* line-height: 20px; */font-size: 15px;color: #111111;margin-bottom: 7px;margin-top: 5px;}
+
+    .searchP .thesisDetailArea .funcButtonArea {margin-top: 20px;margin-bottom: 14px;min-height: 26px;}
+
+    /* 논문상세페이지 - 좌측 앵커 */
+    .searchP .stickyAnchorArea {display: none;}
+
+
+    /* 논문상세페이지 - 본문 플로팅 메뉴 */
+    .searchP .floatingBarWrap {display: none !important;}
+
+    /* 논문상세페이지 - 우측 사이드바 */
+    .asideWrap button.alarm {width: 100%;min-height: 37px;border: 1px solid #c8c8c8 !important;margin-bottom: 12px;}
+    .asideWrap p.cover {display: none;}
+    .asideWrap .stats {height: auto;}
+    .asideWrap .stats .grouping {border: 1px solid #c8c8c8;width: calc((100% - 9px) / 2);height: 80px;background: #fafafa;}
+    .asideWrap .stats .grouping p span.text {margin-bottom: 3px;}
+    .asideWrap .stats .grouping.first {position: static;border-radius: 5px;float: left;border: 1px solid #c8c8c8;}
+    .asideWrap .stats .grouping.first p {/* padding: 0; */}
+    .asideWrap .stats .grouping.first p a {width: 100%; height: 100%}
+    .asideWrap .stats .grouping.first p.bookmark {float: left;border-right: 1px solid #e6e6e6;}
+    .asideWrap .stats .grouping.first p.bookmark span.text:before {background-position: -249px 0px;margin: 1px 0 0 0;}
+    .asideWrap .stats .grouping.first p.bookmark span.count {color: #111111;}
+    .asideWrap .stats .grouping.first p.review {float: left;}
+    .asideWrap .stats .grouping.first p.review span.text:before {background-position: -300px 0px;margin: 1px 1px 0 0;}
+    .asideWrap .stats .grouping.second {position: static;border-radius: 5px;float: right;border: 1px solid #c8c8c8;}
+    .asideWrap .stats .grouping.second p.use {float: left;position: relative;}
+    .asideWrap .stats .grouping.second p.use span.text:before {background-position: -350px 0px;margin: 1px 3px 0 0;}
+    .asideWrap .stats .grouping.second p.quote {float: right;border-left: 1px solid #e6e6e6;}
+    .asideWrap .stats .grouping.second p.quote span.text:before {background-position: -400px 2px;margin: 0px 1px 0 0;}
+    .asideWrap .stats .grouping.second p a {/* pointer-events: none; */display: block;}
+    .asideWrap .stats .grouping.second p a.mobile {display: block;}
+    .asideWrap .stats .grouping.second p a:hover {text-decoration: underline;}
+
+    #figure_area {display: none;}
+    #banner_area {display: none;}
+
+    /* 논문상세페이지 - Figures & Table */
+
+
+    /* 논문상세페이지 - 배너 */
+
+
+    /* 논문상세페이지 - Figures & Table 팝업 */
+
+
+    /* 논문상세페이지 - 모달 */
+    .modal .alarmServiceGroup .alarmServiceHead span.desc {margin-left: 0px;display: block;margin-top: 4px;}
+    .modal .alarmServiceGroup .alarmServiceBody {padding: 15px 15px 15px;}
+
+    .modal .searchList.recommend ul.listWrap li.item {padding: 12px 0px 9px 4px;}
+    .modal .searchList.recommend ul.listWrap li.item .btnGroup {text-align: left;position: static;margin-top: 5px;}
+
+    /* 발행기관상세페이지 */
+    .mobileAppendArea .detachNodePublisher {margin: 0;}
+    .mobileAppendArea .detachNodePublisher p.tit {margin-bottom: 15px;}
+	
+	/*210427 width auto 추가*/
+    .mobileAppendArea .detachNodePublisher p.searchBox {margin-bottom: 5px;width: auto;}
+	
+	/*210427 width 수정 margin 수정*/
+    .mobileAppendArea .detachNodePublisher p.searchBox .gInputText {width: calc(100% - 36px);margin-right: 0px;}
+	
+	/*	210427 min width 수정 */
+    .mobileAppendArea .detachNodePublisher p.searchBox button {margin-top: 0px;min-width: 36px !important;}
+
+    .searchP .searchDetailArea {margin-bottom: 20px;}
+    .searchP .searchDetailArea .imgWrap {display: none;}
+    .searchP .searchDetailArea .infoWrap {padding: 15px 15px;}
+    /*.searchP .searchDetailArea .infoWrap dl:nth-child(3) {margin-bottom: 0px;}
+    .searchP .searchDetailArea .infoWrap dl:nth-child(4) {display: none;}
+    .searchP .searchDetailArea .infoWrap dl:nth-child(5) {display: none;}*/
+	
+	/* 210427 폰트 사이즈 추가	*/
+    .searchP .searchDetailArea .infoWrap dl dt {width: 80px;font-size: 12px;}
+	
+	
+	/* 210427 발행기관소개 닫기 펼치기 display none	*/
+	.searchP .searchDetailArea .infoWrap dl dd .option{display: none!important;}
+	
+	/*  210427 height auto 추가	*/
+	.searchP .searchDetailArea .infoWrap dl dd .article{height: auto!important;}
+	
+	
+	/* 210427 모바일 전용 접히기*/
+
+	.searchP .searchDetailArea .infoWrap {padding: 15px 15px;border: none;background-color: #fff;height: 75px;overflow: hidden;}
+	
+	
+	.searchP .searchDetailArea .foldBtn {background: url(../images/common/fold.png) no-repeat center;width: 11px;height: 7px;display: block;margin: 0px auto 0px auto;}
+	
+	
+	
+	/* 210427 정보부분 토글	*/
+	.searchP .searchDetailArea.active .infoWrap {height: auto;}
+	.searchP .searchDetailArea.active .foldBtn {background: url(../images/common/fold-up.png) no-repeat center;width: 11px;height: 7px;}
+	
+	
+	
+	
+    .searchP .searchDetailArea .infoWrap dl dd {width: calc(100% - 85px);word-break: break-word;font-size: 12px;}
+    .searchP .searchDetailArea .infoWrap button.btnReport {display: none;}
+
+    .searchP .searchDetailArea.coverImage {padding-left: 0px;}
+    .searchP .searchDetailArea.coverImage .infoWrap {min-height: auto;}
+    .searchP .searchDetailArea.coverImage .infoWrap dl dt {width: 80px;}
+
+    .searchP .newsTickerArea a.more {display: none;}
+
+    .searchP .journalInfoArea .journalInfoWrap {padding-right: 0px;overflow: hidden;}
+    .searchP .journalInfoArea table {/* table-layout: fixed; */}
+    .searchP .journalInfoArea table tbody th {padding: 10px 15px;white-space: inherit;}
+    .searchP .journalInfoArea table tbody td {padding: 10px 15px;width: 26%;}
+
+    .searchP .journalInfoArea .journalInfoWrap .stats {position: static;margin-top: 20px;}
+    .searchP .journalInfoArea .journalInfoWrap .stats .grouping {width: 100%;height: auto;background: #fafafa;float: none;margin-right: 0px;}
+    .searchP .journalInfoArea .journalInfoWrap .stats .grouping p {width: 50%;height: 100%;padding-top: 0px;padding: 10px 0px;}
+    .searchP .journalInfoArea .journalInfoWrap .stats .grouping p span.text {display: inline-block;margin-bottom: 0px;margin-right: 5px;vertical-align: middle;}
+    .searchP .journalInfoArea .journalInfoWrap .stats .grouping p a {vertical-align: middle;pointer-events: none;}
+    .searchP .journalInfoArea .journalInfoWrap .stats .grouping p span.count {font-size: 18px;}
+
+    .searchP .journalInfoArea .journalInfoWrap .tooltipWrap {display: none;}
+
+    /* 간행물상세페이지 */
+    .mobileAppendArea .detachNodePublication1 {padding-bottom: 10px;margin: 0;margin-bottom: 10px;}
+    .mobileAppendArea .detachNodePublication1 p.tit {margin-bottom: 15px;}
+    .mobileAppendArea .detachNodePublication1 p.searchBox {margin-bottom: 5px;}
+    .mobileAppendArea .detachNodePublication1 p.searchBox .gInputText {width: calc(100% - 68px);margin-right: 7px;}
+    .mobileAppendArea .detachNodePublication1 p.searchBox button {margin-top: 0px;min-width: 61px !important;}
+
+    .mobileAppendArea .detachNodePublication2 {margin: 0;}
+    .mobileAppendArea .detachNodePublication2 p.searchBox {margin-bottom: 10px;margin-bottom: 25px;}
+    .mobileAppendArea .detachNodePublication2 p.searchBox .fSelect.filtering {width: 100%;}
+    .mobileAppendArea .detachNodePublication2 ul.volume {display: none !important;}
+    .mobileAppendArea .detachNodePublication2 p.selectBox {display: block;}
+    .mobileAppendArea .detachNodePublication2 p.selectBox .fSelect {min-width: calc(50% - 4px);width: calc(50% - 4px);}
+    .mobileAppendArea .detachNodePublication2 p.selectBox .fSelect + .fSelect {margin-left: 5px;margin-top: -2px;}
+
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication1 thead th:nth-child(2) {width: 50%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication2 thead th:nth-child(2) {width: 30%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication2 thead th:nth-child(3) {width: 30%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication2 thead th:nth-child(4) {width: 15%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication2 thead th:nth-child(5) {width: 20%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication3 thead th:nth-child(2) {width: 30%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication3 thead th:nth-child(3) {width: 30%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication3 thead th:nth-child(4) {width: 15%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication3 thead th:nth-child(5) {width: 20%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.publication4 thead th:nth-child(2) {width: 50%;}
+
+    /* 권호상세페이지 */
+    .mobileAppendArea .detachNodeJournal {margin: 0;}
+    .mobileAppendArea .detachNodeJournal p.searchBox {margin-bottom: 10px;}
+    .mobileAppendArea .detachNodeJournal ul.volume {display: none;}
+    .mobileAppendArea .detachNodeJournal p.selectBox {display: block;}
+    .mobileAppendArea .detachNodeJournal p.selectBox .fSelect {min-width: calc(50% - 4px);width: calc(50% - 4px);}
+    .mobileAppendArea .detachNodeJournal p.selectBox .fSelect + .fSelect {margin-left: 5px;margin-top: -2px;}
+
+    /* 저자상세페이지 */
+    .searchArea .checkGroup .btnExcel {display: none;}
+
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author1 thead th:nth-child(1) {width: 40%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author1 thead th:nth-child(2) {width: 30%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author1 thead th:nth-child(3) {width: 10%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author1 thead th:nth-child(4) {width: 5%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author1 thead th:nth-child(5) {width: 15%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author1 tbody td:nth-child(2) {word-break: break-word;}
+
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author2 {table-layout: fixed;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author2 thead th {white-space: nowrap;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author2 tbody td {/* white-space: nowrap; */}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author2 tbody td:nth-child(1) {min-width: 110px;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author2 tbody td:nth-child(2) {min-width: 80px;}
+
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author3 {table-layout: fixed;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author3 thead th {white-space: nowrap;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author3 tbody td:nth-child(1) {min-width: 110px;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author3 tbody td:nth-child(2) {min-width: 80px;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.author3 tbody td {/* white-space: nowrap; */}
+
+    .quoteListArea {display: none;top: 618px;width: 100%;max-height: 710px;}
+
+    /* 주제분류 리스트 */
+    .mobileAppendArea .detachNodeCate .filterGroup.cate {display: none;}
+    .mobileAppendArea .detachNodeCate p.selectBox {display: block !important;}
+    .mobileAppendArea .detachNodeCate p.selectBox .fSelect {min-width: calc(50% - 4px);width: calc(50% - 4px);}
+    .mobileAppendArea .detachNodeCate p.selectBox .fSelect + .fSelect {margin-left: 5px;}
+
+    .searchP .thesisDetailArea.subjectSort .tileListArea {padding-bottom: 0px;border-bottom: none;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend {padding: 0;margin: 0 -25px 0;overflow: hidden;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend {margin: 0 0px 0;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img {width: 100%;margin-left: 0px;margin-right: 0px;margin-bottom: 15px !important;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img:last-child {margin-bottom: 0px !important;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img a.hover {display: block;width: 84px;height: 105px;float: left;margin-right: 15px;position: relative;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img a.hover img {max-height: 103px;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img a.hover p.desc {display: block;background: none;padding-left: 98px;position: absolute;left: 0;top: 0;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img a.hover p.desc span {display: block;width: 200px;height: 50px;font-size: 14px;line-height: 20px;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img a.hover:hover p.desc span {font-size: 14px;color: #212121;display: block;text-decoration: underline;}
+    .searchP .thesisDetailArea.subjectSort .tileListArea ul.recommend li.img p.info {margin-top: 30px;}
+
+    .searchP .thesisDetailArea.subjectSort .funcButtonArea ul.sort {float: none;margin-left: 0px;margin-right: 15px;margin-top: 0px;margin-top: -20px;/* padding-top: 10px; */vertical-align: text-bottom;}
+    .searchP .thesisDetailArea.subjectSort .funcButtonArea .fSelect.period {display: none;}
+    .searchP .thesisDetailArea.subjectSort .funcButtonArea .fSelect.datatype {min-width: 100px;}
+
+    .searchP .tileListArea ul.author {margin: 0 -5px 0;height: auto;display: block;}
+    .searchP .tileListArea ul.author li {float: left;width: calc((100% - 20px) / 2);margin-left: 5px;margin-right: 5px;margin-bottom: 10px;border: 1px solid #f0f0f0;padding: 16px 19px 24px 19px;/* flex: 1; */text-align: center;}
+    .searchP .tileListArea ul.author li:last-child {margin-bottom: 0px;}
+    .searchP .tileListArea ul.author li a.name {display:inline-block;overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;word-break: break-all;}
+    .searchP .tileListArea ul.author li span.organ {display: block;overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;word-break: break-all;}
+
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(3),
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(4),
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(6) {display: none;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate tbody td:nth-child(3),
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate tbody td:nth-child(4),
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate tbody td:nth-child(6) {display: none;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(1) {width: 60%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(2) {width: 30%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(3) {width: 10%;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate thead th:nth-child(5) {border-right: none;}
+    .searchP .thesisDetailArea .tableLayout table.schDetail.cate tbody td:nth-child(5) {border-right: none;}
+
+}
+
+
+
+/* prevent css vanishing */
+/* prevent css vanishing */
+/* prevent css vanishing */
+/* prevent css vanishing */
+/* prevent css vanishing */
+/* prevent css vanishing */
+/* prevent css vanishing */
