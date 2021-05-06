@@ -1,4 +1,4 @@
-@charset "utf-8"; 
+@charset "utf-8";
 
 /* 웹 폰트 */
 @font-face {
@@ -41,18 +41,14 @@
 /* 초기화 */
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, button, p, blockquote, th, td {margin:0;padding:0;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
 html, body {width:100%; height:100%;}
-
-
-/*210427 컬러 변경*/
-body, code {font-family: 'notokr-regular', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', 'Roboto', sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-size: 13px;line-height:1.2;color: #111111;-webkit-text-size-adjust:none;-webkit-overflow-scrolling: touch;}
+body, code {font-family: 'notokr-regular', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', 'Roboto', sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-size: 13px;line-height:1.2;color: #212121;-webkit-text-size-adjust:none;-webkit-overflow-scrolling: touch;}
 code {background:none; display:block;}
 ul, ol {list-style:none;}
 img, fieldset {border:0;}
 img, video {max-width:100%;}
 i, em, address {font-style:normal; font-weight:normal;}
 ins {text-decoration:none;}
-/*210504 컬러변경*/
-a {text-decoration:none;color: #666;}
+a {text-decoration:none;color: #212121;}
 a:hover {text-decoration:underline;}
 a:active {text-decoration:none;}
 table {width:100%;table-layout:fixed;border:0 none;border-spacing:0;border-collapse:collapse;}
@@ -298,11 +294,9 @@ input[type*="tel"] {font-family:'notokr-regular',Helvetica,Arial,sans-serif;}
 .btnIcon.top {width: 50px;height: 50px;background: url(../images/common/img_arrow_top.png) no-repeat 0 0;}
 
 .btnIconB {position:relative;text-align: center;}
-
-/*210430 이미지 수정*/
-.btnIconB span:before {display: inline-block;content:"";margin: 0;vertical-align: middle;background:url(../images/common/redo.svg) no-repeat; margin-top: -2px;}
+.btnIconB span:before {display: inline-block;content:"";margin: 0;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat;}
 .btnIconB span.setting:before {background-position: -450px -100px;width: 14px;height: 14px;margin: 0 1px 0 0;display: none;}
-.btnIconB span.reset:before {width: 14px;height: 14px;margin: -1px 2px 0 0;}
+.btnIconB span.reset:before {background-position: -200px -350px;width: 14px;height: 14px;margin: -1px 2px 0 0;}
 
 .btnIconA {position:relative;}
 .btnIconA span:after {display: inline-block; content:""; margin: 0;background:url(../images/common/common_sfix_icon.png) no-repeat;}
@@ -376,60 +370,24 @@ input[type*="tel"] {font-family:'notokr-regular',Helvetica,Arial,sans-serif;}
 .toggleBtn p.on {display: none;}
 
 /* 폼 - 인풋박스 */
-.gInputText {position: relative;display: inline-block;}
-
-/*210426 발행기관명 추가 및 스타일 수정 추가*/
-.nameCom{margin: 25px 0px 20px 0px; font-size: 14px;}
-p.searchBox{border: 1px solid #DCDCDC;width: 192px;border-radius: 3px;overflow: hidden;margin-top: 5px;}
-p.searchBox .gInputText {float: left;}
-p.searchBox .searchBtn{margin-left: 0px;width: 36px;height: 33px;border-left: 1px solid #DCDCDC;float: left;display: block;}
-p.searchBox .searchBtn:hover{box-shadow: none;}
-p.searchBox .fText{border: none!important;width: 153px!important;}
-
-
-/*210426 마진 탑 수정*/
-.gInputText .placeholder {position:absolute;top:50%;left: 11px;margin-top: -6px;color:#999;font-size:13px;}
+.gInputText {position:relative;display:inline-block;}
+.gInputText .placeholder {position:absolute;top:50%;left: 11px;margin-top: -10px;color:#999;font-size:13px;}
 .gInputText button.ui-datepicker-trigger {position:absolute;top: 8px;right: 10px;}
 .gInputText + .fSelect {margin-left: 3px;}
 .gInputText + button {margin-left: 3px;}
 
-
-/*수정*/
-.fText {padding: 6px 9px 7px;width: 100%;font-size: 14px;color: #111111;border: 1px solid #cccccc;outline: none;height: 34px;}
+.fText {padding: 6px 9px 7px;width:100%;font-size: 14px;color: #111111;border: 1px solid #cccccc;outline: none;height: 34px;}
 .fText[disabled] {background-color: #f2f2f2;}
 .fTextarea {padding: 7px 9px;font-size: 14px;color: #111111;border: 1px solid #cccccc;outline: none;font-family:'notokr-regular',Helvetica,Arial,sans-serif;line-height: 22px;}
 .fTextarea:focus::-webkit-input-placeholder{text-indent: -999px;}
 .fTextarea:focus::-moz-placeholder{text-indent: -999px;}
 
-
-/*210430 추가*/
-.filterTitle{font-size: 16px;font-family:'notokr-bold',Helvetica,Arial,sans-serif;margin-top: 11px;margin-bottom: 27px;}
-.subTitle{font-family:'notokr-medium',Helvetica,Arial,sans-serif;font-size: 13px;}
-
-/*210430 보더 추가*/
-/*210503 width 추*/
-.pcAppendArea1 .innerSearch{border-bottom: 1px solid #ECECEC;width: 190px;}
-
-
-/*210430 margin-top 추가,  너비 수정 */
-.gInputText.schBox {position:relative;display:inline-block;margin-top: 7px; overflow: hidden;   width: 190px!important;}
-
-
-/*210430 보더수정*/
-/*210503 수정*/
-.gInputText.schBox .fText {padding: 11px 50px 11px 9px;width:153px;font-size: 12px;color: #111111;border: 1px solid #DB3A3F;outline: none;height: 43px;border-radius: 3px 0px 0px 3px;display: block;float: left;}
-
-.gInputText.schBox .fText::placeholder{color: #999;}
-
-
-
-.gInputText.schBox .btnSearch {position: absolute;top: 0px;right: 1px;padding: 0;background: transparent;border: 0;}
+.gInputText.schBox {position:relative;display:inline-block;}
+.gInputText.schBox .fText {padding: 11px 50px 11px 9px;width:100%;font-size: 14px;color: #111111;border: 1px solid #e7e7e7;outline: none;height: 43px;}
+.gInputText.schBox .btnSearch {position: absolute;top: 1px;right: 1px;padding: 0;background: transparent;border: 0;}
 .gInputText.schBox .btnSearch .icon {width: 41px;height: 41px;background: url(../images/common/common_sfix_icon.png) no-repeat -140px -88px;display: block;}
 
-
-
-/*210430 탭 수정*/
-.gInputText.schBox .btnSearch.innerSearch { display:inline-block;width: 37px;height: 33px;background: url(../images/common/search-red.svg) no-repeat center;display: block;float: left; position: unset;border: 1px solid #DB3A3F; border-left: none; border-radius: 0px 3px 3px 0px;}
+.gInputText.schBox .btnSearch.innerSearch { display:inline-block;width: 33px;height: 31px;background: url(../images/common/common_sfix_icon.png) no-repeat 7px 7px;background-color: #ef4348; }
 
 .gInputText.schBoxHeading {position:relative;display:inline-block;}
 .gInputText.schBoxHeading .placeholder {margin-top: -7px;}
@@ -441,24 +399,12 @@ p.searchBox .fText{border: none!important;width: 153px!important;}
 .fSelect {position:relative;display:inline-block;vertical-align:middle;border: 1px solid #cccccc;font-size: 14px;color: #111111;}
 .fSelect span {position:absolute; top: 0px; left:0; display:block; padding: 0px 10px; width: 100%; height:100%; line-height: 33px;}
 .fSelect span:after {position:absolute;top:50%;right: 0px;display:block;content:"";margin-top: -8px;width:18px;height:15px;background: url(../images/common/common_sfix_icon.png) no-repeat -50px -45px;box-sizing:border-box;}
-
-
-/*210430 새로 셀렉트 박스 추가*/
-.funcWrap .fSelect{border: 1px solid #CCCCCC; padding: 0px;width: 80px;height: 27px; border-radius: 3px;font-size: 12px;color: #666666;}
-.funcWrap .fSelect span{line-height: 26px;}
-.funcWrap .fSelect span:after{background: url(../images/common/arrow-sear.svg) no-repeat 5.5px;box-sizing:border-box;}
-
-
-
-
-
-/*210427 컬러변경*/
-.fSelect select {opacity:0;padding: 6px 9px 7px;width: 100%;height:100%;/* -webkit-appearance:none; */-moz-appearance:none;filter:alpha(opacity=0);cursor:pointer;color: #111;font-size: 13px;}
+.fSelect select {opacity:0;padding: 6px 9px 7px;width: 100%;height:100%;/* -webkit-appearance:none; */-moz-appearance:none;filter:alpha(opacity=0);cursor:pointer;color: #333;font-size: 13px;}
 .fSelect + .fSelect {margin-left: 7px;}
 .fSelect + .fText {margin-left: 7px;}
 .fSelect + button {margin-left: 3px;}
 
-/*  폼 - 체크박스 */
+/* 폼 - 체크박스 */
 .fCheck {position: relative;}
 .fCheck input[type="checkbox"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .fCheck input[type="checkbox"] + label {display:inline-block;position:relative;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select: none;}
@@ -466,66 +412,12 @@ p.searchBox .fText{border: none!important;width: 153px!important;}
 .fCheck input[type="checkbox"] + label:after {opacity:0;display:block;content:"";position:absolute;top: 4px;left: 1px;width:15px;height:14px;background: url(../images/common/common_sfix_icon.png) no-repeat -200px -50px;}
 .fCheck input[type="checkbox"]:checked + label:after {opacity:1;}
 
-
-
-
-
 .fCheck input[disabled] + label:before {background-color: #f2f2f2;}
 .fCheck input[type="checkbox"].disabled + label {cursor: pointer;pointer-events: none !important;}
 .fCheck input[type="checkbox"].disabled + label:before {background-color: #f2f2f2;}
 
 .fCheck + .fCheck {margin-left: 10px;}
 .fCheck + .gInputText {/* margin-left: 16px; */}
-
-
-
-
-
-/*추가된 폼*/
-
-
-.fCheck.searchChk {position: relative;}
-
-.fCheck.searchChk input[type="checkbox"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-
-/*210428 font-size 변경*/
-/*210430 font-size 변경*/
-.fCheck.searchChk input[type="checkbox"] + label {display:inline-block;position:relative;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select: none;font-size: 12px;top: 1px;}
-
-
-/*210427 컬러변경*/
-/*210430 위치 및 사이즈 변경*/
-.fCheck.searchChk input[type="checkbox"] + label:before {content:'';display:inline-block;margin: 1px 9px 0 0;width: 15px;height: 15px; border-radius: 3px; line-height: 14px;text-align:center;vertical-align:top;border: 1px solid #c8c8c8;background:#fff;box-sizing:border-box;    color: #707070;}
-
-/*210503 추가*/
-.hdWrap .fCheck.searchChk input[type="checkbox"] + label:before {margin: -1px 9px 0 0;}
-
-
-/*210430 리스트 선택창*/
-.searchListArea .listHead .fCheck.searchChk input[type="checkbox"] + label:before{
-	width: 17px;
-	height: 17px;
-	margin-right: 0px;
-}
-.searchListArea .listHead .fCheck.searchChk input[type="checkbox"] + label:after{width: 17px;height: 17px;
-	background-size: 17px;left: 0px;top: 1px;}
-
-/*210430 체크박스수정*/
-.fCheck input[type="checkbox"] + label:after {opacity:0;display:block;content:"";position:absolute;top: 4px;left: 1px;width:15px;height:15px;background: url(../images/common/checked.svg) no-repeat center}
-.fCheck input[type="checkbox"]:checked + label:after {opacity:1;}
-
-
-
-/*추가된 폼 끝*/
-
-
-
-
-
-
-
-
-
 
 /* 폼 - 라디오버튼 */
 .fRadio {position: relative;color: #111111;font-size: 14px;}
@@ -577,58 +469,28 @@ a.disabled {width:23px;height: 17px;position: absolute;left: 0px;top: 0px;}
   	height: 34px;
 }*/
 
-
-
-/*210430 수정*/
 .searchToggle {
-	position: absolute;
+	position: relative;
 	display: inline-block;
-	width: 104px;
-	height: 20px;	
-	top: 16px;
-	right: 119px;
-	color: #4b4b4b;
+	left: 55%;
+	top: 5px;
 }
 
-
-.slider:after{
-	content:'OFF';
-	display: block;
-	position: absolute;
-	top: 4px;
-	right: 8px;
-	font-family: 'notokr-medium', sans-serif;
-	font-size: 10px;
-	color: #A9A9A9;
-}
-
-#chkInclude:checked + .slider:after
-{  
-  content:'ON';
-	color: white;
-	top: 4px;
-	left: 8px;
-}
-
-
-
-#chkInclude:checked + .on{
-	display: block;
-}
-
-/*210430 수정*/
 #searchInclude {
-	position: absolute;
 	display: inline-block;	
-	line-height: 20px;
+	padding: 4px;
 }
 
 .switch {
 	position: absolute;
 	display: inline-block;
-	width: 50px;
+	width: 40px;
 	height: 20px;  
 	right: 1px;
+}
+
+.searchToggle .switch {
+	right: unset;
 }
 
 /* Hide default HTML checkbox */
@@ -639,7 +501,6 @@ a.disabled {width:23px;height: 17px;position: absolute;left: 0px;top: 0px;}
 }
 
 /* The slider */
-/*210504 배경 변경*/
 .slider {
   position: absolute;
   cursor: pointer;
@@ -647,7 +508,7 @@ a.disabled {width:23px;height: 17px;position: absolute;left: 0px;top: 0px;}
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e5e5e5;
+  background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;  
 }
@@ -665,17 +526,17 @@ a.disabled {width:23px;height: 17px;position: absolute;left: 0px;top: 0px;}
 }
 
 input:checked + .slider {
-  background-color: #db3a3f;
+  background-color: #EF4348;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #db3a3f;
+  box-shadow: 0 0 1px #EF4348;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(28px);
-  -ms-transform: translateX(28px);
-  transform: translateX(28px);
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
 }
 
 /* Rounded sliders */
@@ -790,10 +651,13 @@ input:checked + .slider:before {
 #dbpiaTopBanner {width: 100%;height: 60px;background-color: #ffffff;position: relative;text-align: center;display: none;}
 .topBannerCenter {max-width: 1080px;width: 100%;height: 100%;margin-left: auto;margin-right: auto;text-align: center;}
 .topBannerCenter img {position:static; height: 100%; cursor: pointer;}
-.topBannerCenter span {background:url(../images/common/common_sfix_icon.png) no-repeat -445px -197px;cursor:pointer;position: relative;right: 20px; top: -13px;}
+.topBannerCenter span.closeBanner {background:url(../images/common/common_sfix_icon.png) no-repeat -445px -197px;cursor:pointer;position: relative;right: 20px; top: -13px;}
 
 @media (max-width: 959px){
-  .topBannerCenter span{ right: 48% !important; top: -4em !important;}
+	/*띠배너 닫기 버튼 수정*/
+  .topBannerCenter span.closeBanner {background:url(../images/common/common_sfix_icon.png) no-repeat -445px -198px;cursor:pointer;position: relative; right:0px;}
+    /*.topBannerCenter span{ right: 48% !important; top: -4em !important;} */
+  .topBannerCenter span.closeBanner { top: -4.5em !important; display:block; float:right;}
 }
 
 .formGroup .fSelect.disabled span{color:#aaa!important;background-color:#f2f2f2!important}

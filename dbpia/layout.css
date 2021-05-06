@@ -15,37 +15,23 @@
 
 /*2021-04-06 메뉴 버튼 수정*/
 /* .menuButton {transition: all 0.2s ease-in-out;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;cursor: pointer;padding: 22px 16px;position: absolute;right: 0px;z-index: 999;top: 0;} */
+.menuButton {transition: all 0.2s ease-in-out;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;cursor: pointer;padding-top: 24px;position: absolute;right: 0px;z-index: 999;top: 0; width:25px; height:25px;}
 
-/*210426 메뉴버튼 수정*/
-/*210428 위치값 수정*/
-
-.menuButton {transition: all 0.2s ease-in-out;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;cursor: pointer;padding-top: 7px;position: absolute;right: 16px;z-index: 999;    top: 12.5px;width: 25px;height: 16px;}
-
-
-/*210426 햄버거버튼 사이즈 조정*/
+/*2021-04-06 햄버거 버튼 height 조정*/
 .menuButton span,
 .menuButton span:before,
-.menuButton span:after {transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;width: 24px; height: 2px; background-color: #666;}
+.menuButton span:after {transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;width: 22px; height: 3px; background-color: #777777;}
 .menuButton span {position: relative;display: block;}
 .menuButton span:before,
 .menuButton span:after {content: "";position: absolute;/*left: 0;*/}
-
-/*210427 탑 거리 변경*/
-/*210428 탑 거리 변경*/
-.menuButton span:before {top: -8px;}
-.menuButton span:after {top: 8px;}
+.menuButton span:before {top: -7px;}
+.menuButton span:after {top: 7px;}
 
 /*2021-04-08 메뉴 닫기 버튼 조정*/
-
-/*210426 메뉴 활성화시 수정*/
-.menuButton.active {position: absolute;top: 15px;right: 16px;}
-
+.menuButton.active {position: fixed;top: 3px;right: -3px;}
 .menuButton.active span {background: transparent;}
-
-
-/*210426 right값 ,사이즈 수정*/
 .menuButton.active span:before,
-.menuButton.active span:after {top: 0;width: 24px;height: 2px;background-color: #111111; left: 0px;}
+.menuButton.active span:after {top: 0;width: 19px;height: 1px;background-color: #111111; right:10px;}
 .menuButton.active span:before {transform: rotate(-135deg);-webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);-ms-transform: rotate(-135deg);}
 .menuButton.active span:after {-webkit-transition-delay: 0.09s;-moz-transition-delay: 0.09s;-o-transition-delay: 0.09s;-ms-transition-delay: 0.09s;transition-delay: 0.09s;transform: rotate(135deg);-webkit-transform: rotate(135deg);-moz-transform: rotate(135deg);-o-transform: rotate(135deg);-ms-transform: rotate(135deg);}
 
@@ -55,9 +41,7 @@
 
 .menuPanel .menuHead {/* height: 57px; */border-bottom: 1px solid #aaaaaa;}
 .menuPanel .menuHead p.login {padding: 19px 14px 18px;font-size: 14.5px;color: #111111;font-family: 'notokr-bold', sans-serif;}
-
-/*210427 패딩 수정*/
-.menuPanel .menuHead p.auth {padding: 12px 14px 12px;padding-right: 50px;}
+.menuPanel .menuHead p.auth {padding: 10px 14px 9px;padding-right: 50px;}
 .menuPanel .menuHead p.auth span.organ {font-size: 14.5px;color: #111111;font-family: 'notokr-bold', sans-serif;display: block;margin-bottom: 3px;}
 .menuPanel .menuHead p.auth span.name {font-size: 14.5px;color: #111111;font-family: 'notokr-bold', sans-serif;display: block;margin-bottom: 2px;margin-right: 3px;}
 .menuPanel .menuHead p.auth span.name small {font-size: 12.5px;color: #ef4348;margin-left: 4px;}
@@ -94,35 +78,8 @@ body.modalOpen {overflow: hidden;}
 .container {width: 100%;min-height: 100%;}
 
 /* 헤더 */
-.header {width: 100%;z-index: 200;position:relative;border-bottom: 1px solid #e7e7e7; background-color: #fff;}
+.header {width: 100%;z-index: 200;position:relative;border-bottom: 1px solid #e7e7e7;}
 .header .hdTop {padding-bottom: 15px;}
-
-/*210427 헤더 고정*/
-
-/*210428 패딩수정*/
-.header.sticky{position: fixed;padding: 15px 0px;}
-.header.sticky .hdTop {display: none;}
-.header.sticky .fCheck input[type="checkbox"] + label{display: none;}
-.header.sticky .gSearch a.btnDetailSearch{display: none;}
-.header.sticky + .container{ padding-top: 91px;}
-
-
-/*210428 헤더 고정시 사이즈 줄어들게*/
-.header.sticky .gSearch .searchFrom{height: 44px;}
-.header.sticky .gSearch .searchFrom .fSelect select{height: 40px;}
-.header.sticky .gSearch .searchFrom .gInputText input.search{height: 40px;}
-.header.sticky .gSearch .searchFrom .btnSearch{height: 42px;}
-.header.sticky .gSearch .searchFrom .fSelect span:after{top: 26px;}
-.header.sticky .gSearch .searchFrom .fSelect span{line-height: 44px;height: 40px;}
-.header.sticky .gUtil ul.list li.item a.link{font-size: 13px;}
-.header.sticky .gUtil ul.list li.item a.link:before{height: 34px;background-size: 36px;}
-.header.sticky .gUtil ul.list li.item a.alarm:before{background-size: 27px!important;}
-.header.sticky .hdWrap .schoolLogo{top: -1.5px;}
-.header.sticky .hdWrap h1{margin-top: 11px;}
-
-/*210429height 수정*/
-.header.sticky .gSearch .searchFrom .fSelect{height: 40px;}
-
 .header .hdTop:after {display: block; width: 0; height: 0; content: ""; clear: both;}
 .header .hdTop ul {overflow: hidden;float: right;padding-top: 15px;}
 .header .hdTop ul li {float: left;position: relative;padding: 0 10px 0 9px;}
@@ -135,76 +92,28 @@ body.modalOpen {overflow: hidden;}
 .header .hdTop ul li span.person small {font-size: 12px;color: #ef4348;margin-left: 3px;}
 .header .hdTop ul li span.person a {font-size: 13px;color: #111111;font-family: 'notokr-bold', sans-serif;margin-top: -1px;padding-right: 0px;display: inline-block;}
 .header .hdTop ul li span.person a:hover {text-decoration: underline !important;}
+.header .hdTop ul li a {font-family: 'notokr-medium', sans-serif;font-size: 12px;color: #777777;letter-spacing: -0.15px;display: block;line-height: 1.3;}
 
-/*210427 컬러변경*/
-.header .hdTop ul li a {font-family: 'notokr-medium', sans-serif;font-size: 12px;color: #666;letter-spacing: -0.15px;display: block;line-height: 1.3;}
-
-
-.header .hdWrap {position: relative;padding: 0 210px 0 270px;}
+.header .hdWrap {position: relative;padding: 0 321px 0 322px;}
 .header .hdWrap:after {display: block; width: 0; height: 0; content: ""; clear: both;}
 .header .hdWrap .organLogo {position: absolute;left: 0;top: 0;margin-top: 7px;}
 .header .hdWrap .organLogo img {width: 103px; height: 38px;}
-.header .hdWrap h1 {position: absolute;left: 55px;top: 0;/* float:left; */margin-top: 14px;}
+.header .hdWrap h1 {position: absolute;left: 123px;top: 0;/* float:left; */margin-top: 14px;}
 .header .hdWrap h1 a {display:block;width: 169px;height: 25px;background: url(../images/common/logo_dbpia.png) no-repeat 0 0;background-size: contain;}
 .header .hdWrap.pr372 {padding-right: 345px;}
 
-/*210427 schoolLogo*/
-.header .hdWrap .schoolLogo{position: absolute;left: 0px;top: 0px;width: 50px;height: 50px;
-	overflow: hidden;max-width: 50px;max-height: 50px;}
-.header .hdWrap .schoolLogo img{position: absolute;display: block;max-width: 50px;max-height: 50px;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);}
-
-/*210428 overflow hidden */
-/*210429 overflow hidden제거 */
-.header .gSearch {width: 100%;max-width: 600px;position: relative;}
-
-/*210429 자동완성부분 위치조절*/
-.header.sticky .atcmpLayer{top: 44px;}
-
-/*210426 border radius 변경 마진 제거*/
-.header .gSearch .searchFrom {width: 100%;height: 50px;border: 2px solid #ef4348;background: transparent;font-size: 0;display: inline-block; border-radius: 3px;}
-
-/*210428 float left 추가*/
-/*210429 height값*/
-.header .gSearch .searchFrom .fSelect {position:relative; top:0px; display:inline-block;width: 104px;height: 46px;font-size:14px;border:0;background: transparent;float: left;}
-
-
-
+.header .gSearch {width: 100%;max-width: 490px;position: relative;}
+.header .gSearch .searchFrom {width: 100%;height: 50px;border: 2px solid #ef4348;background: transparent;font-size: 0;display: inline-block;margin-bottom: 41px;}
+.header .gSearch .searchFrom .fSelect {position:relative;/* top: -1px; */display:inline-block;width: 104px;height: 45px;font-size:14px;border:0;background: transparent;}
 .header .gSearch .searchFrom .fSelect span {padding: 0px 0 0 18px;padding: 0px 0 0 12px;line-height: 46px;color: #555555;font-size: 15px;font-size: 13.5px;letter-spacing: -0.5px;border:0;-webkit-appearance:none;-moz-appearance:none;/* font-family: 'notokr-medium', sans-serif; */}
 .header .gSearch .searchFrom .fSelect select {height:100%;border:0;}
-
-
-
-/*210428 float left 추가*/
 .header .gSearch .searchFrom .fSelect span:after {position:absolute;top: 28px;right: 13px;display:block;content:"";width:auto;height:auto;border-style:solid;border-color:#000 transparent;border-width: 5px 4px 0;background:none;}
-.header .gSearch .searchFrom .gInputText {width: calc(100% - 152px);float: left;}
+.header .gSearch .searchFrom .gInputText {width: calc(100% - 152px);}
 .header .gSearch .searchFrom .gInputText:before {position:absolute;top: 13px;left: -1px;display:block;content:"";width:1px;height:19px;background:#ddd;}
-.header .gSearch .searchFrom .gInputText input::placeholder {color:#999;font-size: 12.5px;}
+.header .gSearch .searchFrom .gInputText .placeholder {position:absolute;top:50%;left: 10px;margin-top: -7px;color:#999;font-size: 12.5px;}
 .header .gSearch .searchFrom .gInputText input.search {padding-left: 10px;width: 100%;height: 46px;/* margin-top: -7px; *//* line-height: 37px; */border:0;outline: none;font-size: 16px;color: #222222;vertical-align: -webkit-baseline-middle;background: transparent;}
-
-/*210427 검색버튼 이미지 수정 사이즈 수정*/
-
-/*210428 float left 추가*/
-/*210429 위치수정*/
-.header .gSearch .searchFrom .btnSearch {display:inline-block;width: 48px;height: 46px;line-height: 46px;background: url(../images/common/topsearch.svg) no-repeat center;background-color: #ef4348;text-indent: -9999px;vertical-align: bottom;background-size: 20px;float: left;  position: absolute;right: 1px;top: 2px;}
-.header.sticky .gSearch .searchFrom .btnSearch{top: 1px;}
-
-
-
-/*210426 포지션삭제, 폰트 사이즈 변경, 플롯 추가 마진 추가, 패딩 제거*/
-.header .gSearch a.btnDetailSearch {display: inline-block;color: #ef4348;font-size: 14px;    margin-left: 14px;font-family: 'notokr-medium', sans-serif;vertical-align: top;float: right;
-    margin: 12px 0px;}
-
-
-
-
-/*210427 본문내용포함 추가*/
-
-.gSearch .fCheck{margin: 12.5px 0px;display: block;float: left;}
-.gSearch .fCheck input[type="checkbox"] + label:after{top: 0px;}
-
-/*210503 추가*/
-.header .hdWrap .gSearch .fCheck input[type="checkbox"] + label:after{top: -1px!important;left: -1px!important;}
-
+.header .gSearch .searchFrom .btnSearch {display:inline-block;width: 48px;height: 46px;line-height: 46px;background: url(../images/common/common_sfix_icon.png) no-repeat 14px 12px;background-color: #ef4348;text-indent: -9999px;vertical-align: bottom;}
+.header .gSearch a.btnDetailSearch {display:inline-block;color: #ef4348;font-size: 13px;margin-left: 14px;font-family: 'notokr-medium', sans-serif;vertical-align: top;padding: 20px 0 0px 0;position: absolute;right: -60px;top: 0;}
 
 .header .atcmpLayer {position: absolute;left: 0;top: 50px;border: 1px solid #e7e7e7;background: #fff;overflow: hidden;width: 100%;z-index: 10;display: none;}
 .header .atcmpLayer ul {overflow: hidden;margin: 5px 0;max-height: 238px;}
@@ -228,50 +137,17 @@ body.modalOpen {overflow: hidden;}
 .header .gSearch .relatedKeyword .option a span.fold {display: none; position: absolute;right: -49px;top: -15px;}
 .header .gSearch .relatedKeyword .option a span.fold:after {display: inline-block;content:"";width:10px;height:10px;margin: 4px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -200px 0;}
 
-
-/*210426 margin-top 0px;*/
-.header .gUtil {position: absolute;right: 0;top: 0;/* float:right; */margin-top: 0px;}
+.header .gUtil {position: absolute;right: 0;top: 0;/* float:right; */margin-top: 21px;}
 .header .gUtil ul.list {/* overflow: hidden; */}
-
-/*210426 width값, 가운데 정렬 추가*/
-/*210428 width값 수정*/
-.header .gUtil ul.list li.item {float: left;margin-left: 25px;position: relative;width: 42px;text-align: center;}
+.header .gUtil ul.list li.item {float: left;margin-left: 22px;position: relative;}
 .header .gUtil ul.list li.item:first-child {margin-left: 0px;}
-
-/*210427 컬러변경*/
-/*210428 display block, font size*/
-.header .gUtil ul.list li.item a.link {font-size: 14px;color: #111;font-family: 'notokr-medium', sans-serif;display: block;}
-
-
-/*210426 백그라운드 이미지 제거, 마진제거, 사이즈 수정*/
-/*210428 height 수정*/
-.header .gUtil ul.list li.item a.link:before {display: inline-block;width: 100%;height: 39px;content: "";margin: 0;vertical-align: middle;}
-
-
-/*210426 내 서재 수정*/
-
-/*210428 이미지 png > svg 수정*/
-.header .gUtil ul.list li.item a.mystudy:before {background: url('../images/common/mybook.svg') no-repeat top center;}
-
-/*210426 내 소식 수정*/
-/*210428 이미지 위치 수정*/
-.header .gUtil ul.list li.item a.alarm:before {background: url('../images/common/bell.svg') no-repeat center 2px;}
-
-
-
-
-
-
+.header .gUtil ul.list li.item a.link {font-size: 16px;color: #222222;font-family: 'notokr-medium', sans-serif;}
+.header .gUtil ul.list li.item a.link:before {display:inline-block;width: 16px;height: 18px;content:"";margin: -4px 5px 0 0;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat;}
+.header .gUtil ul.list li.item a.mystudy:before {background-position: -50px 0px;margin: -4px 8px 0 0;}
+.header .gUtil ul.list li.item a.alarm:before {background-position: -100px 0px;}
 .header .gUtil ul.list li.item a.alarm.mobile {display: none;}
-
-
-/* 210427 알림마크 수정*/
-/*210428 알림마크 수정*/
-.header .gUtil ul.list li.item .badge {position: absolute;right: 1px;top: -3px;display: block;min-width: 20px; min-height: 20px; padding: 0px; text-align: center; font-size: 11px !important;color: #ffffff;line-height: 20px;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #ef4348;border-color: #ef4348;border-radius: 12px;font-family: dotum, '돋움', 'notokr-regular', '맑은 고딕', sans-serif;font-weight: bold;display:none;}
-
-/* 210427 알림마크 수정*/
-/*210428 알림마크 수정*/
-.header .gUtil ul.list li.item .badgeMyStudy {position: absolute;right: -8px;top: -3px;display: block;min-width: 20px; min-height: 20px; padding:0px;font-size: 11px !important;color: #ffffff;line-height: 20px;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #ef4348;border-color: #ef4348;border-radius: 12px;font-family: dotum, '돋움', 'notokr-regular', '맑은 고딕', sans-serif;font-weight: bold;display:none;}
+.header .gUtil ul.list li.item .badge {position: absolute;left: -9px;top: -7px;display: block;min-width: 14px;padding: 2px 4px 1px;font-size: 11px !important;color: #ffffff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #ef4348;border-color: #ef4348;border-radius: 12px;font-family: dotum, '돋움', 'notokr-regular', '맑은 고딕', sans-serif;font-weight: bold;display:none;}
+.header .gUtil ul.list li.item .badgeMyStudy {position: absolute;left: -9px;top: -7px;display: block;min-width: 14px;padding: 2px 4px 1px;font-size: 11px !important;color: #ffffff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #ef4348;border-color: #ef4348;border-radius: 12px;font-family: dotum, '돋움', 'notokr-regular', '맑은 고딕', sans-serif;font-weight: bold;display:none;}
 .header .gUtil ul.list li.item:nth-child(3) {margin-left: 12px;}
 .header .gUtil ul.list li.item .remainWrap {width: 107px;height: 30px;position: relative;}
 .header .gUtil ul.list li.item .remainWrap a.remain {position: absolute;right: 0px;top: -5px;border: 1px solid #d5d5d5;width: 107px;height: 30px;padding: 6px 0 0;-webkit-padding-before: 6px;border-radius: 99px;text-align: center;display: inline-block;cursor: default;}
@@ -314,7 +190,6 @@ body.modalOpen {overflow: hidden;}
 .header .alarmArea .alarmBox .alarmBodyTop ul li span.txt {padding: 0;font-size: 13px;color: #111111;}
 .header .alarmArea .alarmBox .alarmBodyTop ul li span.date {padding-top: 2px;font-size: 12px;color: #999999;display: block;}
 .header .alarmArea .alarmBox .alarmBodyTop ul li span.del {position: absolute;right: 6px;top: 50%;margin-top: -13px;width: 25px;height: 25px;background: url(../images/common/common_sfix_icon.png) no-repeat -42px -142px;cursor: pointer;}
-
 
 
 /* 헤더 - 배너 */
@@ -558,24 +433,13 @@ body.modalOpen {overflow: hidden;}
 .headingArea .gRight {position: absolute;right: 1px;bottom: 12px;}
 .headingArea .btn + .btn {margin-left: 3px;}
 
-
-/*210430 패딩수정*/
-.headingArea.schResult {position: relative;padding: 10px 0 7px 0;border-bottom: none;margin-bottom: 20px;}
-
-/*210430 폰트 수정*/
-.headingArea.schResult h2 {font-size: 16px;display: inline-block;color: #111;font-family: 'notokr-bold', sans-serif;font-weight: normal;margin-bottom: 2px;}
+.headingArea.schResult {position: relative;padding: 26px 0 7px 0;border-bottom: none;margin-bottom: 20px;}
+.headingArea.schResult h2 {font-size: 21px;display: inline-block;color: #111;font-family: 'notokr-regular', sans-serif;font-weight: normal;margin-bottom: 10px;}
 .headingArea.schResult span.count {font-size: 13px;display: block;color: #555555;font-family: 'notokr-demilight', sans-serif;}
+.headingArea.schResult span.count strong {color: #3c63e0; word-break: keep-all; word-wrap: break-word;}
+.headingArea.schResult .gRight {position: relative;left: 88%;bottom: 32px;width: 20%;}
 
-
-/*210430 수정*/
-/*210503 수정*/
-.headingArea.schResult span.count strong {color: #CC4736; word-break: keep-all; word-wrap: break-word;font-family: 'notokr-regular', sans-serif;font-size: 12px;font-weight: unset;}
-
-/*210430 수정*/
-.headingArea.schResult .gRight {position: absolute;right: 0px; top: 10px;}
-
-/*210430 폰트 수정*/
-.headingArea.schResult span.searchCount {font-size: 16px;color: #111;font-family: 'notokr-medium', sans-serif;}
+.headingArea.schResult span.searchCount {font-size: 13px;color: #555555;font-family: 'notokr-demilight', sans-serif;}
 
 .headingArea.schDetail {padding: 24px 120px 7px 0;border-bottom: none;margin-bottom: 28px;}
 .headingArea.schDetail.author {padding: 24px 240px 7px 0;}
@@ -734,13 +598,9 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .viewArea dl dd.edit p img {max-width: 100%;}
 
 /* 페이지네이션 */
-/*210502 페이지네이션 */
-.searchListArea .paginate {margin-top: 0px; border-top: 10px solid #F6F6F6;}
-.searchListArea .paginate a.viewMore {display: block;cursor: pointer;text-align: center;padding: 12px;color: #3c63e0;
-    padding: 18px 0px;}
-.searchListArea .paginate a.viewMore span {font-size: 12px;color: #1F8BD8;}
-
-
+.paginate {margin-top: 7px;}
+.paginate a.viewMore {display: block;cursor: pointer;text-align: center;padding: 12px;color: #3c63e0;}
+.paginate a.viewMore span {font-size: 14px;}
 .paginate a.viewMore span:after {display: inline-block;content:"";width: 11px;height:10px;margin: 0px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -350px 0;}
 .paginate a.viewMore.open span:after {display: inline-block;content:"";width: 11px;height:10px;margin: 0px 0 0 5px;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat -400px 0;}
 
@@ -874,28 +734,13 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .listArea.type02 ul.listBody .fCheck input[type="checkbox"] + label:after {top: 4px;-webkit-margin-before: -1px;}
 
 /* 검색 리스트 */
-/*210504 마진탑 변경*/
-.searchListArea {position: relative;margin-top: 22px;}
-
-/*210427 발간저널 타이틀*/
-.searchListArea .searchListAreaTitle{font-size: 16px;font-family: font-family: 'notokr-medium', sans-serif; color: #111; margin-bottom: 20px;}
-
+.searchListArea {position: relative;margin-top: 30px;}
 .searchListArea .listHead {margin-bottom: 18px;padding: 0;/* overflow: hidden; */}
 .searchListArea .listHead:after {display: block; width: 0; height: 0; content: ""; clear: both;}
-
-/*210430 margin-수정*/
-.searchListArea .listHead .fCheck {float: left;display: block;margin-right: 16px; margin-top: 7px;}
-
+.searchListArea .listHead .fCheck {float: left;display: block;margin-right: 29px;}
 .searchListArea .listHead .fCheck input[type="checkbox"] + label:after {top: 2px;-webkit-margin-before: -2px;}
 .searchListArea .listHead .funcWrap {float: left;text-align: left;margin-top: -1px;}
-
-
-/*210430 margin-top 수정*/
-.searchListArea .listHead .btnGroup {display: inline-block;float: left;margin-top: 9px;margin-left: 0px;position: relative;}
-
-/*210430 font-size 수정*/
-.searchListArea .listHead .btnGroup span{font-size: 14px;color: #999999;}
-
+.searchListArea .listHead .btnGroup {display: inline-block;float: left;margin-top: -1px;margin-left: 0px;position: relative;}
 .searchListArea .listHead .btnGroup button.btnIconB {color: #999999;pointer-events: none;}
 .searchListArea .listHead .btnGroup button.btnIconB.active {color: #111111;pointer-events: all;}
 .searchListArea .listHead .btnGroup button:hover.btnIconB {color: #111111;}
@@ -907,17 +752,8 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .searchListArea .listHead .btnGroup button.btnIconB span.quote:before {background-position: -200px -149px;width: 17px;}
 .searchListArea .listHead .btnGroup button.btnIconB span.folder:before {background-position: -250px -148px;}
 .searchListArea .listHead .btnGroup button.btnIconB span.tresh:before {background-position: -300px -150px;/* background-position: -100px 0px; */}
-
-/*210430 background 변경*/
-.searchListArea .listHead .btnGroup button.btnIconB span.download:before{background: url('../images/common/download.svg') no-repeat center!important;width: 14px;height: 13px;margin-right: 8px;}
-
-/*210430 background 변경*/
-.searchListArea .listHead .btnGroup button.btnIconB span.bookmark:before {background: url('../images/common/bookmark.svg') no-repeat center!important;width: 11px;height: 15px;margin-right: 8px;}
-
-/*210504 추가*/
-
-.searchListArea .listHead  #btnBookmarkAll2{display: none;}
-
+.searchListArea .listHead .btnGroup button.btnIconB span.download:before {background-position: -100px -199px;width: 18px;height: 14px;}
+.searchListArea .listHead .btnGroup button.btnIconB span.bookmark:before {background-position: -50px -250px;opacity: 1;}
 .searchListArea .listHead .btnGroup .btn + .btn {margin-left: 4px;}
 .searchListArea .listHead .funcWrap ul.sort {display: inline-block;float: right;margin-top: 1px;margin-left: 20px;}
 .searchListArea .listHead .funcWrap ul.sort li.order {float: left;position: relative;padding: 0 8px 0 8px;}
@@ -937,13 +773,8 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .searchListArea .listBody {padding: 0;}
 .searchListArea .listBody ul.list {/* overflow: hidden; */}
 .searchListArea .listBody ul.list li.item {margin:0;}
-
-/*210429 보더 삭제*/
-.searchListArea .listBody ul.list li.item .listBox {padding: 19px 18px 19px 43px;position: relative;margin-bottom: 15px;}
-
-
-/*210501 수정*/
-.searchListArea .listBody ul.list li.item .listBox:last-child {margin-bottom: 0px;}
+.searchListArea .listBody ul.list li.item .listBox {border: 1px solid #ececec;padding: 19px 18px 19px 43px;position: relative;margin-bottom: 15px;}
+.searchListArea .listBody ul.list li.item .listBox:last-child {margin-bottom: 10px;}
 .searchListArea .listBody ul.list li.item .listBox .fCheck {position: absolute;left: 19px;top: 19px;}
 .searchListArea .listBody ul.list li.item .listBox .fCheck input[type="checkbox"] + label:before {display: block;margin-top: 0px;}
 .searchListArea .listBody ul.list li.item .listBox .fCheck input[type="checkbox"] + label:after {top: 0px;}
@@ -956,139 +787,36 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .searchListArea .listBody ul.list li.item .listBox .folderWrap .option a span.unfold:after {display: inline-block;content:"";width: 8px;height:10px;margin: 4px 0 0 3px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -400px -150px;}
 .searchListArea .listBody ul.list li.item .listBox .folderWrap .option a span.fold {display: none;}
 .searchListArea .listBody ul.list li.item .listBox .folderWrap .option a span.fold:after {display: inline-block;content:"";width:8px;height:10px;margin: 4px 0 0 3px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -450px -150px;}
-
-/*210430 display:inline-block; 수정*/
-.searchListArea .listBody ul.list li.item .listBox .typeWrap {padding: 0;margin-bottom: 7px;display: inline-block;}
-
+.searchListArea .listBody ul.list li.item .listBox .typeWrap {padding: 0;margin-bottom: 7px;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap:after {display: block; width: 0; height: 0; content: ""; clear: both;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type {float: left;overflow: hidden;position: relative;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li {float: left;font-size: 12px;position: relative;padding: 1px 8px 0 6px;margin-top: -1px;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li:first-child {padding-left: 0px;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li:after {position:absolute;top: 3px;right:0;display:block;content:"";width:1px;height: 9px;vertical-align:middle;background: #cbcbcb;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li:last-child:after {display:none;}
-
-/*210427 컬러 변경*/
-.searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.data {color: #165C92;}
-
-/*210430 컬러변경*/
-.searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.use {color: #212121;}
-
-.searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.rate {color: #cc4736;}
+.searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.data {color: #326f0e;}
+.searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.use {color: #111111;}
+.searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.rate {color: #ef4348;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap ul.type li.knowledge {color: #111111;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap span.bookmark {float: right;color: #aaaaaa;font-size: 11.5px;}
-.searchListArea .listBody ul.list li.item .listBox .titWrap {position: relative;padding: 0 0px 0 0;margin-bottom: 7px;}
-
-/*210427 폰트 사이즈 수정*/
-/*210429 너비 수정*/
-/*210504 수정*/
-.searchListArea .listBody ul.list li.item .listBox .titWrap h5 {font-size: 16px;font-weight: unset; font-family: 'notokr-medium', sans-serif; line-height: 22px; width: 100%;}
-
-
-/*210427 폰트 컬러 수정*/
-.searchListArea .listBody ul.list li.item .listBox .titWrap h5 a {color: #111;margin-right: 6px;}
-
-/*210427 이미지 수정*/
-/*210429 마진 수정*/
-.searchListArea .listBody ul.list li.item .listBox .titWrap span.update {display: inline-block;width: 58px;height: 20px;vertical-align: middle;background: url(../images/common/update.svg) no-repeat;margin-top: -3px;}
-
-/*210427 모바일전용 update 추가*/
-/*21049 모바일전용 update 수정*/
-.searchListArea .listBody ul.list li.item .listBox .typeWrap span.update {display: inline-block;width: 58px;height: 20px;vertical-align: middle;background: url(../images/common/update.svg) no-repeat;margin-top: -2px;display: none;margin-left: 6px;}
-
-
-
-/*210504  서머리 추가 변경*/
-.searchListArea .listBody ul.list li.item .listBox span.summary {color: #C8C8C8;font-size: 13px;display: block;width: 100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
-
-
-/*210430 이용 수 변경*/
-/*210504 수정*/
-.searchListArea .listBody ul.list li.item .listBox span.stats {color: #666;font-size: 13px;/* cursor: pointer; */  margin-top: 18px; display: block;}
-.searchListArea .listBody ul.list li.item .listBox span.stats:before {display:inline-block;width: 18px;height: 11px;content:"";margin: -2px 4px 0px 0px;vertical-align: middle;background: url(../images/common/see.svg) no-repeat center center;}
-
-/*210430 color 변경*/
-/*.searchListArea .listBody ul.list li.item .listBox span.stats:hover {color: #666;}*/
-.searchListArea .listBody ul.list li.item .listBox span.stats small {color: #666;font-family: 'notokr-regular', sans-serif;font-size: 13px;margin-left: 4px;}
-
-/*210504 마진제거*/
-.searchListArea .listBody ul.list li.item .listBox ul.info {overflow: hidden;margin-left: -4px;line-height: 1;}
-
-/*210504 추가*/
-.searchListArea .listBody ul.list li.item .listBox span.summary{margin: 7px 0px 0px 0px; color:
-#666; font-size: 13px;}
-/*210430 알림멘트 위치 변경*/
-.searchListArea .listBody ul.list li.item .listBox span.stats .notice{color: #c8c8c8;margin-left: 15px;}
-
-/*210427 font-size 수정*/
-/*210504 수정*/
-.searchListArea .listBody ul.list li.item .listBox ul.info li {float: left;position: relative;padding: 0 6px 0 4px;color: #666;font-size: 13px;margin-bottom: 0px;}
-
-
-/*210504 제거*/
-/*.searchListArea .listBody ul.list li.item .listBox ul.info li a{color: #666!important;}*/
-
-
+.searchListArea .listBody ul.list li.item .listBox .titWrap {position: relative;padding: 0 180px 0 0;margin-bottom: 7px;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap h5 {font-size: 16px;font-weight: normal;/* font-family: 'notokr-medium', sans-serif; */line-height: 22px;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap h5 a {color: #000000;margin-right: 6px;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap span.update {display: inline-block;width: 44px;height: 15px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -250px -350px;margin-top: -2px;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap span.stats {position: absolute;right: 0;top: 4px;color: #999999;font-size: 13px;/* cursor: pointer; */}
+.searchListArea .listBody ul.list li.item .listBox .titWrap span.stats:before {display:inline-block;width: 16px;height: 11px;content:"";margin: -1px 1px 0 0;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat -50px -200px;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap span.stats:hover {color: #999999;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap span.stats small {color: #333333;font-family: 'notokr-medium', sans-serif;font-size: 13px;margin-left: 4px;}
+.searchListArea .listBody ul.list li.item .listBox ul.info {overflow: hidden;margin-bottom: 8px;margin-left: -4px;}
+.searchListArea .listBody ul.list li.item .listBox ul.info li {float: left;position: relative;padding: 0 6px 0 4px;color: #777777;font-size: 13px;margin-bottom: 5px;}
 .searchListArea .listBody ul.list li.item .listBox ul.info li:first-child {/* padding-left: 0px; */}
 .searchListArea .listBody ul.list li.item .listBox ul.info li:after {position:absolute;top: 3px;right:0;display:block;content:"";width:1px;height: 9px;vertical-align:middle;background: #c8c8c8;}
 .searchListArea .listBody ul.list li.item .listBox ul.info li:last-child:after {display:none;}
-
-/*210504 삭제*/
-/*.searchListArea .listBody ul.list li.item .listBox ul.info li.journal {font-weight: bold;}*/
-
-
+.searchListArea .listBody ul.list li.item .listBox ul.info li.journal {font-weight: bold;}
 .searchListArea .listBody ul.list li.item .listBox p.abstract {padding: 0;font-size: 13px;color: #777777;line-height: 20px;margin-top: -1px;margin-bottom: 9px;max-height: 4.2em;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap {padding: 0;overflow: hidden;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup {float: left;padding-bottom: 5px;margin-right: 14px;}
-
-
-
-/*210430 북마크 버튼 포함 툴팁*/
-/*210503 북마크 버튼 포함 툴팁*/
-.searchListArea .listBody ul.list li.item .listBox .bookToolAll{position: absolute;width: 120px;height: 60px;border: 1px solid #9DC7E5;border-radius: 4px;color: #1F8BD8;font-family: 'notokr-medium', sans-serif;font-size: 13px;line-height: 1.4;padding: 12px 7px;background-color: #fff;   top: -16px;right: 62px;display: none;    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);}
-
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1{border-color: #9DC7E5;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-2{border-color: #E39E95;color: #111111;padding: 12px 15px;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-3{border-color: #C8C8C8;color: #111111;padding: 12px 12px;}
-
-
-.searchListArea .listBody ul.list li.item .listBox .bookToolAll span:before {position: absolute;width: 0;height: 0;display: inline-block;content: "";border-color: transparent;border-style: solid;right: -11px;top: 25px;border-width: 0 7px 7px;transform: rotate(90deg);}
-.searchListArea .listBody ul.list li.item .listBox .bookToolAll span:after {position: absolute;width: 0;height: 0;display: inline-block;content: "";border-color: transparent;border-style: solid;right: -10px;top: 25px;border-width: 0 7px 7px;transform: rotate(90deg);}
-
-
-
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1{border-color: #9DC7E5;padding: 12px 3px; padding-left: 10px;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1 span:after{border-bottom-color: #fff;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1 span:before{border-bottom-color: #9DC7E5;}
-
-.searchListArea .listBody ul.list li.item .listBox .bookTool-2 span:after{border-bottom-color: #fff;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-2 span:before{border-bottom-color: #E39E95;}
-
-.searchListArea .listBody ul.list li.item .listBox .bookTool-3 span:after{border-bottom-color: #fff;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-3 span:before{border-bottom-color: #C8C8C8;}
-
-/*210430 수정*/
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB {border:!important;color: #666666;padding: 0px;  margin: 0px; width: 84px;height: 29px; border: 1px solid #C8C8C8; border-radius: 3px;position: absolute;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB span{color: #666666;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB span::before{display: none;!important}
-
-
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.bmList:hover{box-shadow: none;}
-
-
-
-
-/*210430 버튼 표시변경*/
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .btnView{top: 45px;right: 0px;}
-
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .downBtn,
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .useBtn{top: 80px;
-right: 0px;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .bmList{	border: none!important;width: 22px!important;height: 32px!important;background: url('../images/common/listmark-off.svg') no-repeat center; display: block;padding: 0px!important;top: -3px;background-color: transparent!important; right: 31px; background-size: 22px 32px;}
-
-/*210430 북마크시*/
-/*210504 폰트추가*/
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .bmList.on{background: url('../images/common/listmark-on.svg');}
-
+.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB {border: 1px solid #c8c8c8 !important;color: #333333;padding: 6px 9px 4px;min-width: 71px;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB span {font-size: 12px;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB span.download {margin: 0 2px 0 1px;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB span.use {margin: 0 2px 0 0px;}
@@ -1104,16 +832,8 @@ right: 0px;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap span.record {float: left;display: block;color: #999999;font-size: 12px;margin-top: 7px;width: 100%;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap span.notice {float: left;display: block;color: #db3a3f;font-size: 12px;margin-top: 3px;width: 100%;}
 .searchListArea .listBody ul.list li.item .listBox p.stop {color: #db3a3f;font-size: 12px;}
-
-/*210427 width height 수정*/
-/*210428 추가 수정  이미지 클릭영역  효과*/
-/*210429 위치 변경*/
-.searchListArea .listBody ul.list li.item .listBox .img {position: absolute;left: 0px;top: 0px;width: 158px;height: 222px;border: 1px solid #cccccc; cursor: pointer;}
-
-
-
-/*210427 img height 조정*/
-.searchListArea .listBody ul.list li.item .listBox .img img {width: 100%;height: 100%;}
+.searchListArea .listBody ul.list li.item .listBox .img {position: absolute;left: 0px;top: 23px;width: 120px;height: 150px;border: 1px solid #cccccc;}
+.searchListArea .listBody ul.list li.item .listBox .img img {width: 100%;height: 100%;max-height: 148px;}
 
 /* 폴더 추가 */
 .searchListArea .listBody ul.list li.item .listBox .btn_fold {position: relative;position: absolute;right:20px;bottom:25px;width:20px;height:20px;}
@@ -1128,41 +848,11 @@ right: 0px;}
 .private_histsory .text_box .personInfoDelDiv .tooltip_b button {display:block;height:20px; padding-left:25px;line-height: 20px;}
 .private_histsory .text_box .personInfoDelDiv .tooltip_b .btn_delete {background:#fff url(../images/common/btn_delete_typea.jpg) no-repeat 0 0 / 20px;}
 
-
-/*210430 패딩추가*/
-.searchListArea .listBody.schResult ul.list li.item:first-child .listBox {border-top: 1px solid #ececec;padding-right: 95px;}
-
-/*210504 패딩수정*/
-.searchListArea .listBody.schResult ul.list li.item .listBox {border: none;border-bottom: 1px solid #ececec;padding: 26px 0px 14px 33px;}
-.searchListArea .listBody.schResult ul.list li.item .listBox .fCheck {position: absolute;left: 0px;top: 24px;}
-
-
-
-/*210501페이징 추가*/
-.paging{ width: 100%;text-align: center;margin: 30px 0px 35px 0px; vertical-align: top}
-.paging a{font-size: 13px;display: inline-block;vertical-align: top;line-height:20px;margin: 0px 5px;}
-.paging a.active{color: #CC4736;}
-.paging a img{display: block;}
-.paging a.first,.paging a.next,.paging a.prev,.paging a.last{border: 1px solid #EFEFEF;border-radius: 20px; overflow: hidden;margin: 0px 3px;}
-
-
-/*210501 추천 저널 변경*/
-/*210504 배경색 변경*/
-.bottomBg{background-color: #f9f9f9; margin-top: 20px;}
-#dev_recommend_list.inner{overflow: hidden;}
-#dev_recommend_list .contRight {float: right;   width: calc(100% - 229px);padding: 0 0 18px 40px;}
-/*210504 수정*/
-#dev_recommend_list .contRight p{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-family: 'notokr-medium', sans-serif;}
-#dev_recommend_list .recommend{width: 700px;}
-#dev_recommend_list .recommend img{height: 130px;margin-bottom: 5px;}
-
-/*210504 추가*/
-#dev_recommend_list .contRight p.desc{font-size: 12px;font-family: 'notokr-regular', sans-serif;color: #111;}
-
-
-/*210430 패딩삭제*/
-.searchListArea .listBody.schResult ul.list li.item .listBox .titWrap {position: relative;}
-
+.searchListArea .listBody.schResult ul.list li.item:first-child .listBox {border-top: 1px solid #ececec;}
+.searchListArea .listBody.schResult ul.list li.item .listBox {border: none;border-bottom: 1px solid #ececec;padding: 19px 0px 19px 33px;}
+.searchListArea .listBody ul.list li.item .listBox ul.info {overflow: hidden;margin-bottom: 8px;margin-left: -4px;}
+.searchListArea .listBody.schResult ul.list li.item .listBox .fCheck {position: absolute;left: 0px;top: 19px;}
+.searchListArea .listBody.schResult ul.list li.item .listBox .titWrap {position: relative;padding: 0 130px 0 0;}
 .searchListArea .listBody.schResult ul.list li.item .listBox.noCheckbox {padding-left: 0px;}
 
 .searchListArea .listBody.schResult p.session {margin-top: 15px;margin-bottom: 18px;position: relative;padding-left: 12px;}
@@ -1170,22 +860,8 @@ right: 0px;}
 .searchListArea .listBody.schResult p.session span:before {display:inline-block;position: absolute;left: 0px;top: 10px;content:"";margin: -2px 8px 0 0px;width: 4px;height: 4px;vertical-align:middle;background: #111111;border-radius: 99px;}
 .searchListArea .listBody.schResult p.session + ul.list li.item:first-child .listBox {border-top: 1px solid #c8c8c8;}
 
-
-/*210429 보더추가*/
-.searchListArea .listBody.schDetail ul.list li.item:first-child{border-top: 1px solid #ececec;padding: 30px 0px;}
-.searchListArea .listBody.schDetail ul.list li.item{border-bottom: 1px solid #ececec;padding: 30px 0px;	margin-bottom: 10px;}
-
-/*210428 보더 수정*/
-/*210429 보더 수정*/
-.searchListArea .listBody.schDetail ul.list li.item:first-child .listBox {}
-
-/*210427 padding-left 수정*/
-
-/*210428 보더 수정*/
-/*210429 수정*/
-.searchListArea .listBody.schDetail ul.list li.item .listBox {padding: 0px 0px 0px 178px;min-height: 125px;}
-
-
+.searchListArea .listBody.schDetail ul.list li.item:first-child .listBox {border-top: 1px solid #ececec;}
+.searchListArea .listBody.schDetail ul.list li.item .listBox {border: none;border-bottom: 1px solid #ececec;padding: 27px 0px 19px 140px;min-height: 199px;}
 .searchListArea .listBody.schDetail ul.list li.item .listBox .titWrap {position: relative;padding: 0 0px 0 0;}
 
 .searchListArea .listBody.subjectSort ul.list li.item .listBox:last-child {margin-bottom: 0px;padding: 19px 0px 19px 22px;border: none;border-bottom: 1px solid #ececec;}
@@ -1195,46 +871,7 @@ right: 0px;}
 .searchListArea .listBody.subjectSort ul.list li.item .nodata {padding: 19px 22px 0px;text-align: center;}
 .searchListArea .listBody.subjectSort ul.list li.item .nodata span {font-size: 13px; color: #111111;}
 
-/*210427 하단 최신권호 추가*/
-/*210429 수정*/
-.searchListArea .listBody ul.list li.item .newBook{padding-left: 178px;}
-
-
-
-
-/*210429 추가*/
-.searchListArea .listBody ul.list li.item .newBook .newBookList:first-child{border-top: 1px solid #dcdcdc;}
-
-
-/*210429 수정*/
-.searchListArea .listBody ul.list li.item .newBook .newBookList{border-bottom: 1px solid #DCDCDC;height: auto;line-height: 1.3;font-size: 14px;cursor: pointer;background: url('../images/common/journal-arrow.png');background-repeat: no-repeat;background-position: 390px 14px; padding: 11px 0px; overflow: hidden;max-width: 400px;}
-
-
-.searchListArea .listBody ul.list li.item .newBook .newBookList span.newMark{	color: #111;margin-left: 5px;display: block;float: left;}
-
-
-/*210429 width 추가*/
-.searchListArea .listBody ul.list li.item .newBook .newBookList span.newBookTitle{	color: #666;margin-left: 10px;width: calc( 100% - 70px );display: block;float: left;}
-
-
-
-/*210427 알림버튼 추가*/
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn{ position: absolute; top: 30px;
-right: 0px;}
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn button{background-color: #fff!important; width: 85px;height: 32px;text-align: center;line-height: 32px;border-radius: 32px; font-family:  'notokr-medium', sans-serif;font-size: 14px;line-height: 0.8;
-    padding: 0px!important;border: 1px solid #DFDFDF;}
-
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn button span{	padding-left: 20px;	background: url('../images/common/bell-small.svg') no-repeat;	background-size: 16px;	background-repeat: no-repeat;	background-position: left center;color: #666;}
-
-
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn.active button{background-color: #CC4736!important;border: none;}
-
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn.active button span{	background: url('../images/common/bell-white.svg') no-repeat; color: #fff;	}
-
-
-
-
-.searchListArea .listFoot {text-align: center;display: none;}
+.searchListArea .listFoot {text-align: center;}
 .searchListArea .listFoot .paginate.num {margin-top: 40px;}
 
 .btn_add_typea {width:25px;height:25px; background:url(../images/common/btn_add_typea.jpg) no-repeat 0 0 / 19px;display:inline-block;cursor: pointer;}
@@ -1383,33 +1020,12 @@ right: 0px;}
 .modalWrap {overflow-y: auto;position:fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1060;background: rgba(0,0,0,0.2);}
 .modalWrap.adjustBG {background: rgba(0,0,0,0.12);}
 .modal {position: absolute;display: none;width: 100%;height: 100%;top: 0 !important;right: 0;bottom: 0;left: 0 !important;margin: 0 auto;/* transition: all 1.0s ease-in-out; */}
-
-.modal-sear .modalFooter{overflow: hidden;}
-.modal-sear .closeModal{display: block; width: 49%; float: left;}
-
-.modal-sear .closeModal:nth-child(2){margin-left: 2%;}
-
-/*210502 추가*/
-.modal-sear{width: calc( 100% - 60px );margin-top: 30px;}
-.modal-sear .innerSearch{padding: 0px 16px;}
-.modal-sear .innerSearch .subTitle{display: block;}
-.modal-sear .innerSearch .gInputText.schBox{width: 100%!important;}
-.modal-sear .innerSearch .gInputText.schBox .fText{    width: calc( 100% - 37px);}
-.modal-sear a,
-.modalContent .modalHeader .tit{font-family: 'notokr-regular', sans-serif;}
-.modalWrap .fCheck.searchChk input[type="checkbox"] + label:before{margin-top: -1px;}
-.mobileAppendArea2 .detachNodeResult2 .fCheck input[type="checkbox"] {position: unset!important;}
-.mobileAppendArea2 .detachNodeResult2 .fCheck input[type="checkbox"] + label:before{margin-top: 1px;}
-
-
 .modal .modalScreen {/* display: none !important; */display: block;position: absolute;/* position: fixed; */border: 0;left: 0;top: 0;width: 100%;height: 100%;/* background: #000; */-webkit-opacity: .0;-moz-opacity: .0;filter: alpha(opacity=0);opacity: .0;}
 .modal .modalScreen.opacity {-webkit-opacity: .20; -moz-opacity: .20; filter: alpha(opacity=20); opacity: .20;}
 .modal .modalContent {position: relative;background: #ffffff;border: 1px solid #e7e7e7;margin: 45px 0;}
 .modal .modalContent.notification {position: relative;background: #ffffff;border: 10px solid #e7e7e7;margin: 45px 0 45px;}
-.modal .modalContent .modalHeader {position:relative;padding: 13px 60px 13px 16px;}
-
-/*210504 폰트 수정*/
-.modal .modalContent .modalHeader .tit {font-size: 16px;display: inline-block;color: #111;margin-right: 10px;font-family: 'notokr-medium', sans-serif; overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;word-break: break-all;}
+.modal .modalContent .modalHeader {position:relative;padding: 13px 60px 13px 20px;}
+.modal .modalContent .modalHeader .tit {font-size: 20px;display: inline-block;color: #111;margin-right: 10px;font-family: 'notokr-bold', sans-serif; overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;word-break: break-all;}
 .modal .modalContent .modalHeader button.closeModal {position:absolute;top: 0px;right: 0px;display: block;width: 51px;height: 50px;background: url("../images/common/common_sfix_icon.png") no-repeat -234px -35px;border-left: 1px solid #e7e7e7;z-index: 100;}
 .modal .modalContent .modalBody {position:relative;padding: 0;}
 .modal .modalContent .modalBody.type02 {position:relative;padding: 0 20px 20px;overflow: hidden;}
@@ -1647,7 +1263,7 @@ right: 0px;}
 .modal .advancedCateBox p.tit {position: absolute;left: 15px;top: 11px;font-size: 15px;color: #111111;font-family: 'notokr-medium', sans-serif;}
 .modal .advancedCateBox ul.checkBox {padding: 0;overflow: hidden;margin-bottom: -10px;}
 .modal .advancedCateBox ul.checkBox li {float: left;margin-right: 25px;margin-bottom: 8px;}
-.modal .advancedCateBox ul.checkBox li .fCheck input[type="checkbox"] + label:after {top: 0px;left: 0;-webkit-margin-before: -1px;}
+.modal .advancedCateBox ul.checkBox li .fCheck input[type="checkbox"] + label:after {top: 1px;-webkit-margin-before: -1px;}
 
 .modal .multiLangInputBox {position: relative;border: 1px solid #e0e0e0;padding: 0px 14px 8px;margin-right: 20px;margin-bottom: 15px;display: none;}
 .modal .multiLangInputBox > table {margin-top: 13px;}
@@ -2161,115 +1777,31 @@ right: 0px;}
 /* 모바일 내비게이션 */
 .mobileNavgation {display: block;position: relative;}
 /*2021-04-06 메뉴 버튼 위치 초정으로 인해 mobileNavgation display시 .menuButton도 같이 변경되게 수정*/
-	
-	
-/*	210426 위치 수정*/
 .menuButton {display: block;}
-.menuButton.active {}
 
 /* 전체 */
-/*210427 패딩 0으로 수정*/
-.inner {margin:0 auto;padding: 0px;}
+.inner {margin:0 auto;padding: 0 14px;}
 
-	
-/* 210427 padding 간격 16px*/
-.searchP .newsTickerArea{padding: 18px 16px;border-top: 8px solid #F6F6F6;}
-
-/*210427 margin-bottom*/
-.news_wrap{margin-bottom: 0px;}	
-
-/*210427 margin-top 수정 */
-.searchListArea{margin-top: 0px;}
-	
-/*210427 발간저널 타이틀*/
-.searchListArea .searchListAreaTitle{display: none;}
-	
-	
-/*210427 간격 수정 */
-/*210428 보더 수정 */
-/*	210429 삭제 */
-/*
-.searchListArea .item:first-child{border-top: 8px solid #f6f6f6;}
-.searchListArea .item{ border-bottom: 8px solid #f6f6f6;padding: 0px 16px;}
-*/
-	
-	
-/*210429 보더 패딩 변경 */
-.searchListArea .listBody.schDetail ul.list li.item:first-child{border-top: 8px solid #f6f6f6;padding: 16px 16px;}
-.searchListArea .listBody.schDetail ul.list li.item{ border-bottom: 8px solid #f6f6f6;padding: 16px 16px;}
-	
-	
 /* 헤더 */
-	
-/*	210427 모바일 fixed*/
-	.header.sticky{padding: 0px;}
-	.header.sticky + .container {padding-top: 99px;}
-	
 .header .hdTop {display: none;}
-	
-/*210427 패딩 값 변경*/
-/*210428 패딩 값 변경*/
-.header .hdWrap {padding: 41px 16px 0 16px!important;}
-	
+.header .hdWrap {padding: 47px 0px 0 !important;}
 .header .hdWrap .organLogo {display: none;}
-	
-/*210427 모바일 간격 조정*/
-/*210428 모바일 마진 조정*/
-.header .hdWrap h1 {left: 16px;margin-top: 12px;margin-left: 1px;margin-top: 13px;}
-	
-/*210428 사이즈 변경*/
-.header .hdWrap h1 a {width: 98px;height: 15px;}
+.header .hdWrap h1 {left: 0px;margin-top: 13px;margin-left: 1px;}
+.header .hdWrap h1 a {width: 129px;height: 20px;}
 
 .header .gSearch {max-width: 100%;}
-	
-/* 210428 헤이트값 변경, margin 수정	*/
-.header .gSearch .searchFrom {height: 37px;margin-bottom: 10px;}
-	
-	
-/*210427 모바일에서 select 박스 감춤	*/
-.header .gSearch .searchFrom .fSelect {display: none;}
+.header .gSearch .searchFrom {height: 41px;margin-bottom: 11px;}
+.header .gSearch .searchFrom .fSelect {width: 93px;height: 36px;}
 .header .gSearch .searchFrom .fSelect span {padding: 0px 0 0 10px;line-height: 37px;font-size: 13px;letter-spacing: -1px;}
 .header .gSearch .searchFrom .fSelect span:after {top: 23px;}
-	
-	
-/* 210427 모바일 사이즈 변경	*/
-/* 210428 모바일 사이즈 수정	*/
-.header .gSearch .searchFrom .gInputText {width: calc(100% - 37px); float: left;}
-	
-/* 210427 모바일에서 감춤*/
-.header .gSearch .searchFrom .gInputText:before {display: none;}
+.header .gSearch .searchFrom .gInputText {width: calc(100% - 134px);}
+.header .gSearch .searchFrom .gInputText:before {top: 9px;left: -2px;}
 .header .gSearch .searchFrom .gInputText .placeholder {display: block;left: 14px;font-size: 13px;display: none !important;}
-	
-	
-	
-/*	210428 사이즈 수정 */
-.header .gSearch .searchFrom .gInputText input.search {padding-left: 13px;height: 34px;}
-	
-	
-/*210427 schoolLogo*/
-.header .hdWrap .schoolLogo{display: none;}
-	
-/*	210428 추가 헤더 고정 효과*/
-.header.sticky .hdWrap h1,
-.header.sticky .gUtil,
-.header.sticky .menuButton{display: none;}
-	
-.header.sticky .hdWrap{padding-top: 10px!important;}
-	
-	
-/*  210427 백그라운드 이미지 삭제	*/
-/*  210428 사이즈 수정	*/
-.header .gSearch .searchFrom .btnSearch {width: 37px;height: 34px;line-height: 34px;background-color: #ef4348;}
-	
-	
-	
+.header .gSearch .searchFrom .gInputText input.search {padding-left: 13px;height: 37px;}
+.header .gSearch .searchFrom .btnSearch {width: 41px;height: 37px;line-height: 37px;background: url(../images/common/mobile_search_icon01.png) no-repeat 11px 9px;background-color: #ef4348;}
 .header .gSearch a.btnDetailSearch {display: none !important;}
-	
-/*	210427 모바일 버전 안보이게 추가*/
-.header .gSearch .fCheck{ display: none!important;}
 
-/* 210429 수정	*/
-.header .atcmpLayer {top: 37px;}
+.header .atcmpLayer {top: 41px;}
 
 .header .gSearch .relatedKeyword {display: block;}
 .header .gSearch .relatedKeyword {width: calc(100% + 28px);max-width: 959px;margin: 0px -14px 13px;padding-top: 11px;padding-left: 14px;padding-right: 45px;/* height: 28px; */border-top: 1px solid #e7e7e7;}
@@ -2284,38 +1816,13 @@ right: 0px;}
 .header .gSearch .relatedKeyword .option a span.fold {display: none;right: -48px;top: 0;}
 .header .gSearch .relatedKeyword .option a span.fold:after {display: inline-block;content:"";width: 25px;height: 20px;margin: 0px 0px 0 5px;vertical-align: middle;background: url(../images/common/common_sfix_icon.png) no-repeat 10px -246px;}
 
-	
-/* 210426 right 수정	*/
-/* 210428 위치값 수정	*/
-.header .gUtil {margin-top: 0px;right: 61px;top: 8px;}
-	
-/* 210426 width height  추가	*/
-.header .gUtil ul.list li.item {margin-left: 20px; width: 27px; height: 24px;}
-	
-/*	210426 width height 제거, 백그라운드 수정*/
-.header .gUtil ul.list li.item a.link:before {background-size: auto 24px; height: 24px;}
-.header .gUtil ul.list li.item a.alarm:before {background-size: auto 24px; height: 24px;}
-	
-/* 210427 badge 모바일 위치 수정	*/
-/* 210428 badge 모바일 수정	*/
-	.header .gUtil ul.list li.item .badge{ right: -4px; min-width: 14px;
-    min-height: 14px;line-height: 14px;font-size: 10px!important; font-weight: lighter!important;}
-	.header .gUtil ul.list li.item .badgeMyStudy{right: -2px; min-width: 14px;
-    min-height: 14px;line-height: 14px;font-size: 10px!important; font-weight: lighter!important;}
-	
-/*	210426 주석처리 */
-/*
+.header .gUtil {margin-top: 0px;right: 39px;top: 13px;top: 17px;}
+.header .gUtil ul.list li.item {margin-left: 11px;}
+.header .gUtil ul.list li.item a.link:before {width: 18px;height: 20px;}
 .header .gUtil ul.list li.item a.mystudy:before {background-position: 0px 0px;background: url(../images/common/mobile_util01.png) no-repeat;}
 .header .gUtil ul.list li.item a.alarm:before {background-position: 0px 0px;background: url(../images/common/mobile_util02.png) no-repeat;}
-	
-*/
-	
-/*	210502 추가*/
-	.header .gUtil ul.list li.item a.alarm:before{background-position: center 0px;}
-	
 .header .gUtil ul.list li.item a.link span {overflow:hidden;visibility:hidden;position:absolute;left:-120%;width:1px;height:1px;margin:0;padding:0;background:none;font-size:0;line-height:0;text-indent:120%;white-space:nowrap;}
-	
-	
+.header .gUtil ul.list li.item a.alarm {display: none;}
 .header .gUtil ul.list li.item a.alarm.mobile {display: block;}
 .header .gUtil ul.list li.item:nth-child(3) {display: none;}
 .header .gUtil ul.list li.item .remainWrap {display: none;}
@@ -2332,12 +1839,7 @@ right: 0px;}
 /* 콘텐츠 */
 .contents .contWrap {padding-bottom: 40px;}
 .contents .contLeft {display:none;}
-	
-/*	210502 패딩 수정*/
-.contents .contRight {float: none; width: 100%; padding: 0 0 0px 0; border: 0;min-height: inherit;}
-	
-	
-	
+.contents .contRight {float: none; width: 100%; padding: 0 0 40px 0; border: 0;}
 .contents .contWrap.aside {padding-right: 14px;}
 .contents .contWrap.aside h2 {font-size: 20px;line-height: 28px;}
 .contents .contWrap.aside .asideWrap {position: static;width: 100%;overflow: hidden;margin-bottom: 30px;}
@@ -2409,10 +1911,7 @@ right: 0px;}
 
 /* 제목 */
 /* 2021.02.23 카카오톡 로그인 추가 - 모바일화면에서 로그인 설명 삭제 요청, 우선 display:none처리 */
-	
-	
-/*  210427 모바일전용 타이틀 수정	*/
-.headingArea {display:block;}
+.headingArea {display:none;}
 .headingArea {padding: 26px 0 8px 0;margin-bottom: 22px;}
 .headingArea h2 {font-size: 18px;display: block;margin-right: 0px;margin-bottom: 3px;}
 .headingArea h2 .fSelect.lnb {display: inline-block !important;}
@@ -2426,39 +1925,16 @@ right: 0px;}
 .headingArea.schResult h2 {/* display: none; */}
 .headingArea.schResult span.count {font-size: 15px;font-family: 'notokr-bold', sans-serif;}
 .headingArea.schResult span.count strong {display: block;display: inline;margin-bottom: 5px;}
-	
-	
-/*	210501 모바일 버전 수정*/
-.headingArea.schResult .gRight {position: absolute;right: 1px;bottom: auto;top: 0;display: none;}
-.headingArea.schResult {padding: 0px;margin-bottom: 10px;margin-top: 15px;}
-.headingArea.schResult	.mobileAppendArea{border-top: none;margin-bottom: 0px;padding: 0px;}
-.headingArea.schResult .mobileAppendArea .detachNodeResult1 .selectWrap,
-.headingArea.schResult .mobileAppendArea .detachNodeResult1 p.tit{float: left;font-size: 12px;margin-bottom: 0px;}
-.headingArea.schResult .mobileAppendArea .detachNodeResult1{overflow: hidden;padding: 10px 16px;}
+.headingArea.schResult .gRight {position: absolute;right: 1px;bottom: auto;top: 0;}
+.headingArea.schResult.noData {padding: 0px 0px 0px 0;margin-bottom: 10px;margin-top: 15px;}
+.headingArea.schResult.noData h2 {display: block;}
+.headingArea.schResult.noData span.count {display: block;margin-bottom: 10px;}
+.headingArea.schResult.noData span.count strong {display: inline;}
 
-.headingArea.schResult .mobileAppendArea .detachNodeResult1 .selectWrap{width: calc( 100% - 82px );}
-	
-	
-.searchListArea.schResult.searchListArea .listBody ul.list li.item .listBox .fCheck input[type="checkbox"] + label:before,
-.searchListArea.schResult.searchListArea .listBody ul.list li.item .listBox .fCheck input[type="checkbox"] + label:after{display: none;} 
+.headingArea.schResult span.searchCount {font-size: 15px; font-family: 'notokr-bold', sans-serif; position: absolute; right: 0px;}
 
-	
-/*	210501 모바일 버전 수정*/
-.headingArea.schResult h2 {display: inline-block;font-size: 14px;margin-left: 16px;}
-/*	210502 모바일 버전 수정*/
-.headingArea.schResult span.count {display: block;margin-bottom: 7px;border-bottom: 1px solid #DFDFDF;padding: 0px 16px 10px 16px;}
-.headingArea.schResult span.count strong {display: inline;}
-
-/*	210501 모바일 버전 수정*/
-.headingArea.schResult span.searchCount {font-size: 14px; font-family: 'notokr-bold', sans-serif; position: unset;}
-
-	
-/* 210427 모바일 헤더 간격 수정	*/
-.headingArea.schDetail {padding: 12px 16px 5px 16px !important;border-bottom: none;margin-bottom: 0px;}
-/* 210427 모바일 폰트 사이즈 조정	*/
-.headingArea.schDetail h2 {font-size: 16px;}
-	
-	
+.headingArea.schDetail {padding: 20px 0 8px 0 !important;border-bottom: none;margin-bottom: 12px;}
+.headingArea.schDetail h2 {font-size: 21px;}
 .headingArea.schDetail button.btnAlarm {display: none;}
 .headingArea.schDetail button.btnMoveAuthorView {display: none;}
 .headingArea.schDetail button.btnApplyInterestAuthor {display: none;}
@@ -2631,37 +2107,15 @@ right: 0px;}
 
 /* 검색 리스트 */
 .searchListArea.schResult {margin-top: 0px;}
-	
-/*	210504 추가*/
-.searchListArea.schResult .listHead {display: block;padding: 0px 16px;border-top: 1px solid #DFDFDF;}
-.searchListArea .listHead .funcWrap {display: block; margin-top: 9px;}
-.searchListArea .listHead .funcWrap .fSelect select {font-size: 12px;}
-.searchListArea .listHead .funcWrap .fSelect:nth-child(2){display: none;}
-.searchListArea .listHead .btnGroup button:nth-child(1){display: none;}
-	
-/*	210504 수정*/
-.searchListArea .listHead #btnBookmarkAll2{display: block;width: 121px;height: 27px;border: 1px solid #DCDCDC; border-radius: 3px;padding: 0px;margin-left: 0px!important;}
-.searchListArea .listHead #btnBookmarkAll2 span{font-size: 12px;border-radius: 3px; }
-.searchListArea .listHead #btnBookmarkAll2 span.bookmark:before { background: url(../images/common/bookmark.svg) no-repeat center!important; width: 9px;	background-size: 9px 12px!important;}
-	
-	
-	
-.searchListArea .listHead .btnGroup {width: auto;float: left;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB{width: 60px;	height: 24px;margin-right: 16px!important;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.bmList{margin-right: 0px!important;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB span{font-size: 10px;}
-.searchListArea .listBody ul.list li.item .listBox .titWrap h5 a {color: #111;margin-right: 6px;}
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB {margin-right: 5px;margin-bottom: 15px;/* min-width: 92px; */}
-	
-	
-	
-	
-	
+.searchListArea.schResult .listHead {display: none;}
 .searchListArea .listHead {margin-bottom: 18px;padding: 0;/* overflow: hidden; */}
+.searchListArea .listHead {margin-bottom: 10px;}
 .searchListArea .listHead .fCheck {display: none;}
+.searchListArea .listHead .btnGroup {width: 100%}
 .searchListArea .listHead .btnGroup button:nth-child(2) {display: none;}
-.searchListArea .listHead .btnGroup .tooltipWrap {display: none;}
-.searchListArea .listHead .btnGroup .btnThesisDownload {display: none}
+    .searchListArea .listHead .btnGroup .tooltipWrap {display: none;}
+    .searchListArea .listHead .btnGroup .btnThesisDownload {display: none}
+.searchListArea .listHead .funcWrap {display: none;}
 .searchListArea .listHead .funcWrap ul.sort {display: none;}
 .searchListArea .listHead .funcWrap .fSelect.filtering {display: block !important;}
 .searchListArea .listBody ul.list li.item .listBox {border-left: none;border-right: none;border-bottom: none;padding: 20px 0px 19px 20px;margin-bottom: 0px !important;}
@@ -2669,87 +2123,23 @@ right: 0px;}
 .searchListArea .listBody ul.list li.item .listBox .fCheck {position: absolute;left: 0px;top: 19px;}
 .searchListArea .listBody ul.list li.item .listBox .folderWrap {padding-right: 50px;}
 .searchListArea .listBody ul.list li.item .listBox .titWrap {padding: 0 0px 0 0;}
-	
-/*	210504 추가*/
-.searchListArea .listBody ul.list li.item .listBox span.summary {display: none;}
-	
-/*210429 width 추가*/
-	
-	
+.searchListArea .listBody ul.list li.item .listBox .titWrap h5 {font-size: 16px;font-weight: normal;/* font-family: 'notokr-medium', sans-serif; */line-height: 22px;}
+.searchListArea .listBody ul.list li.item .listBox .titWrap h5 a {color: #000000;margin-right: 6px;}
 .searchListArea .listBody ul.list li.item .listBox .titWrap span.stats {top: -22px;}
 .searchListArea .listBody ul.list li.item .listBox .typeWrap span.bookmark {position: absolute;left: 22px;top: 20px;float: none;}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup {padding-bottom: 0px;margin-right: 0px;}
+.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup button.btnIconB {margin-right: 5px;margin-bottom: 6px;/* min-width: 92px; */}
 .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .btn + .btn {margin-left: 0px;}
-	
+.searchListArea .listBody ul.list li.item .listBox .img {top: 18px;width: 84px;height: 105px;}
+.searchListArea .listBody ul.list li.item .listBox .img img {max-height: 103px;}
 
-/*	210504 추가 */
-	
-.searchListArea .listBody ul.list li.item .listBox .bookToolAll{width: 266px;height: 72px;border: none;background-color: rgba(0,0,0,0.6);border-radius: 8px; color: #fff; text-align: center;position: fixed;top: inherit; bottom: 200px;z-index: 9999;left: 50%; transform: translateX(-50%);}
-
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1{position: absolute;width: 120px;height: 60px;border: 1px solid #9DC7E5;border-radius: 4px;color: #1F8BD8;font-family: 'notokr-medium', sans-serif;font-size: 13px;line-height: 1.4;padding: 12px 3px;background-color: #fff;   top: -16px;left: inherit; right: 0px;display: none;    box-shadow: 2px 2px 3px rgb(0 0 0 / 20%);pointer-events: none;}
-
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1{border-color: #9DC7E5;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1 span:after{border-bottom-color: #fff;}
-.searchListArea .listBody ul.list li.item .listBox .bookTool-1 span:before{border-bottom-color: #9DC7E5;}
-
-
-	
-	
-/* 210504 추가	*/
-.searchListArea .listBody ul.list li.item .listBox .bookTool-2,
-	.searchListArea .listBody ul.list li.item .listBox .bookTool-3{padding: 18px 12px;}
-	
-/*210502 버튼 수정*/
-.searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .downBtn, .searchListArea .listBody ul.list li.item .listBox .btnWrap p.btnGroup .useBtn{top: unset; bottom: 8px;}
-	
-/*	210427 width height 수정*/
-/*	210429 위치 수정*/
-.searchListArea .listBody ul.list li.item .listBox .img {top: 0px;width: 103px;height: 145px;}
-	
-/* 210427 height 제거	*/
-.searchListArea .listBody ul.list li.item .listBox .img img {max-height: auto;}
-
-/*210502 수정*/
-.searchListArea .listBody.schResult ul.list li.item .listBox {padding: 20px 0px 19px 20px;padding-right: 0px!important;}
-	
-	
+.searchListArea .listBody.schResult ul.list li.item .listBox {padding: 20px 0px 19px 20px;}
 .searchListArea .listBody.schResult ul.list li.item .listBox .titWrap {position: relative;padding: 0 0px 0 0;}
 .searchListArea .listBody.schResult p.session {margin-bottom: 15px;}
 .searchListArea .listBody.schResult p.session span {font-size: 15px;}
 
-	
-/*  210427 padding-left 109px; height	*/
-/*	210428 패딩 수정*/
-/*	210429 패딩 height  수정*/
-.searchListArea .listBody.schDetail ul.list li.item .listBox {padding: 0px 0px 0px 109px;
-    min-height: 145px; border: none!important;}
-
-
-/* 210427 신간정보 모바일*/
-.searchListArea .listBody ul.list li.item .newBook{padding: 0px;margin-top: 18px;}
-.searchListArea .listBody ul.list li.item .newBook .newBookList{max-width: 100%;
-    background-position: 98% 14px;}
-.searchListArea .listBody ul.list li.item .newBook .newBookList span.newBookTitle {width: calc( 100% - 46px );}
-	
-	
-/* 210427 모바일 알림 위치 변경,버튼사이즈 변경*/
-/* 210429 모바일 알림 위치 변경*/
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn{right: 0px;bottom: 0px;top: unset;}
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn button{width: 54px;height: 24px;font-size: 10px;}
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn button span{padding-left: 15px;background-size: 12px;font-size: 10px;  background-position: left center;}
-.searchListArea .listBody.schDetail ul.list li.item .alarmBtn.active button span{padding-left: 15px;background-size: 12px;font-size: 10px; background-position: left center;}
+.searchListArea .listBody.schDetail ul.list li.item .listBox {padding: 22px 0px 19px 100px;min-height: 150px;}
 .searchListArea .listBody.schDetail ul.list li.item .listBox .titWrap {position: relative;padding: 0 0px 0 0;}
-	
-/*	210427 모바일 버전 업데이트 버튼*/
-	
-	.searchListArea .listBody ul.list li.item .listBox .typeWrap span.update{
-		display: inline-block;
-	}
-	.searchListArea .listBody ul.list li.item .listBox .titWrap span.update{
-		display: none;
-	}
-	
-	
 
 /* 패널 */
 
@@ -2975,7 +2365,7 @@ right: 0px;}
 .popup_tooltip.tooltip_tip,
 .popup_tooltip.tooltip_new,
 .popup_tooltip.tooltip_quote{position:fixed;right:-500px;bottom:100px;width:346px;height:160px;opacity:0}
-.popup_tooltip .slide_area{position:relative;width:100%;height:100%;overflow:hidden;background-color: #fff8f4;}
+.popup_tooltip .slide_area{position:relative;width:100%;height:100%;overflow:hidden;background-color: #fff8f4}
 .popup_tooltip .slide_wrap{position:absolute;left:0;top:0;width:1348px}
 .popup_tooltip .slide_box{float:left;position:relative;padding:15px 20px;width:446px;height:140px}
 .popup_tooltip .slide_area .tooltip_title{font-size:18px;letter-spacing:-1px}
@@ -3055,9 +2445,7 @@ right: 0px;}
 	.joinComplete .botBox:last-child .botTitle{margin-bottom:3px}
 	.joinComplete .botBox:last-child{padding-bottom:0}
 	.joinComplete .botBox p{font-size:14px}
-	
-/*	210504 모바일 최근검색어*/
-	.right-box{right: 0px!important;}
+	#nodeDetailFloBa{bottom: 115px; width: 230px; height: 100px;right: 51px !important;}
 }
 
 
