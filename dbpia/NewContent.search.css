@@ -1601,7 +1601,9 @@
 /*210504 상단 분류 수정*/
 .searchP .thesisInfoArea{margin-top: 17px;margin-bottom: 0px;padding-bottom: 41px;}
 .searchP .thesisInfoArea .typeWrap ul.type li.data {color: #165C92;font-size: 14px;}
-.contents .contWrap.aside .section{padding-right: 20px;  border-right: 1px solid #efefef;}
+
+/*210515 마진 바텀 추가 */
+.contents .contWrap.aside .section{padding-right: 20px;  border-right: 1px solid #efefef;margin-bottom: 50px;}
 .contents .contWrap.aside .section:nth-child(1){border-right: none;overflow: hidden;padding-right: 0px;}
 .searchP .thesisInfoArea .typeWrap{margin-bottom: 3px;}
 
@@ -1609,8 +1611,6 @@
 /*210506 폰트 사이즈 수정*/
 .contents .contWrap.aside h2{font-size: 22px;margin-bottom: 4px;}
 .searchP .thesisInfoArea p.subTit{font-size: 14px; color: #999;padding-bottom: 15px;    border-bottom: 1px solid #efefef;margin-bottom: 0px;}
-
-
 
 /*210506 저자 정보 변경*/
 .searchP .thesisInfoArea .quoteWrap{padding: 0px 15px 15px 15px; background-color: transparent;border-right: none; border-left: none;margin-top: 0px;}
@@ -1639,47 +1639,62 @@
 .searchP .thesisInfoArea .stats .quote,
 .searchP .thesisInfoArea .stats .bookmark{cursor: pointer;padding: 0px;margin: 0px 10px;}
 
+
+
+
 /*210506 상단 좌측*/
 .contents {max-width: 1080px; margin: 0 auto;}
 .contents .contWrap.aside{max-width: 870px; margin: 0 auto; padding: 0px; float: left;}
 .contents .asideWrap{width: 210px;float: left;}
-.contents .asideWrap .btnTop button.quoteMenu{ background-color: #1F8BD8;margin-left: 10px;}
-.contents .asideWrap .btnTop button{display: inline-block; width: 60px; height: 60px; border: 1px solid #CCCCCC; border-radius: 3px; padding: 0px; min-width: inherit;margin: 0px;vertical-align: top;float: left;text-align: center;font-size: 14px; color: #111;font-family: 'notokr-medium', sans-serif; color: #fff;border: none;}
-.contents .asideWrap .btnTop a{display: inline-block; width: 60px; height: 60px; border: 1px solid #CCCCCC; border-radius: 3px; padding: 0px; min-width: inherit;margin: 0px;vertical-align: top;float: left;text-align: center;font-size: 14px; color: #111;font-family: 'notokr-regular', sans-serif; color: #111;border: 1px solid #ccc;}
-.contents .asideWrap .btnTop a:hover{box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
-.contents .asideWrap .btnTop{border-bottom: 1px solid #efefef;overflow: hidden; padding: 16px 0px 16px 0px;margin-top: 17px;}
-.contents .asideWrap .btnTop a{margin: 0px 10px;position: relative;}
-.contents .asideWrap .btnTop a .count{font-size: 8px;min-width: 15px;min-height: 15px;border-radius: 15px;display: block;position: absolute;top: 7px;left: 28px;background-color: #666;color: #fff;line-height: 15px;padding: 1px 3px;}
 
-/*인용 버튼*/
-.contents .asideWrap button.quoteMenu:before{content: ""; width: 25px; height: 20px; background: url('../images/common/quote.svg') no-repeat; background-size: 25px 20px; margin: 0 auto; display: block;margin-bottom: 5px;}
-.contents .asideWrap button.quoteMenu:hover{background-color: #0C74BE;}
+
+/*210514 보더 추가*/
+.contents .asideWrap .btnTop button{display: inline-block; width: 60px; height: 60px; border: 1px solid #1F8BD8; border-radius: 3px; padding: 0px; min-width: inherit;margin: 0px;vertical-align: top;float: left;text-align: center;font-size: 14px; color: #111;font-family: 'notokr-medium', sans-serif; color: #fff;}
+
+/*댓글버튼*/
+.contents .asideWrap .btnTop{border-bottom: 1px solid #efefef;overflow: hidden; padding: 16px 0px 16px 0px;margin-top: 17px;}
+.contents .asideWrap .btnTop a{display: inline-block; width: 60px; height: 60px; border: 1px solid #CCCCCC; border-radius: 3px; padding: 0px; min-width: inherit;margin: 0px;vertical-align: top;float: left;text-align: center;font-size: 14px; color: #111;font-family: 'notokr-regular', sans-serif; color: #111;border: 1px solid #ccc;margin: 0px 10px;position: relative;}
+.contents .asideWrap .btnTop a:hover{box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+.contents .asideWrap .btnTop a .count{font-size: 8px;min-width: 15px;min-height: 15px;border-radius: 15px;display: block;position: absolute;top: 7px;left: 28px;background-color: #666;color: #fff;line-height: 15px;padding: 1px 3px;}
+.contents .asideWrap .btnReple.active span{display: none;}
+.contents .asideWrap .btnReple:hover{text-decoration: none;}
+.contents .asideWrap .btnReple:before{content: ""; width: 22px; height: 20px; background: url('../images/common/reply.svg') no-repeat; background-size: 22px 20px; margin: 0 auto; display: block; position: absolute; top: 11.5px;left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+.contents .asideWrap .btnReple .btnTitle {position: absolute; top: 36.5px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+.contents .asideWrap button.quoteMenu:before{content: ""; width: 25px; height: 20px; background: url('../images/common/quote.svg') no-repeat; background-size: 25px 20px; display: block; position: absolute; top: 11.5px;left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+.contents .asideWrap button.quoteMenu .btnTitle {position: absolute; top: 36.5px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+
+
+/*인용 버튼 수정*/
+.contents .asideWrap button.quoteMenu{position: relative; background-color: #1F8BD8;margin-left: 10px;}
+.contents .asideWrap button.quoteMenu:before{content: ""; width: 25px; height: 20px; background: url('../images/common/quote.svg') no-repeat; background-size: 25px 20px; display: block; position: absolute; top: 11.5px;left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+.contents .asideWrap button.quoteMenu:hover{background-color: #0C74BE; border: 1px solid #0C74BE;}
 
 
 /*알림 버튼*/
 .contents .asideWrap button.btnModal{color: #111;font-family: 'notokr-regular', sans-serif;}
-.contents .asideWrap button.btnModal:before{content: ""; width: 20px; height: 25px; background: url('../images/common/bell-off.svg') no-repeat; background-size: 20px 25px; margin: 0 auto; display: block;margin-bottom: 5px;}
+.contents .asideWrap button.btnModal:before{content: ""; width: 19px; height: 24px; background: url('../images/common/bell-off.svg') no-repeat; background-size: 19px 24px; margin: 0 auto; display: block; position: absolute; top: 10px;left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
 .contents .asideWrap button.btnModal:hover{background-color: #fff;color: #CC4736;border-color: #CC4736!important; box-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
-.contents .asideWrap button.btnModal:hover:before{content: ""; width: 19px; height: 24px; background: url('../images/common/bell-on.svg') no-repeat; background-size: 19px 24px; margin: 0 auto; display: block;margin-bottom: 5px;}
+.contents .asideWrap button.btnModal:hover:before{content: ""; width: 19px; height: 24px; background: url('../images/common/bell-on.svg') no-repeat; background-size: 19px 24px; margin: 0 auto; display: block;top: 10px;left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
 .contents .asideWrap button.btnModal.active{color: #CC4736;border-color: #CC4736!important;}
-.contents .asideWrap button.btnModal.active:before{content: ""; width: 19px; height: 24px; background: url('../images/common/bell-on.svg') no-repeat; background-size: 19px 24px; margin: 0 auto; display: block;margin-bottom: 5px;}
-.contents .asideWrap .btnReple.active span{display: none;}
-.contents .asideWrap .btnReple:hover{text-decoration: none;}
-.contents .asideWrap .btnReple:before{content: ""; width: 22px; height: 20px; background: url('../images/common/reply.svg') no-repeat; background-size: 22px 20px; margin: 0 auto; display: block; margin-bottom: 5px; margin-top: 12px;}
-.searchP .thesisInfoArea .quoteWrap{border:none;border-right: 1px solid #efefef;margin-top: 20px;margin-bottom: 0px; padding-bottom: 17px;min-height: 160px; }
+.contents .asideWrap button.btnModal.active:before{content: ""; width: 19px; height: 24px; background: url('../images/common/bell-on.svg') no-repeat; background-size: 19px 24px; margin: 0 auto; display: block;top: 10px;left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+.contents .asideWrap button.btnModal .btnTitle {position: absolute; top: 36.5px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+
+
 
 /*모바일 알럿*/
 .mobilePop{display: none; position: fixed; top: 70%; left: 50%; transform: translate(-50%);-webkit- transform: translate(-50%);max-width: 250px; min-width: 250px; background-color: rgba(0,0,0,0.6); z-index: 9999;font-size: 16px; color: #fff; padding: 25px 15px;border-radius: 8px; text-align: center;}
 
 
+.searchP .thesisInfoArea .quoteWrap{border:none;border-right: 1px solid #efefef;margin-top: 20px;margin-bottom: 0px; padding-bottom: 17px;min-height: 160px; }
 
 
 /*리스트 버튼*/
 .searchP .thesisInfoArea .btnWrap{overflow: hidden; border-right: 1px solid #efefef; padding:0px 20px 41px 0px;}
 .searchP .thesisInfoArea .btnWrap .borderWrap{overflow: hidden;border-top: 1px solid #efefef;padding-top: 17px;}
 .searchP .thesisInfoArea .mobBtn{display: none;}
-.searchP .thesisInfoArea .btnWrap .borderWrap .record{margin-left: 16px;margin-top: 0px;}
-.searchP .thesisInfoArea .btnWrap p.btnGroup{padding-bottom: 0px;margin-right: 5px;margin-bottom: 32px;}
+.searchP .thesisInfoArea .btnWrap .borderWrap .record{margin:0px 30px 0px 16px; width: calc( 100% - 493px );}
+.searchP .thesisInfoArea .btnWrap .borderWrap .recordRed{color: #CC4736;}
+.searchP .thesisInfoArea .btnWrap p.btnGroup{padding-bottom: 0px;margin-right: 5px;margin-bottom: 32px;max-width: 442px;}
 
 
 
