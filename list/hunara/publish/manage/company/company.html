@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/sub.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li class="active">
+				<a href="./company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li>
+				<a href="../reserve/reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="../setting/setting-admin.html">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./company.html">기업관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./company.html">기업관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents company-con">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>기업관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big active">기업정보</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./company-new.html">신규등록</a></li>
+							<li class="active"><a href="./company.html">기업관리</a></li>
+							<li><a href="./company-people.html">기업 사원 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">기업 휴양소 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./company-room-new.html">신규 휴양소 추가</a></li>
+							<li><a href="./company-room-manage.html">기업 휴양소 관리</a></li>
+							<li><a href="./company-room-go.html">휴양소 추첨 관리</a></li>
+						</ul>
+					</div>
+				</li> 
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>기업관리</div>
+			</div>
+			<div class="com-search">
+				<div class="com-day">
+					<div class="cd-t">
+						<span>등록일</span>
+					</div>
+					<div class="cd-c">
+						<input type="text" id="start" data-js-start-date><span>~</span>
+						<input type="text" id="end" disabled data-js-end-date>
+					</div> 
+				</div>
+				<div class="com-tab">
+					<select name="com-sear" id="com-sear">
+						<option value="com">기업명</option>
+						<option value="com-peo">담당자명</option>
+					</select>
+					<input type="text">
+					<button type="button">검색</button>
+				</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<table id="sortLi" class="sortable">
+						<thead>
+							<tr>
+								<th class="th-btn"><span>번호</span></th>
+								<th class="th-btn"><span>등록일</span></th>
+								<th class="th-btn"><span>기업명</span></th>
+								<th class="th-btn"><span>도메인</span></th>
+								<th class="th-btn"><span>담당자</span></th>
+								<th class="th-btn"><span>연락처</span></th>
+								<th class="th-btn"><span>핸드폰</span></th>
+								<th class="th-btn"><span>이메일</span></th>
+								<th class="th-btn"><span>사원</span></th>
+								<th class="th-btn"><span>휴양소</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr onclick="location.href='./company-view.html'">
+								<td>1</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>02-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>BN@BN.com</td>
+								<td>102</td>
+								<td>3</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>2</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									4http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>302-xxxx-xxxx</td>
+								<td>1010-xxxx-xxxx</td>
+								<td>5BN@BN.com</td>
+								<td>6102</td>
+								<td>3</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>3</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>2박상호</td>
+								<td>902-xxxx-xxxx</td>
+								<td>8010-xxxx-xxxx</td>
+								<td>1BN@BN.com</td>
+								<td>4102</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>3박상호</td>
+								<td>502-xxxx-xxxx</td>
+								<td>4010-xxxx-xxxx</td>
+								<td>9BN@BN.com</td>
+								<td>3102</td>
+								<td>63</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>5</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>402-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>2BN@BN.com</td>
+								<td>1102</td>
+								<td>53</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>6</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>02-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>BN@BN.com</td>
+								<td>102</td>
+								<td>3</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>7</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>02-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>BN@BN.com</td>
+								<td>102</td>
+								<td>3</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>8</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>02-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>BN@BN.com</td>
+								<td>102</td>
+								<td>3</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>9</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>02-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>BN@BN.com</td>
+								<td>102</td>
+								<td>3</td>
+							</tr>
+							<tr onclick="location.href='./company-view.html'">
+								<td>10</td>
+								<td>2021-03-01</td>
+								<td>
+									<div class="com-logo">
+										<img src="../img/common/logo_b.png" alt="">
+									</div>
+									<span>비엔시스템</span>
+								</td>
+								<td>
+									http://BN.hunara.com
+								</td>
+								<td>박상호</td>
+								<td>02-xxxx-xxxx</td>
+								<td>010-xxxx-xxxx</td>
+								<td>BN@BN.com</td>
+								<td>102</td>
+								<td>3</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="paging">
+							<a class="first"></a>
+							<a class="prev"></a>
+							<a class="active">1</a>
+							<a>2</a>
+							<a>3</a>
+							<a>4</a>
+							<a>5</a>
+							<a class="next"></a>
+							<a class="last"></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+				
+			(function(){
+    
+				var $extra_date = $('[data-js-extra-date]');
+				var $end_date = $('[data-js-end-date]');
+				var $start_date = $('[data-js-start-date]');
+
+
+				$extra_date.Zebra_DatePicker();
+
+				$end_date.Zebra_DatePicker({
+					direction: 1,
+					onClear: function(){
+						extraOnChange();
+						extraOnClear();
+					},
+					onSelect: function(val){
+						extraOnChange();
+						extraUpdate();      
+					}
+				});
+				var dp_end = $end_date.data('Zebra_DatePicker');
+
+				$start_date.Zebra_DatePicker({
+					direction: true,
+					pair: $end_date,
+					onClear: function(){        
+						endDateClear(true);
+						dp_end.clear_date();
+
+						extraOnChange();
+						extraOnClear();
+					},
+					onSelect: function(val){
+						endDateClear(false);
+						extraOnChange();
+						extraUpdate();
+					}
+				});
+
+
+				function endDateClear(bool) {
+					$end_date.prop('disabled', bool);
+				}
+
+
+				function extraOnClear(){
+					$extra_date.each(function(){
+						$(this).data('Zebra_DatePicker').clear_date();
+					});
+				}
+				function extraUpdate(){
+					$extra_date.each(function(){
+						$(this).data('Zebra_DatePicker').clear_date();
+						$(this).data('Zebra_DatePicker').update({
+							direction: [$start_date.val(),$end_date.val()]
+						});
+					});
+				}
+				function extraOnChange(){
+					if($start_date.val() !== '' && $end_date .val() !== ''){
+						$extra_date.prop('disabled', false);
+					}  else {
+						$extra_date.prop('disabled', true);
+					}
+				}
+				extraOnChange();
+
+			})();
+			
+				
+				$('select').wSelect();
+			});
+	</script>
+</body>
+</html>

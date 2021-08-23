@@ -1,0 +1,100 @@
+
+/*        상단 버튼 변경*/
+.panel_survey .busy4-btn{
+/*            width: 300px;*/
+	margin: 0 auto;
+}
+.panel_survey .busy4-btn button:nth-child(1){
+	margin-left: 0px;
+}
+.panel_survey .busy4-btn button{
+	width: 300px;
+	height: auto;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+/*            margin-left: 26px;*/
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 15px 0px;
+}
+.panel_survey .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+.panel_survey .busy4-btn button span{
+	display: block;
+	width: 200px;
+	margin-left: 30px;
+	text-align: left;
+}
+.panel_survey .busy4-btn button .b4b-info{
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #323A44 !important;
+}
+.panel_survey .busy4-btn button .b4b-t{
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+	background: url('../img/sub/btn-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+/*       하단 컨텐츠 버튼 변경*/
+.panel_content .content_bg .busy4-btn{
+/*            width: 300px;*/
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 25px;
+}
+.panel_content .content_bg .busy4-btn button:nth-child(1){
+	margin-left: 0px;
+}
+.panel_content .content_bg .busy4-btn button{
+	width: 138px;
+	height: 48px;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+/*            margin-left: 26px;*/
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 12px 20px;
+}
+.panel_content .content_bg .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+.panel_content .content_bg .busy4-btn button span{
+	display: block;
+}
+.panel_content .content_bg .busy4-btn button .b4b-t{
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+}
+section.go-survey .about-cont .about-flat{
+	width: 1000px;
+}
+
+
+section.go-survey .about-cont .about-flat ul li{
+	width: 200px;
+}
+
+
+
+@media screen and (max-width:1300px){
+	section.go-survey .about-cont .about-flat{
+		width: 800px;
+	}
+	
+	
+	section.go-survey .about-cont .about-flat ul li{
+		width: 160px;
+	}
+	
+	#go_to_survey{
+		width: 850px;
+	}
+	
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/setting.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<link rel="stylesheet" href="../css/calendar.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/modal.js"></script>
+	<script src="../js/calendar.js"></script>
+</head>
+
+<!--팝업 오픈-->
+ <script language="javascript">
+  	function roomPopup() { 
+			window.open("company-room-pop.html", "a", "width=900, height=800, left=100, top=50"); 
+		}
+ </script>
+<body class="room-body">
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="javascript:;">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="./room-manage.html">휴양소 관리</a>
+			</li>
+			<li>
+				<a href="../reserve/reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li class="active">
+				<a href="./setting-admin.html">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./setting-admin.html">설정관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./setting-pop.html">기업별 팝업 관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents setting-pop">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>설정 관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big active">설정 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./setting-admin.html">관리자 정보 관리</a></li>
+							<li class="active"><a href="./setting-pop.html">기업별 팝업 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>기업별 팝업 관리</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+						<div class="set-tab">
+							<div class="set-sear">
+								<select name="admin-sear" id="admin-sear">
+									<option value="default" disabled selected>검색기준</option>
+									<option value="admin-id">기업명</option>
+									<option value="admin-name">등록일</option>
+									<option value="admin-phone">종료일</option>
+									<option value="admin-phone">사용여부</option>
+								</select>
+								<input type="text">
+								<button class="msel-search" type="button">검색</button>
+							</div>
+							<table id="admin-li">
+								<thead>
+									<tr>
+										<th class="th-btn"><span>번호</span></th>
+										<th class="th-btn"><span>사용여부</span></th>
+										<th class="th-btn"><span>기업명</span></th>
+										<th class="th-btn"><span>제목</span></th>
+										<th class="th-btn"><span>시작일</span></th>
+										<th class="th-btn"><span>종료일</span></th>
+										<th class="th-btn"><span>등록일</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-none">사용안함</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-none">사용안함</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+									<tr onclick="location.href='./setting-pop-view.html'">
+										<td>1</td>
+										<td><span class="pop-okay">사용중</span></td>
+										<td>비엔시스템</td>
+										<td>팝업제목입니다.</td>
+										<td>2021.02.03</td>
+										<td>2021.02.10</td>
+										<td>2021.02.03</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="btn-float">
+								<button type="button" onclick='location.href="./setting-pop-add.html"'>등록하기</button>
+							</div>
+							<div class="paging">
+								<a class="first"></a>
+								<a class="prev"></a>
+								<a class="active">1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a class="next"></a>
+								<a class="last"></a>
+							</div>
+						</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--  셀렉트 박스  -->
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+				
+				$('select').wSelect();
+			});
+	</script>
+	
+</body>
+</html>

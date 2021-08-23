@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/community_write.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("1").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head> 
+<body>
+    <header></header>
+    <div id="mainImage">
+        <h2>Q&A</h2>
+    </div>
+    <div id="container">
+		<div class="sort-wrap">
+			<div class="sort-menu" id="sangse-sort">
+				<ul>
+					<li class="active">
+						<span onclick="location. href='./qna.html'">Q&A</span>
+					</li>
+					<li>
+						<span onclick="location. href='./notice.html'">공지사항</span>
+					</li>
+					<li>
+						<span onclick="location. href='./review.html'">이용후기</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div id="newContent">
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <th><label for="text_name">성명</label></th>
+                        <td><input type="text" class="content" id="text_name" name="text_name"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="text_email">이메일</label></th>
+                        <td><input type="email" class="content" id="text_email" name="text_email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="text_title">제목</label></th>
+                        <td><input placeholder="답변 달 글의 제목" type="text" class="content" id="text_title" name="text_title"></td>
+                    </tr>
+                    <tr>
+                        <th><p><label for="text_content">내용</label></p></th>
+                        <td><textarea class="content" id="text_content" name="text_content" placeholder="답변입니다."></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label for="text_pw">파일첨부</label></th>
+                        <td>
+                        	<div class="file-input">
+								<input type="file" maxlength="10" required="no" message="기타 첨부자료" name="file_1" id="file_1">
+								<span class="button">파일선택</span>
+								<span class="label" data-js-label="">선택된 파일 없음</span>
+							</div>
+                   		</td>
+                    </tr>
+                    <tr>
+                        <th><label for="text_pw">비밀번호</label></th>
+                        <td><input type="password" class="content" id="text_pw" name="text_pw"></td>
+                    </tr>
+                    
+                </table>
+               	<div class="button-wrap">
+					<button type="button" name="submit">취소</button>
+					<button type="button" name="submit">확인</button>
+               	</div>
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+    
+	<!--   파일업로드  -->
+    <script>
+		
+		$(document).ready(function(){
+			// Also see: https://www.quirksmode.org/dom/inputfile.html
+
+			var inputs = document.querySelectorAll('.file-input')
+
+			for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+			}
+
+			function customInput (el) {
+				const fileInput = el.querySelector('[type="file"]')
+				const label = el.querySelector('[data-js-label]')
+
+				fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+			}
+		});
+	</script>
+</body>
+</html>

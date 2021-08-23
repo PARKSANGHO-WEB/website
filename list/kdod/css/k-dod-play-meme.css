@@ -1,0 +1,240 @@
+@charset "utf-8";
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+section.kd-meme .about-cont {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section.kd-meme .about-cont::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  border: 1px solid #707070;
+  bottom: 0px;
+}
+
+section.kd-meme .about-cont .about-flat {
+  width: 400px;
+  margin: 0 auto;
+}
+
+section.kd-meme .about-cont .about-flat ul li {
+  float: left;
+  width: 200px;
+  height: 50px;
+}
+
+section.kd-meme .about-cont .about-flat ul li a {
+  font-size: 0.813rem;
+  color: #ff6b65;
+  color: #707070;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+section.kd-meme .about-cont .about-flat ul li a::after {
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  background-color: #ff6b65;
+  bottom: 0px;
+  left: 0px;
+  content: '';
+  display: none;
+}
+
+section.kd-meme .about-cont .about-flat ul li:hover a,
+section.kd-meme .about-cont .about-flat ul li.active a {
+  color: #ff6b65;
+  font-weight: 700;
+}
+
+section.kd-meme .about-cont .about-flat ul li:hover a::after,
+section.kd-meme .about-cont .about-flat ul li.active a::after {
+  display: block;
+}
+
+
+
+/*케이닷 놀이터 밈소개 공통 영역*/
+#k_dod_meme {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 31px;
+    font-family: "Noto sans KR",sans-serif;
+    box-sizing: border-box;
+}
+#k_dod_meme h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6b65;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+#k_dod_meme h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #507c89;
+    padding-top: 30px;
+    margin-bottom: 12px;
+}
+#k_dod_meme p {
+    font-size: 0.675rem;
+    color: #454545;
+}
+#k_dod_meme ul li {
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: #454545;
+    line-height: 1.8;
+	margin-bottom: 3px;
+}
+
+
+/*케이닷 놀이터 밈소개 영역*/
+#k_dod_meme .meme_bg1 {
+    margin: auto;
+    background-color: #FAFAFA;
+    width: 848px;
+    height: 270px;
+    border-radius: 20px;
+}
+#k_dod_meme .meme_bg1 .what_meme1 {
+    margin-left: 20px;
+/*    포지션 위치기준값*/
+    position: relative;
+    padding-top: 15px;
+}
+#k_dod_meme .meme_bg1 .what_meme1 .text h1 {
+    font-size: 1rem;
+}
+#k_dod_meme .meme_bg1 .what_meme1 .text {
+/*    포지션*/
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+#k_dod_meme .meme_bg1 .what_meme1 .text ul li span {
+    padding-right: 10px;
+    background-color: #FF6B65;
+    margin-right: 10px;
+}
+#k_dod_meme .meme_bg1 .what_meme1 .text ul li p {
+    color: #B2B2B2;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#k_dod_meme .meme_bg2 {
+    margin: auto;
+    background-color: #FAFAFA;
+    width: 848px;
+    height: 244px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#k_dod_meme .meme_bg2 .what_meme2 {
+    margin-left: 20px;
+/*    포지션 위치기준값*/
+    position: relative;
+    padding-top: 20px;
+}
+#k_dod_meme .meme_bg2 .what_meme2 .text {
+/*    포지션*/
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+
+#k_dod_meme .what_meme3 {
+    width: 630px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+#k_dod_meme .what_meme3 h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+#k_dod_meme .what_meme3 .busy-2l ul li{
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+}
+#k_dod_meme .what_meme3 .busy-2l ul li:nth-child(2n+1){
+    margin-left: 10px;
+}
+#k_dod_meme .what_meme3 .busy-2l ul li .b2l-t{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #507c89;
+    display: block;
+    border-bottom: 3px solid #507c89;
+    text-align: center;
+    line-height: 2.5;
+}
+#k_dod_meme .what_meme3 .busy-2l ul li:nth-child(4) .b2l-t{
+    color: #ff6b65;
+}
+#k_dod_meme .what_meme3 .busy-2l ul li .b2l-c{
+    padding: 15px;
+    display: block;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #707070;
+}
+
+@media all and (max-width:1280px) {
+	section.about-busy .sub-banner .ban-text {width:100%;}
+	#k_dod_meme {width:90%;}
+	#k_dod_meme .meme_bg1 {width:90%;height:auto;text-align:center;}
+	#k_dod_meme .meme_bg2 {width:90%;height:auto;text-align:center;}
+	#k_dod_meme .meme_bg1 .what_meme1 {margin:0;padding:0;}
+	#k_dod_meme .meme_bg1 .what_meme1 .text {position:unset;text-align:left;margin-bottom:50px;}   
+	#k_dod_meme .meme_bg1 .what_meme1 .text h1 {text-align:center;}   
+	#k_dod_meme .meme_bg2 .what_meme2 {margin:0;padding:0;}
+	#k_dod_meme .meme_bg2 .what_meme2 .text {position:unset;text-align:left;margin-bottom:50px;}
+	#k_dod_meme .meme_bg2 .what_meme2 .text h2 {text-align:center;}  
+	#k_dod_meme .what_meme3 {width:95%;}
+	#k_dod_meme .what_meme3 h1 {margin:60px auto 30px;}
+	#k_dod_meme .what_meme3 .busy-2l ul li {
+    float: none;
+    margin: 0 auto;}
+	#k_dod_meme .what_meme3 .busy-2l ul li:nth-child(1) {
+    margin: 0 auto;}
+	#k_dod_meme .what_meme3 .busy-2l ul li:nth-child(2n+1){
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (max-width:900px){
+	
+	section .about-cont .about-flat {width: 300px!important;}
+	section .about-cont .about-flat ul li {width: 150px!important;}
+}
+
+
+@media screen and (max-width:640px){
+	
+	section .about-cont{
+		display: none;
+	}
+}

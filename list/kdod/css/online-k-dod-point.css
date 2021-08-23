@@ -1,0 +1,647 @@
+@charset "utf-8";
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+section .about-cont .af-market{
+	width: 1000px;
+}
+
+section .about-cont .af-market ul li{
+	width: 200px;
+}
+
+section.on-point .sub-banner {
+	background: url('../img/sub/survey-ban.jpg');
+}
+
+/*온라인 케이닷 포인트 공통 영역*/
+#k_dod_point {
+    width: 1064px;
+    margin: 0 auto;
+    margin-top: 31px;
+    font-family: "Noto sans KR",sans-serif;
+}
+#k_dod_point h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6b65;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+#k_dod_point h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #FF6B65;
+    padding-top: 26px;
+    margin-bottom: 12px;
+}
+#k_dod_point p {
+    font-size: 0.813rem;
+    color: #454545;
+    font-weight: 400;
+    line-height: 1.7;
+}
+#k_dod_point .point_where span {
+    color: #507C89;
+    font-weight: 400;
+}
+#k_dod_point ul li {
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: #454545;
+}
+#k_dod_point ul li span {
+    color: #FF6B65;
+}
+
+/*온라인 케이닷 포인트 영역*/
+#k_dod_point .k_dod_point .k_dod_point_fl {
+    width: 524px;
+    height: 250px;
+/*    플롯*/
+    float: left;
+    background-color: #fafafa;
+    border-radius: 20px;
+}
+#k_dod_point .k_dod_point .k_dod_point_fl .text {
+    margin: 20px 0 0 24px;
+    width: 480px;
+}
+#k_dod_point .k_dod_point .k_dod_point_fl .text .img {
+    text-align: center;
+    margin-bottom: 6px;
+    margin-right: 24px;
+}
+#k_dod_point .k_dod_point .k_dod_point_fr {
+    width: 524px;
+    height: 250px;
+/*    플롯*/
+    float: right;
+    background-color: #fafafa;
+    border-radius: 20px;
+}
+#k_dod_point .k_dod_point .k_dod_point_fr .text {
+    margin: 0 0 0 24px;
+    width: 480px;
+}
+#k_dod_point .k_dod_point .k_dod_point_fr .text .img {
+    text-align: center;
+    margin-right: 24px;
+    margin-bottom: 6px;
+}
+
+
+#k_dod_point .gift { 
+    background-color: #fafafa;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#k_dod_point .gift .gift_text {
+    margin-left: 20px;
+}
+#k_dod_point .gift .gift_text .icon {
+    margin: 20px 0;
+    text-align: center;
+}
+#k_dod_point .gift .gift_text .icon img:nth-child(2),
+#k_dod_point .gift .gift_text .icon img:nth-child(4),
+#k_dod_point .gift .gift_text .icon img:nth-child(6) {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+#k_dod_point .point_where {
+    height: 425px;
+    background-color: #fafafa;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#k_dod_point .point_where .where_text {
+    margin-left: 20px;
+}
+#k_dod_point .point_where .where_text p:nth-child(4) {
+    font-weight: 500;
+}
+
+#k_dod_point .point_where .busy-2l ul {
+    width: 940px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#k_dod_point .point_where .busy-2l ul li{
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+#k_dod_point .point_where .busy-2l ul li img {
+    position: absolute;
+    left: 70px;
+    top: 5px;
+}
+#k_dod_point .point_where .busy-2l ul li:nth-child(1){
+    margin-left: -10px;
+}
+#k_dod_point .point_where .busy-2l ul li .b2l-t{
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #507c89;
+    display: block;
+    border-bottom: 3px solid #507C89;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 1rem;
+}
+#k_dod_point .point_where .busy-2l ul li .b2l-c{
+    padding: 15px;
+    display: inline-block;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #FF6B65;
+    line-height: 1.7;
+     font-size: 0.813rem;
+}
+
+
+
+
+#k_dod_point .point_key .point_key_bg {
+    background-color: #fafafa;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+#k_dod_point .point_key .point_key_bg h2 {
+    margin-left: 20px;
+}
+#k_dod_point .point_key .point_key_bg .po_l {
+	margin-left: 20px;
+}
+#k_dod_point .point_key .point_key_bg .po_l ul li {
+    line-height: 2.2;
+    font-weight: 500;
+    margin-bottom: 10px;
+	width: 100%;
+}
+
+
+
+#k_dod_point .point_key .point_key_bg .po_l ul li:nth-child(5) .bg{
+    width: calc( 100% - 55px );
+}
+
+
+#k_dod_point .point_key .point_key_bg ul li .bg {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 5px;
+    width: calc( 100% - 55px );
+	padding-left: 20px;
+}
+#k_dod_point .point_key .point_key_bg ul li .bg2 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 5px;
+    width: calc( 100% - 55px );
+	padding-left: 20px;
+}
+
+#k_dod_point .point_key .busy4-btn {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+/*        버튼 변경*/
+#k_dod_point .busy4-btn{
+	width: 633px;
+	margin: 0 auto;
+}
+
+#k_dod_point .busy4-btn button:nth-child(1){
+	margin-left: 0px;
+}
+
+#k_dod_point .busy4-btn button{
+	width: 300px;
+	height: auto;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+	margin-left: 26px;
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 15px 0px;
+}
+#k_dod_point .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+#k_dod_point .busy4-btn button span{
+	display: block;
+	width: 200px;
+	margin-left: 30px;
+	text-align: left;
+}
+#k_dod_point .busy4-btn button .b4b-info{
+	font-size: 0.813rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #323A44 !important;
+}
+#k_dod_point .busy4-btn button .b4b-t{
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+	background: url('../img/sub/btn-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#k_dod_point .busy4-btn button:nth-child(2) .b4b-t{
+	width: 240px;
+}
+
+
+
+#k_dod_point .gift .icon ul{
+	width: 680px;
+	overflow: hidden;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#k_dod_point .gift .icon ul li{
+	float: left;
+	height: 125px;
+	position: relative;
+}
+
+#k_dod_point .gift .icon ul li span{
+	display: block;
+	font-size: 0.7rem;
+}
+
+#k_dod_point .gift .icon ul li div{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+
+
+#k_dod_point .gift .icon ul li div .git{
+	color: #000;
+}
+
+
+#k_dod_point .gift .icon ul li:nth-child(2n+1){
+	width: 125px;
+	height: 125px;
+	background-color: #FFE1E1;
+	border-radius: 125px;
+}
+
+
+#k_dod_point .gift .icon ul li:nth-child(3){
+	background-color: #E6E3DE;
+}
+
+#k_dod_point .gift .icon ul li:nth-child(2n){
+	width: 20px;
+	margin: 0px 20px;
+}
+
+
+#k_dod_point .gift .icon ul li:nth-child(2n) img{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	left: 0px;
+}
+
+
+
+
+@media screen and (max-width:1300px){
+	
+	section .about-cont .af-market {
+		width: 800px;
+	}
+	section .about-cont .af-market ul li {
+		width: 160px;
+	}
+	section .about-cont .af-market ul li:nth-child(1) a{
+		font-size: 0.7rem;
+	}
+	
+	
+	#k_dod_point{
+		width: 850px;
+
+	}
+	#k_dod_point .k_dod_point .k_dod_point_fl,
+	#k_dod_point .k_dod_point .k_dod_point_fr{
+		width: 405px;
+	}
+	
+	#k_dod_point .k_dod_point .k_dod_point_fl .text,
+	#k_dod_point .k_dod_point .k_dod_point_fr .text{
+		width: 100%;
+		margin: 0px;
+		margin-top: 20px;
+	}
+	
+	
+	#k_dod_point .k_dod_point .k_dod_point_fr .text .img{
+		height: 145px;
+		margin-top: -20px;
+	}
+	
+	#k_dod_point p{
+		padding: 0px 20px;
+	}
+
+	#k_dod_point .point_where .busy-2l ul{
+		width: 100%;
+	}
+	
+	#k_dod_point .point_where .busy-2l ul li{
+		width: 263px;
+	}
+	
+	#k_dod_point .point_where .busy-2l ul li img{
+		left: 70px;
+	}
+	
+	#k_dod_point .point_key .point_key_bg ul li .bg{
+		width: 370px;
+	}
+	
+	#k_dod_point .point_key .point_key_bg ul li .bg2{
+		width: 800px;
+	}
+	
+	#k_dod_point .busy4-btn{
+		width: 620px;
+	}
+
+	#k_dod_point .busy4-btn button{
+		margin-left: 16px;
+	}
+}
+
+
+
+
+@media screen and (max-width:900px){
+	section .about-cont .af-market{
+		width: 600px;
+	}
+	section .about-cont .af-market ul li{
+		width: 120px;
+	}
+	
+	section .about-cont .af-market ul li:nth-child(1) a {
+		line-height: 14px;
+		margin-top: 12px;
+		font-size: 0.7rem;
+	}
+	
+	#k_dod_point{
+		width: 600px;
+	}
+	
+	#k_dod_point .k_dod_point .k_dod_point_fl, #k_dod_point .k_dod_point .k_dod_point_fr{
+		float: none;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	#k_dod_point .k_dod_point .k_dod_point_fr{
+		margin-top: 40px;
+	}
+	
+	#k_dod_point .gift{
+		height: auto;
+		overflow: hidden;
+		padding-bottom: 20px;
+	}
+	#k_dod_point .gift .gift_text{
+		margin: 0px 20px;
+	}
+	
+	#k_dod_point .point_where .where_text{
+		margin-left: 0px;
+		padding: 0px 20px;
+	}
+
+	#k_dod_point .gift .gift_text .icon{
+		overflow: hidden;
+	}
+	
+	#k_dod_point .gift .gift_text .icon ul{
+		width: 370px;
+	}
+	
+	#k_dod_point .point_where .busy-2l ul li:nth-child(3){
+		margin-left: 145px;
+	}
+	
+	#k_dod_point .gift .icon ul li:nth-child(n+5){
+		margin-top: 20px;
+	}
+	
+	#k_dod_point .point_where{
+		height: auto;
+		padding-bottom: 20px;
+	}
+	
+	#k_dod_point .point_where .busy-2l ul li:nth-child(1){
+		margin-left: 0px;
+	}
+	
+	#k_dod_point .point_where .busy-2l ul li{
+		width: 270px;
+	}
+	
+	#k_dod_point .point_key .point_key_bg ul li .bg{
+		width: calc( 100% - 45px );
+	}
+	
+	#k_dod_point .point_key .point_key_bg {
+		height: auto;
+		overflow: hidden;
+		padding-bottom: 20px;
+	}
+	
+	#k_dod_point .busy4-btn{
+		width: 520px;
+	}
+
+	#k_dod_point .busy4-btn button{
+		width: 250px;
+	}
+	
+	#k_dod_point .busy4-btn button .b4b-t{
+		background-position: 170px center;
+	}
+}
+
+
+
+@media screen and (max-width:640px){
+	
+	section.on-point .sub-banner {
+		background: url(../img/sub/msurvey-ban.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	section.about-busy .sub-banner .ban-text .ban-title{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	section.about-busy .sub-banner .ban-text .ban-text{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	#k_dod_point{
+		width: 100%;
+	}
+	
+	
+	#k_dod_point .k_dod_point .k_dod_point_fl, 
+	#k_dod_point .k_dod_point .k_dod_point_fr{
+		width: 100%;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	
+	#k_dod_point .k_dod_point .k_dod_point_fl .text .img{
+		
+		width: 150px;
+		margin: 0 auto;
+	}
+	#k_dod_point p{
+		font-size: 0.7rem;
+	}
+	
+	#k_dod_point .k_dod_point .k_dod_point_fl .text .img img{
+		width: 100%;
+	}
+	
+	#k_dod_point h1{
+		font-size: 1rem;
+	}
+	
+	#k_dod_point h2{
+    font-size: 0.9rem;
+		font-weight: 700;
+	}
+	
+	#k_dod_point .gift .gift_text .icon {
+		overflow: hidden;
+		width: 300px;
+		margin: 20px auto;
+	}
+	
+	#k_dod_point .gift .gift_text .icon ul{
+		width: 300px;
+	}
+	
+	#k_dod_point .gift .icon ul li:nth-child(2n){
+		display: none;
+	}
+	
+	#k_dod_point .gift .gift_text .icon img:nth-child(2), 
+	#k_dod_point .gift .gift_text .icon img:nth-child(4), 
+	#k_dod_point .gift .gift_text .icon img:nth-child(6){
+		display: none;
+	}	
+	
+	#k_dod_point .point_where .busy-2l ul li{
+		margin-left: 0px;
+		margin: 0 auto;
+   		 float: none;
+	}
+	
+	#k_dod_point .gift .icon ul li:nth-child(3),
+	#k_dod_point .gift .icon ul li:nth-child(7){
+		margin-left: 50px;
+	}
+	
+	#k_dod_point .point_where .busy-2l ul li:nth-child(1){
+		margin: 0 auto;
+   		 float: none;
+	}
+	#k_dod_point .point_where .busy-2l ul li:nth-child(3){
+		margin: 0 auto;
+   		 float: none;
+	}
+	
+	#k_dod_point .point_key .point_key_bg .po_l ul li{
+		width: 100%;
+	}
+	
+	#k_dod_point .busy4-btn {
+		width: 100%;
+	}
+	
+	#k_dod_point .busy4-btn button:nth-child(1){
+		margin: 0 auto;
+	}
+	
+	#k_dod_point .busy4-btn button{
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	
+	#k_dod_point .busy4-btn button .b4b-t{
+		font-size: 1rem;
+	}
+	
+	#k_dod_point .busy4-btn button .b4b-info{
+		font-size: 0.7rem;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

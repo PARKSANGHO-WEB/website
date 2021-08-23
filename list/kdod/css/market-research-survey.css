@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*온라인 마켓 공통 영역*/
+#market_research_survey {
+    width: 1064px;
+    margin: 0 auto;
+    margin-top: 31px;
+    font-family: "Noto sans KR",sans-serif;
+}
+
+
+section .about-cont .af-market{
+	width: 1000px;
+}
+
+section .about-cont .af-market ul li{
+	width: 200px;
+}
+
+#market_research_survey h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6b65;
+    margin-bottom: 21px;
+}
+#market_research_survey h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #FF6B65;
+    padding-top: 26px;
+    margin-bottom: 8px;
+}
+#market_research_survey p {
+    font-size: 0.813rem;
+    color: #454545;
+    word-break: break-all;
+    display: block;
+    width: 100%;
+}
+
+/*온라인 마켓영역*/
+#market_research_survey .survey_fl .what {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    width: 524px;
+    height: 183px;
+    float: left;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+#market_research_survey .survey_fl .text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#market_research_survey .survey_fl .text p {
+    line-height: 1.6;
+}
+
+#market_research_survey .survey_fl .why {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    width: 524px;
+    height: 183px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    float: right;
+}
+
+
+
+
+#market_research_survey .survey_content .how {
+    text-align: center;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: auto;
+	overflow: hidden;
+}
+#market_research_survey .survey_content .how h2 {
+    margin-bottom: 0;
+}
+
+#market_research_survey .survey_content .how .market-1li{
+	width: 648px;
+	margin: 40px auto;
+	overflow: hidden;
+}
+
+#market_research_survey .survey_content .how .market-1li ul li{
+	float: left;
+	margin-left: 16px;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background-color: #fff;
+	position: relative;
+	
+}
+
+
+#market_research_survey .survey_content .how .market-1li ul li span{
+	color: #FF6B65;
+	font-size: 0.813rem;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+#market_research_survey .survey_content .how .market-1li ul li img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+
+
+#market_research_survey .survey_content .how .market-1li ul li:nth-child(1){
+	margin-left: 0px;
+}
+
+#market_research_survey .survey_content .survey {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+	height: auto;
+    margin-bottom: 80px;
+/*    포지션 위치기준값*/
+    position: relative;
+}
+
+
+#market_research_survey .survey_content .survey .survey-t{
+	width: 100%;
+	overflow: hidden;
+	margin-left: 40px;
+}
+
+#market_research_survey .survey_content .survey .survey-timg{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 150px;
+	float: left;
+	position: relative;
+	margin-top: 20px;
+}
+
+#market_research_survey .survey_content .survey .survey-timg img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+
+
+#market_research_survey .survey_content .survey .survey_text{
+	float: left;
+	margin-left: 40px;
+}
+
+
+#market_research_survey .survey_content .survey .icon1 {
+/*    포지션*/
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+
+#market_research_survey .survey_content .survey .market-2li{
+	width: 550px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+#market_research_survey .survey_content .survey .market-2li ul li{
+	float: left;
+	margin-left: 50px;
+	width: 100px;
+	height: 150px;
+	
+}
+
+#market_research_survey .survey_content .survey .market-2li ul li:nth-child(1){
+	margin-left: 0px;
+}
+
+#market_research_survey .survey_content .survey .market-2li ul li .img-w{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: #E6E3DE;
+	position: relative;
+}
+
+
+#market_research_survey .survey_content .survey .market-2li ul li span{
+	color: #FF6B65;
+	font-size: 0.813rem;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+#market_research_survey .survey_content .survey .market-2li ul li img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+
+
+
+
+@media screen and (max-width:1300px){
+
+	section.on-survey .about-cont .about-flat {
+		width: 800px;
+	}
+	section.on-survey .about-cont .about-flat ul li {
+		width: 160px;
+	}
+	
+	section.on-survey .about-cont .af-market ul li:nth-child(1) a {
+		font-size: 0.7rem;
+	}
+	
+	#market_research_survey .survey_fl .what{
+		
+	}
+}
+
+
+@media screen and (max-width:900px){
+	
+	section.on-survey .about-cont .about-flat {
+		width: 600px;
+	}
+	section.on-survey .about-cont .about-flat ul li {
+		width: 120px;
+	}
+	
+	section.on-survey .about-cont .af-market ul li:nth-child(1) a {
+		line-height: 14px;
+		margin-top: 12px;
+		font-size: 0.7rem;
+	}
+	
+	section.on-survey .sub-banner{
+		background: url('../img/sub/msurvey-ban.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	section.on-survey .sub-banner .ban-text .ban-title{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	section.on-survey .sub-banner .ban-text .ban-text{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+}
+
+
+
+@media all and (max-width:1064px) {
+	#market_research_survey {width:85%;}
+	#market_research_survey .survey_fl .text {margin:0;}
+	#market_research_survey .survey_fl .what {width: calc( 100% - 20px );float: none; padding-left: 10px;padding-right: 10px; height: auto;}
+	#market_research_survey .survey_fl .why {width: calc( 100% - 20px );float: none; padding-left: 10px;padding-right: 10px; height: auto;}
+	#market_research_survey .survey_content .how {height:auto;}
+	#market_research_survey .survey_content .how img {width:45%;}
+	#market_research_survey .survey_content .how img:last-child {margin-left:0;}
+	#market_research_survey .survey_content .survey {height:auto;}
+	#market_research_survey .survey_content .survey .survey_text {margin:0;}
+	#market_research_survey .survey_content .survey .survey-timg {display:none;}
+	#market_research_survey .survey_content .survey .icon2  {width:115%;margin-left:-7%;}
+	#market_research_survey .survey_content .survey .icon2 img {margin-left:2%;width:20%;}
+}
+
+
+
+
+
+@media screen and (max-width:900px){
+	#market_research_survey .survey_content .how .market-1li {
+		width: 256px;
+	}
+	
+	#market_research_survey .survey_content .how .market-1li ul li{
+		width: 120px;
+		height: 120px;
+	}
+	
+	#market_research_survey .survey_content .how .market-1li ul li:nth-child(3){
+		margin-left: 0px;
+	}
+	
+	#market_research_survey .survey_content .how .market-1li ul li:nth-child(n+3){
+		margin-top: 16px;
+	}
+	
+	#market_research_survey .survey_content .how .market-1li ul li span{
+		margin-top: 17px;
+		font-size: 0.7rem;
+	}
+	
+	#market_research_survey .survey_content .how img{
+		width: 40%;
+	}
+	
+	#market_research_survey .survey_content .survey .market-2li{
+		width: 250px;
+	}
+	
+	#market_research_survey .survey_content .survey .market-2li ul li:nth-child(3){
+		margin-left: 0px;
+	}
+	
+	#market_research_survey .survey_content .survey .market-2li ul li:nth-child(n+3){
+		margin-top: 20px;
+	}
+	#market_research_survey .survey_content .survey .market-2li ul li span{
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width:640px){
+	#market_research_survey .survey_content .survey .survey-t{
+		width: calc( 100% - 80px );
+		margin: 0px 40px;
+	}
+	#market_research_survey p{
+		font-size: 0.675rem;
+	}
+	
+	#market_research_survey h2{
+		font-size: 1rem;
+	}
+	#market_research_survey h1{
+		font-size: 1rem;
+	}
+}
+

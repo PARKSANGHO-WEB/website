@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="./js/jquery.bxslider.js"></script>
+   <script src="./js/owl.carousel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.1">
+    <title>MTHERA PHARMA</title> 
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/common/logo_c.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <div class="menu_wrap">
+                    <ul>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./sub/hello.html">회사소개</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./sub/hello.html">대표이사 인사말</a></li>
+                                    <li><a href="./sub/summary.html">사업개요</a></li>
+                                    <li><a href="./sub/years.html">회사연혁</a></li>
+                                    <li><a href="./sub/people.html">핵심네트워크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./sub/rnd.html">R&D현황</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./sub/rnd.html">핵심기술</a></li>
+                                    <li><a href="./sub/pipe.html">파이프라인</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./sub/notice.html">공지&뉴스</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./sub/notice.html">공지&뉴스</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./sub/map.html">오시는길</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./sub/map.html">오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang-ek">
+                <a href="javascript:;">English</a>
+            </div>
+        </div>
+    </header>
+    <div class="header_mo">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/common/logo_c.png" alt=""></a>
+            </div>
+            <div class="lang-ek">
+                <a href="javascript:;">English</a>
+            </div>
+            <div class="bar">
+                <div class="bar_1"></div>
+                <div class="bar_2">
+                    <div class="bar2-1"></div>
+                    <div class="bar2-2"></div>
+                </div>
+                <div class="bar_3"></div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".bar").on("click",function(){
+                        $(".mo_menu").toggleClass("done");
+                        $(this).toggleClass("on");
+                    });
+                    
+                    $(".big_menu2").on("click",function(){
+                        $(this).siblings(".two_depth").toggleClass("go");
+                        $(this).toggleClass("go");
+                    });
+                });
+        
+            </script>
+            <div class="mo_menu">
+                <div class="menu_wrap">
+                    <ul>
+                        <li class="menu_list">
+                            <a class="big_menu big_menu2" href="javascript:;">회사소개</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="/sub/hello.php">대표이사 인사말</a></li>
+                                    <li><a href="/sub/summary.php">사업개요</a></li>
+                                    <li><a href="/sub/years.php">회사연혁</a></li>
+                                    <li><a href="/sub/people.php">핵심네트워크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu big_menu2" href="javascript:;">R&D현황</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="/sub/rnd.php">핵심기술</a></li>
+                                    <li><a href="/sub/pipe.php">파이프라인</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="/sub/notice.php?bbs_code=notice">공지&뉴스</a>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="/sub/map.php">오시는길</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <section class="main_visu">
+            <div class="visu_wrap visu_wrap1">
+                <div class="bxslider bxslider1">
+                    <div>
+                        <div class="capt-bx">
+                            <div class="capt-img"><img src="./img/main/banner_pharm.png" alt=""></div>
+                            <h1><span>다중타겟</span>을 활용한 <br />근원적 질환치료 신약개발</h1>
+                            <div class="capt-bar"></div>
+                            <div class="capt-eng">World best R&D Menpowers</div>
+                        </div>
+                        <img src="./img/main/visu1.jpg" title="#">
+                    </div>
+                    <div>
+                        <div class="capt-bx">
+                            <div class="capt-img"><img src="./img/main/banner_pharm.png" alt=""></div>
+                            <h1><span>AI 기반 전통지식 생물자원</span><br /><span>Big data</span>활용</h1>
+                            <div class="capt-bar"></div>
+                            <div class="capt-eng">World best R&D Menpowers</div>
+                        </div>
+                        <img src="./img/main/visu2.jpg" title="#">
+                    </div>
+                    <div>
+                        <div class="capt-bx">
+                            <div class="capt-img"><img src="./img/main/banner_pharm.png" alt=""></div>
+                            <h1>국내 최고 <span>R&D 역량</span>이 <br /> 결집된 <span>제약벤처</span></h1>
+                            <div class="capt-bar"></div>
+                            <div class="capt-eng">World best R&D Menpowers</div>
+                        </div>
+                        <img src="./img/main/visu3.jpg" title="#">
+                    </div>
+                </div>
+            </div>
+            <div class="visu_wrap visu_wrap2">
+                <div class="bxslider bxslider2">
+                    <div>
+                        <div class="capt-bx">
+                            <div class="capt-img"><img src="./img/main/banner_pharm.png" alt=""></div>
+                            <h1><span>다중타겟</span>을 활용한 <br />근원적 질환치료 신약개발</h1>
+                            <div class="capt-bar"></div>
+                            <div class="capt-eng">World best R&D Menpowers</div>
+                        </div>
+                        <img src="./img/main/m_visu1.jpg" title="#">
+                    </div>
+                    <div>
+                        <div class="capt-bx">
+                            <div class="capt-img"><img src="./img/main/banner_pharm.png" alt=""></div>
+                            <h1><span>AI 기반 전통지식 생물자원</span><br /><span>Big data</span>활용</h1>
+                            <div class="capt-bar"></div>
+                            <div class="capt-eng">World best R&D Menpowers</div>
+                        </div>
+                        <img src="./img/main/m_visu2.jpg" title="#">
+                    </div>
+                    <div>
+                        <div class="capt-bx">
+                            <div class="capt-img"><img src="./img/main/banner_pharm.png" alt=""></div>
+                            <h1>국내 최고 <span>R&D 역량</span>이 <br /> 결집된 <span>제약벤처</span></h1>
+                            <div class="capt-bar"></div>
+                            <div class="capt-eng">World best R&D Menpowers</div>
+                        </div>
+                        <img src="./img/main/m_visu3.jpg" title="#">
+                    </div>
+                </div>
+            </div>
+        <script>
+            $(function(){
+              $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: false,
+                pager:true
+              });
+                
+                $('#slide-counter').append(slider.getSlideCount());
+            });
+        </script>
+    </section>
+    <section  class="mid_sec">
+        <div class="main_mid">
+            <div class="mm_wrap">
+                <li class="mid_tab mid_tab1 item" data-dot="<button>1</button>">
+                    <div class="mm_left">
+                        <img src="./img/main/main_ban1.png" alt="">
+                        <div class="mc_img2">
+                            <h1>과학·기술력
+                            
+                            <span>scientific and<br />technological<br />prowess</span></h1>
+                        </div>
+                    </div>
+                    <div class="mm_center">
+                        <img src="./img/main/arrow_mid.png" alt="">
+                    </div>
+                    <div class="mm_right">
+                        <span class="dot"></span>
+                        <div class="mm-titlee"><span class="in_dot">·</span><p>다중타겟 후보물질 도출 경험 보유</p></div>
+                        <div class="mm-titlee"><span class="in_dot">·</span><p>CMC 고도화 핵심기술</p></div>
+                        <div class="mm-titlee"><span class="in_dot">·</span><p>AI 기반 Bio-Fingerprinting</p></div>
+                        <div class="mm-titlee"><span class="in_dot">·</span><p>Microbiome & Metabolomics, Omics</p></div>
+                    </div>
+                </li>
+<!--
+                <li class="mid_tab mid_tab2 item" data-dot="<button>2</button>">
+                    <div class="mm_left">
+                        <img src="./img/main/main_ban1.png" alt="">
+                        <div class="mc_img2">
+                            <h1>Open<br />Innovation과<br />네트워킹</h1>
+                        </div>
+                    </div>
+                    <div class="mm_center">
+                        <img src="./img/main/arrow_mid.png" alt="">
+                    </div>
+                    <div class="mm_right">
+                        <span class="dot"></span>
+                        <div class="mm-titlee"><span class="in_dot">·</span><p> 산·학·연·관·병 긴밀한 네트워크 구축</p></div>
+                        <div class="mm-contents">
+                            <span class="in_dot">·</span><p>정부부처:  천연물신약 산업체 리더, <br />국가과학기술자문회의 위원, <br />국가R&D 기획, 전략, 정책수립 참여</p>
+                        </div>
+                        <div class="mm-contents">
+                            <span class="in_dot">·</span><p>해외 약물개발 관련 전문가 네트워크 확보</p>
+                        </div>
+                    </div>
+                </li>
+-->
+            </div>
+        </div>
+    </section>
+    <section class="main_border">
+        <div class="mb_wrap">
+            <div class="mb_left">
+                <form action="#">
+                    <div class="m_board">
+                        <div class="title">
+                            <span>
+                                <img src="./img/main/mb_circle.png" alt="">
+                            </span>
+                            <span class="mb_t">공지&뉴스</span>
+                            <span class="mb_m"><a href="./sub/notice.html">More <img src="./img/main/mb_arrow.png" alt=""></a></span>
+                        </div>
+                        <div class="main_notice">
+                            <table class="table_top">
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="m_latest_t">
+                                              공지사항제목입니다.공지사항제목입니다.공지사항제목입니다.공지사항제목입니다.공지사항제목입니다.공지사항제목입니다.
+                                        </p>
+                                        <p class="m_latest_c">
+                                              공지사항내용입니다.공지사항내용입니다.공지사항내용입니다.공지사항내용입니다.공지사항내용입니다.공지사항제목입니다.공지사항내용입니다.공지사항내용입니다.공지사항제목입니다.공지사항내용입니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="table_hypen" style="display: block; width: 80%; margin: 20px auto; height: 1px; background-color: #bababa;">
+
+                            </div>
+                            <table class="table_sum">
+                                <tr>
+                                    <td class="notice_sumt"><p>제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</p></td>
+                                    <td class="notice_sumd">2020.07.28</td>
+                                </tr>
+                                <tr>
+                                    <td class="notice_sumt"><p>제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</p></td>
+                                    <td class="notice_sumd">2020.07.25</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mb_right">
+                <img src="./img/main/notice_im.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot_wrap">
+            <ul>
+                <li class="logo">
+                    <img src="./img/common/foot_logo.png" alt="">
+                </li>
+                <li>
+                    <span class="f-title">Contacts</span>
+                    <p>
+                        <span>T.</span>+82-2-6238-1234
+                    </p>
+                    <p>
+                        <span>F.</span>+82-2-6238-1238
+                    </p>
+                </li>
+                <li>
+                    <span class="f-title">Address</span>
+                    <p>
+                        서울특별시 강서구 마곡중앙8로 1길 38, 102호 (마곡동 787-2)
+                    </p>
+                    <p>
+                        사업자 번호  448-81-01914 <span>ㅣ</span>대표자명 손미원
+                    </p>
+                    <p>
+                        COPYRIGHT 2020 MTHERA PHARMA. ALL RIGHTS RESERVED.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

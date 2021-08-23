@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/reserv.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("2").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head>
+<body>
+    <header></header>
+    <div id="container">
+		<div class="sort-wrap">
+			<div class="sort-menu" id="sangse-sort">
+				<ul>
+					<li>
+						<span onclick="location.href='./mypage.html'">회원정보</span>
+					</li>
+					<li class="active">
+						<span onclick="location.href='./reserv.html'">예약내역</span>
+					</li>
+					<li>
+						<span onclick="location.href='./mywrite.html'">내 게시글 관리</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+        <div id="table">
+            <div id="subMenu2">
+				<button type="button" class="active">전체내역</button>
+				<button type="button">당첨내역</button>
+				<button type="button">미당첨내역</button>
+				<button type="button">취소내역</button>
+            </div>
+            <table id="reserv-t">
+                <tr>
+                    <th>번호</th>
+                    <th>지망</th>
+                    <th>휴양소명</th> 
+                    <th>예약일</th>
+                    <th>결과</th>
+                    <th>설문조사</th>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>10</p></td>
+                    <td><p>1지망</p></td>
+                    <td><p>시그니엘</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>당첨</p></td>
+                    <td onclick="event.cancelBubble=true"><div class="survey"><a href="#">설문조사</a></div></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>9</p></td>
+                    <td><p>2지망</p></td>
+                    <td><p>한화리조트</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>8</p></td>
+                    <td><p>3지망</p></td>
+                    <td><p>대명리조트</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>7</p></td>
+                    <td><p>1지망</p></td>
+                    <td><p>시그니엘</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>6</p></td>
+                    <td><p>2지망</p></td>
+                    <td><p>한화리조트</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>5</p></td>
+                    <td><p>3지망</p></td>
+                    <td><p>대명리조트</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>4</p></td>
+                    <td><p>1지망</p></td>
+                    <td><p>시그니엘</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>2</p></td>
+                    <td><p>3지망</p></td>
+                    <td><p>대명리조트</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+                <tr onclick="location.href='./reserv-sangse.html'">
+                    <td><p>1</p></td>
+                    <td><p>1지망</p></td>
+                    <td><p>시그니엘/</p></td>
+                    <td><p>2020년02월05일부터 2박3일</p></td>
+                    <td><p>미당첨</p></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="paging">
+                <ul>
+                    <li><a href="#"><img src="../img/common/first-b.png" alt="처음으로" class="toFirst"></a></li>
+                    <li><a href="#"><img src="../img/common/prev-b.png" alt="이전으로" class="prePage"></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><img src="../img/common/last-b.png" alt="다음으로" class="nextPage"></a></li>
+                    <li><a href="#"><img src="../img/common/next-b.png" alt="끝으로" class="lastPage"></a></li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+    <footer></footer>
+	<div class="survey-modal modal-wrap">
+			<div class="modal-con">
+				<div class="modal-top">
+					<div class="close-modal">
+						<img src="../img/common/close.png" alt="">
+					</div>
+				</div>
+				<div class="modal-bot">
+					<form action="#">
+						<div class="mo-con">
+							<p class="rr-title">
+								설문조사
+							</p>
+							<div class="sml-line sml-line1">
+								<p>1.올해 하계휴양소의 전체적인 시설선정에 대한 만족도를 선택하십시오.</p>
+								<div class="range-slider">
+									<input class="range-slider__range" type="range" value="100" min="0" max="100">
+									<span class="range-slider__value">0</span>
+								</div>
+							</div>
+							<div class="sml-line sml-line2">
+								<p>2. 이용하신 하계휴양소 객실의 청결상태에 대한 만족도를 선택하십시오.</p>
+								<div class="range-slider">
+									<input class="range-slider__range" type="range" value="100" min="0" max="100">
+									<span class="range-slider__value">0</span>
+								</div>
+							</div>
+							<div class="sml-line sml-line3">
+								<p>3. 이용하신 하계휴양소 부대시설에 대한 만족도를 선택하십시오.</p>
+								<div class="range-slider">
+									<input class="range-slider__range" type="range" value="100" min="0" max="100">
+									<span class="range-slider__value">0</span>
+								</div>
+							</div>
+							<div class="sml-line sml-line4">
+								<p>4. 이용하신 휴양시설의 직원 친절도 및 서비스에 대한 만족도를 선택하십시오.</p>
+								<div class="range-slider">
+									<input class="range-slider__range" type="range" value="100" min="0" max="100">
+									<span class="range-slider__value">0</span>
+								</div>
+							</div>
+							<div class="sml-line sml-line5">
+								<p>5. 이용하신 휴양시설에서 가장 만족스러웠던 점은 무엇입니까?(2개선택)</p>
+								<div class="l5-label">
+									<input type="checkbox" name="locate" id="locate">
+									<label for="locate">위치</label>
+								</div>
+								<div class="l5-label">
+									<input type="checkbox" name="cunstruc" id="cunstruc">
+									<label for="cunstruc">시설수준</label>
+								</div>
+								<div class="l5-label">
+									<input type="checkbox" name="service" id="service">
+									<label for="service">임직원서비스</label>
+								</div>
+								<div class="l5-label">
+									<input type="checkbox" name="cunstruc2" id="cunstruc2">
+									<label for="cunstruc2">부대시설</label>
+								</div>
+								<div class="l5-label">
+									<input type="checkbox" name="sale" id="sale">
+									<label for="sale">할인혜택</label>
+								</div>
+								<div class="l5-label">
+									<input type="checkbox" name="clean" id="clean">
+									<label for="clean">청결상태</label>
+								</div>
+								<div class="l5-label">
+									<input type="checkbox" name="else" id="else">
+									<label for="else">기타</label>
+									<input type="text" id="anything" class="anything" disabled>
+								</div>
+							</div>
+							<div class="sml-line sml-line6">
+								<p>6. 이용하신 휴양시설에서 가장 불만족스러웠던 점은 무엇입니까?(2개선택)</p>
+								<div class="l6-label">
+									<input type="checkbox" name="locate-2" id="locate-2">
+									<label for="locate-2">위치</label>
+								</div>
+								<div class="l6-label">
+									<input type="checkbox" name="cunstruc-2" id="cunstruc-2">
+									<label for="cunstruc-2">시설수준</label>
+								</div>
+								<div class="l6-label">
+									<input type="checkbox" name="service-2" id="service-2">
+									<label for="service-2">임직원서비스</label>
+								</div>
+								<div class="l6-label">
+									<input type="checkbox" name="cunstruc2-2" id="cunstruc2-2">
+									<label for="cunstruc2-2">부대시설</label>
+								</div>
+								<div class="l6-label">
+									<input type="checkbox" name="sale-2" id="sale-2">
+									<label for="sale-2">할인혜택</label>
+								</div>
+								<div class="l6-label">
+									<input type="checkbox" name="clean-2" id="clean-2">
+									<label for="clean-2">청결상태</label>
+								</div>
+								<div class="l6-label">
+									<input type="checkbox" name="else2" id="else2">
+									<label for="else2">기타</label>
+									<input type="text" id="anything2" class="anything" disabled>
+								</div>
+							</div>
+							<div class="sml-line sml-line7">
+								<p>7. 이용하신 휴양시설의 전반적인 만족도를 선택하십시오.</p>
+								<div class="range-slider">
+									<input class="range-slider__range" type="range" value="100" min="0" max="100">
+									<span class="range-slider__value">0</span>
+								</div>
+							</div>
+							<div class="sml-line sml-line8">
+								<p>8. 차년도 성공적인 휴양소 운영을 위한 제언 부탁드립니다.(선택사항)</p>
+								<textarea name="l8-text" id="l8-text"></textarea>
+							</div>
+							<div class="sml-line sml-line9">
+								<p>설문에 참여해 주셔서 감사합니다.</p>
+								<button type="button">설문제출</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+	
+		var rangeSlider = function(){
+			  var slider = $('.range-slider'),
+				  range = $('.range-slider__range'),
+				  value = $('.range-slider__value');
+
+			  slider.each(function(){
+
+				value.each(function(){
+				  var value = $(this).prev().attr('value');
+				  $(this).html(value);
+				});
+
+				range.on('input', function(){
+				  $(this).next(value).html(this.value);
+				});
+			  });
+			};
+
+			rangeSlider();
+	
+		</script>
+</body>
+</html>

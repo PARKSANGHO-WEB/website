@@ -1,0 +1,14 @@
+
+@font-face{ 
+    font-family:rl; 
+    src:url('../font/Khmer-OS-Siemreap.woff'); 
+    src:local(※), format(‘woff’) 
+}
+
+
+
+
+
+*{
+	font-family: rl!important;
+}

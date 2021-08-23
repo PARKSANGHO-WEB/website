@@ -1,0 +1,502 @@
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.eot) format('eot')
+}
+
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.woff) format('woff')
+}
+
+input,button,textara,
+input:hover,button:hover,textara:hover,
+input:focus,button:focus,textara:focus{
+	outline: none;
+	border: none;
+	border: 1px solid #dbdbdb;
+}
+
+input[type="checkbox"],button,textarea,input[type="text"]{
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+    background: transparent;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+ 
+ul, ol, li{
+	list-style: none;
+}
+ 
+a{
+	text-decoration: none;
+}
+#mainImage {
+    width: 100%;
+    height: 250px;
+    background: url(../img/sub/sub1-bg.png) no-repeat center;
+    position: relative;
+}
+
+#mainImage h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    transform: translate(-50%, -50%);
+}
+#container {
+	width: 1280px;
+    margin: 50px auto;
+}
+
+#container .sort-menu{
+	width: 660px;
+	margin: 50px auto;
+	overflow: hidden;
+	-ms-user-select: none; 
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#container .sort-menu ul li{
+	float: left;
+	width: 220px;
+	height: 60px;
+	cursor: pointer;
+}
+
+#container .sort-menu ul li:hover span,
+#container .sort-menu ul li.active span{
+	background-color: #006762;
+	color: #fff;
+}
+
+
+#container .sort-menu ul li span{
+	display: block;
+	text-align: center;
+	line-height: 58px;
+	border: 1px solid #006762;
+	font-size: 18px;
+	color: #006762;
+	font-weight: bold;
+}
+
+#container .sort-menu ul li:nth-child(n+2) span{
+	border-left: none;
+}
+
+#container #textView, #container #buttons {
+    width: 95%;
+    max-width: 1276px;
+    overflow: hidden;
+    margin: 0 auto 32px auto;
+}
+
+#container #textView > div:first-child {
+    border-top: 1px solid #707070
+}
+
+#container #textView #title, #container #textView #info {
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    height: 61px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A4A4A;
+}
+
+#container #textView #mainText {
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    color: #4A4A4A;
+}
+
+#mainText #contents {
+    width: calc( 100% - 20px );
+    padding: 10px 10px 40px 10px;
+}
+
+#textView #title, #textView #info {
+    display: flex;
+    align-items: center;
+}
+
+#textView #info {
+    justify-content: space-between;
+}
+
+#textView #title p:first-child, #textView #info div:first-child {
+    margin: 0 15px 0 15px;
+}
+
+
+#buttons button{
+    border: 1px solid #006762;
+    border-radius: 25px;
+    height: 50px;
+    width: 120px;
+    background: white;
+    color: #006762;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+	display: block;;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+#buttons.buttons-3 button:nth-child(2){
+    margin-left: 836px;
+}
+#buttons.buttons-4 button:nth-child(2){
+    margin-left: 696px;
+}
+
+#buttons.buttons-3 button:nth-child(1),
+#buttons.buttons-4 button:nth-child(1){
+	margin-left: 0px;
+}
+
+
+#buttons.buttons-1 button{
+	margin-left: 0px;
+}
+
+#buttons #toUpdate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#buttons #toUpdate .button:nth-child(2) {
+    margin: 0 21px 0 21px;
+}
+
+#buttons .button a, #buttons .button a:visited, #buttons .button a:link {
+    color: #006762;
+    text-decoration: none;
+}  
+
+
+#buttons span a:nth-child(n+3){
+	margin-left: 20px;
+}
+
+
+/*수정입력*/
+
+
+.modi-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.modi-modal.visible{
+	display: block;
+}
+
+.modi-modal .modal-con{
+	position: absolute;
+	width: 375px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.modi-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+    background: linear-gradient(to right, #076A64, #FDCDB3);
+	overflow: hidden;
+	position: relative;
+}
+
+
+.modi-modal .modal-con .modal-top .close-modal{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.modi-modal .modal-con .modal-top .close-modal img{
+	width: 18px;
+	height: 18px;
+}
+
+.modi-modal .modal-con .modal-bot{
+	padding: 20px 20px;
+    background-color: #fff;
+}
+
+
+.modi-modal .modal-con .modal-bot p{
+	font-size: 16px;
+	margin:20px auto;
+	text-align: center;
+}
+
+
+.modi-modal .modal-con .modal-bot input{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 22px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+	text-align: center;
+}
+
+.modi-modal .modal-con .modal-bot button{
+	width: 150px;
+	height: 40px;
+	border: 1px solid #006762;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #fff;
+	color: #006762;
+	margin: 0 auto;
+	display: block;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+
+#container #textView table{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A4A4A;
+}
+
+#container #textView table tr{border: 1px solid #eee; border-left: none; border-right: none;}
+#container #textView table tr td{padding: 15px 0px;}
+#container #textView table tr td:nth-child(1){background-color: #f7f7f7; width: 200px;text-align: center;}
+#container #textView table tr td:nth-child(2){padding: 0px 20px; text-align: left;}
+#container #textView table tr td div{padding: 15px 0px;}
+.manageAns{width: 150px; height: 40px; line-height: 40px; font-size: 15px; background-color: #f7f7f7; border-radius: 10px; margin-top: 20px; margin-bottom: 5px; text-align: center; font-weight: bold; display: block;}
+
+
+
+
+@media screen and (max-width: 1300px){
+	
+	#container{
+		width: 850px;
+	}
+	
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 17px;
+	}
+	
+	
+	
+	#container #textView #title, #container #textView #info{
+		font-size: 15px;
+	}
+	#mainText #contents p{
+		font-size: 15px;
+	}
+	
+	#buttons button{
+		height: 42px;
+		width: 100px;
+		font-size: 16px;
+		line-height: 42px;
+	}
+	
+	#buttons.buttons-4 button:nth-child(2) {
+		margin-left: 367px;
+	}
+	
+	#buttons.buttons-3 button:nth-child(2) {
+		margin-left: 466px;
+	}
+}
+
+
+@media screen and (max-width: 900px){
+	
+	#mainImage{
+		height: 200px;
+	}
+	
+	#mainImage h2{
+		font-size: 26px;
+	}
+	
+	#container .sort-menu{
+		width: 600px;
+	}
+	
+	#container .sort-menu ul li{
+		width: 200px;
+	}
+	
+	#container .sort-menu ul li span,
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 16px;
+	}
+	
+	#container #textView #title, #container #textView #info{
+		font-size: 14px;
+	}
+	#mainText #contents p{
+		font-size: 14px;
+	}
+	
+	#container{
+		width: 600px;
+	}
+	
+	#buttons button{
+		width: 90px;
+		height: 35px;
+		font-size: 15px;
+		line-height: 35px
+	}
+	
+	#buttons.buttons-4 button:nth-child(2) {
+		margin-left: 170px;
+	}
+	
+	#buttons.buttons-3 button:nth-child(2) {
+		margin-left: 260px;
+	}
+	
+	
+	
+	#container .sort-menu ul li{
+		height: 52px;
+	}
+	#container .sort-menu ul li span{
+		line-height: 50px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 640px){
+	
+	#container{
+		width: 90%;
+	}
+	
+	#container .sort-menu ul li{
+		height: 42px;
+	}
+	#container .sort-menu ul li span{
+		line-height: 40px;
+	}
+	
+	#container #textView #title, #container #textView #info{
+		font-size: 13px;
+	}
+	
+	#buttons button{
+		width: calc( 47.5% - 2px );
+		font-size: 13px;
+		line-height: 33px;
+		height:  33px;
+		float: left;
+		margin-left: 0px;
+	}
+	
+	#buttons.buttons-3 button:nth-child(2) {
+		margin-left: 0px;
+	}
+	
+	#buttons.buttons-3 button:nth-child(n+3){
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+	
+	#buttons.buttons-3 button:nth-child(2n) {
+		margin-left: 5%;
+	}
+	
+	
+	#buttons.buttons-4 button:nth-child(2) {
+		margin-left: 0px;
+	}
+	
+	#buttons.buttons-4 button:nth-child(n+3){
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+	
+	#buttons.buttons-4 button:nth-child(2n) {
+		margin-left: 5%;
+	}
+	
+	#mainImage{
+		height: 150px;
+	}
+	#mainImage h2{
+		font-size: 22px;
+	}
+	#container .sort-menu{
+		width: 90%;
+	}
+	#container .sort-menu ul li{
+		width: 33.3%;
+		height: 42px;
+	}
+	
+	#container .sort-menu ul li span,
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 13px;
+		line-height: 40px
+	}
+	
+	
+	#container #textView #info #date{
+		font-weight: bold;
+	}
+	
+	#mainText #contents{
+		font-size: 13px;
+	}
+	
+	.modi-modal .modal-con{
+		width: 90%;
+	}
+	
+	.modi-modal .modal-con .modal-bot p{
+		font-size: 14px;
+	}
+	
+	.modi-modal .modal-con .modal-bot button{
+		width: 125px;
+		height: 35px;
+		font-size: 16px;		
+	}
+	
+	#container #textView table{font-size: 13px;}
+	#container #textView table tr td:nth-child(1){width: 90px;}
+}

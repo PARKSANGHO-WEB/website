@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<meta charset="UTF-8">
+	<title>EPL</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/hi.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+</head>
+<body>
+	<script>
+	
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html");
+            $("footer").load("./inc/footer.html");
+        });
+		
+	</script>
+	
+	<header></header>
+	<section>
+		<div class="main-slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"  onclick="location.href='./sub/review-view.html'"><img src="./img/main/slide2.png" alt=""></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+		<div class="hello-bg">
+			<div class="hello-audio">
+				<h1 class="he-title">EPL 인사말</h1>
+				<div class="script-wrap">
+					<div class="audio-script">
+						<div class="script-t script-1 active">
+							<span>Hello1 everyone !</span>
+						</div>
+						<div class="script-t script-2">
+							<span> Welcome to</span>
+						</div>
+						<div class="script-t script-3">
+							<span> English Power Listening ~!</span>
+						</div>
+						<div class="ab-prev script-prev">
+							<img src="./img/main/script-prev.png" alt="">
+						</div>
+						<div class="ab-next script-next">
+							<img src="./img/main/script-next.png" alt="">
+						</div>
+					</div>
+					<div class="audio-btn">
+						<button class="ab-prev" type="button">
+							<img src="./img/main/audio-prev.png" alt="">
+						</button>
+						<div data-brackets-id="115" class="playwrap">
+							<button data-brackets-id="116" class="on" id="playbtn" type="button" value="PLAY" onclick="play()">
+								<img src="./img/main/audio-play.png" alt="">
+							</button>
+							<button data-brackets-id="117" id="stopbtn" type="button" value="PLAY" onclick="pause()" class="">
+								<img src="./img/main/pause.png" alt="">
+							</button>
+						</div>
+						<button type="button">
+							<img src="./img/main/audio-stop.png" alt="">
+						</button>
+						<button class="ab-next" type="button">
+							<img src="./img/main/audio-next.png" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ban-1"></div>
+		<div class="intro-info">
+			<div class="ii-wrap">
+				<p class="ii-title">EPL 학습 소개영상</p>
+				<div class="ii-left">
+					<ul>
+						<li>
+							<div class="img-w">
+								<img src="./img/main/bicon-1.png" alt="">
+							</div>
+							<div class="span-w">
+								<span>리스닝 최고의 집중력 받아쓰기,<br />이제 재미있게 할 수 있어요!</span>
+							</div>
+						</li>
+						<li>
+							<div class="img-w">
+								<img src="./img/main/bicon-2.png" alt="">
+							</div>
+							<div class="span-w">
+								<span>기술은 물론이고,<br />콘텐츠도 정말 좋습니다.</span>
+							</div>
+						</li>
+						<li>
+							<div class="img-w">
+								<img src="./img/main/bicon-3.png" alt="">
+							</div>
+							<div class="span-w">
+								<span>100개의 미니주제가<br />준비되어 있어요!</span>
+							</div>
+						</li>
+						<li>
+							<div class="img-w">
+								<img src="./img/main/bicon-4.png" alt="">
+							</div>
+							<div class="span-w">
+								<span>1개 미니 주제 1000자,<br />딱 맞는 분량에 고통은 최소!<br />재미는 최고!</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="ii-right">
+				</div>
+			</div>
+		</div>
+		<div class="ban-2"></div>
+		<div class="main-vs">
+			<div class="vs-wrap">
+				<div class="vs-1">
+					<span class="vs-t">기존 학습법</span>
+					<span class="vs-c">
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">구시대적 영어 받아적기</span>
+						</span>
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">낭비되는 종이와 문구용품</span>
+						</span>
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">오르지 않는 실력</span>
+						</span>
+					</span>
+				</div>
+				<div class="vs-2">
+					<span class="vs-t">EPL 학습법</span>
+					<span class="vs-c">
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">리스닝 최고의 집중력 받아쓰기, <span class="vsc-bold">이제 재미있게 할 수 있어요!</span></span>
+						</span>
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">기술은 물론이고,<span class="vsc-bold">콘텐츠도 정말 좋습니다.</span></span>
+						</span>
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">100개 미니주제가 준비되어 있어요!</span>
+						</span>
+						<span class="vsc-w">
+							<span class="hypen">-</span><span class="vsc-m">1개 미니 주제 1000자, 딱 맞는 분량에<span class="vsc-bold">고통은 최소! 재미는 최고!</span></span>
+						</span>
+					</span>
+				</div>
+				<div class="vs-3">
+					<img src="./img/main/vs-3.png" alt="">
+				</div>
+				<div class="vs-4">
+					<img src="./img/main/vs-4.png" alt="">
+				</div>
+				<div class="vs-5">
+					<img src="./img/main/vs-5.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="ban-3"></div>
+		<div class="main-slick">
+			<div class="arrow-wrap">
+				<div class="slider-wrap">
+					<p class="sw-t">EPL 수강 후기</p>
+					<div class="swiper-two">
+						<div class="swiper-wrapper" onclick="location.href='./sub/review-view.html'">
+							<div class="swiper-slide"  onclick="location.href='./sub/review-view.html'">
+								<div class="mark">
+									<img src="./img/main/mark-1.png" alt="">
+								</div>
+								<div class="con-wrap">
+									<p class="st-t">풀패키지 강의 후기</p>
+									<p class="st-c content-rd">
+										영어 공부를 계속 하고는 싶었지만 바쁜 직장 생활과 가정 생활을 유지해 나가면서 영어 공부를 하기는 쉽지 않았습니다.하지만 선생님의 음성을 들으면서 지금까지 공부했던 방식과 전혀 다른 새로운 방식으로 영어 공부를 접근해 나가니 정말 재미있고 실력이 조금씩 늘어나는 것이 느껴졌습니다. 이번에 선택한 바로 원어민 발음을 들을 수 있고 나의 실력도 점검해 나갈 수 있어서 정말 획기적인 방법이다라고 생각했습니다. 직장생활, 가정생활 다 바쁘고 힘들지만 함께 영어 공부를 할 때 정말 활기가 넘치고 제가 발전해나가는 느낌이 들어 마음이 꽉 찬 느낌이 듭니다. 다들 나이가 들었다고 일이 힘들다고 이런 저런 핑계를 이겨내고 함께 활기차고 즐거운 자기계발하세요~^^
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide"  onclick="location.href='./sub/review-view.html'">
+								<div class="mark">
+									<img src="./img/main/mark-2.png" alt="">
+								</div>
+								<div class="con-wrap">
+									<p class="st-t">풀패키지 강의 후기</p>
+									<p class="st-c content-rd" id="content-l">
+										영어 공부를 계속 하고는 싶었지만 바쁜 직장 생활과 가정 생활을 유지해 나가면서 영어 공부를 하기는 쉽지 않았습니다.하지만 선생님의 음성을 들으면서 지금까지 공부했던 방식과 전혀 다른 새로운 방식으로 영어 공부를 접근해 나가니 정말 재미있고 실력이 조금씩 늘어나는 것이 느껴졌습니다. 이번에 선택한 바로 원어민 발음을 들을 수 있고 나의 실력도 점검해 나갈 수 있어서 정말 획기적인 방법이다라고 생각했습니다. 직장생활, 가정생활 다 바쁘고 힘들지만 함께 영어 공부를 할 때 정말 활기가 넘치고 제가 발전해나가는 느낌이 들어 마음이 꽉 찬 느낌이 듭니다. 다들 나이가 들었다고 일이 힘들다고 이런 저런 핑계를 이겨내고 함께 활기차고 즐거운 자기계발하세요~^^
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide"  onclick="location.href='./sub/review-view.html'">
+									<div class="mark">
+										<img src="./img/main/mark-1.png" alt="">
+									</div>
+								<div class="con-wrap">
+									<p class="st-t">풀패키지 강의 후기</p>
+									<p class="st-c content-rd">
+										영어 공부를 계속 하고는 싶었지만 바쁜 직장 생활과 가정 생활을 유지해 나가면서 영어 공부를 하기는 쉽지 않았습니다.하지만 선생님의 음성을 들으면서 지금까지 공부했던 방식과 전혀 다른 새로운 방식으로 영어 공부를 접근해 나가니 정말 재미있고 실력이 조금씩 늘어나는 것이 느껴졌습니다. 이번에 선택한 바로 원어민 발음을 들을 수 있고 나의 실력도 점검해 나갈 수 있어서 정말 획기적인 방법이다라고 생각했습니다. 직장생활, 가정생활 다 바쁘고 힘들지만 함께 영어 공부를 할 때 정말 활기가 넘치고 제가 발전해나가는 느낌이 들어 마음이 꽉 찬 느낌이 듭니다. 다들 나이가 들었다고 일이 힘들다고 이런 저런 핑계를 이겨내고 함께 활기차고 즐거운 자기계발하세요~^^
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide"  onclick="location.href='./sub/review-view.html'">
+								<div class="mark">
+									<img src="./img/main/mark-2.png" alt="">
+								</div>
+								<div class="con-wrap">
+									<p class="st-t">풀패키지 강의 후기</p>
+									<p class="st-c content-rd" id="content-l">
+										영어 공부를 계속 하고는 싶었지만 바쁜 직장 생활과 가정 생활을 유지해 나가면서 영어 공부를 하기는 쉽지 않았습니다.하지만 선생님의 음성을 들으면서 지금까지 공부했던 방식과 전혀 다른 새로운 방식으로 영어 공부를 접근해 나가니 정말 재미있고 실력이 조금씩 늘어나는 것이 느껴졌습니다. 이번에 선택한 바로 원어민 발음을 들을 수 있고 나의 실력도 점검해 나갈 수 있어서 정말 획기적인 방법이다라고 생각했습니다. 직장생활, 가정생활 다 바쁘고 힘들지만 함께 영어 공부를 할 때 정말 활기가 넘치고 제가 발전해나가는 느낌이 들어 마음이 꽉 찬 느낌이 듭니다. 다들 나이가 들었다고 일이 힘들다고 이런 저런 핑계를 이겨내고 함께 활기차고 즐거운 자기계발하세요~^^
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide"  onclick="location.href='./sub/review-view.html'">
+									<div class="mark">
+										<img src="./img/main/mark-1.png" alt="">
+									</div>
+								<div class="con-wrap">
+									<p class="st-t">풀패키지 강의 후기</p>
+									<p class="st-c content-rd">
+										영어 공부를 계속 하고는 싶었지만 바쁜 직장 생활과 가정 생활을 유지해 나가면서 영어 공부를 하기는 쉽지 않았습니다.하지만 선생님의 음성을 들으면서 지금까지 공부했던 방식과 전혀 다른 새로운 방식으로 영어 공부를 접근해 나가니 정말 재미있고 실력이 조금씩 늘어나는 것이 느껴졌습니다. 이번에 선택한 바로 원어민 발음을 들을 수 있고 나의 실력도 점검해 나갈 수 있어서 정말 획기적인 방법이다라고 생각했습니다. 직장생활, 가정생활 다 바쁘고 힘들지만 함께 영어 공부를 할 때 정말 활기가 넘치고 제가 발전해나가는 느낌이 들어 마음이 꽉 찬 느낌이 듭니다. 다들 나이가 들었다고 일이 힘들다고 이런 저런 핑계를 이겨내고 함께 활기차고 즐거운 자기계발하세요~^^
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+		<div class="ban-4"></div>
+		<div class="main-step">
+			<p class="ms-t">EPL과 함께라면 실력이 상승합니다.</p>
+			<div class="ms-con">
+				<div class="ms-w">
+					<p class="ms-c">단계별<br />목표율 설정</p>
+				</div>
+				<img class="graph" src="./img/main/main-graph.png" alt="">
+				<div class="step-li">
+					<ul>
+						<li>
+							<p>2만 단어 (A4 50),<br />받아쓰면 달라집니다!</p>
+						</li>
+						<li>
+							<p>웹상에 나의 리스닝,<br />전용 공부방이 생겼어요!</p>
+						</li>
+						<li>
+							<p>리스닝 트레이닝 가상공간</p>
+						</li>
+						<li>
+							<p>공부내용 다 지우고<br />다시 할 수 있어요.<br />무한반복이네요!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button onclick="location.href='./sub/membership.html'" type="button">EPL 멤버십 신청하기</button>
+		</div>
+	</section>
+	<footer></footer>
+	
+	<script>
+		$(document).ready(function () {
+
+		 	//initialize swiper when document ready
+			var mySwiper = new Swiper ('.swiper-container', {
+				// Optional parameters
+				direction: 'horizontal',
+				loop: true,
+				pagination : true, // pager 여부
+				autoplay : {  
+					// 자동 슬라이드 설정 , 비 활성화 시 false
+					delay : 3000
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+			})
+
+		})
+	</script> 
+	
+	<script>
+		var swiper = new Swiper('.swiper-two', {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+	<script>
+    
+        
+        $(document).ready(function(){
+
+            $(".content-rd").mCustomScrollbar({
+                    theme:"light-3"
+                });
+            });
+    </script>
+</body>
+</html>

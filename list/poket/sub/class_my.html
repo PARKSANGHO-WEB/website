@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Poket Univ</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="on" href="./class_my.html">수업</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a class="on" href="./class_my.html">내 수업</a>
+                                    </li>
+                                    <li>
+                                        <a href="./class_notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="./class_calendar.html">캘린더</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="sub-header">
+				<div class="mobile-m">
+					<div class="bar">
+						<div class="bar1-1"></div>
+						<div class="bar2-1">
+							<div class="c-bar1"></div>
+							<div class="c-bar2"></div>
+						</div>
+						<div class="bar3-1"></div>
+					</div>
+				</div>
+			<div class="sh-wrap">
+				<a class="on" href="./class_my.html">내 수업</a>
+				<a href="./class_notice.html">공지사항</a>
+				<a href="./class_calendar.html">캘린더</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a class="on" href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    <section class="my-class">
+        <form action="#">
+            <!--      스케쥴페이지에서 설정한 시간표들입니다. 우측의 수강과목에는 좌측 시간표에 있는 과목들을 출력합니다.
+             수정버튼 클릭시 schedule.html 페이지로 이동합니다.      -->
+            <div class="myc-wrap">
+                <div class="myc-left">
+                    <div class="time-sel">
+                        <select name="class-time" id="class-time">
+                            <option value="class-20_2">2020년 2학기</option>
+                            <option value="class-20_w">2020년 겨울학기</option>
+                            <option value="class-21_1">2021년 1학기</option>
+                            <option value="class-21_s">2021년 여름학기</option>
+                        </select>
+                        <button type="button" onClick="location.href='./schedule.html'">수정</button>
+                    </div>
+                    <div class="class-title">
+                        <span class="grad-name">2020-2학기</span>
+                        <span class="repre">2학기 시간표&알바</span>
+                    </div>
+                    <div class="class-table">
+                        <div class="myc-week">
+                            <table>
+                                <tr>
+                                    <td> </td>
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>수</td>
+                                    <td>목</td>
+                                    <td>금</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="myc-table">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="field-time"></div>
+                                        <div class="grids">
+                                            <div class="grid"><span class="startt9">9</span></div>
+                                            <div class="grid"><span class="startt10">10</span></div>
+                                            <div class="grid"><span class="startt11">11</span></div>
+                                            <div class="grid"><span class="startt12">12</span></div>
+                                            <div class="grid"><span class="startt13">13</span></div>
+                                            <div class="grid"><span class="startt14">14</span></div>
+                                            <div class="grid"><span class="startt15">15</span></div>
+                                            <div class="grid"><span class="startt16">16</span></div>
+                                            <div class="grid"><span class="startt17">17</span></div>
+                                            <div class="grid"><span class="startt18">18</span></div>
+                                            <div class="grid"><span class="startt19">19</span></div>
+                                            <div class="grid"><span class="startt20">20</span></div>
+                                            <div class="grid"><span class="startt21">21</span></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="field-time">
+                                            <div class="ft-lec lec-1 bgcolor1">
+                                                <span class="ft-title">
+                                                    컴퓨터교육개론
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                            
+                                            <div class="ft-lec lec-2 bgcolor2">
+                                                <span class="ft-title">
+                                                    모션그래픽
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                        </div>
+                                        <div class="grids">
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="field-time">
+                                            
+                                            
+                                            <div class="ft-lec lec-3 bgcolor3">
+                                                <span class="ft-title">
+                                                    데이터베이스
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                        </div>
+                                        <div class="grids">
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="field-time">
+                                            
+                                            <div class="ft-lec lec-4 bgcolor4">
+                                                <span class="ft-title">
+                                                    전자기학
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                        </div>
+                                        <div class="grids">
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="field-time">
+                                            
+                                            <div class="ft-lec lec-5 bgcolor5">
+                                                <span class="ft-title">
+                                                    소프트웨어공학
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                        </div>
+                                        <div class="grids">
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="field-time">
+                                            
+                                            <div class="ft-lec lec-6 bgcolor6">
+                                                <span class="ft-title">
+                                                    디자인과 문화
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                            
+                                            <div class="ft-lec lec-7 bgcolor7">
+                                                <span class="ft-title">
+                                                    크롤링의 이해
+                                                </span>
+                                                <span class="ft-place">제 2 공학관</span>
+                                                <span class="ft-score">3학점</span>
+                                            </div>
+                                        </div>
+                                        <div class="grids">
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                            <div class="grid"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="myc-right">
+                      <div class="myc-title">
+                          <span>나의 수강 과목</span>
+                      </div>
+                      <div class="myc-rcon">
+                          <div class="myr-left">
+                              <div class="myc-list content-rd">
+                                  <ul>
+                                      <li>
+                                          <span class="lec-title">컴퓨터교육개론</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">모션그래픽</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">데이터베이스</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">전자기학</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">소프트웨어공학</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">디자인과문화</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">크롤링의이해</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">컴퓨터교육개론</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">모션그래픽</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">데이터베이스</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">전자기학</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">소프트웨어공학</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">디자인과문화</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">크롤링의이해</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">컴퓨터교육개론</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">모션그래픽</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">데이터베이스</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">전자기학</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">소프트웨어공학</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">디자인과문화</span>
+                                      </li>
+                                      <li>
+                                          <span class="lec-title">크롤링의이해</span>
+                                      </li>
+                                  </ul>
+                              </div>  
+                          </div>
+                          <div class="myc-content">
+                              <div class="myc-t myc-t1">
+                                  <span class="myc-btn">
+                                        <!--                 좌측에서 선택한 과목에 대한 정보입니다, 더보기 클릭시 글 상세보기 페이지로 이동                 -->
+                                      <button class="myc-more" type="button" onClick="location.href='./class_view.html'">더보기</button>
+                                      <img class="mob-close" src="../img/common/close_big.png" alt="">
+                                    </span>
+                                  <span class="tab-title">컴퓨터교육개론</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">월요일 11:00 ~ 13:00</span>
+                                  <div class="mob-modal">
+                                      <span>공지</span>
+                                  </div>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">운영체제 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">운영체제 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">운영체제 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">운영체제 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="myc-t myc-t2">
+                                  <span class="myc-btn">
+                                      <button class="myc-more" type="button">더보기</button>
+                                    </span>
+                                  <span class="tab-title">모션그래픽</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">월요일 15:00 ~ 17:45</span>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">모션그래픽 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">모션그래픽 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">모션그래픽 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">모션그래픽 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="myc-t myc-t1">
+                                  <span class="myc-btn">
+                                      <button class="myc-more" type="button">더보기</button>
+                                    </span>
+                                  <span class="tab-title">데이터베이스</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">수요일 13:00 ~ 18:00</span>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">데이터베이스 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">데이터베이스 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">데이터베이스 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">데이터베이스 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="myc-t myc-t1">
+                                  <span class="myc-btn">
+                                      <button class="myc-more" type="button">더보기</button>
+                                    </span>
+                                  <span class="tab-title">전자기학</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">목요일 15:00 ~ 17:45</span>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">전자기학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">전자기학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">전자기학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">전자기학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="myc-t myc-t1">
+                                  <span class="myc-btn">
+                                      <button class="myc-more" type="button">더보기</button>
+                                    </span>
+                                  <span class="tab-title">소프트웨어공학</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">목요일 09:00 ~ 13:00</span>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">운영체제 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">소프트웨어공학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">소프트웨어공학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">소프트웨어공학 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="myc-t myc-t1">
+                                  <span class="myc-btn">
+                                      <button class="myc-more" type="button">더보기</button>
+                                    </span>
+                                  <span class="tab-title">디자인과문화</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">금요일 10:00 ~ 13:00</span>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">디자인과문화 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">디자인과문화 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">디자인과문화 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">디자인과문화 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="myc-t myc-t1">
+                                  <span class="myc-btn">
+                                      <button class="myc-more" type="button">더보기</button>
+                                    </span>
+                                  <span class="tab-title">크롤링의 이해</span>
+                                  <span class="tab-code">50301</span>
+                                  <span class="tab-place">제 2 공학관 304호</span>
+                                  <span class="tab-score">3학점</span>
+                                  <span class="tab-proff">홍길동 교수님</span>
+                                  <span class="tab-time">금요일 15:00 ~ 17:45</span>
+                                  <div class="myc-noti content-rd">
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">크롤링의 이해 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">크롤링의 이해 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">크롤링의 이해 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                      <div class="noti-wrap">
+                                          <div class="notiw-info">
+                                              <span class="noti-time">30일 (화)</span>
+                                              <span class="noti-count">D-day</span>
+                                          </div>
+                                          <div class="noti-cont">
+                                              <span class="n-exam">시험</span>
+                                              <span class="n-cont">크롤링의 이해 중간고사</span>
+                                              <span class="time">11:00</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+    <!--  list tab  -->
+    
+    
+    <script>
+    
+        var tabBtn = $(".myc-list> ul > li");  
+        var tabCont = $(".myc-content > .myc-t");   
+
+        tabCont.hide().eq(0).show();
+
+        tabBtn.click(function(){
+          var target = $(this);       
+          var index = target.index();  
+            
+          tabBtn.removeClass("active");
+          target.addClass("active");
+          tabCont.css("display","none");
+          tabCont.eq(index).css("display", "block");
+        });
+    </script>
+    <script>
+    
+        
+        $(document).ready(function(){
+
+            $(".content-rd").mCustomScrollbar({
+                    theme:"light-3"
+                });
+            });
+    </script>
+</body>
+</html>

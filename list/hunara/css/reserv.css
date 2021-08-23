@@ -1,0 +1,1261 @@
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.eot) format('eot')
+}
+
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.woff) format('woff')
+}
+
+input,button,textara,
+input:hover,button:hover,textara:hover,
+input:focus,button:focus,textara:focus{
+	outline: none;
+	border: none;
+}
+
+*{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	padding: 0px;
+}
+input[type="checkbox"],button,textarea,input[type="text"]{
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+    background: transparent;
+}
+ 
+ul, ol, li{
+	list-style: none;
+}
+ 
+a{
+	text-decoration: none;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+#container {
+	width: 1280px;
+    margin: 0 auto;
+}
+
+#container .sort-menu{
+	width: 660px;
+	margin: 50px auto;
+	overflow: hidden;
+	-ms-user-select: none; 
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#container .sort-menu ul li{
+	float: left;
+	width: 220px;
+	height: 60px;
+	cursor: pointer;
+}
+
+#container .sort-menu ul li:hover span,
+#container .sort-menu ul li.active span{
+	background-color: #006762;
+	color: #fff;
+}
+
+
+#container .sort-menu ul li span{
+	display: block;
+	text-align: center;
+	line-height: 58px;
+	border: 1px solid #006762;
+	font-size: 18px;
+	color: #006762;
+	font-weight: bold;
+}
+
+#container .sort-menu ul li:nth-child(n+2) span{
+	border-left: none;
+}
+
+#subMenu div:nth-child(2) p a,
+#subMenu div:nth-child(2) p a:visited,
+#subMenu div:nth-child(2) p a:link {
+    color: white;
+}
+
+#container #subMenu div:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+
+#table #subMenu2 {
+	width: 100%;
+	margin-bottom: 35px;
+	overflow: hidden;
+}
+
+
+#table #subMenu2 button{
+    font-size: 18px;
+	line-height: 18px;
+    font-weight: bold;
+    color: #cfcfcf;
+	border: none;
+	margin-left: 40px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #fff;
+	cursor: pointer;
+	transition-duration: .5s;
+}
+
+#table #subMenu2 button.active{
+	border-bottom: 3px solid #006762;
+	color: #006762;
+}
+
+#table #subMenu2 button:nth-child(1){
+	margin-left: 0px;
+}
+
+#table .subMenu3{
+    display: flex;
+    width: 160px!important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #006762;
+    margin: 0 0 50px 0!important;
+}
+
+
+#subMenu2 div {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+    color: #cfcfcf;
+    transition: 0.5s;
+	cursor: pointer;
+}
+
+#subMenu2 div.active {
+    border-bottom: 3px solid #006762;
+    color: #006762;
+}
+
+
+#subMenu3 div {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+    color: #cfcfcf;
+    transition: 0.5s;
+	cursor: pointer;
+}
+
+#subMenu3 div:nth-child(1) {
+    border-bottom: 3px solid #006762;
+    color: #006762;
+}
+
+#container table {width: 100%; margin: 0 auto;border-collapse: collapse;}
+
+#container table tr{
+	cursor: pointer;
+}
+#container table tr th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid #DBDBDB;
+    background: #f5f7f7;
+    height: 51px;
+    color: #4A4A4A;
+}
+
+#container td a, #container td a:visited, #container td a:link {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+#container table tr th:nth-child(1) {width: 10%}
+#container table tr th:nth-child(2) {width: 10%}
+#container table tr th:nth-child(3) {width: 25%}
+#container table tr th:nth-child(4) {width: 30%}
+#container table tr th:nth-child(5) {width: 10%}
+#container table tr th:nth-child(6) {width: 15%}
+
+#container table tr td {
+    border-bottom: 1px solid #e9e9e9;
+    height: 51px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+#container table tr td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+     -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;
+}
+
+#container table tr td .survey {
+    width: 97px;
+    height: 33px;
+    color: #006762;
+    border: 1px solid #006762;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.survey a, .survey a:visited, .survey a:link {
+    text-decoration: none;
+    color: #006762 !important;
+}
+
+#paging {
+    width: 100%;
+	height: 130px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+
+#paging ul{
+	width: 315px;
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#paging ul li {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    color: #CAD6D6;
+    text-align: center;
+	float: left;
+    justify-content: center;
+}
+
+
+#paging ul li a{
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+	color: #CAD6D6;
+}
+
+
+#paging ul li:hover a,
+#paging ul li.active a{
+	border: 1px solid #006762;
+	line-height: 33px;
+	color: #006762;
+}
+
+
+#paging .go-write{
+	float: right;
+	display: block;
+	width: 120px;
+	height: 50px;
+	border: 1px solid #006762;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 100px;
+	color: #006762;
+    margin-top: 28px;
+}
+
+
+
+
+
+#container #reser-sangse .rs-st p{
+	font-size: 30px;
+	font-weight: bold;
+	color: #006762;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+#container #reser-sangse{
+	width: 800px;
+	margin: 0 auto;
+}
+
+#container #reser-sangse th{
+	width: 300px;
+}
+
+
+#container #reser-sangse table tr th{
+    border-top: none;
+}
+
+#container #reser-sangse table tr:nth-child(1){
+    border-top: 1px solid black;
+}
+
+#container #reser-sangse table tr td{
+	text-align: left;
+	padding-left: 20px;
+}
+
+#container #reser-sangse table tr td button{
+	padding: 5px 10px;
+	border: 1px solid #006762;
+	color: #006762;
+	background-color: #fff;
+	margin-left: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#container #reser-sangse .cancel-btn button{
+	margin: 40px auto;
+	border: 1px solid #006762;
+	color: #006762;
+	background-color: #fff;
+	display: block;
+	width: 236px;
+	height: 50px;
+	border-radius: 100px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.survey-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.survey-modal.visible{
+	display: block;
+}
+
+.survey-modal .modal-con{
+	position: absolute;
+	width: 670px;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.survey-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+    background: linear-gradient(to right, #076A64, #FDCDB3);
+	overflow: hidden;
+	position: relative;
+}
+
+
+.survey-modal .modal-con .modal-top .close-modal{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.survey-modal .modal-con .modal-top .close-modal img{
+	width: 18px;
+	height: 18px;
+}
+
+
+.survey-modal .modal-con .modal-bot{
+	padding: 20px 20px;
+    background-color: #fff;
+    height: 520px;
+    overflow: scroll;
+}
+
+
+
+
+.survey-modal .modal-con .modal-bot {scrollbar-3dLight-Color: #c4c4c4;scrollbar-arrow-color: #fff;scrollbar-Face-Color: #c4c4c4;scrollbar-Track-Color: #fff;scrollbar-DarkShadow-Color: none;scrollbar-Highlight-Color: #c4c4c4;scrollbar-Shadow-Color: #c4c4c4;}
+.survey-modal .modal-con .modal-bot::-webkit-scrollbar { width: 4px;height:4px; }
+.survey-modal .modal-con .modal-bot::-webkit-scrollbar-track { background-color:#fff; }
+.survey-modal .modal-con .modal-bot::-webkit-scrollbar-thumb { background: #c4c4c4;border-radius:10px; }
+.survey-modal .modal-con .modal-bot::-webkit-scrollbar-button { display: none; }
+
+
+
+
+.survey-modal .modal-con .modal-bot .rr-title{
+	font-size: 26px;
+	color: #006762;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 30px;
+}
+
+
+
+.survey-modal .slidecontainer {
+  width: 100%;
+}
+
+.range-slider {
+	width: 100%;
+	overflow: hidden;
+}
+
+.range-slider__range {
+	-webkit-appearance: none;
+	width: calc( 100% - 130px );
+	height: 5px;
+	border-radius: 5px;
+	background: #e9e9e9;
+	outline: none;
+	padding: 0;
+	margin: 0;
+    float: left;
+    margin-top: 17px;
+}
+.range-slider__range::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+  
+
+.range-slider__range::-moz-range-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+   }
+
+.range-slider__value {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 40px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 3px;
+	background: #fff;
+	color: #006762;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-left: 40px;
+	float: left;
+	border: 1px solid #006762;  
+}
+
+
+.range-slider__value::-moz-range-track {
+    background: $range-track-color;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.survey-modal .score{
+	background-color: #fff;
+	border: 1px solid #006762;
+	color: #006762;
+	font-weight: bold;
+	width: 80px;
+	height: 38px;
+	font-size: 20px;
+	color: #006762;
+	text-align: center;
+	line-height: 38px;
+    float: left;
+    border-radius: 5px;
+    margin-left: 44px;
+}
+
+
+
+
+
+
+.survey-modal .sml-line{
+	overflow: hidden;
+}
+
+.survey-modal .score::placeholder{
+	color: #006762;
+}
+
+
+.survey-modal .sml-line2,
+.survey-modal .sml-line3,
+.survey-modal .sml-line4{
+	margin-top: 120px;
+    padding-bottom: 5px;
+}
+
+.survey-modal .sml-line5{
+	margin-top: 100px;
+}
+
+.survey-modal .sml-line6{
+	margin-top: 35px;
+}
+
+.survey-modal .sml-line7{
+	margin-top: 85px;
+    padding-bottom: 5px;
+}
+
+.survey-modal .sml-line8{
+	margin-top: 85px;
+}
+
+
+.survey-modal .l5-label,
+.survey-modal .l6-label{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+
+.survey-modal .sml-line p{
+	margin-bottom: 20px;
+}
+
+.survey-modal .l5-label input,
+.survey-modal .l6-label input{
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.survey-modal .l5-label input,
+.survey-modal .l5-label label,
+.survey-modal .l6-label input,
+.survey-modal .l6-label label{
+	float: left;
+}
+
+.survey-modal .l5-label input + label,
+.survey-modal .l6-label input + label{
+	cursor: pointer;
+}
+
+
+.survey-modal .sml-line .anything{    
+	display: block;
+    width: calc( 100% - 22px );
+    border: 1px solid #DBDBDB;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
+.survey-modal .sml-line textarea{
+	padding: 20px;
+	width: calc( 100% - 42px );
+	border: 1px solid #DBDBDB;
+	height: 120px;
+}
+
+.survey-modal .sml-line9 p{
+	margin: 40px auto 16px auto;
+	display: block;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;	
+}
+
+
+.survey-modal .sml-line9 button{
+	border: 1px solid #006762;
+	color: #006762;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	width: 236px;
+	height: 50px;
+	background-color: #fff;
+	display: block;
+	margin: 0 auto;
+	line-height: 50px;
+	margin-bottom: 30px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+
+#container #reser-sangse .cancel-btn button{
+	cursor: pointer;
+}
+
+
+
+
+
+/*210603 하단 주의사항 추가 시작*/
+.noticeBox{width: 100%;margin-top: 80px;}
+.noticeBox2,.noticeBox3,.noticeBox4{margin-top: 40px;}
+
+.noticeBox .nb-t{font-size: 18px; font-weight: bold; color: #2e2e2e;display: block;}
+.noticeBox .nb-c{width: calc( 100% - 20px );padding: 10px;border: 1px solid #666; display: block;margin-top: 10px;}
+.noticeBox .nb-c .nb-i{position: relative;font-size: 14px;font-weight: bold;color: #b30c2f; display: block;padding: 2px 0px;}
+.noticeBox .nb-c .nb-l{position: relative;font-size: 14px; display: block;padding: 2px 0px; color: #2e2e2e; }
+.noticeBox .nb-c .nb-l:before{content: "·";}
+.noticeBox4{margin-bottom: 80px;}
+
+/*210603 하단 주의사항 추가 시작 끝*/
+
+
+
+
+
+
+/*결제모달*/
+
+
+.pg-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	display: none;
+	z-index: 9999;
+}
+
+.pg-modal.visible2{
+	display: block;
+}
+
+.pg-modal .modal-con{
+	position: absolute;
+	width: 600px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.pg-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+    background: linear-gradient(to right, #076A64, #FDCDB3);
+	overflow: hidden;
+	position: relative;
+}
+
+
+.pg-modal .modal-con .modal-top .close-modal2{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.pg-modal .modal-con .modal-top .close-modal2 img{
+	width: 18px;
+	height: 18px;
+}
+
+.pg-modal .modal-con .modal-bot{
+	padding: 30px;
+    background-color: #fff;
+	height: auto;
+    overflow: hidden;
+}
+
+.pg-modal .modal-con .modal-bot .rr-title{
+	font-size: 26px;
+	color: #006762;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.pg-modal .pg-sel{
+	overflow: hidden;
+	margin-top: 23px;
+}
+
+.pg-modal .pg-sel div{
+	width: 253px;
+	border: 1px solid #006762;
+	border-radius: 20px;
+	float: left;
+	cursor: pointer;
+}
+
+.pg-modal .pg-sel div:nth-child(2){
+	margin-left: 30px;
+}
+
+.pg-modal .pg-sel div img{
+	margin: 55px auto 23px auto;
+	display: block;
+}
+
+.pg-modal .pg-sel div p{
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #006762;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+
+
+@media screen and (max-width:1300px){
+	
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 17px;
+	}
+	
+	.survey-modal .modal-con .modal-bot .rr-title{
+		font-size: 22px;
+	}
+	
+	.survey-modal .score{
+		font-size: 18px;
+	}
+
+	
+	.survey-modal .sml-line9 button{
+		font-size: 18px;
+	}
+	
+	#container{
+		width: 90%;
+	}
+	
+}
+
+@media screen and (max-width:900px){
+	
+	#container .sort-menu{
+		width: 600px;
+	}
+	
+	#container .sort-menu ul li{
+		width: 200px;
+		height: 52px;
+	}
+	
+	#container .sort-menu ul li span,
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 16px;
+		line-height: 50px;
+	}
+	
+	#container table{
+		font-size: 15px;
+	}
+	#container #reser-sangse{
+		width: 600px;
+	}
+	#container #reser-sangse .rs-st p{
+		font-size: 26px;
+	}
+	#container #reser-sangse th{
+		width: 150px;
+	}
+	
+	.survey-modal .modal-con{
+		width: 600px;
+	}
+	
+	.survey-modal .score{
+		width: 65px;
+		height: 35px;
+		margin-left: 20px;
+	}
+	
+	.survey-modal .slider{
+		width: 464px;
+	}
+	
+	.survey-modal .sml-line p{
+		font-size: 14px;
+	}
+	
+	.survey-modal .sml-line2, 
+	.survey-modal .sml-line3, 
+	.survey-modal .sml-line4{
+		margin-top: 80px;
+	}
+	
+	.survey-modal .sml-line5{
+		margin-top: 80px;
+	}
+	
+	.survey-modal .l5-label input, .survey-modal .l6-label input{
+		margin-top: 3px;
+	}
+	
+	.survey-modal .l5-label input + label, 
+	.survey-modal .l6-label input + label{
+		font-size: 14px;
+	}
+	
+	.survey-modal .sml-line9 button{
+		font-size: 16px;
+	}
+	
+	
+	.pg-modal .modal-con .modal-bot .rr-title{
+		font-size: 22px;
+	}
+	
+	.pg-modal .modal-con{
+		width: 540px;
+	}
+	
+	.pg-modal .pg-sel div{
+		width: 223px;
+	}
+	.pg-modal .pg-sel div p{
+		font-size: 24px;
+	}
+	
+	
+	#table #subMenu2 button{
+		font-size: 16px;
+		margin-left: 30px;
+	}
+}
+
+
+
+
+
+@media all and (max-width:720px) {
+    
+
+    #container #subMenu div p a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #container table tr th {
+        font-size: 13px;
+        line-height: 17px;
+
+    }
+    
+    #container table tr td {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+}
+
+@media all and (max-width:440px) {
+   
+    #subMenu div:nth-child(1) p, #subMenu div:nth-child(3) p {
+        font-weight: 400 !important;
+    }
+
+    #subMenu2 button {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    #container table tr th {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    #container table tr:first-child {
+        display: none;
+    }
+
+    #container table tr {
+        width: 100%;
+    }
+
+    #container table tr td {
+        display: flex;
+        width: 100%;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    #container table tr td:last-child {
+        display: flex;
+        justify-content: flex-start;
+     
+    }
+
+    #container table tr td:last-child div {
+        margin-left: 10px;
+    }
+
+    #container table tr td:first-child {
+        border-top: 1px solid #333333;
+    }
+
+    #container #reserv-t tr td:last-child {
+        margin-bottom: 21px;
+    }
+
+    #container table tr td p {
+        padding-left: 10px;
+    }
+    
+  
+
+    #container table tr td::before {
+        display: flex;
+        height: 100%;
+        font-size: 13px;
+        line-height: 15px;
+        color: #4A4A4A;
+        background: #f5f7f7;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        width: 78px;
+    }
+
+
+
+    #container .reserv-all tr td:nth-child(1)::before {
+        content: "번호";
+    } 
+    #container .reserv-all tr td:nth-child(2)::before {
+        content: "지망";
+    } 
+    #container .reserv-all tr td:nth-child(3)::before {
+        content: "등록일";
+    } 
+    #container .reserv-all tr td:nth-child(4)::before {
+        content: "예약일";
+    } 
+    #container .reserv-all tr td:nth-child(5)::before {
+        content: "구분";
+    } 
+    #container .reserv-all tr td:nth-child(6)::before {
+        content: "휴양소명";
+    } 
+
+    #container .reserv-all tr td:nth-child(7)::before {
+        content: "평형";
+    } 
+    #container .reserv-all tr td:nth-child(8)::before {
+        content: "결과";
+    } 
+    #container .reserv-all tr td:nth-child(9)::before {
+        content: "부담금결제";
+    } 
+	
+
+
+    #container .reserv-sel tr td:nth-child(1)::before {
+        content: "번호";
+    } 
+    #container .reserv-sel tr td:nth-child(2)::before {
+        content: "지망";
+    } 
+    #container .reserv-sel tr td:nth-child(3)::before {
+        content: "휴양소명";
+    } 
+    #container .reserv-sel tr td:nth-child(4)::before {
+        content: "예약일";
+    } 
+    #container .reserv-sel tr td:nth-child(5)::before {
+        content: "결과";
+    } 
+    #container .reserv-sel tr td:nth-child(6)::before {
+        content: "설문조사";
+    } 
+
+
+    #container .reserv-not tr td:nth-child(1)::before {
+        content: "번호";
+    } 
+    #container .reserv-not tr td:nth-child(2)::before {
+        content: "지망";
+    } 
+    #container .reserv-not tr td:nth-child(3)::before {
+        content: "휴양소명";
+    } 
+    #container .reserv-not tr td:nth-child(4)::before {
+        content: "예약일";
+    } 
+    #container .reserv-not tr td:nth-child(5)::before {
+        content: "확정일";
+    } 
+    #container .reserv-not tr td:nth-child(6)::before {
+        content: "결과";
+    } 
+
+
+    #container .reserv-can tr td:nth-child(1)::before {
+        content: "번호";
+    } 
+    #container .reserv-can tr td:nth-child(2)::before {
+        content: "지망";
+    } 
+    #container .reserv-can tr td:nth-child(3)::before {
+        content: "휴양소명";
+    } 
+    #container .reserv-can tr td:nth-child(4)::before {
+        content: "예약일";
+    } 
+    #container .reserv-can tr td:nth-child(5)::before {
+        content: "취소일";
+    } 
+    #container .reserv-can tr td:nth-child(6)::before {
+        content: "결과";
+    } 
+
+
+}
+
+
+
+
+@media all and (max-width:640px) {
+	#container h2{
+		font-size: 20px;
+	}
+	
+	#container .sort-menu{
+		width: 90%;
+	}
+	#container .sort-menu ul li{
+		width: 33.3%;
+		height: 42px;
+	}
+	
+	#container .sort-menu ul li span,
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 13px;
+		line-height: 40px
+	}
+	
+	#table #subMenu2{
+		font-size: 15px;
+		width: 290px;
+	}
+	#table .subMenu3{
+		width: 110px!important;
+	}
+	
+	#container table{
+		font-size: 13px;
+	}
+	
+	#container table tr td .survey{
+		width: 55px;
+		height: 30px;
+		font-size: 12px;
+		line-height: 30px;
+	}
+	
+	#container #reser-sangse{
+		width: 100%;
+	}
+	#container #reser-sangse .rs-st p{
+		font-size: 22px;
+	}
+	#container #reser-sangse th{
+		width: 20%;
+	}
+	
+	
+	#container #reser-sangse table th,
+	#container #reser-sangse table td{
+		font-size: 12px!important;
+	}
+	
+	
+	#container #reser-sangse table td{
+		width: calc( 100% - 20px );
+	}
+	
+	#container #reser-sangse table tr td button{
+		font-size: 13px;
+	}
+	
+	#container #reser-sangse .cancel-btn button{
+		font-size: 14px;
+		height: 36px;
+		line-height: 36px;
+	}
+	
+	
+	
+	.survey-modal .modal-con{
+		width: 90%;
+		top: 40%;
+	}
+	
+	.survey-modal .modal-con .modal-bot .rr-title{
+		font-size: 18px;
+	}
+	
+	.survey-modal .slider{
+		overflow: hidden;
+    	width: calc( 100% - 105px );
+	}
+	
+	.survey-modal .sml-line p {
+		font-size: 13px;
+		letter-spacing: -1px;
+	}
+	
+	.survey-modal .score{
+		margin-left: 5%;
+		width: calc( 20% - 7px );
+		font-size: 16px;
+	}
+
+	.survey-modal .modal-con .modal-bot{
+		height: 400px;
+	}
+	
+	.survey-modal .l5-label input + label, .survey-modal .l6-label input + label{
+		font-size: 13px;
+		line-height: 14px;
+		margin-top: 2px;
+	}
+
+	.survey-modal .l5-label input, .survey-modal .l6-label input {
+		margin-top: 1px;
+	}
+	
+	.survey-modal .sml-line9 button{
+		font-size: 15px;
+		height: 36px;
+		line-height: 36px;
+	}
+	
+	.survey-modal .sml-line .anything{
+		height: 30px;
+		line-height: 30px;
+	}
+	
+	
+	.pg-modal .modal-con{
+		width: 90%;
+	}
+	.pg-modal .modal-con .modal-bot .rr-title{
+		font-size: 20px;
+	}
+	
+	.pg-modal .pg-sel div{
+		width: calc( 45% - 2px );
+	}
+	
+	.pg-modal .pg-sel div:nth-child(2){
+		margin-left: 10%;
+	}
+	
+	.pg-modal .pg-sel div p{
+		font-size: 18px;
+	}
+	
+	#table #subMenu2 button {
+    	font-size: 13px;
+		margin-left: 10px;
+	}
+
+
+	/*210603 하단 주의사항 추가 시작*/
+	.noticeBox{width: 100%;margin-top: 60px;}
+	.noticeBox2,.noticeBox3{margin-top: 30px;}
+
+	.noticeBox .nb-t{font-size: 14px;}
+	.noticeBox .nb-c{width: calc( 100% - 10px );padding: 5px;margin-top: 5px;}
+	.noticeBox .nb-c .nb-l{position: relative;font-size: 11px; display: block; letter-spacing: -0.5px;}
+	.noticeBox3{margin-bottom: 60px;}
+
+	/*210603 하단 주의사항 추가 시작 끝*/
+		
+		
+		
+		
+		
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

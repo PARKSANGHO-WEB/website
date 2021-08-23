@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8">
+    <title>코비인사이트(주)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-t">
+            <div class="h_wrap">
+                <div class="gnb">
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li>
+                                <a href="./sitemap.html">사이트맵</a>
+                            </li>
+                            <li>
+                                <a href="./join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">로그인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo" onclick='location.href="../main.html"'>
+                    <img src="../img/logo_w.png" alt="">
+                </div>
+                <div class="menu_b">
+                    
+                    <ul>
+                        <li class="off-item">
+                            <a class="big_m"  href="./about.html">About Us</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./about.html#about_1">회사소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_2">미션&비전</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_3">CI스토리</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_4">조직도</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_5">오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./business.html">Buiness Area</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./business.html#busi_1">비즈니스 특징</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_2">차별화</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_3">비즈니스 영역</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./factory_1.html">Business Factory</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./factory_1.html">진행현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_2.html">컨설팅 사례</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_3.html">상담실(Q&A)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_4.html">FACTORY(자료실)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_5.html">공작소(자료제작)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./info_1.html">Information</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./info_1.html">이용안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="./info_2.html">공지사항</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-b"></div>
+    </header>
+        <section>
+            <div class="join">
+                <p>회원가입</p>
+                <span>코비인사이트를 방문해 주셔서 감사합니다.<br />회원가입 후 이용해주세요.</span>
+            </div>
+            <div class="join_f">
+                <form action="#">
+                    <div class="form-wrap">
+                        
+                        <div class="line_2">
+                            <span class="title">
+                                이름
+                            </span>
+                            <input type="text" placeholder="이름을 입력하세요">
+                        </div>
+                        <div class="line_3">
+                            <span class="title">
+                                이메일
+                            </span>
+                            <input type="text" placeholder="이메일 주소를 입력하세요">
+                            <div class="dupli">
+                                <button type="button">중복확인</button>
+                            </div>
+                            <div class="e-serti">
+                                <button type="button">인증하기</button>
+                            </div>
+                            <span class="l2-info">이메일 주소가 아이디로 사용됩니다.</span>
+                            <span class="l2-info2">이메일 주소가 아이디로 사용됩니다.</span>
+                        </div>
+                        <div class="line_4">
+                            <span class="title">
+                                비밀번호
+                            </span>
+                            <input id="password" type="password" placeholder="비밀번호를 입력하세요.">
+                            <input id="confirm_password" type="password" placeholder="비밀번호를 다시 한 번 입력해주세요.">
+                             <span id='message'></span>
+                        </div>
+                        <script>
+                            $(document).ready(function(){
+                                $('#password, #confirm_password').on('keyup', function () {
+                                  if ($('#password').val() == $('#confirm_password').val()) {
+                                    $('#message').html('비밀번호가 일치합니다.').css('font-size', '12px');
+                                  } else 
+                                    $('#message').html('비밀번호가 일치하지않습니다.').css('font-size', '12px');
+                                });
+                            });
+                            
+                        </script>
+                        <div class="line_5">
+                            <span class="title">
+                                주민등록번호
+                            </span>
+                            <input   maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                            <span class="hypen" placeholder="생년월일">-</span>
+                            <input  maxlength="1"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                            <span>주민등록번호 뒷 자리는 첫 한 자리만 입력해주세요.</span>
+                        </div>
+                        <div class="line_6">
+                            <span class="title">
+                                휴대폰
+                            </span>
+                            <select name="phone" id="pnumber">
+                                <option value="not">선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="017">017</option>
+                                <option value="070">070</option>
+                                <option value="080">080</option>
+                            </select>
+                            <span class="hypen">-</span>
+                            <input type="text" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            <span class="hypen">-</span>
+                            <input type="text"maxlength="4"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                        </div>
+                        <div class="line_8">
+                            <span class="title">
+                                소속회사
+                            </span>
+                            <input type="text" placeholder="회사명을 입력해주세요.">
+                        </div>
+                        <div class="line_9">
+                            <span class="title">
+                                직책
+                            </span>
+                            <input type="text" placeholder="직책을 입력해주세요">
+                        </div>
+                        <div class="line_10">
+                            <span class="title">
+                                회사주소
+                            </span>
+                            <input type="text" placeholder="동/읍/면까지 입력해주세요.">
+                        </div>
+                        <div class="line_11">
+                            <span class="title">
+                                구분
+                            </span>
+                            <label class="consult" for="consult"><input type="radio" name="consult" id="consult">컨설턴트</label>
+                            <label class="company" for="company"><input type="radio" name="consult" id="company">기업임직원</label>
+                        </div><div class="line_1">
+                            <div class="line_1right">
+                                <div class="text-box">코비인사이트는 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.<br /><br />
+
+○ 본 방침은부터 2014년 8월 1일부터 시행됩니다.
+<br /><br />
+
+1. 개인정보의 처리 목적 코비인사이트는 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전동의를 구할 예정입니다.<br />
+
+가. 홈페이지 회원가입 및 관리<br /><br />
+
+회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 만14세 미만 아동 개인정보 수집 시 법정대리인 동의 여부 확인, 각종 고지·통지, 고충처리, 분쟁 조정을 위한 기록 보존 등을 목적으로 개인정보를 처리합니다.<br />
+
+<br />
+나. 민원사무 처리
+<br /><br />
+민원인의 신원 확인, 민원사항 확인, 처리결과 통보 등을 목적으로 개인정보를 처리합니다.
+<br />
+<br />
+
+
+2. 개인정보 파일 현황<br />
+코비인사이트가 개인정보 보호법 제32조에 따라 등록․공개하는 개인정보파일의 처리목적은 다음과 같습니다.<br />
+<br />
+1. 개인정보 파일명 : 코비인사이트 개인정보<br /><br />
+- 개인정보 항목 : 기업명, 사업자등록번호, 비밀번호, 설립일자, 법인등록번호, 사업체구분, 벤처기업지정, 벤처기업번호, 기업상장여부, 상장일자, 기업부설연구소, 소재지, 대표자명, 생년월일, 최종학력, 최종학교, 이메일, 사업장주소, 대표전화, 팩스, 주업태, 주업종, 주요제품명, 한국표준산업분류(KSIC), 홈페이지 URL, 테크노파크내 입주여부, 입주공간<br /><br />
+- 수집방법 : 홈페이지<br /><br />
+- 보유근거 : 미정<br /><br />
+- 보유기간 : 준영구<br /><br />
+- 관련법령 : 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년, 신용정보의 수집/처리 및 이용 등에 관한 기록 :<br /> <br />3년, 계약 또는 청약철회 등에 관한 기록 : 5년, 표시/광고에 관한 기록 : 6개월<br />
+<br /><br />
+
+
+※ 기타코비인사이트의 개인정보파일 등록사항 공개는 행정안전부 개인정보보호 종합지원 포털<br />(www.privacy.go.kr) → 개인정보민원 → 개인정보열람등 요구 → 개인정보파일 목록검색 메뉴를 활용해주시기 바랍니다.<br /><br />
+
+3. 개인정보처리 위탁<br /><br />
+
+① 코비인사이트는 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.
+<br />
+② 코비인사이트는 위탁계약 체결시 개인정보 보호법 제25조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적․관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리․감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다.<br />
+
+③ 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.
+<br />
+
+4. 정보주체의 권리,의무 및 그 행사방법 이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.
+<br />
+① 정보주체는 코비인사이트 홈페이지에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.<br /><br />
+1. 개인정보 열람요구<br /><br />
+2. 오류 등이 있을 경우 정정 요구<br /><br />
+3. 삭제요구<br /><br />
+4. 처리정지 요구<br /><br />
+② 제1항에 따른 권리 행사는 코비인사이트 홈페이지 에 대해 개인정보 보호법 시행규칙 별지 제8호 서식에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 코비인사이트는 이에 대해 지체 없이 조치하겠습니다.<br /><br />
+③ 정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 코비인사이트는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제공하지 않습니다.<br /><br />
+④ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.<br />
+
+<br />
+
+5. 처리하는 개인정보의 항목 작성<br />
+<br />
+① 코비인사이트은(는) 다음의 개인정보 항목을 처리하고 있습니다.<br />
+<br />
+1 홈페이지 회원가입 및 관리<br /><br />
+- 필수항목 : 기업명, 사업자등록번호, 비밀번호, 설립일자, 사업체구분, 벤처기업지정, 기업상장여부, 기업부설연구소, 대표자명, 생년월일, 최종학력, 이메일, 사업장주소, 대표전화, 팩스, 주업태, 주업종, 주요제품명, 한국표준산업분류(KSIC), 테크노파크내 입주여부<br /><br />
+- 선택항목 : 법인등록번호, 벤처기업번호, 상장일자, 소재지, 최종학교, 홈페이지 URL, 입주공간
+<br />
+
+
+
+6. 개인정보의 파기 코비인사이트는 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.<br />
+<br />
+-파기절차<br />
+이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.<br /><br />
+-파기기한<br />
+이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.<br /><br />
+
+-파기방법<br />
+전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다.
+<br /><br />
+
+
+7. 개인정보의 안전성 확보 조치 코비인사이트은(는) 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.<br />
+<br />
+1. 개인정보 취급 직원의 최소화 및 교육<br />
+개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화 하여 개인정보를 관리하는 대책을 시행하고 있습니다.<br /><br />
+
+2. 정기적인 자체 감사 실시<br />
+개인정보 취급 관련 안정성 확보를 위해 정기적(분기 1회)으로 자체 감사를 실시하고 있습니다.
+<br /><br />
+3. 개인정보의 암호화<br />
+이용자의 개인정보는 비밀번호는 암호화 되어 저장 및 관리되고 있어, 본인만이 알 수 있으며 중요한 데이터는 파일 및 전송 데이터를 암호화 하거나 파일 잠금 기능을 사용하는 등의 별도 보안기능을 사용하고 있습니다.
+<br /><br />
+4. 해킹 등에 대비한 기술적 대책<br />
+코비인사이트은(는) 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.
+<br /><br />
+5. 개인정보에 대한 접근 제한<br />
+개인정보를 처리하는 데이터베이스시스템에 대한 접근권한의 부여,변경,말소를 통하여 개인정보에 대한 접근통제를 위하여 필요한 조치를 하고 있으며 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있습니다.
+<br /><br />
+6. 접속기록의 보관 및 위변조 방지
+개인정보처리시스템에 접속한 기록을 최소 6개월 이상 보관, 관리하고 있으며, 접속 기록이 위변조 및 도난, 분실되지 않도록 보안기능 사용하고 있습니다.<br />
+                                </div>
+                                <div class="agree-wrap">
+                                    <label for="agree">
+                                        <input type="checkbox">
+                                        코비인사이트 이용약관에 동의
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_btn">
+                            <button type="button">취소</button>
+                            <button type="button">회원가입</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+        <div class="foot-wrap">
+            <ul>
+                <li>
+                    <span>
+                        코비인사이트 주식회사
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        서울특별시 강남구 테헤란로 82길 14, 4층 ( 대치동 청풍빌딩 )
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        사업자 등록번호 : 301-88-00046
+                    </span>
+                    <span>
+                        대표전화 : 02-2088-8102
+                    </span>
+                    <span>
+                        팩스번호 : 02-2088-8105
+                    </span>
+                    <span>
+                        이메일 : contact@koiinsight.co.kr
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Copyright ⓒ 2020 KOBI INSIGHT All Right Reserved.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </footer>    
+</body>
+</html>

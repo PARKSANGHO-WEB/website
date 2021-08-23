@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>포장재 평가 시스템</title>
+    <link rel="stylesheet" href="./css/list_4.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="gnb">
+       <div class="gnb-wrap">
+            <div class="route">
+                <ul>
+                    <li><a href="javascript:;"><div class="mark"><img src="./img/home.png" alt=""></div></a></li>
+                    <li><a href="javascript:;"><p>제품 포장재 평가시스템</p></a></li>
+                </ul>
+            </div>
+            <div class="gnb_menu">
+                <ul>
+                    <li><a href="./login2.html"><span>로그아웃</span></a></li>
+                    <li><a href="javascript:;"><span>세인관세법인&nbsp;&nbsp;&nbsp;홍길동&nbsp;&nbsp;&nbsp;대리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-wrap">
+            <div class="logo"><img src="./img/logo_png.png" alt=""></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="menu_1"><a class="big_a" href="javascript:;">대시보드</a></li>
+                <li class="menu_2"><a class="big_a" href="javascript:;">제품 포장재 평가시스템</a>
+                    <ul>
+                        <li><a href="javascript:;">제품 LIST</a></li>
+                        <li><a href="javascript:;">포장재 LIST</a></li>
+                        <li><a href="javascript:;">포장재 규격 LIST</a></li>
+                        <li><a href="javascript:;">평가 결과</a></li>
+                    </ul>
+                </li>
+                <li class="menu_3"><a class="big_a" href="http://naver.com">환경설정</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            <div class="mbtn-arrow">
+            </div>
+        </div>
+    </header>
+    <section>
+        <form action="#">
+            <div class="list-wrap">
+                <div class="list-top">
+                    <div class="list-t list-t1">
+                        <div class="list-span">
+                            <span>등록일</span>
+                        </div>
+                        <div class="list1-input"> 
+                            <input id="datepicker" v-model="newDate" >
+                            <span>~</span> 
+                            <input id="datepicker2" v-model="newDate" >
+                        </div>
+                    </div>
+                    <div class="list-t list-t2">
+                        <div class="list-span">
+                            <span>업체명</span>
+                        </div>
+                        <div class="list2-input">
+                            <select name="company" id="text_com">
+                                <option value="none"selected>구분</option>
+                                <option value="none">평가업체명</option>
+                                <option value="none">제조업체명</option>           
+                            </select>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="list-t list-t3">
+                        <div class="list-span">
+                            <span>SKU</span>
+                        </div>
+                        <div class="list3-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="list-t list-t4">
+                        <div class="list-span">
+                            <span>포장재</span>
+                        </div>
+                        <div class="list4-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="list-t list-t5">
+                        <div class="list-span">
+                            <span>포장재등급</span>
+                        </div>
+                        <div class="list5-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="list-t list-t6">
+                        <div class="list-span">
+                            <span>진행상황</span>
+                        </div>
+                        <div class="list6-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="button" value="조회">
+                </div>
+            </div>
+        </form>
+  <script>
+  $( function() {
+       $( "#datepicker" ).datepicker({
+            altField: "#datepicker",
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            changeYear: true,
+            onSelect: function(selectedDate) {
+            $( "#datepicker2" ).datepicker('option', 'minDate', selectedDate);
+            }
+        });
+       $( "#datepicker2" ).datepicker({
+            altField: "#datepicker2",
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            changeYear: true,
+        });
+  } );
+  </script>
+        <div class="list2-wrap">
+            <span class="form_title">제품 List</span>
+            <form action="#">
+                <div class="list-btn">
+                    <div class="check_num">
+                        <div class="cn_1">
+                            <span>진행 중&nbsp;:</span>
+                            <span class="cn1_num">00</span>
+                        </div>
+
+                        <div class="cn_2">
+                            <span>완료&nbsp;:</span>
+                            <span class="cn1_num">00</span>
+                        </div>
+                    </div>
+                    <div class="lb_wrap">
+                        <input type="button" value="등록">
+                        <input type="button" value="수정">
+                        <input type="button" value="삭제">
+                        <input type="button" value="Upload">
+                        <input type="button" value="Download">
+                        <input type="button" value="작성요청">
+                    </div>
+                </div>
+                <div class="list2-table">
+                    <table>
+                        <tr>
+                            <th>CHK</th>
+                            <th>평가업체명<br />(평가의무자)</th>
+                            <th>평가업체<br />코드</th>
+                            <th>제품코드</th>
+                            <th>제품명</th>
+                            <th>평가제품 코드</th>
+                            <th>공급유형<br />(평가의무자)</th>
+                            <th>제품<br />제조업체명</th>
+                            <th>제품<br />제조업체<br />코드</th>
+                            <th>작성요청<br />일자</th>
+                            <th>평가 대상<br />포장재<br />개수</th>
+                            <th>제품 자체평가<br />진행상태</th>
+                            <th>평가 미완료<br />포장재 개수</th>
+                            <th>등록일자</th>
+                            <th>최종<br />Update일자</th>
+                            <th>제품유형</th>
+                            <th>대표제품<br />&lt;평가제품 코드&gt;</th>
+                            <th>비고</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+        <div class="list_line2">
+            <div class="list3-wrap">
+                <span class="form_title">포장재 List</span>
+                <form action="#">
+                    <div class="list-btn">
+                        <div class="check_num">
+                            <div class="cn_1">
+                                <span>진행 중&nbsp;:</span>
+                                <span class="cn1_num">00</span>
+                            </div>
+     
+                            <div class="cn_2">
+                                <span>완료&nbsp;:</span>
+                                <span class="cn1_num">00</span>
+                            </div>
+                        </div>
+                        <div class="lb_wrap">
+                            <input type="button" value="등록">
+                            <input type="button" value="수정">
+                            <input type="button" value="삭제">
+                        </div>
+                    </div>
+                    <div class="list3-table" id="list3-table">
+                        <table>
+                            <tr>
+                                <th>CHK</th>
+                                <th>포장재<br />No.</th>
+                                <th>포장재 <br />코드</th>
+                                <th>포장재 종류</th>
+                                <th>포장재<br/>상세규격</th>
+                                <th>포장재<br/>유형<br/>코드</th>
+                                <th>포장재<br/>등급코드</th>
+                                <th>포장재<br/>등급</th>
+                                <th>작성요청<br />일자</th>
+                                <th>진행상태</th>
+                                <th>자체평가<br />완료일자</th>
+                                <th>평가신청여부</th>
+                                <th>대표 포장재<br />&lt;포장재 코드&gt;</th>
+                                <th>대표 포장재<br />&lt;평가신청상태&gt;</th>
+                                <th>대표 포장재<br />&lt;신청일자&gt;</th>
+                                <th>대표 포장재<br />&lt;승인일자&gt;</th>
+                                <th>비고</th>
+                            </tr>
+                            <tr>
+                            <td><input type="checkbox"></td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                            <td><input type="checkbox"></td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <div class="list4-wrap">
+                <span class="form_title">첨부 및 이력 </span>
+                <form action="#">
+                    <div class="list-btn">
+                        <div class="check_num">
+                            <div class="cn_1">
+                                <span>파일 수&nbsp;:</span>
+                                <span class="cn1_num">00</span>
+                            </div>
+                        </div>
+                        <div class="lb_wrap">
+                            <input type="button" value="첨부이력">
+                            <input type="button" value="첨부변경">
+                        </div>
+                    </div>
+                    <div class="list4-table">
+    <!--
+                        <table>
+                            <tr>
+                                <th>포장재<br />No.</th>
+                                <th>포장재 <br />코드</th>
+                                <th>포장재 종류</th>
+                                <th>포장재<br/>상세규격</th>
+                                <th>포장재<br/>유형<br/>코드</th>
+                                <th>포장재<br/>등급코드</th>
+                                <th>포장재<br/>등급</th>
+                                <th>작성요청<br />일자</th>
+                                <th>진행상태</th>
+                                <th>자체평가<br />완료일자</th>
+                                <th>평가신청여부</th>
+                                <th>대표 포장재<br />&lt;포장재 코드&gt;</th>
+                                <th>대표 포장재<br />&lt;평가신청상태&gt;</th>
+                                <th>대표 포장재<br />&lt;신청일자&gt;</th>
+                                <th>대표 포장재<br />&lt;승인일자&gt;</th>
+                                <th>비고</th>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                        </table>
+    -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="list_line3">
+            <div class="list5-wrap">
+                <span class="form_title">포장재 규격 List</span>
+                <form action="#">
+                    <div class="list-btn">
+                        <div class="check_num">
+                            <div class="cn_1">
+                                <span>진행 중&nbsp;:</span>
+                                <span class="cn1_num">00</span>
+                            </div>
+     
+                            <div class="cn_2">
+                                <span>완료&nbsp;:</span>
+                                <span class="cn1_num">00</span>
+                            </div>
+                        </div>
+                        <div class="lb_wrap">
+                            <input type="button" value="작성">
+                            <input type="button" value="초기화">
+                        </div>
+                    </div>
+                    <div class="list5-table">
+                        <table>
+                            <tr>
+                                <th>CHK</th>
+                                <th>포장재<br />No.</th>
+                                <th>포장재 <br />코드</th>
+                                <th>포장재 종류</th>
+                                <th>포장재<br/>상세규격</th>
+                                <th>포장재<br/>유형<br/>코드</th>
+                                <th>포장재<br/>등급코드</th>
+                                <th>포장재<br/>등급</th>
+                                <th>작성요청<br />일자</th>
+                                <th>진행상태</th>
+                                <th>자체평가<br />완료일자</th>
+                                <th>평가신청여부</th>
+                                <th>대표 포장재<br />&lt;포장재 코드&gt;</th>
+                                <th>대표 포장재<br />&lt;평가신청상태&gt;</th>
+                                <th>대표 포장재<br />&lt;신청일자&gt;</th>
+                                <th>대표 포장재<br />&lt;승인일자&gt;</th>
+                                <th>비고</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="list6-wrap">
+                <span class="form_title">평가 결과</span>
+                <form action="#">
+                    <div class="list-btn">
+                        <div class="lb_wrap">
+                            <input type="button" value="작성">
+                            <input type="button" value="초기화">
+                            <input type="button" value="증명서 작성">
+                        </div>
+                    </div>
+                    <div class="list6-table">
+                        <table>
+                            <tr>
+                                <th>CHK</th>
+                                <th>포장재 구분</th>
+                                <th>구분별 <br />유형<br />코드</th>
+                                <th>포장재 등급</th>
+                                <th>포장재 재질,<br /> 구조 정보</th>
+                                <th>상세 규격</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                                <td>내용</td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $("table tr").click(function () {
+            // 현재 클릭된 Row(<tr>)
+            var checkbox = $(this).find('td:first-child :checkbox');
+            checkbox.attr('checked', !checkbox.is(':checked'));
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+section.my-page .sub-banner {
+  background: url('../img/sub/my-page-ban.png');
+  background-size: cover;
+  height: 200px;
+}
+section.my-page .sub-banner .ban-text .ban-ment .ban-title {
+  text-align: left;
+  font-size: 1.87rem;
+  color: #d2dfe8;
+}
+section.my-page .sub-banner .ban-text .ban-ment .ban-text {
+  text-align: left;
+  color: #d2dfe8;
+  font-weight: 200;
+}
+section.my-page .sub-banner .ban-text .ban-ment .ban-text strong {
+  background: #ff6b65;
+  font-weight: 200;
+  padding: 0 3px;
+}
+
+section.my-page .contanier {
+  width: 1044px;
+  margin: 60px auto;
+}
+section.my-page .contanier .point-info {
+  width: 700px;
+  margin: 0 auto 70px;
+  overflow: hidden;
+  font-weight: 700;
+}
+section.my-page .contanier .point-info .area {
+  float: left;
+}
+section.my-page .contanier .point-info .card {
+  width: 354px;
+  height: 236px;
+  background: url('../img/sub/my-page-point.png');
+  background-size: cover;
+  color: #fff;
+}
+section.my-page .contanier .point-info .card .point {
+  font-size: 1.5rem;
+  position: relative;
+  top: 45px;
+  left: 32px;
+}
+section.my-page .contanier .point-info .card .membership-number {
+  font-size: 0.87rem;
+  position: relative;
+  top: 120px;
+  left: 32px;
+}
+section.my-page .contanier .point-info .info {
+  font-size: 1rem;
+  color: #7a7474;
+  margin-left: 20px;
+  line-height: 2;
+}
+section.my-page .contanier .point-info .info .e-mail .label {
+  font-size: 0.81rem;
+  color: #1877f2;
+  border: 1px solid #1877f2;
+  padding: 4px 5px 5px;
+}
+section.my-page .contanier .point-info .info .btn {
+  display: block;
+  color: #7a7474;
+  border: 1px solid #7a7474;
+  width: auto;
+  text-align: center;
+  border-radius: 100px;
+  margin-top: 15px;
+  padding: 2px 20px;
+}
+section.my-page .contanier .point-info .info .btn:hover {
+  background: #7a7474;
+  color: #fff;
+}
+section.my-page .contanier .point-history table {
+  width: 100%;
+  font-size: 0.81rem;
+  border-spacing: 0;
+  text-align: left;
+}
+section.my-page .contanier .point-history table caption {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #454545;
+  margin-bottom: 8px;
+}
+section.my-page .contanier .point-history table th {
+  background: #e6e3de;
+  color: #323a44;
+  padding: 11px 20px;
+}
+section.my-page .contanier .point-history table td:nth-child(2) {
+}
+section.my-page .contanier .point-history table td {
+  color: #707070;
+  padding: 11px 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  section.my-page .contanier {
+    width: 850px;
+  }
+}
+@media screen and (max-width: 900px) {
+  section.my-page .contanier {
+    width: calc(100% - 80px);
+    margin: 40px auto;
+  }
+  section.my-page .contanier .point-info {
+    width: 355px;
+    margin: 0 auto;
+  }
+
+  section.my-page .contanier .point-info .info {
+    margin: 0 auto;
+    float: none;
+  }
+  section.my-page .sub-banner .ban-text .ban-ment .ban-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  section.my-page .sub-banner .ban-text .ban-ment .ban-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  section.my-page .contanier .point-info {
+    width: 270px;
+    margin: 0 auto;
+  }
+  section.my-page .contanier .point-info .card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  section.my-page .contanier .point-info .card .point {
+    font-size: 1rem;
+    position: relative;
+    top: 38px;
+    left: 23px;
+  }
+
+  section.my-page .contanier .point-info .card .membership-number {
+    font-size: 0.87rem;
+    position: relative;
+    top: 93px;
+    left: 20px;
+  }
+
+  section.my-page .contanier .point-history table {
+    margin-top: 40px;
+  }
+  section.my-page .contanier .point-info .card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+    height: 190px;
+  }
+
+  section.my-page .sub-banner .ban-text .ban-ment .ban-title {
+    text-align: center;
+  }
+
+  section.my-page .sub-banner .ban-text .ban-ment .ban-text {
+    margin-left: 0px;
+    text-align: center;
+    width: calc(100% - 80px);
+    margin: 0px 40px;
+    font-weight: 700;
+  }
+
+  section.my-page .sub-banner {
+    background: url('../img/sub/my-page-ban.png');
+    background-size: cover;
+    height: 150px;
+  }
+
+  section.my-page .contanier .point-history table th {
+    padding: 10px 4px;
+  }
+
+  section.my-page .contanier .point-history table th {
+    padding: 10px 4px;
+  }
+
+  section.my-page .contanier .point-history table th:nth-child(1),
+  section.my-page .contanier .point-history table th:nth-child(2) {
+    width: 60px;
+  }
+
+  section.my-page .contanier .point-history table th:nth-child(3) {
+    width: 120px;
+  }
+}

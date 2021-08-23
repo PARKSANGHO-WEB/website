@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reserve.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+	<script src="../js/modal.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li class="active">
+				<a href="./reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="javascript:;">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-selected.html">예약관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-survey.html">설문 수정</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents reser-survey">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>예약관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big">예약관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-selected.html">당첨 등록 관리</a></li>
+							<li><a href="./reserve-list.html">예약 내역 관리</a></li>
+							<li><a href="./reserve-calendar.html">캘린더</a></li>
+							<li><a href="./reserve-cancel.html">취소 승인 관리</a></li>
+							<li><a href="./reserve-using.html">객실 배정 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">결제 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-pay.html">결제 관리</a></li>
+							<li><a href="./reserve-pg.html">PG결제 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big active">설문 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-survey.html">설문 등록</a></li>
+							<li class="active"><a href="./reserve-survey-manage.html">설문 관리</a></li>
+							<li><a href="./reserve-survey-result.html">결과 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>설문 수정</div>
+				<div class="big-arrow"><img src="../img/common/big-arrow.png" alt=""></div>
+				<div>비엔시스템</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<div class="view view-1 on">
+						<div class="view-t active">기업 선택</div>
+						<div class="view-c">
+							<div class="view-mody">
+								<table id="survey-go">
+									<tbody>
+										<tr>
+											<th>
+												<span>설문제목</span>
+											</th>
+											<td>
+												<input type="text" value="을왕리 파라다이스 호텔 만족도">
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<span>기업명</span>
+											</th>
+											<td>
+												<span>비엔시스템</span>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<span>담당자명</span>
+											</th>
+											<td>
+												<input type="text" value="정설송">
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<span>연락처</span>
+											</th>
+											<td>
+												<input maxlength="4" type="text" class="only-num" value="010">
+												<span class="hypen">-</span>
+												<input maxlength="4" type="text" class="only-num" value="0000">
+												<span class="hypen">-</span>
+												<input maxlength="4" type="text" class="only-num" value="0000">
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<span>핸드폰</span>
+											</th>
+											<td>
+												<input maxlength="4" type="text" class="only-num" value="000">
+												<span class="hypen">-</span>
+												<input maxlength="4" type="text" class="only-num" value="0000">
+												<span class="hypen">-</span>
+												<input maxlength="4" type="text" class="only-num" value="0000">
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<span>이메일</span>
+											</th>
+											<td>
+												<input type="text"  value="bnsystem">
+												<span class="gol">@</span>
+												<input type="text" value="bnsystem.com">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="center-btn">
+								<div class="btn-wrap">
+									<button type="button">취소</button>
+									<button type="button">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="view view-2">
+						<div class="view-t active">만족도 질문 (최대 10개)</div>
+						<div class="view-c">
+							<div class="view-surv">
+								<div class="survey-wrap">
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문1">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문2">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문3">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문4">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문5">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문6">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문7">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문8">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문9">
+									</div>
+									
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<input type="text" value="만족도 질문10">
+									</div>
+								</div>
+								<button type="button" class="add-ten">추가</button>
+							</div>
+							<div class="center-btn">
+								<div class="btn-wrap">
+									<button type="button">취소</button>
+									<button type="button">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="view view-3">
+						<div class="view-t active">객관식 질문 (최대 5개)</div>
+						<div class="view-c">
+							<div class="view-sl">
+								<div class="survey-wrap">
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<div class="sel-survey">
+											<input type="text" class="ex-title" placeholder="제목을 입력해주세요." value="객관식 질문1">
+											<div class="ex-check">
+												<div class="sur-l sur-l1">
+													<input type="text" placeholder="선택지를 입력하세요." value="위생">
+												</div>
+												<div class="sur-l sur-l2">
+													<input type="text" placeholder="선택지를 입력하세요." value="서비스">
+												</div>
+												<div class="sur-l sur-l3">
+													<input type="text" placeholder="선택지를 입력하세요." value="조식">
+												</div>
+												<div class="sur-l sur-l4">
+													<input type="text" placeholder="선택지를 입력하세요." value="관광">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="위치">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="기타">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<div class="sel-survey">
+											<input type="text" class="ex-title" placeholder="제목을 입력해주세요." value="객관식 질문1">
+											<div class="ex-check">
+												<div class="sur-l sur-l1">
+													<input type="text" placeholder="선택지를 입력하세요." value="위생">
+												</div>
+												<div class="sur-l sur-l2">
+													<input type="text" placeholder="선택지를 입력하세요." value="서비스">
+												</div>
+												<div class="sur-l sur-l3">
+													<input type="text" placeholder="선택지를 입력하세요." value="조식">
+												</div>
+												<div class="sur-l sur-l4">
+													<input type="text" placeholder="선택지를 입력하세요." value="관광">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="위치">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="기타">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<div class="sel-survey">
+											<input type="text" class="ex-title" placeholder="제목을 입력해주세요." value="객관식 질문2">
+											<div class="ex-check">
+												<div class="sur-l sur-l1">
+													<input type="text" placeholder="선택지를 입력하세요." value="위생">
+												</div>
+												<div class="sur-l sur-l2">
+													<input type="text" placeholder="선택지를 입력하세요." value="서비스">
+												</div>
+												<div class="sur-l sur-l3">
+													<input type="text" placeholder="선택지를 입력하세요." value="조식">
+												</div>
+												<div class="sur-l sur-l4">
+													<input type="text" placeholder="선택지를 입력하세요." value="관광">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="위치">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="기타">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<div class="sel-survey">
+											<input type="text" class="ex-title" placeholder="제목을 입력해주세요." value="객관식 질문3">
+											<div class="ex-check">
+												<div class="sur-l sur-l1">
+													<input type="text" placeholder="선택지를 입력하세요." value="위생">
+												</div>
+												<div class="sur-l sur-l2">
+													<input type="text" placeholder="선택지를 입력하세요." value="서비스">
+												</div>
+												<div class="sur-l sur-l3">
+													<input type="text" placeholder="선택지를 입력하세요." value="조식">
+												</div>
+												<div class="sur-l sur-l4">
+													<input type="text" placeholder="선택지를 입력하세요." value="관광">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="위치">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="기타">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<div class="sel-survey">
+											<input type="text" class="ex-title" placeholder="제목을 입력해주세요." value="객관식 질문4">
+											<div class="ex-check">
+												<div class="sur-l sur-l1">
+													<input type="text" placeholder="선택지를 입력하세요." value="위생">
+												</div>
+												<div class="sur-l sur-l2">
+													<input type="text" placeholder="선택지를 입력하세요." value="서비스">
+												</div>
+												<div class="sur-l sur-l3">
+													<input type="text" placeholder="선택지를 입력하세요." value="조식">
+												</div>
+												<div class="sur-l sur-l4">
+													<input type="text" placeholder="선택지를 입력하세요." value="관광">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="위치">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="기타">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="survey-line">
+										<button class="remove-btn" type="button">삭제</button>
+										<div class="sel-survey">
+											<input type="text" class="ex-title" placeholder="제목을 입력해주세요." value="객관식 질문5">
+											<div class="ex-check">
+												<div class="sur-l sur-l1">
+													<input type="text" placeholder="선택지를 입력하세요." value="위생">
+												</div>
+												<div class="sur-l sur-l2">
+													<input type="text" placeholder="선택지를 입력하세요." value="서비스">
+												</div>
+												<div class="sur-l sur-l3">
+													<input type="text" placeholder="선택지를 입력하세요." value="조식">
+												</div>
+												<div class="sur-l sur-l4">
+													<input type="text" placeholder="선택지를 입력하세요." value="관광">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="위치">
+												</div>
+												<div class="sur-l sur-l5">
+													<input type="text" placeholder="선택지를 입력하세요." value="기타">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="add-type">추가</button>
+							</div>
+							<div class="center-btn">
+								<div class="btn-wrap">
+									<button type="button">취소</button>
+									<button type="button">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="view view-4">
+						<div class="view-t active">전체 만족도 질문 (필수)</div>
+						<div class="view-c">
+							<div class="view-sl">
+								<div class="survey-wrap">
+									<div class="survey-line">
+										<input class="all-man" type="text" placeholder="80">
+									</div>
+								</div>
+							</div>
+							<div class="center-btn">
+								<div class="btn-wrap">
+									<button type="button">취소</button>
+									<button type="button">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="view view-5">
+						<div class="view-t active">주관식 질문(필수)</div>
+						<div class="view-c">
+							<div class="view-sl">
+								<div class="survey-wrap">
+									<div class="survey-line">
+										<input class="question" type="text" placeholder="기타 의견을 작성해주세요." value="기타 의견을 작성해주세요.">
+										<textarea name="question-tab" id="question-tab">위생 및 서비스가 너무 좋았습니다. 감사합니다.</textarea>
+									</div>
+								</div>
+							</div>
+							<div class="center-btn">
+								<div class="btn-wrap">
+									<button type="button">취소</button>
+									<button type="button">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="center-btn">
+						<div class="btn-wrap">
+							<button type="button">취소</button>
+							<button type="button">수정</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="com-modal modal-wrap">
+		<div class="modal-con">
+			<div class="modal-top">
+				<div class="title-modal">
+					<span>기업 검색</span>
+				</div>
+				<div class="close-modal">
+					<img src="../img/common/close.png" alt="">
+				</div>
+			</div>
+			<form action="#">
+				<div class="mo-con" style="">
+					<div class="list-wrap">
+						<div class="list-table">
+							<table id="sortRc">
+								<thead>
+									<tr>
+										<th>선택</th>
+										<th class="th-btn"><span>번호</span></th>
+										<th class="th-btn"><span>등록일</span></th>
+										<th class="th-btn"><span>기업명</span></th>
+										<th class="th-btn"><span>담당자</span></th>
+										<th class="th-btn"><span>연락처</span></th>
+										<th class="th-btn"><span>핸드폰</span></th>
+										<th class="th-btn"><span>휴양소</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="sel-com"></td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>비엔시스템</td>
+										<td>박상호</td>
+										<td>123-456-7498</td>
+										<td>123-4546-7948</td>
+										<td>3</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging">
+								<a class="first"></a>
+								<a class="prev"></a>
+								<a class="active">1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a class="next"></a>
+								<a class="last"></a>
+							</div>	
+							<div class="btn-apply">
+								<button type="button">등록</button>
+								<button type="button">취소</button>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<!--  셀렉트박스와 파일업로드	-->
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function () {	
+			$('select').wSelect();
+		});
+		
+
+		$(document).ready(function(){
+			// Also see: https://www.quirksmode.org/dom/inputfile.html
+
+			var inputs = document.querySelectorAll('.file-input')
+
+			for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+			}
+
+			function customInput (el) {
+				const fileInput = el.querySelector('[type="file"]')
+				const label = el.querySelector('[data-js-label]')
+
+				fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+			}
+		});
+
+
+		
+	</script>
+	
+	
+	
+	<!-- 테이블 sort 선언	-->
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+			$('.view-t').on('click',function(){
+					if( $(this).parents('.view').hasClass('on') ){
+						$(this).parents('.view').removeClass('on');
+					}else{
+						$('.view').removeClass('on');
+						$(this).parents('.view').addClass('on');
+					}
+				});
+		});
+	
+	</script>
+	
+</body>
+</html>

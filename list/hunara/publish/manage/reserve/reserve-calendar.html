@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reserve.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<link rel="stylesheet" href="../css/calendar.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+	<script src="../js/modal.js"></script>
+	<script src="../js/calendar.js"></script>
+</head>
+
+<script>
+
+    // 달력 샘플 데이터 , 과제 시험 수업에 따라 배경 이미지 마크 삽입, calendar css 871번 line
+    
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var initialLocaleCode = 'en';
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      editable: false,
+      lang: 'ko',
+		eventContent: { html: '<div class="cal-modal"><span>홍길동 외 34명</span></div>' },
+      events: [
+        { 
+          title: '',
+          start: '2021-03-25',
+			allDay: true,
+          imageurl:'../img/common/class_mark.png'
+
+        },
+        { 
+          title: '',
+          start: '2021-03-26',
+			allDay: true,
+          imageurl:'../img/common/class_mark.png'
+
+        },
+        { 
+          title: '',
+          start: '2021-03-27',
+			allDay: true,
+          imageurl:'../img/common/class_mark.png'
+
+        },
+        { 
+          title: '',
+          start: '2021-03-28',
+			allDay: true,
+          imageurl:'../img/common/class_mark.png'
+
+        },
+        { 
+          title: '',
+          start: '2021-03-29',
+			allDay: true,
+          imageurl:'../img/common/class_mark.png'
+
+        },
+        { 
+          title: '',
+          start: '2021-03-30',
+			allDay: true,
+          imageurl:'../img/common/class_mark.png'
+
+        }
+		  ],
+		locale: 'ko',
+        fixedWeekCount: false
+    });
+
+    calendar.render();
+	  
+	  
+  });
+
+</script>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li class="active">
+				<a href="./reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="javascript:;">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-selected.html">예약관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-calendar.html">캘린더</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents reserve-list">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>예약관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big active">예약관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-selected.html">당첨 등록 관리</a></li>
+							<li><a href="./reserve-list.html">예약 내역 관리</a></li>
+							<li class="active"><a href="./reserve-calendar.html">캘린더</a></li>
+							<li><a href="./reserve-cancel.html">취소 승인 관리</a></li>
+							<li><a href="./reserve-using.html">객실 배정 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">결제 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-pay.html">결제 관리</a></li>
+							<li><a href="./reserve-pg.html">PG결제 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">설문 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-survey.html">설문 등록</a></li>
+							<li><a href="./reserve-survey-manage.html">설문 관리</a></li>
+							<li><a href="./reserve-survey-result.html">결과 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>예약 내역 관리</div>
+			</div>
+			<div class="cc-con">
+				
+				<form action="#">
+					<div class="view-c">
+						<div id="calendar"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--  셀렉트박스와 파일업로드	-->
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function () {	
+			$('select').wSelect();
+		});
+		
+
+		$(document).ready(function(){
+			// Also see: https://www.quirksmode.org/dom/inputfile.html
+
+			var inputs = document.querySelectorAll('.file-input')
+
+			for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+			}
+
+			function customInput (el) {
+				const fileInput = el.querySelector('[type="file"]')
+				const label = el.querySelector('[data-js-label]')
+
+				fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+			}
+		});
+
+
+		
+	</script>
+	
+	
+	
+	<!-- 테이블 sort 선언	-->
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+			$('.view-t').on('click',function(){
+					if( $(this).parents('.view').hasClass('on') ){
+						$(this).parents('.view').removeClass('on');
+					}else{
+						$('.view').removeClass('on');
+						$(this).parents('.view').addClass('on');
+					}
+				});
+		});
+	
+	</script>
+	
+	
+	<div class="recal-modal modal-wrap">
+		<div class="modal-con">
+			<div class="modal-top">
+				<div class="title-modal">
+					<span>2월 2일 예약자 내역</span>
+				</div>
+				<div class="close-modal">
+					<img src="../img/common/close.png" alt="">
+				</div>
+			</div>
+			<div class="modal-bot">
+				<form action="#">
+					<button type="button" class="false">선택 탈락</button>
+					<div class="mo-con">
+						<div class="indi-wrap">
+							<table id="recal-mo">
+								<thead>
+									<th>선택</th>
+									<th class="th-btn"><span>지망</span></th>
+									<th class="th-btn"><span>등록일</span></th>
+									<th class="th-btn"><span>박수</span></th>
+									<th class="th-btn"><span>예약일</span></th>
+									<th class="th-btn"><span>기업명</span></th>
+									<th class="th-btn"><span>휴양소명</span></th>
+									<th class="th-btn"><span>예약자</span></th>
+									<th class="th-btn"><span>사원번호</span></th>
+									<th class="th-btn"><span>연락처</span></th>
+									<th class="th-btn"><span>결과</span></th>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>1지망</td>
+										<td>2021.02.01</td>
+										<td>3박4일</td>
+										<td>02.01/02.02/02.03/02.04</td>
+										<td>비엔시스템</td>
+										<td>시그니엘 서울</td>
+										<td>홍길동</td>
+										<td>342342342</td>
+										<td>010-4007-4018</td>
+										<td>당첨</td>
+									</tr>
+									
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>1지망</td>
+										<td>2021.02.01</td>
+										<td>3박4일</td>
+										<td>02.01/02.02/02.03/02.04</td>
+										<td>비엔시스템</td>
+										<td>시그니엘 서울</td>
+										<td>홍길동</td>
+										<td>342342342</td>
+										<td>010-4007-4018</td>
+										<td>당첨</td>
+									</tr>
+									
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>1지망</td>
+										<td>2021.02.01</td>
+										<td>3박4일</td>
+										<td>02.01/02.02/02.03/02.04</td>
+										<td>비엔시스템</td>
+										<td>시그니엘 서울</td>
+										<td>홍길동</td>
+										<td>342342342</td>
+										<td>010-4007-4018</td>
+										<td>당첨</td>
+									</tr>
+									
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>1지망</td>
+										<td>2021.02.01</td>
+										<td>3박4일</td>
+										<td>02.01/02.02/02.03/02.04</td>
+										<td>비엔시스템</td>
+										<td>시그니엘 서울</td>
+										<td>홍길동</td>
+										<td>342342342</td>
+										<td>010-4007-4018</td>
+										<td>당첨</td>
+									</tr>
+									
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>1지망</td>
+										<td>2021.02.01</td>
+										<td>3박4일</td>
+										<td>02.01/02.02/02.03/02.04</td>
+										<td>비엔시스템</td>
+										<td>시그니엘 서울</td>
+										<td>홍길동</td>
+										<td>342342342</td>
+										<td>010-4007-4018</td>
+										<td>당첨</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging">
+								<a class="first"></a>
+								<a class="prev"></a>
+								<a class="active">1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a class="next"></a>
+								<a class="last"></a>
+							</div>
+						</div>
+						<div class="btn-apply">
+							<button type="button">저장</button>
+							<button type="button">닫기</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</body>
+</html>

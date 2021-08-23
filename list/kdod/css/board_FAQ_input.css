@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+
+/*플롯해제*/
+.cf:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*faq_input 공통 CSS*/
+#board_faq_input {
+    width: 774px;
+    margin: 0 auto;
+/*    background-color: rebeccapurple;*/
+}
+#board_faq_input h1 {
+    font-size: 1rem;
+    color: #FF6B65;
+    font-weight: 500;
+}
+#board_faq_input h2 {
+    color: #545454;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+}
+#board_faq_input h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #545454;
+}
+#board_faq_input p {
+    font-size: 0.813rem;
+    color: #545454;
+    font-weight: 300;
+    line-height: 1.7;
+}
+#board_faq_input .country_sel, .company_sel, .mail_sel, .inquiry_sel, .contents_sel, .File_sel, .agreement, .quantity_sel, .name_sel2, .phone_sel, .question_sel, .address_sel {
+    margin-top: 18px;
+} 
+
+.File_sel{
+	overflow: hidden;
+	
+}
+
+#board_faq_input .name_sel {
+    margin-top: 60px;
+}
+
+/*탭메뉴 css*/
+#board_faq_input .container {
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+#board_faq_input ul.tabs {
+    list-style: none;
+    width: 774px;
+}
+#board_faq_input ul.tabs li h1 {
+    color: #B2B2B2;
+    font-weight: 400;
+}
+#board_faq_input ul.tabs li {
+    background: #F4F4F4;
+    display: inline-block;
+/*    padding: 10px 15px;*/
+    cursor: pointer;
+    width: 256px;
+    margin: 0;
+    padding: 0;
+/*    플롯*/
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #B2B2B2;
+/*    border-bottom: none;*/
+/*    border-left: none;*/
+    border-bottom: 1px solid #FF6B65;
+    position: relative;
+}
+#board_faq_input .container .tab-content {
+    display: none;
+    background: #fff;
+    padding: 36px 20px 15px;
+    width: 732px;
+}
+#board_faq_input .tab-content .a_notice {
+    margin-bottom: 46px;
+}
+/*선택된 탭메뉴 css*/
+#board_faq_input ul.tabs li.current h1 {
+    color: #FF6B65;
+    font-weight: bold;
+}
+#board_faq_input ul.tabs li.current {
+    background: #fff;
+    border: 1px solid #FF6B65;
+    border-top: 4px solid #FF6B65;
+    border-bottom: none;
+    height: 38px;
+}
+#board_faq_input .tab-content{
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid #FF6B65;
+    border-top: none;
+    margin-top: -1px;
+}
+
+/*드롭다운 박스 css*/
+#board_faq_input .nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #949494;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: inherit;
+    font-size: 0.938rem;
+    font-weight: normal;
+    outline: none;
+    padding: 10px 8px;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 728px;
+    background: url(../img/sub/select_arrow.png) no-repeat #fff 98% 50%;
+}
+/*드롭다운 리스트css*/
+#board_faq_input .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+#board_faq_input .nice-select .list {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 1px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    z-index: 9;
+    width: 728px;
+    border: 1px solid #949494;
+}
+#board_faq_input .nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    list-style: none;
+    outline: none;
+    padding: 12px 20px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*첫번째 option 선택안되게하기*/
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+/*리스트 호버효과*/
+#board_faq_input .nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+
+/*콘텐츠간 간격 주기*/
+#board_faq_input .nice-select .option:hover,
+#board_faq_input .nice-select .option.focus {
+    background-color: #FAFAFA;
+}
+
+
+/*선택된 옵션 효과*/
+#board_faq_input .nice-select .option.selected {
+    border: 1px solid #949494;
+}
+
+/*리스트 보였다 안보였다 js설정*/
+#board_faq_input .no-csspointerevents .nice-select .list {
+    display: none;
+}
+#board_faq_input .no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+
+/*input 박스 css*/
+#board_faq_input input {
+    padding: 10px;
+    width: 708px;
+    border-radius: 5px;
+    border: 1px solid #949494;
+}
+#board_faq_input textarea {
+    width: 710px;
+    border-radius: 5px;
+    border: 1px solid #949494;
+    padding: 10px;
+}
+#board_faq_input textarea::placeholder {
+    font-size: 0.75rem;
+    color: #a5a5a5;
+}
+
+#board_faq_input .File_sel input {
+    border: none;    
+}
+
+/*파일 업로드*/
+#board_faq_input .File_sel label {
+    width: 96px;
+    height: 24px;
+    display: inline-block; 
+    padding: 5px 8px; 
+    color: #999; 
+    font-size: inherit; 
+    line-height: normal; 
+    vertical-align: middle; 
+    background-color: #F4F4F4; 
+    cursor: pointer; 
+	float: left;
+    border: 1px solid #707070;
+}
+#board_faq_input .File_sel input[type="file"] {
+    display: none;
+}
+#board_faq_input .File_sel .upload-name { 
+    width: 600px;
+    height: 24px;
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 0px;
+    color: #9d9d9d;
+    font-weight: 300;
+    border-left: none;
+	float: left;
+}
+
+
+/*약관동의 css*/
+#board_faq_input .agreement .txt {
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 8px;
+}
+#board_faq_input .agreement .txt label input[type="checkbox"] {
+    margin-top: 15px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 0;
+}
+#board_faq_input .agreement .txt label p {
+    font-size: 0.938rem;
+    display: inline-block;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/*버튼 css*/
+#board_faq_input button {
+    background-color: #FF6B65;
+    border-radius: 5px;
+    width: 730px;
+    height: 50px;
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #fff;
+}
+#board_faq_input button:hover {
+    background-color: #fff;
+    border: 1px solid #FF6B65;
+    color: #FF6B65;
+    box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+
+
+/*고객센터 css*/
+
+#board_faq_input .btn{
+	height: 50px!important;
+	line-height: 50px!important;
+}
+#board_faq_input .service p {
+    font-size: 0.938rem;
+    line-height: 1.4;
+    text-align: right;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#board_faq_input .service p .customer {
+    color: #507C89;
+	cursor: pointer;
+}
+
+@media all and (max-width: 770px) {
+
+	section.about-busy .sub-banner .ban-text {width:100%;}
+
+	#board_faq_input .container .tab-content {width:100%;box-sizing:border-box;}
+	#board_faq_input {width:100%;}
+	#board_faq_input ul.tabs {width:100%;}
+	#board_faq_input ul.tabs li {width:33.3%;box-sizing:border-box;}
+	#board_faq_input .nice-select {width:100%;}
+	#board_faq_input .nice-select .list {width:100%;}
+	#board_faq_input input {width:100%;box-sizing:border-box;}
+	#board_faq_input textarea {width:100%;box-sizing:border-box;}
+	#board_faq_input .File_sel .upload-name {width: calc( 100% - 114px ); height: 36px;}
+	#board_faq_input .agreement .txt {padding:0;}
+	#board_faq_input button {width:100%;font-size:1rem;height:40px;}
+}

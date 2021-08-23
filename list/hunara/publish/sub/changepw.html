@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html");
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head>
+<body>
+    <header></header>
+    <div id="container">
+        <div id="login">
+            <h2><span class="green">최초 로그인 </span>시<br>비밀번호 설정이 필요합니다.</h2>
+            <form action="#">
+                <label for="u_no"><p>사원번호</p></label>
+                <input type="text" id="u_no" name="u_no">
+                <label for="u_name"><p>성명</p></label>
+                <input type="text" id="u_name" name="u_name">
+                <label for="u_pw1"><p>비밀번호</p></label>
+                <input type="password" id="u_pw1" name="u_pw1">
+                <label for="u_pw2"><p>비밀번호 확인</p></label>
+                <input type="password" id="u_pw2" name="u_pw2" class="lastOne">
+				<button type="button" class="chg-pw green">비밀번호 변경하기</button>
+            </form>
+        </div>
+        <div id="info">
+            <div id="info1">
+                <p>직원을 위한 휴양소 신청</p>
+                <p class="large">사원가족 여러분<br>환영합니다.</p>
+                <p>최적의 숙박정보와 특별한<br>가격으로 당신의 가치를<br>빛나게 해드리겠습니다.</p>
+            </div>
+            <div id="info2">
+                <p class="large">고객센터<br>02-567-5880</p>
+                <p class="small">숙박 및 기업 행사 등<br>휴나라에 문의해 주시면 최적의 상품을<br>추천 드리겠습니다.</p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    
+    
+    
+    
+	<div class="change-modal modal-wrap">
+		<div class="modal-con">
+			<div class="modal-top">
+				<div class="close-modal">
+					<img src="../img/common/close.png" alt="">
+				</div>
+			</div>
+			<div class="modal-bot">
+				<form action="#">
+					<div class="mo-con">
+						<p>변경이 완료되었습니다.</p>
+						<div class="s1-button">
+							<button type="button" onclick="location.href='./login.html'">로그인하기
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

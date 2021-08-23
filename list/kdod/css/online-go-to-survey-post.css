@@ -1,0 +1,371 @@
+@charset "utf-8";
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+section.post-survey .about-cont .about-flat{
+	width: 1000px;
+}
+
+
+section.post-survey .about-cont .about-flat ul li{
+	width: 200px;
+}
+
+
+
+
+/*온라인 서베이 게시판 공통 영역*/
+#survey_post {
+    width: 1064px;
+    margin: 0 auto;
+    margin-top: 31px;
+	margin-bottom: 60px;
+    font-family: "Noto sans KR",sans-serif;
+}
+#survey_post h1 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #707070;
+    margin-bottom: 10px;
+}
+#survey_post h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000;
+}
+#survey_post h2 span {
+    color: #707070;
+}
+#survey_post h3 {
+    font-size: 1.25rem;
+    color: #000;
+}
+#survey_post h3 span {
+    font-size: 0.938rem;
+    color: #507C89;
+    font-weight: 400;
+}
+#survey_post p {
+    font-size: 0.813rem;
+    color: #454545;
+    line-height: 1.7;
+    font-weight: 300;
+}
+#survey_post p span {
+    color: #507c89;
+}
+
+/*버튼 회전*/
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/*온라인 서베이 게시판 영역*/
+#survey_post .post {
+    margin: 0 auto;
+}
+#survey_post .post .title {
+    width: 1062px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F3F3F3;
+    border: 1px solid #B2B2B2;
+}
+#survey_post .post .title h1 {
+    margin-left: 20px;
+}
+#survey_post .post .text {
+    border: 1px solid #E5E5E5;
+}
+#survey_post .post .text .date {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px 20px;
+}
+#survey_post .post .text .txt1 {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 20px;
+}
+#survey_post .post .text .txt2 {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 20px;
+}
+#survey_post .post .text .txt3 {
+    padding: 20px;
+    height: 240px;
+}
+
+#survey_post .more {
+    background-color: #fff;
+    border: 1px solid #B2B2B2;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+#survey_post .more h2 {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#survey_post .comment article {
+    margin-top: 10px;
+}
+#survey_post .comment .content_bg {
+    background-color: #FAFAFA;
+    padding: 20px;
+}
+
+#survey_post .comment .content_bg.reple{
+	margin-top: 10px;
+	margin-left: 62px;
+}
+
+
+#survey_post .comment .content_bg aside {
+/*    플롯*/
+    float: right;
+}
+#survey_post .comment .content_bg aside h2 {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#survey_post .comment .content_bg aside h2:nth-child(1) {
+    margin-left: 0px;
+}
+#survey_post .comment .content_bg .pl {
+/*    플롯*/
+    float: left;
+}
+#survey_post .comment .content_bg .profile {
+    margin-bottom: 10px;
+}
+#survey_post .comment .content_bg .profile .id .profile_img {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+/*    플롯*/
+    float: left;
+}
+#survey_post .comment .content_bg .profile .id h3 {
+/*    플롯*/
+    float: left;
+    line-height: 42px;
+    margin-left: 6px;
+}
+#survey_post .comment .content_bg .profile .date {
+/*    플롯*/
+    float: left;
+    line-height: 36px;
+    margin-left: 22px;
+}
+
+#survey_post .comment form {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+#survey_post .comment form fieldset {
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    padding: 10px;
+/*    포지션 위치기준값*/
+    position: relative;
+}
+#survey_post .comment form fieldset legend {
+    display: none;
+}
+#survey_post .comment form fieldset button {
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 5px 20px;
+/*    포지션*/
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+	font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #FF6B65 !important;
+}
+
+
+#survey_post .comment form fieldset button{
+	width: 138px;
+	height: auto;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 10px 20px;
+}
+#survey_post .comment form fieldset button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+
+
+
+
+
+/*        상단 버튼 변경*/
+.post .busy4-btn{
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.post .busy4-btn button:nth-child(1){
+	margin-left: 0px;
+}
+.post .busy4-btn button{
+	width: 138px;
+	height: auto;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 10px 20px;
+}
+.post .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+.post .busy4-btn button span{
+	display: block;
+}
+.post .busy4-btn button .b4b-t{
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+}
+
+
+@media screen and (max-width:1300px){
+	
+
+	section.post-survey .about-cont .about-flat{
+		width: 800px;
+	}
+
+
+	section.post-survey .about-cont .about-flat ul li{
+		width: 160px;
+	}
+
+
+	#survey_post{
+		width: 800px;
+	}
+
+	
+	#survey_post .post .title{
+		width: 798px;
+	}
+	
+	#survey_post h3{
+		font-size: 1rem;
+	}
+
+}
+
+
+
+@media screen and (max-width:900px){
+	
+	section.post-survey .about-cont .about-flat {
+		width: 600px;
+	}
+	section.post-survey .about-cont .about-flat ul li {
+		width: 120px;
+	}
+	
+	section.post-survey .about-cont .af-market ul li:nth-child(1) a {
+		line-height: 14px;
+		margin-top: 12px;
+		font-size: 0.7rem;
+	}
+	
+	#survey_post{
+		width: calc( 100% - 60px );
+	}
+
+	
+	#survey_post .post .title{
+		width: calc( 100% - 2px );
+	}
+	
+	
+	#survey_post h1{
+		font-size: 1rem;
+	}
+	
+	.post .busy4-btn button .b4b-t{
+		font-size: 0.9rem;
+	}
+	
+	#survey_post .comment form fieldset button{
+		font-size: 0.9rem;
+	}
+}
+
+
+
+@media screen and (max-width:640px){
+	
+	section.about-busy .sub-banner {
+		width: 100%;
+		height: 150px;
+		background: url(../img/sub/msurvey-ban.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	section.about-busy .sub-banner .ban-text{
+		width: 100%;
+	}
+	
+	
+	section.about-busy .sub-banner .ban-text .ban-ment {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		display: block;
+		width: 100%;
+	}
+	
+	
+	section.about-busy .sub-banner .ban-text .ban-title {
+		font-size: 1rem;
+		text-align: center;
+		padding-left: 0px;
+		display: block;
+		width: 100%;
+	}
+
+	section.about-busy .sub-banner .ban-text .ban-text {
+		padding-left: 0px;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+	
+	section.about-busy .sub-banner .ban-text .root li:nth-child(1){
+		padding-left: 20px;
+	}
+	
+	section.about-busy .sub-banner .ban-text .root{
+		left: 10px;
+		top: 5px;
+	}
+	
+}

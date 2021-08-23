@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="on" href="./class_my.html">수업</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a href="./class_my.html">내 수업</a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="./class_notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="./class_calendar.html">캘린더</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="sh-wrap">
+				<a href="./class_my.html">내 수업</a>
+				<a class="on"  href="./class_notice.html">공지사항</a>
+				<a href="./class_calendar.html">캘린더</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a class="on" href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    <!--  좌측의 과목 리스트와 우측의 글쓰기 폼은 탭 형식입니다.  -->
+    <section class="notice-view">
+        <form action="#">
+            <div class="myv-wrap">
+                <div class="myv-left">
+                    <div class="time-sel">
+                        <select name="class-time" id="class-time">
+                            <option value="class-20_2">2020년 2학기</option>
+                            <option value="class-20_w">2020년 겨울학기</option>
+                            <option value="class-21_1">2021년 1학기</option>
+                            <option value="class-21_s">2021년 여름학기</option>
+                        </select>
+                    </div>
+                    <div class="myv-list content-rd">
+                        <ul>
+                            <li class="active">
+                                <span class="lec-title">컴퓨터교육개론</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">모션그래픽</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">데이터베이스</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">전자기학</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">소프트웨어공학</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">디자인과문화</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">크롤링의이해</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="myv-content">
+                  <div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              컴퓨터교육개론 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">컴퓨터교육개론 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      컴퓨터교육개론 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div><div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              모션그래픽 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">모션그래픽 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      모션그래픽 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div><div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              데이터베이스 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">데이터베이스 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      데이터베이스 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div><div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              전자기학 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">전자기학 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      전자기학 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div><div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              소프트웨어공학 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">소프트웨어공학 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      소프트웨어공학 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div><div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              디자인과문화 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">디자인과문화 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      디자인과문화 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="myv-t">
+                      <div class="lec-noti">
+                          <span class="lecv-title">
+                              크롤링의이해 공지사항
+                          </span>
+                          <div class="notice-vwrap">
+                              <div class="nv-line1">
+                                  <span class="mark-cate">시험</span>
+                                  <span class="myv-title">크롤링의이해 기말고사 안내</span>
+                              </div>
+                              <div class="nv-line2">
+                                  <div class="myv-name">
+                                      <span class="writer">작성자 : </span>
+                                      <span class="writer-name">홍길동</span>
+                                  </div>
+                                  <div class="myv-update">
+                                      <span class="update">작성일 : </span>
+                                      <span class="update-num">2020.11.25</span>
+                                  </div>
+                              </div>
+                              <div class="nv-line3">
+                                  <div class="myv-period">
+                                      <span class="period">날짜 : </span>
+                                      <span class="period-day">2020.12.15 ~ 2020. 12. 15</span>
+                                  </div>
+                                  <div class="myv-time">
+                                      <span class="time">시간 : </span>
+                                      <span class="time-info">09:00 ~ 13:00</span>
+                                  </div>
+                              </div>
+                              <div class="wrote-text">
+                                  <p class="wrote-in">
+                                      2020. 12. 15<br />
+                                      09:00 ~ 13:00<br />
+                                      크롤링의이해 기말고사 시험봅니다.
+                                  </p>
+                              </div>
+                              <div class="myv-write">
+                                  <button class="go-back" type="button">목록으로</button>
+                                  <button class="go-modify" type="button">수정하기</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+
+        
+    <!--  list tab  -->
+    
+    
+    <script>
+    
+        var tabBtn = $(".myv-list> ul > li");   
+        var tabCont = $(".myv-content > .myv-t");
+
+        tabCont.hide().eq(0).show();
+
+        tabBtn.click(function(){
+          var target = $(this);      
+          var index = target.index(); 
+          //alert(index);
+          tabBtn.removeClass("active");  
+          target.addClass("active"); 
+          tabCont.css("display","none");
+          tabCont.eq(index).css("display", "block");
+        });
+    </script>
+    
+    
+    <!--   스크롤 스크립  -->
+    <script>
+    
+        
+        $(document).ready(function(){
+
+            $(".content-rd").mCustomScrollbar({
+                    theme:"light-3"
+                });
+            });
+    </script>
+</body>
+</html>

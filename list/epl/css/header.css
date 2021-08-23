@@ -1,0 +1,1278 @@
+/*헤더 gnb 메뉴*/
+
+header{
+	width: 100%;
+	box-shadow: 0px 2px 10px rgba(114,114,114,0.3);
+	min-width: 1350px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gnb{
+	width: 100%;
+	height: 40px;
+	background: #f2a43f;
+}
+
+.gnb .gnb-wrap{
+	width: 1280px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.gnb .gnb-wrap a{    
+	color: #fff;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    padding-right: 15px;
+	font-family: 'gm',sans-serif;
+    margin-top: 14px;
+}
+
+.gnb .gnb-wrap a::after{
+	content: "";
+	background-color: #fff;
+	height: 15px;
+	width: 1px;
+	position: absolute;
+	top: -2px;
+	right: 0px;
+}
+
+
+
+.gnb .gnb-wrap a:last-child{
+	padding-right: 0px;
+	margin-right: 0px;
+}
+.gnb .gnb-wrap a:last-child::after{
+	display: none;
+}
+
+/*메인메뉴*/
+
+.pc-menu{
+	width: 1280px;
+	height: 120px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.pc-menu .logo{
+	float: left;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.pc-menu .pc-menuc{
+	float: right;
+	overflow: hidden;
+}
+
+.pc-menu .pc-menuc ul li{
+	float:left;
+	margin-left: 90px;
+}
+
+.pc-menu .pc-menuc ul li a{
+	line-height: 120px;
+	font-family: 'gm',sans-serif;
+	font-size: 20px;
+}
+
+
+/*로그인모달*/
+
+
+
+.login-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.login-modal.visible{
+	display: block;
+}
+
+.login-modal .modal-con{
+	position: absolute;
+	width: 525px;
+	height: 475px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.login-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.login-modal .modal-con .modal-top .close-modal{
+    width: 16px;
+    height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.login-modal .modal-con .modal-top .close-modal img{
+    width: 16px;
+    height: 16px;
+}
+
+.login-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'gm', sans-serif;
+    margin: 47px 40px 15px 40px;
+    color: #211F1F;
+    line-height: 1;
+}
+
+
+.login-modal .modal-con .id-wrap,
+.login-modal .modal-con .pw-wrap{
+	margin: 0px 40px;
+	height: 60px;
+	background-color: #FCF2E6;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.login-modal .modal-con .pw-wrap{
+	margin-top: 20px;
+}
+
+
+.login-modal .modal-con div .id-t span,
+.login-modal .modal-con div .pw-t span,
+.login-modal .modal-con div .id-t img,
+.login-modal .modal-con div .pw-t img,
+.login-modal .modal-con div .id-c input,
+.login-modal .modal-con div .pw-c input{
+	float: left;
+}
+
+.login-modal .modal-con div .id-t img{
+	margin-top: 18px;
+	width: 21px;
+	height: 24px;
+	margin-right: 10px;
+	margin-left: 13px;
+}
+.login-modal .modal-con div .pw-t img{
+	margin-top: 15.5px;
+	width: 18px;
+	height: 27px;
+	margin-left: 13px;
+	margin-right: 10px;
+}
+
+.login-modal .modal-con div .id-t,
+.login-modal .modal-con div .pw-t{
+	width: 128px;
+	float: left;
+	overflow: hidden;
+}
+
+.login-modal .modal-con div .id-t span,
+.login-modal .modal-con div .pw-t span{
+	line-height: 60px;
+	font-size: 16px;
+	color: #FF8000;
+	font-family: 'gm', sans-serif;
+}
+
+.login-modal .modal-con div .id-c,
+.login-modal .modal-con div .pw-c{
+	float: left;
+	width: calc( 100% - 128px );
+}
+
+.login-modal .modal-con div .id-c input,
+.login-modal .modal-con div .pw-c input{
+	cursor: pointer;
+	background-color: transparent;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+}
+
+
+.login-modal .modal-con button{
+	width: calc( 100% - 80px );
+	margin: 0 auto;
+	display: block;
+	border-radius: 4px;
+	color: #fff;
+    height: 64px;
+    font-size: 20px;
+    line-height: 72px;
+    background: linear-gradient(to right, #FFC06E, #FF8000);
+	margin-top: 30px;
+	cursor: pointer;
+	font-family: 'gm', sans-serif;
+}
+
+
+.login-modal .modal-con .link{
+	text-align: center;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+.login-modal .modal-con .link a{
+	font-size: 16px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+}
+
+.login-modal .modal-con .link a:nth-child(2){
+	margin-left: 5px;
+	padding-left: 5px;
+	position: relative;
+    padding-left: 10px;
+}
+.login-modal .modal-con .link a:nth-child(2)::after{
+	position: absolute;
+	width: 1px;
+	height: 16px;
+	background-color: #000;
+	left: 0px;
+	content: "";
+	top: 0px;
+}
+
+
+
+
+
+/*아이디 찾기 모달*/
+
+
+
+.find-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.find-modal.visible{
+	display: block;
+}
+
+.find-modal .modal-con{
+	position: absolute;
+	width: 525px;
+	height: 417px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.find-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.find-modal .modal-con .modal-top .close-modal{
+    width: 16px;
+    height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.find-modal .modal-con .modal-top .close-modal img{
+    width: 16px;
+    height: 16px;
+}
+
+.find-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+    font-family: 'gm', sans-serif;
+    margin: 47px 40px 15px 40px;
+    color: #211F1F;
+    line-height: 1;
+}
+
+.find-modal .modal-con .id-wrap,
+.find-modal .modal-con .pw-wrap{
+	margin: 0px 40px;
+	height: 60px;
+	background-color: #FCF2E6;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.find-modal .modal-con .pw-wrap{
+	margin-top: 20px;
+}
+
+
+.find-modal .modal-con div .id-t span,
+.find-modal .modal-con div .pw-t span,
+.find-modal .modal-con div .id-t img,
+.find-modal .modal-con div .pw-t img,
+.find-modal .modal-con div .id-c input,
+.find-modal .modal-con div .pw-c input{
+	float: left;
+}
+
+.find-modal .modal-con div .id-t img{
+	margin-top: 18px;
+	width: 21px;
+	height: 24px;
+	margin-right: 10px;
+	margin-left: 13px;
+}
+.find-modal .modal-con div .pw-t img{
+	margin-top: 15.5px;
+	width: 18px;
+	height: 27px;
+	margin-left: 13px;
+	margin-right: 10px;
+}
+
+.find-modal .modal-con div .id-t,
+.find-modal .modal-con div .pw-t{
+	width: 128px;
+	float: left;
+	overflow: hidden;
+}
+
+.find-modal .modal-con div .id-t span,
+.find-modal .modal-con div .pw-t span{
+	line-height: 60px;
+	font-size: 16px;
+	color: #FF8000;
+	font-family: 'gm', sans-serif;
+}
+
+.find-modal .modal-con div .id-c,
+.find-modal .modal-con div .pw-c{
+	float: left;
+	width: calc( 100% - 128px );
+}
+
+.find-modal .modal-con div .id-c input,
+.find-modal .modal-con div .pw-c input{
+	cursor: pointer;
+	background-color: transparent;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-family: 'gm', sans-serif;
+	font-weight: bold;
+	color: #211F1F;
+}
+
+
+.find-modal .modal-con button{
+	width: calc( 100% - 80px );
+	margin: 0 auto;
+	display: block;
+	border-radius: 4px;
+	color: #fff;
+	height: 60px;
+	font-size: 20px;
+	line-height: 64px;
+    background: linear-gradient(to right, #FFC06E, #FF8000);
+	margin-top: 30px;
+	cursor: pointer;
+	font-family: 'gm', sans-serif;
+	color: #fff;
+}
+
+
+
+
+/*아이디 찾기 모달*/
+
+
+
+.error-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.error-modal.visible{
+	display: block;
+}
+
+.error-modal .modal-con{
+	position: absolute;
+	width: 448px;
+	height: 220px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.error-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.error-modal .modal-con .modal-top .close2-modal{
+    width: 16px;
+    height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.error-modal .modal-con .modal-top .close2-modal img{
+    width: 16px;
+    height: 16px;
+}
+
+.error-modal .modal-con p{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	font-size:20px;
+	font-family: 'gm', sans-serif;
+	text-align: center;
+	color: #211F1F;
+}
+
+
+
+
+
+
+
+
+/*아이디 찾기 모달*/
+
+
+
+.finish-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.finish-modal.visible{
+	display: block;
+}
+
+.finish-modal .modal-con{
+	position: absolute;
+	width: 525px;
+	height: 465px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.finish-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.finish-modal .modal-con .modal-top .close-modal{
+    width: 16px;
+    height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.finish-modal .modal-con .modal-top .close-modal img{
+    width: 16px;
+    height: 16px;
+}
+
+.finish-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'gm', sans-serif;
+	font-weight: bold;
+    margin: 43px 40px 18px 40px;
+    color: #211F1F;
+    line-height: 1;
+}
+
+.finish-modal .modal-con .modal-title span{
+	display: block;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #211F1F;
+    margin-top: 20px;
+}
+
+.finish-modal .modal-con .id-wrap{
+    margin: 0px 40px;
+	height: 140px;
+	background-color: #FCF2E6;
+	position: relative;
+}
+
+.finish-modal .modal-con .id-wrap p{
+	font-size: 36px;
+	color: #FF8000;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 35px;
+	font-family: 'gm', sans-serif;
+    line-height: 1;
+}
+
+.finish-modal .modal-con .id-wrap p span{
+	font-size: 16px;
+	color: #949494;
+	font-weight: lighter;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+}
+
+
+.finish-modal .modal-con .btn-wrap{
+	width: calc( 100% - 80px );
+	margin: 0 auto;
+}
+
+
+
+.finish-modal .modal-con .btn-wrap button{
+	display: inline-block;
+	width: calc( 50% - 11.5px );
+	border-radius: 4px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 72px;
+	height: 64px;
+    background: linear-gradient(to right, #FFC06E, #FF8000);
+	margin-top: 30px;
+	cursor: pointer;
+	font-family: 'gm', sans-serif;
+}
+
+
+.finish-modal .modal-con .btn-wrap button:nth-child(2){
+	background: #949494;
+	margin-left: 17px;
+}
+
+
+
+
+/*아이디 찾기 모달*/
+
+
+
+.findpw-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9998;
+	display: none;
+}
+
+.findpw-modal.visible{
+	display: block;
+}
+
+.findpw-modal .modal-con{
+	position: absolute;
+	width: 525px;
+    height: 500px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.findpw-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.findpw-modal .modal-con .modal-top .close-modal{
+    width: 16px;
+    height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.findpw-modal .modal-con .modal-top .close-modal img{
+    width: 16px;
+    height: 16px;
+}
+
+.findpw-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'gm', sans-serif;
+    margin: 47px 40px 15px 40px;
+	color: #211F1F;
+	line-height: 1;
+}
+
+
+.findpw-modal .modal-con .id-wrap,
+.findpw-modal .modal-con .name-wrap,
+.findpw-modal .modal-con .pw-wrap{
+	margin: 0px 40px;
+	height: 60px;
+	background-color: #FCF2E6;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.findpw-modal .modal-con .name-wrap,
+.findpw-modal .modal-con .pw-wrap{
+	margin-top: 20px;
+}
+
+
+.findpw-modal .modal-con div .id-t span,
+.findpw-modal .modal-con div .pw-t span,
+.findpw-modal .modal-con div .id-t img,
+.findpw-modal .modal-con div .pw-t img{
+	float: left;
+}
+
+.findpw-modal .modal-con div .mt-t img{
+	margin-top: 18px;
+	width: 21px;
+	height: 24px;
+	margin-right: 10px;
+	margin-left: 13px;
+	float: left;
+}
+
+
+.findpw-modal .modal-con div .nt-t img{
+	margin-top: 22px;
+	width: 20px;
+	height: 20px;
+	margin-left: 13px;
+    float: left;
+	margin-right: 10px;
+}
+
+
+.findpw-modal .modal-con div .pw-t img{
+	margin-top: 22px;
+	width: 20px;
+	height: 16px;
+	margin-left: 13px;
+	margin-right: 10px;
+    float: left;
+}
+
+.findpw-modal .modal-con div .mt-t,
+.findpw-modal .modal-con div .nt-t,
+.findpw-modal .modal-con div .pw-t{
+	width: 128px;
+	float: left;
+	overflow: hidden;
+}
+
+.findpw-modal .modal-con div .mt-t span,
+.findpw-modal .modal-con div .nt-t span,
+.findpw-modal .modal-con div .pw-t span{
+	line-height: 64px;
+	font-size: 16px;
+	color: #FF8000;
+	font-family: 'gm', sans-serif;
+}
+
+.findpw-modal .modal-con div .nt-t span{
+	line-height: 68px;
+}
+
+.findpw-modal .modal-con div .mt-c,
+.findpw-modal .modal-con div .nt-c,
+.findpw-modal .modal-con div .pw-c{
+	float: left;
+	width: calc( 100% - 128px );
+}
+
+.findpw-modal .modal-con div .mt-c input,
+.findpw-modal .modal-con div .nt-c input,
+.findpw-modal .modal-con div .pw-c input{
+	cursor: pointer;
+	background-color: transparent;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+}
+
+
+.findpw-modal .modal-con button {
+    width: calc( 100% - 80px );
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    height: 64px;
+    font-size: 20px;
+    line-height: 72px;
+    background: linear-gradient(to right, #FFC06E, #FF8000);
+    margin-top: 27px;
+    cursor: pointer;
+    font-family: 'gm', sans-serif;
+}
+
+
+
+
+
+
+
+
+/* 새 비밀번호 입력*/
+
+
+
+.changepw-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.changepw-modal.visible{
+	display: block;
+}
+
+.changepw-modal .modal-con{
+	position: absolute;
+	width: 525px;
+	height: 408px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.changepw-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.changepw-modal .modal-con .modal-top .close-modal{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.changepw-modal .modal-con .modal-top .close-modal img{
+	width: 16px;
+	height: 16px;
+}
+
+.changepw-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+	margin: 47px 40px 15px 40px;
+	line-height: 1;
+}
+
+
+.changepw-modal .modal-con .id-wrap,
+.changepw-modal .modal-con .pw-wrap{
+	margin: 0px 40px;
+	height: 60px;
+	background-color: #FCF2E6;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.changepw-modal .modal-con .pw-wrap:nth-child(4){
+	margin-top: 20px;
+}
+
+
+.changepw-modal .modal-con div .id-t span,
+.changepw-modal .modal-con div .pw-t span,
+.changepw-modal .modal-con div .id-t img,
+.changepw-modal .modal-con div .pw-t img,
+.changepw-modal .modal-con div .id-c input,
+.changepw-modal .modal-con div .pw-c input{
+	float: left;
+}
+
+.changepw-modal .modal-con div .id-t img{
+	margin-top: 18px;
+	width: 21px;
+	height: 24px;
+	margin-right: 10px;
+	margin-left: 13px;
+}
+.changepw-modal .modal-con div .pw-t img{
+	margin-top: 15.5px;
+	width: 18px;
+	height: 27px;
+	margin-left: 13px;
+	margin-right: 10px;
+}
+
+.changepw-modal .modal-con div .id-t,
+.changepw-modal .modal-con div .pw-t{
+	width: 170px;
+	float: left;
+	overflow: hidden;
+}
+
+.changepw-modal .modal-con div .id-t span,
+.changepw-modal .modal-con div .pw-t span{
+	line-height: 64px;
+	font-size: 16px;
+	color: #FF8000;
+	font-family: 'gm', sans-serif;
+}
+
+.changepw-modal .modal-con div .id-c,
+.changepw-modal .modal-con div .pw-c{
+	float: left;
+	width: calc( 100% - 170px );
+}
+
+.changepw-modal .modal-con div .id-c input,
+.changepw-modal .modal-con div .pw-c input{
+	cursor: pointer;
+	background-color: transparent;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+}
+
+
+.changepw-modal .modal-con button{
+	width: calc( 100% - 80px );
+	margin: 0 auto;
+	display: block;
+	border-radius: 4px;
+	color: #fff;
+	height: 64px;
+	font-size: 20px;
+	line-height: 72px;
+    background: linear-gradient(to right, #FFC06E, #FF8000);
+	margin-top: 20px;
+	cursor: pointer;
+	font-family: 'gm', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*푸터*/
+
+.foot-wrap{
+	width: 100%;
+	font-family: 'sq', sans-serif;
+	background-color: #707070;
+	min-width: 1350px;
+}
+
+.foot-wrap .foot-menu{
+	width: 100%;
+	height: 49px;
+	margin: 0 auto;
+	line-height: 49px;
+	border-bottom: 1px solid #949494;
+}
+
+.foot-wrap .foot-menu .fm-wrap{
+	width: 1280px;
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+.foot-wrap .foot-menu .fm-wrap a{
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+	padding-left: 10px;
+	margin-left: 10px;
+	font-family: 'sq', sans-serif;
+}
+
+.foot-wrap .foot-menu .fm-wrap a:nth-child(1){
+	margin-left: 280px;
+	padding-left: 0px;
+}
+
+.foot-wrap .foot-menu .fm-wrap a:nth-child(2)::after{
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 16px;
+	left: -1px;
+	background-color: #fff;
+    top: 5px;
+}
+
+.foot-wrap .foot-info{
+	width: 100%;
+    overflow: hidden;
+}
+
+.foot-wrap .foot-info .fi-wrap{
+	width: 1280px;
+    margin: 43px auto 40px auto;
+	overflow: hidden;
+}
+
+
+.foot-wrap .foot-info .fi-wrap div{
+	float: left;
+	margin-left: 55px;
+}
+
+
+.foot-wrap .foot-info .fi-wrap .foot-logo{
+	margin-left: 0px;
+}
+
+.foot-wrap .foot-info .fi-wrap div span,
+.foot-wrap .foot-info .fi-wrap div p{
+	color: #fff;
+	font-family: 'sq', sans-serif;
+}
+
+.foot-wrap .foot-info .fi-wrap div p{
+	margin-top: 24px;
+}
+
+.foot-wrap .foot-info .fi-wrap div span{
+	position: relative;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+
+.foot-wrap .foot-info .fi-wrap div span:nth-child(1),
+.foot-wrap .foot-info .fi-wrap div span:nth-child(5),
+.foot-wrap .foot-info .fi-wrap div span:nth-child(9){
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.foot-wrap .foot-info .fi-wrap div span:nth-child(1)::after,
+.foot-wrap .foot-info .fi-wrap div span:nth-child(5)::after,
+.foot-wrap .foot-info .fi-wrap div span:nth-child(9)::after{
+	display: none;
+}
+
+
+.foot-wrap .foot-info .fi-wrap div span::after{
+	content: "";
+	position: absolute;
+    top: 5px;
+    left: -1px;
+    width: 2px;
+	height: 16px;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*로그인모달*/
+
+
+
+.privacy-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.privacy-modal.visible{
+	display: block;
+}
+
+.privacy-modal .modal-con{
+	position: absolute;
+	width: 1060px;
+	height: 510px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.privacy-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.privacy-modal .modal-con .modal-top .close-modal{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.privacy-modal .modal-con .modal-top .close-modal img{
+	width: 18px;
+	height: 18px;
+}
+
+.privacy-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+	margin: -20px 30px 15px 30px;
+}
+
+.privacy-modal .modal-con .pri-con{
+	margin: 14px 30px 30px 30px;
+    background-color: #FCF2E6;
+    height: 391px;
+	overflow-y: scroll;
+}
+
+
+.privacy-modal .modal-con .pri-con p{
+	margin: 30px;
+	font-family: 'gm', sans-serif;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #707070;
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/*로그인모달*/
+
+
+
+.using-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.using-modal.visible{
+	display: block;
+}
+
+.using-modal .modal-con{
+	position: absolute;
+	width: 1060px;
+	height: 512px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.using-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.using-modal .modal-con .modal-top .close-modal{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.using-modal .modal-con .modal-top .close-modal img{
+	width: 16px;
+	height: 16px;
+}
+
+.using-modal .modal-con .modal-title{
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'gm', sans-serif;
+	color: #211F1F;
+    margin: -9px 30px 10px 30px;
+    line-height: 1;
+}
+
+.using-modal .modal-con .pri-con{
+	margin: 14px 30px 30px 30px;
+    background-color: #FCF2E6;
+    height: 400px;
+	overflow-y: scroll;
+}
+
+
+.using-modal .modal-con .pri-con p{
+	margin: 30px;
+	font-family: 'gm', sans-serif;
+	font-size: 16px;
+	color: #707070;
+    margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

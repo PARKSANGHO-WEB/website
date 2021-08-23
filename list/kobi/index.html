@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/flip.css">
+    <meta charset="UTF-8">
+    <title>코비인사이트(주)</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script src="./js/flip.js"></script>
+</head>
+<body>
+    <div class="intro_wrap">
+        <div class="it-top">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="it-gnb">
+                <li>
+                    <a href="./sub/login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="./sub/join.html">회원가입</a>
+                </li>
+            </div>
+            <div class="it-mid">
+                <p class="left_t">
+                    <span class="p_st">경영 컨설팅</span>의<br /><span class="p_st">표준</span>을 제시하겠습니다<span class="italic">!</span>
+                </p> 
+                <div onclick='location.href="./main.html"' class="it-link">
+                    <p><span class="s-wrap">홈페이지 바로가기<span><img src="./img/arrow_right.png" alt=""></span></span></p>
+                </div>
+            </div>
+            
+            <div class="it-boxt">
+                <div class="itbt-l"> 
+                    <p class="itbt-t">
+                        <span>컨설팅 진행</span> 건수
+                    </p>
+                    <p class="itbt-d">
+                        <span class="date">
+                            2020.10.20 기준
+                        </span>
+                        <span class="date_bar"></span>
+                    </p>
+                </div>
+                <div class="itbt-l2">
+                    <div class="number-all">
+                       <div class='numCounter' data-value='7471'></div>
+                       <div class="ie-num">
+                            <ul> 
+                                <li>
+                                    <span class="num-ie num-ie1" id="num-ie1" numx="0">0</span>
+                                </li>
+                                <li>
+                                    <span class="num-ie num-ie2" id="num-ie2" numx="7">0</span>
+                                </li>
+                                <li>
+                                    <span class="num-ie num-ie3" id="num-ie3" numx="4">0</span>
+                                </li>
+                                <li>
+                                    <span class="num-ie num-ie4" id="num-ie4" numx="7">0</span>
+                                </li>
+                                <li>
+                                    <span class="num-ie num-ie5" id="num-ie5" numx="1">0</span>
+                                </li>
+                            </ul>
+                       </div>
+                        
+<!--
+                        <div class="back-an">
+                            <ul>
+                                <li>
+                                    <span>0</span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="t-num allt-num" id="num_all"></span>
+-->
+                    </div>
+                </div>
+                <div class="itbt-b">
+                    <ul>
+                        <li class="circle_bg circle_bg1">
+                            <div class="circle_g">
+                              <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="70, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                </svg>
+                                <div class="text-wrap">
+                                    <span class="title">세무</span>
+                                    <span class="t-num" id="num_se"></span>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="circle_bg circle_bg2">
+                            <div class="circle_g">
+                              <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart green">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="40, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                </svg>
+                                <div class="text-wrap">
+                                <span class="title">법무</span>
+                                    <span class="t-num" id="num_bub"></span>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="circle_bg circle_bg3">
+                            <div class="circle_g">
+                              <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="50, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                </svg>
+                                <div class="text-wrap">
+                                    <span class="title">노무</span>
+                                    <span class="t-num" id="num_no"></span>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="circle_bg circle_bg4">
+                            <div class="circle_g">
+                              <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart green">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="10, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                </svg>
+                                <div class="text-wrap">
+                                    <span class="title">인증</span>
+                                    <span class="t-num" id="num_ser"></span>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="circle_bg circle_bg5">
+                            <div class="circle_g cg-last">
+                              <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="5, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                </svg>
+                                <div class="text-wrap">
+                                    <span class="title">기타</span>
+                                    <span class="t-num" id="num_any"></span>
+                                </div>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          <script>
+            $(document).ready(function() {
+             
+                
+
+                var options = {
+                  useEasing : true, 
+                  useGrouping : true, 
+                  separator : ',', 
+                  prefix : '', 
+                  suffix : '' 
+                };
+                var ignite = new CountUp("num_se", 0, 3343, 0, 4.2, options);
+                ignite.start();
+
+                setInterval(function(){
+                ignite.reset();
+                ignite.start()
+
+                },9200);
+                
+                
+                
+                
+                var ignite2 = new CountUp("num_bub", 0, 1702, 0, 4.2, options);
+                ignite2.start();
+
+                setInterval(function(){
+                ignite2.reset();
+                ignite2.start()
+
+                },9200);
+                
+                
+                
+                var ignite3 = new CountUp("num_no", 0, 2137, 0, 4.2, options);
+                ignite3.start();
+
+                setInterval(function(){
+                ignite3.reset();
+                ignite3.start()
+
+                },9200);
+                
+                
+                
+                
+                
+                
+                var ignite4 = new CountUp("num_ser", 0, 634, 0, 4.2, options);
+                ignite4.start();
+
+                setInterval(function(){
+                ignite4.reset();
+                ignite4.start()
+
+                },9200);
+                
+                
+                
+                
+                
+                
+                var ignite5 = new CountUp("num_any", 0, 374, 0, 4.2, options);
+                ignite5.start();
+
+                setInterval(function(){
+                ignite5.reset();
+                ignite5.start()
+
+                },9200);
+                
+                
+                
+                
+                
+                var ignitei1 = new CountUp("num-ie1", 0, 0, 0, 4.2, options);
+                ignitei1.start();
+
+                setInterval(function(){
+                ignitei1.reset();
+                ignitei1.start()
+
+                },9200);
+                
+                
+                
+                
+                var ignitei2 = new CountUp("num-ie2", 0, 7, 0, 4.2, options);
+                ignitei2.start();
+
+                setInterval(function(){
+                ignitei2.reset();
+                ignitei2.start()
+
+                },9200);
+                
+                
+                
+                var ignitei3 = new CountUp("num-ie3", 0, 4, 0, 4.2, options);
+                ignitei3.start();
+
+                setInterval(function(){
+                ignitei3.reset();
+                ignitei3.start()
+
+                },9200);
+                
+                
+                
+                
+                
+                
+                var ignitei4 = new CountUp("num-ie4", 0, 7, 0, 4.2, options);
+                ignitei4.start();
+
+                setInterval(function(){
+                ignitei4.reset();
+                ignitei4.start()
+
+                },9200);
+                
+                
+                
+                
+                
+                
+                var ignitei5 = new CountUp("num-ie5", 0, 1, 0, 4.2, options);
+                ignitei5.start();
+
+                setInterval(function(){
+                ignitei5.reset();
+                ignitei5.start()
+
+                },9200);
+            });
+              
+              
+              
+          </script>
+            <script>
+        
+            $(document).ready(function() {
+            function Counter(selector, settings){
+              this.settings = Object.assign({
+                digits: 5,
+                delay: 250, // ms
+                direction: ''  // ltr is default
+              }, settings || {})
+
+              this.DOM = {}
+              this.build(selector)
+
+              this.DOM.scope.addEventListener('transitionend', e => {
+                if (e.pseudoElement === "::before" && e.propertyName == 'margin-top'){
+                  e.target.classList.remove('blur')
+                }
+              })
+
+              this.count()
+            }
+
+            Counter.prototype = { 
+              // generate digits markup
+              build( selector ){
+                  var scopeElm = typeof selector == 'string' 
+                        ? document.querySelector(selector) 
+                        : selector 
+                          ? selector
+                          : this.DOM.scope
+
+                  scopeElm.innerHTML = Array(this.settings.digits + 1)
+                      .join('<div><b data-value="0"></b></div>');
+
+                  this.DOM = {
+                    scope : scopeElm,
+                    digits : scopeElm.querySelectorAll('b')
+                  }
+              },
+
+              count( newVal ){
+                var countTo, className, 
+                    settings = this.settings,
+                    digitsElms = this.DOM.digits;
+
+                // update instance's value
+                this.value = newVal || this.DOM.scope.dataset.value|0
+
+                if( !this.value ) return;
+
+                // convert value into an array of numbers
+                countTo = (this.value+'').split('')
+
+                if( settings.direction == 'rtl' ){
+                  countTo = countTo.reverse()
+                  digitsElms = [].slice.call(digitsElms).reverse()
+                }
+
+                // loop on each number element and change it
+                digitsElms.forEach(function(item, i){ 
+                    if( +item.dataset.value != countTo[i]  &&  countTo[i] >= 0 )
+                      setTimeout(function(j){
+                          var diff = Math.abs(countTo[j] - +item.dataset.value);
+                          item.dataset.value = countTo[j]
+                          if( diff > 3 )
+                            item.className = 'blur';
+                      }, i * settings.delay, i)
+                })
+              }
+            }
+
+
+
+                /////////////// create new counter for this demo ///////////////////////
+
+                var counter = new Counter('.numCounter', {
+                  direction : 'rtl', 
+                  delay     : 1300, 
+                  digits    : 5,
+
+
+                })
+
+                // change counter value every N seconds
+                var counterInterval = setInterval(randomCount, 9200)
+
+                function randomCount(){
+                    var counter = new Counter('.numCounter', {
+                  direction : 'rtl', 
+                  delay     : 1050, 
+                  digits    : 5,
+
+
+                })
+            }
+
+            });
+            
+            </script>
+            <div class="it-boxb">
+                <div class="slider-wrap">
+                    <div class="bxslider-1">
+                        <div class="item itema" onclick='location.href="./sub/about.html#about_1"'>
+                            <span class="item_a">코비인사이트는<br />어떤 회사인가요?</span>
+                        </div>
+                        <div class="item itemb" onclick='location.href="./sub/business.html#busi_3"'>
+                            <span class="item_a">경정청구를 통해<br />법인세를 환급<br />받을 수 있나요?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrap">
+                    <div class="bxslider-2">
+                        <div class="item itema" onclick='location.href="./sub/business.html#busi_1"'>
+                            <span class="item_a">다른 컨설팅 회사와<br />차이점은?</span>    
+                        </div>
+                        <div class="item itemb" onclick='location.href="./sub/business.html#busi_1"'>
+                            <span class="item_a">결산 전에 신용등급<br />검토가 가능한가요?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrap">
+                    <div class="bxslider-3">
+                        <div class="item itema" onclick='location.href="./sub/factory_1.html"'>
+                            <span class="item_a">어떤 컨설팅들이<br />진행되고 있나요?</span>                    </div>
+                        <div class="item itemb" onclick='location.href="./sub/business.html#busi_2"'>
+                            <span class="item_a">연구소 관리를<br />제대로 받을 수 있을까요?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrap">
+                    <div class="bxslider-4">
+                        <div class="item itema" onclick='location.href="./sub/factory_5.html"'>
+                            <span class="item_a">제안서나 사업계획서를<br />만들어 줄 수 있나요?</span>    
+                        </div>
+                        <div class="item itemb" onclick='location.href="./sub/info_1.html"'>
+                            <span class="item_a">컨설팅 문의는<br />어떻게 하나요?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrap">
+                    <div class="boxb-last"  onclick='location.href="./sub/info_1.html"'>
+                        <span class="item_a">홈페이지 이용은<br />어떻게 하나요?</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(function(){
+              $('.bxslider-1').bxSlider({
+                auto: true,
+                captions: true,
+                autoDelay: 2000,
+                pause: 8000
+              });
+            });
+            
+            
+            
+            $(function(){
+              $('.bxslider-2').bxSlider({
+                auto: true,
+                captions: true,
+                autoDelay: 4000,
+                pause: 8000
+              });
+            });
+            
+            
+            $(function(){
+              $('.bxslider-3').bxSlider({
+                mode: 'vertical',
+                auto: true,
+                captions: true,
+                autoDelay: 6000,
+                pause: 8000
+              });
+            });
+            
+            
+            $(function(){
+              $('.bxslider-4').bxSlider({
+                auto: true,
+                captions: true,
+                autoDelay: 8000,
+                pause: 8000
+              });
+            });
+        });
+        
+        
+    </script>
+</body>
+</html>

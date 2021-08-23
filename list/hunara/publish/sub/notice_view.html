@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/community_view.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("1").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head>
+<body>
+    <header></header>
+    <div id="mainImage">
+        <h2>공지사항</h2>
+    </div>
+    <div id="container">
+		<div class="sort-menu" id="sangse-sort">
+			<ul>
+				<li>
+					<span onclick="location. href='./qna.html'">Q&A</span>
+				</li>
+				<li class="active">
+					<span onclick="location. href='./notice.html'">공지사항</span>
+				</li>
+				<li>
+					<span onclick="location. href='./review.html'">이용후기</span>
+				</li>
+			</ul>
+		</div>
+        <div id="textView">
+            <div id="title"><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요?</p></div>
+            <div id="info">
+                <div id="writer">송태헌</div>
+                <div id="date">2020-08-15 12:39:00</div>
+            </div>
+            <div id="mainText">
+                <div id="contents">
+                	<p>공지입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div id="buttons" class="buttons-1">
+        	<span class="btn-1">
+        		<button href="./notice.html">목록으로</button>
+        	</span>
+		</div>
+    </div>
+    <footer></footer>
+</body>
+</html>

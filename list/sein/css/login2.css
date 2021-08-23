@@ -1,0 +1,240 @@
+@font-face{ font-family: nsl; src:url(../font/NotoSansKR-Regular.woff); src:local(※), format(‘woff’) }
+@font-face{ font-family: nsb; src:url(../font/NotoSansKR-Bold.woff); src:local(※), format(‘woff’) }
+@font-face{ font-family: nsl; src:url(../font/NotoSansKR-Regular.eot); src:local(※), format(‘eot’) }
+@font-face{ font-family: nsb; src:url(../font/NotoSansKR-Bold.eot); src:local(※), format(‘eot’) }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    border: none;
+    outline: none;
+    
+}
+
+body,html,section  {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+
+section {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: url(../img/login.png) no-repeat center;
+    background-size: cover;
+}
+
+
+section .left{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	background: radial-gradient( circle, transparent,transparent, white);
+    opacity: .6;
+}
+
+
+section .right{
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background: #134980;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -200px;
+    margin-top: -225px;
+    border: 2px solid #afafaf;
+}
+
+section .right .right-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -152.5px;
+    margin-top: -195px;
+}
+
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+
+.logo img {
+    width: 250px;
+}
+
+section .right span,
+section .right input {
+    float: left;
+} 
+
+section .right span img{
+    width: 30px;
+}
+
+
+section .right .login_t{
+    font-size: 34px;
+    font-family: nsb;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #fff;
+    padding-bottom: 20px;
+}
+
+
+section .right .login,
+section .right .save,
+section .right .pass,
+section .right .loginbtn{
+    width: 300px;
+    margin: 0 auto;
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+section .right .save{
+    width: 240px;
+    width: 80px;
+    margin-left: 225px;
+}
+
+
+section .right .pass {
+    margin-top: 20px;
+}
+
+section .right .save .save_id {
+    float: right;
+}
+section .right .save .find {
+    float: left;
+}
+
+section .right .login input{
+    width: 240px;
+    margin-left: 20px;
+    height: 30px;
+    background-color: #eee;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+section .right .pass input{
+    width: 240px;
+    margin-left: 20px;
+    height: 30px;
+    background-color: #eee;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+section .right .save label{
+    font-size: 12px;
+    display: block;
+    font-family: nsl;
+    font-weight: lighter;
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+
+section .right .save input[type="checkbox"]{
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+section .right .save .find {
+    float: right;
+}
+
+section .right .loginbtn input[type="button"]{
+    background-color: #376ea6;
+    font-size: 16px;
+    font-family: nsb;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 0px;
+    border-radius: 8px;
+    
+}
+
+section .right .footer {
+    width: 300px;
+    font-size: 11px;
+    color: #a7a7a7;
+    margin-top: 30px;
+    font-family: nsl;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:640px) {
+    
+
+    section .right{
+        width: 335px;
+        height: 420px;
+        margin-left: -167.5px;
+        margin-top: -210px;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        margin: 0 auto;
+        margin-left: -125px;
+     }
+    
+    section .right .login_t{
+        font-size: 30px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

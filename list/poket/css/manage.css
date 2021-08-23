@@ -1,0 +1,2683 @@
+@font-face {
+  font-family: ng;
+  src: url(../font/NanumGothic.eot) format('eot')
+}
+
+@font-face {
+  font-family: ng;
+  src: url(../font/NanumGothic.woff) format('woff')
+}
+
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #f2f3f6;
+}
+
+button, input{
+	outline: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+ul, ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+header{
+	width: 100%;
+	overflow: hidden;
+	height: 60px;
+}
+
+header .logo{
+	float: left;
+	margin-left: 40px;
+	margin-top: 13px;
+}
+header .title{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 60px;
+	color: #674fee;
+	margin-left: 5px;
+	display: block;
+	float: left;
+}
+
+header .btn-manage{
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+header .btn-manage button{
+	width: 80px;
+	height: 40px;
+	background-color: #674fee;
+	color: #fff;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 40px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+
+header .btn-manage button{
+	margin-left: 20px;
+}
+
+header .btn-manage button:hover{
+	background-color: #7b69e2;
+}
+
+.menu-manage{
+	width: 100%;
+    margin-top: 10px;
+}
+
+
+.menu-manage ul{
+	overflow: hidden;
+	margin-left: 200px;
+}
+
+
+.menu-manage li{
+	float: left;
+	background-color: #fff;
+	border-radius: 8px 8px 0px 0px;
+	margin-left: 20px;
+	position: relative;
+}
+
+
+.menu-manage li:hover::after,
+.menu-manage li.on::after{
+    width: 100%;
+    height: 3px;
+    content: "";
+    background-color: #674fee;
+    position: absolute;
+    bottom: 0px;
+}
+
+.menu-manage li:hover a,
+.menu-manage li.on a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+
+.menu-manage li a {
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    padding: 10px 30px;
+	display: block;
+}
+
+.root{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "ng",sans-serif;
+	color: #fff;
+	padding-left: 40px;
+	background-color: #674fee;
+}
+
+.root span{
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.root span:nth-child(2){
+	font-size: 12px;
+	margin: 0px 20px;
+}
+
+/* 유저 리스트 */
+
+
+.ul-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.ul-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.ul-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.ul-contents .left-tab li.on a,
+.ul-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.ul-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.ul-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.ul-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.ul-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.ul-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.ul-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+}
+
+
+.ul-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.ul-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.ul-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.ul-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ul-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.ul-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.ul-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.ul-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.ul-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+/* 유저 정지 리스트 */
+
+
+.udl-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.udl-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.udl-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.udl-contents .left-tab li.on a,
+.udl-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.udl-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.udl-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.udl-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.udl-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.udl-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.udl-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+}
+
+
+.udl-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.udl-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.udl-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.udl-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.udl-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.udl-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.udl-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.udl-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.udl-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 유저 상세 페이지*/
+
+
+
+.user-sangse{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.user-sangse .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.user-sangse .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.user-sangse .left-tab li.on a,
+.user-sangse .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.user-sangse .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.user-sangse .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.user-sangse .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+
+.user-sangse .dev-r .us-wrap{
+	width: 100%;
+}
+
+
+
+.user-sangse .dev-r .us-wrap .wrap{
+	width: calc( 20% - 2px );
+	float: left;
+	overflow: hidden;
+	border: 1px solid #d6d6d6;
+	border-right: none;
+	background-color: #fff;
+}
+
+
+.user-sangse .dev-r .us-wrap .wrap:nth-child(5n){
+	border-right: 1px solid #d6d6d6;
+}
+
+.user-sangse .dev-r .wrap div{
+	float: left;
+	font-size: 13px;
+	font-family: 'ng', sans-serif;
+	font-weight: 400;
+}
+
+.user-sangse .dev-r .wrap  .us-t{
+	width: 35%;
+	padding: 10px 0px;
+}
+
+.user-sangse .dev-r .wrap  .us-t span{
+	display: block;
+	padding-left: 10px;
+    text-align: center;
+}
+.user-sangse .dev-r .wrap  .us-c{
+	width: 65%;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.user-sangse .dev-r .wrap:nth-child(1),
+.user-sangse .dev-r .wrap:nth-child(2),
+.user-sangse .dev-r .wrap:nth-child(3),
+.user-sangse .dev-r .wrap:nth-child(4),
+.user-sangse .dev-r .wrap:nth-child(5){
+	border-bottom: none;
+}
+
+.user-sangse .dev-r .us-btn{
+	overflow: hidden;
+}
+
+
+.user-sangse .dev-r .us-btn button{
+	padding: 10px 15px;
+	background-color: #674fee;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+
+.user-sangse .dev-r .us-btn button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 유링크 게시판 리스트 */
+
+
+.ub-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.ub-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.ub-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.ub-contents .left-tab li.on a,
+.ub-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.ub-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.ub-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.ub-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.ub-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.ub-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ub-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.ub-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.ub-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.ub-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.ub-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.ub-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.ub-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.ub-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.ub-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ub-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.ub-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.ub-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.ub-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.ub-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 학교 게시판 리스트 */
+
+
+.sb-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.sb-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.sb-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.sb-contents .left-tab li.on a,
+.sb-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.sb-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.sb-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.sb-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+
+.sb-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sb-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.sb-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.sb-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.sb-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.sb-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.sb-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.sb-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.sb-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.sb-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sb-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.sb-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.sb-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.sb-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.sb-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 공부 QNA 리스트 */
+
+
+.stq-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.stq-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.stq-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.stq-contents .left-tab li.on a,
+.stq-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.stq-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.stq-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.stq-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.stq-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.stq-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.stq-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.stq-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.stq-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.stq-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.stq-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.stq-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.stq-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.stq-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.stq-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.stq-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.stq-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.stq-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.stq-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.stq-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+/* 학교 QNA 리스트 */
+
+
+.scq-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.scq-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.scq-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.scq-contents .left-tab li.on a,
+.scq-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.scq-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.scq-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.scq-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.scq-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.scq-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.scq-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.scq-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.scq-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.scq-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.scq-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.scq-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.scq-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.scq-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.scq-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.scq-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.scq-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.scq-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.scq-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.scq-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+
+/* 유링크 게시판 신고 리스트 */
+
+
+.rpu-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.rpu-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.rpu-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.rpu-contents .left-tab li.on a,
+.rpu-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.rpu-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.rpu-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.rpu-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.rpu-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.rpu-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+}
+
+.rpu-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.rpu-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.rpu-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.rpu-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.rpu-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.rpu-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.rpu-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.rpu-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.rpu-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rpu-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.rpu-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.rpu-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.rpu-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.rpu-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+
+
+
+
+/* 유링크 게시판 상세 */
+
+
+.rpu-sangse{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.rpu-sangse .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.rpu-sangse .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.rpu-sangse .left-tab li.on a,
+.rpu-sangse .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.rpu-sangse .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.rpu-sangse .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.rpu-sangse .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+
+.rpu-sangse .dev-r .us-btn{
+	overflow: hidden;
+}
+
+
+.rpu-sangse .dev-r .us-btn button{
+	padding: 10px 15px;
+	background-color: #674fee;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+
+.rpu-sangse .dev-r .us-btn button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 문의사항 리스트 */
+
+
+.fd-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.fd-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.fd-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.fd-contents .left-tab li.on a,
+.fd-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.fd-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.fd-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.fd-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.fd-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+
+.fd-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+}
+
+.fd-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.fd-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.fd-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.fd-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.fd-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.fd-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.fd-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.fd-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.fd-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fd-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.fd-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.fd-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.fd-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.fd-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+
+
+
+/* 문의사항 상세 */
+
+
+.fd-sangse{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.fd-sangse .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.fd-sangse .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.fd-sangse .left-tab li.on a,
+.fd-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.fd-sangse .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.fd-sangse .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.fd-sangse .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.fd-sangse .dev-r .us-btn{
+	overflow: hidden;
+}
+
+
+.fd-sangse .dev-r .us-btn button{
+	padding: 10px 15px;
+	background-color: #674fee;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+
+.fd-sangse .dev-r .us-btn button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+.fd-sangse .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+}
+.fd-sangse .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+.fd-sangse .dev-r table tr td div{
+	float: left;
+	margin-left: 40px;
+	font-weight: bold;
+}
+
+
+.fd-sangse .dev-r table tr td p{
+	margin: 40px;
+	word-break: break-all;
+	line-height: 20px;
+	min-height:  250px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 문의사항 리스트 */
+
+
+.sday-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.sday-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.sday-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.sday-contents .left-tab li.on a,
+.sday-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.sday-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.sday-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.sday-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.sday-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+.sday-contents .dev-r .join-num,
+.sday-contents .dev-r .visit-num{
+    font-size: 16px;
+    font-family: 'ng', sans-serif;
+    font-weight: 700;
+}
+
+
+.sday-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.sday-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.sday-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.sday-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.sday-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.sday-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.sday-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.sday-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.sday-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.sday-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sday-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.sday-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.sday-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.sday-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.sday-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+.sday-contents .dev-r .tab-static {
+	overflow: hidden;
+}
+
+
+.sday-contents .dev-r .tab-static  button{
+	padding: 10px 15px;
+	background-color: #b4b4b4;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.sday-contents .dev-r .tab-static  button.active,
+.sday-contents .dev-r .tab-static  button:hover{
+	background-color: #674fee;
+}
+
+
+.sday-contents .dev-r .tab-static  button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 문의사항 리스트 */
+
+
+.smonth-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.smonth-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.smonth-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.smonth-contents .left-tab li.on a,
+.smonth-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.smonth-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.smonth-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.smonth-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.smonth-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+.smonth-contents .dev-r .join-num,
+.smonth-contents .dev-r .visit-num{
+    font-size: 16px;
+    font-family: 'ng', sans-serif;
+    font-weight: 700;
+}
+
+
+.smonth-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.smonth-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.smonth-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.smonth-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.smonth-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.smonth-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.smonth-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.smonth-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.smonth-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.smonth-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.smonth-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.smonth-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.smonth-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.smonth-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.smonth-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+.smonth-contents .dev-r .tab-static {
+	overflow: hidden;
+}
+
+
+.smonth-contents .dev-r .tab-static  button{
+	padding: 10px 15px;
+	background-color: #b4b4b4;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.smonth-contents .dev-r .tab-static  button.active,
+.smonth-contents .dev-r .tab-static  button:hover{
+	background-color: #674fee;
+}
+
+
+.smonth-contents .dev-r .tab-static  button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+
+
+/* 문의사항 리스트 */
+
+
+.syear-contents{
+	width: 100%;
+	height: calc( 100% - 99px );
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.syear-contents .tab-title {
+    font-size: 18px;
+    font-family: "ng",sans-serif;
+    font-weight: 700;
+    text-align: center;
+	border-bottom: 2px solid #674fee;
+	padding-bottom: 20px;
+}
+
+.syear-contents .left-tab li a{
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+}
+
+.syear-contents .left-tab li.on a,
+.syear-contents .left-tab li:hover a{
+	color: #674fee;
+	font-weight: 700;
+}
+
+.syear-contents .dev-l{
+	padding: 20px;
+	width: 140px;
+	margin-left:  10px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: #fff;
+	float: left;
+}
+
+
+.syear-contents .dev-l ul li{
+	margin-top: 15px;
+}
+
+
+
+.syear-contents .dev-r{
+	float: left;
+	margin-left: 40px;
+	width: 1100px;
+}
+
+.syear-contents .dev-r select {
+    width: 130px;
+    height: 39px;
+    cursor: pointer;
+    display: block;
+    padding-left: 16px;
+    background: url(../img/common/time-arrow.png) no-repeat 100px;
+    background-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    bottom: 0;
+    font-size: 15px;
+    font-family: "ng",sans-serif;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+}
+
+.syear-contents .dev-r .join-num,
+.syear-contents .dev-r .visit-num{
+    font-size: 16px;
+    font-family: 'ng', sans-serif;
+    font-weight: 700;
+}
+
+
+.syear-contents .dev-r table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+	margin-top: 20px;
+}
+
+.syear-contents .dev-r table tr{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6d6d6;
+    background-color: #fff;
+	cursor: pointer;
+}
+
+
+.syear-contents .dev-r table tr a:hover{
+	color: #674fee;
+}
+
+.syear-contents .dev-r table tr td.title{
+	width: 250px;
+}
+.syear-contents .dev-r table tr td.title span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 210px;
+	font-family: 'ng', sans-serif;
+}
+
+
+.syear-contents .dev-r table tr td.context{
+	width: 400px;
+}
+
+.syear-contents .dev-r table tr td.context span{
+	display: block;
+	margin: 0px 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 340px;
+	font-family: 'ng', sans-serif;
+}
+
+.syear-contents .dev-r table tr td button{
+	background-color: #674fee;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.syear-contents .dev-r table tr td button:hover{
+	background-color: #7b69e2;
+}
+
+
+.syear-contents .dev-r .page_btn{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.syear-contents .dev-r .page_btn a{
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    line-height: 29px;
+}
+.syear-contents .dev-r .page_btn a:hover{
+    font-weight: 500;
+	color: #674fee;
+}
+.syear-contents .dev-r .page_btn a.active{
+    font-weight: 500;
+	color: #674fee;
+}
+
+.syear-contents .dev-r .page_btn a img{
+    display: block;
+}
+
+.syear-contents .dev-r .page_btn a img{
+    border:1px solid #e9e9e9;
+}
+
+
+.syear-contents .dev-r .tab-static {
+	overflow: hidden;
+}
+
+
+.syear-contents .dev-r .tab-static  button{
+	padding: 10px 15px;
+	background-color: #b4b4b4;
+    font-size: 13px;
+    font-family: 'ng', sans-serif;
+    font-weight: 500;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.syear-contents .dev-r .tab-static  button.active,
+.syear-contents .dev-r .tab-static  button:hover{
+	background-color: #674fee;
+}
+
+
+.syear-contents .dev-r .tab-static  button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+
+
+.error-c .contents{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(--50%);
+    -moz-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.error-c .icon{
+    width: 110px;
+    margin: auto;
+}
+
+.error-c .icon img{
+	width: 100%;
+}
+
+.error-c .text01{
+    margin-top: 10px;
+    font-size: 31px;
+    font-weight: 600;
+    color: #727272;
+}
+.error-c .text02{
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #727272;
+}
+.error-c .button{
+    width: 120px;
+    padding: 10px;
+    margin: 40px auto;
+    background-color: #674fee;
+    font-size: 18px;
+    font-weight: 600;
+	border-radius: 8px;
+}
+.error-c .button a{
+    color: white;
+}
+
+
+.error-c .button:hover{
+	background-color: #7b69e2;
+}
+
+
+
+
+@media screen and (max-width:1300px){
+	
+	.error-c .icon {
+		width: 90px;
+		margin: auto;
+	}
+
+	.error-c .icon img{
+		width: 100%;
+	}
+
+	.error-c .text01{
+		font-size: 24px;
+	}
+	.error-c .text02{
+		font-size: 17px;
+	}
+	.error-c .button{
+		width: 100px;
+		font-size: 16px;
+	}
+}
+
+
+
+@media screen and (max-width:900px){
+	
+	.error-c .icon {
+		width: 80px;
+		margin: auto;
+	}
+
+	.error-c .text01{
+		font-size: 19px;
+	}
+	.error-c .text02{
+		font-size: 13px;
+	}
+	.error-c .button{
+		width: 90px;
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (max-width:640px){
+	
+	.error-c .icon {
+		width: 70px;
+		margin: auto;
+	}
+
+	.error-c .text01{
+		font-size: 17px;
+	}
+	.error-c .text02{
+		font-size: 12px;
+	}
+	.error-c .button{
+		width: 60px;
+		font-size: 12px;
+	}
+	
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8">
+    <title>코비인사이트(주)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/menu.js"></script>
+</head>
+<body> 
+    <header class="sector" style="position: absolute;">
+        
+        <div class="header-t">
+            <div class="h_wrap">
+                <div class="gnb">
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li>
+                                <a href="./sitemap.html">사이트맵</a>
+                            </li>
+                            <li>
+                                <a href="./join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">로그인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo" onclick='location.href="../main.html"'>
+                    <img src="../img/logo_w.png" alt="">
+                </div>
+                <div class="menu_b">
+                    <ul>
+                        <li class="off-item">
+                            <a class="big_m"  href="./about.html">About Us</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./about.html#about_1">회사소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_2">미션&비전</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_3">CI스토리</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_4">조직도</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_5">오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m  on" href="./business.html">Buiness Area</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./business.html#busi_1">비즈니스 특징</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_2">차별화</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_3">비즈니스 영역</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./factory_1.html">Business Factory</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./factory_1.html">진행현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_2.html">컨설팅 사례</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_3.html">상담실(Q&A)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_4.html">FACTORY(자료실)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_5.html">공작소(자료제작)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./info_1.html">Information</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./info_1.html">이용안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="./info_2.html">공지사항</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-b"></div>
+    </header>
+    <div id="navbar" class="busi_tab">
+        <div class="at-wrap">
+            <a href="../main.html" class="home">
+                <img class="" src="../img/sub/home.png" alt="">
+            </a>
+            <a class="dot active" data-scroll="busi_1" href="#busi_1">비즈니스 특징</a>
+            <a class="dot" data-scroll="busi_2" href="#busi_2">차별화</a>
+            <a class="dot" data-scroll="busi_3" href="#busi_3">비즈니스 영역</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="side_bar">
+            <ul>
+                <li>
+                    <p>KOBIINSIGHT</p>
+                </li>
+                <li>
+                    <a href="./consult_login.html">컨설팅<br />의뢰</a>
+                </li>
+                <li>
+                    <a href="./factory_3.html">문의하기<br />(Q&A)</a>
+                </li>
+                <li>
+                    <a href="http://cafe.naver.com/kobiinsight"  target="_blank">카페<br />바로가기</a>
+                </li>
+                <li>
+                    <a class="goTop" href="javascript:;">
+                        <img src="../img/sub/goTop.png" alt="">
+                    </a>
+                </li>
+            </ul>  
+        </div>
+        <div class="busi_ban">
+             <p class="busib_title">
+                 A VARIETY OF INTEGRATED SOLUTION
+             </p>
+             <p class="busi_ko">
+                 다양한 분야의 컨설팅 경험으로 통합 컨설팅을 제공합니다
+             </p>
+        </div>
+    <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <div id="busi_1" class="busi_car page-section sector">
+            <div class="busi_title">
+                <p>Characteristic</p>
+            </div>
+            <div class="bnc_cont">
+                <p class="bnc_ment">
+                    이제 코비인사이트에서 비즈니스의 모든 현안들을 <span class="bold">검토단계</span>부터 <span class="bold">실행,마무리</span>까지<br />
+                    <span class="blue">컨설팅의 전 과정</span>을 일목요연하게 <span class="blue">검증</span>해 드리겠습니다.
+                    <br />
+                    <span class="bold2">가지급금 정리, 이익금 회수, 가업승계, 법인세 감면, 기업인증 등 </span>누구나 할 수 있다고 이야기 합니다.
+                </p>
+                <p class="if">만약,</p>
+                <div class="ment_listl">
+                    <ul>
+                        <li><span class="bold">사내복지기금</span>과 <span class="bold">비영리법인</span>을 설립하고 싶을 때</li>
+                        <li><span class="bold">특수목적법인</span>을 설립하고 싶을 때</li>
+                        <li><span class="bold">병역특례업체</span>지정을 통해 <span class="bold">고용인원</span>과 <span class="bold">지원금</span>을 받고 싶을 때</li>
+                        <li><span class="bold">해외 현지 법인 설립</span>과 관련한 문제와 <span class="bold">국내 인증 절차</span>를 진행하고 싶을 때</li>
+                        <li>해외에서 생산된 마스크를 <span class="bold">수입, 인증, 통신판매</span>를 하고 싶을 때</li>
+                        <li><span class="bold">외부 감사없이</span>회사를 운영하고 싶을 </li>
+                    </ul>
+                </div>
+                <div class="ment_listr">
+                    <ul>
+                        <li>입찰, 협력업체 등록을 위한<span class="bold">신용평가등급</span>을 산출하고 싶을 때</li>
+                        <li>중요한 <span class="bold">사업계획서</span>나 <span class="bold">회사소개서</span>를 제작하고 싶을 때</li>
+                        <li><span class="bold">역합병</span>을 통해 완전 모회사와 자회사를 구성하고 싶을 때</li>
+                        <li>민사신탁을 통해 <span class="bold">상속·증여, 지분정리</span>를 하고 싶을 때</li>
+                        <li><span class="bold">과납부한 법인세</span>를 합법적으로 문제없이 환급 받고 싶을 때</li>
+                        <li><span class="bold">기업부설 연구소</span>의 연구 방향성과 관리가 필요 할 때 </li>
+                    </ul>
+                </div>
+                <p class="bnc_bot">
+                    누구나 할 수 있는 것들 뿐만 아니라, 고객사가 원하는 모든 일을 수행할 수 있는,<br />다양한 경험과 도전정신을 가지고 있는 <span class="bold">코비인사이트</span>가 여러분을 기다립니다. 
+                </p>
+            </div>
+        </div>
+        <div id="busi_2" class=" page-section sector">
+            <img src="../img/sub/bu2_img.png" alt="" class="bu2_img">
+            <div class="busi_title">
+                <p>Differentiation</p>
+            </div>
+            <p class="b2_ment">
+                더 이상 망설이고 불안해하실 필요가 없습니다!
+            </p>
+            <div class="bu2_box">
+                <div class="bu2_boxw">
+                    <div class="bu2w_l">
+                        <p class="bu2l-t">
+                            CLIENT
+                        </p>
+                        <p class="bu2l-c">
+                            필요할 때마다 전문가를 찾기 위해, 검증하기 위해,<span class="bold">소비되는 탐색비용</span>
+                        </p>
+                    </div>
+                    <div class="bu2w_r">
+                        <p class="bu2r-t">
+                            코비인사이트
+                        </p>
+                        <p class="bu2r-c">
+                            집단지성으로<br />계획>실행>모니터링
+                        </p>
+                        <p class="bu2r-c2">
+                            복합적인, 맞춤형 컨설팅
+                        </p>
+                        <p class="bu2r-c3">
+                            CLIENT
+                        </p>
+                    </div>
+                </div>
+                <p class="img_bfont">이제는 다양한 경험을 <span class="bold">축적-확대 재생산</span>하여 고객사마다<br /><span class="bold">맞춤형 컨설팅</span>을 제공하는 코비인사이드에서 해결하실 수 있습니다.</p>
+                
+            </div>
+        </div>
+        <div id="busi_21" class="sector">
+            <div class="b2_bottom">
+                    <p class="b2b_b">컨설팅은 <span class="bold">Single</span>이 아닌<span class="bold">Complex</span>한 혼합과정이 필연적으로 발생합니다.<br />코비인사이트는 분야별 담당자의 <span class="bold">협업-실행-사후관리</span>로 고객사마다 <span class="bold">Customizing</span>하고 있습니다.</p>
+                    <p class="ex-title"><span class="bold">Ex) 증여 받은 주식의 이익소각 진행</span></p>
+                    <div class="ex_1">
+                        <ul>
+                            <li class="ex1-rb">
+                                <div class="circle"><span>플랜검토<br/>세금계산</span></div>
+                                <span class="cir-t">세무/법무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-lb">
+                                <div class="circle"><span>비상장<br/>주식평가</span></div>
+                                <span class="cir-t">세무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-rb">
+                                <div class="circle"><span>통일주권<br/>발행</span></div>
+                                <span class="cir-t">법무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-lb">
+                                <div class="circle"><span>증여<br/>실행</span></div>
+                                <span class="cir-t">세무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-rb">
+                                <div class="circle"><span>자기주식<br/>취득</span></div>
+                                <span class="cir-t">법무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-lb">
+                                <div class="circle"><span>이익소각<br/>/등기</span></div>
+                                <span class="cir-t">법무</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p class="ex2-title"><span class="bold">Ex) 연구인력개발비 경정청구</span></p>
+                    <div class="ex_2">
+                        <ul>
+                            <li class="ex1-rb">
+                                <div class="circle"><span>세액환급<br/>검토</span></div>
+                                <span class="cir-t">세무/인증</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-lb">
+                                <div class="circle"><span>연구소<br/>현황검토</span></div>
+                                <span class="cir-t">인증</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-rb">
+                                <div class="circle"><span>필요서류<br/>취합</span></div>
+                                <span class="cir-t">세무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-lb">
+                                <div class="circle"><span>연구소<br/>서류보완</span></div>
+                                <span class="cir-t">인증</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-rb">
+                                <div class="circle"><span>신청서<br/>작성</span></div>
+                                <span class="cir-t">세무</span>
+                            </li>
+                            <li class="ex1-ad">
+                                <img src="../img/sub/dot_arrow.png" alt="">
+                            </li>
+                            <li class="ex1-lb">
+                                <div class="circle"><span>후속<br/>관리</span></div>
+                                <span class="cir-t">세무</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div id="busi_3" class="page-section sector">
+            <div class="busi_title">
+                <p>Business Area</p>
+            </div>
+            <div class="busil-wrap">
+                <div class="busi3-t">
+                    <ul>
+                        <li>
+                            <span>법인영역</span>
+                        </li>
+                        <li>
+                            <span>CEO영역</span>
+                        </li>
+                        <li>
+                            <span>개인영역</span>
+                        </li>
+                    </ul>
+                </div>  
+                <div class="busi_l1">
+                    <div class="bl1-t">
+                        <p>세무분야</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <p><span class="hypen">-</span> 세무 관련 검토의견</p>
+                            <p><span class="hypen">-</span> 법인세 세액공제·감면 경정청구</p>
+                            <p><span class="hypen">-</span> 모의 세무 진단/조세불복</p>
+                            <p><span class="hypen">-</span> 기업가치평가</p>
+                            <p><span class="hypen">-</span> 기업 신용등급 관리</p>
+                            <p><span class="hypen">-</span> 매출채권, 재고자산 등의 세무관리</p>
+                            <p><span class="hypen">-</span> 외무감사 전략수립</p>
+                            <p><span class="hypen">-</span> 인수합병을 위한 기업가치 평가</p>
+                        </li>
+                        <li>
+                            <p><span class="hypen">-</span> 각종 세금검토, 절세전략</p>
+                            <p><span class="hypen">-</span> 적정 보수설계 <span class="small">(급여,배당,성과급)</span></p>
+                            <p><span class="hypen">-</span> 가지급금 / 가수금 정리</p>
+                            <p><span class="hypen">-</span> 특허권 매각</p>
+                            <p><span class="hypen">-</span> 자기주식 취득, 이익소각</p>
+                            <p><span class="hypen">-</span> 가업승계</p>
+                            <p><span class="hypen">-</span> 지배구조 개선<span class="small">(경영권 방어)</span></p>
+                            <p><span class="hypen">-</span> 개인사업 법인전환</p>
+                            <p><span class="hypen">-</span> 사업실패 및 사업청산 대비 솔루션</p>
+                        </li>
+                        <li>
+                            <p><span class="hypen">-</span> 상속/증여 플랜 수립</p>
+                            <p><span class="hypen">-</span> 자금출처 확보플랜 수립</p>
+                            <p><span class="hypen">-</span> 금융자산관리 플랜 수립</p>
+                            <p><span class="hypen">-</span> 개인부동산 관련 컨설팅</p>
+                            <p><span class="hypen">-</span> 기타 각종 법무상담</p>
+                            <p><span class="hypen">-</span> 산업재산권 출원<span class="small">(특허, 디자인, 상표권)</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="busi_l2">
+                    <div class="bl2-t">
+                        <p>법무분야</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <p><span class="hypen">-</span> 정관 및 부속규정 제도정비 및 이력관리</p>
+                            <p><span class="hypen">-</span> 상업등기사항 관리</p>
+                            <p><span class="hypen">-</span> 각종 인허가 검토 및 진행</p>
+                            <p><span class="hypen">-</span> 각종 계약서 검토</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="busi_l3">
+                    <ul>
+                        <li>
+                            <div class="bl3-t">
+                                <p>노무분야</p>
+                            </div>
+                            <p><span class="hypen">-</span> 노무진단 및 제규정 수립</p>
+                            <p><span class="hypen">-</span> 근로계약서 및 임금테이블 갱신<span class="small">(매년)</span></p>
+                            <p><span class="hypen">-</span> 노무 지원금 검토/실행</p>
+                            <p><span class="hypen">-</span> 취업규칙 등 신고 대행</p>
+                            <p><span class="hypen">-</span> 핵심인재 관리 및 성과제도 수립</p>
+                        </li>
+                        <li>
+                            <div class="bl3-t">
+                                <p>인증분야</p>
+                            </div>
+                            <p><span class="hypen">-</span> 기업부설 연구소 설립/변경/제신고<br /><br />+연구인력개발비 세액공제 필수 서류<br /><br />관리</p>
+                            <p><span class="hypen">-</span> 각종 인증<span class="small">(이노비즈, 벤처기업, 메인비즈, <br /><br />ISO, 뿌리기업, 스마트공장, NET/NEP 인증 등)</span></p>
+                        </li>
+                        <li>
+                            <div class="bl3-t">
+                                <p>기타분야</p>
+                            </div>
+                            <p><span class="hypen">-</span> 합병 및 분할 전략 수립</p>
+                            <p><span class="hypen">-</span> 완전 모자회사 구성을 통한 배당세 "0"</p>
+                            <p><span class="hypen">-</span> 직무발명보상 제도 수립</p>
+                            <p><span class="hypen">-</span> IPO,M&A 분할 등 IB영역</p>
+                            <p><span class="hypen">-</span> 법인부동산 관련 컨설팅</p>
+                            <p><span class="hypen">-</span> 각종 디자인 지원<span class="small">(로고/제품 및 포장 디자인,<br /> 회사소개서)</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="sector">
+        <div class="foot-wrap">
+            <ul>
+                <li>
+                    <span>
+                        코비인사이트 주식회사
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        서울특별시 강남구 테헤란로 82길 14, 4층 ( 대치동 청풍빌딩 )
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        사업자 등록번호 : 301-88-00046
+                    </span>
+                    <span>
+                        대표전화 : 02-2088-8102
+                    </span>
+                    <span>
+                        팩스번호 : 02-2088-8105
+                    </span>
+                    <span>
+                        이메일 : contact@koiinsight.co.kr
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Copyright ⓒ 2020 KOBI INSIGHT All Right Reserved.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </footer> 
+    
+    
+    <script>
+        (function() {
+          var delay = false;
+
+          $(document).on('mousewheel DOMMouseScroll', function(event) {
+            event.preventDefault();
+            if(delay) return;
+
+            delay = true;
+            setTimeout(function(){delay = false},200)
+
+            var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+
+            var a= document.getElementsByClassName('sector');
+            if(wd < 0) {
+              for(var i = 0 ; i < a.length ; i++) {
+                var t = a[i].getClientRects()[0].top;
+                if(t >= 40) break;
+              }
+            }
+            else {
+              for(var i = a.length-1 ; i >= 0 ; i--) {
+                var t = a[i].getClientRects()[0].top;
+                if(t < -20) break;
+              }
+            }
+
+            if(i >= 0 && i < a.length) {
+              $('html,body').animate({
+                scrollTop: a[i].offsetTop
+              });
+            }
+          });
+        })();
+        console.clear();
+    </script>
+</body>
+</html>

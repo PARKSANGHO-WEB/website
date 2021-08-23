@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+</head>
+<body> 
+    <header class="myp-header">
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./class_my.html">수업</a>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="javascript:;"  class="receive-btn">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"  class="receive-btn">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"  class="receive-btn">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"  class="receive-btn">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"  class="receive-btn">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a class="on" href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    <!--  상단 박스  -->
+    <section class="mypage">
+        <div class="my-wrap">
+            <div class="my-tab">
+                <div class="my-left">
+                   
+                    <div class="my-top">
+                        <div class="my-info">
+                            <div class="my-profile">
+                                <button class="image-change">
+                                    <img src="../img/common/btn_profile_img_change.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="my-nick">
+                                <span class="nickname change-nick">닉네임
+                                </span>
+                                <p class="info-school">한양대 서울캠 18학번</p>
+                            </div>
+                        </div>
+                        <!--       각 버튼 클릭시 해당하는 모달 팝업         -->
+                        <div class="modi-btn">
+                            <button class="change-info" type="button">정보변경</button>
+                            <button class="school-certy" type="button">학교인증</button>
+                        </div>
+                    </div>
+                    <!--         좌측 상단 탭 버튼           -->
+                    <div class="my-ltop">
+                        <p class="myl-title">나의 활동 내역</p>
+                        <ul>
+                            <li id="message" href="#message" class="active ">쪽지함 보기</li>
+                            <li class="" href="#scrap" id="scrap">스크랩 게시글</li>
+                            <li class="" href="#my-qna" id="my-qna">나의 활동 (Q&A)</li>
+                            <li class="" href="#my-board" id="my-board">나의 활동 (게시판)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--      쪽지함 탭컨텐츠          -->
+                <div class="my-right" href="#message">
+                    <form action="#">
+                        <div class="mr1-btn">
+                            <ul>
+                                <li class="active">받은 쪽지함</li>
+                                <li>보낸 쪽지함</li>
+                            </ul>
+                        </div>
+                        <div class="mr1-con">
+                            <div class="message-wrap content-rd">
+                                <ul>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                    <li class="mp-mess">
+                                        <div class="mrline1">
+                                            <span class="mrt">보낸사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">받은 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span> 
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="message-wrap content-rd">
+                                <ul>
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="mrline1">
+                                            <span class="mrt">받은사람</span>
+                                            <span class="send-p">
+                                                <span class="profile-univ univH"></span>
+                                                <span class="profile-nick">너구리</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline2">
+                                            <span class="mrt">보낸 날짜</span>
+                                            <span class="send-p">
+                                                <span class="profile-nick">2020-12-24</span>
+                                            </span>
+                                        </div>
+                                        <div class="mrline3">
+                                            <span class="mrt">내용</span>
+                                            <span class="mr3-text">
+                                                쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!--      스크랩한 게시글 탭컨텐츠          -->
+                <div class="my-right">
+                   <form action="#">
+                        <div class="scrap-wrap content-rd">
+                            <ul>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li onClick="location.href='./board.html'">
+                                    <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                    <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                    <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                    <span class="scrap-like">
+                                        <span class="sl-img">
+                                            <img src="../img/common/ic_likecount.svg" alt="">
+                                            <span class="scrap-num">1</span>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <!--        유저가 작성한 qna 게시판 카테고리별 탭        -->
+                
+                <div class="my-right">
+                    <form action="#">
+                        <div class="mr3-btn">
+                            <ul>
+                                <li class="active">작성글(질문)</li>
+                                <li>작성글(답변)</li>
+                                <li>답변 알림</li>
+                                <li>좋아요</li>
+                            </ul>
+                        </div>
+                        <div class="mr3-con content-rd">
+                            <div class="acti-wrap">
+                                <ul>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="acti-wrap">
+                                <ul>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="acti-wrap">
+                                <ul>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="acti-wrap">
+                                <ul>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                    <li class="actline1">
+                                        <div class="actl-left">
+                                            <div class="act-title">
+                                                <img src="../img/common/qna_ic_answer.svg" alt="">
+                                                <span>고대 2016 미적2 3차문제 도와주세요!</span>
+                                            </div>
+                                            <span class="act-con">너무 문제가 어려워서 풀 수가 없네요...ㅠㅠㅠ</span>
+                                            <span class="act-info">
+                                                <span class="time">3/30</span><span class="dot">·</span><span class="lec-tag">#미적분학 연습</span>
+                                            </span>
+                                        </div>
+                                        <div class="actl-right">
+                                            답변
+                                            <span class="an-num">10</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!--       유저가 작성한 게시판 카테고리별 리스트         -->
+                <div class="my-right">
+                    <form action="#">
+                        <div class="mr4-btn">
+                            <ul>
+                                <li class="active">작성글</li>
+                                <li>댓글</li>
+                                <li>좋아요</li>
+                            </ul>
+                        </div>
+                        <div class="mr4-con">
+                            <div class="acboard-wrap  content-rd">
+                                <ul>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="acboard-wrap  content-rd">
+                                <ul>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div><div class="acboard-wrap  content-rd">
+                                <ul>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 학교 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="scrap-position">게시판 > 유링크 게시판</span>
+                                        <span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+                                        <span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+                                        <span class="scrap-like">
+                                            <span class="sl-img">
+                                                <img src="../img/common/ic_likecount.svg" alt="">
+                                                <span class="scrap-num">1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+        <!--    마이페이지에서만 클릭시, 해당하는 탭이 클릭되는 효과 적용    -->
+    
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+        <script>
+
+
+            $(document).ready(function(){
+
+                $(".content-rd").mCustomScrollbar({
+                        theme:"light-3"
+                    });
+                });
+        </script>
+   
+    <!--  상단 4종 버튼 모달  -->
+   
+    <div class="nick-wrap myp-modal">
+        <div class="nick-content">
+            <div class="nick-modal">
+                <div class="nick-title">
+                    <p>닉네임 수정</p>
+                </div>
+                <div class="close">
+                    <a href="javascript:;" class="close tm-close"></a>
+                </div>
+                <form action="#">
+                    <div class="nick-con">
+                        <div class="now-nick">
+                            <span class="my-nick">닉네임</span>
+                        </div>
+                        <p>새 닉네임</p>
+                        <div class="nick-put">
+                            <input type="text" minlength="2" maxlength="16" placeholder="닉네임을 입력해주세요.">
+                            <button class="reduple">중복확인</button>
+                        </div>
+                    </div>
+                    <div class="nick-mbtn">
+                        <button class="nick-okay" type="button">변경</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="info-wrap myp-modal">
+        <div class="info-content">
+            <div class="info-modal">
+                <div class="info-title">
+                    <p>회원정보변경</p>
+                </div>
+                <div class="close">
+                    <a href="javascript:;" class="close tm-close"></a>
+                </div>
+                <form action="#">
+                    <div class="info-con">
+                        <span>학과변경</span>
+                        <div class="info-put">
+                            <input type="text"placeholder="학과명을 입력해 주세요.">
+                        </div>
+                        <span>비밀번호변경 </span>
+                        <p>현재비밀번호</p>
+                        <div class="info-put">
+                            <input type="password" minlength="2" maxlength="16" placeholder="현재 비밀번호를 입력해주세요.">
+                        </div>
+                        <p>새 비밀번호</p>
+                        <div class="new-put">
+                            <input type="password" minlength="6" placeholder="새 비밀번호를 입력해주세요.">
+                            <input type="password" minlength="6" placeholder="새 비밀번호를 다시 한번 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="info-mbtn">
+                        <button class="info-okay" type="button">변경</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="school-wrap myp-modal">
+        <div class="school-content">
+            <div class="school-modal">
+                <div class="school-title">
+                    <p>학교정보 인증</p>
+                </div>
+                <div class="close">
+                    <a href="javascript:;" class="close tm-close"></a>
+                </div>
+                <form action="#">
+                    <div class="school-con">
+                        <p>학교 이메일</p>
+                        <div class="school-put">
+                            <input type="text" minlength="2" maxlength="16" placeholder="user@ulink.ac.kr">
+                            <button class="reduple">인증 요청</button>
+                        </div>
+                        <p>인증번호</p>
+                        <div class="code-put">
+                            <input type="text" minlength="2" maxlength="16" placeholder="인증코드를 입력해주세요.">
+                            <button class="reduple">확인</button>
+                        </div>
+                    </div>
+                    <div class="school-mbtn">
+                        <button class="school-okay" type="button">변경</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="profile-wrap myp-modal">
+        <div class="profile-content">
+            <div class="profile-modal">
+                <div class="profile-title">
+                    <p>프로필 이미지 변경</p>
+                </div>
+                <div class="close">
+                    <a href="javascript:;" class="close tm-close"></a>
+                </div>
+                <form action="#">
+                    <div class="profile-con">
+                        <div class="now-profile">
+                            <span class="my-profile"></span>
+                        </div>
+                        <div class="profile-put">
+                            <div class="file-input">
+                                <input type="file" maxlength="10" required="no" message="기타 첨부자료" name="file_1" id="file_1">
+                                <span class="button">파일선택</span>
+                                <span class="label" data-js-label="">선택된 파일 없음</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-mbtn">
+                        <button class="profile-okay" type="button">변경</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="receive-m"  href="#receive" class="receive-wrap myp-modal">
+        <div class="receive-content">
+            <div class="receive-modal nav-item nav-link" href="#receive">
+                <form action="#">
+                    <div class="receive-con">
+                <div class="receive-title">
+                    <p>받은 쪽지</p>
+                </div>
+                <div class="close">
+                    <a href="javascript:;" class=" tm-close"></a>
+                </div>
+						<div class="mrline1">
+							<span class="mrt">보낸사람</span>
+							<span class="send-p">
+								<span class="profile-univ univH"></span>
+								<span class="profile-nick">너구리</span>
+							</span>
+						</div>
+						<div class="mrline2">
+							<span class="mrt">받은 날짜</span>
+							<span class="send-p">
+								<span class="profile-nick">2020-12-24</span>
+							</span>
+						</div>
+						<div class="mrline3">
+							<span class="mrt">내용</span>
+							<span class="mr3-text">
+								쪽지 드렸습니다.<br />저희 학교에 오셔서 한번 토론하는 시간을 가져보아도 좋을 것 같아요.
+							</span> 
+						</div>
+						<div class="profile-mbtn">
+							<button class="profile-okay" type="button">답장</button>
+						</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mess-modal">
+        <div class="mess-con">
+                <div class="mess-title">
+                    쪽지보내기
+                </div>
+                <div class="close">
+                    <a href="javascript:;" class="mm-close"></a>
+                </div>
+            <form action="#">
+                <div class="msc1-wrap">
+                    <span class="msc-title">받는사람</span>
+                    <span class="for-id">너구리</span>
+                </div>
+                <div class="msc2-wrap">
+                    <span class="msc-title">내용</span>
+                    <textarea name="for-mess" id="for-mess" ></textarea>
+                </div>
+                <div class="go-mess">
+                    <button type="button">보내기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

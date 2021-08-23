@@ -1,0 +1,364 @@
+
+
+.totop {
+    display: none;
+}
+.totop img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    cursor: pointer;
+    float: right;
+}
+
+#container{
+  height: 900px;
+}
+footer{
+    width: 100%;
+    background: url('../img/common/foot_back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0px;
+    margin-top: 60px;
+    position: relative;
+}
+
+footer .foot_wrap{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer ul li{
+    float: left;
+}
+
+footer ul li:nth-child(1),
+footer ul li:nth-child(2){
+    width: 400px;
+}
+
+footer ul li:nth-child(2) {
+    width: 300px;
+}
+
+footer ul li:nth-child(3){
+    width: 500px;
+}
+
+footer ul .logo img{
+    width: 300px;
+}
+
+footer ul li .f-title{
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:800;
+    color: #ff0000;
+}
+
+
+footer ul li p {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:200;
+    color: #fff;
+}
+
+footer ul li p span{
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:800;
+    color: #ff0000;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+footer ul li:nth-child(3) p{
+    margin-top: 2px;
+}
+
+footer ul li:nth-child(3) p span{
+    display: inline-block;
+    padding: 0px 5px;
+    color: #ff0000;
+}
+
+footer ul li:nth-child(3) p:nth-child(4) {
+    color: #959595
+}
+
+
+
+@media screen and (max-width:1280px) {
+
+    footer {
+        background-size: 100% 100%;
+    }
+    
+    footer .foot_wrap{
+        width: 850px;
+    }
+
+    footer ul li{
+        float: left;
+    }
+
+    footer ul li:nth-child(1),
+    footer ul li:nth-child(2){
+        width: 240px;
+    }
+
+    footer ul li:nth-child(2){
+        width: 150px;
+    }
+    
+    
+    footer ul li:nth-child(3){
+        width: 428px;
+        margin-left: 32px;
+    }
+
+    footer ul .logo img{
+        width: 200px;
+    }
+
+    footer ul li .f-title{
+        font-size: 17px;
+    }
+
+
+    footer ul li p {
+        font-size: 13px;
+    }
+
+    footer ul li p span{
+        font-size: 14px;
+    }
+
+    footer ul li:nth-child(3) p{
+        margin-top: 2px;
+    }
+
+    footer ul li:nth-child(3) p span{
+        display: inline-block;
+        padding: 0px 5px;
+        color: #ff0000;
+    }
+
+    footer ul li:nth-child(3) p:nth-child(4) {
+        color: #959595
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+
+    footer {
+        background-size: 100% 100%;
+    }
+    
+    footer .foot_wrap{
+        width: 600px;
+    }
+
+    footer ul li{
+        float: left;
+    }
+
+    footer ul li:nth-child(1),
+    footer ul li:nth-child(2){
+        width: 240px;
+    }
+
+    footer ul li:nth-child(2){
+        width: 150px;
+    }
+    
+    
+    footer ul li:nth-child(3){
+        width: 428px;
+        margin-left: 240px;
+        margin-top: 20px;
+    }
+
+    footer ul .logo img{
+        width: 200px;
+    }
+
+    footer ul li .f-title{
+        font-size: 17px;
+    }
+
+
+    footer ul li p {
+        font-size: 12px;
+    }
+
+    footer ul li p span{
+        font-size: 13px;
+    }
+
+    footer ul li:nth-child(3) p{
+        margin-top: 2px;
+    }
+
+    footer ul li:nth-child(3) p span{
+        display: inline-block;
+        padding: 0px 5px;
+        color: #ff0000;
+    }
+
+    footer ul li:nth-child(3) p:nth-child(4) {
+        color: #959595
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+    
+    
+    footer .foot_wrap{
+        width: 95%;
+        height: 143px;
+        position: relative;
+        z-index: 99;
+    }
+    footer ul .logo img {
+        width: 160px;
+        margin: 0 auto;
+        display: block;
+        margin: 0 auto;
+    }
+    footer ul li:nth-child(2){
+        float: none;
+        width: 100%;
+        padding-top: 20px;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+    
+    footer ul li .f-title{
+        display: none;
+    }
+    
+    footer ul li:nth-child(3){
+        float: none;
+        width: 295px;
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 0px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+
+    footer ul li:nth-child(2) p{
+        float: left;
+    }
+    
+    footer ul li:nth-child(2) span {
+        float: left;
+    }
+    
+    
+    footer ul li:nth-child(2) p span {
+        margin-left: 12px;
+    }
+
+    footer ul li:nth-child(3) p{
+        float: none;
+        text-align: center;
+        margin-left: 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    footer ul li:nth-child(3) p:nth-child(4){
+        margin-left: 0px;
+    }
+    
+    
+    footer ul li:nth-child(3) p:nth-child(3){
+        margin-left: 0px;
+    }
+    
+    footer ul li:nth-child(3) p:nth-child(3) span{
+        float: none;
+        margin-left: 0px;
+    }
+    
+    footer ul li:nth-child(3) p{
+        float: left;
+        margin-left: 0px;
+    }
+    
+    footer ul li:nth-child(3) span {
+        float: left;
+    }
+    
+    
+    footer ul li:nth-child(3) p span {
+        margin-left: 20px;
+    }
+    
+    footer ul li:nth-child(1), 
+    footer ul li:nth-child(2) {
+        width: 100%;
+    }
+    
+     
+    footer ul li:nth-child(2) {
+        width: 220px;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    footer ul li:nth-child(3) p:nth-child(4){
+        margin-top: 20px;
+    }
+    
+    footer ul li:nth-child(2) {
+        
+    }
+    
+    footer ul li .f-title {
+        font-size: 11px;
+    }
+    footer ul li p {
+        font-size: 11px;
+    }
+    footer ul li p span {
+        font-size: 11px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+

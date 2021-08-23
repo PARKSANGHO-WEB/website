@@ -1,0 +1,86 @@
+d<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.1">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body class="join-find"> 
+    <section class="join4_wrap">
+        <div class="join_logo" onclick="location.href='../index.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+        </div>
+        <div class="info_4">
+            <form action="#">
+                <div class="j4-line0">
+                    <input type="text" placeholder="이름을 입력해주세요.">
+                    <label for="user-pn">
+                        <span class="u-title"><span>이름</span><span class="round"></span></span>
+                    </label>
+               </div>
+                <div class="j4-line1">
+                    <input type="text" id="user-pn" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="휴대폰 번호를 입력해주세요.">
+                    <label for="user-pn">
+                        <span class="u-title"><span>휴대폰 번호 입력</span><span class="round"></span></span>
+                    </label>
+                    <button class="serty_pn" type="button">인증번호발송</button>
+                </div>
+                <div class="j4-line2">
+                    <input type="text"  id="user-sn" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="인증번호를 입력해주세요.">
+                    <label for="user-sn">
+                        <span class="u-title"><span>인증번호</span><span class="round"></span></span>
+                    </label>
+                    <button class="serty_in" type="button">인증완료</button>
+                </div>
+                <button onclick="location.href='./join_findgo.html'" class="info4_btn" type="button">확인</button>
+            </form>
+        </div>
+        
+        
+    </section>
+    
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+</body>
+</html>

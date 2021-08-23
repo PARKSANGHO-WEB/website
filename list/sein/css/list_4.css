@@ -1,0 +1,1445 @@
+@font-face{ font-family: nsl; src:url(../font/NotoSansKR-Regular.woff); src:local(※), format(‘woff’) }
+@font-face{ font-family: nsb; src:url(../font/NotoSansKR-Bold.woff); src:local(※), format(‘woff’) }
+@font-face{ font-family: nsl; src:url(../font/NotoSansKR-Regular.eot); src:local(※), format(‘eot’) }
+@font-face{ font-family: nsb; src:url(../font/NotoSansKR-Bold.eot); src:local(※), format(‘eot’) }
+
+input[type="select"], input[type="button"],input[type="text"] {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+}
+
+input[type="button"]{
+    border: none;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-family: nsl;
+    
+}
+
+body {
+    background-color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+header{
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #134980;
+    border-right: 1px solid #003970;
+}
+
+header .logo{
+    width: 170px;
+    padding: 0px 40px;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    height: 50px;
+}
+
+header .logo img{
+    width: 160px;
+    margin-top: 13px;
+}
+.gnb{
+    height: 50px;
+    width: 100%;
+    background-color: #0d355f;
+    border-bottom: 1px solid #003970;
+    overflow: hidden;
+}
+
+.gnb .gnb-wrap {
+    width: 1600px;
+    padding: 0px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 260px;
+}
+
+.gnb .gnb-wrap .route {
+    float: left;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.gnb .gnb-wrap .route ul li {
+    float: left;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    position: relative;
+}
+
+.gnb .gnb-wrap .route ul li:nth-child(1){
+    margin-left: 0px;
+}
+
+.gnb .gnb-wrap .route ul li::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 18px;
+    background: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: 7px;
+    background-position: left center;
+}
+
+.gnb .gnb-wrap .route ul li:nth-child(1)::before{
+    display: none;
+}
+
+
+.gnb .gnb-wrap .route ul li a{
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-left: 20px;
+}
+.gnb .gnb-wrap .route ul li:nth-child(1) a{
+    margin-left: 0px;
+}
+
+.gnb .gnb-wrap.in{
+    width: 1700px;
+    padding-left: 60px;
+}
+
+
+
+.gnb .gnb_menu{
+    overflow: hidden;
+    float: right;
+}
+
+ .gnb .gnb_menu ul li{
+    float: right;
+    margin-left: 40px;
+    margin-top: 5px;
+     
+}
+.gnb .gnb_menu ul li a{
+    display: block;
+    overflow: hidden;
+    font-family: nsl;
+    font-weight: bold;
+    color: #fff;
+    font-size: 13px;
+    line-height: 40px;
+    padding-left: 40px;
+}
+.gnb .gnb_menu ul li a span{
+    float: left;
+    font-size: 13px;
+}
+
+.gnb .gnb_menu ul li:nth-child(2){
+    background-image: url("../img/people.png");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px;
+}
+.gnb .gnb_menu ul li:nth-child(1){
+    background-image: url("../img/log.png");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px;
+}
+/*
+.gnb ul li a span:nth-child(2) {
+    padding-left: 10px;
+}
+*/
+
+.gnb ul li a .gnb_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.gnb ul li a span img{
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .menu {
+    width: 180px;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 30px;
+
+}
+
+
+header .menu ul li a {
+    color: #fff;
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    display: block;
+    padding: 5px 0px;
+    position: relative;
+    padding-left: 40px;
+}
+
+header .menu ul .menu_1,
+header .menu ul .menu_2,
+header .menu ul .menu_3{
+    margin-top: 10px;    
+}
+
+
+header .menu ul li a img {
+    width: 20px;
+}
+
+header .menu ul .menu_1 a:before {
+    position:absolute;
+    left:0px;
+    top:0px;
+    content:"";
+    width:25px;
+    height:25px;
+    background:url('../img/dash.png') no-repeat center center; 
+    background-size: 25px;
+ }
+
+
+header .menu ul .menu_2 .big_a:before {
+    position:absolute;
+    left:0px;
+    top:0px;
+    content:"";
+    width:25px;
+    height:25px;
+    background:url('../img/table.png') no-repeat center center; 
+    background-size: 25px;
+ }
+
+
+
+header .menu ul .menu_3 a:before {
+    position:absolute;
+    left:0px;
+    top:0px;
+    content:"";
+    width:25px;
+    height:25px;
+    background:url('../img/option.png') no-repeat center center; 
+    background-size: 25px;
+ }
+
+header .menu ul li ul{
+}
+
+header.none .menu ul li ul li{
+    height: 0px;
+    overflow: hidden;
+}
+header .menu ul li ul li{
+    padding-left: 40px;
+}
+
+header.none {
+    width: 40px;
+}
+
+header.none .menu {
+    margin-left: 9px;
+}
+
+
+header .menu ul li ul li a{
+    padding-left: 10px;
+}
+
+header .menu ul li ul li a:before {
+    position:absolute;
+    left:0px;
+    top:-2px;
+    content:"-";
+    font-size: 20px;
+    width:20px;
+    background: none;
+    height:20px;
+    background-size: 8px;
+ }
+
+.menu-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 250px;
+    cursor: pointer;
+    transition-duration: .3s;
+    height: 40px;
+    background-color: rgba(114,114,114,.8);
+}
+
+.menu-btn .mbtn-arrow{
+    width: 100%;
+    height: 40px;
+    background: url('../img/arrow_on.png') no-repeat;
+    background-position: 220px 5px;
+    background-size: 20px 30px;
+    padding-right: 20px;
+    transition-duration: .3s;
+}
+
+.menu-btn.on  .mbtn-arrow{ 
+    background: url('../img/arrow.png') no-repeat;
+    background-position: 10px 5px;
+    background-size: 20px 30px;
+    padding-right: 20px;
+}
+
+
+
+
+section{
+    width: 1600px;
+    margin: 0 auto;
+    padding: 5px 30px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-left: 260px;
+    transition-duration: .2s;
+}
+
+section.lock{
+    padding-left: 50px;
+    width: 1700px;
+}
+
+
+
+section form .list-wrap {
+    overflow: hidden;
+    width: 1560px;
+    background-color: rgba(148, 179, 197, 0.5);
+    padding: 10px 20px;
+}
+
+section.lock form .list-wrap {
+    width: 1660px;
+} 
+
+
+section form .list-wrap .list-top{
+    overflow: hidden;
+    width: 1400px;
+    float: left;
+}
+
+section.lock form .list-wrap .list-top{
+    overflow: hidden;
+    width: 1500px;
+}
+
+section form .list-wrap .list-top .list-t{
+    float: left;
+    margin-left: 100px;
+    width: 400px;
+}
+section.lock form .list-wrap .list-top .list-t{
+    margin-left: 150px;
+    width: 400px;
+}
+
+
+section form .list-wrap .list-top .list-t:nth-child(1),
+section form .list-wrap .list-top .list-t:nth-child(4) {
+    margin-left: 0px;
+}
+
+section form .list-wrap .list-top .list-t:nth-child(n+4) {
+    margin-top: 10px;
+}
+
+
+section form .list-wrap .list-top .list-t .list-span{
+    font-size: 12px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px 3px;
+    background-color: #515961;
+    float: left;
+    color: #fff;
+    width: 120px;
+    height: 17px;
+    text-align: center;
+}
+
+section form .list-wrap .list-top .list-t1 {
+    margin-left: 0px;
+}
+section form .list-wrap .list-top .list-t1 .list1-input {
+    float: left;
+    width: 271px;
+    height: 30px;
+    border-left: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+section form .list-wrap .list-top .list-t1 .list1-input input {
+    float: left;
+    width: 121px;
+    height: 100%;;
+}
+
+section form .list-wrap .list-top .list-t1 .list1-input input:nth-child(3){
+    margin-left: 10px;
+}
+
+
+
+section form .list-wrap .list-top .list-t1 .list1-input span {
+    float: left;
+    margin-left: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+section form .list-wrap .list-top .list-t2 .list2-input {
+    float: left;
+    width: 271px;
+    height: 30px;
+    border-left: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+section form .list-wrap .list-top .list-t2 .list2-input select{
+    height: 30px;line-height:26px;
+
+    width: 100px;
+    outline: none;
+    float: left;
+    border: none;    
+}
+
+section form .list-wrap .list-top .list-t2 .list2-input select option {
+    outline: none;
+}
+
+section form .list-wrap .list-top .list-t2 .list2-input input {
+    float: left;
+    width: 152px;
+    padding-left: 10px;
+    height: 100%;
+    margin-left: 9px;
+}
+
+
+section form .list-wrap .list-top .list-t2 .list2-input span {
+    float: left;
+    margin-left: 9px;
+    font-weight: 13px;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+
+
+
+section form .list-wrap .list-top .list-t3 .list3-input {
+    float: left;
+    width: 271px;
+    height: 30px;
+    border-left: none;
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+
+
+section form .list-wrap .list-top .list-t3 .list3-input input {
+    float: left;
+    width: 100%;
+    padding-left:10px;
+    height: 100%;
+}
+section form .list-wrap .list-top .list-t3 .list3-input span {
+    float: left;
+    margin-left: 9px;
+    font-weight: 13px;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+
+
+section form .list-wrap .list-top .list-t4 .list4-input {
+    float: left;
+    width: 271px;
+    height: 30px;
+    border-left: none;
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+
+section form .list-wrap .list-top .list-t4 .list4-input input {
+    float: left;
+    width: 100%;
+    padding-left:10px;
+    height: 100%;
+}
+
+
+
+
+section form .list-wrap .list-top .list-t4 .list4-input span {
+    float: left;
+    margin-left: 9px;
+    font-weight: 13px;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+
+
+section form .list-wrap .list-top .list-t5 .list5-input {
+    float: left;
+    width: 271px;
+    height: 30px;
+    border-left: none;
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+
+section form .list-wrap .list-top .list-t5 .list5-input input {
+    float: left;
+    width: 100%;
+    padding-left:10px;
+    height: 100%;
+}
+section form .list-wrap .list-top .list-t5 .list5-input span {
+    float: left;
+    margin-left: 9px;
+    font-weight: 13px;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+
+
+
+
+section form .list-wrap .list-top .list-t6 .list6-input {
+    float: left;
+    width: 271px;
+    height: 30px;
+    border-left: none;
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+
+section form .list-wrap .list-top .list-t6 .list6-input input:nth-child(1) {
+    float: left;
+    width: 100%;
+    padding-left:10px;
+    height: 100%;
+}
+section form .list-wrap .list-top .list-t6 .list6-input span {
+    float: left;
+    margin-left: 9px;
+    font-weight: 13px;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+section .form_title{
+    font-size: 13px;
+    padding: 5px 0px;
+    vertical-align: baseline;
+    display: block;
+    overflow: hidden;
+    line-height: 20px;
+    background: url('../img/tcircle3.png') no-repeat;
+    background-position: left 8px;
+    background-size: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: nsl;
+}
+
+section table tr td input[type="checkbox"] {
+    margin-top:3px;
+}
+
+
+section .list2-wrap {
+    width: 1600px;
+    margin-top: 10px;
+}
+
+section.lock .list2-wrap {
+    width: 1700px;
+}
+
+section .list2-wrap .list-btn  {
+    overflow: hidden;
+    padding: 5px 0px;
+    background-color: #5e5e5e;
+    padding-left: 5px;
+}
+
+section .list2-wrap .list-btn .check_num{
+    float: left;
+    font-size: 13px;
+    line-height: 32px;
+    font-family: nsl;
+    font-weight: bold;
+    overflow: hidden;
+    color: #fff;
+}
+
+section .list2-wrap .list-btn .check_num .cn_t{
+    display: block;
+}
+
+section .list2-wrap .list-btn .check_num div{
+    float: left;
+    margin-left: 20px;
+}
+
+section .list2-wrap .list-btn .check_num div:nth-child(1){
+    margin-left: 0px;
+}
+
+section .list2-wrap .list-btn .lb_wrap {
+    overflow: hidden;
+    width: 565px;
+    float: right;
+    margin-right: 20px;
+}
+
+section .list2-wrap .list-btn .lb_wrap input[type="button"]{
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #376ea6;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+
+section .list2-wrap .list-btn input[type="button"]:nth-child(1){
+    border-left: none;
+    margin-left: 0px;
+}
+
+section form .list-wrap .search input {
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px;
+    background-color: #376ea6;
+    cursor: pointer;
+    color: #fff;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 5px 5px 5px 5px;
+    float: right;
+    border: none;
+}
+
+section .list2-wrap form .list2-table{
+    border:1px solid #a7a7a7;
+    overflow: scroll;
+    background-color: #fff;
+    height: 195px;
+}
+
+section .list2-wrap form .list2-table table{
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+section .list2-wrap form .list2-table table tr th,
+section .list2-wrap form .list2-table table tr td{
+    border: 1px solid #a7a7a7;
+    text-align: center;
+    border-left: none;
+}
+
+
+
+section .list2-wrap form .list2-table table tr th{
+    border-top: 0px;
+    font-family: nsl;
+    font-weight: bold;
+    background-color: #eeeeee;
+    color: #2a2a2a;
+}
+
+
+
+section .list_line2{
+    overflow: hidden;
+    width: 1600px;
+}
+
+section.lock .list_line2{
+    overflow: hidden;
+    width: 1700px;
+}
+
+
+
+
+section .list3-wrap {
+    width: 1065px;
+    float: left;
+    margin-top: 10px;
+}
+
+
+section .list3-wrap .list-btn  {
+    overflow: hidden;
+    padding: 5px 0px;
+    line-height: 32px;
+    padding-left: 5px;
+    background-color: #5e5e5e;
+}
+
+section .list3-wrap .list-btn .check_num{
+    float: left;
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    overflow: hidden;
+    color: #fff;
+}
+
+section .list3-wrap .list-btn .check_num .cn_t{
+    display: block;
+}
+
+section .list3-wrap .list-btn .check_num div{
+    float: left;
+    margin-left: 20px;
+}
+
+section .list3-wrap .list-btn .check_num div:nth-child(1){
+    margin-left: 0px;
+}
+section .list3-wrap .list-btn .lb_wrap {
+    overflow: hidden;
+    width: 280px;
+    float: right;
+    margin-right: 20px;
+}
+
+section .list3-wrap .list-btn .lb_wrap input[type="button"]{
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #376ea6;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    border: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+
+section .list3-wrap .list-btn input[type="button"]:nth-child(1){
+    border-left: none;
+    margin-left: 0px;
+}
+
+section .list3-wrap form .list3-table{
+    border:1px solid #a7a7a7;
+    overflow: scroll;
+    background-color: #fff;
+    height: 160px;
+}
+
+section .list3-wrap form .list3-table table{
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+section .list3-wrap form .list3-table table tr th,
+section .list3-wrap form .list3-table table tr td{
+    border: 1px solid #a7a7a7;
+    border-left: none;
+    text-align: center;
+}
+
+
+
+section .list3-wrap form .list3-table table tr th{
+    border-top: 0px;
+    font-family: nsl;
+    font-weight: bold;
+    background-color: #eeeeee;
+    color: #2a2a2a;
+}
+
+
+
+section.lock .list3-wrap {
+    width: 1165px;
+    float: left;
+    
+}
+
+
+
+section .list4-wrap {
+    width: 495px;
+    margin-left: 40px;
+    float: left;
+    margin-top: 10px;
+}
+section .list4-wrap .list-btn  {
+    overflow: hidden;
+    padding: 5px 0px;
+    padding-left: 5px;
+    line-height: 32px;
+    background-color: #5e5e5e;
+}
+
+section .list4-wrap .list-btn .check_num{
+    float: left;
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    overflow: hidden;
+    color: #fff;
+}
+
+section .list4-wrap .list-btn .check_num .cn_t{
+    display: block;
+}
+
+section .list4-wrap .list-btn .check_num div{
+    float: left;
+}
+section .list4-wrap .list-btn .lb_wrap {
+    overflow: hidden;
+    width: 185px;
+    margin-right: 20px;
+    float: right;
+}
+
+section .list4-wrap .list-btn .lb_wrap input[type="button"]{
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #376ea6;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+
+section .list4-wrap .list-btn input[type="button"]:nth-child(1){
+    border-left: none;
+    margin-left: 0px;
+}
+
+section .list4-wrap form .list4-table{
+    border:1px solid #a7a7a7;
+    overflow: scroll;
+    background-color: #fff;
+    height: 160px;
+}
+
+section .list4-wrap form .list4-table table{
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    font-size: 12px;
+    width: 1000px;
+}
+
+
+section .list4-wrap form .list4-table table tr th,
+section .list4-wrap form .list4-table table tr td{
+    border: 1px solid #a7a7a7;
+    text-align: center;
+    border-left: none;
+}
+
+
+
+section .list4-wrap form .list4-table table tr th{
+    border-top: 0px;
+    font-family: nsl;
+    font-weight: bold;
+    background-color: #d2d2d2;
+    color: #fff;
+}
+
+
+
+section .list_line3{
+    width: 1600px;
+    overflow: hidden;
+}
+section.lock .list_line3{
+    width: 1700px;
+}
+
+
+
+section.lock .list5-wrap {
+    width: 1165px;
+    
+}
+
+
+section .list5-wrap {
+    width: 1065px;
+    float: left;
+    margin-top: 10px;
+}
+
+section .list5-wrap .list-btn  {
+    overflow: hidden;
+    padding: 5px 0px;
+    padding-left: 5px;
+    line-height: 32px;
+    background-color: #5e5e5e;
+}
+
+section .list5-wrap .list-btn .check_num{
+    float: left;
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    overflow: hidden;
+    color: #fff;
+}
+
+section .list5-wrap .list-btn .check_num .cn_t{
+    display: block;
+}
+
+section .list5-wrap .list-btn .check_num div{
+    float: left;
+    margin-left: 20px;
+}
+
+section .list5-wrap .list-btn .check_num div:nth-child(1){
+    margin-left: 0px;
+}
+
+section .list5-wrap .list-btn .lb_wrap {
+    overflow: hidden;
+    width: 185px;
+    margin-right: 20px;
+    float: right;
+}
+
+section .list5-wrap .list-btn .lb_wrap input[type="button"]{
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #376ea6;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+
+section .list5-wrap .list-btn input[type="button"]:nth-child(1){
+    border-left: none;
+    margin-left: 0px;
+}
+
+section .list5-wrap form .list5-table{
+    border:1px solid #a7a7a7;
+    overflow: scroll;
+    background-color: #fff;
+    height: 160px;
+}
+
+section .list5-wrap form .list5-table table{
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+section .list5-wrap form .list5-table table tr th,
+section .list5-wrap form .list5-table table tr td{
+    border: 1px solid #a7a7a7;
+    text-align: center;
+    border-left: none;
+}
+
+
+
+section .list5-wrap form .list5-table table tr th{
+    border-top: 0px;
+    font-family: nsl;
+    font-weight: bold;
+    background-color: #eee;
+    color: #2a2a2a;
+}
+
+
+
+
+
+section .list6-wrap {
+    width: 495px;
+    margin-left: 40px;
+    float: left;
+    margin-top: 10px;
+}
+section .list6-wrap .list-btn  {
+    overflow: hidden;
+    padding: 5px 0px;
+    padding-left: 5px;
+    line-height: 32px;
+    background-color: #5e5e5e;
+}
+
+section .list6-wrap .list-btn .check_num{
+    float: left;
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+section .list6-wrap .list-btn .check_num .cn_t{
+    display: block;
+}
+
+section .list6-wrap .list-btn .check_num div{
+    float: left;
+}
+section .list6-wrap .list-btn .lb_wrap {
+    overflow: hidden;
+    width: 280px;
+    float: right;
+    margin-right: 20px;
+}
+
+section .list6-wrap .list-btn .lb_wrap input[type="button"]{
+    font-size: 13px;
+    font-family: nsl;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #376ea6;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+
+section .list6-wrap .list-btn input[type="button"]:nth-child(1){
+    border-left: none;
+    margin-left: 0px;
+}
+
+section .list6-wrap form .list6-table{
+    border:1px solid #a7a7a7;
+    overflow: scroll;
+    background-color: #fff;
+    height: 160px;
+}
+
+section .list6-wrap form .list6-table table{
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+section .list6-wrap form .list6-table table tr th,
+section .list6-wrap form .list6-table table tr td{
+    border: 1px solid #a7a7a7;
+    text-align: center;
+    border-left: none;
+}
+
+
+
+section .list6-wrap form .list6-table table tr th{
+    border-top: 0px;
+    font-family: nsl;
+    font-weight: bold;
+    background-color: #eee;
+    color: #2a2a2a;
+}
+
+@media screen and (max-width:1800px){
+    header{
+        height: 1000px;
+    }
+    
+    .gnb{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        top: 0px;
+        background-color: #0d355f;
+        right: 0px;
+        border-bottom: 1px solid #003970;
+        overflow: hidden;
+    }
+
+    .gnb .gnb-wrap {
+        width: 1285px;
+        overflow: hidden;
+        margin:  0 auto;
+        padding-left: 260px;
+    }
+
+
+    .gnb .gnb-wrap.in{
+        width: 1515px;
+        margin: 0 auto;
+    }
+
+    section .list2-wrap .list-btn,section .list3-wrap .list-btn,section .list34-wrap .list-btn,
+    section .list5-wrap .list-btn,section .list6-wrap .list-btn{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+    section{
+        width: 1285px;
+    }
+
+    section.lock{
+        padding: 0px;
+        width: 1515px;
+        padding-left: 60px;
+    }
+    
+    .gnb .gnb-wrap.in {
+        width: 1515px;
+        padding-left: 60px;
+    }
+
+    section form .list-wrap .list-top .list-t{
+        float: left;
+        margin-left:20px;
+        width: 348px;
+    }
+    section.lock form .list-wrap .list-top .list-t{
+        margin-left: 135px;
+        width: 348px;
+    }
+
+
+    section form .list-wrap .list-top .list-t .list-span{
+        width: 92px;
+    }
+
+    section form .list-wrap .list-top .list-t1 {
+        margin-left: 0px;
+    }
+    section form .list-wrap .list-top .list-t1 .list1-input {
+        width: 248px;
+    }
+    
+    section form .list-wrap .list-top .list-t1 .list1-input span {
+        margin-left: 10.3px;
+    }
+
+    section form .list-wrap .list-top .list-t1 .list1-input input {
+        width: 109px;
+    }
+
+    section form .list-wrap .list-top .list-t1 .list1-input input:nth-child(3) {
+        margin-left: 10.3px;
+    }
+
+
+
+    section form .list-wrap .list-top .list-t2 .list2-input {
+        width: 248px;
+    }
+
+    section form .list-wrap .list-top .list-t2 .list2-input select{
+        width: 90px; 
+    }
+
+    section form .list-wrap .list-top .list-t2 .list2-input input {
+        width: 139px;
+    }
+
+
+    section form .list-wrap .list-top .list-t3 .list3-input {
+        width: 248px;
+    }
+
+
+
+    section form .list-wrap .list-top .list-t4 .list4-input {
+        width: 248px;
+    }
+
+
+
+    section form .list-wrap .list-top .list-t5 .list5-input {
+        width: 248px;
+    }
+
+
+
+    section form .list-wrap .list-top .list-t6 .list6-input {
+        width: 248px;
+    }
+    
+    section form .list-wrap .list-top .list-t:nth-child(1), 
+    section form .list-wrap .list-top .list-t:nth-child(4) {
+        margin-left: 0px;
+    }
+    
+    section .list2-wrap form .list2-table{
+        height: 180px;
+    }
+    section .list3-wrap form .list3-table{
+        height: 165px;
+    }
+    section .list4-wrap form .list4-table{
+        height: 165px;
+    }
+
+    section .list5-wrap form .list5-table{
+        height: 165px;
+    }
+    section .list6-wrap form .list6-table{
+        height: 165px;
+    }
+
+
+    section form .list-wrap {
+        overflow: hidden;
+        width: 1245px;
+    }
+    
+    section.lock form .list-wrap {
+        overflow: hidden;
+        width: 1475px;
+    }
+    
+    
+    section form .list-wrap .list-top{
+        overflow: hidden;
+        width: 1085px;
+    }
+
+    section.lock form .list-wrap .list-top{
+        overflow: hidden;
+        width: 1315px;
+    }
+
+    section .form_title{
+        font-size: 13px;
+    }
+
+
+    section .list2-wrap {
+        width: 1285px;
+        margin-top: 10px;
+    }
+
+    section.lock .list2-wrap {
+        width: 1515px;
+    }
+    section .list_line2{
+        overflow: hidden;
+        width: 1285px;
+    }
+
+    section.lock .list_line2{
+        overflow: hidden;
+        width: 1515px;
+    }
+
+
+    section .list2-wrap .list-btn input[type="button"] {
+        font-size: 12px;
+    }
+
+
+
+    section .list3-wrap {
+        width: 755px;
+        float: left;
+        margin-top: 10px;
+    }
+    section.lock .list3-wrap {
+        width: 950px;
+        float: left;
+
+    }
+    
+    section .list3-wrap form .list3-table table {
+        width: 1200px;
+    }
+
+    section .list3-wrap .list-btn input[type="button"] {
+        font-size: 12px;
+    }
+
+
+
+    section .list4-wrap {
+        width: 490px;
+        margin-left: 40px;
+        float: left;
+        margin-top: 10px;
+    }
+
+    section .list4-wrap .list-btn input[type="button"] {
+        font-size: 12px;
+    }
+
+
+    section.lock .list4-wrap {
+        width: 525px;
+    }
+
+    section .list_line3{
+        width: 1285px;
+        overflow: hidden;
+    }
+    section.lock .list_line3{
+        width: 1515px;
+    }
+
+
+
+    section.lock .list5-wrap {
+        width: 950px;
+
+    }
+
+
+    section .list5-wrap {
+        width: 755px;
+    }
+    
+    section .list5-wrap form .list5-table table {
+        width: 1200px;
+    }
+
+    section .list6-wrap {
+        width: 490px;
+    }
+
+    section.lock .list6-wrap {
+        width: 525px;
+    }
+    
+    
+    section .list5-wrap .list-btn input[type="button"] {
+        font-size: 12px;
+    }
+
+    section .list6-wrap .list-btn input[type="button"] {
+        font-size: 12px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1600px){
+    .gnb{
+        width: 1600px;
+    }
+    .gnb .gnb-wrap {
+    padding-left: 240px;
+}
+}

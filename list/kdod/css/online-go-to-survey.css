@@ -1,0 +1,506 @@
+@charset "utf-8";
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+section.on-survey .about-cont .about-flat{
+	width: 1000px;
+}
+
+
+/*온라인 서베이 게시판 공통 영역*/
+#go_to_survey {
+    width: 1064px;
+    margin: 0 auto;
+    margin-top: 31px;
+    font-family: "Noto sans KR",sans-serif;
+}
+#go_to_survey h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff6b65;
+    margin-bottom: 10px;
+}
+#go_to_survey h1 span {
+    color: #707070;
+    font-size: 1rem;
+}
+#go_to_survey h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #507c89;
+}
+#go_to_survey p {
+    font-size: 0.813rem;
+    color: #454545;
+    line-height: 1.9;
+}
+#go_to_survey p span {
+    color: #507c89;
+}
+#go_to_survey p .color {
+    color: #FF6B65;
+}
+#go_to_survey ul li {
+    font-size: 0.813rem;
+    font-weight: 300;
+    color: #454545;
+    line-height: 1.8;
+}
+#go_to_survey ul .ln{
+    font-weight: 500;
+}
+#go_to_survey ul .ln:nth-child(1):before{
+    content: none;
+}
+#go_to_survey li:before {
+    content: "• ";
+    color: #454545;
+}
+
+
+/*온라인 서베이 게시판 영역*/
+#go_to_survey .panel_survey .panel_survey_bg {
+    background-color: #FAFAFA;
+    border: 1px solid #B2B2B2;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#go_to_survey .panel_survey .panel_survey_bg .text {
+/*    플롯*/
+    float: left;
+}
+#go_to_survey .panel_survey .panel_survey_bg .text p {
+    margin-top: 10px;
+}
+#go_to_survey .panel_survey .panel_survey_bg .busy4-btn {
+/*    플롯*/
+    float: right;
+    margin-right: 108px;
+    margin-top: 110px;
+}
+
+/*검색창*/
+
+#go_to_survey .search-line{
+    margin: 40px auto 20px auto;
+    height: 40px;
+    overflow: hidden;
+} 
+
+
+#go_to_survey .search-line .numbering{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: #707070;
+    overflow: hidden;
+    float: left;
+}
+
+
+#go_to_survey .search-line .numbering span{
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    vertical-align: middle;
+    float: left;
+}
+
+#go_to_survey .search-line .numbering span:nth-child(2){
+    margin-top: -1px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+#go_to_survey .search-line .search-t{
+    float: right;
+    overflow: hidden;
+}
+
+
+#go_to_survey .search-line .search-t input[type=search]{
+    width: 270px;
+    height: 40px;
+    padding-left: 20px;
+    float: left;
+    background-color: #ECEAEA;
+}
+
+#go_to_survey .search-line .search-t .search_btn{
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+}
+
+
+#go_to_survey .search-line .search-t a{
+    width: 40px;
+    height: 40px;
+    background-color: #707070;
+    display: block;
+}
+#go_to_survey .search-line .search-t a img{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+
+
+
+
+
+#go_to_survey .panel_content .article-w{
+	overflow: hidden;
+}
+
+#go_to_survey .panel_content .article-w article {
+/*    플롯*/
+    float: left;
+    margin-left: 19px;
+}
+
+
+#go_to_survey .panel_content .article-w article:nth-child(3n+1){
+	margin-left: 0px;
+}
+
+
+
+#go_to_survey .panel_content .content_bg {
+    background-color: #FAFAFA;
+    border: 1px solid #B2B2B2;
+    margin-top: 24px;
+    width: 340px;
+	height: 400px;
+}
+
+#go_to_survey .panel_content .content_bg .cb-info{
+	min-height: 200px;
+	max-height: 200px;
+}
+
+
+#go_to_survey .panel_content .content_bg .txt {
+    padding: 25px;
+}
+
+
+#go_to_survey .essential .content {
+    padding: 30px;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    width: 956px;
+    margin: 60px auto 80px;
+}
+#go_to_survey .essential .content img {
+/*    플롯*/
+    float: left;
+}
+#go_to_survey .essential .content h1 {
+/*    플롯*/
+    float: left;
+    margin-left: 5px;
+}
+
+#go_to_survey .essential .content li.mt {
+    margin-top: 20px;
+}
+
+#go_to_survey .busy4-btn button{
+	width: 300px;
+	height: auto;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+	margin-left: 26px;
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 15px 0px;
+}
+
+#go_to_survey .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+#go_to_survey .busy4-btn button span{
+	display: block;
+	width: 200px;
+	margin-left: 30px;
+	text-align: left;
+}
+#go_to_survey .busy4-btn button span span{
+	margin-left: 0px;
+	font-size: 0.675rem;
+}
+
+#go_to_survey .busy4-btn button .b4b-info{
+	font-size: 0.813rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #323A44 !important;
+}
+#go_to_survey .busy4-btn button .b4b-t{
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+	background: url('../img/sub/btn-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+
+/*박스 내 버튼*/
+
+        /*       하단 컨텐츠 버튼 변경*/
+#go_to_survey .content_bg .busy4-btn{
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#go_to_survey .panel_survey .panel_survey_bg .busy4-btn{
+	margin-right: 0px;
+}
+
+#go_to_survey .content_bg .busy4-btn button:nth-child(1){
+	margin-left: 0px;
+}
+#go_to_survey .content_bg .busy4-btn button{
+	width: 138px;
+	height: 48px;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 12px 20px;
+}
+#go_to_survey .content_bg .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+#go_to_survey .content_bg .busy4-btn button span{
+	display: block;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+}
+#go_to_survey .content_bg .busy4-btn button .b4b-t{
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+	background: none;
+}
+
+@media screen and (max-width:1300px){
+	
+	
+
+	section.on-survey .about-cont .about-flat{
+		width: 800px;
+	}
+
+	
+
+	section.on-survey .about-cont .about-flat ul li{
+		width: 160px;
+	}
+
+	
+	#go_to_survey{
+		width: 850px;
+	}
+	
+	#go_to_survey .panel_content .content_bg{
+		width: 268px;
+	}
+	
+	#go_to_survey h1{
+		font-size: 0.9rem;
+	}
+	
+	#go_to_survey .essential .content{
+		width: 790px;
+	}
+}
+
+
+
+@media screen and (max-width:900px){
+
+	section.on-survey .about-cont .about-flat{
+		width: 600px;
+	}
+
+	section.on-survey .about-cont .about-flat ul li{
+		width: 120px;
+	}
+	
+	section.on-survey .af-market ul li:nth-child(1) a {
+		line-height: 14px;
+		margin-top: 12px;
+		font-size: 0.7rem;
+	}
+	
+	#go_to_survey{
+		width: 600px;
+	}
+	#go_to_survey .panel_survey .panel_survey_bg .busy4-btn{
+		float: left;
+		margin-top: 15px;
+	}
+	#go_to_survey .busy4-btn button{
+		margin-left: 0px;
+		width: 240px;
+	}
+	
+	#go_to_survey .busy4-btn button .b4b-info {
+		font-size: 0.7rem;
+	}
+	
+	#go_to_survey .busy4-btn button .b4b-t{
+		font-size: 1rem;
+		background-position: 160px center;
+	}
+	
+	#go_to_survey .panel_content .article-w article{
+		margin-left: 60px;
+	}
+	#go_to_survey .panel_content .article-w article:nth-child(3n+1){
+		margin-left: 60px;
+	}
+	#go_to_survey .panel_content .article-w article:nth-child(2n+1){
+		margin-left: 0px;
+	}
+	
+	#go_to_survey .essential .content{
+		width: 600px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width:640px){
+	
+	
+	section.on-survey .sub-banner {
+		background: url(../img/sub/msurvey-ban.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	section.on-survey .sub-banner .ban-text .ban-title{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	section.on-survey .sub-banner .ban-text .ban-text{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	section.on-survey .sub-banner .ban-text .root li:nth-child(1){
+		padding-left: 20px;
+	}
+	
+	section.on-survey .sub-banner .ban-text .root{
+		left: 10px;
+		top: 5px;
+	}
+	
+	
+	#go_to_survey{
+		width: calc( 100% - 20px );
+		overflow: hidden;
+	}
+	
+	#go_to_survey p{
+		font-size: 0.7rem;
+	}
+	
+	#go_to_survey .search-line{
+		height: auto;
+	}
+	
+	#go_to_survey .search-line .numbering{
+		font-size: 0.813rem;
+		float: none;
+		display: block;
+	}
+	
+	#go_to_survey .search-line .search-t{
+		float: none;
+		display: block;
+	}
+	
+	#go_to_survey .search-line .search-t input[type=search]{
+		width: calc( 100% - 40px );
+	}
+	#go_to_survey .item-list{
+		width: calc( 100% - 40px );
+	}
+	
+	#go_to_survey .panel_content .article-w article{
+		float: none;
+	}
+	#go_to_survey .panel_content .article-w article:nth-child(2n+1){
+		margin: 0 auto;
+		float: none;
+	}
+	
+	#go_to_survey .panel_content .content_bg{
+		margin:  0 auto;
+	}
+	
+	#go_to_survey .panel_content .article-w article{
+		margin: 0 auto;
+	}
+	
+	#go_to_survey .panel_content .article-w article:nth-child(3n+1){
+		margin: 0 auto;
+	}
+	
+	
+	#go_to_survey .panel_content .article-w article:nth-child(n+1){
+		margin-top: 20px;
+	}
+	
+	#go_to_survey ul li {
+		font-size: 0.675rem;
+		font-weight: 300;
+		color: #454545;
+		line-height: 1.8;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

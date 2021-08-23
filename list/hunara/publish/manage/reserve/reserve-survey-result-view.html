@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reserve.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+	<script src="../js/modal.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li class="active">
+				<a href="./reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="javascript:;">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-selected.html">예약관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-survey-result.html">결과 관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents survey-result-v">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>예약관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big">예약관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-selected.html">당첨 등록 관리</a></li>
+							<li><a href="./reserve-list.html">예약 내역 관리</a></li>
+							<li><a href="./reserve-calendar.html">캘린더</a></li>
+							<li><a href="./reserve-cancel.html">취소 승인 관리</a></li>
+							<li><a href="./reserve-using.html">객실 배정 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">결제 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-pay.html">결제 관리</a></li>
+							<li><a href="./reserve-pg.html">PG결제 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big active">설문 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-survey.html">설문 등록</a></li>
+							<li><a href="./reserve-survey-manage.html">설문 관리</a></li>
+							<li class="active"><a href="./reserve-survey-result.html">결과 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>결과 관리</div>
+				<div class="big-arrow"><img src="../img/common/big-arrow.png" alt=""></div>
+				<div>비엔시스템</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<div class="view-c">
+						<div class="view-mana">
+							<div class="com-search">
+								<div class="company">
+									<span class="ct-t">기업</span>
+									<span class="ct-c">비엔시스템</span>
+								</div>
+								<div class="room">
+									<span class="ct-t">휴양소</span>
+									<span class="ct-c">을왕리파라다이스호텔</span>
+								</div>
+								<div class="num">
+									<span class="ct-t">응답수</span>
+									<span class="ct-c">100</span>
+									<button class="print" type="button">엑셀다운로드</button>
+								</div>
+							</div>
+							<div class="surt-wrap">
+								<table id="survey-re">
+								<thead>
+									<tr>
+										<th rowspan="2" class="th-btn">순번</th>
+										<th rowspan="2" class="th-btn"><span>회사명</span></th>
+										<th rowspan="2" class="th-btn"><span>휴양소명</span></th>
+										<th rowspan="2" class="th-btn"><span>성명</span></th>
+										<th rowspan="2" class="th-btn"><span>사번</span></th>
+										<th rowspan="2" class="th-btn"><span>객실타입</span></th>
+										<th colspan="17"><span>문항</span></th>
+									</tr>
+									<tr>
+										<th><span>만족도 답변1</span></th>
+										<th><span>만족도 답변2</span></th>
+										<th><span>만족도 답변3</span></th>
+										<th><span>만족도 답변4</span></th>
+										<th><span>만족도 답변5</span></th>
+										<th><span>만족도 답변6</span></th>
+										<th><span>만족도 답변7</span></th>
+										<th><span>만족도 답변8</span></th>
+										<th><span>만족도 답변9</span></th>
+										<th><span>만족도 답변10</span></th>
+										<th><span>객관식 답변1</span></th>
+										<th><span>객관식 답변2</span></th>
+										<th><span>객관식 답변3</span></th>
+										<th><span>객관식 답변4</span></th>
+										<th><span>객관식 답변5</span></th>
+										<th><span>전체 만족도</span></th>
+										<th><span>주관식 답변</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+									<tr>
+										<td><span>1</span></td>
+										<td><span>비엔시스템</span></td>
+										<td><span>을왕리파라다이스호텔</span></td>
+										<td><span>정설송</span></td>
+										<td><span>124212314</span></td>
+										<td><span>10평 스탠다드 룸</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerNum"><span>85</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>입력1,입력2</span></td>
+										<td class="answerText"><span>기타1,기타2,기타1,기타2,</span></td>
+										<td class="answerText"><span>95</span></td>
+										<td class="answerLong"><span>너무너무 만족스러웠습니다. 감사합니다</span></td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							<div class="paging">
+									<a class="first"></a>
+									<a class="prev"></a>
+									<a class="active">1</a>
+									<a>2</a>
+									<a>3</a>
+									<a>4</a>
+									<a>5</a>
+									<a class="next"></a>
+									<a class="last"></a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!--  셀렉트박스와 파일업로드	-->
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function () {	
+			$('select').wSelect();
+		});
+		
+
+		$(document).ready(function(){
+			// Also see: https://www.quirksmode.org/dom/inputfile.html
+
+			var inputs = document.querySelectorAll('.file-input')
+
+			for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+			}
+
+			function customInput (el) {
+				const fileInput = el.querySelector('[type="file"]')
+				const label = el.querySelector('[data-js-label]')
+
+				fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+			}
+		});
+
+
+		
+	</script>
+	
+	
+	
+	<!-- 테이블 sort 선언	-->
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+			$('.view-t').on('click',function(){
+					if( $(this).parents('.view').hasClass('on') ){
+						$(this).parents('.view').removeClass('on');
+					}else{
+						$('.view').removeClass('on');
+						$(this).parents('.view').addClass('on');
+					}
+				});
+		});
+	
+	</script>
+	
+</body>
+</html>

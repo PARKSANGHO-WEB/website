@@ -1,0 +1,465 @@
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.eot) format('eot')
+}
+
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.woff) format('woff')
+}
+input,button,textara,
+input:hover,button:hover,textara:hover,
+input:focus,button:focus,textara:focus{
+	outline: none;
+	border: none;
+	border: 1px solid #dbdbdb;
+}
+input[type="checkbox"],button,textarea,input[type="text"]{
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+    background: transparent;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+ 
+ul, ol, li{
+	list-style: none;
+}
+ 
+a{
+	text-decoration: none;
+}
+
+#mainImage {
+    width: 100%;
+    height: 250px;
+    background: url(../img/sub/sub1-bg.png) no-repeat center;
+    position: relative;
+}
+
+#mainImage h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#container .sort-menu{
+	width: 660px;
+	margin: 50px auto;
+	overflow: hidden;
+	-ms-user-select: none; 
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#container .sort-menu ul li{
+	float: left;
+	width: 220px;
+	height: 60px;
+	cursor: pointer;
+}
+
+#container .sort-menu ul li:hover span,
+#container .sort-menu ul li.active span{
+	background-color: #006762;
+	color: #fff;
+}
+
+
+#container .sort-menu ul li span{
+	display: block;
+	text-align: center;
+	line-height: 58px;
+	border: 1px solid #006762;
+	font-size: 18px;
+	color: #006762;
+	font-weight: bold;
+}
+
+#container .sort-menu ul li:nth-child(n+2) span{
+	border-left: none;
+}
+
+#search .wSelect-selected{
+	padding: 15px 0px!important;
+}
+#search {
+    width: calc( 100% - 2px );
+    max-width: 1278px;
+    height: 153px;
+    border: 1px solid #cad6d6;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 0 auto 64px auto;
+    position: relative
+}
+
+#search .wSelect-theme-classic{
+	width: 195px!important;
+	border: none!important;
+    border-bottom: 1px solid #cad6d6!important;
+	box-shadow: none!important;
+	border-radius: 0px!important;
+}
+
+#search > div {
+    width: 100%;
+    max-width: 1050px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+#search > div form{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container select {
+	display: none;
+}
+
+#container input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #cad6d6;
+    height: 50px;
+    width: 59%;
+    max-width: 630px;
+    padding-left: 10px;
+}
+
+
+#container .search-btn, #container #writeNew {
+    border: 1px solid #006762;
+    border-radius: 25px;
+    height: 50px;
+    width: 120px;
+    /* margin-left: 10px; */
+    background: white;
+    color: #006762;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+
+#container table {width:100%; margin: 0 auto;border-collapse: collapse;
+    table-layout: fixed;}
+
+#container table tr {cursor: pointer;}
+#container table tr th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid lightgray;
+    background: #f5f7f7;
+    height: 51px;
+    color: #4A4A4A;
+}
+
+#container td a, #container td a:visited, #container td a:link {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+#container table tr th:nth-child(1) {width: 10%;}
+#container table tr th:nth-child(2) {width: 60%}
+#container table tr th:nth-child(3) {width: 15%;}
+#container table tr th:nth-child(4) {width: 15%}
+
+
+#container table tr td {
+    border-bottom: 1px solid #DBDBDB;
+    height: 51px;
+    text-align: center;
+    color: #4A4A4A;
+}
+#container table tr td:nth-child(2) {
+    text-align: left;
+}
+
+#paging {
+    width: 100%;
+	height: 130px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+
+#paging ul{
+	width: 315px;
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#paging ul li {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    color: #CAD6D6;
+    text-align: center;
+	float: left;
+    justify-content: center;
+}
+
+
+#paging ul li a{
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+	color: #CAD6D6;
+}
+
+
+#paging ul li:hover a,
+#paging ul li.active a{
+	border: 1px solid #006762;
+	line-height: 33px;
+	color: #006762;
+}
+
+
+#paging .go-write{
+	float: right;
+	display: block;
+	width: 120px;
+	height: 50px;
+	border: 1px solid #006762;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 100px;
+	color: #006762;
+	cursor: pointer;
+    margin-top: 28px;
+}
+
+
+
+
+@media screen and (max-width:1300px){
+	
+	#container{
+		width: 100%;
+	}
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 17px;
+	}
+	
+	#container #table{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+
+
+@media screen and (max-width: 900px){
+	
+	#mainImage{
+		height: 200px;
+	}
+	
+	#mainImage h2{
+		font-size: 26px;
+	}
+	
+	#container .sort-menu{
+		width: 600px;
+	}
+	
+	#container .sort-menu ul li{
+		width: 200px;
+		height: 52px;
+	}
+	
+	#container .sort-menu ul li span,
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 16px;
+		line-height: 50px;
+	}
+	
+	#search .wSelect-selected {
+		padding: 11px 0px!important;
+	}
+	
+	#search .wSelect-arrow{
+		height: 40px;
+	}
+	#search .wSelect-theme-classic{
+		height: 42px;
+	}
+	
+	#container .search-btn, #container #writeNew{
+		height: 42px;
+		width: 100px;
+		font-size: 16px;
+		line-height: 42px;
+	}
+	
+	#container input[type="text"]{
+		height: 42px;
+	}
+}
+ 
+
+
+@media screen and (max-width:720px) {
+
+	#mainImage{
+		height: 150px;
+	}
+	#mainImage h2{
+		font-size: 22px;
+	}
+	#container .sort-menu{
+		width: 90%;
+	}
+	#container .sort-menu ul li{
+		width: 33.3%;
+		height: 42px;
+	}
+	
+	#container .sort-menu ul li span,
+	#container .sort-menu ul li:nth-child(n+2) span{
+		font-size: 13px;
+		line-height: 40px
+	}
+	#container table tr th:nth-child(1) {width: 18%;}
+	#container table tr th:nth-child(2) {width: 40%}
+	#container table tr th:nth-child(3) {width: 17%; }
+	#container table tr th:nth-child(4) {width: 25%}
+
+	
+	
+	
+    #container #subMenu div p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    #container table tr th {
+        font-size: 13px;
+        line-height: 17px;
+
+    }
+    
+    #container table tr td {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+	#container table tr td:nth-child(2){
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		
+	}
+	
+	
+	#container #mr-table tr td:nth-child(2) span{
+		width: calc( 100% - 80px );
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+    #paging #writeNew {
+        width: 88px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 17px;
+        top: 60%;
+    }
+
+	#container .search-btn, #container #writeNew {
+        border: 1px solid #006762;
+        height: 28px;
+        width: 79px;
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+		
+	#paging{
+		height: 170px;
+	}
+	
+	#paging .go-write{
+		margin-top: 100px;
+		width: 90px;
+		height: 36px;
+		font-size: 14px;
+		line-height: 36px
+	}
+	
+    #container #mr-table tr td:nth-child(1)::before {
+        content: "번호";
+    } 
+    #container #mr-table tr td:nth-child(2)::before {
+        content: "제목";
+    } 
+    #container #mr-table tr td:nth-child(3)::before {
+        content: "작성자";
+    } 
+    #container #mr-table tr td:nth-child(4)::before {
+        content: "작성일";
+    } 
+}
+
+@media all and (max-width:440px) {
+    #subMenu div:nth-child(2) p, #subMenu div:nth-child(3) p {
+        font-weight: 400;
+    }
+
+    #search > div form{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #search > div form > div {
+        border-bottom: 1px solid #cad6d6;
+    }
+    #container select {
+        width: 60%;
+    }
+    
+    #container input[type="text"] {
+        width: 69%;
+    }
+    
+    #container table tr th {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #container table tr td {
+        font-size: 13px;
+        line-height: 15px;
+    }
+   
+}

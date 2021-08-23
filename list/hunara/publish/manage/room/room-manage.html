@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/room.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<link rel="stylesheet" href="../css/calendar.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/modal.js"></script>
+	<script src="../js/calendar.js"></script>
+</head>
+
+<!--팝업 오픈-->
+ <script language="javascript">
+  	function roomPopup() { 
+			window.open("company-room-pop.html", "a", "width=900, height=800, left=100, top=50"); 
+		}
+ </script>
+<body class="room-body">
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="javascript:;">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li class="active">
+				<a href="./room-manage.html">휴양소 관리</a>
+			</li>
+			<li>
+				<a href="../reserve/reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="javascript:;">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./room-manage.html">휴양소 관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./room-manage.html">휴양소 관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents room-mana">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>휴양소 관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big active">휴양소 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./room-new.html">신규 휴양소 등록</a></li>
+							<li class="active"><a href="./room-manage.html">휴양소 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>휴양소 관리</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<div class="com-search">
+						<div class="com-day">
+							<div class="cd-t">
+								<span>등록일</span>
+							</div>
+							<div class="cd-c">
+								<input type="text" id="start" data-js-start-date><span>~</span>
+								<input type="text" id="end" disabled data-js-end-date>
+							</div> 
+						</div>
+						<div class="com-tab">
+							<select name="com-sear" id="com-sear">
+								<option value="com">기업명</option>
+								<option value="com-peo">담당자명</option>
+							</select>
+							<input type="text">
+							<button type="button">검색</button>
+						</div>
+					</div>
+					<div class="view-c">
+						<div class="btn-wrap">
+							<div class="btn-float">
+								<button class="add-people" type="button">사원등록</button>
+								<button type="button">선택 삭제</button>
+								<button type="button" onclick="window.print();">프린트</button>
+							</div>
+						</div>
+						<div class="view-host">
+							<div class="all-c">
+								<input type="checkbox" id="rMana" data-check-pattern="[name^='rMana']" name="rMana">
+								<label for="rMana">전체선택</label>
+							</div>
+							<table id="sort-mana">
+								<thead>
+									<tr>
+										<th>선택</th>
+										<th class="th-btn"><span>번호</span></th>
+										<th class="th-btn"><span>등록일</span></th>
+										<th class="th-btn"><span>휴양소명</span></th>
+										<th class="th-btn"><span>연락처</span></th>
+										<th class="th-btn"><span>핸드폰</span></th>
+										<th class="th-btn"><span>홈페이지</span></th>
+										<th class="th-btn"><span>등록 객실</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+									<tr onclick="location.href='./room-modify.html'">
+										<td onclick="event.cancelBubble=true">
+											<input type="checkbox" name="rMana">
+										</td>
+										<td>1</td>
+										<td>2021.02.03</td>
+										<td>포시즌스 호텔</td>
+										<td>02-xxx-xxxx</td>
+										<td>010-xxxx-xxxx</td>
+										<td>https://www.lottehotel.com/seoul-signiel/ko.html</td>
+										<td>3</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging">
+									<a class="first"></a>
+									<a class="prev"></a>
+									<a class="active">1</a>
+									<a>2</a>
+									<a>3</a>
+									<a>4</a>
+									<a>5</a>
+									<a class="next"></a>
+									<a class="last"></a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--  셀렉트박스  -->
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+				
+				$('select').wSelect();
+			});
+	</script>
+	
+
+	
+</body>
+</html>

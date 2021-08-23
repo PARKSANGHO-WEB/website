@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8">
+    <title>코비인사이트(주)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-t">
+            <div class="h_wrap">
+                <div class="gnb">
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li>
+                                <a href="./sitemap.html">사이트맵</a>
+                            </li>
+                            <li>
+                                <a href="./join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">로그인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo" onclick='location.href="../main.html"'>
+                    <img src="../img/logo_w.png" alt="">
+                </div>
+                <div class="menu_b">
+                    
+                    <ul>
+                        <li class="off-item">
+                            <a class="big_m"  href="./about.html">About Us</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./about.html#about_1">회사소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_2">미션&비전</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_3">CI스토리</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_4">조직도</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_5">오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./business.html">Buiness Area</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./business.html#busi_1">비즈니스 특징</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_2">차별화</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_3">비즈니스 영역</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./factory_1.html">Business Factory</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./factory_1.html">진행현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_2.html">컨설팅 사례</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_3.html">상담실(Q&A)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_4.html">FACTORY(자료실)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_5.html">공작소(자료제작)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./info_1.html">Information</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./info_1.html">이용안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="./info_2.html">공지사항</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-b"></div>
+    </header>
+        <section>
+            <div class="join">
+                <p>마이페이지</p>
+                <span>입력하신 정보를 확인하실 수 있습니다.<br /> 비밀번호를 새로 입력 후 수정완료를 클릭시<br /> 비밀번호가 변경됩니다.</span>
+            </div>
+            <div class="join_f">
+                <form action="#">
+                    <div class="form-wrap">
+                        
+                        <div class="line_2">
+                            <span class="title">
+                                이름
+                            </span>
+                            <input type="text" placeholder="홍길동" disabled>
+                        </div>
+                        <div class="line_3">
+                            <span class="title">
+                                이메일
+                            </span>
+                            <input type="text" placeholder="gildong1@naver.com" disabled>
+                        </div>
+                        <div class="line_4">
+                            <span class="title">
+                                비밀번호
+                            </span>
+                            <input id="password" type="password" placeholder="비밀번호를 입력하세요.">
+                            <input id="confirm_password" type="password" placeholder="비밀번호를 다시 한 번 입력해주세요.">
+                             <span id='message'></span>
+                        </div>
+                        <script>
+                            $(document).ready(function(){
+                                $('#password, #confirm_password').on('keyup', function () {
+                                  if ($('#password').val() == $('#confirm_password').val()) {
+                                    $('#message').html('비밀번호가 일치합니다.').css('font-size', '12px');
+                                  } else 
+                                    $('#message').html('비밀번호가 일치하지않습니다.').css('font-size', '12px');
+                                });
+                            });
+                            
+                        </script>
+                        <div class="line_5">
+                            <span class="title">
+                                주민등록번호
+                            </span>
+                            <input   maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="123456" disabled >
+                            <span class="hypen" placeholder="생년월일">-</span>
+                            <input  maxlength="1"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  placeholder="7" disabled>
+                            <span>주민등록번호 뒷 자리는 첫 한 자리만 입력해주세요.</span>
+                        </div>
+                        <div class="line_6">
+                            <span class="title">
+                                휴대폰
+                            </span>
+                            <select name="phone"  id="pnumber">
+                                <option value="not">010</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="017">017</option>
+                                <option value="070">070</option>
+                                <option value="080">080</option>
+                            </select>
+                            <span class="hypen">-</span>
+                            <input type="text" placeholder="0000"   maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            <span class="hypen">-</span>
+                            <input type="text"maxlength="4"  placeholder="0000"   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                        </div>
+                        
+                        <div class="line_8">
+                            <span class="title">
+                                소속회사
+                            </span>
+                            <input type="text" placeholder="회사명">
+                        </div>
+                        <div class="line_9">
+                            <span class="title">
+                                직책
+                            </span>
+                            <input type="text" placeholder="직책">
+                        </div>
+                        <div class="line_10">
+                            <span class="title">
+                                회사주소
+                            </span>
+                            <input type="text" placeholder="서울시 노원구 공릉동">
+                        </div>
+                        <div class="line_11">
+                            <span class="title">
+                                구분
+                            </span>
+                            <label class="consult" for="consult"><input type="radio" name="consult" id="consult" checked>컨설턴트</label>
+                            <label class="company" for="company"><input type="radio" name="consult" id="company">기업임직원</label>
+                        </div>
+                        <div class="form_btn">
+                            <button type="button">취소</button>
+                            <button type="button">수정완료</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+        <div class="foot-wrap">
+            <ul>
+                <li>
+                    <span>
+                        코비인사이트 주식회사
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        서울특별시 강남구 테헤란로 82길 14, 4층 ( 대치동 청풍빌딩 )
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        사업자 등록번호 : 301-88-00046
+                    </span>
+                    <span>
+                        대표전화 : 02-2088-8102
+                    </span>
+                    <span>
+                        팩스번호 : 02-2088-8105
+                    </span>
+                    <span>
+                        이메일 : contact@koiinsight.co.kr
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Copyright ⓒ 2020 KOBI INSIGHT All Right Reserved.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </footer>    
+</body>
+</html>

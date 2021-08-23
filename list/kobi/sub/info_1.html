@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8">
+    <title>코비인사이트(주)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-t">
+            <div class="h_wrap">
+                <div class="gnb">
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li>
+                                <a href="./sitemap.html">사이트맵</a>
+                            </li>
+                            <li>
+                                <a href="./join.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">로그인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo" onclick='location.href="../main.html"'>
+                    <img src="../img/logo_w.png" alt="">
+                </div>
+                <div class="menu_b">
+                    <ul>
+                        <li class="off-item">
+                            <a class="big_m"  href="./about.html">About Us</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./about.html#about_1">회사소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_2">미션&비전</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_3">CI스토리</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_4">조직도</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html#about_5">오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./business.html">Buiness Area</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./business.html#busi_1">비즈니스 특징</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_2">차별화</a>
+                                    </li>
+                                    <li>
+                                        <a href="./business.html#busi_3">비즈니스 영역</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m" href="./factory_1.html">Business Factory</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./factory_1.html">진행현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_2.html">컨설팅 사례</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_3.html">상담실(Q&A)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_4.html">FACTORY(자료실)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./factory_5.html">공작소(자료제작)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="off-item">
+                            <a class="big_m on" href="./info_1.html">Information</a>
+                            <div class="menu_in">
+                                <ul>
+                                    <li>
+                                        <a href="./info_1.html">이용안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="./info_2.html">공지사항</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-b"></div>
+    </header>
+    <div id="navbar" class="info_tab  sub_tab">
+        <div class="at-wrap">
+        <a href="../main.html" class="home">
+            <img class="" src="../img/sub/home.png" alt="">
+        </a>
+            <a href="./info_1.html" class="dot active">이용안내</a>
+            <a href="./info_2.html" class="dot">공지사항</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="side_bar">
+            <ul>
+                <li>
+                    <p>KOBIINSIGHT</p>
+                </li>
+                <li>
+                    <a href="./consult_login.html">컨설팅<br />의뢰</a>
+                </li>
+                <li>
+                    <a href="./factory_3.html">문의하기<br />(Q&A)</a>
+                </li>
+                <li>
+                    <a href="http://cafe.naver.com/kobiinsight"  target="_blank">카페<br />바로가기</a>
+                </li>
+                <li>
+                    <a class="goTop" href="javascript:;">
+                        <img src="../img/sub/goTop.png" alt="">
+                    </a>
+                </li>
+            </ul>  
+        </div>
+        <div class="info_ban">
+             <p class="info_title">
+                 EVOLUTION TO A CONSULTING PLATFORM
+             </p>
+             <p class="info_ko">
+                 국내 최고의 경영컨설팅 플랫폼으로 진화하고자 합니다.  
+             </p>
+        </div>
+    <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        
+        <div class="info_1">
+            <div id="tab-btn">
+                <ul>
+                    <li class="active"><a href="javascript:;">홈페이지 이용 안내</a></li>
+                    <li><a href="javascript:;">회원에 따른 안내</a></li>
+                    <li><a href="javascript:;">컨설팅 상담 안내</a></li>
+                    <li><a href="javascript:;">정기 컨설팅 서비스 안내</a></li>
+                </ul>
+            </div>
+
+            <div id="tab-cont">
+                <div>
+                    <div class="info1_c">
+                        <p class="big_ment">홈페이지를 방문해 주신 <span class="bold">모든 분들 환영합니다.</span></p>
+                        <p>당사 홈페이지는 진행했던 <span class="bold">다양한 컨설팅 사례, 분야별(세무/법무/노무/인증/기타) 질의 답변,<br />경영관련 이슈</span>에 대한 자료들을 게시하고 있습니다. </p>
+                        <div class="info1_circle">
+                            <ul>
+                                <li>
+                                    <div><p>컨설팅<br/>사례</p></div>
+                                    <p>
+                                        <span>당사에서 진행했던 다양한</span><span>컨설팅 사례들 중 케이스별로</span><span>간추린 내용을 소개하는 섹터</span><span>입니다.</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="line"></div>
+                                </li>
+                                <li>
+                                    <div><p>상담실<br/>(Q&A)</p></div>
+                                    <p><span>세무,&nbsp;법무,&nbsp;노무,&nbsp;인증, 기타별로</span><span>개인 AGENT와 법인에서 질의해</span><span>주신 부분에 대한 답변들을 소개하는</span><span>섹터입니다.</span></p>
+                                </li>
+                                <li>
+                                    <div class="line"></div>
+                                </li>
+                                <li>
+                                    <div><p>FACTORY<br/>(자료실)</p></div>
+                                    <p><span>기업 경영과 관련된 이슈에 대한</span><span>자료를 소개하는 섹터입니다.</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info1_square">
+                            <p><span class="white">홈페이지 게시자료 확인 및 Q&A</span>는 <span class="blue">회원으로 가입하신 분들에 한해 이용 가능하오니</span><br /><span class="white">회원 가입후</span>필요한 내용을 확인해 주시기 바랍니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info2_c">
+                        <div class="info2_title">
+                            <ul>
+                                <li>
+                                    <p>비회원</p>
+                                </li>
+                                <li>
+                                    <p>무료회원</p>
+                                </li>
+                                <li>
+                                    <p>유료회원</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info2_table">
+                            <ul>
+                                <li class="i2t-wrap">
+                                    <table>
+                                        <tr>
+                                            <td class="i2t-tt">컨설팅 사례</td>
+                                            <td class="i2t-tc">
+                                                <ul>
+                                                    <li>
+                                                        전체
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  class="i2t-tt">상담실(Q&A)</td>
+                                            <td class="i2t-tc">
+                                                <ul>
+                                                    <li>
+                                                        질문조회
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        답변 열람
+                                                    </li>
+                                                    <li>
+                                                        <div class="ximage">
+                                                            <div class="x_1"></div>
+                                                            <div class="x_2"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        질의 요청
+                                                    </li>
+                                                    <li>
+                                                        <div class="ximage">
+                                                            <div class="x_1"></div>
+                                                            <div class="x_2"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td class="i2t-tt" rowspan="3">창고(자료실)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="i2t-tc">
+                                                <ul>
+                                                    <li>
+                                                        자료실 조회
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        자료실 열람
+                                                    </li>
+                                                    <li>
+                                                        <div class="ximage">
+                                                            <div class="x_1"></div>
+                                                            <div class="x_2"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li class="i2t-wrap">
+                                    <table>
+                                        <tr>
+                                            <td class="i2t-tt">컨설팅 사례</td>
+                                            <td class="i2t-tc">
+                                                <ul>
+                                                    <li>
+                                                        전체
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  class="i2t-tt">상담실(Q&A)</td>
+                                            <td class="i2t-tc">
+                                                <ul>
+                                                    <li>
+                                                        질문조회
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        답변 열람
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        질의 요청
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td class="i2t-tt" rowspan="3">창고(자료실)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="i2t-tc">
+                                                <ul>
+                                                    <li>
+                                                        자료실 조회
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        자료실 열람
+                                                    </li>
+                                                    <li>
+                                                        <div class="okimage"></div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li class="i2t-wrap2">
+                                    <div class="price">
+                                        추후 도입 예정
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gojoin" onclick='location.href="./join.html"'>
+                            <p>회원가입 바로가기</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info3_c">
+                        <table>
+                            <tr>
+                                <td>홈페이지 의뢰</td>
+                                <td>우측의 컨설팅의뢰 탭을 눌러 <span class="bold">인적사항(회원은 생략)</span>과 <span class="bold">요청분야, 요청하는 내용</span>을 상세하게 기재해주시면<br />확인 후 유선 또는 메일로 연락 드리도록 하겠습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>이메일 의뢰</td>
+                                <td><span class="bold">contact@kobiinsight.co.kr</span>로 인적사항과 요청분야 및 요청내용을 포함하여 문의하시면 됩니다.</td>
+                            </tr>
+                        </table>
+                        <span class="table-text">
+                            *유선상(대표번호 02-2088-8102)으로는 컨설팅 의사 확인 후 위 2가지 방법으로 진행하고 있으니 참고해 주시기 바랍니다.
+                        </span>
+                        <div class="consult-pro">
+                            <p>컨설팅 진행 절차</p>
+                        </div>
+                        <div class="info3-circle">
+                            <ul>
+                                <li class="list-blue"><p>컨설팅<br />의뢰</p></li>
+                                <li class="list-arrow"></li>
+                                <li class="list-gray"><p>담당자<br />확인</p></li>
+                                <li class="list-arrow"></li>
+                                <li class="list-blue"><p>유선or<br />이메일로<br />추가내용<br />확인</p></li>
+                                <li class="list-arrow"></li>
+                                <li class="list-gray"><p>사전<br />미팅</p></li>
+                                <li class="list-arrow"></li>
+                                <li class="list-blue"><p>컨설팅<br />계약</p></li>
+                                <li class="list-arrow"></li>
+                                <li class="list-gray"><p>컨설팅<br />진행</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info4_c">
+                        <table>
+                            <tr>
+                                <th colspan="2">
+                                    서비스대상
+                                </th>
+                                <td>
+                                    개인사업자 or 법인사업자
+                                </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">서비스<br>범위</th>
+                                <th><p>컨설팅 계약<br /><span>(부정기)</span></p></th>
+                                <td>
+                                    <ul>
+                                        <li>경영상 이슈가 되는<br />사안에 대한 검토</li>
+                                        <li class="info4_arrow"></li>
+                                        <li>Action Plan 수립</li>
+                                        <li class="info4_arrow"></li>
+                                        <li>실행 및 마무리</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><p>정기구독 서비스<br /><span>(매월)</span></p></th>
+                                <td><p>회사 운영에 필요한 다양한 업무에 대한 지원<br /><span>[ 세무 / 법무 / 노무 / 인증 / 디자인 / 기타]</span></p></td>
+                            </tr>
+                        </table>
+                        <div class="info4_b">
+                            <div class="info4-title">
+                                정기 구독서비스
+                            </div>
+                            <div class="basic_li">
+                                <p>[기본 서비스]</p>
+                                <ul>
+                                    <li>
+                                        노무 제규정 수립
+                                    </li>
+                                    <li>정관 및 부속규정 검토, 변경이력 관리</li>
+                                    <li>인증 수요 검토 및 계획</li>
+                                    <li>회사 소개서 등 디자인 리뉴얼 계획</li>
+                                </ul>
+                            </div>
+                            <div class="bunki_li bunki_li1">
+                                <ul>
+                                    <li class="bl-top">
+                                        1분기
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>근로계약서 및 임금테이블 갱신</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>가결산 신용등급 검토 및 예상등급<br />산출 (건설사 / 협력업체 등록 필수)</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>법인 결산사항 및  법인세 감면 검토<br />(연구인력개발비 세액공제  필수<br />서류 검토)</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>정기주주총회 개최<br />(임원의 보수, 연봉계약서 / <br />정기배당 포함)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bunki_li bunki_li2">
+                                <ul>
+                                    <li class="bl-top">
+                                        2분기
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>비상장주식 가치 평가</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>결산 재무제표 분석</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>지분관련 계획 검토</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>대표 및 임원 보수 소득세 검토</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bunki_li bunki_li3">
+                                <ul>
+                                    <li class="bl-top">
+                                        1분기
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>반기 가결산 재무제표 분석</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>개정세법(안) 안내</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>중간배당 검토</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bunki_li bunki_li4">
+                                <ul>
+                                    <li class="bl-top">
+                                        1분기
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>당해연도 결산 관련 계획</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>성과급 지급 검토</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>개정세법에 따른 대응방안 수립</p>
+                                    </li>
+                                    <li>
+                                        <span class="listyle"></span>
+                                        <p>기업부설 연구소 등 필수 서류 점검</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="bottom_ment">이 밖에도 <span class="bold">경영 현안</span>에 대한 <span class="bold">상시적 검토</span> 및 <span class="bold">실행</span>이 이루어 지고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script>
+            var tabBtn = $("#tab-btn > ul > li");     //각각의 버튼을 변수에 저장
+            var tabCont = $("#tab-cont > div");       //각각의 콘텐츠를 변수에 저장
+
+            //컨텐츠 내용을 숨겨주세요!
+            tabCont.hide().eq(0).show();
+
+            tabBtn.click(function(){
+              var target = $(this);         //버튼의 타겟(순서)을 변수에 저장
+              var index = target.index();   //버튼의 순서를 변수에 저장
+              //alert(index);
+              tabBtn.removeClass("active");    //버튼의 클래스를 삭제
+              target.addClass("active");    //타겟의 클래스를 추가
+              tabCont.css("display","none");
+              tabCont.eq(index).css("display", "block");
+            });
+        </script>
+    </section>
+    <footer>
+        <div class="foot-wrap">
+            <ul>
+                <li>
+                    <span>
+                        코비인사이트 주식회사
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        서울특별시 강남구 테헤란로 82길 14, 4층 ( 대치동 청풍빌딩 )
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        사업자 등록번호 : 301-88-00046
+                    </span>
+                    <span>
+                        대표전화 : 02-2088-8102
+                    </span>
+                    <span>
+                        팩스번호 : 02-2088-8105
+                    </span>
+                    <span>
+                        이메일 : contact@koiinsight.co.kr
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Copyright ⓒ 2020 KOBI INSIGHT All Right Reserved.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </footer> 
+</body>
+</html>

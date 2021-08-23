@@ -1,0 +1,515 @@
+@charset "utf-8";
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*온라인 서베이 공통 영역*/
+#online_survey {
+    width: 848px;
+    margin: 0 auto;
+    margin-top: 31px;
+    font-family: "Noto sans KR",sans-serif;
+}
+#online_survey h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6b65;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+#online_survey h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #ff6b65;
+    padding-top: 26px;
+    margin-bottom: 12px;
+}
+#online_survey p {
+    font-size: 0.813rem;
+    color: #454545;
+    font-weight: 400;
+}
+#online_survey span {
+    color: #507c89;
+}
+#online_survey ul li {
+    font-size: 0.813rem;
+    font-weight: 400;
+    color: #454545;
+}
+#online_survey li:before {
+    content: "• ";
+    color: #454545;
+    line-height: 1.8;
+}
+
+/*온라인 서베이 영역*/
+#online_survey .online_survey_text {
+    text-align: center;
+}
+
+#online_survey .point {
+    padding: 0 30px 0 30px;
+    background-color: #fafafa;
+    height: 360px;
+    border-radius: 20px;
+    margin-top: 21px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    height: auto;
+}
+#online_survey .point h2 {
+    margin-bottom: 3px;
+}
+#online_survey .point p {
+    margin: 8px 0px;
+}
+#online_survey .point .point_fl {
+/*    플롯*/
+    float: left;
+    margin-top: 10px;
+}
+#online_survey .point .point_fr {
+/*    플롯*/
+    float: right;
+    margin-top: 10px;
+}
+
+
+#online_survey .online_survey_content .online_survey1 {
+    background-color: #fafafa;
+    height: 350px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-left: 30px;
+/*    포지션 위치기준값*/
+    position: relative;
+}
+#online_survey .online_survey_content .online_survey1 h2 {
+    margin-bottom: 22px;
+}
+#online_survey .online_survey_content .online_survey1 img {
+/*    포지션*/
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+
+.survey_who .mob-table{
+	display: none;
+}
+
+
+#online_survey .online_survey_content .online_survey2 {
+    background-color: #fafafa;
+    height: 270px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+#online_survey .online_survey_content .online_survey2 p {
+    margin-bottom: 5px;
+}
+#online_survey .online_survey_content .online_survey2 ul li:before {
+    content: "";
+}
+
+
+#online_survey .online_survey_content .online_survey2 .survey_text2{
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+#online_survey .online_survey_content .online_survey2 .survey_text2 ul li{
+	float: left;
+	width: 150px;
+	height: 90px;
+	border-radius: 100px;
+	background-color: #fff;
+	margin-left: 20px;
+}
+
+
+#online_survey .online_survey_content .online_survey2 .survey_text2 ul li:nth-child(1){
+	margin-left: 0px;
+}
+
+#online_survey .online_survey_content .online_survey2 .survey_text2 ul li span{
+	font-size: 0.7rem;
+	color: #FF6B65;
+	text-align: center;
+	margin-top: 21px;
+	display: block;
+	
+}
+
+
+
+
+#online_survey .survey_who h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+#online_survey .survey_who table {
+    border: 1px solid #fff;
+	border-collapse: collapse;
+    margin: 0 auto;
+	width: 100%;
+}
+
+#online_survey .survey_who table tr td{
+	border-left: 1px solid #fff;
+}
+
+#online_survey .survey_who tr:nth-child(1) td {
+    background-color: #B2B2B2;
+    font-size: 0.813rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 15px;
+    color: #fff;
+}
+#online_survey .survey_who tr:nth-child(2) {
+    background-color: #FAFAFA;
+    font-size: 0.813rem;
+    text-align: center;
+    font-weight: 400;
+    height: 60px;
+    color: #507C89;
+
+}
+#online_survey .survey_who tr:nth-child(3) {
+    background-color: #F4F4F4;
+    font-size: 0.813rem;
+    text-align: center;
+    font-weight: 400;
+    height: 60px;
+    color: #507C89;
+}
+#online_survey .survey_who table, th, td {
+    border-collapse: collapse;
+}
+#online_survey .survey_who button {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+section .about-cont .about-flat {
+	width: 1000px;
+}
+section .about-cont .about-flat ul li {
+	width: 200px;
+}
+
+/*        상단 배너 배경이미지 변경*/
+section.about-busy .sub-banner {
+	background: url('../img/sub/survey-ban.png');
+}
+
+/*        버튼 변경*/
+.survey_who .busy4-btn{
+	width: 633px;
+	margin: 0 auto;
+}
+
+.survey_who .busy4-btn button:nth-child(1){
+	margin-left: 0px;
+}
+
+.survey_who .busy4-btn button{
+	width: 300px;
+	height: auto;
+	box-shadow: 0px 0px 5px rgba(114,114,114,0.4);
+	margin-left: 26px;
+	background-color: #fff;
+	border-radius: 80px;
+	padding: 15px 0px;
+}
+.survey_who .busy4-btn button:hover{
+	box-shadow:  0px 0px 8px rgba(114,114,114,0.6);
+}
+.survey_who .busy4-btn button span{
+	display: block;
+	width: 200px;
+	margin-left: 30px;
+	text-align: left;
+}
+.survey_who .busy4-btn button .b4b-info{
+	font-size: 0.813rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #323A44 !important;
+}
+.survey_who .busy4-btn button .b4b-t{
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FF6B65 !important;
+	background: url('../img/sub/btn-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.survey_who .busy4-btn button:nth-child(2) .b4b-t{
+	width: 240px;
+}
+
+
+
+
+@media screen and (max-width:1300px){
+
+	section .about-cont .about-flat {
+		width: 800px;
+	}
+	section .about-cont .about-flat ul li {
+		width: 160px;
+	}
+	
+	section .about-cont .af-market ul li:nth-child(1) a {
+		font-size: 0.7rem;
+	}
+	
+	.survey_who .busy4-btn{
+		width: 620px;
+	}
+	
+	.survey_who .busy4-btn button{
+		width: 295px;
+	}
+}
+
+
+
+
+@media screen and (max-width:900px){
+
+	section .about-cont .about-flat {
+		width: 600px;
+	}
+	section .about-cont .about-flat ul li {
+		width: 120px;
+	}
+	
+	section .about-cont .af-market ul li:nth-child(1) a {
+		line-height: 14px;
+		margin-top: 12px;
+		font-size: 0.7rem;
+	}
+	
+	#online_survey{
+		width: 600px;
+	}
+	
+	#online_survey .point{
+		padding: 0px 10px 0px 10px;
+	}
+	#online_survey ul li{
+		font-size: 0.7rem;
+		letter-spacing: -1px;
+	}
+	
+	#online_survey .point .point_fl{
+		width: 280px;
+	}
+	#online_survey .point .point_fr{
+		width: 280px;
+	}
+	
+	section.survey_who img{
+		display: none;
+	}
+	
+	section.survey_who .mob-table{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	section.survey_who li:before{
+		display: none;
+	}
+	
+	
+	section.survey_who li:before{
+		content: ""!important;
+		border-left: 1px solid #fff;
+		width: 1px; 
+		height: 100%;
+		position: absolute;
+		left: 0px;
+		display: block;
+	}
+	
+	section.survey_who ul li {
+		float: left;
+		position: relative;
+		width: 50%;
+		margin-top: 10px;
+	}
+	
+	section.survey_who .step{
+		font-size: 1rem;
+		text-align: center;
+		display: block;
+		color: #fff!important;;
+		background-color: #707070;
+		padding: 10px 0px;
+	}
+	section.survey_who .who{
+		font-size: 1rem;
+		text-align: center;
+		display: block;
+		color: #507c89;
+		background-color: #f4f4f4;
+		padding: 10px 0px;
+	}
+	#online_survey .survey_who table{
+		display: none;
+	}
+	
+	.survey_who .busy4-btn{
+		width: 520px;
+	}
+	
+	.survey_who .busy4-btn button{
+		width: 245px;
+	}
+	.survey_who .busy4-btn button .b4b-info{
+		font-size: 0.7rem;
+	}
+	
+	.survey_who .busy4-btn button .b4b-t{
+		background-position: 165px center;
+		font-size: 1rem;
+	}
+}
+
+
+
+@media screen and (max-width:640px){
+	
+	section.on-survey .sub-banner{
+		background: url('../img/sub/msurvey-ban.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	section.on-survey .sub-banner .ban-text .ban-title{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	section.on-survey .sub-banner .ban-text .ban-text{
+		padding: 0px 40px;
+		display: block;
+		width: calc( 100% - 80px );
+	}
+	
+	#online_survey{
+		width: calc( 100% - 20px );
+	}
+	
+	#online_survey .point h2{
+		font-size: 1rem;
+	}
+	
+	#online_survey .point{
+		height: auto;
+		overflow: hidden;
+	}
+	
+	#online_survey .point .point_fl {
+		margin: 0 auto;
+		float: none;
+	}
+	
+	#online_survey .point .point_fr {
+		margin: 20px auto;
+		float: none;
+	}
+	
+	#online_survey h2{
+		font-size: 1rem;
+	}
+	#online_survey .survey_who h2 {
+		text-align: left;
+		padding-left: 20px;
+	}
+	#online_survey .online_survey_content .online_survey1 ul{
+		z-index: 2;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+	
+	#online_survey .online_survey_content .online_survey1 img{
+		z-index: 1;
+	}
+	
+	#online_survey .online_survey_content .online_survey2{
+		padding-right: 30px;
+	}
+	
+	#online_survey p{
+		font-size: 0.7rem;
+	}
+	
+	#online_survey .online_survey_content .online_survey2 img{
+		width: 130px;
+		margin-left: 10px;
+		margin-top: 20px;
+	
+	}
+	
+	#online_survey .online_survey_content .online_survey2 .img1{
+		width: 115px;
+		margin-left: 0px;
+		margin-top: 20px;
+	
+	}
+
+	
+	section.survey_who .step{
+		font-size: 0.8rem;
+	}
+	
+	section.survey_who .who{
+		font-size: 0.8rem;
+	}
+	.survey_who .busy4-btn{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	#online_survey .survey_who button{
+		margin: 0px auto;
+		float: none;
+		display: block;
+		margin-top: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/ScrollMagic.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./class_my.html">수업</a>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="sub-header">
+				<div class="mobile-m">
+					<div class="bar">
+						<div class="bar1-1"></div>
+						<div class="bar2-1">
+							<div class="c-bar1"></div>
+							<div class="c-bar2"></div>
+						</div>
+						<div class="bar3-1"></div>
+					</div>
+				</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    
+    <section class="all-search">
+        <div class="qna-wrap">
+            <div class="as-list">
+						<p class="search-word">"<span class="keyword">성균관대</span>"에 대한 검색결과입니다.</p>
+				<div class="search-tab">
+					<ul>
+						<li class="active">
+							<span>전체</span>
+						</li>
+						<li>
+							<span>유링크 게시판</span>
+						</li>
+						<li>
+							<span>학교 게시판</span>
+						</li>
+						<li>
+							<span>Q&A</span>
+						</li>
+					</ul>
+				</div>
+                <div class="search-l">
+					<form action="#">
+
+						<div class="qna-box" onClick="location.href='./qna_study_view.html'">
+							<div class="qbox-left">
+								<div class="qbox-title">
+									<span class="qna-img">
+										<img src="../img/common/qna_ic_question_large.svg" alt="">
+									</span>
+									<span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+								</div>
+								<div class="qna-preview">
+									<span>
+										미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+									</span>
+								</div>
+							</div>
+							<div class="qna-upimg">
+								<div class="qnau-wrap">
+
+								</div>
+								<div class="quimg quimg-1">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+								<div class="quimg quimg-2">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+								<div class="quimg quimg-3">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+								<div class="quimg quimg-4">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+							</div>
+							<div class="qbox-bot">
+								<div class="qna-info">
+									<span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+									<div class="qna-tag color1">
+										<span>#미분적분학II</span>
+									</div>
+								</div>
+								<div class="qbox-right">
+									답변<span class="qbox-num">1</span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="box-wrap">
+							<div class="qna-box  img-none" onClick="location.href='./qna_study_view.html'">
+								<div class="qbox-left">
+									<div class="qbox-title">
+										<span class="qna-img">
+											<img src="../img/common/qna_ic_question_large.svg" alt="">
+										</span>
+										<span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+									</div>
+									<div class="qna-preview">
+										<span>
+											미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+										</span>
+									</div>
+								</div>
+								<div class="qbox-bot">
+									<div class="qna-info">
+										<span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+										<div class="qna-tag color1">
+											<span>#미분적분학II</span>
+										</div>
+									</div>
+									<div class="qbox-right">
+										답변<span class="qbox-num">1</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-wrap">
+							<div class="qna-box  img-none" onClick="location.href='./qna_study_view.html'">
+								<div class="qbox-left">
+									<div class="qbox-title">
+										<span class="qna-img">
+											<img src="../img/common/qna_ic_question_large.svg" alt="">
+										</span>
+										<span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+									</div>
+									<div class="qna-preview">
+										<span>
+											미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+										</span>
+									</div>
+								</div>
+								<div class="qbox-bot">
+									<div class="qna-info">
+										<span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+										<div class="qna-tag color1">
+											<span>#미분적분학II</span>
+										</div>
+									</div>
+									<div class="qbox-right">
+										답변<span class="qbox-num">1</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-board" onClick="location.href='./school-board.html'">
+							<span class="scrap-position">게시판 > 학교 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+						<div class="search-board" onClick="location.href='./board.html'">
+							<span class="scrap-position">게시판 > 유링크 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+						<div class="search-board" onClick="location.href='./school-board.html'">
+							<span class="scrap-position">게시판 > 학교 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+						<div class="search-board" onClick="location.href='./board.html'">
+							<span class="scrap-position">게시판 > 유링크 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+					</form>
+          		</div>
+          		
+          		<div class="search-l">
+					<form action="#">
+						<div class="search-board" onClick="location.href='./board.html'">
+							<span class="scrap-position">게시판 > 유링크 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+						<div class="search-board" onClick="location.href='./board.html'">
+							<span class="scrap-position">게시판 > 유링크 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+					</form>
+          		</div>
+          		
+          		<div class="search-l">
+					<form action="#">
+						<div class="search-board" onClick="location.href='./school-board.html'">
+							<span class="scrap-position">게시판 > 학교 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+						<div class="search-board" onClick="location.href='./school-board.html'">
+							<span class="scrap-position">게시판 > 학교 게시판</span>
+							<span class="scrap-title">요새 기말고사 준비하기 너무 힘들다ㅠㅠ</span>
+							<span class="scrap-text">휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네  휴학을 너무 길게해서 아는 사람도 많이 없고 쓸쓸하네 휴학을 너무 길게해서 아 겨울이라 더 그런거...</span>
+							<span class="scrap-like">
+								<span class="sl-img">
+									<img src="../img/common/ic_likecount.svg" alt="">
+									<span class="scrap-num">1</span>
+								</span>
+							</span>
+						</div>
+					</form>
+          		</div>
+          		
+          		<div class="search-l">
+					<form action="#">
+
+						<div class="qna-box" onClick="location.href='./qna_study_view.html'">
+							<div class="qbox-left">
+								<div class="qbox-title">
+									<span class="qna-img">
+										<img src="../img/common/qna_ic_question_large.svg" alt="">
+									</span>
+									<span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+								</div>
+								<div class="qna-preview">
+									<span>
+										미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+									</span>
+								</div>
+							</div>
+							<div class="qna-upimg">
+								<div class="qnau-wrap">
+
+								</div>
+								<div class="quimg quimg-1">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+								<div class="quimg quimg-2">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+								<div class="quimg quimg-3">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+								<div class="quimg quimg-4">
+									<img src="../img/thumb/thum2-1.png" alt="">
+								</div>
+							</div>
+							<div class="qbox-bot">
+								<div class="qna-info">
+									<span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+									<div class="qna-tag color1">
+										<span>#미분적분학II</span>
+									</div>
+								</div>
+								<div class="qbox-right">
+									답변<span class="qbox-num">1</span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="box-wrap">
+
+							<div class="qna-box  img-none" onClick="location.href='./qna_study_view.html'">
+								<div class="qbox-left">
+									<div class="qbox-title">
+										<span class="qna-img">
+											<img src="../img/common/qna_ic_question_large.svg" alt="">
+										</span>
+										<span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+									</div>
+									<div class="qna-preview">
+										<span>
+											미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+										</span>
+									</div>
+								</div>
+								<div class="qbox-bot">
+									<div class="qna-info">
+										<span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+										<div class="qna-tag color1">
+											<span>#미분적분학II</span>
+										</div>
+									</div>
+									<div class="qbox-right">
+										답변<span class="qbox-num">1</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+          		</div>
+            </div>
+        </div>
+        <!--   스크롤 탑, 버튼입니다.     -->
+        <div class="btn-board">
+                <span class="top-btn">TOP</span>
+        </div>
+    </section>
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+    
+                $(".content-rd").mCustomScrollbar({
+                                theme:"light-3"
+                            });
+        
+            });
+
+    </script>
+    
+</body>
+</html>

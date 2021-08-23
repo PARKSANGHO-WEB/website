@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/timepicker.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/timepicker.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="on" href="./class_my.html">수업</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a href="./class_my.html">내 수업</a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="./class_notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="./class_calendar.html">캘린더</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="sh-wrap">
+				<a href="./class_my.html">내 수업</a>
+				<a class="on"  href="./class_notice.html">공지사항</a>
+				<a href="./class_calendar.html">캘린더</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a class="on" href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    <!--  좌측의 리스트, 우측의 글쓰기 폼은 탭 형식입니다. -->
+    <section class="notice-write">
+        <form action="#">
+            <div class="myw-wrap">
+                <div class="myw-left">
+                    <div class="time-sel">
+                        <select name="class-time" id="class-time">
+                            <option value="class-20_2">2020년 2학기</option>
+                            <option value="class-20_w">2020년 겨울학기</option>
+                            <option value="class-21_1">2021년 1학기</option>
+                            <option value="class-21_s">2021년 여름학기</option>
+                        </select>
+                    </div>
+                    <div class="myw-list content-rd">
+                        <ul>
+                            <li class="active">
+                                <span class="lec-title">컴퓨터교육개론</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                            <li>
+                                <span class="lec-title">모션그래픽</span>
+                                <span class="lec-time">월요일 15:00 ~ 17:45</span>
+                                <span class="lec-score">3학점</span>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="myw-content">
+                    <div class="myw-t myn-t1">
+                        <span class="myw-lec">컴퓨터교육개론 공지사항</span>
+                        <div class="myw-cate">
+                            <span class="myw-st">
+                                카테고리
+                            </span>
+                            <div class="myw-c">
+                                <div class="myw-subj">
+                                    <input type="radio" name="level" id="subject-n">
+                                    <label for="subject-n">과제공지</label>
+                                </div>
+                                <div class="myw-exam">
+                                    <input type="radio" name="level" id="exami-n">
+                                    <label for="exami-n">시험공지</label>
+                                </div>
+                                <div class="myw-class">
+                                    <input type="radio" name="level" id="class-n">
+                                    <label for="class-n">수업공지</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myw-ntitle">
+                            <span class="myw-st">
+                                제목
+                            </span>
+                            <span class="myw-c">
+                                <input type="text" placeholder="제목을 입력하세요.">
+                            </span>
+                        </div>
+                        <div class="myw-ndate">
+                            <span class="myw-st">
+                                날짜
+                            </span>
+                            <span class="myw-c">
+                                <input type="text" class="datepicker2">
+                            </span>
+                        </div>
+                        
+                        
+                        <div class="myw-time">
+                            <span class="myw-st">
+                                시간 설정
+                            </span>
+                            <span class="myw-c">
+                                <div class="myw-start time-call">
+                                    <span class="myw-stime">시작</span>
+                                    <div class="myw-sel myws">
+                                        <span class="fin-ampm">오전</span>
+                                        <span class="fin-hour">00시</span>
+                                        <span class="fin-mn">00분</span>
+                                    </div>
+                                    <div class="myw-opt">
+                                        <div class="left">
+                                            <span class="myw-am">
+                                                <input type="radio" name="ampm" class="ampm-hr" id="am" value="오전">
+                                                <label for="am">오전</label>
+                                            </span>
+                                            <span class="myw-pm">
+                                                <input type="radio" name="ampm" class="ampm-hr" id="pm" value="오후">
+                                                <label for="pm">오후</label>
+                                            </span>
+                                        </div>
+                                        <div class="center">
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel1" value="01시">
+                                                <label for="hr-sel1">01시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel2" value="02시">
+                                                <label for="hr-sel2">02시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel3" value="03시">
+                                                <label for="hr-sel3">03시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel4" value="04시">
+                                                <label for="hr-sel4">04시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel5" value="05시">
+                                                <label for="hr-sel5">05시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel6" value="06시">
+                                                <label for="hr-sel6">06시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel7" value="07시">
+                                                <label for="hr-sel7">07시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel8" value="08시">
+                                                <label for="hr-sel8">08시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel9" value="09시">
+                                                <label for="hr-sel9">09시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel10" value="10시">
+                                                <label for="hr-sel10">10시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel11" value="11시">
+                                                <label for="hr-sel11">11시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr-sel" class="hour-hr" id="hr-sel12" value="12시">
+                                                <label for="hr-sel12">12시</label>
+                                            </span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel00"  value="00분">
+                                                <label for="mn-sel00">00분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel1"  value="01분">
+                                                <label for="mn-sel1">01분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel2"  value="02분">
+                                                <label for="mn-sel2">02분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel3"  value="03분">
+                                                <label for="mn-sel3">03분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel4"  value="04분">
+                                                <label for="mn-sel4">04분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel5"  value="05분">
+                                                <label for="mn-sel5">05분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel6"  value="06분">
+                                                <label for="mn-sel6">06분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel7"  value="07분">
+                                                <label for="mn-sel7">07분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel8"  value="08분">
+                                                <label for="mn-sel8">08분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel9"  value="09분">
+                                                <label for="mn-sel9">09분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel10"  value="10분">
+                                                <label for="mn-sel10">10분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel11"  value="11분">
+                                                <label for="mn-sel11">11분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel12"  value="12분">
+                                                <label for="mn-sel12">12분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel13"  value="13분">
+                                                <label for="mn-sel13">13분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel14"  value="14분">
+                                                <label for="mn-sel14">14분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel15"  value="15분">
+                                                <label for="mn-sel15">15분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel16"  value="16분">
+                                                <label for="mn-sel16">16분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel17"  value="17분">
+                                                <label for="mn-sel17">17분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel18"  value="18분">
+                                                <label for="mn-sel18">18분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel19"  value="19분">
+                                                <label for="mn-sel19">19분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel20"  value="20분">
+                                                <label for="mn-sel20">20분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel21"  value="21분">
+                                                <label for="mn-sel21">21분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel22"  value="22분">
+                                                <label for="mn-sel22">22분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel23"  value="23분">
+                                                <label for="mn-sel23">23분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel24"  value="24분">
+                                                <label for="mn-sel24">24분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel25"  value="25분">
+                                                <label for="mn-sel25">25분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel26"  value="26분">
+                                                <label for="mn-sel26">26분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel27"  value="27분">
+                                                <label for="mn-sel27">27분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel28"  value="28분">
+                                                <label for="mn-sel28">28분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel29"  value="29분">
+                                                <label for="mn-sel29">29분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel30"  value="30분">
+                                                <label for="mn-sel30">30분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel31"  value="31분">
+                                                <label for="mn-sel31">31분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel32"  value="32분">
+                                                <label for="mn-sel32">32분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel33"  value="33분">
+                                                <label for="mn-sel33">33분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel34"  value="34분">
+                                                <label for="mn-sel34">34분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel35"  value="35분">
+                                                <label for="mn-sel35">35분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel36"  value="36분">
+                                                <label for="mn-sel36">36분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel37"  value="37분">
+                                                <label for="mn-sel37">37분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel38"  value="38분">
+                                                <label for="mn-sel38">38분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel39"  value="39분">
+                                                <label for="mn-sel39">39분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel40" value="40분">
+                                                <label for="mn-sel40">40분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel41" value="41분">
+                                                <label for="mn-sel41">41분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel42" value="42분">
+                                                <label for="mn-sel42">42분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel43" value="43분">
+                                                <label for="mn-sel43">43분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel44" value="44분">
+                                                <label for="mn-sel44">44분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel45" value="45분">
+                                                <label for="mn-sel45">45분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel46" value="46분">
+                                                <label for="mn-sel46">46분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel47" vlaue="47분">
+                                                <label for="mn-sel47">47분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel48" value="48분">
+                                                <label for="mn-sel48">48분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel49" value="49분">
+                                                <label for="mn-sel49">49분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel50" value="50분">
+                                                <label for="mn-sel50">50분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel51" value="51분">
+                                                <label for="mn-sel51">51분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel52" value="52분">
+                                                <label for="mn-sel52">52분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel53" value="53분">
+                                                <label for="mn-sel53">53분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel54" value="54분">
+                                                <label for="mn-sel54">54분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel55" value="55분">
+                                                <label for="mn-sel55">55분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel56" value="56분">
+                                                <label for="mn-sel56">56분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel57" value="57분">
+                                                <label for="mn-sel57">57분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel58" value="58분">
+                                                <label for="mn-sel58">58분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn-sel" class="min-hr" id="mn-sel59" value="59분">
+                                                <label for="mn-sel59">59분</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+	
+                                <div class="myw-finish time-call">
+                                    <span class="myw-ftime">종료</span>
+                                    <div class="myw-sel">
+                                        <div class="myw-sel myws">
+                                            <span class="fin-ampm">오전</span>
+                                            <span class="fin-hour">00시</span>
+                                            <span class="fin-mn">00분</span>
+                                        </div>
+                                    <div class="myw-opt">
+                                        <div class="left">
+                                            <span class="myw-am">
+                                                <input type="radio" class="ampm-hr" name="fin-ampm" id="fin-am" value="오전">
+                                                <label for="fin-am">오전</label>
+                                            </span>
+                                            <span class="myw-pm">
+                                                <input type="radio" class="ampm-hr" name="fin-ampm" id="fin-pm" value="오후">
+                                                <label for="fin-pm">오후</label>
+                                            </span>
+                                        </div>
+                                        <div class="center">
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr1" value="01시">
+                                                <label for="fin-hr1">01시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr2" value="02시">
+                                                <label for="fin-hr2">02시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr3" value="03시">
+                                                <label for="fin-hr3">03시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr4" value="04시">
+                                                <label for="fin-hr4">04시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr5" value="05시">
+                                                <label for="fin-hr5">05시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr6" value="06시">
+                                                <label for="fin-hr6">06시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr7" value="07시">
+                                                <label for="fin-hr7">07시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr8" value="08시">
+                                                <label for="fin-hr8">08시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr9" value="09시">
+                                                <label for="fin-hr9">09시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr10" value="10시">
+                                                <label for="fin-hr10">10시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr11" value="11시">
+                                                <label for="fin-hr11">11시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin-hr" id="fin-hr12" value="12시">
+                                                <label for="hr-sel12">12시</label>
+                                            </span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn00"  value="00분">
+                                                <label for="fin-mn00">00분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn" class="min-hr" id="fin-mn1"  value="01분">
+                                                <label for="fin-mn1">01분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn2"  value="02분">
+                                                <label for="fin-mn2">02분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn3"  value="03분">
+                                                <label for="fin-mn3">03분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn4"  value="04분">
+                                                <label for="fin-mn4">04분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn5"  value="05분">
+                                                <label for="fin-mn5">05분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn6"  value="06분">
+                                                <label for="fin-mn6">06분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn7"  value="07분">
+                                                <label for="fin-mn7">07분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn8"  value="08분">
+                                                <label for="fin-mn8">08분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn9"  value="09분">
+                                                <label for="fin-mn9">09분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn10"  value="10분">
+                                                <label for="fin-mn10">10분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn11"  value="11분">
+                                                <label for="fin-mn11">11분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn12"  value="12분">
+                                                <label for="fin-mn12">12분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn13"  value="13분">
+                                                <label for="fin-mn13">13분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn14"  value="14분">
+                                                <label for="fin-mn14">14분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn15"  value="15분">
+                                                <label for="fin-mn15">15분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn16"  value="16분">
+                                                <label for="fin-mn16">16분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn17"  value="17분">
+                                                <label for="fin-mn17">17분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn18"  value="18분">
+                                                <label for="fin-mn18">18분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn19"  value="19분">
+                                                <label for="fin-mn19">19분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn20"  value="20분">
+                                                <label for="fin-mn20">20분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn21"  value="21분">
+                                                <label for="fin-mn21">21분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn22"  value="22분">
+                                                <label for="fin-mn22">22분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn23"  value="23분">
+                                                <label for="fin-mn23">23분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn24"  value="24분">
+                                                <label for="fin-mn24">24분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn25"  value="25분">
+                                                <label for="fin-mn25">25분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn26"  value="26분">
+                                                <label for="fin-mn26">26분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn27"  value="27분">
+                                                <label for="fin-mn27">27분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn28"  value="28분">
+                                                <label for="fin-mn28">28분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn29"  value="29분">
+                                                <label for="fin-mn29">29분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn30"  value="30분">
+                                                <label for="fin-mn30">30분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn31"  value="31분">
+                                                <label for="fin-mn31">31분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn32"  value="32분">
+                                                <label for="fin-mn32">32분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn33"  value="33분">
+                                                <label for="fin-mn33">33분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn34"  value="34분">
+                                                <label for="fin-mn34">34분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn35"  value="35분">
+                                                <label for="fin-mn35">35분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn36"  value="36분">
+                                                <label for="fin-mn36">36분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn37"  value="37분">
+                                                <label for="fin-mn37">37분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn38"  value="38분">
+                                                <label for="fin-mn38">38분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn39"  value="39분">
+                                                <label for="fin-mn39">39분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn40" value="40분">
+                                                <label for="fin-mn40">40분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn41" value="41분">
+                                                <label for="fin-mn41">41분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn42" value="42분">
+                                                <label for="fin-mn42">42분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn43" value="43분">
+                                                <label for="fin-mn43">43분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn44" value="44분">
+                                                <label for="fin-mn44">44분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn45" value="45분">
+                                                <label for="fin-mn45">45분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn46" value="46분">
+                                                <label for="fin-mn46">46분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn47" vlaue="47분">
+                                                <label for="fin-mn47">47분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn48" value="48분">
+                                                <label for="fin-mn48">48분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn49" value="49분">
+                                                <label for="fin-mn49">49분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn50" value="50분">
+                                                <label for="fin-mn50">50분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn51" value="51분">
+                                                <label for="fin-mn51">51분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn52" value="52분">
+                                                <label for="fin-mn52">52분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn53" value="53분">
+                                                <label for="fin-mn53">53분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn54" value="54분">
+                                                <label for="fin-mn54">54분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn55" value="55분">
+                                                <label for="fin-mn55">55분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn56" value="56분">
+                                                <label for="fin-mn56">56분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn57" value="57분">
+                                                <label for="fin-mn57">57분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn58" value="58분">
+                                                <label for="fin-mn58">58분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin-mn"  class="min-hr" id="fin-mn59" value="59분">
+                                                <label for="fin-mn59">59분</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="myw-ntext">
+                            <span class="myw-st">
+                                내용
+                            </span>
+                            <span class="myw-c">
+                                <textarea class="content-rd" name="myc-text" id="myc-text"></textarea>
+                            </span>
+                        </div>
+                        <div class="myw-write">
+                            <button type="button">작성완료</button>
+                        </div>
+                    </div>
+                    
+                    
+                       
+                    <div class="myw-t myn-t1">
+                        <span class="myw-lec">모션그래픽 공지사항</span>
+                        <div class="myw-cate">
+                            <span class="myw-st">
+                                카테고리
+                            </span>
+                            <div class="myw-c">
+                                <div class="myw-subj">
+                                    <input type="radio" name="level" id="subject-n">
+                                    <label for="subject-n">과제공지</label>
+                                </div>
+                                <div class="myw-exam">
+                                    <input type="radio" name="level" id="exami-n">
+                                    <label for="exami-n">시험공지</label>
+                                </div>
+                                <div class="myw-class">
+                                    <input type="radio" name="level" id="class-n">
+                                    <label for="class-n">수업공지</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myw-ntitle">
+                            <span class="myw-st">
+                                제목
+                            </span>
+                            <span class="myw-c">
+                                <input type="text" placeholder="제목을 입력하세요.">
+                            </span>
+                        </div>
+                        <div class="myw-ndate">
+                            <span class="myw-st">
+                                날짜
+                            </span>
+                            <span class="myw-c">
+                                <input type="text" class="datepicker2">
+                            </span>
+                        </div>
+                        
+                        
+                        <div class="myw-time">
+                            <span class="myw-st">
+                                시간 설정
+                            </span>
+                            <span class="myw-c">
+                                <div class="myw-start time-call">
+                                    <span class="myw-stime">시작</span>
+                                    <div class="myw-sel myws">
+                                        <span class="fin-ampm">오전</span>
+                                        <span class="fin-hour">00시</span>
+                                        <span class="fin-mn">00분</span>
+                                    </div>
+                                    <div class="myw-opt">
+                                        <div class="left">
+                                            <span class="myw-am">
+                                                <input type="radio" name="ampm2" class="ampm-hr" id="am2" value="오전">
+                                                <label for="am2">오전</label>
+                                            </span>
+                                            <span class="myw-pm">
+                                                <input type="radio" name="ampm2" class="ampm-hr" id="pm2" value="오후">
+                                                <label for="pm2">오후</label>
+                                            </span>
+                                        </div>
+                                        <div class="center">
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel1" value="01시">
+                                                <label for="hr2-sel1">01시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel2" value="02시">
+                                                <label for="hr2-sel2">02시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel3" value="03시">
+                                                <label for="hr2-sel3">03시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel4" value="04시">
+                                                <label for="hr2-sel4">04시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel5" value="05시">
+                                                <label for="hr2-sel5">05시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel6" value="06시">
+                                                <label for="hr2-sel6">06시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel7" value="07시">
+                                                <label for="hr2-sel7">07시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel8" value="08시">
+                                                <label for="hr2-sel8">08시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel9" value="09시">
+                                                <label for="hr2-sel9">09시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel10" value="10시">
+                                                <label for="hr2-sel10">10시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel11" value="11시">
+                                                <label for="hr2-sel11">11시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="hr2-sel" class="hour-hr" id="hr2-sel12" value="12시">
+                                                <label for="hr2-sel12">12시</label>
+                                            </span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn22-sel00"  value="00분">
+                                                <label for="mn22-sel00">00분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel1"  value="01분">
+                                                <label for="mn2-sel1">01분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel2"  value="02분">
+                                                <label for="mn2-sel2">02분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel3"  value="03분">
+                                                <label for="mn2-sel3">03분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel4"  value="04분">
+                                                <label for="mn2-sel4">04분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel5"  value="05분">
+                                                <label for="mn2-sel5">05분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel6"  value="06분">
+                                                <label for="mn2-sel6">06분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel7"  value="07분">
+                                                <label for="mn2-sel7">07분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel8"  value="08분">
+                                                <label for="mn2-sel8">08분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel9"  value="09분">
+                                                <label for="mn2-sel9">09분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel10"  value="10분">
+                                                <label for="mn2-sel10">10분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel11"  value="11분">
+                                                <label for="mn2-sel11">11분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel12"  value="12분">
+                                                <label for="mn2-sel12">12분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel13"  value="13분">
+                                                <label for="mn2-sel13">13분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel14"  value="14분">
+                                                <label for="mn2-sel14">14분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel15"  value="15분">
+                                                <label for="mn2-sel15">15분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel16"  value="16분">
+                                                <label for="mn2-sel16">16분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel17"  value="17분">
+                                                <label for="mn2-sel17">17분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel18"  value="18분">
+                                                <label for="mn2-sel18">18분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel19"  value="19분">
+                                                <label for="mn2-sel19">19분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel20"  value="20분">
+                                                <label for="mn2-sel20">20분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel21"  value="21분">
+                                                <label for="mn2-sel21">21분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel22"  value="22분">
+                                                <label for="mn2-sel22">22분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel23"  value="23분">
+                                                <label for="mn2-sel23">23분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel24"  value="24분">
+                                                <label for="mn2-sel24">24분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel25"  value="25분">
+                                                <label for="mn2-sel25">25분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel26"  value="26분">
+                                                <label for="mn2-sel26">26분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel27"  value="27분">
+                                                <label for="mn2-sel27">27분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel28"  value="28분">
+                                                <label for="mn2-sel28">28분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel29"  value="29분">
+                                                <label for="mn2-sel29">29분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel30"  value="30분">
+                                                <label for="mn2-sel30">30분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel31"  value="31분">
+                                                <label for="mn2-sel31">31분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel32"  value="32분">
+                                                <label for="mn2-sel32">32분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel33"  value="33분">
+                                                <label for="mn2-sel33">33분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel34"  value="34분">
+                                                <label for="mn2-sel34">34분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel35"  value="35분">
+                                                <label for="mn2-sel35">35분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel36"  value="36분">
+                                                <label for="mn2-sel36">36분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel37"  value="37분">
+                                                <label for="mn2-sel37">37분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel38"  value="38분">
+                                                <label for="mn2-sel38">38분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel39"  value="39분">
+                                                <label for="mn2-sel39">39분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel40" value="40분">
+                                                <label for="mn2-sel40">40분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel41" value="41분">
+                                                <label for="mn2-sel41">41분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel42" value="42분">
+                                                <label for="mn2-sel42">42분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel43" value="43분">
+                                                <label for="mn2-sel43">43분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel44" value="44분">
+                                                <label for="mn2-sel44">44분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel45" value="45분">
+                                                <label for="mn2-sel45">45분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel46" value="46분">
+                                                <label for="mn2-sel46">46분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel47" vlaue="47분">
+                                                <label for="mn2-sel47">47분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel48" value="48분">
+                                                <label for="mn2-sel48">48분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel49" value="49분">
+                                                <label for="mn2-sel49">49분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel50" value="50분">
+                                                <label for="mn2-sel50">50분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel51" value="51분">
+                                                <label for="mn2-sel51">51분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel52" value="52분">
+                                                <label for="mn2-sel52">52분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel53" value="53분">
+                                                <label for="mn2-sel53">53분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel54" value="54분">
+                                                <label for="mn2-sel54">54분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel55" value="55분">
+                                                <label for="mn2-sel55">55분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel56" value="56분">
+                                                <label for="mn2-sel56">56분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel57" value="57분">
+                                                <label for="mn2-sel57">57분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel58" value="58분">
+                                                <label for="mn2-sel58">58분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="mn2-sel" class="min-hr" id="mn2-sel59" value="59분">
+                                                <label for="mn2-sel59">59분</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+	
+                                <div class="myw-finish time-call">
+                                    <span class="myw-ftime">종료</span>
+                                    <div class="myw-sel">
+                                        <div class="myw-sel myws">
+                                            <span class="fin-ampm">오전</span>
+                                            <span class="fin-hour">00시</span>
+                                            <span class="fin-mn">00분</span>
+                                        </div>
+                                    <div class="myw-opt">
+                                        <div class="left">
+                                            <span class="myw-am">
+                                                <input type="radio" class="ampm-hr" name="fin2-ampm" id="fin2-am" value="오전">
+                                                <label for="fin2-am">오전</label>
+                                            </span>
+                                            <span class="myw-pm">
+                                                <input type="radio" class="ampm-hr" name="fin2-ampm" id="fin2-pm" value="오후">
+                                                <label for="fin2-pm">오후</label>
+                                            </span>
+                                        </div>
+                                        <div class="center">
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr1" value="01시">
+                                                <label for="fin2-hr1">01시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr2" value="02시">
+                                                <label for="fin2-hr2">02시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr3" value="03시">
+                                                <label for="fin2-hr3">03시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr4" value="04시">
+                                                <label for="fin2-hr4">04시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr5" value="05시">
+                                                <label for="fin2-hr5">05시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr6" value="06시">
+                                                <label for="fin2-hr6">06시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr7" value="07시">
+                                                <label for="fin2-hr7">07시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr8" value="08시">
+                                                <label for="fin2-hr8">08시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr9" value="09시">
+                                                <label for="fin2-hr9">09시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr10" value="10시">
+                                                <label for="fin2-hr10">10시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr11" value="11시">
+                                                <label for="fin2-hr11">11시</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" class="hour-hr" name="fin2-hr" id="fin2-hr12" value="12시">
+                                                <label for="fin2-hr12">12시</label>
+                                            </span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn00"  value="00분">
+                                                <label for="fin2-mn00">00분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn" class="min-hr" id="fin2-mn1"  value="01분">
+                                                <label for="fin2-mn1">01분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn2"  value="02분">
+                                                <label for="fin2-mn2">02분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn3"  value="03분">
+                                                <label for="fin2-mn3">03분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn4"  value="04분">
+                                                <label for="fin2-mn4">04분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn5"  value="05분">
+                                                <label for="fin2-mn5">05분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn6"  value="06분">
+                                                <label for="fin2-mn6">06분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn7"  value="07분">
+                                                <label for="fin2-mn7">07분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn8"  value="08분">
+                                                <label for="fin2-mn8">08분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn9"  value="09분">
+                                                <label for="fin2-mn9">09분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn10"  value="10분">
+                                                <label for="fin2-mn10">10분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn11"  value="11분">
+                                                <label for="fin2-mn11">11분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn12"  value="12분">
+                                                <label for="fin2-mn12">12분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn13"  value="13분">
+                                                <label for="fin2-mn13">13분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn14"  value="14분">
+                                                <label for="fin2-mn14">14분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn15"  value="15분">
+                                                <label for="fin2-mn15">15분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn16"  value="16분">
+                                                <label for="fin2-mn16">16분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn17"  value="17분">
+                                                <label for="fin2-mn17">17분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn18"  value="18분">
+                                                <label for="fin2-mn18">18분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn19"  value="19분">
+                                                <label for="fin2-mn19">19분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn20"  value="20분">
+                                                <label for="fin2-mn20">20분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn21"  value="21분">
+                                                <label for="fin2-mn21">21분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn22"  value="22분">
+                                                <label for="fin2-mn22">22분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn23"  value="23분">
+                                                <label for="fin2-mn23">23분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn24"  value="24분">
+                                                <label for="fin2-mn24">24분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn25"  value="25분">
+                                                <label for="fin2-mn25">25분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn26"  value="26분">
+                                                <label for="fin2-mn26">26분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn27"  value="27분">
+                                                <label for="fin2-mn27">27분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn28"  value="28분">
+                                                <label for="fin2-mn28">28분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn29"  value="29분">
+                                                <label for="fin2-mn29">29분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn30"  value="30분">
+                                                <label for="fin2-mn30">30분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn31"  value="31분">
+                                                <label for="fin2-mn31">31분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn32"  value="32분">
+                                                <label for="fin2-mn32">32분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn33"  value="33분">
+                                                <label for="fin2-mn33">33분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn34"  value="34분">
+                                                <label for="fin2-mn34">34분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn35"  value="35분">
+                                                <label for="fin2-mn35">35분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn36"  value="36분">
+                                                <label for="fin2-mn36">36분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn37"  value="37분">
+                                                <label for="fin2-mn37">37분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn38"  value="38분">
+                                                <label for="fin2-mn38">38분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn39"  value="39분">
+                                                <label for="fin2-mn39">39분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn40" value="40분">
+                                                <label for="fin2-mn40">40분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn41" value="41분">
+                                                <label for="fin2-mn41">41분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn42" value="42분">
+                                                <label for="fin2-mn42">42분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn43" value="43분">
+                                                <label for="fin2-mn43">43분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn44" value="44분">
+                                                <label for="fin2-mn44">44분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn45" value="45분">
+                                                <label for="fin2-mn45">45분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn46" value="46분">
+                                                <label for="fin2-mn46">46분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn47" vlaue="47분">
+                                                <label for="fin2-mn47">47분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn48" value="48분">
+                                                <label for="fin2-mn48">48분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn49" value="49분">
+                                                <label for="fin2-mn49">49분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn50" value="50분">
+                                                <label for="fin2-mn50">50분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn51" value="51분">
+                                                <label for="fin2-mn51">51분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn52" value="52분">
+                                                <label for="fin2-mn52">52분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn53" value="53분">
+                                                <label for="fin2-mn53">53분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn54" value="54분">
+                                                <label for="fin2-mn54">54분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn55" value="55분">
+                                                <label for="fin2-mn55">55분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn56" value="56분">
+                                                <label for="fin2-mn56">56분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn57" value="57분">
+                                                <label for="fin2-mn57">57분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn58" value="58분">
+                                                <label for="fin2-mn58">58분</label>
+                                            </span>
+                                            <span class="myw-hr">
+                                                <input type="radio" name="fin2-mn"  class="min-hr" id="fin2-mn59" value="59분">
+                                                <label for="fin2-mn59">59분</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="myw-ntext">
+                            <span class="myw-st">
+                                내용
+                            </span>
+                            <span class="myw-c">
+                                <textarea class="content-rd" name="myc-text" id="myc-text"></textarea>
+                            </span>
+                        </div>
+                        <div class="myw-write">
+                            <button type="button">작성완료</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+
+    <!--  탭 스크립트  -->
+    
+    
+    <script>
+    
+        var tabBtn = $(".myw-list> ul > li");  
+        var tabCont = $(".myw-content > .myw-t"); 
+
+        
+        tabCont.hide().eq(0).show();
+
+        tabBtn.click(function(){
+          var target = $(this); 
+          var index = target.index();   
+          //alert(index);
+          tabBtn.removeClass("active");  
+          target.addClass("active");   
+          tabCont.css("display","none");
+          tabCont.eq(index).css("display", "block");
+        });
+    </script>
+    <script>
+    
+        
+        $(document).ready(function(){
+
+            $(".content-rd").mCustomScrollbar({
+                    theme:"light-3"
+                });
+            });
+    </script>
+    
+    
+    
+    
+    <!--  jQuery datepicker plugin  -->
+    
+    <script>
+        $(function() {
+            //모든 datepicker에 대한 공통 옵션 설정
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                ,changeYear: true //콤보박스에서 년 선택 가능
+                ,changeMonth: true //콤보박스에서 월 선택 가능                
+                ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+                ,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
+                ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                ,minDate: "-1M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                ,maxDate: "+1M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                    
+            });
+
+            $(".datepicker2").datepicker();
+
+            $('.datepicker2').datepicker('setDate', '+1D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+        });
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="38.89" height="13.86" viewBox="0 0 38.89 13.86">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 11px;
+        fill: #727272;
+        font-family: NanumGothic;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #727272;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(15.04 11.13)">삭제</text>
+  <path class="cls-2" d="M9,15.43A6.43,6.43,0,1,0,2.57,9,6.43,6.43,0,0,0,9,15.43Z" transform="translate(-2.07 -2.07)"/>
+  <path class="cls-3" d="M11,7,7.05,11" transform="translate(-2.07 -2.07)"/>
+  <path class="cls-3" d="M7.05,7,11,11" transform="translate(-2.07 -2.07)"/>
+</svg>

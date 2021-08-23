@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.1">
+    <title>Poket Univ</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body class="login"> 
+    <section class="login_wrap">
+        <div class="login_logo">
+            <img src="../img/common/img_logo.png" alt="">
+        </div>
+        <div class="l1-wrap">
+            <form action="#">
+                <div class="lwrap">
+                    <input type="text" placeholder="아이디">
+                    <input type="password" placeholder="비밀번호">
+                    <button class="login_btn" type="button">로그인</button>
+                    <div class="hover-wrap">
+                        <input class="check-box chk" type="checkbox"name="chk"  id="ser-agree">
+                       <label for="ser-agree">
+                        <span>로그인 상태 유지</span>
+                       </label> 
+                       <span>
+                           <a href="javascript:;">ID / PW 찾기</a>
+                       </span>
+                    </div>    
+                </div>
+            </form>
+        </div>
+        <!--   sns 아이콘 -->
+        <div class="sns-log">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/main/naver.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/main/kakao.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/main/apple.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="go-join">
+            <span class="gj-ment">유링크 회원이 아니신가요?</span>
+            <span onclick="location.href='./join_1.html'" class="gj-link">회원가입</span>
+        </p>
+    </section>
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+</body>
+</html>

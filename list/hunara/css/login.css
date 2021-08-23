@@ -1,0 +1,320 @@
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.eot) format('eot')
+}
+
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.woff) format('woff')
+}
+
+input,button,textara,
+input:hover,button:hover,textara:hover,
+input:focus,button:focus,textara:focus{
+	outline: none;
+	border: none;
+	border: 1px solid #dbdbdb;
+}
+
+input[type="checkbox"],button,textarea,input[type="text"]{
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+    background: transparent;
+}
+
+*{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	padding: 0px;
+}
+ 
+ul, ol, li{
+	list-style: none;
+}
+ 
+a{
+	text-decoration: none;
+}
+
+
+#container {
+    width: 100%;
+    max-width: 960px;
+    margin: 49px auto 49px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 로그인 사이드 */
+
+#container #login {
+    width: 416px;
+    height: 614px;
+}
+
+#login p {
+    margin-bottom: 7px;
+    color: #333333
+}
+
+#container h2 {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    margin-bottom: 38px;
+}
+
+#container h2 p{margin-top: 10px; font-size: 18px; color: #d24747;}
+
+#container .green {
+    color: #006762;
+}
+
+#container input {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 22px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+}
+
+#container button {
+    background: white;
+    color: #006762;
+    border: 1px solid #006762;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+	display: block;
+    height: 50px;
+    width: 100%;
+	cursor: pointer;
+    margin-bottom: 22px;
+}
+
+#container input[type="submit"] {
+    background: white;
+    color: #006762;
+    border: 1px solid #006762;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-bottom: 45px; */
+}
+
+#container a, #container a:visited, #container a:link {
+    color: #006762;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+#container .small {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#container p[class="lastOne"] {
+    margin-bottom: 41px !important;
+}
+
+#container input[class="lastOne"] {
+    margin-bottom: 68px !important;
+}
+
+/* 이미지 및 설명 사이드 */
+
+#container #info {
+    width: 308px;
+    height: 614px;
+    background: transparent url(../img/img_5.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#info p {
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+#info1 > p:first-child {
+    margin-top: 164px;
+    margin-bottom: 6px;
+}
+
+#info1 .large {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#info2 .large {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#info2 {
+    margin-top: 98px;
+}
+
+#info2 .small {
+    margin-top: 12px;
+    line-height: 18px;
+}
+
+
+
+.change-modal{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(114,114,114,0.3);
+	z-index: 9999;
+	display: none;
+}
+
+.change-modal.visible{
+	display: block;
+}
+
+.change-modal .modal-con{
+	position: absolute;
+	width: 375px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+}
+
+.change-modal .modal-con .modal-top{
+	width: 100%;
+	height: 40px;
+    background: linear-gradient(to right, #076A64, #FDCDB3);
+	overflow: hidden;
+	position: relative;
+}
+
+
+.change-modal .modal-con .modal-top .close-modal{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.change-modal .modal-con .modal-top .close-modal img{
+	width: 18px;
+	height: 18px;
+}
+
+.change-modal .modal-con .modal-bot{
+	padding: 20px 20px;
+    background-color: #fff;
+}
+
+
+.change-modal .modal-con .modal-bot p{
+	font-size: 16px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.change-modal .modal-con .modal-bot button{
+	width: 236px;
+	height: 50px;
+	border: 1px solid #006762;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #fff;
+	color: #006762;
+	margin: 0 auto;
+	display: block;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width:1300px){
+	#container button{
+		font-size: 18px;
+	}
+	
+	.change-modal .modal-con .modal-bot button{
+		font-size: 18px;
+	}
+	
+	#container input[type="submit"]{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width:900px){
+	#container button{
+		font-size: 16px;
+	}
+	.change-modal .modal-con .modal-bot button{
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width:720px) {
+    #container {
+        justify-content: center;
+    }
+    #container #info {
+        margin-top: 45px;
+        width: 100%;
+        max-width: 416px;
+    }
+}
+
+
+
+@media screen and (max-width:640px){
+	#container button{
+		font-size: 15px;
+	}
+	.change-modal .modal-con .modal-bot button{
+		font-size: 15px;
+		width: 200px;
+	}
+	.change-modal .modal-con{
+		width: 300px;
+	}
+}
+
+@media all and (max-width:440px) {
+    #container {
+        justify-content: center;
+        width: 90%;
+    }
+
+    #container #info {
+        width: 100%;
+        margin-top: 45px;
+
+    }
+
+    #container h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    #container input[type="submit"] {
+        background: white;
+        color: #006762;
+        border: 1px solid #006762;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+	
+}

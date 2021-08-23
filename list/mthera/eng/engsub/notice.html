@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.1">
+    <title>MTHERA PHARMA</title> 
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/common/logo_c.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <div class="menu_wrap">
+                    <ul>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./hello.html">회사소개</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./hello.html">대표이사 인사말</a></li>
+                                    <li><a href="./summary.html">사업개요</a></li>
+                                    <li><a href="./years.html">회사연혁</a></li>
+                                    <li><a href="./people.html">핵심네트워크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./rnd.html">R&D현황</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./rnd.html">핵심기술</a></li>
+                                    <li><a href="./pipe.html">파이프라인</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./notice.html">공지&뉴스</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./notice.html">공지&뉴스</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="./map.html">오시는길</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="./map.html">오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang-ek">
+                <a href="javascript:;">English</a>
+            </div>
+        </div>
+    </header><div class="header_mo">
+            <div class="logo">
+                <a href="/index.php"><img src="../img/common/logo_c.png" alt=""></a>
+            </div>
+            <div class="lang-ek">
+                <a href="javascript:;">English</a>
+            </div>
+            <div class="bar">
+                <div class="bar_1"></div>
+                <div class="bar_2">
+                    <div class="bar2-1"></div>
+                    <div class="bar2-2"></div>
+                </div>
+                <div class="bar_3"></div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".bar").on("click",function(){
+                        $(".mo_menu").toggleClass("done");
+                        $(this).toggleClass("on");
+                    });
+                    
+                    $(".big_menu2").on("click",function(){
+                        $(this).siblings(".two_depth").toggleClass("go");
+                        $(this).toggleClass("go");
+                    });
+                });
+        
+            </script>
+            <div class="mo_menu">
+                <div class="menu_wrap">
+                    <ul>
+                        <li class="menu_list">
+                            <a class="big_menu big_menu2" href="javascript:;">회사소개</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="/sub/hello.php">대표이사 인사말</a></li>
+                                    <li><a href="/sub/summary.php">사업개요</a></li>
+                                    <li><a href="/sub/years.php">회사연혁</a></li>
+                                    <li><a href="/sub/people.php">핵심네트워크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu big_menu2" href="javascript:;">R&D현황</a>
+                            <div class="two_depth">
+                                <ul>
+                                    <li><a href="/sub/rnd.php">핵심기술</a></li>
+                                    <li><a href="/sub/pipe.php">파이프라인</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="/sub/notice.php?bbs_code=notice">공지&뉴스</a>
+                        </li>
+                        <li class="menu_list">
+                            <a class="big_menu" href="/sub/map.php">오시는길</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <section class="notice">
+        <div class="notice_ban">
+            <h1>공지사항</h1>
+        </div>
+        <div class="notice_ct">
+            <div class="notice_top">
+                <div class="notice_tw">
+                    <div class="notice_tl">
+                        <span class="tl_img"><img src="../img/main/mb_circle.png" alt=""></span>
+                        <span class="tl_t">공지사항</span>
+                    </div>
+                    <div class="notice_tr">
+                        <span>HOME</span>&nbsp;<span>></span>&nbsp;
+                        <span>공지사항</span>&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notice_c">
+           <form action="#">
+                <table>
+                    <tr>
+                        <th style="width: 80px;">번호</th>
+                        <th>제목</th>
+                        <th style="width: 150px;">작성자</th>
+                        <th style="width: 150px;">날짜</th>
+                    </tr>
+                    <tr class="title">
+                        <td><p>1</p></td>
+                        <td><a href="./notice_sub.html">공지사항입니다.</a></td>
+                        <td>관리자</td>
+                        <td>2020.08.14</td>
+                    </tr>
+                    <tr class="title">
+                        <td>2</td>
+                        <td><a href="./notice_sub.html">공지사항입니다.</a></td>
+                        <td>관리자</td>
+                        <td>2020.08.14</td>
+                    </tr>
+                    <tr class="title">
+                        <td>3</td>
+                        <td><a href="./notice_sub.html">공지사항입니다.</a></td>
+                        <td>관리자</td>
+                        <td>2020.08.14</td>
+                    </tr>
+                    <tr class="title">
+                        <td>4</td>
+                        <td><a href="./notice_sub.html">공지사항입니다.</a></td>
+                        <td>관리자</td>
+                        <td>2020.08.14</td>
+                    </tr>
+                    <tr class="title">
+                        <td>5</td>
+                        <td><a href="./notice_sub.html">공지사항입니다.</a></td>
+                        <td>관리자</td>
+                        <td>2020.08.14</td>
+                    </tr>
+                    <tr class="title">
+                        <td>6</td>
+                        <td><a href="./notice_sub.html">공지사항입니다.</a></td>
+                        <td>관리자</td>
+                        <td>2020.08.14</td>
+                    </tr>
+                </table>
+                <div class="page_wrap">
+                    <span><a href="javascript:;"><img src="../img/sub/arrol_no.png" alt=""></a></span>
+                    <span><a href="javascript:;">1</a></span>
+                    <span><a href="javascript:;">2</a></span>
+                    <span><a href="javascript:;">3</a></span>
+                    <span><a href="javascript:;">4</a></span>
+                    <span><a href="javascript:;">5</a></span>
+                    <span><a href="javascript:;"><img src="../img/sub/arror_no.png" alt=""></a></span>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+    </script>
+    <footer>
+        <div class="foot_wrap">
+            <ul>
+                <li class="logo">
+                    <img src="../img/common/foot_logo.png" alt="">
+                </li>
+                <li>
+                    <span class="f-title">Contacts</span>
+                    <p>
+                        <span>E.</span>admin@mtherapharma.com
+                    </p>
+                    <p>
+                        <span>T.</span>+82-2-6238-1234
+                    </p>
+                    <p>
+                        <span>F.</span>+82-2-6238-1238
+                    </p>
+                </li>
+                <li>
+                    <span class="f-title">Address</span>
+                    <p>
+                        서울특별시 강서구 마곡중앙8로 1길 38, 102호 (마곡동 787-2)
+                    </p>
+                    <p>
+                        사업자 번호  448-81-01914 <span>ㅣ</span>대표자명 손미원
+                    </p>
+                    <p>
+                        COPYRIGHT 2020 MTHERA PHARMA. ALL RIGHTS RESERVED.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

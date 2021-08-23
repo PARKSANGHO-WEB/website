@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reserve.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+	<script src="../js/modal.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.core.min.js"></script>  
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li class="active">
+				<a href="./reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="javascript:;">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-selected.html">예약관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-list.html">예약 내역 관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents reserve-list">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>예약관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big active">예약관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-selected.html">당첨 등록 관리</a></li>
+							<li class="active"><a href="./reserve-list.html">예약 내역 관리</a></li>
+							<li><a href="./reserve-calendar.html">캘린더</a></li>
+							<li><a href="./reserve-cancel.html">취소 승인 관리</a></li>
+							<li><a href="./reserve-using.html">객실 배정 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">결제 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-pay.html">결제 관리</a></li>
+							<li><a href="./reserve-pg.html">PG결제 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">설문 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-survey.html">설문 등록</a></li>
+							<li><a href="./reserve-survey-manage.html">설문 관리</a></li>
+							<li><a href="./reserve-survey-result.html">결과 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>예약 내역 관리</div>
+				<div class="big-arrow"><img src="../img/common/big-arrow.png" alt=""></div>
+				<div>비엔시스템</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<div class="view view-1 on">
+						<div class="view-t active">등록 휴양소 상세</div>
+						<div class="view-c">
+							<table class="reserve1">
+								<tr>
+									<th>기업명</th>
+									<td>비엔시스템</td>
+								</tr>
+								<tr>
+									<th>휴양소명</th>
+									<td>쉐라톤 그랜드 워커힐 호텔</td>
+								</tr>
+								<tr>
+									<th>주소</th>
+									<td>(143-708) 서울 광진구 광장동 22-1</td>
+								</tr>
+								<tr>
+									<th>연락처</th>
+									<td>02-455-5000</td>
+								</tr>
+								<tr>
+									<th>홈페이지</th>
+									<td>https://www.walkerhill.com/</td>
+								</tr>
+								<tr>
+									<th>이용혜택</th>
+									<td>2인 조식 제공, 실내 수영장 무료 <br />피트니스 무료</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="view view-2">
+						<div class="view-t">예약자 내역</div>
+						<div class="view-c">
+							<table class="reserve1">
+								<tr>
+									<th>평형(객실타입)</th>
+									<td>18평 / 디럭스 / 기준:2명 / 최대:3명</td>
+								</tr>
+								<tr>
+									<th>이용 인원</th>
+									<td>성인 3명</td>
+								</tr>
+								<tr>
+									<th>예약자명</th>
+									<td>도민준</td>
+								</tr>
+								<tr>
+									<th>사원번호</th>
+									<td>1234414124</td>
+								</tr>
+								<tr>
+									<th>예약번호</th>
+									<td>3243242</td>
+								</tr>
+								<tr>
+									<th>이용 기간</th>
+									<td>3박4일(02.01/02.02/02.03)</td>
+								</tr>
+								<tr>
+									<th>부담금</th>
+									<td>개인 500,000원</td>
+								</tr>
+								<tr>
+									<th>결과</th>
+									<td>선착순</td>
+								</tr>
+								<tr>
+									<th>전화</th>
+									<td>02-000-0000</td>
+								</tr>
+								<tr>
+									<th>핸드폰</th>
+									<td>010-000-0000</td>
+								</tr>
+								<tr>
+									<th>이메일</th>
+									<td>bn-systme@naver.com</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<div class="reser-btn">
+						<div class="btn-wrap">
+							<button type="button" onclick="history.back(-1); return false;">목록</button>
+							<button type="button" onclick="window.print();">프린트</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--  셀렉트박스와 파일업로드	-->
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function () {	
+			$('select').wSelect();
+		});
+		
+
+		$(document).ready(function(){
+			// Also see: https://www.quirksmode.org/dom/inputfile.html
+
+			var inputs = document.querySelectorAll('.file-input')
+
+			for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+			}
+
+			function customInput (el) {
+				const fileInput = el.querySelector('[type="file"]')
+				const label = el.querySelector('[data-js-label]')
+
+				fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+			}
+		});
+
+
+		
+	</script>
+	
+	
+	
+	<!-- 테이블 sort 선언	-->
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+			$('.view-t').on('click',function(){
+					if( $(this).parents('.view').hasClass('on') ){
+						$(this).parents('.view').removeClass('on');
+					}else{
+						$('.view').removeClass('on');
+						$(this).parents('.view').addClass('on');
+					}
+				});
+		});
+	
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300;500;700&family=Yanone+Kaffeesatz:wght@700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/locomotive-scroll.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+        <div class="o-scroll" id="js-scroll" data-scroll-container>
+            <div data-scroll-section>
+                <div class="o-container">
+                    <header class="c-header" id="header">
+                        <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header" data-scroll-repeat>
+                            <div class="o-layout">
+                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-position="top" data-scroll-target="#header">
+                                    <span class="u-label c-header_heading_label">
+                                        <a href="/">
+                                            Locomotive.ca
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-position="top" data-scroll-target="#header">
+                                    <div class="u-text-right">
+                                        <p class="u-label c-header_heading_label">
+                                            v4 – Edition
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="c-header_title o-h1" data-scroll>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="3" data-scroll-position="top">Locomotive</span>
+                            </span>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="2" data-scroll-position="top">Scroll</span>
+                            </span>
+                            <span class="c-header_title_line -version u-white">
+                                <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top" data-scroll-delay="0.05">v</span><span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top" data-scroll-delay="0.05">4</span><span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top" data-scroll-delay="0.05">.</span><span class="o-h1" data-scroll data-scroll-speed="4" data-scroll-position="top" data-scroll-delay="0.05">0</span>
+                            </span>
+                        </h1>
+                        <hr class="c-header_line" data-scroll data-scroll-offset="100" />
+                        <a class="c-header_logo" href="https://locomotive.ca" target="_blank">
+                            <svg role="img"><use xlink:href="dist/images/sprite.svg#logo"></use></svg>
+                        </a>
+                    </header>
+                </div>
+            </div>
+
+            
+
+            
+
+            
+            
+
+            <section class="c-section -fixed" data-scroll-section data-persistent>
+                <div class="o-container" id="fixed-elements">
+                    <div class="o-layout">
+                        <div class="o-layout_item u-2/5@from-medium">
+                            <div class="c-section_infos -padding" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
+                                <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                    <h3>
+                                        04. <br>
+                                        Fixed elements
+                                    </h3>
+                                    <div class="c-sections_infos_text u-text">
+                                        <p>
+                                            Create slides that stick and untick to the viewport while scrolling through.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                <div class="c-fixed_target" id="fixed-target"></div>
+                                <div class="c-fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url('dist/images/locomotive04.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+
+        <script src="./js/main.js"></script>
+</body>
+</html>      

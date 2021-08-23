@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>K-DOT</title>
+    <link rel="stylesheet" href="../css/online-panel.css">
+    <link rel="stylesheet" href="../css/modal-b.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+<!--    상단 탭메뉴 사이즈 변형-->
+    <style>
+        
+/*        상단 배너 배경이미지 변경*/
+        section.about-busy .sub-banner {
+            background: url('../img/sub/survey-ban.png');
+        }
+        
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.js"></script>
+</head>
+<body>
+   
+   
+    <header id="navbar">
+        <div class="header-wrap">
+              <div class="hamburger">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                    </label>
+
+                        <div class="menu__box">
+                            <div class="logo-mb">
+                                <a href="../index.html">
+                                    <img src="../img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-bw">
+                                <li class="big-mb">
+                                    <span class="menu-top">Home</span>
+                                    <div class="mt-subl">
+                                        <ul>
+                                            <li>
+                                                <a href="../index.html">Home</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="big-mb">
+                                    <span class="menu-top">About Us</span>
+                                    <div class="mt-subl">
+                                        <ul>
+                                            <li>
+                                                <a href="./about-kdod.html">About Company</a>
+                                            </li>
+                                            <li>
+                                                <a href="./about-busy.html">Our Business</a>
+                                            </li>
+                                            <li>
+                                                <a href="./about-ci.html">About CI</a>
+                                            </li>
+                                            <li>
+                                                <a href="./about-myanma.html">Myanmar & Cambodia </a> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="big-mb">
+                                    <span class="menu-top">Products for Doctor</span>
+                                    <div class="mt-subl">
+                                        <ul>
+                                            <li>
+                                                <a href="./dermatology.html">Dermatology</a>
+                                            </li>
+                                            <li>
+                                                <a href="./dental.html">Dental</a>
+                                            </li>
+                                            <li>
+                                                <a href="./ophthal.html">Ophthalmology </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="big-mb">
+                                    <span class="menu-top">Products for Public</span>
+                                    <div class="mt-subl">
+                                        <ul>
+                                            <li>
+                                                <a href="./cosmetic.html">Cosmetic</a>
+                                            </li>
+                                            <li>
+                                                <a href="./cosmetic.html">Homecare</a>
+                                            </li>
+                                            <li>
+                                                <a href="./point-mall.html">Point-Mall </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="big-mb">
+                                    <span class="menu-top">Online Survey</span>
+                                    <div class="mt-subl">
+                                        <ul>
+											<li>
+												<a href="./online-market-research-survey.html">Market Research Survey</a>
+											</li>
+											<li>
+												<a href="./online-survey.html">Online Survey</a>
+											</li>
+											<li>
+												<a href="./online-panel.html">Online Panel</a>
+											</li>
+											<li>
+												<a href="./online-k-dod-point.html">K-DOD Point</a>
+											</li>
+											<li>
+												<a href="./survey-go.html">Go To Survey</a>
+											</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="big-mb">
+                                    <span class="menu-top">K-DOD Playground</span>
+                                    <div class="mt-subl">
+                                        <ul>
+											<li>
+												<a href="./k-dod-play-meme.html">K-DOD MEME</a>
+											</li>
+											<li>
+												<a href="./play-list.html">Playground </a>
+											</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="big-mb">                        
+                                    <span class="menu-top">Board</span>
+                                    <div class="mt-subl">
+                                        <ul>
+											<li>
+												<a href="./board_FAQ2.html">FAQ</a>
+											</li>
+											<li>
+												<a href="board_FAQ_input.html">Inquiry / Order / Suggestion</a>
+											</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="main-logo" onclick="location.href='../index.html'">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="gnb-ul">
+                <ul>
+                    <li class="gnb-big">
+                        <a href="javascript:;">Mypage</a> 
+                    </li>
+                    <li class="gnb-big">
+                        <a href="./login.html">Logout</a>
+                    </li>
+                    <li class="gnb-big sear-btn">
+                        <a href="javascript:;">Search</a>
+                    </li>
+                    <li class="gnb-big">
+                        <div class="select" data-role="selectBox">
+                            <span date-value="optValue" class="selected-option">
+                                
+                            </span>
+                            <!-- 옵션 영역 -->
+                            <ul class="hide">
+                                <li>
+                                    <span class="eng">English</span>
+                                </li>
+                                <li>
+                                    <span class="myan">မြန်မာဘာသာ</span>
+                                </li>
+                                <li>
+                                    <span class="cam">ភាសាខ្មែរ</span>
+                                </li>
+                                <li>
+                                    <span class="kr">한국어</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <script>
+
+            const body = document.querySelector('body');
+            const select = document.querySelector(`[data-role="selectBox"]`);
+            const values = select.querySelector(`[date-value="optValue"]`);
+            const option = select.querySelector('ul');
+            const opts = option.querySelectorAll('li');
+
+            /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
+            function selects(e){
+            e.stopPropagation();
+            option.setAttribute('style',`top:${select.offsetHeight}px`)
+            if(option.classList.contains('hide')){
+            select.classList.add('on');
+            option.classList.remove('hide');
+            option.classList.add('show');
+            }else{
+            option.classList.add('hide');
+            option.classList.remove('show');
+            select.classList.remove('on');
+            }
+            selectOpt();
+            }
+
+            /* 옵션선택 */
+            function selectOpt(){
+            opts.forEach(opt=>{
+            const innerValue = opt.innerHTML;
+            function changeValue(){
+            values.innerHTML = innerValue;
+            }
+            opt.addEventListener('click',changeValue)
+            });
+            }
+
+            /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
+            function selectFirst(){
+            const firstValue = opts[0].innerHTML;
+            values.innerHTML = `${firstValue}`
+            }
+
+            /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
+            function hideSelect(){
+            if(option.classList.contains('show')){
+            option.classList.add('hide');
+            option.classList.remove('show');
+            select.classList.remove('on');
+            }
+            }
+
+            selectFirst();
+            select.addEventListener('click',selects);
+            body.addEventListener('click',hideSelect);
+        </script>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+
+        <div class="main_menu">
+			
+            <div class="mm-wrap">
+                <div class="big-item">
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="big-item">
+                    <a href="./index.html">
+                        About Us
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./about-kdod.html">About Company</a>
+                            </li>
+                            <li>
+                                <a href="./about-busy.html">Our Business</a>
+                            </li>
+                            <li>
+                                <a href="./about-ci.html">About CI</a>
+                            </li>
+                            <li>
+                                <a href="./about-myanmar.html">Myanmar & Cambodia </a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="./dermatology.html">
+                        Products for Doctor
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./dermatology.html">Dermatology</a>
+                            </li>
+                            <li>
+                                <a href="./dental.html">Dental</a>
+                            </li>
+                            <li>
+                                <a href="./ophthal.html">Ophthalmology </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="./cosmetic.html">
+                        Products for Public
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./cosmetic.html">Cosmetic</a>
+                            </li>
+                            <li>
+                                <a href="./homecare.html">Homecare</a>
+                            </li>
+                            <li>
+                                <a href="./point-mall.html">Point-Mall </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="./online-market-research-survey.html">
+                        Online Survey
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./online-market-research-survey.html">Market Research Survey</a>
+                            </li>
+                            <li>
+                                <a href="./online-survey.html">Online Survey</a>
+                            </li>
+                            <li>
+                                <a href="./online-panel.html">Online Panel</a>
+                            </li>
+                            <li>
+                                <a href="./online-k-dod-point.html">K-DOD Point</a>
+                            </li>
+                            <li>
+                                <a href="./survey-go.html">Go To Survey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="./k-dod-play-meme.html">
+                        K-DOD Playground
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./k-dod-play-meme.html">K-DOD MEME</a>
+                            </li>
+                            <li>
+                                <a href="./play-list.html">Playground </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="./board_FAQ2.html">
+                        Board
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./board_FAQ2.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./board_FAQ_input.html">Inquiry / Order / Suggestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-search">
+        	<form action="#">
+				<input type="text" placeholder="search">
+				<button type="button" class="close-sear"><img src="../img/close-m.png" alt=""></button>
+      		</form>
+        </div>
+    </header>
+
+    <section class="about-busy  on-survey">
+        <div class="sub-banner">
+            <div class="ban-text">
+                <div class="root">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="arrow">></li>
+                        <li>
+                            <a href="online-survey.html">Online Survey</a>
+                        </li>
+                        <li class="arrow">></li>
+                        <li>
+                            <a href="online-panel.html">ONLINE PANEL</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ban-ment">
+                    <span class="ban-title">BE OUR ONLINE PANEL and PARTICIPATE IN SURVEY</span>
+                    <span class="ban-text">We listen to <strong>your voices</strong> on medical, social and industrial issues</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-cont">
+            <div class="about-flat af-market">
+                <ul>
+                    <li>
+                        <a href="online-market-research-survey.html">MARKET RESEARCH SURVEY</a>
+                    </li>
+                    <li>
+                        <a href="online-survey.html">ONLINE SURVEY</a>
+                    </li>
+                    <li class="active">
+                        <a href="online-panel.html">ONLINE PANEL</a>
+                    </li>
+                    <li>
+                        <a href="online-k-dod-point.html"> K-DOD Point </a>
+                    </li>
+                    <li>
+                        <a href="online-go-to-survey.html">GO TO SURVEY </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="online_panel">
+        <h1>온라인 패널이란?</h1>
+        <p class="online_panel_text">
+            ‘케이닷 온라인 패널’이란 케이닷 웹사이트에 회원 가입을 한 멤버들을 의미합니다. 패널들은 케이닷 플랫폼에서 제공되는 다양한 온라인 서베이에 참여하고, 그에 따른 혜택을 받게 됩니다.
+        </p>
+        <section class="what_panel cf">
+            <article class="what_panel_fl">
+                <div class="text">
+                    <h2>온라인 패널이란?</h2>
+                    <p>
+                        ‘케이닷 온라인 패널’이란 케이닷 웹사이트에 회원 가입을 한 멤버들을 <br>
+                        의미합니다. 패널들은 케이닷 플랫폼에서 제공되는 다양한 온라인 서베이에 <br>
+                        참여하고, 그에 따른 혜택을 받게 됩니다. 
+                    </p>
+                </div>
+                <img src="../img/sub/online_panel1.png" alt="배경이미지">
+            </article>
+            <article class="what_panel_fr">
+                <div class="text">
+                    <h2>누가 온라인 패널이 될 수 있나요? </h2>
+                    <p>
+                        미얀마와 캄보디아 국민이라면 누구나 케이닷 온라인 패널로 가입하실 수 있습니다.
+                    </p>
+                </div>
+                <img src="../img/sub/online_panel2.png" alt="배경이미지">
+            </article>
+        </section>
+        <section class="benefit">
+            <h2>패널이 되면 어떤 혜택들이 있나요?</h2>
+            <div class="busy-2l">
+                <ul class="cf">
+                    <li>
+                        <span class="b2l-t">01</span>
+                        <span class="b2l-c">패널이 되면 다양한 국가, 의료, 사회, 산업 데이터베이스를 구축할 수 있게 기여를 합니다</span>
+                    </li>
+                    <li>
+                        <span class="b2l-t">02</span>
+                        <span class="b2l-c">가상의 ‘케이닷 멤버쉽 카드’를 발급해 드립니다 <br>
+                        ( ‘내 정보’ 페이지에서 확인하세요)</span>
+                    </li>
+                    <li>
+                        <span class="b2l-t">03</span>
+                        <span class="b2l-c">온라인 서베이에 참여할 때마다 ‘케이닷 포인트’가 부여됩니다<br>
+                        케이닷 제품들을 구입하거나 할인을 받는데 포인트를 사용하실 수 있습니다</span>
+                    </li>
+                    <li>
+                        <span class="b2l-t">04</span>
+                        <span class="b2l-c">서베이나 이벤트를 진행할 때 경품이 주어지며, 매회 추첨을 통해 뽑히신 분들께 경품을 제공합니다<br>
+                        패널로서 서베이에 참여할 때마다 경품 추첨 기회가 자동으로 주어집니다</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="how_panel">
+            <div class="how_bg">
+                <h2>어떻게 패널에 가입하고 서베이에 참여할 수 있나요?</h2>
+                <div class="busy-2l">
+                    <ul class="cf">
+                        <li>
+                            <span class="b2l-t">Step 1</span>
+                            <span class="b2l-c"><span class="c1">‘회원 가입’ 버튼 클릭</span> <br>
+                            → <u>페이스북 ID 이용하여 회원 가입</u>하시거나 <u>회원 가입서 작성</u>하여 회원 가입 <br>
+                            → ‘회원 번호’, ‘회원 카드’, ‘웰컴 포인트 <span class="c1"> 800</span> points’를 받으세요</span>
+                        </li>
+                        <li>
+                            <span class="b2l-t">Step 2</span>
+                            <span class="b2l-c"><span class="c1">‘서베이 참여하기’ 버튼 클릭</span> <br>
+                            → 우선 <u>‘패널 정보 서베이’</u>에 참여하세요 <br>
+                            → ‘패널 정보 포인트’ <span class="c1">200</span> points를 받으세요</span>
+                        </li>
+                        <li>
+                            <span class="b2l-t">Step 3</span>
+                            <span class="b2l-c"><span class="c1">‘서베이 참여하기’ 페이지를 꾸준히 방문해 보세요</span> <br>
+                            → 정기적으로 신규 서베이가 업데이트됩니다 <br>
+                            새로운 서베이는 ‘서베이 참여하기’나 ‘메인 홈- What’s Hot’ 에서 찾아보실 수 있습니다<br>
+                            <span class="c2">특정한 조건의 패널이 필요한 경우, 이메일이나 메신저를 통해 알려드릴 수도 있습니다</span> <br>
+                            → ‘서베이 포인트’와 ‘경품 당첨의 기회’를 얻으십시오 <span class="c2">(포인트와 경품은 서베이마다 달라질 수 있습니다)</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <div class="img-li">
+                    	<ul>
+                    		<li>
+                    			<div class="paner-1w">
+                    				<img src="../img/sub/panel-1.png" alt="">
+                    				<span class="w1t">via Computer</span>
+                    				<span class="w1c">(Homepage, Facebookpage, e-mail)</span>
+                    			</div>
+                    			<div class="paner-2w">
+                    				<img src="../img/sub/panel-2.png" alt="">
+                    				<span class="w1t">via Mobile</span>
+                    				<span class="w1c">(Smart phone, Table PC)</span>
+                    			</div>
+                    		</li>
+							<li class="arrow"><img src="../img/sub/Icon%20ionic-ios-arrow-back.png" alt=""></li>
+                    		<li>
+                    			<div class="paner-3w">
+                    				<img src="../img/sub/panel-3.png" alt="">
+                    				<span class="w1t">via Computer</span>
+                    				<span class="w1c">＊Points/Giveaways are differ by of questions and difficulties <br />＊Some surveys have specific target group only</span>
+                    			</div>
+                    		</li>
+							<li class="arrow"><img src="../img/sub/Icon%20ionic-ios-arrow-back.png" alt=""></li>
+                    		<li>
+                    			<div class="paner-4w">
+                    				<img src="../img/sub/panel-4.png" alt="">
+                    				<span class="w1t">K-DOD Points</span>
+                    			</div>
+                    			<div class="paner-5w">
+                    				<img src="../img/sub/panel-5.png" alt="">
+                    				<span class="w1t">Giveaways</span>
+                    			</div>
+                    		</li>
+							<li class="arrow"><img src="../img/sub/Icon%20ionic-ios-arrow-back.png" alt=""></li>
+                    		<li>
+                    			<div class="paner-6w">
+                    				<img src="../img/sub/panel-6.png" alt="">
+                    				<span class="w1c">Product purchase from</span>
+                    				<span class="w1t">K-DOD Homapage</span>
+                    			</div>
+                    			<div class="paner-7w">
+                    				<img src="../img/sub/panel-7.png" alt="">
+                    				<span class="1wc">Product purchase from</span>
+                    				<span class="w1t">K-DOD Facebook page</span>
+                    			</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="busy4-btn">
+                <button type="button">
+                    <span class="b4b-info">패널이 되고 싶으세요?</span>
+                    <span class="b4b-t">회원 가입하기</span>
+                </button>
+                <button type="button">
+                    <span class="b4b-info">참여하고 싶으세요?</span>
+                    <span class="b4b-t">서베이 참여하기</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="foot-wrap">
+            <ul>
+                <li class="foot-item">
+                    <div class="foot-logo">
+                        <img src="../img/foot-logo.png" alt="">
+                    </div>
+                    <ul class="info">
+                        <li>
+                            <span class="using-btn">Terms of Service</span>
+                        </li>
+                        <li>
+                            <span class="privacy-btn">Privacy Policy</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>TEL</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            + 82. 2. 2633. 1644
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>E-MAIL</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            Customers@k-dod.com
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>ADDRESS</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            (Zip 06132)#704, 609<br />
+                            Nonhyeon-ro,Gangnam-gu, Seoul,<br />
+                            Republic of Korea
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>CONTACT</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            K-DOD Korea Corp.
+                        </span>
+                        <span>
+                            K-DOD Myanmar Co.,LTD
+                        </span>
+                        <span>
+                            K-DOD (Cambodia) Co.,LTD
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>FOLLOW US</span>
+                    </div>
+                    <div class="foot-cont">
+                        <ul>
+                            <li>
+                                <img src="../img/instagram.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="../img/facebook.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="../img/youtube.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>COPYRIGHT © 2021. K-DOD. ALL RIGHTS RESERVED.</span>
+        </div>
+    </footer>
+ 
+    <div class="terms-modal modal-al">
+		<div class="modal-con">
+            <div class="modal-title">
+                <span>Terms of Service</span>
+                <div class="close-btn">
+                    <img src="../img/sub/close_btn.png" alt="">
+                </div>
+            </div>
+            <div class="line-wrap content-rd">
+                <div class="line-w line1">
+                    <p class="title">1. Welcome!</p>
+                    <p class="content">
+                        These K-DOD Terms of Service define the relationship between the company (“K-DOD”) and members of K-DOD (“Member(s)”) or
+                        non-members, who use such Services, with regard to the use of various K-DOD Services, and contain useful information which
+                        may help you use K-DOD Services. By using our Services, you are deemed to have been notified of K-DOD Terms of Service,and
+                        by signing up as a Member, you are deemed to agree to be bound by these K-DOD Terms of Service and additional relevant
+                        operation policies.Please take a moment to read these K-DOD Terms of Service carefully.<br />
+                        By using our products or services and by signing up as a Member, you are deemed to agree to be bound by these K-DOD Terms of
+                        Service and additional relevant operation policies. Please take a moment to read these Terms of Service carefully.
+                    </p>
+                </div>
+                <div class="line-w line2">
+                    <p class="title">2. Enjoy various Products and Services.</p>
+                    <p class="content">
+                        K-DOD provides a variety of products and services that can improve your quality of life, such as communication with other users,provision of contents and product information, through www.k-dod.com website and Company social network services. You can freely use various K-DOD Services through different kinds of devices used to access the Internet such as PCs and mobile phones, and you may easily check the details of individual Services provided under Information and Notice sections for each Service, and our Web QA/Baord section.
+                    </p>
+                </div>
+                <div class="line-w line3">
+                    <p class="title">3. By signing up as a Member, you can use K-DOD Services more conveniently.</p>
+                    <p class="content">
+                        You may sign up to be a Member after reading and providing your consent to these K-DOD Terms of Service. K-DOD completes
+                        the registration process by providing its approval and provides a K-DOD Service user account (“Account”). An account is a member
+                        authentication unit set up to manage history of each user’s usage of various Services once the Member logs in to K-DOD Services.
+                    </p>
+                </div>
+                <div class="line-w line4">
+                    <p class="title">4. We will value all contents provided by you. </p>
+                    <p class="content">
+                        K-DOD hopes your posts shared with other users or online survey which you participated through K-DOD Services will enrich the lives of all of us. K-DOD promises to safely protect the contents that express your information, thoughts and emotions.<br />In order to duly provide the posts that you have posted or shared through K-DOD Services, K-DOD needs to have a legitimate right to use your contents such as a license to store, copy, reproduce, modify, publicly transmit, display, distribute and create derivative works of such contents (license without any restriction on term or territory and royalty free). Since you will be granting K-DOD such license by posting the content, you must have the necessary rights to do so.
+                    </p>
+                </div>
+                <div class="line-w line5">
+                    <p class="title">5. We safely protect your personal information.</p>
+                    <p class="content">
+                        To provide more convenient Services to users, K-DOD collects and uses Members’ personal information only to the extent of purposes and scope agreed by the Member and safely manages such personal information pursuant to applicable laws and regulations related to the protection of personal information. K-DOD’s efforts or other details related to safely processing relevant personal information of users and Members can be found in our Privacy Policy.<br />If you do not have a log-in or access record for a certain period of time, K-DOD may destroy or separately store your information after providing prior notice through e-mail, notification within the Services or other appropriate electronic means and if there is insufficient information necessary to provide the Services as a result, K-DOD may unavoidably terminate the relevant service agreement.
+                    </p>
+                </div>
+                <div class="line-w line6">
+                    <p class="title">6. Please respect the rights of others.</p>
+                    <p class="content">
+                        Posts you casually put on may result in infringement of rights of others such as infringement of copyright or defamation. In order to solve such problem, K-DOD can pursuant to a post may be taken down upon the request of the right-holder or posted again when the original poster made an objection, based on applicable laws such as the “Information and Communications Network Act” and “Copyright Act”.
+                    </p>
+                </div>
+                <div class="line-w line7">
+                    <p class="title">7. Take advantage of the various Points that K-DOD offers.</p>
+                    <p class="content">
+                        K-DOD provides points to help you use K-DOD Services efficiently. Points mean virtual data on Services with certain calculation unit which K-DOD provides in conjunction with your use of Services by arbitrarily setting or adjusting the value. They do not have any property value and thus cannot be converted into cash or provided as a refund, but there are cases when the amount of points you have may affect your use of K-DOD Services, so please feel free to use them appropriately depending on each circumstance. K-DOD may unavoidably have to adjust a part or all points after notifying you in advance if such adjustment is necessary to support efficient use of K-DOD Services or improve service operation. In addition, points may be extinguished on a regular basis based on the period designated by us, so please be mindful of this while you are using K-DOD service.
+                    </p>
+                </div>
+                <div class="line-w line8">
+                    <p class="title">8. There are some precautions you should keep in mind with regard to use of K-DOD Services.</p>
+                    <p class="content">
+                        K-DOD is trying its best so that you can freely and conveniently enjoy K-DOD Services. However, your posting or use of K-DOD Services may unavoidably be limited for to ensure safe use of Services and protection of rights in the following events, so please check and comply with the following.<br />
+                        <span class="indent">- You should not provide false information regarding your name, date of birth, mobile phone number, etc. when you sign up as our member. Please make sure that the information registered in your member account is accurate and up-to-date. You should not sell, transfer, lend or provide your account as security or allow others to use it. Also, you should not use another person’s account which does not belong to you without permission.</span>
+                        <span class="indent">- Posts that directly or expressly threaten to physically harm others or posts that present a direct and severe threat to publicsafety may be restricted.</span>
+                        <span class="indent">- Posts identified as directly related to crime such as performing or aiding and abetting acts that are prohibited or subject to criminal sanctions under applicable laws, posts that promote, advertise or sell products or services which are prohibited from being promoted, advertised, or sold pursuant to applicable laws, and posts identified as infringing another person’sintellectual property right or violating another person’s rights through insults, invasion of privacy or defamation may be subject to limitation.</span>
+                    </p>
+                </div>
+                <div class="line-w line9">
+                    <p class="title">9. If K-DOD has to restrict the use of Services for inevitable reasons, it will comply with reasonable procedures.</p>
+                    <p class="content">
+                        If your post is in violation of applicable laws or any terms in these K-DOD Terms of Service, K-DOD may delete or make such
+                        contents private contents or refuse to post such contents. However, this does not mean that K-DOD is obligated to review all
+                        contents. <br />
+                        Moreover, if you do not comply with applicable laws or violate any provisions in these K-DOD Terms of Service, K-DOD may check
+                        the details of your related action, and depending on the results, provide precautions regarding the use of K-DOD Services or
+                        restrict the use of Services by suspending a part or all of K-DOD Services on a temporary or permanent basis. If K-DOD believes
+                        that it would be difficult to maintain the K-DOD Terms of Service as a whole even after restricting the use of Services as provided
+                        above, K-DOD may inevitably terminate these K-DOD Terms of Service entered into between you and K-DOD.
+                    </p>
+                </div>
+                <div class="line-w line10">
+                    <p class="title">10. You may terminate these K-DOD Terms of Service at any time.</p>
+                    <p class="content">
+                        Although it is a pity for K-DOD, members may apply for termination of this Term of Service and withdraw from K-DOD membership at any time, and in such case, K-DOD shall process such application pursuant to applicable laws, etc. without delay.
+                    </p>
+                </div>
+                <div class="line-w line11">
+                    <p class="title">11. K-DOD will guide you through the main points and pay attention to your valuable opinion.</p>
+                    <p class="content">
+                        K-DOD will make every effort to provide important information necessary for using the Services in a timely manner. When notifying its Member, K-DOD will provide individual notice through e-mail, notification within the Services or other appropriate electronic means. If notification to all Members is necessary, however K-DOD will post relevant information on the startup page of www.k-dod.com website or through its announcements, for more than seven days.<br />K-DOD will pay attention to your valuable opinion. You may at any time provide your opinion or communicate matters requiring improvement related to the use of Services through the QA/Board, and K-DOD will provide an update on how it handles such matters and the results to the reasonable extent.
+                    </p>
+                </div>
+                <div class="line-w line12">
+                    <p class="title">12. K-DOD posts these K-DOD Terms of Service and operation policies so that you can easily notice them.</p>
+                    <p class="content">
+                        K-DOD displays these K-DOD Terms of Service on its startup page so that you can easily see the details and K-DOD may modify
+                        and update these Terms of Service as well as account policies and posting operation policies from time to time.
+                        K-DOD waits for your comments on modifications from the date K-DOD posts the modified terms and conditions until the effective
+                        date of such modifications (30 days). If your comments are not received during the time period (30 days), you will be deemed to
+                        have consented to using the Services pursuant to the modified terms and conditions.
+                        This English version of the K-DOD Terms of Service is a translation based on the original Korean version of the K-DOD Terms of
+                        Service.<br /><span class="date">Date of announcement : Feb 1, 2021</span><span class="date">Effective date : Feb 1, 2021</span>    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="policy-modal modal-al">
+    	<div class="modal-con">
+            <div class="modal-title">
+                <span>Privacy Policy</span>
+                <div class="close-btn">
+                    <img src="../img/sub/close_btn.png" alt="">
+                </div>
+            </div>
+            <div class="line-wrap content-rd">
+                <div class="line-w line1">
+                    <p class="content">
+                        The company(‘K-DOD’) strictly prioritizes the protection of user personal information and all stages of K-DOD services are provided
+                        in compliance with international standards, including the global Privacy Guidelines. For the users who register K-DOD membership
+                        or provide personal information for other reasons, K-DOD guides the details of Privacy Policy. Please ready carefully before the
+                        registration.
+                    </p>
+                </div>
+                <div class="line-w line1">
+                    <p class="title">1. What Privacy Policy Means for Our Users</p>
+                    <p class="content">
+                        <span class="indent">
+                        - Privacy Policy provides information on the “personal information,” such as the information K-DOD collects, how thecollected information is used, and how and when the information is destroyed.</span>
+                        <span class="indent">- Privacy Policy informs users on their rights regarding their own personal information, as well as the methods and procedures they are entitled to rely on in order to exercise such rights.</span>
+                        <span class="indent">- Privacy Policy specifies the rights and obligations of K-DOD and users regarding personal information and serves as a means to ensure the Right to Informational Self-determination among users.  </span>
+                    </p>
+                </div>
+                <div class="line-w line2">
+                    <p class="title">2. Personal Information Collection</p>
+                    <p class="content">
+                        Users may now access the majority of K-DOD services available to members, such as product information or viewing news updates, without the need to sign up for membership.<br />Where a user signs up with K-DOD to access personalized or membership services, such as online survey, only a minimal amount of personal information required for service use is collected.<br /><br />
+                        The personal information collected by K-DOD at the time of signing up for membership is provided below :<br />
+                        <span class="indent">- User ID, password, name, date of birth and gender : for membership verification</span>
+                        <span class="indent">- Mobile phone number, address, e-mail address : for giveaway delivery or introduction of new events and contents</span><br /><br />
+                        The following information is collected from users during service use :<br />
+                        <span class="indent">- Additional personal information may be collected from users during certain K-DOD service use as users access individual services, participate in an event, or register for a giveaway event.</span><br /><br />
+                        K-DOD uses the following methods to collect personal information :<br />
+                        <span class="indent">- Personal information is collected if the user agrees to the collection of personal information and personally enters the information during the process for membership sign-up or during service use.</span>
+                        <span class="indent">- User’s personal information may be collected via the webpage, email, fax, or phone, during communications made with customer support.</span>
+                        <span class="indent">- Personal information may be collected through documents at events or seminars held offline.</span>
+                        <span class="indent">- Generated information, such as device nformation, may be automatically created and collected during a user access to the PC web or mobile web/app.</span>
+                    </p>
+                </div>
+                <div class="line-w line3">
+                    <p class="title">3. Use of Collected Personal Information</p>
+                    <p class="content">
+                       
+                        <span class="indent">- Personal information is used for membership management, such as confirming user intent to sign up, verifying age,verifying the identity of users, identifying users, and confirming user intent to withdraw K-DOD membership.</span>
+                        <span class="indent">- In addition to providing existing services, including contents and advertisement, personal information is also used toanalyze demographic data, service visitation and usage records, create relationships between users based on theirpersonal information and interests, and provide customized services based on information of friends and areas of interest,in order to discover new service elements to improve upon existing services.</span>
+                        <span class="indent">- Personal information is used to protect users and provide effective services through diverse means, such as imposing restrictions on service use in violation of laws, regulations, and K-DOD’s Terms of Service, preventing and sanctioning against actions that interfere with seamless service operation, including any unfair service use, preventing account fraud and illegal transactions, providing notices of updates in the Terms of Service, storing records for dispute resolution, and handling civil complaints.</span>
+                        <span class="indent">- Personal information is used to verify user identity for premium services, giving or reduction of K-DOD points, and
+                        conduct the delivery of products and services.</span>
+                        <span class="indent">- Personal information is used to provide marketing and promotions through offering information on events and offering opportunities for participation and providing promotional information.</span>
+                        <span class="indent">- Personal information is used to provide customized services and post advertisements based on the analysis of service usage records and frequency of access, statistics on service use, and other services and statistics.</span>
+                        <span class="indent">- Personal information is used to create a service  environment for users that ensure service use free of any fears that may 
+                        be associated with security, privacy, and safety.</span>
+                    </p>
+                </div>
+                <div class="line-w line5">
+                    <p class="title">5. Destruction of Personal Information</p>
+                    <p class="content">
+                        K-DOD strictly destroys personal information immediately after the user withdraws membership. However, personal information may be stored safely for a designated period afterward, if K-DOD obtains separate consent from the user to store the personal information for a certain period, or if K-DOD is required by law to store the information for a specified period. Personal information is immediately destroyed to an un-restorable state once the purpose of collecting and storing personal information is fully served, which includes the user’s membership cancellation, service termination, and/or expiration of the personal information storage period that was approved by the user. Personal information stored under the law is immediately destroyed to an un-restorable state once the storage period is expired.
+                    </p>
+                </div>
+                <div class="line-w line6">
+                    <p class="title">6. Rights of Users and Exercising Those Rights</p>
+                    <p class="content">
+                        - Users can go to ‘K-DOD My Info ’ to view or update their personal information at any time.<br />- Users can go to ‘Membership Withdrawal’ to revoke consent to the collection and use of their personal information at any time.
+                    </p>
+                </div>
+                <div class="line-w line7">
+                    <p class="title">7. Action Taken to Protect Personal Information</p>
+                    <p class="content">
+                        K-DOD strives to ensure the safe management of user personal information and users’ personal information is protected by passwords. The passwords of user accounts are known by the users only and the confirmation or change of passwords are available by the users only. So users should not share the passwords with any others and press ‘log-out’ button after the website use.<br /> K-DOD assigns a manager who can dedicately manage customers’ personal information and provides continuous training to ensure the importance of data privacy and develop a robust plan of data protection. Also K-DOD tries to obtain and run the high level solutions to prevent personal information from external hacking or burglary. However, K-DOD does not take any responsibilities for the problems which are caused by users’ carelessness or internet errors.
+                    </p>
+                </div>
+                <div class="line-w line8">
+                    <p class="title">8. Obligation to Notify Prior to Amendment</p>
+                    <p class="content">
+                        Users will be notified of any addition, deletion, and/or modification in this Privacy Policy through notification at least seven (7) days prior to the scheduled amendment. <br />However, notifications for amendments that affect significant rights of users, including changes to the collected personal information or to the purpose of using such information, will be filed at least thirty (30) days prior to the scheduled amendment. In such cases, the consent of users may be obtained once more upon necessity.                         
+                        <br /><span class="date">Date of announcement : Feb 1, 2021</span><span class="date">Effective date : Feb 1, 2021</span>   
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+		
+		$(document).ready(function(){
+			$('.using-btn').on('click',function(){
+				$('.policy-modal').removeClass('visible');
+				$('.terms-modal').addClass('visible');
+			});
+			$('.privacy-btn').on('click',function(){
+				$('.terms-modal').removeClass('visible');
+				$('.policy-modal').addClass('visible');
+			});
+			$('.modal-close').on('click',function(){
+				$('.modal-al').removeClass('visible');
+			});
+		});
+	
+	</script>
+    <script>
+    
+        
+        $(document).ready(function(){
+
+            $(".content-rd").mCustomScrollbar({
+                    theme:"light-3"
+                });
+            });
+    </script>
+</body>
+</html>

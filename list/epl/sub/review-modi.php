@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/sub.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	<meta charset="UTF-8">
+	<title>EPL</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/jquery.ellipsis.js"></script>
+</head>
+<body>
+	<script>
+	
+        $(document).ready(function() {
+            $("header").load("./inc/header.php");
+            $("footer").load("./inc/footer.php");
+        });
+		
+		
+		
+		
+	</script>
+	
+	<header></header>
+	<section class="commu">
+		<div class="sub-ban">
+			<p class="sub-title">커뮤니티</p>
+			<div class="sub-menu">
+				<ul id="tabsNav">
+					<li>
+						<a href="./notice.php">공지사항</a>
+						<div class="underline"></div>
+					</li>
+					<li>
+						<a href="./qna.php">Q&A</a>
+						<div class="underline"></div>
+					</li>
+					<li  class="active">
+						<a href="./review.php">학습후기</a>
+						<div class="underline"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sub-con">
+			<form action="#">
+				<table class="qna-write">
+					<tr>
+						<td>제목</td>
+						<td><input type="text" placeholder="제목입니다."></td>
+					</tr>
+					<tr>
+						<td>문의내용</td>
+						<td>
+							<textarea name="text" id="write-con">후기내용입니다.</textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>파일첨부</td>
+						<td>
+							<div class="file-input">
+								<input type="file" maxlength="10" required="no" message="기타 첨부자료" name="file_1" id="file_1">
+								<span class="button">파일선택</span>
+								<span class="label" data-js-label="">선택된 파일 없음</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="write-btn">
+					<button type="button">수정하기</button>
+					<button type="button">취소</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/sub.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="UTF-8">
+	<title>휴나라</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/sticky-sidebar.js"></script>
+	
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("0").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+	
+	
+	<!--  좌측 사이드바 연동 	-->
+	
+	<script>
+		
+		$(document).ready(function(){
+			    var sidebar = new StickySidebar('#sidebar', {
+					containerSelector: '#main-content',
+					innerWrapperSelector: '.sidebar__inner',
+					topSpacing: 20,
+					bottomSpacing: 20
+				});
+		});
+		
+	</script>
+</head>
+<body>
+	<header id="myHeader">
+	</header>
+	<section class="sub-room">
+		<div class="sub-ban">
+			<p>휴양소</p>
+		</div>
+		<div class="sort-menu">
+			<ul>
+				<li class="active">
+					<a>하계휴양소</a>
+				</li>
+				<li>
+					<a>동계휴양소</a>
+				</li>
+				<li>
+					<a>상시휴양소</a>
+				</li>
+			</ul>
+		</div>
+		<div class="fil-wrap">
+			<div class="mob-filter">
+				<div id="mof" class="btn-wrap">
+					<span class="filter-btn">
+						<a href="javascript:;">상세필터</a>
+					</span>
+				</div>
+			</div>
+			<div class="room-top">
+				<select name="room-sort" id="room-sort">
+					<option value="all">전체</option>
+					<option value="name">이름순</option>
+					<option value="up-pr">개인부담금 오름차순</option>
+					<option value="down-pr">개인부담금 내림차순</option>
+				</select>
+				<div class="list-btn">
+					<span class="list-view on"></span>
+					<span class="list-square"></span>
+				</div>
+			</div>
+		</div>
+		<div class="room-right">
+			<div id="main-content" class="room-con">
+				<div id="sidebar" class="sidebar modal-wrap">
+					<div class="sidebar__inner">
+						<div class="box-shadow">
+							<div class="close-btn close-modal">
+								<img src="../img/common/close-b.png" alt="">
+							</div>
+							<!--지역선택 추가 210504-->
+							<div class="rl-top">
+								<p>지역 선택</p>
+								<ul>
+									<li>
+										<input type="checkbox" name="seoul" id="seoul">
+										<label for="seoul">서울</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gyeonggi" id="gyeonggi">
+										<label for="gyeonggi">경기도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="incheon" id="incheon">
+										<label for="incheon">인천</label>
+									</li>
+									<li>
+										<input type="checkbox" name="chungnam" id="chungnam">
+										<label for="chungnam">충남</label>
+									</li>
+									<li>
+										<input type="checkbox" name="chungbuk" id="chungbuk">
+										<label for="chungbuk">충북</label>
+									</li>
+									<li>
+										<input type="checkbox" name="daejeon" id="daejeon">
+										<label for="daejeon">대전</label>
+									</li>
+									<li>
+										<input type="checkbox" name="daegu" id="daegu">
+										<label for="daegu">대구</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gangwon" id="gangwon">
+										<label for="gangwon">강원도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gyeongbuk" id="gyeongbuk">
+										<label for="gyeongbuk">경상북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gyeongnam" id="gyeongnam">
+										<label for="gyeongnam">경상북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gwangju" id="gwangju">
+										<label for="gwangju">광주</label>
+									</li>
+									<li>
+										<input type="checkbox" name="ulsan" id="ulsan">
+										<label for="ulsan">울산</label>
+									</li>
+									<li>
+										<input type="checkbox" name="jeonbuk" id="jeonbuk">
+										<label for="jeonbuk">전라북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="jeonnam" id="jeonnam">
+										<label for="jeonnam">전라북도</label>
+									</li>
+									<li>
+										<input type="checkbox" name="busan" id="busan">
+										<label for="busan">부산</label>
+									</li>
+									<li>
+										<input type="checkbox" name="jeju" id="jeju">
+										<label for="jeju">제주도</label>
+									</li>
+								</ul>
+							</div>
+							<div class="rl-bot">
+								<p>지역 선택</p>
+								<ul>
+									<li>
+										<input type="checkbox" name="one-t" id="one-t">
+										<label for="one-t">1박 2일</label>
+									</li>
+									<li>
+										<input type="checkbox" name="two-t" id="two-t">
+										<label for="two-t">2박 3일</label>
+									</li>
+									<li>
+										<input type="checkbox" name="thr-t" id="thr-t">
+										<label for="thr-t">3박 4일</label>
+									</li>
+									<li>
+										<input type="checkbox" name="fr-t" id="fr-t">
+										<label for="fr-t">4박 5일</label>
+									</li>
+								</ul>
+							</div>
+							<div class="rl-size">
+								<p>평형</p>
+								<div class="size-w">
+									<div class="min-p">
+										<input type="text" class="only-num">
+										<span>평</span>
+									</div>
+										<span class="hypen">~</span>
+										<div class="max-p">
+										<input type="text" class="only-num">
+										<span>평</span>
+									</div>
+								</div>
+							</div>
+							<div class="rl-prc">
+								<p>자기부담금</p>
+								<div class="price-w">
+									<div class="min-p">
+										<input type="text" class="only-num">
+										<span>원</span>
+									</div>
+										<span class="hypen">~</span>
+										<div class="max-p">
+										<input type="text" class="only-num">
+										<span>원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content" class="content">
+					<div class="rr-list list">
+						<ul>
+							<li onclick="location.href='./sub1-sangse.html'">
+								<div class="box-li">
+									<div class="ml-img">
+										<img src="../img/main/main-list.png" alt="">
+									</div>
+									<div class="info-wrap">
+										<div class="first-info">
+											<span class="way-sel">선착순 추첨</span>
+											<div class="first-price">
+												<span class="fp-t">자기부담금</span>
+												<span class="fp-c">0원 ~ 120,000원</span>
+											</div>
+										</div>
+										<div class="room-title">
+											<p>해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점</p>
+										</div>
+										<div class="line-2">
+											<div class="room-period">
+												<span class="rp-t">운영기간 : </span>
+												<span class="rp-start">2021.02.02</span>
+												<span class="rp-hypen">~</span>
+												<span class="rp-end">2021.02.03</span>
+											</div>
+											<div class="second-info">
+												<span class="room-op">27평&#40;스위트&#40;방1+거실+화장실1&#41;&#41;</span>
+											</div>
+										</div>
+										<div class="line-3">
+											<div class="room-day">
+												<span class="one-t">1박 2일</span>
+												<span class="two-t">2박 3일</span>
+												<span class="thr-t">3박 4일</span>
+												<span class="fr-t">4박 5일</span>
+											</div>
+											<div class="room-people">
+												<div class="static">
+													<span class="rp-t">기준인원 : </span>
+													<span class="rp-c">4</span>
+												</div>
+												<div class="maximum">
+													<span class="rp-t">
+														최대인원 : 
+													</span>
+													<span class="rp-c">
+														5
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li onclick="location.href='./sub1-sangse.html'">
+								<div class="box-li">
+									<div class="ml-img">
+										<img src="../img/main/main-list.png" alt="">
+									</div>
+									<div class="info-wrap">
+										<div class="first-info">
+											<span class="way-sel">선착순 추첨</span>
+											<div class="first-price">
+												<span class="fp-t">자기부담금</span>
+												<span class="fp-c">0원 ~ 120,000원</span>
+											</div>
+										</div>
+										<div class="room-title">
+											<p>해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점</p>
+										</div>
+										<div class="line-2">
+											<div class="room-period">
+												<span class="rp-t">운영기간 : </span>
+												<span class="rp-start">2021.02.02</span>
+												<span class="rp-hypen">~</span>
+												<span class="rp-end">2021.02.03</span>
+											</div>
+											<div class="second-info">
+												<span class="room-op">27평&#40;스위트&#40;방1+거실+화장실1&#41;&#41;</span>
+											</div>
+										</div>
+										<div class="line-3">
+											<div class="room-day">
+												<span class="one-t">1박 2일</span>
+												<span class="two-t">2박 3일</span>
+												<span class="thr-t">3박 4일</span>
+												<span class="fr-t">4박 5일</span>
+											</div>
+											<div class="room-people">
+												<div class="static">
+													<span class="rp-t">기준인원 : </span>
+													<span class="rp-c">4</span>
+												</div>
+												<div class="maximum">
+													<span class="rp-t">
+														최대인원 : 
+													</span>
+													<span class="rp-c">
+														5
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li onclick="location.href='./sub1-sangse.html'">
+								<div class="box-li">
+									<div class="ml-img">
+										<img src="../img/main/main-list.png" alt="">
+									</div>
+									<div class="info-wrap">
+										<div class="first-info">
+											<span class="way-sel">선착순 추첨</span>
+											<div class="first-price">
+												<span class="fp-t">자기부담금</span>
+												<span class="fp-c">0원 ~ 120,000원</span>
+											</div>
+										</div>
+										<div class="room-title">
+											<p>해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점</p>
+										</div>
+										<div class="line-2">
+											<div class="room-period">
+												<span class="rp-t">운영기간 : </span>
+												<span class="rp-start">2021.02.02</span>
+												<span class="rp-hypen">~</span>
+												<span class="rp-end">2021.02.03</span>
+											</div>
+											<div class="second-info">
+												<span class="room-op">27평&#40;스위트&#40;방1+거실+화장실1&#41;&#41;</span>
+											</div>
+										</div>
+										<div class="line-3">
+											<div class="room-day">
+												<span class="one-t">1박 2일</span>
+												<span class="two-t">2박 3일</span>
+												<span class="thr-t">3박 4일</span>
+												<span class="fr-t">4박 5일</span>
+											</div>
+											<div class="room-people">
+												<div class="static">
+													<span class="rp-t">기준인원 : </span>
+													<span class="rp-c">4</span>
+												</div>
+												<div class="maximum">
+													<span class="rp-t">
+														최대인원 : 
+													</span>
+													<span class="rp-c">
+														5
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li onclick="location.href='./sub1-sangse.html'">
+								<div class="box-li">
+									<div class="ml-img">
+										<img src="../img/main/main-list.png" alt="">
+									</div>
+									<div class="info-wrap">
+										<div class="first-info">
+											<span class="way-sel">선착순 추첨</span>
+											<div class="first-price">
+												<span class="fp-t">자기부담금</span>
+												<span class="fp-c">0원 ~ 120,000원</span>
+											</div>
+										</div>
+										<div class="room-title">
+											<p>해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점해비치 호텔 앤 스파리조트 제주 지점</p>
+										</div>
+										<div class="line-2">
+											<div class="room-period">
+												<span class="rp-t">운영기간 : </span>
+												<span class="rp-start">2021.02.02</span>
+												<span class="rp-hypen">~</span>
+												<span class="rp-end">2021.02.03</span>
+											</div>
+											<div class="second-info">
+												<span class="room-op">27평&#40;스위트&#40;방1+거실+화장실1&#41;&#41;</span>
+											</div>
+										</div>
+										<div class="line-3">
+											<div class="room-day">
+												<span class="one-t">1박 2일</span>
+												<span class="two-t">2박 3일</span>
+												<span class="thr-t">3박 4일</span>
+												<span class="fr-t">4박 5일</span>
+											</div>
+											<div class="room-people">
+												<div class="static">
+													<span class="rp-t">기준인원 : </span>
+													<span class="rp-c">4</span>
+												</div>
+												<div class="maximum">
+													<span class="rp-t">
+														최대인원 : 
+													</span>
+													<span class="rp-c">
+														5
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+	</footer>
+	
+	
+	<!-- 스크롤시 상세필터 고정 ( 1300px 이하)	-->
+	
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("mof");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+
+		
+		
+	//솔트메뉴 토글
+$(document).ready(function(){
+
+	$('.sort-menu li').click(function(){
+
+		$(this).addClass('active');
+		$('.sort-menu li').not(this).removeClass('active');
+
+	});
+});
+			
+	</script>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/sub.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li class="active">
+				<a href="./company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li>
+				<a href="../reserve/reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="../setting/setting-admin.html">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./company.html">기업관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./company-room-go.html">휴양소 추첨 관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents company-rmview">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>기업관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big">기업정보</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./company-new.html">신규등록</a></li>
+							<li><a href="./company.html">기업관리</a></li>
+							<li><a href="./company-people.html">기업 사원 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big active">기업 휴양소 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./company-room-new.html">신규 휴양소 추가</a></li>
+							<li><a href="./company-room-manage.html">기업 휴양소 관리</a></li>
+							<li class="active"><a href="./company-room-go.html">휴양소 추첨 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>휴양소 추첨 관리</div>
+				<div class="big-arrow"><img src="../img/common/big-arrow.png" alt=""></div>
+				<div>비엔시스템(칼호텔[제주])</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<div class="view view-1 on">
+						<div class="view-t active">등록 휴양소 상세</div>
+						<div class="view-c">
+							<table>
+								<tr>
+									<th>
+										<span>기업명</span>
+									</th>
+									<td>
+										<span>비엔시스템</span>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>휴양소명</span>
+									</th>
+									<td>
+										<span>쉐라톤 그랜드 워커힐 호텔</span>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>주소</span>
+									</th>
+									<td>
+										<span>(143-708) 서울 광진구 광장동 22-1</span>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>연락처</span>
+									</th>
+									<td>
+										<span>02-455-5000</span>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>홈페이지</span>
+									</th>
+									<td>
+										<span>https://www.walkerhill.com/</span>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>이용혜택</span>
+									</th>
+									<td>
+										<span>2인 조식 제공, 실내 수영장 무료<br />피트니스 무료</span>
+									</td>
+								  <script>
+								  </script>
+								</tr>
+								<tr>
+									<th>
+										<span>객실 선택</span>
+									</th>
+									<td>
+										<span>평형&nbsp;:&nbsp;18평형</span>
+										<span>타입&nbsp;:&nbsp;디럭스</span>
+										<span>객실수&nbsp;:&nbsp;12</span>
+										<span>기준&nbsp;:&nbsp;3</span>
+										<span>최대&nbsp;:&nbsp;6</span>
+										<span>시설&nbsp;:&nbsp;투룸형 (트윈)</span>
+										<div class="empty-room">
+											
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><span>부담</span></th>
+									<td class="price-go">
+										<span>
+											기업&nbsp;&nbsp;
+											<input type="text" class="only-num">&nbsp;원
+										</span>
+										,&nbsp;&nbsp;&nbsp;
+										<span>&nbsp;개인&nbsp;
+											<input type="text" class="only-num">&nbsp;원
+										</span>
+										&nbsp;&nbsp;&nbsp;
+										<span>&nbsp;&nbsp;총&nbsp;
+											<input type="text" class="only-num">&nbsp;원
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<th><span>배정 방식</span></th>
+									<td>
+										<span>추첨</span>
+									</td>
+								</tr>
+								<script>
+								</script>
+								<tr>
+									<th><span>구분</span></th>
+									<td>
+										<span>상시</span>
+									</td>
+								</tr>
+								<tr>
+									<th><span>이용기간</span></th>
+									<td>
+										<span>2021.02.02 ~ 2021.04.02</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="view view-2">
+						<div class="view-t">당첨상세</div>
+						<div class="view-c">
+							<div class="btn-wrap">
+								<div class="crm-sear">
+									<div class="cs-name">
+										<span class="cn-t">사원명</span>
+										<select name="cn-name" id="cn-name">
+											<option value="all">전체</option>
+											<option value="cn-1">전체</option>
+											<option value="cn-2">전체</option>
+										</select>
+									</div>
+									<div class="fin-name">
+										<span class="cn-t">최종결과</span>
+										<select name="cn-name" id="cn-name">
+											<option value="all">전체</option>
+											<option value="go-room">당첨</option>
+											<option value="no-room">탈락</option>
+										</select>
+									</div>
+									<button type="button">검색</button>
+								</div>
+								<div class="btn-float">
+									<button type="button" onclick="window.print();">프린트</button>
+								</div>
+							</div>
+							<div class="view-host">
+								<table id="sortCrm" class="sortable">
+									<thead>
+										<tr>
+											<th rowspan="2" class="th-btn"><span>번호</span></th>
+											<th rowspan="2" class="th-btn"><span>지망</span></th>
+											<th rowspan="2" class="th-btn"><span>신청일</span></th>
+											<th rowspan="2" class="th-btn"><span>예약일</span></th>
+											<th rowspan="2" class="th-btn"><span>예약자</span></th>
+											<th rowspan="2" class="th-btn"><span>사원번호</span></th>
+											<th rowspan="2" class="th-btn"><span>연락처</span></th>
+											<th rowspan="2" class="th-btn"><span>결과일</span></th>
+											<th colspan="4">추첨단계</th>
+											<th rowspan="2" class="th-btn">최종결과</th>
+										</tr>
+										<tr>
+											<th class="th-btn"><span>1차</span></th>
+											<th class="th-btn"><span>2차</span></th>
+											<th class="th-btn"><span>3차</span></th>
+											<th class="th-btn"><span>4차</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												1지망
+											</td>
+											<td>
+												2021.02.03
+											</td>
+											<td>
+												<span>4박 5일</span>
+												<span>(02.01/02.02/02.03/02.04)</span>
+											</td>
+											<td>
+												도민준
+											</td>
+											<td>
+												73011883
+											</td>
+											<td>
+												010-1234-5678
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												당첨
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												1지망
+											</td>
+											<td>
+												2021.02.03
+											</td>
+											<td>
+												<span>4박 5일</span>
+												<span>(02.01/02.02/02.03/02.04)</span>
+											</td>
+											<td>
+												도민준
+											</td>
+											<td>
+												73011883
+											</td>
+											<td>
+												010-1234-5678
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												당첨
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												1지망
+											</td>
+											<td>
+												2021.02.03
+											</td>
+											<td>
+												<span>4박 5일</span>
+												<span>(02.01/02.02/02.03/02.04)</span>
+											</td>
+											<td>
+												도민준
+											</td>
+											<td>
+												73011883
+											</td>
+											<td>
+												010-1234-5678
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												당첨
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												1지망
+											</td>
+											<td>
+												2021.02.03
+											</td>
+											<td>
+												<span>4박 5일</span>
+												<span>(02.01/02.02/02.03/02.04)</span>
+											</td>
+											<td>
+												도민준
+											</td>
+											<td>
+												73011883
+											</td>
+											<td>
+												010-1234-5678
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												당첨
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												1지망
+											</td>
+											<td>
+												2021.02.03
+											</td>
+											<td>
+												<span>4박 5일</span>
+												<span>(02.01/02.02/02.03/02.04)</span>
+											</td>
+											<td>
+												도민준
+											</td>
+											<td>
+												73011883
+											</td>
+											<td>
+												010-1234-5678
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												2021.02.01
+											</td>
+											<td>
+												당첨
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="paging">
+										<a class="first"></a>
+										<a class="prev"></a>
+										<a class="active">1</a>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a>5</a>
+										<a class="next"></a>
+										<a class="last"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- 셀렉트 박스	-->
+	
+	
+	<script>
+		$(document).ready(function(){			
+			
+			$('select').wSelect();
+		});
+	
+	</script>
+	
+</body>
+</html>

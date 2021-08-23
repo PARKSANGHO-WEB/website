@@ -1,0 +1,80 @@
+@font-face {
+  font-family: gl;
+  src: url(../font/GmarketSansLight.eot) format('eot')
+}
+@font-face {
+  font-family: gl;
+  src: url(../font/GmarketSansLight.woff) format('woff')
+}
+
+@font-face {
+  font-family: gm;
+  src: url(../font/GmarketSansMedium.eot) format('eot')
+}
+@font-face {
+  font-family: gm;
+  src: url(../font/GmarketSansMedium.woff) format('woff')
+}
+
+@font-face {
+  font-family: gb;
+  src: url(../font/GmarketSansBold.eot) format('eot')
+}
+
+
+@font-face {
+  font-family: gb;
+  src: url(../font/GmarketSansBold.woff) format('woff')
+}
+
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.eot) format('eot')
+}
+
+
+@font-face {
+  font-family: sq;
+  src: url(../font/sqopa.woff) format('woff')
+}
+
+@font-face {font-family: "Times New Roman"; 
+	src: url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.eot"); 
+	src: url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.woff") format("woff"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.svg#Times New Roman") format("svg"); }
+
+
+/*공통소스*/
+
+br {
+	visibility: hidden;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+select{
+	display: none;
+}
+
+input,button,textarea,select,
+input:focus,button:focus,textarea:focus,select:focus{
+	border: none;
+	outline: none;
+	outline: 0;
+	cursor: pointer;
+}

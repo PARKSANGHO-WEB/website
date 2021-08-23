@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/star-rating-svg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.star-rating-svg.js"></script>
+</head>
+<body style="background-color: #fff;"> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./class_my.html">수업</a>
+                        </li>
+                        <li>
+                            <a class="on" href="./schedule.html">시간표</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a href="./schedule.html">시간표</a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="./evalue.html">강의평</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="sh-wrap">
+				<a href="./schedule.html">시간표</a>
+				<a class="on" href="./evalue.html">강의평</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a class="on" href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    
+    
+    <section class="value-write">
+        <p class="value-wtitle">
+            수강평 작성하기
+        </p>
+        <div class="val-form">
+            <form action="#">
+                <!--       강의평 작성시 해당 강의 제목 자동 반영       -->
+                <p class="write-title">
+                    운영체계
+                </p>
+                <div class="vaw-line">
+                    <span class="vl-title">한줄 평</span>
+                    <input type="text" placeholder="제목을 입력하세요">
+                </div>
+                <div class="vaw-line">
+                    <span class="vl-title">강의력</span>
+                    <div class="vlbtn">
+                        <div class="begin">
+                            <input type="radio" name="level" id="beginner">
+                            <label for="beginner">뛰어남</label>
+                        </div>
+                        <div class="inter">
+                            <input type="radio" name="level" id="intermediate">
+                            <label for="intermediate">무난함</label>
+                        </div>
+                        <div class="advan">
+                            <input type="radio" name="level" id="advanced">
+                            <label for="advanced">아쉬움</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="vaw-line">
+                    <span class="vl-title">성적비율</span>
+                    <div class="vlbtn">
+                        <div class="begin">
+                            <input type="radio" name="score" id="wow">
+                            <label for="wow">플 채워줌</label>
+                        </div>
+                        <div class="inter">
+                            <input type="radio" name="score" id="soso">
+                            <label for="soso">비율대로</label>
+                        </div>
+                        <div class="advan">
+                            <input type="radio" name="score" id="hate">
+                            <label for="hate">매우 깐깐함</label>
+                        </div>
+                    </div>
+                </div>
+                <!--        평점 입력, 이 페이지에서만 클릭 이벤트 활성화        -->
+                <div class="vaw-line">
+                    <span class="vl-title">평점</span>
+                    <div class="my-rating-4" data-rating="2.5"></div>
+                </div>
+                <div class="vaw-line">
+                    <span class="vl-title">수강학기</span>
+                    <div class="vl-sel">
+                        <select name="value-sel" id="value-sel">
+                            <option value="gradu2020-2">2020년 2학기</option>
+                            <option value="gradu2020-1">2020년 1학기</option>
+                            <option value="gradu2019-2">2019년 2학기</option>
+                            <option value="gradu2019-1">2019년 1학기</option>
+                            <option value="gradu2018-2">2018년 2학기</option>
+                            <option value="gradu2018-1">2018년 1학기</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="vaw-line vaw-line3">
+                    <span class="vl-title">내 학점</span>
+                    <div class="vlbtn">
+                        <div class="a-p">
+                            <input type="radio" name="scrore" id="a-p">
+                            <label for="a-p">A+</label>
+                        </div>
+                        <div class="a-z">
+                            <input type="radio" name="scrore" id="a-z">
+                            <label for="a-z">A0</label>
+                        </div>
+                        <div class="a-m">
+                            <input type="radio" name="scrore" id="a-m">
+                            <label for="a-m">A-</label>
+                        </div>
+                        <div class="b-p">
+                            <input type="radio" name="scrore" id="b-p">
+                            <label for="b-p">B+</label>
+                        </div>
+                        <div class="b-z">
+                            <input type="radio" name="scrore" id="b-z">
+                            <label for="b-z">B0</label>
+                        </div>
+                        <div class="b-m">
+                            <input type="radio" name="scrore" id="b-m">
+                            <label for="b-m">B-</label>
+                        </div>
+                        <div class="c-p">
+                            <input type="radio" name="scrore" id="c-p">
+                            <label for="c-p">C+</label>
+                        </div>
+                        <div class="c-z">
+                            <input type="radio" name="scrore" id="c-z">
+                            <label for="c-z">C0</label>
+                        </div>
+                        <div class="c-m">
+                            <input type="radio" name="scrore" id="c-m">
+                            <label for="c-m">C-</label>
+                        </div>
+                        <div class="d-p">
+                            <input type="radio" name="scrore" id="d-p">
+                            <label for="d-p">D+</label>
+                        </div>
+                        <div class="d-z">
+                            <input type="radio" name="scrore" id="d-z">
+                            <label for="d-z">D0</label>
+                        </div>
+                        <div class="d-m">
+                            <input type="radio" name="scrore" id="d-m">
+                            <label for="d-m">D-</label>
+                        </div>
+                        <div class="f-m">
+                            <input type="radio" name="scrore" id="f-m">
+                            <label for="f-m">F</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="vaw-line vaw-line2">
+                    <span class="vl-title">수강평<br /><span class="smaoll-t">( 최대 500자 )</span></span>
+                    <textarea name="text-area" id="text-area-val" maxlength="500" placeholder="수강평을 작성해주세요.&#13;&#10;등록 후에는 수정 및 삭제가 불가능 하오니 과도한 욕설 및 비난은 자제해 주세요."></textarea>
+                </div> 
+                <div class="write-btn">
+                    <button class="no-write" onClick="history.back(-1);" type="button">취소</button>
+                    <button class="yes-write" type="button">작성완료</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+<!-- 별점 기능 플러그인  -->
+<script>
+    $(".my-rating-4").starRating({
+        disableAfterRate: false,
+      totalStars: 5,
+      starShape: 'rounded',
+      starSize: 35,
+      emptyColor: '#e6e6e6',
+      hoverColor: '#ffb54f',
+      activeColor: '#ffb54f',
+      useGradient: true
+    });
+    
+    
+
+</script>
+
+</body>
+</html>

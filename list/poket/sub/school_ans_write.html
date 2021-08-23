@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link type="text/css" rel="stylesheet" href="../css/dropzone.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/fine-uploader.js"></script>
+	<script type="text/javascript" src="../js/dropzone.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./class_my.html">수업</a>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a class="on" href="./qna_study.html">Q&A</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a href="./qna_study.html">스터디</a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="./qna_school.html">학교생활</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="sh-wrap">
+				<a href="./qna_study.html">스터디</a>
+				<a class="on" href="./qna_school.html">학교생활</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+					<li>
+						<a href="./class_my.html">수업</a>
+					</li>
+					<li>
+						<a href="./schedule.html">시간표</a>
+					</li>
+					<li>    
+						<a class="on" href="./qna_study.html">Q&A</a>
+					</li>
+					<li>
+						<a  href="./board.html">게시판</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    
+    <section class="school-ans">
+        <form method="POST" name="form-example-3" id="form-example-3" enctype="multipart/form-data">
+             <div class="qaw-wrap">
+                
+                <!--       글 작성시, 익명일 경우 제목           -->
+                 <div class="qaw-title">
+                     <span class="ans-name">익명</span>님의 답변
+                 </div>
+                
+                <!--       이미지는 최대 10장까지 업로드, 업로된 이미지 호버시 x버튼 생성          -->
+                <div class="dropzone-area">
+                        <div class="dropzone" id="fileDropzone"></div>
+                </div>
+                 <span class="image-10">*이미지는 최대 10장만 업로드 가능합니다.</span>
+                 <div class="qaw-context">
+                     <textarea name="qna-text"  placeholder="질문 작성시 유링크 운영 정책을 지켜주세요.&#13;&#10;유링크 이용약관을 참조해 주시기 바랍니다."></textarea>
+                 </div>
+             </div>
+            <!--     태그는 1개 이상 선택        -->
+             <div class="my-tag-ans">
+                 <div class="tag-1wrap">
+                     <p class="tag-title">학교생활</p>
+                     <div class="tag-wrap">
+                         <div class="tag2">
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec1" name="my-lec1">
+                                 <label for="my-lec1">#시간표/수강신청</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec2" name="my-lec2">
+                                 <label for="my-lec2">기숙사생활</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec3" name="my-lec3">
+                                 <label for="my-lec3">#학점/과제/시험</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec4" name="my-lec4">
+                                 <label for="my-lec4">#학사제도</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec5" name="my-lec5">
+                                 <label for="my-lec5">#학사일정</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec6" name="my-lec6">
+                                 <label for="my-lec6">#장학금</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec7" name="my-lec7">
+                                 <label for="my-lec7">#동아리/학회/학생회</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec8" name="my-lec8">
+                                 <label for="my-lec8">교환학생</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec9" name="my-lec9">
+                                 <label for="my-lec9">#전과/복수전공/부전공</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec10" name="my-lec10">
+                                 <label for="my-lec10">#교직이수</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec11" name="my-lec11">
+                                 <label for="my-lec11">#군대</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec12" name="my-lec12">
+                                 <label for="my-lec12">#봉사/대외활동</label>
+                            </div>
+                            <div class="label-wrap">
+                                 <input type="checkbox" id="my-lec13" name="my-lec13">
+                                 <label for="my-lec13">#기타</label>
+                            </div>
+                         </div>
+                     </div>
+                 <p class="tag-info">태그를 최소 1개 이상 선택하세요.</p>
+                </div>
+             </div>
+            <!--     익명 사용 여부        -->
+             <div class="noname-wrap">
+                 <div class="noname-label">
+                     <input type="checkbox" id="noname-check" name="noname-check">
+                     <label for="noname-check">
+                         <span class="noname-ment">익명 사용 여부</span>
+                     </label>
+                 </div>
+                 <p class="noname-title">
+                     익명 사용 여부를 선택해주세요.
+                 </p>
+             </div>
+             <div class="next-btn">
+                 <button type="button">작성완료</button>
+             </div>
+         </form>
+    </section>
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+    <!--  이미지 업로드 플러그인  -->
+        <script>
+
+        Dropzone.options.fileDropzone = {
+
+        url: 'url',     
+            
+        init: function () {
+            
+            var myDropzone = this; //closure
+            
+            $.ajax({
+                url: 'http://welfareabc.cafe24.com/ulink/sub/school_write.html',
+                type: 'post',
+                data: {request: 2},
+                dataType: 'json',
+                success: function(response){
+
+                    $.each(response, function(key,value) {
+                        var mockFile = { name: value.name, size: value.size };
+
+                        myDropzone.emit("addedfile", mockFile);
+                        myDropzone.emit("thumbnail", mockFile, value.path);
+                        myDropzone.emit("complete", mockFile);
+
+                    });
+
+                }
+            });
+
+        },
+        thumbnailHeight: 90,        // Upload icon size
+        thumbnailWidth: 90,         // Upload icon size
+        addRemoveLinks: true,       // 삭제버튼 표시 여부
+        dictRemoveFile: '<img src="../img/common/btn_delete_photo.png" />' // 삭제버튼 표시 텍스트
+
+        };
+
+    </script>
+</body>
+</html>

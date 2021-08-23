@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/reserv.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+    
+    
+    
+    
+    
+    
+	<script>
+	
+		
+		$(document).ready(function(){
+			
+			$(".box-left").on('click',function(){
+				$(this).parents('.box').removeClass('on-2');
+				$(this).parents('.box').addClass('on-1');
+			});
+			
+			$(".box-right").on('click',function(){
+				$(this).parents('.box').removeClass('on-1');
+				$(this).parents('.box').addClass('on-2');
+			});
+			
+		});
+		
+		
+		
+		
+		
+		
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("2").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head>
+<body>
+    <header></header>
+    <div id="container">
+		<div class="sort-wrap">
+			<div class="sort-menu" id="sangse-sort">
+				<ul>
+					<li>
+						<span onclick="location.href='./mypage.html'">회원정보</span>
+					</li>
+					<li>
+						<span onclick="location.href='./reserv.html'">예약내역</span>
+					</li>
+					<li class="active">
+						<span onclick="location.href='./mywrite.html'">내 게시글 관리</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div id="table">
+            <div id="subMenu2">
+				<button type="button" class="active">Q&A</button>
+				<button type="button">이용후기</button>
+            </div>
+            <table id="mr-table">
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+                <tr onclick="location.href='./qna_view.html'">
+                    <td><p>10</p></td>
+                    <td><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요</p></td>
+                    <td><p>홍길동</p></td>
+                    <td><p>2020/07/01</p></td>
+                </tr>
+            </table> 
+            <div id="paging">
+                <ul>
+                    <li><a href="#"><img src="../img/common/first-b.png" alt="처음으로" class="toFirst"></a></li>
+                    <li><a href="#"><img src="../img/common/prev-b.png" alt="이전으로" class="prePage"></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><img src="../img/common/last-b.png" alt="다음으로" class="nextPage"></a></li>
+                    <li><a href="#"><img src="../img/common/next-b.png" alt="끝으로" class="lastPage"></a></li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/community_view.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("1").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head>
+<body>
+    <header></header>
+    <div id="mainImage">
+        <h2>Q&A</h2>
+    </div>
+    <div id="container">
+		<div class="sort-wrap">
+			<div class="sort-menu" id="sangse-sort">
+				<ul>
+					<li class="active">
+						<span onclick="location.href='./qna.html'">Q&A</span>
+					</li>
+					<li>
+						<span onclick="location.href='./notice.html'">공지사항</span>
+					</li>
+					<li>
+						<span onclick="location.href='./review.html'">이용후기</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div id="textView">
+            <div id="title"><p>신청자 본인이 가족말고 친구들 데리고 가도 되나요?</p></div>
+            <div id="info">
+                <div id="writer">송태헌</div>
+                <div id="date">2020-08-15 12:39:00</div>
+            </div>
+            <div id="mainText">
+                <div id="contents">
+                    <p>1지망 예약 후<br>2지망을 다른 휴양소 같은 날짜로 하려는데<br>선택이 되질 않네요.<br>날짜도 다른날짜로 해야하나요?</p><br>
+                    <p>--------------------------------------------------------</p>
+                    <p>통화결과 현재 1지망만 신청하는 것으로 되어있다고 합니다.</p><br>
+                    <p>매뉴얼에 2지망까지 신청하는 것으로 되어있다고 하니</p><br>
+                    <p>확인해본다고 하네요!!</p>
+                </div>
+            </div>
+        </div>
+        <div id="buttons" class="buttons-4">
+        		<button type="button" onclick="location.href='qna.html'">목록으로</button>
+        		<button type="button" onclick="location.href='qna_ans.html'">답변하기</button>
+        		<button type="button" class="input-pw">수정하기</button>
+        		<button type="button">삭제하기</button>
+		</div>
+    </div>
+    <footer></footer>
+    <div class="modi-modal modal-wrap">
+		<div class="modal-con">
+			<div class="modal-top">
+				<div class="close-modal">
+					<img src="../img/common/close-b.png" alt="">
+				</div>
+			</div>
+			<div class="modal-bot">
+				<form action="#">
+					<div class="mo-con">
+						<p>글 작성시 입력한<br />
+						비밀번호를 입력해주세요.</p>
+						<input type="password">
+						<div class="s1-button">
+							<button type="button">확인</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

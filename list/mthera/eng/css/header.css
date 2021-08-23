@@ -1,0 +1,418 @@
+
+.ttop_wrap{
+    display: none;
+}
+
+
+.header_mo{
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    z-index: 9999;
+    background-color: #fff;
+}
+ 
+
+header .header-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+header .header-wrap  .logo{
+    position: absolute;
+    top: 29px;
+    left: 0px;
+}
+
+header .header-wrap  .logo img{
+    width: 165px;
+}
+
+header .header-wrap  .lang-ek{
+    position: absolute;
+    top: 43px;
+    right: 0px;
+}
+
+header .header-wrap  .lang-ek a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #252525;
+    font-size: 16px;
+    display: block;
+    border: 1px solid #a9a9a9;
+    padding: 5px 20px;
+    width: 100px;
+    border-radius: 200px;
+    display: block;
+    background-image: url('../../img/common/earth.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 100px center;
+}
+
+
+header .header-wrap .menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 9999;
+    width: 640px;
+    text-align: center;
+}
+
+
+header .header-wrap .menu .menu_wrap{
+    width: 640px;
+    margin: 0 auto;
+}
+
+header .header-wrap .menu ul li {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+}
+
+header .header-wrap .menu ul li .big_menu{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #464646;
+    font-size: 18px;
+    padding: 47px 0px;
+    display: block;
+    transition-duration: .3s;
+}
+
+header .header-wrap .menu ul li:hover .big_menu{
+    color: #ff0000;
+}
+
+header .header-wrap .menu ul li .two_depth{
+    display: none;
+    overflow: hidden;
+    margin: 0px;
+    margin-top: -1px;
+    background-color: rgba(76,14,0,0.5);
+}
+
+header .header-wrap .menu ul li:hover .two_depth{
+    display: block;
+}
+
+
+header .header-wrap .menu ul li .two_depth ul li{
+    transition-duration: .3;
+}
+
+header .header-wrap .menu ul li .two_depth ul li a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #464646;
+    font-size: 15px;
+    transition-duration: .3s;
+    color: #fff;
+    display: block;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+header .header-wrap .menu ul li .two_depth ul li:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+
+header .header-wrap .menu ul li .two_depth ul li:hover a{
+    color: rgba(116,16,11);
+}
+
+
+
+
+@media screen and (max-width:1280px){
+
+    header {
+        height: 100px
+    }
+
+
+    header .header-wrap {
+        width: 850px;
+    }
+
+
+    header .header-wrap  .logo{
+        top: 22px;
+        left: 20px;
+    }
+
+    header .header-wrap  .logo img{
+        width: 145px;
+    }
+
+    header .header-wrap  .lang-ek{
+        right: 20px;
+    }
+
+    header .header-wrap  .lang-ek a{
+        font-size: 14px;
+    }
+
+
+    header .header-wrap .menu{
+        width: 440px;
+    }
+
+
+    header .header-wrap .menu .menu_wrap{
+        width: 440px;
+    }
+
+    header .header-wrap .menu ul li {
+        width: 110px;
+    }
+
+    header .header-wrap .menu ul li .big_menu{
+        font-size: 13px;
+        padding: 41px 0px;
+    }
+
+
+    header .header-wrap .menu ul li .two_depth{
+        margin-top: 0px;
+    }
+    
+    header .header-wrap .menu ul li .two_depth ul li a {
+        font-size: 12px;
+    }
+    
+    header .header-wrap .lang-ek {
+        top: 33px;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width:900px) {
+    
+    
+    html, body {
+        height: 100vh;
+    }
+    
+    .header_mo{
+        display: block;
+        height: 79px;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        top: 0px;
+        border-bottom: 1px solid #a8a8a8;
+        background-color: #fff;
+    }
+    
+    header{
+        display: none;
+    }
+
+    .header_mo .logo{
+        position: absolute;
+        top: 16px;
+        left: 20px;
+    }
+
+    .header_mo .logo img{
+        width: 125px;
+    }
+
+    
+    .mo_menu {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        z-index: 9999;
+        background-color: rgba(114,114,114,0.5);
+        width: 0%;
+        height: 100vh;
+        transition-duration: .3s;
+        overflow: hidden;
+    }
+    
+    
+    .mo_menu.done{
+        width:100%;
+    }
+    
+    
+    .menu_wrap {
+        width: 300px;
+        float: right;
+        background-color: #fff;
+        height: 100%;
+    }
+    
+    
+    .menu_wrap ul li .big_menu{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        padding: 10px 20px 10px 20px;
+        display: block;
+        border-bottom: 1px solid #dedede;
+    }
+    
+    .menu_wrap ul li .big_menu2{
+        background-image: url(../../img/icon/mo_plus.png);
+        background-repeat: no-repeat;
+        background-position: 260px center;
+        background-size: 15px;
+    }
+    .menu_wrap ul li .big_menu2.go{
+        background-image: url(../../img/icon/mo_minus.png);
+        background-repeat: no-repeat;
+        background-position: 260px center;
+        background-size: 15px;
+    }
+    
+    .bx-wrapper {
+        margin-top: 80px;
+    }
+    
+    .menu_wrap ul li .two_depth {
+        overflow: hidden;
+        height: 0px;
+        transition-duration: .5s;
+    }
+    
+    
+    .menu_wrap ul li:nth-child(1) .two_depth.go{
+        display: block;
+        height: 218px;
+    }
+    
+    .menu_wrap ul li:nth-child(2) .two_depth.go{
+        display: block;
+        height: 86px;
+    }
+    
+    
+    
+    .menu_wrap ul li .two_depth ul li a{
+        display: block;
+        padding: 10px 0px 10px 40px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #737373;
+        background-color: #eee;
+        border-top: 1px solid #dedede;
+    }
+    
+
+     .header_mo .lang-ek{
+        position: absolute;
+        top: 24.5px;
+        right: 60px;
+    }
+
+     .header_mo .lang-ek a{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 600;
+        color: #252525;
+        font-size: 11px;
+        display: block;
+        border: 1px solid #a9a9a9;
+        padding: 5px 10px;
+        width: 60px;
+        border-radius: 200px;
+        display: block;
+        background-image: url('../../img/common/earth.png');
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: 60px center;
+    }
+
+
+    .header_mo .bar{
+        width: 35px;
+        height: 25px;
+        position: absolute;
+        top: 27.5px;
+        right: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .header_mo .bar div {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        background-color: gray;
+        transition-duration: .3s;
+        border-radius: 40px;
+    }
+    
+    .header_mo .bar .bar_2{
+        top: 10px;
+        background-color: transparent;
+    }
+    
+    
+    .header_mo .bar .bar_3{
+        top: 20px;
+    }
+    
+    .header_mo .bar.on .bar_2 .bar2-1{
+				transform: rotate( 45deg );
+    } 
+    
+    
+    .header_mo .bar.on .bar_2 .bar2-2{
+				transform: rotate( -45deg );
+    } 
+    
+    
+    .header_mo .bar.on .bar_1,
+    .header_mo .bar.on .bar_3{
+        background-color: transparent;
+    }
+    
+    
+    .ttop_wrap {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 95%;
+        margin-right: 5%;
+        height: 43px;
+        text-align: right;
+    }
+     
+    #button {
+    }
+
+    #button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #button img{
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    
+}
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>휴나라</title>
+    <script src="../js/common.js"></script>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("2").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head>
+<body>
+    <header></header>
+    <div id="container">
+		<div class="sort-wrap">
+			<div class="sort-menu" id="sangse-sort">
+				<ul>
+					<li class="active">
+						<span onclick="location.href='./mypage.html'">회원정보</span>
+					</li>
+					<li>
+						<span onclick="location.href='./reserv.html'">예약내역</span>
+					</li>
+					<li>
+						<span onclick="location.href='./mywrite.html'">내 게시글 관리</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <h2>기본정보</h2>
+        <form action="#" method="POST">
+            <div id="table">
+               	<p class="ment"><span class="pil">*</span>표시는 필수입력 항목입니다.</p>
+                <label for="com_name"><p>회사명</p><span class="pil">*</span></label>
+                <input type="text" name="com_name" id="com_name">
+                <label for="u_name"><p>이름</p><span class="pil">*</span></label>
+                <input type="text" name="u_name" id="u_name">
+                <label for="u_no"><p>사원번호</p><span class="pil">*</span></label>
+                <input type="text" name="u_no" id="u_no">
+                <label for="u_pw1"><p>비밀번호</p><span class="pil">*</span></label>
+                <input type="password" name="u_pw1" id="u_pw1">
+                <label for="u_pw2"><p>비밀번호 확인</p><span class="pil">*</span></label>
+                <input type="password" name="u_pw2" id="u_pw2">
+                <label for="u_email"><p>이메일</p></label>
+                <input type="email" name="u_email" id="u_email">
+                <label for="u_tel"><p>전화번호</p></label>
+                <input type="tel" name="u_tel" id="u_tel">
+                <label for="u_phone"><p>휴대번호</p><span class="pil">*</span></label>
+                <input type="tel" name="u_phone" id="u_phone">
+				<button type="button">수정</button>
+
+            </div>
+        </form>
+	</div> 
+    <footer></footer>
+</body>
+</html>

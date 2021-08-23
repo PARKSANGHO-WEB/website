@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8">
+    <title>K-DOT</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/menu.js"></script>
+</head>
+<body>
+    <section class="login">
+        <form action="#">
+            <div class="login-wrap">
+                <div class="login-logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="login-title">
+                    <p>Loign</p>
+                    <span>K-DOD website Welcome!</span>
+                </div>
+                <div class="login-sel">
+                    <div class="select" data-role="selectBox">
+                        <span date-value="optValue" class="selected-option">
+
+                        </span>
+                        <!-- 옵션 영역 -->
+                        <ul class="hide">
+                            <li>
+                                <span class="eng">English</span>
+                            </li>
+                            <li>
+                                <span class="myan">မြန်မာဘာသာ</span>
+                            </li>
+                            <li>
+                                <span class="cam">ភាសាខ្មែរ</span>
+                            </li>
+                            <li>
+                                <span class="kr">한국어</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-btn">
+                    <button type="button"><span>Login with facebook</span></button>
+                </div>
+                <div class="bar-or">
+                    <span class="hypen"></span>
+                    <span class="text">or</span>
+                    <span class="hypen"></span>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" placeholder="id">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="pass-op">
+                    <span class="remember-id">
+                        <input id="r-id" name="r-id" type="checkbox">
+                        <label for="r-id">Remember me</label>
+                    </span>
+                    <span class="forgot">Forgot your password?</span>
+                </div>
+                <div onclick="location.href='../index_OLD.html'" class="login-btn">
+                    <button type="button" target="_blank" >
+                        <span>KDOD - Login</span>
+                    </button>
+                </div>
+                <div class="gojoin">
+                    <span>Not a member?</span>
+                    <a href="./join.html">Sign up</a>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script>
+
+            const body = document.querySelector('body');
+            const select = document.querySelector(`[data-role="selectBox"]`);
+            const values = select.querySelector(`[date-value="optValue"]`);
+            const option = select.querySelector('ul');
+            const opts = option.querySelectorAll('li');
+
+            /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
+            function selects(e){
+            e.stopPropagation();
+            option.setAttribute('style',`top:${select.offsetHeight}px`)
+            if(option.classList.contains('hide')){
+            select.classList.add('on');
+            option.classList.remove('hide');
+            option.classList.add('show');
+            }else{
+            option.classList.add('hide');
+            option.classList.remove('show');
+            select.classList.remove('on');
+            }
+            selectOpt();
+            }
+
+            /* 옵션선택 */
+            function selectOpt(){
+            opts.forEach(opt=>{
+            const innerValue = opt.innerHTML;
+            function changeValue(){
+            values.innerHTML = innerValue;
+            }
+            opt.addEventListener('click',changeValue)
+            });
+            }
+
+            /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
+            function selectFirst(){
+            const firstValue = opts[0].innerHTML;
+            values.innerHTML = `${firstValue}`
+            }
+
+            /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
+            function hideSelect(){
+            if(option.classList.contains('show')){
+            option.classList.add('hide');
+            option.classList.remove('show');
+            select.classList.remove('on');
+            }
+            }
+
+            selectFirst();
+            select.addEventListener('click',selects);
+            body.addEventListener('click',hideSelect);
+        </script>
+</body>
+</html>

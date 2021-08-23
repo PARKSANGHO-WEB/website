@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reserve.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/zebra_datepicker.css">
+	<link rel="stylesheet" href="../css/wSelect.css">
+	<meta charset="UTF-8">
+	<title>휴나라 관리자모드</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/zebra_datepicker.src.js"></script>
+	<script src="../js/wSelect.js"></script>
+	<script src="../js/checkbox.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="location.href='../home.html'">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="gnb">
+			<ul>
+				<li>
+					<a href="javascript:;">휴나라_admin 님</a>
+				</li>
+				<li>
+					<a href="javascript:;">홈페이지 이동</a>
+				</li>
+				<li>
+					<a href="../login.html">로그아웃</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../company/company.html">기업관리</a>
+			</li>
+			<li>
+				<a href="../room/room-new.html">휴양소 관리</a>
+			</li>
+			<li class="active">
+				<a href="./reserve-selected.html">예약 관리</a>
+			</li>
+			<li>
+				<a href="../notice/notice.html">게시판 관리</a>
+			</li>
+			<li>
+				<a href="javascript:;">설정 관리</a>
+			</li>
+		</ul>
+	</div>
+	<div class="root-wrap">
+		<div class="root">
+			<ul>
+				<li>
+					<a href="../home.html">Home</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-selected.html">예약관리</a>
+				</li>
+				<li class="arrow"><img src="../img/common/arrow.svg" alt=""></li>
+				<li>
+					<a href="./reserve-cancel.html">취소 승인 관리</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents reser-cancel">
+		<div class="left-menu">
+			<div class="lm-t">
+				<p>예약관리</p>
+			</div>
+			<ul>
+				<li class="lm-act">
+					<p class="lm-big active">예약관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-selected.html">당첨 등록 관리</a></li>
+							<li><a href="./reserve-list.html">예약 내역 관리</a></li>
+							<li><a href="./reserve-calendar.html">캘린더</a></li>
+							<li class="active"><a href="./reserve-cancel.html">취소 승인 관리</a></li>
+							<li><a href="./reserve-using.html">객실 배정 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">결제 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-pay.html">결제 관리</a></li>
+							<li><a href="./reserve-pg.html">PG결제 관리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="lm-act">
+					<p class="lm-big">설문 관리</p>
+					<div class="lm-list">
+						<ul>
+							<li><a href="./reserve-survey.html">설문 등록</a></li>
+							<li><a href="./reserve-survey-manage.html">설문 관리</a></li>
+							<li><a href="./reserve-survey-result.html">결과 관리</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="center-con">
+			<div class="cc-title">
+				<div>취소 승인 관리</div>
+			</div>
+			<div class="cc-con">
+				<form action="#">
+					<div class="view-c">
+						<div class="view-mana">
+							<div class="mana-sel">
+								<div class="msel sel1">
+									<span class="ct-t">구분</span>
+									<select name="period" id="period">
+										<option value="default">구분전체</option>
+										<option value="condo">콘도</option>
+										<option value="winter">동계</option>
+										<option value="summer">하계</option>
+										<option value="all">상시</option>
+									</select>
+								</div>
+								<div class="msel sel2">
+									<span class="ct-t">기업명</span>
+									<select name="com-li" id="com-li">
+										<option value="default">기업명</option>
+										<option value="com1">기업1</option>
+										<option value="com2">기업2</option>
+										<option value="com3">기업3</option>
+									</select>
+								</div>
+								<div class="msel sel3">
+									<span class="ct-t">휴양소명</span>
+									<select name="hostel-li" id="hostel-li">
+										<option value="default">휴양소명</option>
+										<option value="hostel1">칼호텔</option>
+										<option value="hostel2">칼호우</option>
+										<option value="hostel3">상호텔</option>
+									</select>
+								</div>
+								<div class="msel sel4">
+									<span class="ct-t">추첨단계</span>
+									<select name="pick" id="pick">
+										<option value="default">전체</option>
+										<option value="pick1">1지망</option>
+										<option value="pick2">2지망</option>
+										<option value="pick3">3지망</option>
+										<option value="pick4">4지망</option>
+										<option value="pick-sub">예비 당첨자</option>
+									</select>
+								</div>
+							</div>
+							<div class="mana-price">
+								<div class="price price1">
+									<span class="ct-t">기업부담금</span>
+									<div class="min-money"><input type="text" onclick="return detailssubmit()" class="only-num"><span>원</span></div>
+									<span class="hypen">~</span>
+									<div class="max-money"><input type="text" class="only-num"><span>원</span></div>
+								</div>
+								<div class="price price2">
+									<span class="ct-t">개인부담금</span>
+									<div class="min-money"><input type="text" class="only-num"><span>원</span></div>
+									<span class="hypen">~</span>
+									<div class="max-money"><input type="text" class="only-num"><span>원</span></div>
+								</div>
+								<button class="msel-search" type="button">검색</button>
+							</div>
+							<div class="all-c">
+								<input type="checkbox"id="hostPall" data-check-pattern="[name^='hostpeo']"  name="hostPall" id="hostPall">
+								<label for="hostPall">전체선택</label>
+								<button type="button">선택 엑셀 다운로드</button>
+								<button type="button">선택 당첨 취소 승인</button>
+								<button type="button">선택 당첨 취소 불가</button>
+							</div> 
+							<table id="comRoom">
+								<thead>
+									<tr>
+										<th>선택</th>
+										<th class="th-btn"><span>번호</span></th>
+										<th class="th-btn"><span>지망</span></th>
+										<th class="th-btn"><span>등록일</span></th>
+										<th class="th-btn"><span>예약일</span></th>
+										<th class="th-btn"><span>기업명</span></th>
+										<th class="th-btn"><span>구분</span></th>
+										<th class="th-btn"><span>휴양소명</span></th>
+										<th class="th-btn"><span>평형</span></th>
+										<th class="th-btn"><span>객실수</span></th>
+										<th class="th-btn"><span>예약자</span></th>
+										<th class="th-btn"><span>사원번호</span></th>
+										<th class="th-btn"><span>연락처</span></th>
+										<th class="th-btn"><span>결과</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="hostpeo"></td>
+										<td>1</td>
+										<td>1지망</td>
+										<td>2021.02.03</td>
+										<td>2021.02.03 ~ 1박 2일</td>
+										<td>비엔시스템</td>
+										<td>상시</td>
+										<td>시그니엘 서울</td>
+										<td>18평형</td>
+										<td>1</td>
+										<td>홍길동</td>
+										<td>123443214</td>
+										<td>010-4007-4018</td>
+										<td>
+											<span>당첨 후 취소</span>
+											<span>2021.02.03</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging">
+									<a class="first"></a>
+									<a class="prev"></a>
+									<a class="active">1</a>
+									<a>2</a>
+									<a>3</a>
+									<a>4</a>
+									<a>5</a>
+									<a class="next"></a>
+									<a class="last"></a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!--  셀렉트박스와 파일업로드	-->
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function () {	
+			$('select').wSelect();
+		});
+		
+
+		$(document).ready(function(){
+			// Also see: https://www.quirksmode.org/dom/inputfile.html
+
+			var inputs = document.querySelectorAll('.file-input')
+
+			for (var i = 0, len = inputs.length; i < len; i++) {
+			customInput(inputs[i])
+			}
+
+			function customInput (el) {
+				const fileInput = el.querySelector('[type="file"]')
+				const label = el.querySelector('[data-js-label]')
+
+				fileInput.onchange =
+				fileInput.onmouseout = function () {
+					if (!fileInput.value) return
+
+					var value = fileInput.value.replace(/^.*[\\\/]/, '')
+					el.className += ' -chosen'
+					label.innerText = value
+				}
+			}
+		});
+
+
+		
+	</script>
+	
+	
+	
+	<!-- 테이블 sort 선언	-->
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+			$('.view-t').on('click',function(){
+					if( $(this).parents('.view').hasClass('on') ){
+						$(this).parents('.view').removeClass('on');
+					}else{
+						$('.view').removeClass('on');
+						$(this).parents('.view').addClass('on');
+					}
+				});
+		});
+	
+	</script>
+	
+</body>
+</html>

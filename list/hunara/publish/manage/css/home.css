@@ -1,0 +1,396 @@
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: rgb(132 132 132 / 30%);
+}
+
+ul, ol, li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.main1-con{
+	width: 1400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+.main1-con .cc-title{
+    background-color: #2b2e33;
+	padding: 10px 0px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+
+.main1-con .cc-title div{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+	float: left;
+	display: inline-block;
+}
+
+
+
+.main-con .contents2{
+	overflow: hidden;
+	float: left;
+	margin-left: 100px;
+	background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+
+
+.main-con .contents2 .mc2-v,
+.main-con .contents2 .mc2-j{
+	width: 278px;
+	float: left;
+    border: 1px solid #dedfde;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.main-con .contents2 .mc2-v{
+	margin-left: 40px;
+}
+
+.main-con .contents2 div ul li {
+	width: 50%;
+	float: left;
+}
+
+.main-con .contents2 div ul li .mc-t{
+	font-size: 16px;
+	display: block;
+	font-weight: bold;
+	color: #727272;
+	text-align: center;
+}
+
+.main-con .contents2 .mc2-num{
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.main-con .contents2 div ul li .mc-c{
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	display: block;
+}
+
+
+.main-con .contents2 div ul li:nth-child(n+3){
+	margin-top: 20px;
+}
+
+
+.main-con .contents2 .mc2-j .mc-c{
+	color: #3366cc;
+}
+
+.main-con .contents2 .mc2-v .mc-c{
+	color: #dc3912;
+}
+
+.main-con .mc-1{
+	width: 100%;
+	margin-top: 40px;
+	border: 1px solid #dedfde;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #fff;
+    position: relative;
+}
+
+
+.main1-con{
+	width: 1400px;
+	margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.main1-con .itbt-b{    
+	width: 690px;
+    padding: 125px 35px;
+}
+
+.main1-con .visit-w{
+	width: 560px;
+	float: left;
+}
+
+.main1-con .title{
+}
+
+.main1-con .contents{
+	padding: 0px 40px;
+	background-color: #f5f5f5;
+    overflow: hidden;
+    padding: 20px 40px;
+}
+
+
+.itbt-b {
+    overflow: hidden;
+    float: left;
+}
+
+.itbt-b .single-chart {
+  width: 160px;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+    position: absolute;
+}
+
+.itbt-b .circle-bg {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.itbt-b .circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: progress 2s ease-in forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #374c75;
+}
+
+.circular-chart.green .circle {
+  stroke: #4f81bd;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.itbt-b  ul .circle_bg {
+    float: left;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 30px;
+    border-radius: 200px;
+}
+
+.itbt-b  ul .circle_bg .text-wrap{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+
+.itbt-b  ul .circle_bg .circle_g{
+}
+
+.itbt-b  ul .circle_bg:nth-child(1){
+    margin-left: 0px;
+}
+
+
+.itbt-b  ul .circle_bg .title {
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    display: block;
+    color: #010101;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.itbt-b  ul .circle_bg .t-num {
+    font-size: 27px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    display: block;
+    color: #223763;
+    text-align: center;
+    line-height: 27px;
+    letter-spacing: -0.486px;
+}
+
+
+.main2-con{
+	width: 1400px;
+    border-radius: 5px;
+	margin: 40px auto;
+	overflow: hidden;
+}
+
+
+.main2-con .cc-title{
+    background-color: #2b2e33;
+	padding: 10px 0px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+
+.main2-con .cc-title div{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+	float: left;
+	display: inline-block;
+}
+
+.main2-con .m1c-wrap{
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+
+.main2-con .m1c-wrap .contents{
+	padding: 40px;
+	overflow: hidden;
+}
+
+
+.main2-con .m1c-wrap .contents .left,
+.main2-con .m1c-wrap .contents .center,
+.main2-con .m1c-wrap .contents .right{
+	width: 400px;
+	float: left;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.main2-con .m1c-wrap .contents .center,
+.main2-con .m1c-wrap .contents .right{
+	margin-left: 60px;
+}
+
+
+.main2-con .m1c-wrap .contents .left .sc-title,
+.main2-con .m1c-wrap .contents .center .sc-title,
+.main2-con .m1c-wrap .contents .right  .sc-title{
+    background-color: #565656;
+	padding: 10px 0px;
+	padding-left: 20px;
+	overflow: hidden;
+	color: #fff;
+}
+
+
+.main2-con .m1c-wrap .contents div table{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	margin: 0 auto;
+	border: 1px solid #e9e9e9;
+	border-collapse: collapse;
+}
+
+.main2-con .m1c-wrap .contents div table{
+	table-layout: fixed;
+}
+
+.main2-con .m1c-wrap .contents div table thead{
+	cursor: pointer;
+}
+.main2-con .m1c-wrap .contents div table thead th{
+    font-weight: normal;
+    background-color: #565656;
+    border: none;
+    padding: 10px 5px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #fff;
+}
+
+
+.main2-con .m1c-wrap .contents div table tbody td{
+	font-weight: normal;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.main2-con .m1c-wrap .contents div table tbody td:nth-child(1){
+	width: 60px;
+}
+.main2-con .m1c-wrap .contents div table tbody td:nth-child(2){
+	width: 180px;
+	text-align: left;
+	padding:0px 10px;
+}
+
+.main2-con .m1c-wrap .contents div table tbody td:nth-child(3){
+	width: 80px;
+}
+
+.main2-con .m1c-wrap .contents div table tbody td:nth-child(4){
+	width: 60px;
+}
+
+.main2-con .m1c-wrap .contents div table tbody tr td {
+    background-color: #fff;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.main2-con .m1c-wrap .contents div table tbody tr:hover td{
+	background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

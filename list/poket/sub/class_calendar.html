@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/calendar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/calendar.js"></script>
+	<script src="../js/locales-all.js"></script>
+</head>
+
+<script>
+
+    // 달력 샘플 데이터 , 과제 시험 수업에 따라 배경 이미지 마크 삽입, calendar css 871번 line
+    
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var initialLocaleCode = 'en';
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      editable: false,
+      lang: 'ko',
+      selectable: false,
+      // dayMaxEvents: true,  allow "more" link when too many events
+      events: [
+        { 
+          title: '전자기학 중간고사',
+          start: '2020-12-25',
+          imageurl:'../img/common/class_mark.png'
+
+        }
+      ],locale: 'ko',
+        fixedWeekCount: false
+    });
+
+    calendar.render();
+  });
+
+</script>
+<body> 
+    
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="on" href="./class_my.html">수업</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a href="./class_my.html">내 수업</a>
+                                    </li>
+                                    <li>
+                                        <a href="./class_notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="./class_calendar.html">캘린더</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="sh-wrap">
+				<a href="./class_my.html">내 수업</a>
+				<a href="./class_notice.html">공지사항</a>
+				<a class="on" href="./class_calendar.html">캘린더</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a class="on" href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    
+    <section class="notice-calendar">
+         <div id='calendar'></div>
+         <div class="calendar-list">
+             <div class="calendar-day dday">
+                 <div class="cd-title">
+                     <span class="cd-date">
+                         30일 (목)
+                     </span>
+                     <span class="cd-count">
+                         D-day
+                     </span>
+                 </div>
+                 <ul>
+                     <li>
+                         <span class="calendar-mark cm-exam">시험</span>
+                         <span class="calendar-title">전자기학 중간고사</span>
+                         <span class="calendar-time">11:00</span>
+                     </li>
+                     <li>
+                         <span class="calendar-mark cm-subject">과제</span>
+                         <span class="calendar-title">컴퓨터교육개론 중간대체과제 마감</span>
+                         <span class="calendar-time">12:00</span>
+                     </li>
+                     <li>
+                         <span class="calendar-mark cm-class">수업</span>
+                         <span class="calendar-title">운영체제 수업</span>
+                         <span class="calendar-time">18:00</span>
+                     </li>
+                 </ul>
+             </div>
+             <div class="calendar-day yet">
+                 <div class="cd-title">
+                     <span class="cd-date">
+                         30일 (목)
+                     </span>
+                     <span class="cd-count">
+                         D-1
+                     </span>
+                 </div>
+                 <ul>
+                     <li>
+                         <span class="calendar-mark cm-exam">시험</span>
+                         <span class="calendar-title">전자기학 중간고사</span>
+                         <span class="calendar-time">11:00</span>
+                     </li>
+                 </ul>
+             </div>
+             <div class="calendar-day yet">
+                 <div class="cd-title">
+                     <span class="cd-date">
+                         30일 (목)
+                     </span>
+                     <span class="cd-count">
+                         D-2
+                     </span>
+                 </div>
+                 <ul>
+                     <li>
+                         <span class="calendar-mark cm-exam">시험</span>
+                         <span class="calendar-title">전자기학 중간고사</span>
+                         <span class="calendar-time">11:00</span>
+                     </li>
+                 </ul>
+             </div>
+             <div class="calendar-day yet">
+                 <div class="cd-title">
+                     <span class="cd-date">
+                         30일 (목)
+                     </span>
+                     <span class="cd-count">
+                         D-3
+                     </span>
+                 </div>
+                 <ul>
+                     <li>
+                         <span class="calendar-mark cm-exam">시험</span>
+                         <span class="calendar-title">전자기학 중간고사</span>
+                         <span class="calendar-time">11:00</span>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+    </section>
+    <footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/star-rating-svg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.star-rating-svg.js"></script>
+</head>
+<body class="time"> 
+    
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./class_my.html">수업</a>
+                        </li>
+                        <li>
+                            <a class="on" href="./schedule.html">시간표</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a class="on" href="./schedule.html">시간표</a>
+                                    </li>
+                                    <li>
+                                        <a href="./evalue.html">강의평</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>    
+                            <a href="./qna_study.html">Q&A</a>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+		<div class="sub-header">
+			<div class="mobile-m">
+				<div class="bar">
+					<div class="bar1-1"></div>
+					<div class="bar2-1">
+						<div class="c-bar1"></div>
+						<div class="c-bar2"></div>
+					</div>
+					<div class="bar3-1"></div>
+				</div>
+			</div>
+			<div class="sh-wrap">
+				<a class="on" href="./schedule.html">시간표</a>
+				<a href="./evalue.html">강의평</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a class="on" href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+<div class="sche-cover">
+    <div class="time-all">
+        <section class="schedule">
+            <div class="schedule-pc container">
+                <div class="schep-l modal-parent list-ta">
+                    <form action="#">
+                        <div class="year-sel">
+                            <select name="semester-sche" id="semester-sche">
+                                <option value="seme20_2">2020년 2학기</option>
+                                <option value="seme20_1">2020년 2학기</option>
+                                <option value="seme19_2">2019년 2학기</option>
+                                <option value="seme19_1">2019년 2학기</option>
+                            </select>
+                        </div>
+                        <div class="scheop-wrap">
+                            <div class="sche-op">
+                                <div class="op-btn">
+                                    <button class="save-time" type="button"></button>
+                                    <button class="op-time" type="button"></button>
+                                </div>
+                            </div>
+                            <div class="sche-title">
+                                <div class="op-title">
+                                    <span class="op-first">대표</span>
+                                    <p class="op-name">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</p>
+                                </div>
+                                <span class="record-score">
+                                    <span class="score-num">19</span>
+                                    <span>학점</span>
+                                </span>
+                            </div>
+                            <div class="sche-list content-rd">
+                                <ul>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="fir" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" >
+                                            <span class="bt-fir">대표</span>
+                                            <span class="bt-title">40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한40글자제한</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="add-time mo-btn" type="button">+ 시간표 추가</button>
+                            
+                        </div>
+                    </form>
+                    <div class="mobile-close">
+                        <button type="button">닫기 </button>
+                    </div>
+                </div>
+                <div class="schep-c">
+                    <div class="table-week">
+                        <table>
+                            <tr>
+                                <td> </td>
+                                <td>월</td>
+                                <td>화</td>
+                                <td>수</td>
+                                <td>목</td>
+                                <td>금</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="time-table">
+                        <table>
+                            <tr>
+                                <th>
+                                    <div class="grids">
+                                        <div class="grid"><span class="startt9">9</span></div>
+                                        <div class="grid"><span class="startt10">10</span></div>
+                                        <div class="grid"><span class="startt11">11</span></div>
+                                        <div class="grid"><span class="startt12">12</span></div>
+                                        <div class="grid"><span class="startt13">13</span></div>
+                                        <div class="grid"><span class="startt14">14</span></div>
+                                        <div class="grid"><span class="startt15">15</span></div>
+                                        <div class="grid"><span class="startt16">16</span></div>
+                                        <div class="grid"><span class="startt17">17</span></div>
+                                        <div class="grid"><span class="startt18">18</span></div>
+                                        <div class="grid"><span class="startt19">19</span></div>
+                                        <div class="grid"><span class="startt20">20</span></div>
+                                        <div class="grid"><span class="startt21">21</span></div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <div class="field-time"></div>
+                                    <div class="grids">
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="field-time"></div>
+                                    <div class="grids">
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="field-time"></div>
+                                    <div class="grids">
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="field-time"></div>
+                                    <div class="grids">
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="field-time"></div>
+                                    <div class="grids">
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                        <div class="grid"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="schep-r modal-parent list-ta">
+                    <div class="tablet-btn">
+                        <a class="time-on active" href="javascript:;">시간표설정</a>
+                        <a class="hubo-on" href="javascript:;">후보목록</a>
+                    </div>
+                    <div class="sr-title">
+                        <img src="../img/common/cart.png" alt=""><span>후보 목록</span>
+                    </div>
+                    <div class="alre-list content-rd">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sub-list list-ta modal-parent">
+            <div class="subl-top">
+                <div class="sub-fil">
+                    <select name="list-sear" id="list-sear">
+                        <option value="학수번호">학수번호</option>
+                        <option value="교과목명">교과목명</option>
+                        <option value="교강사">교강사</option>
+                    </select>
+                </div>
+                <div class="search-list">
+                    <form action="#">
+                        <input id="search-sub" type="text" placeholder="검색">
+                        <button id="search-sbtn" type="reset"></button>
+                    </form>
+                </div>
+                <div class="fil-wrap">
+                    <div class="list-modal">
+                        <div class="mo1">
+                            <a class="mo1-on mo-on" href="javascript:;">전공 / 교양</a>
+                        </div>
+                        <div class="mo2">
+                            <a class="mo2-on mo-on" href="javascript:;">요일 지정</a>
+
+                        </div>
+                        <div class="mo3">
+                            <a class="mo3-on mo-on" href="javascript:;">공강  지정</a>
+                        </div>
+                        <div class="one-sche">
+                            <button class="absurt" type="button">1교시 제외</button>
+                        </div>
+                        <div class="mo4">
+                            <a class="mo4-on mo-on" href="javascript:;">수강 학점</a>
+                        </div>
+                        <div class="mo5">
+                            <a class="mo5-on mo-on" href="javascript:;">일정 추가</a>
+                        </div>
+                    </div>
+                    <!--         필터예시입니다.         -->
+                    <div class="filtering filtering1">
+                        <div class="fil-con"></div>
+                        <div class="numbering">외 <span class="count-filter">0</span>개</div>
+                        <div class="del-fil del-fil1"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--      PC버전 과목 리스트      -->
+            <div class="sub-table content-rd content-xd">
+                <table>
+                    <tr>
+                        <th>
+                            후보등록
+                        </th>
+                        <th>교강사</th>
+                        <th>교과목</th>
+                        <th>학수번호</th>
+                        <th>이수구분</th>
+                        <th>학점</th>
+                        <th>시간</th>
+                        <th>강의실</th>
+                        <th>강의평</th>
+                        <th>비고란</th>
+                    </tr>
+                    <tr id="lec1" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec2" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec3" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec4" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec5" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec6" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec7" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec8" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec9" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec10" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec11" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec12" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec13" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec14" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec15" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec16" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec17" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec18" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec19" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                    <tr id="lec20" class="lecture-info">
+                        <td>
+                            <a class="hubo-btn none" ></a>
+                        </td>
+                        <td><span class="class-pro">박진희</span></td>
+                        <td><span class="hubo-info class-title">고전음악의이해</span></td>
+                        <td><span class="class-code">ECO1101</span></td>
+                        <td><span class="class-spe">핵심교양</span></td>
+                        <td><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></td>
+                        <td><span class="hubo-info class-date">화(13:00~15:00)</span></td>
+                        <td><span class="class-place">제1공학관501강의실</span></td>
+                        <td><span class="class-lec"><a href="javascipt:;"></a></span></td>
+                        <td class="class-text"><span class="class-pro">비고란</span></td>
+                    </tr>
+                </table>
+                
+                
+                
+                
+                
+                
+                
+                
+    
+                
+<!--
+                <div class="mobile-lec">
+                    <div id="lec1" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec2" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec3" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec4" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec5" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec6" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec7" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec8" class="lecture-info">
+                        <div class="li-line1">
+                            <div><span class="class-pro">박진희</span></div>
+                            <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        </div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec9" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec10" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec11" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec12" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec13" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec14" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                    <div id="lec15" class="lecture-info">
+                        <div><span class="class-pro">박진희</span></div>
+                        <div><span class="hubo-info class-title">고전음악의이해</span></div>
+                        <div><span class="class-code">ECO1101</span></div>
+                        <div><span class="class-spe">핵심교양</span></div>
+                        <div><span class="hubo-info  class-score"><span class="score-n">1</span> <span class="score-t">학점</span></span></div>
+                        <div><span class="hubo-info class-date">화(13:00~15:00)</span></div>
+                        <div><span class="class-place">제1공학관501강의실</span></div>
+                        <div>
+                            <a class="hubo-btn none" >후보 등록</a>
+                        </div>
+                        <div><span class="class-lec"><a href="javascipt:;">강의평 남기기</a></span></div>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+        
+      
+        
+        
+        
+<!--
+        <div class="display-btn">
+                    <span class="time-on">시간표 관리</span>
+                    <span class="list-on">강의 리스트</span>
+                    <span class="hubo-on">후보 목록</span>
+        </div>
+-->
+    </div>
+<!--
+    <div class="eavalue-all">
+        <div class="eval-top">
+            <select name="value-sel" id="value-sel">
+                <option value="gradu2020-2">2020년 2학기</option>
+                <option value="gradu2020-1">2020년 1학기</option>
+                <option value="gradu2019-2">2019년 2학기</option>
+                <option value="gradu2019-1">2019년 1학기</option>
+                <option value="gradu2018-2">2018년 2학기</option>
+                <option value="gradu2018-1">2018년 1학기</option>
+            </select>
+        </div>
+    </div>
+    
+-->
+    
+    <script>
+
+           
+        
+        $(document).ready(function(){
+
+                $(".content-rd").mCustomScrollbar({
+                                theme:"light-3"
+                            });
+            });
+
+
+    
+        $(".content-xd").mCustomScrollbar({
+					axis:"yx",
+					theme:"light-3",
+					scrollInertia:550,
+					scrollbarPosition:"outside"
+                    });
+    
+        
+
+
+	
+
+    </script>
+
+</div>
+<div class="time-modal wrap-modal">
+    <div class="tm-content">
+        <div class="tm-title">
+            <p>시간표 설정</p>
+        </div>
+        <div class="close">
+            <a href="javascript:;" class="tm-close"></a>
+        </div>
+        <form action="#">
+               
+            <div class="tm-con content-rd">
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <a href="./schedule.html" class="time-del"  data-confirm="시간표를 삭제하시겠습니까?" ></a>
+                        <div class="label-con">
+                            <span class="mark-t">대표</span>
+                            <input class="modi-time" type="text" maxlength="40" placeholder="시간표1">
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="time-mbtn">
+                <button class="tbtn-okay" type="button">적용</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="add-wrap modal-list">
+    <div class="add-content">
+        <div class="add-modal wrap-modal">
+            <div class="add-title">
+                <p>시간표 추가</p>
+            </div>
+            <div class="close">
+                <a href="javascript:;" class="close tm-close"></a>
+            </div>
+            <form action="#">
+                <div class="add-con">
+                    <p>이름</p>
+                    <input type="text" maxlength="40">
+                    <div class="label-add">
+                        <input type="checkbox" name="okay-main" id="okay-main">
+                        <label for="okay-main">
+                            대표 시간표 지정
+                        </label>
+                    </div>
+                </div>
+                <div class="add-mbtn">
+                    <button class="add-okay" type="button">적용</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="limo-wrap">
+                <div class="limo-op limo-op1">
+                    <div class="mo1-modal modal-list ">
+                        <form action="#">
+                            <div class="modal-title">
+                                <p>전공 / 교양</p>
+                            </div>
+                            <div class="close">
+                                <a href="javascript:;" class="close lim-close"></a>
+                            </div>
+                            <div class="modal-con">
+                                <label for="hg">
+                                    <input type="checkbox" value="핵심교양" name="jg" id="hg">
+                                    <span class="fil-name" id="jg1">핵심교양</span>
+                                </label>
+                                <label for="rt">
+                                    <input type="checkbox" value="ROTC필수" name="jg" id="rt">
+                                    <span class="fil-name" id="jg2">ROTC필수</span>
+                                </label>
+                                <label for="gp">
+                                    <input type="checkbox" value="교양필수" name="jg" id="gp">
+                                    <span class="fil-name" id="jg3">교양필수</span>
+                                </label>
+                                <label for="gs">
+                                    <input type="checkbox" value="교양선택" name="jg" id="gs">
+                                    <span class="fil-name" id="jg4">교양선택</span>
+                                </label>
+                                <label for="jh">
+                                    <input type="checkbox" value="전공핵심" name="jg" id="jh">
+                                    <span class="fil-name" id="jg5">전공핵심</span>
+                                </label>
+                                <label for="js">
+                                    <input type="checkbox" value="전공심화" name="jg" id="js">
+                                    <span class="fil-name" id="jg6">전공심화</span>
+                                </label>
+                                <label for="jb">
+                                    <input type="checkbox" value="전공기초(필수)" name="jg" id="jb">
+                                    <span class="fil-name" id="jg7">전공기초(필수)</span>
+                                </label>
+                                <label for="gg">
+                                    <input type="checkbox" value="일반교양" name="jg" id="gg">
+                                    <span class="fil-name" id="jg8">일반교양</span>
+                                </label>
+                                <label for="kj">
+                                    <input type="checkbox" value="전공기초(필수)" name="jg" id="kj">
+                                    <span class="fil-name" id="jg9">전공기초(필수)</span>
+                                </label>
+                            </div>
+                            <button class="ok-mo1 mobtn" type="button">적용</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="limo-op limo-op2">
+                <div class="mo2-modal modal-list">
+                    <form action="#">
+                        <div class="modal-title">
+                            <p>요일 지정</p>
+                        </div>
+                        <div class="close">
+                            <a href="javascript:;" class="close lim-close"></a>
+                        </div>
+                        <div class="modal-con">
+                            <label for="md2">
+                                <input type="checkbox" value="월요일" name="date" id="md2">
+                                <span>월요일</span>
+                            </label>
+                            <label for="td2">
+                                <input type="checkbox" value="화요일" name="date" id="td2">
+                                <span>화요일</span>
+                            </label>
+                            <label for="wd2">
+                                <input type="checkbox" value="수요일" name="date" id="wd2">
+                                <span>수요일</span>
+                            </label>
+                            <label for="thd2">
+                                <input type="checkbox" value="목요일" name="date" id="thd2">
+                                <span>목요일</span>
+                            </label>
+                            <label for="fd2">
+                                <input type="checkbox" value="금요일" name="date" id="fd2">
+                                <span>금요일 </span>
+                            </label>
+                        </div>
+                        <button class="ok-mo2 mobtn" type="button">적용</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="limo-op limo-op3">
+                    <div class="mo3-modal modal-list">
+                        <form action="#">
+                            <div class="modal-title">
+                                <p>공강 지정</p>
+                            </div>
+                            <div class="close">
+                                <a href="javascript:;" class="close lim-close"></a>
+                            </div>
+                            <div class="modal-con">
+                                <label for="md3">
+                                    <input type="checkbox" value="월요일" name="blanc" id="md3">
+                                    <span>월요일</span>
+                                </label>
+                                <label for="td3">
+                                    <input type="checkbox" value="화요일" name="blanc" id="td3">
+                                    <span>화요일</span>
+                                </label>
+                                <label for="wd3">
+                                    <input type="checkbox" value="수요일" name="blanc" id="wd3">
+                                    <span>수요일</span>
+                                </label>
+                                <label for="thd3">
+                                    <input type="checkbox" value="목요일" name="blanc" id="thd3">
+                                    <span>목요일</span>
+                                </label>
+                                <label for="fd3">
+                                    <input type="checkbox" value="금요일" name="blanc" id="fd3">
+                                    <span>금요일 </span>
+                                </label>
+                            </div>
+                            <button class="ok-mo3 mobtn" type="button">적용</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="limo-op limo-op4">
+                    <div class="mo4-modal modal-list">
+                        <form action="#">
+                            <div class="modal-title">
+                                <p>수강 학점</p>
+                            </div>
+                            <div class="close">
+                                <a href="javascript:;" class="close lim-close"></a>
+                            </div>
+                            <div class="modal-con">
+                                <label for="score1">
+                                    <input type="checkbox" value="핵심교양" name="score" id="score1">
+                                    <span>1학점</span>
+                                </label>
+                                <label for="score2">
+                                    <input type="checkbox" value="ROTC필수" name="score" id="score2">
+                                    <span>2학점</span>
+                                </label>
+                                <label for="score3">
+                                    <input type="checkbox" value="교양필수" name="score" id="score3">
+                                    <span>3학점</span>
+                                </label>
+                                <label for="score4">
+                                    <input type="checkbox" value="교양선택" name="score" id="score4">
+                                    <span>4학점 이상~</span>
+                                </label>
+                            </div>
+                            <button class="ok-mo3 mobtn" type="button">적용</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="limo-op limo-op5">
+                    <div class="mo5-modal modal-list">
+                        <form action="#">
+                            <div class="modal-title">
+                                <p>일정 추가</p>
+                            </div>
+                            <div class="close">
+                                <a href="javascript:;" class="close lim-close"></a>
+                            </div>
+                            <div class="modal-con">
+                                <div class="route-sel">
+                                    <span class="route-t">
+                                        일정분류
+                                    </span>
+                                    <div class="route-box">
+                                        <div class="r1-wrap">
+                                            <input type="radio" name="route" id="route1">
+                                            <label for="route1">학교 일정
+                                            </label>
+                                        </div>
+                                        <div class="r2-wrap">
+                                            <input type="radio" name="route" id="route2">
+                                            <label for="route2">개인 일정</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="route-title">
+                                    <p class="route-t">
+                                        일정제목
+                                    </p>
+                                    <input type="text" placeholder="일정제목을 입력해주세요.">
+                                </div>
+                                <div class="route-day">
+                                    <p class="route-t">
+                                        일정 요일
+                                    </p>
+                                    <div class="route-box">
+                                        <div class="monday">
+                                            <input type="radio" name="monday" id="monday">
+                                            <label for="monday">월</label>
+                                        </div>
+                                        <div class="tuesday">
+                                            <input type="radio" name="tuesday" id="tuesday">
+                                            <label for="tuesday">화</label>
+                                        </div>
+                                        <div class="wednesday">
+                                            <input type="radio" name="wednesday" id="wednesday">
+                                            <label for="wednesday">수</label>
+                                        </div>
+                                        <div class="thursdayt">
+                                            <input type="radio" name="thursdayt" id="thursdayt">
+                                            <label for="thursdayt">목</label>
+                                        </div>
+                                        <div class="friday">
+                                            <input type="radio" name="friday" id="friday">
+                                            <label for="friday">금</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="route-time">
+                                    <p class="route-t">일정 시간</p>
+                                    <div class="route-box">
+                                        <input type="text" placeholder="00:00">
+                                        <span>~</span>
+                                        <input type="text" placeholder="00:00">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="ok-mo3 mobtn" type="button">적용</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    <footer class="sche-footer">
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+</body>
+</html>

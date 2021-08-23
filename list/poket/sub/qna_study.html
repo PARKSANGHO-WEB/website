@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0">
+    <title>Ulink</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/ScrollMagic.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="header-wrap">
+            <div class="header-rel">
+                <div class="logo" onclick="location.href='./class_my.html'">
+                    <img src="../img/common/img_logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./class_my.html">수업</a>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">시간표</a>
+                        </li>
+                        <li>    
+                            <a class="on" href="./qna_study.html">Q&A</a>
+                            <div class="menu-sub">
+                                <ul>
+                                    <li>
+                                        <a class="on" href="./qna_study.html">스터디</a>
+                                    </li>
+                                    <li>
+                                        <a href="./qna_school.html">학교생활</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a  href="./board.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-gnb">
+                    <ul>
+                        <li class="gnbm">
+                            <a class="gnb-message btngnb" href="javascript:;">
+                                <span class="new-message"></span>
+                            </a>
+                            <div class="mess-box gnb-box">
+                               <p class="mb-title">쪽지</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage.html#receive">
+                                            <span class="ms-nick">공수맛집</span>
+                                            <span class="ms-nick">기출 문제 3번 문제가 너무 너무 너무 너무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbn">
+                            <a class="gnb-noti btngnb" href="javascript:;">
+                                <span class="new-noti"></span>
+                            </a>
+                            <div class="noti-box gnb-box">
+                               <p class="mb-title">알림</p>
+                                <ul class=" content-rd">
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-an" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-sel" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 댓글이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="new-like" href="javascript:;">
+                                            <p class="ms-title">[<span class="elip-wrap">제2의 싱클레어가 되고...</span>]</p>
+                                            <span class="ms-cont">글에 답변이 달렸습니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnbp">
+                            <a class="gnb-profile btngnb" href="./mypage.html">
+                            </a>
+<!--
+                            <div class="prof-box gnb-box">
+                               <p class="pb-title">프로필</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage.html">마이페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+-->
+                        </li>
+                        <li class="gnbt">
+                            <a class="gnb-more btngnb" href="javascript:;">
+                                <span class="new-more">더보기</span>
+                                <span class="new-more2">접기</span>
+                            </a>
+                            <div class="more-box gnb-box">
+                               <p class="mb-title">더 보기</p>
+                                <ul>
+                                    <li>
+                                        <a href="./mypage_not.html#using" data-toggle="tab">서비스 이용약관</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#cont" data-toggle="tab">관리자 문의하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#my-faq" data-toggle="tab">자주 묻는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="./mypage_not.html#person" data-toggle="tab">개인정보 처리방침</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-t">
+                    <form action="#">
+                        <input required class="search-key" maxlength="10" type="text" placeholder="키워드 검색...">
+                        <button class="search-btn" type="reset"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+		<div class="sub-header">
+					<div class="mobile-m">
+						<div class="bar">
+							<div class="bar1-1"></div>
+							<div class="bar2-1">
+								<div class="c-bar1"></div>
+								<div class="c-bar2"></div>
+							</div>
+							<div class="bar3-1"></div>
+						</div>
+					</div>
+			<div class="sh-wrap">
+				<a class="on" href="./qna_study.html">스터디</a>
+				<a href="./qna_school.html">학교생활</a>
+			</div>
+			<div class="mobile-menu">
+				<ul>
+						<li>
+							<a href="./class_my.html">수업</a>
+						</li>
+						<li>
+							<a href="./schedule.html">시간표</a>
+						</li>
+						<li>    
+							<a class="on" href="./qna_study.html">Q&A</a>
+						</li>
+						<li>
+							<a  href="./board.html">게시판</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+    </header>
+    
+    <script>
+
+
+        var resetb =  document.getElementById("search-btn");
+        var offcansearch = document.getElementById('search-key');
+
+        offcansearch.addEventListener('keyup', function() {
+          var searchSminput = offcansearch.value.length;
+          if (searchSminput == 0) {
+            resetb.style.display = "none";
+          } else {
+            resetb.style.display = "block";
+          }
+        });
+
+        resetb.addEventListener('click', function() {
+          resetb.style.display = "none";
+          offcansearch.focus();
+        });
+        resetb.addEventListener('focusout', function() {
+          resetb.style.display = "none";
+        });
+
+
+
+    </script>
+    <section class="qna-study">
+        <div class="qna-wrap">
+            <div class="left-filter">
+                <div class="lf-close">
+                    <span>필터설정</span>
+                    <span class="lclose-btn"><img src="../img/common/close_big.png" alt=""></span>
+                </div>
+                <form action="#">
+                    <div class="wrap">
+                       
+                        <!--          리스트 필터 , 카테고리별 제목 클릭시 리스트 hide show          -->
+                       
+                        <div class="lf-wrap1 lf-wrap">
+                            <div class="lf-title">
+                                <span>내 수업</span>
+                            </div>
+                            <div class="lf1-con lf-con">
+                                <div class="lf1-se1">
+                                    <input id="lec1" id="lec1" type="checkbox">
+                                    <label for="lec1">미분적분학I</label>
+                                </div>
+                                <div class="lf1-se2">
+                                    <input id="lec2" id="lec2" type="checkbox">
+                                    <label for="lec2">미분적분학II</label>
+                                </div>
+                                <div class="lf1-se3">
+                                    <input id="lec3" id="lec3" type="checkbox">
+                                    <label for="lec3">미적분학및연습 II</label>
+                                </div>
+                                <div class="lf1-se4">
+                                    <input id="lec4" id="lec4" type="checkbox">
+                                    <label for="lec4">공학수학 I</label>
+                                </div>
+                                <div class="lf1-se5">
+                                    <input id="lec5" id="lec5" type="checkbox">
+                                    <label for="lec5">공학수학 II</label>
+                                </div>
+                                <div class="lf1-se6">
+                                    <input id="lec6" id="lec6" type="checkbox">
+                                    <label for="lec6">디자인과문화</label>
+                                </div>
+                                <div class="lf1-se7">
+                                    <input id="lec7" id="lec7" type="checkbox">
+                                    <label for="lec7">디지털디자인 II</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lf-wrap2 lf-wrap">
+                            <div class="lf-title">
+                                <span>어학시험</span>
+                            </div>
+                            <div class="lf2-con lf-con">
+                                <div class="lf2-se1">
+                                    <input id="exam1" id="exam1" type="checkbox">
+                                    <label for="exam1">TOEFL</label>
+                                </div>
+                                <div class="lf2-se2">
+                                    <input id="exam2" id="exam2" type="checkbox">
+                                    <label for="exam2">TOEIC</label>
+                                </div>
+                                <div class="lf2-se3">
+                                    <input id="exam3" id="exam3" type="checkbox">
+                                    <label for="exam3">TEPS</label>
+                                </div>
+                                <div class="lf2-se4">
+                                    <input id="exam4" id="exam4" type="checkbox">
+                                    <label for="exam4">TOEIC Speaking</label>
+                                </div>
+                                <div class="lf2-se5">
+                                    <input id="exam5" id="exam5" type="checkbox">
+                                    <label for="exam5">OPlc</label>
+                                </div>
+                                <div class="lf2-se6">
+                                    <input id="exam6" id="exam6" type="checkbox">
+                                    <label for="exam6">그 외 어학시험</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lf-wrap3 lf-wrap">
+                            <div class="lf-title">
+                                <span>자격증</span>
+                            </div>
+                            <div class="lf3-con lf-con">
+                                <div class="lf3-se1">
+                                    <input id="ser1" id="ser1" type="checkbox">
+                                    <label for="ser1">TOEFL</label>
+                                </div>
+                                <div class="lf3-se2">
+                                    <input id="ser2" id="ser2" type="checkbox">
+                                    <label for="ser2">TOEIC</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="qlist">
+                <form action="#">
+                    <div class="qlist-filter">
+                        <select name="qna-study" id="qna-study">
+                            <option value="all">전체</option>
+                            <option value="answered">답변 있는 질문</option>
+                            <option value="not">답변 없는 질문</option>
+                        </select>
+                        <div class="filter-on">
+                            필터설정하기
+                        </div>
+                    </div>
+                    <!--         글 작성버튼 클릭시, 작성 페이지로 이동           -->
+                    <div class="qna-list">
+                        <div class="write-btn" onClick="location.href='./qna_write.html'">
+                            <div class="wb-wrap">
+                                <a>질문 작성하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--         글 미리보기 리스트, 글 클릭시 상세 뷰로 이동, 이미지 클릭시 모달 팝업 생성      -->
+                    
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <!--            글 작성시 입력한 태그와 입력 시간                -->
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qna-upimg">
+                            <!--           여러 장의 이미지일 경우, class="qnau-wrap" 생성                -->
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    
+                    <!--       업로드된 이미지가 없을 경우 class="qna-box"에   img-none이 추가됩니다.      -->
+                    
+                    
+                    <div class="qna-box img-none"  onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qna-upimg">
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--           글 작성시 업로드 된 이미지, 클릭시 모달 박스 생성              -->
+                        <div class="qna-upimg">
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qna-upimg">
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qna-upimg">
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qna-upimg">
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                    <div class="qna-box" onClick="location.href='./qna_study_view.html'">
+                        <div class="qbox-left">
+                            <div class="qbox-title">
+                                <span class="qna-img">
+                                    <img src="../img/common/qna_ic_question_large.svg" alt="">
+                                </span>
+                                <span class="qna-title">성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니성균관대 2015년 미적2 기말 1번 질문드립니</span>
+                            </div>
+                            <div class="qna-preview">
+                                <span>
+                                    미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려미적1 하다 미적2 들어가니까 공간나오고 벡터나오고... 기출 풀려
+                                </span>
+                            </div>
+                            <div class="qna-info">
+                                <span class="qna-wtime">방금</span><span class="qna-dot">·</span>
+                                <div class="qna-tag color1">
+                                    <span>#미분적분학II</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qna-upimg">
+                            <div class="qnau-wrap">
+                                
+                            </div>
+                            <div class="quimg quimg-1">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-2">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-3">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                            <div class="quimg quimg-4">
+                                <img src="../img/thumb/thum2-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="qbox-right">
+                            답변<span class="qbox-num">1</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--      클릭시 스크롤 탑 버튼입니다.      -->
+            <div class="btn-board">
+                <span class="top-btn">TOP</span>
+            </div>
+        </div>
+    </section>
+	<footer>
+			<ul class="foot-link">
+				<li>
+					<a href="./mypage_not.html#person" data-toggle="tab">
+						개인정보처리방침
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#using" data-toggle="tab">
+						이용약관
+					</a>
+				</li>
+				<li>
+					<a href="./mypage_not.html#cont" data-toggle="tab">
+						문의하기
+					</a>
+				</li>
+			</ul>
+			<span class="foot-copy">
+				<img src="../img/common/img_flogo.svg" alt="">
+				<span>Copyright ⓒ</span>
+				<img src="../img/common/img_glogo.svg" alt="">
+				<span class="bold">corp.</span>
+				<span>All Rights Reserved.</span>
+			</span>
+			<div class="foot-intro">
+				<span>(주)유커넥션</span>
+				<span class="vert"></span>
+				<span>대표이사 최상일</span>
+				<span>사업자등록번호 : 356-81-02045</span>
+				<span>서울특별시 서초구 주흥길 31-27 (반포동)</span>
+				<span>contact@uconnection.kr</span>
+			</div>
+    </footer>
+        <!--  스크롤시 좌측 필터 따라오기  -->
+    <script>
+        
+        
+    $(function() {
+
+    var $sidebar   = $(".left-filter"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding + 150
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 45
+            });
+        }
+    });
+    
+});
+    
+    </script>
+                <!--모달 팝업-->
+    <script type="text/javascript" src="./js/common.js"></script>
+    <div class="qna_modal">
+        <div class="qna_modal-con">
+            <div class="qna_bxslider">
+                <div><img src="../img/thumb/thum2-1.png"></div>
+                <div><img src="../img/thumb/thum2-2.png"></div>
+                <div><img src="../img/thumb/thum3-1.png"></div>
+                <div><img src="../img/thumb/thum3-2.png"></div>
+                <div><img src="../img/thumb/thum3-3.png"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+    
+                $(".content-rd").mCustomScrollbar({
+                                theme:"light-3"
+                            });
+        
+            });
+
+    </script>
+    
+    
+    <!--  무한스크롤, 현재 박스가 복사되는 형태, 박스내의 클릭이벤트 스크립트 변경  -->
+    <script>
+        $(function(){
+            var num = 0;
+            $(window).scroll(function(){
+                if($(window).scrollTop() >= $(document).height() - $(window).height()){ 
+                    var $clone = $('.qna-box').eq(num).first().clone()
+                    num++
+                    $('.qna-box:last-child').clone().appendTo('.qlist');
+                }
+            })
+        });
+    </script>
+    
+</body>
+</html>

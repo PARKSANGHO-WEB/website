@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/community_write.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>휴나라</title>
+	<script>
+		
+        $(document).ready(function() {
+            $("header").load("./inc/header.html", function() {
+				jQuery('.top-menu a').eq("1").addClass('active');
+			  });
+            $("footer").load("./inc/footer.html");
+			
+			
+        });
+		
+	</script>
+</head> 
+<body class="error-body">
+	<div class="error">
+		<div class="error-logo">
+			<img src="../img/common/logo.png" alt="">
+		</div>
+		<div class="error-con">
+			<p>죄송합니다.</p>
+			<p>요청하신 페이지를 찾을 수 없거나</p>
+			<p>일시적인 문제로 인해 정상 작동하지 않았습니다.</p>
+		</div>
+		<div class="error-btn">
+			<a>이전페이지</a>
+			<a onclcick="location.href='../index.html'">메인으로</a>
+		</div>
+	</div>
+</body>
+</html>

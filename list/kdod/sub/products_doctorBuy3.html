@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8">
+    <title>K-DOT</title>
+    <link rel="stylesheet" href="../css/products_doctorBuy3.css">
+    <style>
+/*        상단 배너 배경 이미지 변경*/
+        section.about-busy .sub-banner {
+            background: url('../img/sub/derma_ban.png');
+        }
+    </style>
+    <script src="https://ajax.googleap is.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+<body>
+    <header id="navbar">
+        <div class="header-wrap">
+            <div class="hamburger">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <div class="menu__box">
+                        <div class="logo-mb">
+                            <a href="../index.html">
+                                <img src="../img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="menu-bw">
+                            <li class="big-mb">
+                                <span class="menu-top">About Us</span>
+                                <div class="mt-subl">
+                                    <ul>
+                                        <li>
+                                            <a href="./about-kdod.html">About Company</a>
+                                        </li>
+                                        <li>
+                                            <a href="./about-busy.html">Our Business</a>
+                                        </li>
+                                        <li>
+                                            <a href="./about-ci.html">About CI</a>
+                                        </li>
+                                        <li>
+                                            <a href="./about-myanma.html">Myanmar &amp; Cambodia </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="big-mb">
+                                <span class="menu-top">Products for Doctor</span>
+                                <div class="mt-subl">
+                                    <ul>
+                                        <li>
+                                            <a href="./dermatology.html">Dermatology</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Dental</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Ophthalmology </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="big-mb">
+                                <span class="menu-top">Products for Public</span>
+                                <div class="mt-subl">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">Cosmetic</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Homecare</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Point-Mall </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="big-mb">
+                                <span class="menu-top">Online Survey</span>
+                                <div class="mt-subl">
+                                    <ul>
+                                        <li>
+                                            <a href="./online-market-research-survey.html">Market Research Survey</a>
+                                        </li>
+                                        <li>
+                                            <a href="./online-survey.html">Online Survey</a>
+                                        </li>
+                                        <li>
+                                            <a href="./online-panel.html">Online Panel</a>
+                                        </li>
+                                        <li>
+                                            <a href="./online-k-dod-point.html">K-DOD Point</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Go To Survey</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="big-mb">
+                                <span class="menu-top">K-DOD Playground</span>
+                                <div class="mt-subl">
+                                    <ul>
+                                        <li>
+                                            <a href="./k-dod-play-meme.html">K-DOD MEME</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Playground </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="big-mb">
+                                <span class="menu-top">Board</span>
+                                <div class="mt-subl">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Inquiry / Order / Suggestion</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-logo" onclick="location.href='../index.html'">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="gnb-ul">
+                <ul>
+                    <li class="gnb-big">
+                        <a href="javascript:;">Mypage</a>
+                    </li>
+                    <li class="gnb-big">
+                        <a href="./login.html">Logout</a>
+                    </li>
+                    <li class="gnb-big">
+                        <a href="javascript:;">Search</a>
+                    </li>
+                    <li class="gnb-big">
+                        <div class="select" data-role="selectBox">
+                            <span date-value="optValue" class="selected-option">
+
+                            </span>
+                            <!-- 옵션 영역 -->
+                            <ul class="hide">
+                                <li>
+                                    <span class="eng">English</span>
+                                </li>
+                                <li>
+                                    <span class="myan">မြန်မာဘာသာ</span>
+                                </li>
+                                <li>
+                                    <span class="cam">ភាសាខ្មែរ</span>
+                                </li>
+                                <li>
+                                    <span class="kr">한국어</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            const body = document.querySelector('body');
+            const select = document.querySelector(`[data-role="selectBox"]`);
+            const values = select.querySelector(`[date-value="optValue"]`);
+            const option = select.querySelector('ul');
+            const opts = option.querySelectorAll('li');
+
+            /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
+            function selects(e) {
+                e.stopPropagation();
+                option.setAttribute('style', `top:${select.offsetHeight}px`)
+                if (option.classList.contains('hide')) {
+                    select.classList.add('on');
+                    option.classList.remove('hide');
+                    option.classList.add('show');
+                } else {
+                    option.classList.add('hide');
+                    option.classList.remove('show');
+                    select.classList.remove('on');
+                }
+                selectOpt();
+            }
+
+            /* 옵션선택 */
+            function selectOpt() {
+                opts.forEach(opt => {
+                    const innerValue = opt.innerHTML;
+
+                    function changeValue() {
+                        values.innerHTML = innerValue;
+                    }
+                    opt.addEventListener('click', changeValue)
+                });
+            }
+
+            /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
+            function selectFirst() {
+                const firstValue = opts[0].innerHTML;
+                values.innerHTML = `${firstValue}`
+            }
+
+            /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
+            function hideSelect() {
+                if (option.classList.contains('show')) {
+                    option.classList.add('hide');
+                    option.classList.remove('show');
+                    select.classList.remove('on');
+                }
+            }
+
+            selectFirst();
+            select.addEventListener('click', selects);
+            body.addEventListener('click', hideSelect);
+        </script>
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <div class="main_menu">
+            <div class="mm-wrap">
+                <div class="big-item">
+                    <a c href="javascript:;">
+                        About Us
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./about-kdod.html">About Company</a>
+                            </li>
+                            <li>
+                                <a href="./about-busy.html">Our Business</a>
+                            </li>
+                            <li>
+                                <a href="./about-ci.html">About CI</a>
+                            </li>
+                            <li>
+                                <a href="./about-myanma.html">Myanmar &amp; Cambodia </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="javascript:;">
+                        Products for Doctor
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./dermatology.html">Dermatology</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Dental</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Ophthalmology </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="javascript:;">
+                        Products for Public
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">Cosmetic</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Homecare</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Point-Mall </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="javascript:;">
+                        Online Survey
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./online-market-research-survey.html">Market Research Survey</a>
+                            </li>
+                            <li>
+                                <a href="./online-survey.html">Online Survey</a>
+                            </li>
+                            <li>
+                                <a href="./online-panel.html">Online Panel</a>
+                            </li>
+                            <li>
+                                <a href="./online-k-dod-point.html">K-DOD Point</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Go To Survey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="javascript:;">
+                        K-DOD Playground
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="./k-dod-play-meme.html">K-DOD MEME</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Playground </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-item">
+                    <a href="javascript:;">
+                        Board
+                    </a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Inquiry / Order / Suggestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="about-busy">
+<!--
+        <div class="sub-banner">
+            <div class="ban-text">
+                <div class="root">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="arrow">></li>
+                        <li>
+                            <a href="#">Products for Doctor</a>
+                        </li>
+                        <li class="arrow">></li>
+                        <li>
+                            <a href="dermatology.html">Dermatology</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ban-ment">
+                    <span class="ban-title">Products for Doctor</span>
+                    <span class="ban-text">Dermatology, Dental, Ophthalmology Products</span>
+                </div>
+            </div>
+        </div>
+-->
+    </section>
+
+    <div id="products3">
+		<div class="header cf">
+		    <div id="prod_pic">
+		        <img src="http://placehold.it/350x350" width="350" height="350" alt="제품이미지" id="big">
+		        <div id="small-pic">
+		            <img src="http://placehold.it/50x50" alt="작은 이미지" class="small">
+		            <img src="http://placehold.it/50x50" alt="작은 이미지" class="small">
+		            <img src="http://placehold.it/50x50" alt="작은 이미지" class="small">
+		            <img src="http://placehold.it/50x50" alt="작은 이미지" class="small">
+		            <img src="http://placehold.it/50x50" alt="작은 이미지" class="small">
+		            <img src="http://placehold.it/60x50" alt="작은 이미지" class="small">
+		        </div>
+		    </div>
+		        
+		    <section id="desc">
+		        <h1>AMPOULE line </h1>
+		        <article class="info">
+		            <p>
+		                Concentrated serums that quickly <br>
+                        boost nutrient levels & elasticity
+		            </p>
+		        </article>
+		        <article class="size">
+		            <p class="color">
+		                Size : 885mm(W) x 865mm(D) x 1350mm(H) <br>
+                        Weight : 85Kg (Full package) <br>
+                        Laser diode power : 60W Max <br>
+		            </p>
+		        </article>
+		    </section>
+		</div>
+		
+		<section class="Line">
+            <h2>Line Introduction</h2>
+		    <article class="type1 cf">
+		        <div class="img">
+		            <img src="http://placehold.it/640x430" alt="이미지">
+		        </div>
+		        <div class="r_text">
+		            <h3>Ampoule Line Overview</h3>
+		            <p>
+		                - Concentrated serums designed to quickly boost moisture and nutrient <br>
+                        levels and to increase the skin’s elasticity from deep within. <br>
+                        - Provides complete hydration <br>
+                        - Bolsters the skin’s natural defenses <br>
+                        - Guards against moisture loss for 12 to 36 hours
+		            </p>
+		        </div>
+		    </article>
+		    
+		    <article class="type2 cf">
+		        <div class="img">
+		            <img src="http://placehold.it/640x430" alt="이미지">
+		        </div>
+		        <div class="l_text">
+		            <h3>How To Use </h3>
+		            <p>
+		                Apply evenly over the entire face after cleansing and toning
+		            </p>
+		        </div>
+		    </article>
+        </section>
+        
+        <section class="items">
+            <h2>Individual Items</h2>
+		    <article class="content">
+		        <div class="img cf">
+		            <div class="img1">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img2">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img3">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		        </div>
+		        <div class="text cf">
+		            <div class="txt1">
+		                <h3>
+		                    <span>Chamomile Complex 70% Ampoule (50ml)</span>
+		                </h3>
+		                <h3>
+		                    Special Features
+		                </h3>
+		                <p>
+		                    - [Making for radiant & moisturized skin] Sodium chondroitin sulfate is a
+                            skin-softening and hydrating agent.
+                            - [No chemical additives - all-natural formula] No chemical additives,
+                            emulsifiers, preservatives, artificial colors, or artificial fragrances
+		                </p>
+		            </div>
+		            <div class="txt2">
+		                <h3>
+		                    Active Ingredients 
+		                </h3>
+		                <p>
+		                    - [Chamomilla Recutita (Matricaria) Flower Water] Highly effective at alleviating inflammation, dryness, acne, and skin allergies
+                            - [Portulaca Oleracea Extract] Provides moisture and works as an antibacterial and anti-inflammatory agent; has a soothing effect on sensitive skin and allergic skin reactions
+                            - [Centella Asiatica Extract] Eliminates acne scars and regenerates cells;
+                            boosts collagen, improves skin elasticity and protects the skin
+                            - [Sodium Chondroitin Sulfate] Natural mucopolysaccharide derivative.
+                            Soothes inflammation, restores damage and reinforces the skin’s
+                            intercellular matrix.
+		                </p>
+		            </div>
+		        </div>
+		    </article>
+		    
+		    <article class="content">
+		        <div class="img cf">
+		            <div class="img1">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img2">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img3">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		        </div>
+		        <div class="text cf">
+		            <div class="txt1">
+		                <h3>
+		                    <span>Chamomile Complex 70% Ampoule (50ml)</span>
+		                </h3>
+		                <h3>
+		                    Special Features
+		                </h3>
+		                <p>
+		                    - [Making for radiant & moisturized skin] Sodium chondroitin sulfate is a
+                            skin-softening and hydrating agent.
+                            - [No chemical additives - all-natural formula] No chemical additives,
+                            emulsifiers, preservatives, artificial colors, or artificial fragrances
+		                </p>
+		            </div>
+		            <div class="txt2">
+		                <h3>
+		                    Active Ingredients 
+		                </h3>
+		                <p>
+		                    - [Chamomilla Recutita (Matricaria) Flower Water] Highly effective at alleviating inflammation, dryness, acne, and skin allergies
+                            - [Portulaca Oleracea Extract] Provides moisture and works as an antibacterial and anti-inflammatory agent; has a soothing effect on sensitive skin and allergic skin reactions
+                            - [Centella Asiatica Extract] Eliminates acne scars and regenerates cells;
+                            boosts collagen, improves skin elasticity and protects the skin
+                            - [Sodium Chondroitin Sulfate] Natural mucopolysaccharide derivative.
+                            Soothes inflammation, restores damage and reinforces the skin’s
+                            intercellular matrix.
+		                </p>
+		            </div>
+		        </div>
+		    </article>
+		    
+		    <article class="content">
+		        <div class="img cf">
+		            <div class="img1">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img2">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img3">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		        </div>
+		        <div class="text cf">
+		            <div class="txt1">
+		                <h3>
+		                    <span>Chamomile Complex 70% Ampoule (50ml)</span>
+		                </h3>
+		                <h3>
+		                    Special Features
+		                </h3>
+		                <p>
+		                    - [Making for radiant & moisturized skin] Sodium chondroitin sulfate is a
+                            skin-softening and hydrating agent.
+                            - [No chemical additives - all-natural formula] No chemical additives,
+                            emulsifiers, preservatives, artificial colors, or artificial fragrances
+		                </p>
+		            </div>
+		            <div class="txt2">
+		                <h3>
+		                    Active Ingredients 
+		                </h3>
+		                <p>
+		                    - [Chamomilla Recutita (Matricaria) Flower Water] Highly effective at alleviating inflammation, dryness, acne, and skin allergies
+                            - [Portulaca Oleracea Extract] Provides moisture and works as an antibacterial and anti-inflammatory agent; has a soothing effect on sensitive skin and allergic skin reactions
+                            - [Centella Asiatica Extract] Eliminates acne scars and regenerates cells;
+                            boosts collagen, improves skin elasticity and protects the skin
+                            - [Sodium Chondroitin Sulfate] Natural mucopolysaccharide derivative.
+                            Soothes inflammation, restores damage and reinforces the skin’s
+                            intercellular matrix.
+		                </p>
+		            </div>
+		        </div>
+		    </article>
+		    
+		    <article class="content">
+		        <div class="img cf">
+		            <div class="img1">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img2">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		            <div class="img3">
+		                <img src="http://placehold.it/426x284" alt="이미지">
+		            </div>
+		        </div>
+		        <div class="text cf">
+		            <div class="txt1">
+		                <h3>
+		                    <span>Chamomile Complex 70% Ampoule (50ml)</span>
+		                </h3>
+		                <h3>
+		                    Special Features
+		                </h3>
+		                <p>
+		                    - [Making for radiant & moisturized skin] Sodium chondroitin sulfate is a
+                            skin-softening and hydrating agent.
+                            - [No chemical additives - all-natural formula] No chemical additives,
+                            emulsifiers, preservatives, artificial colors, or artificial fragrances
+		                </p>
+		            </div>
+		            <div class="txt2">
+		                <h3>
+		                    Active Ingredients 
+		                </h3>
+		                <p>
+		                    - [Chamomilla Recutita (Matricaria) Flower Water] Highly effective at alleviating inflammation, dryness, acne, and skin allergies
+                            - [Portulaca Oleracea Extract] Provides moisture and works as an antibacterial and anti-inflammatory agent; has a soothing effect on sensitive skin and allergic skin reactions
+                            - [Centella Asiatica Extract] Eliminates acne scars and regenerates cells;
+                            boosts collagen, improves skin elasticity and protects the skin
+                            - [Sodium Chondroitin Sulfate] Natural mucopolysaccharide derivative.
+                            Soothes inflammation, restores damage and reinforces the skin’s
+                            intercellular matrix.
+		                </p>
+		            </div>
+		        </div>
+		    </article>
+        </section>
+    </div>
+
+    <footer>
+        <div class="foot-wrap">
+            <ul>
+                <li class="foot-item">
+                    <div class="foot-logo">
+                        <img src="../img/foot-logo.png" alt="">
+                    </div>
+                    <ul class="info">
+                        <li>
+                            <span>Terms of Service</span>
+                        </li>
+                        <li>
+                            <span>Privacy Policy</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>TEL</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            + 82. 2. 2633. 1644
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>E-MAIL</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            Customers@k-dod.com
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>ADDRESS</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            (Zip 06132)#704, 609<br />
+                            Nonhyeon-ro,Gangnam-gu, Seoul,<br />
+                            Republic of Korea
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>CONTACT</span>
+                    </div>
+                    <div class="foot-cont">
+                        <span>
+                            K-DOD Korea Corp.
+                        </span>
+                        <span>
+                            K-DOD Myanmar Co.,LTD
+                        </span>
+                        <span>
+                            K-DOD (Cambodia) Co.,LTD
+                        </span>
+                    </div>
+                </li>
+                <li class="foot-item">
+                    <div class="foot-title">
+                        <span>FOLLOW US</span>
+                    </div>
+                    <div class="foot-cont">
+                        <ul>
+                            <li>
+                                <img src="./img/instagram.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/facebook.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/youtube.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>COPYRIGHT © 2021. K-DOD. ALL RIGHTS RESERVED.</span>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+
+
+            $('.visual-slider').bxSlider({
+                auto: true,
+                pager: true,
+                mode: 'fade',
+                hideControlOnEnd: true
+            });
+
+            $('.cont1-slider').bxSlider({
+                auto: true,
+                pager: true,
+                hideControlOnEnd: true
+            });
+        });
+
+
+        $(document).ready(function() {
+            var tabBtn = $("#tab-btn > ul > li"); //각각의 버튼을 변수에 저장
+            var tabCont = $("#tab-cont > div"); //각각의 콘텐츠를 변수에 저장
+
+            //컨텐츠 내용을 숨겨주세요!
+            tabCont.hide().eq(0).show();
+
+            tabBtn.click(function() {
+                var target = $(this); //버튼의 타겟(순서)을 변수에 저장
+                var index = target.index(); //버튼의 순서를 변수에 저장
+                //alert(index);
+                tabBtn.removeClass("active"); //버튼의 클래스를 삭제
+                target.addClass("active"); //타겟의 클래스를 추가
+                tabCont.css("display", "none");
+                tabCont.eq(index).css("display", "block");
+            });        
+            
+
+        });
+    </script>
+</body>
+</html>
+<script>
+//	작은 이미지 클릭시 큰이미지에 보이게 하는 스크립트
+    
+//	큰 이미지
+	var bigPic = document.querySelector("#big");
+//	작은 이미지
+	var smallPics = document.querySelectorAll(".small");
+//	배열에 저장된 작은 이미지 함수에 연결
+	for(var i=0;i<smallPics.length;i++){
+		smallPics[i].addEventListener("click",changePic);
+	}
+//	이벤트 리스너 작성
+	function changePic(){
+		var newPic = this.src;
+		bigPic.setAttribute("src",newPic);
+	}
+</script>

@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*플롯해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*어바웃 미얀마 공통 영역*/
+#about_myyanma {
+    width: 848px;
+    margin: 0 auto;
+    margin-top: 31px;
+    font-family: "Noto sans KR",sans-serif;
+}
+#about_myyanma h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6b65;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+#about_myyanma p {
+    font-size: 0.813rem;
+    color: #454545;
+    line-height: 1.6;
+}
+#about_myyanma ul li {
+    font-size: 0.688rem;
+    color: #507C89;
+}
+
+
+/*어바웃 미얀마 영역*/
+#about_myyanma .Information .Information_text1 {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    height: 310px;
+/*    포지션 위치기준값*/
+    position: relative;
+}
+#about_myyanma .Information .Information_text1 img {
+    margin: 20px 0 0 10px;
+}
+#about_myyanma .Information .Information_text1 .text {
+/*    포지션*/
+    position: absolute;
+    top: 40px;
+    left: 430px;
+}
+#about_myyanma .Information .Information_text2 img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#about_myyanma .Information .Information_text2 .text {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+#about_myyanma .economy p {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#about_myyanma .economy .img img {
+/*    플롯*/
+    float: left;
+    margin-top: 10px;
+}
+
+#about_myyanma .digital_use p {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#about_myyanma .digital_use .img img {
+/*    플롯*/
+    float: left;
+    margin-top: 10px;
+}
+
+
+#about_myyanma .health_medical p {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#about_myyanma .health_medical .img img {
+    /*    플롯*/
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#about_myyanma .health_medical .text {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    line-height: 1.8;
+    font-weight: 300;
+}

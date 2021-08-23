@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+
+/*플롯해제*/
+.cf:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#board_faq {
+    width: 1000px;
+    margin: 0 auto;
+}
+#board_faq h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.5rem;
+    color: #FF6B65;
+    font-weight: 300;
+}
+#board_faq h2 {
+    color: #454545;
+    font-size: 1rem;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+/*검색창*/
+#board_faq .search_box {
+    margin: 40px 0 30px;
+}
+#board_faq .search_box fieldset {
+    border: none;
+    display: inline-block;
+}
+#board_faq .search_box form {
+	text-align: center;
+}
+#board_faq .search_box legend {
+    display: none;
+}
+/*검색폼*/
+#board_faq .search_box .search {
+	width: 340px;
+    height: 40px;
+	padding: 8px;
+	font-size: 13px;
+	color: #000;
+	background-color: #ECEAEA;
+/*    플롯*/
+    float: left;
+}
+#board_faq .search_box .search_btn {
+	display: inline-block;
+	cursor: pointer;
+/*    플롯*/
+    float: left;
+}
+
+
+/*탭메뉴 영역*/
+
+
+
+#board_faq nav #menu_gnb .gnb li a {
+	width: 198px;
+    border: 1px solid #B2B2B2;
+    background-color: #F4F4F4;
+	color: #B2B2B2;
+    padding: 10px 0;
+}
+#board_faq nav #menu_gnb .gnb li a:hover {
+	color: #FF6B65;
+	background-color: #fff;
+    border: 1px solid #FF6B65;
+}
+
+.filter-btn{
+	overflow: hidden;
+	margin: 40px auto;
+}
+
+.filter-btn ul li{
+	width: 198px;
+	height: 48px;
+	border: 1px solid #b2b2b2;
+	float: left;
+	cursor: pointer;
+}
+
+.filter-btn ul li a{
+	display: block;
+	text-align: center;
+	line-height: 48px;
+	font-weight: 700;
+}
+
+.filter-btn ul li.active{
+	border: 1px solid #FF6B65;
+}
+
+.filter-btn ul li.active a{
+	color: #FF6B65;
+}
+
+
+/*선택자코딩(명시적 선택자)*/
+/*로딩시 맨앞에만 색 다르게주기*/
+#board_faq nav #menu_gnb .gnb li.active a {
+    border: 1px solid #FF6B65;
+	background-color: #fff;
+	color: #FF6B65;
+}
+
+/*qna영역*/
+#board_faq .all .qna {
+    margin: 0 auto;
+/*    .q , 화살표img 포지션 위치기준값*/
+    position: relative;
+}
+
+/*Q CSS*/
+#board_faq .all .qna .q {
+/*    포지션*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#board_faq .all .qna .qna_title {
+    display: block;
+    border-bottom: 1px solid #B2B2B2;
+    padding: 20px 20px;
+    padding-left: 80px;
+}
+#board_faq .all .qna .qna_title:hover {
+    background-color: #f4f4f4;
+}
+/* Q 화살표 CSS*/
+#board_faq .all .qna a img {
+/*    포지션*/
+    position: absolute;
+    top: 28px;
+    right: 16px;
+    transition: all 0.3s;
+}
+
+/*A CSS*/
+#board_faq .all .qna_txt {
+/*    .a 포지션 위치기준값*/
+    position: relative;
+    display: none;
+}
+#board_faq .all .qna_txt {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid #B2B2B2;
+    padding: 20px;
+}
+#board_faq .all .qna_txt .a {
+/*    포지션*/
+    position: absolute;
+}
+#board_faq .all .qna_txt p {
+    font-size: 1rem;
+    color: #575757;
+    font-weight: 400;
+    margin-left: 60px;
+}
+
+
+#board_faq .all .qna_txt p .underline{ 
+    border-bottom: 1px solid #575757;
+}
+
+/*js addClass 사용 (qna 화살표 효과)*/
+.allowUp {}
+
+/*페이지 버튼*/
+#board_faq .paging{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#board_faq .paging .paging-wrap{
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#board_faq .paging a{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #707070;
+    display: block;
+    float: left;
+}
+#board_faq .paging a:hover {
+    background-color: #707070;
+    color: #fff;
+
+}
+#board_faq .paging img{
+    width: 30px;
+}
+#board_faq .paging a:nth-child(1){
+    margin-left: 0px;
+}
+
+
+@media all and (max-width: 1000px) {
+
+	section.about-busy .sub-banner .ban-text {width:100%;}
+
+	#board_faq {width:100%;}
+	#board_faq .search_box .search {width:80%;}
+	#board_faq nav #menu_gnb .gnb li {width:49.9%;font-size:0.9rem;}
+	#board_faq nav #menu_gnb .gnb li a {width:100%;box-sizing:border-box;}
+	
+	#faq-li {margin-top:20px;}
+	#board_faq .all .qna {padding:10px;}
+	#board_faq .all .qna .q {top:10px;left:20px;font-size:1.3rem;}
+	#board_faq .all .qna .qna_title {padding:0;}
+	#board_faq .all .qna .qna_title h2 {margin:0 0 10px 40px;font-size:0.9rem;line-height:23px;width:80%;}
+	#board_faq .all .qna a img {width:10px;top:15px;}
+	#board_faq .all .qna_txt .a {font-size:1.3rem;}
+	#board_faq .all .qna_txt p {font-size:0.9rem;margin-left:35px;}
+}
+
+
+@media screen and (max-width:900px){
+	.filter-btn{
+		width: 600px;
+	}
+	
+	.filter-btn ul li{
+		width: 140px;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width:640px){
+	.filter-btn{
+		width: 300px;
+	}
+	
+	.filter-btn ul li{
+		width: 98px;
+		font-size: 0.7rem;
+		font-weight: 500;
+	}
+}
