@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://websrepublic.co.kr/theme/websrepublic-white/js/jquery-1.11.1.min.js"></script>
+</head>
+<script>
+
+    $(document).ready(function(){
+            
+
+        // 폼메일 예산 드롭박스 클릭
+        $(".selectbox > a").click(function() {
+            if(!$(this).hasClass('open')) {
+                $(this).addClass('open');
+                $(".selectbox > ul").css('display','block');
+            } else {
+                $(this).removeClass('open');
+                $(".selectbox > ul").css('display','none');
+            }
+        });
+
+        // 폼메일 예산 선택시 값 반영
+        $(".selectbox > ul > li").click(function() {
+            var thisVal = $(this).data('val');
+            var thisName = $(this).text();
+
+            $("#budget").val(thisVal);
+            $(".selectbox > a").text(thisName);
+            $(".selectbox > a").removeClass('open');
+            $(this).parent().css('display','none');
+        });
+        
+    });
+
+</script>
+
+<script>
+    $(function() {
+        var $btnCloseTopBanner = $('.top-banner button.close');
+        $('input:checkbox[id="cookie"]').on('click', function() {
+            var snListStr = $.cookie('popup-sn-list');
+            var sn = $(this).val();
+            if (!snListStr) {
+                snListStr = sn;
+            } else if (snListStr.indexOf(sn) < 0) {
+                snListStr += ',' + sn;
+            }
+            $.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+
+            $btnCloseTopBanner.trigger('click');
+        });
+    });
+</script>
+<style>
+    
+
+input[type=file] {width:100%; height:30px}
+textarea {width:100%; height:125px; padding:20px 0px; font-size:16px; color:#343434; }
+.selectbox {position:relative}
+.selectbox > a {position:relative; display:block; width:100%; height:65px; padding-left:0px; font-size:16px; color:#999; line-height:65px; border:none;  background:#fff;border-bottom:solid 2px #ebebeb;}
+
+.selectbox > a:after {position:absolute; top:50%; right:0px; font-family:'xeicon'; font-size:18px; color:#333; line-height:1; content:'\e941'; margin-top:-9px}
+.selectbox > a.open:after {content:'\e944'}
+.selectbox ul {display:none; position:absolute; top:50px; width:100%; border:1px solid #dedede; border-radius:6px; box-shadow:0 1px 2px rgba(0, 0, 0, .08); overflow:hidden; z-index:100}
+.selectbox ul li {display:block; margin:0; padding:14px 20px; font-size:15px; color:#666; border-top:1px solid rgba(0, 0, 0, .12); background:#fff; cursor:pointer}
+.selectbox ul li:first-child {border-top:none}
+.selectbox ul li:hover {color:#333; background:#f4f4f4}
+
+
+
+
+
+.top-banner {
+	display: block;
+	padding: 40px 15px;
+	background-color: #222222;
+	color: #999;
+}
+.top-banner .inner {
+	position: relative;
+	max-width: 1640px;
+	margin: 0 auto;
+}
+.top-banner h2 {
+	margin-bottom: 18px;
+	font-size: 2.125em;
+	color: #fff;
+}
+.top-banner p {
+	margin-bottom: 56px;
+	line-height: 1.625;
+}
+.top-banner a {
+	color: #fff;
+}
+.top-banner a:after {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 9px;
+	margin-left: 9px;
+	background: url(../images/ico_package.png) no-repeat 0 -168px;
+}
+.top-banner .cookie {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 0.875em;
+}
+.top-banner .cookie input[type=checkbox] {display: none;}
+.top-banner .cookie input[type=checkbox]+label:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 7px;
+	border: 1px solid #f5f5f5;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.top-banner .cookie input[type=checkbox]:checked+label:before {
+	background: url(../images/ico_package.png) no-repeat -48px -247px;
+}
+.top-banner .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 18px;
+	height: 18px;
+	text-indent: -999em;
+}
+.top-banner .close:before,
+.top-banner .close:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 24px;
+	height: 1px;
+	margin: -1px 0 0 -12px;
+	background-color: #fff;
+	text-indent: -999em;
+	transform: rotate(-45deg);
+}
+.top-banner .close:after {transform: rotate(45deg);}
+
+</style>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="menu"></div>
+    </header>
+   
+
+
+    <div class="selectbox">
+        <a href="javascript:;">예산을 선택해 주세요.</a>
+        <ul>
+            <li data-val="100만원">100만원 이하</li>
+            <li data-val="300만원">300만원 이하</li>
+            <li data-val="500만원">500만원 이하</li>
+            <li data-val="700만원">700만원 이하</li>
+            <li data-val="1000만원">1000만원 이하</li>
+            <li data-val="1000만원이상">1000만원 ~ 2000만원</li>
+            <li data-val="2000만원이상">2000만원 이상</li>
+        </ul>
+    </div>
+     
+    <div class="top-banner">
+        <div class="inner">
+            <h2>[안내] 관람 예약 </h2>
+            <p>✔️이건용 개인전 "Bodyscape"는 온라인 사전 예약제로만 운영됩니다. 아래의 'Learn more'를 클릭하세요. <br>✔️일반 관람은 9월 9일부터 가능하며, 전시장 내 방역 수칙에 따라 일부 입장이 제한될 수 있습니다. <br></p>
+            <a href="https://booking.naver.com/booking/6/bizes/578992">Learn more</a>
+            <div class="cookie">
+                <input type="checkbox" name="cookie" id="cookie" value="20000000010">
+                <label for="cookie">1일동안 열지 않기</label>
+            </div>
+            <button type="button" class="close">닫기</button>
+        </div>
+    </div>
+</body>
+</html>
